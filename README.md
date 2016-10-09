@@ -2,6 +2,7 @@
 ## 儒释道
 - [金刚经说什么](jin_gang_jing_shuo_shen_me.md)
 - [庄子諵譁](zhuang_zi_nan_hua.md)
+- [佛陀的教义](fo_tuo_jiao_yi.md)
 
 ## 自律
 - [读gtdlife博客摘录](gtdlife.md)
