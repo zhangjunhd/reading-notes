@@ -8,3 +8,6 @@
 
 ## 程序设计
 - [C++ API设计-C++ API兼容性](cpp_api_design.md)
+
+## 操作系统
+- [Linux动态库与静态库](linux_lib.md)
