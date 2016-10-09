@@ -4,3 +4,6 @@
 
 ## 自律
 - [读gtdlife博客摘录](gtdlife.md)
+
+## 程序设计
+- [C++ API设计-C++ API兼容性](cpp_api_design.md)
