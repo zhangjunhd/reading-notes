@@ -29,28 +29,34 @@
 ####3 源代码兼容
 用户可以使用新版本的API重新编译程序，而不用对代码做任何修改。这个概念不涉及编译出的程序的行为，只要能够成功编译并链接即可。源代码兼容也称API兼容。一个源代码兼容例子：
 
-	// version 1.0
-	void SetImage(Image* img);
+```cpp
+// version 1.0
+void SetImage(Image* img);
 
-	// version 1.1
-	void SetImage(Image* img, bool keepAspect=true);
+// version 1.1
+void SetImage(Image* img, bool keepAspect=true);
+```
 
 不是源代码兼容例子：
 
-	// version 1.0
-	void SetImage(Image* img);
+```cpp
+// version 1.0
+void SetImage(Image* img);
 
-	// version 1.1
-	void SetImage(Image* img, bool keepAspect);
+// version 1.1
+void SetImage(Image* img, bool keepAspect);
+```
 
 ####4 二进制兼容
 二进制兼容意味着客户需要做的只是使用新版本的静态库重新链接他们的程序，或把新的共享库放入最终用户应用程序的安装目录。用户不需要重新编译他们的程序。下面的例子是源代码兼容，不是二进制兼容：
 
-	// version 1.0
-	void SetImage(Image* img);//Z8SetImageP5Image
+```cpp
+// version 1.0
+void SetImage(Image* img);//Z8SetImageP5Image
 
-	// version 1.1
-	void SetImage(Image* img, bool keepAspect=true);//Z8SetImageP5Imageb
+// version 1.1
+void SetImage(Image* img, bool keepAspect=true);//Z8SetImageP5Imageb
+```
 
 二进制不兼容的API修改：
 
