@@ -8,32 +8,33 @@
 
 ####1 制作并使用静态库
 编写代码：
+```c
+/* add.h */
+#ifndef _ADD_H_
+#define _ADD_H_
 
-	/* add.h */
-	#ifndef _ADD_H_
-	#define _ADD_H_
+int add(int, int);
 
-	int add(int, int);
+#endif
 
-	#endif
+/* add.c */
+#include "add.h"
 
-	/* add.c */
-	#include "add.h"
+int add(int x, int y)
+{
+    return x + y;
+}
 
-	int add(int x, int y)
-	{
-    	return x + y;
-	}
+/* main.c */
+#include <stdio.h>
+#include "add.h"
 
-	/* main.c */
-	#include <stdio.h>
-	#include "add.h"
-
-	int main(void)
-	{
-    	printf("2+3= %d\n", add(2,3));
-    	return 0;
-	}
+int main(void)
+{
+    printf("2+3= %d\n", add(2,3));
+    return 0;
+}
+```
 
 制作静态库：
 
@@ -76,64 +77,68 @@
 ####3 显式使用动态库
 显示调用动态库,编译时无需库文件,执行时动态库可存储于任意位置：
 
-	//打开动态库  
-	#include<dlfcn.h>  
-	void *dlopen(const char * pathname,int mode);  
+```c
+//打开动态库  
+#include<dlfcn.h>  
+void *dlopen(const char * pathname,int mode);  
   
-	//获取动态库对象地址  
-	include<dlfcn.h>  
-	void *dlsym(void *handle,const char *name);  
+//获取动态库对象地址  
+include<dlfcn.h>  
+void *dlsym(void *handle,const char *name);  
   
-	//错误检测  
-	include<dlfcn.h>  
-	char *dlerror(vid);  
+//错误检测  
+include<dlfcn.h>  
+char *dlerror(vid);  
   
-	//关闭动态库  
-	include<dlfcn.h>  
-	int dlclose(void * handle); 
+//关闭动态库  
+include<dlfcn.h>  
+int dlclose(void * handle); 
+```
 
 编写main.c
 
-	#include <stdio.h>
-	#include <dlfcn.h>   //显式加载需要用到的头文件
+```c
+#include <stdio.h>
+#include <dlfcn.h>   //显式加载需要用到的头文件
 
-	#define LIB  "./libadd.so"   //指定动态库路径
+#define LIB  "./libadd.so"   //指定动态库路径
 
-	int main(void)
-	{
-    	void *dl;
-    	char *error;
-    	int (*func)(int,int);
+int main(void)
+{
+    void *dl;
+    char *error;
+    int (*func)(int,int);
 
-    	dl = dlopen(LIB, RTLD_LAZY); /*打开动态链接库*/
-    	if(dl == NULL) {
-        	printf("Failed load libary\n");
-    	}
+    dl = dlopen(LIB, RTLD_LAZY); /*打开动态链接库*/
+    if(dl == NULL) {
+        printf("Failed load libary\n");
+    }
 
-    	error = dlerror(); /*检测错误*/
-    	if(error != NULL) {
-        	printf("%s\n", error);
-        	return -1;
-    	}
+    error = dlerror(); /*检测错误*/
+    if(error != NULL) {
+        printf("%s\n", error);
+        return -1;
+    }
 
-    	func = dlsym(dl, "add"); /*获取函数的地址*/
-    	error = dlerror(); /*检测错误*/
-    	if(error != NULL) {
-        	printf("%s\n", error);
-        	return -1;
-    	}
+    func = dlsym(dl, "add"); /*获取函数的地址*/
+    error = dlerror(); /*检测错误*/
+    if(error != NULL) {
+        printf("%s\n", error);
+        return -1;
+    }
 
-    	printf("2+3= %d\n", func(2,3));/*调用动态库中函数*/
+    printf("2+3= %d\n", func(2,3));/*调用动态库中函数*/
 
-    	dlclose(dl);  /*关闭共享库*/
-    	error = dlerror(); /*检测错误*/
-    	if(error != NULL) {
-        	printf("%s\n", error);
-        	return -1;
-    	}
+    dlclose(dl);  /*关闭共享库*/
+    error = dlerror(); /*检测错误*/
+    if(error != NULL) {
+        printf("%s\n", error);
+        return -1;
+    }
 
-    	return 0;
-	}
+    return 0;
+}
+```
 
 编译main.c生成可执行程序(动态库显式调用):
 
