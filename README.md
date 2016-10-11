@@ -8,6 +8,7 @@
 - [人生的三路向:宗教、道德与人生](ren_sheng_de_san_lu_xiang.md)
 - [传习录](chuan_xi_lu.md)
 - [庄子的享受](zhuang_zi_de_xiang_shou.md)
+- [一个瑜伽行者的自传](yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
 
 ## 自律
 - [读gtdlife博客摘录](gtdlife.md)
