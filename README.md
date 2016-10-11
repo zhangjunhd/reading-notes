@@ -4,6 +4,7 @@
 - [庄子諵譁](zhuang_zi_nan_hua.md)
 - [佛陀的教义](fo_tuo_jiao_yi.md)
 - [认识与存在-《唯识三十论》解析之唯识总论](wei_shi_san_shi_lun.md)
+- [这个世界会好吗-梁漱溟晚年口述](liang_shu_min_wan_nian_kou_shu.md)
 
 ## 自律
 - [读gtdlife博客摘录](gtdlife.md)
