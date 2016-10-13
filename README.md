@@ -9,6 +9,7 @@
 - [传习录](chuan_xi_lu.md)
 - [庄子的享受](zhuang_zi_de_xiang_shou.md)
 - [一个瑜伽行者的自传](yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
+- [论语译注](lun_yu_yi_zhu.md)
 
 ## 自律
 - [读gtdlife博客摘录](gtdlife.md)
