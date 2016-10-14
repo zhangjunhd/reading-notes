@@ -11,6 +11,7 @@
 - [一个瑜伽行者的自传](eastern_philosophy/yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
 - [论语译注](eastern_philosophy/lun_yu_yi_zhu.md)
 - [梁漱溟先生论儒佛道](eastern_philosophy/liang_shu_min_xian_sheng_lun_ru_fo_dao.md)
+- [转念的力量](eastern_philosophy/zhuan_nian_de_li_liang.md)
 
 ## 自律
 - [读gtdlife博客摘录](gtdlife.md)
