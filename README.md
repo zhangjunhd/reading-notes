@@ -1,15 +1,15 @@
 # reading-notes
-## 儒释道
-- [金刚经说什么](jin_gang_jing_shuo_shen_me.md)
-- [庄子諵譁](zhuang_zi_nan_hua.md)
-- [佛陀的教义](fo_tuo_jiao_yi.md)
-- [认识与存在-《唯识三十论》解析之唯识总论](wei_shi_san_shi_lun.md)
-- [这个世界会好吗-梁漱溟晚年口述](liang_shu_min_wan_nian_kou_shu.md)
-- [人生的三路向:宗教、道德与人生](ren_sheng_de_san_lu_xiang.md)
-- [传习录](chuan_xi_lu.md)
-- [庄子的享受](zhuang_zi_de_xiang_shou.md)
-- [一个瑜伽行者的自传](yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
-- [论语译注](lun_yu_yi_zhu.md)
+## [儒释道][1]
+- [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
+- [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
+- [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
+- [认识与存在-《唯识三十论》解析之唯识总论](eastern_philosophy/wei_shi_san_shi_lun.md)
+- [这个世界会好吗-梁漱溟晚年口述](eastern_philosophy/liang_shu_min_wan_nian_kou_shu.md)
+- [人生的三路向:宗教、道德与人生](eastern_philosophy/ren_sheng_de_san_lu_xiang.md)
+- [传习录](eastern_philosophy/chuan_xi_lu.md)
+- [庄子的享受](eastern_philosophy/zhuang_zi_de_xiang_shou.md)
+- [一个瑜伽行者的自传](eastern_philosophy/yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
+- [论语译注](eastern_philosophy/lun_yu_yi_zhu.md)
 
 ## 自律
 - [读gtdlife博客摘录](gtdlife.md)
@@ -19,3 +19,5 @@
 
 ## 操作系统
 - [Linux动态库与静态库](linux_lib.md)
+
+[1]: eastern_philosophy/
