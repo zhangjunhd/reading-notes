@@ -14,6 +14,7 @@
 - [转念的力量](eastern_philosophy/zhuan_nian_de_li_liang.md)
 - [佛教与三藏简史](eastern_philosophy/fo_jiao_yu_san_zang_jian_shi.md)
 - [一步一如来2：京都朝圣旅人书](eastern_philosophy/yi_bu_yi_ru_lai2.md)
+- [庄子的快活](eastern_philosophy/zhuang_zi_de_kuai_huo.md)
 
 ## 自律
 - [读gtdlife博客摘录](gtdlife.md)
