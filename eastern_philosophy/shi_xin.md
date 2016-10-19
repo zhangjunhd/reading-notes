@@ -1,7 +1,7 @@
 # 活着活着就老了
 ![cover](https://img1.doubanio.com/lpic/s26912669.jpg)
 
-[豆瓣链接][https://book.douban.com/subject/24721230/]
+[豆瓣链接](https://book.douban.com/subject/24721230/)
 
     作者: 冯唐
     出版社: 浙江文艺出版社
