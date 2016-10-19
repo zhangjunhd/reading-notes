@@ -1,7 +1,7 @@
 # 关系之镜：两性的真爱
 ![cover](https://img1.doubanio.com/lpic/s27308587.jpg)
 
-[豆瓣链接][https://book.douban.com/subject/5028585/]
+[豆瓣链接](https://book.douban.com/subject/5028585/)
 
     作者: [印度] 克里希那穆提
     出版社: 九州出版社
