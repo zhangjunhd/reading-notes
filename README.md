@@ -20,6 +20,7 @@
 1. [活着活着就老了-十信](eastern_philosophy/shi_xin.md)
 1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
+1. [悉达多](eastern_philosophy/xi_da_duo.md)
 
 ## 心理学
 1. [自卑与超越](psychology/inferiority_and_superiority.md)
