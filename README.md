@@ -16,6 +16,7 @@
 - [一步一如来2：京都朝圣旅人书](eastern_philosophy/yi_bu_yi_ru_lai2.md)
 - [庄子的快活](eastern_philosophy/zhuang_zi_de_kuai_huo.md)
 - [关系之镜：两性的真爱](eastern_philosophy/liang_xing_de_zhen_ai.md)
+- [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
 
 ## 自律
 - [读gtdlife博客摘录](gtdlife.md)
