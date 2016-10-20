@@ -25,6 +25,7 @@
 ## [心理学][2]
 1. [自卑与超越](psychology/inferiority_and_superiority.md)
 1. [意志力](psychology/willpower.md)
+1. [自控力](psychology/the_willpower_instinct.md)
 
 ## 自律
 1. [读gtdlife博客摘录](gtdlife.md)
