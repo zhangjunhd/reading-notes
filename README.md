@@ -22,8 +22,9 @@
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
 1. [悉达多](eastern_philosophy/xi_da_duo.md)
 
-## 心理学
+## [心理学][2]
 1. [自卑与超越](psychology/inferiority_and_superiority.md)
+1. [意志力](psychology/willpower.md)
 
 ## 自律
 1. [读gtdlife博客摘录](gtdlife.md)
@@ -35,3 +36,4 @@
 1. [Linux动态库与静态库](linux_lib.md)
 
 [1]: eastern_philosophy/
+[2]: psychology/
