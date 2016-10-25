@@ -40,11 +40,12 @@ ExtJS/JQuery都是单页应用框架的典型，它们问题是对代码的组�
 但是它也存在几个显著的问题：
 
 1. SEO：如果一个应用只运行在客户端的话是不能通过HTML进行”爬虫”的，所以它默认是不可被SEO的（搜索引擎优化）；
-2. Performance：如果服务器不能直接渲染整个HTML页面，而是通过JavaScript去做这些事儿，用户将会在加载完整个页面之前看到几秒钟的空页面或者一直加载控件；
+2. Performance：如果服务器不能直接渲染整个HTML页面，而是通过JavaScript去做这些事儿，用户将会在加载完整页面之前看到几秒钟的空页面或者一直加载控件；
 3. Maintainability：在理想情况下我们在要创建一个分层明确低耦合的应用程序， 来避免少量的应用逻辑代码在前后端重复（通常是前后端使用不同的语言开发）. 常见的例子比如 日期/货币格式化，表单验证， 流程逻辑。
 
 ## Isomorphic JavaScript
-Airbnb尝试使用”Isomorphic JavaScript”进行构建. 这是一个可以在客户端和服务端都运行的JavaScript应用. 一个“isomorphic”应用看起来是这样：
+Airbnb在文章[Isomorphic JavaScript: The Future of Web Apps
+][1]提出使用”Isomorphic JavaScript”进行构建。这是一个可以在客户端和服务端都运行的JavaScript应用。一个“isomorphic”应用看起来是这样：
 
 ![isomorphic2](http://nerds.airbnb.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-07-at-10.29.32-AM.png)
 
@@ -80,3 +81,5 @@ client端
 - React.js:
 - Flux/Redux:基于React的MVC框架
 - React-Native:
+
+[1]: http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/
