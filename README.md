@@ -34,7 +34,7 @@
 
 ## [程序设计][3]
 1. [C++ API设计-C++ API兼容性](programming/cpp_api_design.md)
-1. [前端架构演变](programming/front-end_ architecture.md)
+1. [前端架构演变](programming/front-end_architecture.md)
 
 ## 操作系统
 1. [Linux动态库与静态库](linux_lib.md)
