@@ -27,15 +27,18 @@
 1. [意志力](psychology/willpower.md)
 1. [自控力](psychology/the_willpower_instinct.md)
 1. [拖延心理学](psychology/procrastination.md)
+1. [影响力](psychology/influence.md)
 
 ## 自律
 1. [读gtdlife博客摘录](gtdlife.md)
 
-## 程序设计
-1. [C++ API设计-C++ API兼容性](cpp_api_design.md)
+## [程序设计][3]
+1. [C++ API设计-C++ API兼容性](programming/cpp_api_design.md)
+1. [前端架构演变](programming/front-end_ architecture.md)
 
 ## 操作系统
 1. [Linux动态库与静态库](linux_lib.md)
 
 [1]: eastern_philosophy/
 [2]: psychology/
+[3]: programming/
