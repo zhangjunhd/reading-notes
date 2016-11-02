@@ -66,7 +66,7 @@ React.JS的本质是一套Component的复用机制。采用它的一个基本动
 
 ![react-native](http://blog.cnbang.net/wp-content/uploads/2015/03/ReactNative1.png)
 
-## 泛前端架构选型
+## 前端架构总结(React)
 
 ![arch](front-end_architecture/fornt-end_arch.png)
 
@@ -78,8 +78,8 @@ server端
 - Nginx:static files, redirects, SSL certificates, gzip, error pages等
 
 client端
-- React.js:
+- React.js
 - Flux/Redux:基于React的MVC框架
-- React-Native:
+- React-Native
 
 [1]: http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/
