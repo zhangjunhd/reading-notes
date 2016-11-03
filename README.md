@@ -27,7 +27,6 @@
 1. [意志力](psychology/willpower.md)
 1. [自控力](psychology/the_willpower_instinct.md)
 1. [拖延心理学](psychology/procrastination.md)
-1. [影响力](psychology/influence.md)
 
 ## 自律
 1. [读gtdlife博客摘录](gtdlife.md)
