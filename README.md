@@ -35,8 +35,12 @@
 
 ## [程序设计][3]
 1. [C++ API设计-C++ API兼容性](programming/cpp_api_design.md)
+1. [搜索引擎](programming/search_engine.md)
 1. [前端架构演变](programming/front-end_architecture.md)
 1. [React Starter Kit源码研究](programming/react-start-kit.md)
+
+## [英语学习][4]
+1. [纸牌屋人物S01](english/character_relation_s01.md)
 
 ## 操作系统
 1. [Linux动态库与静态库](linux_lib.md)
@@ -44,3 +48,4 @@
 [1]: eastern_philosophy/
 [2]: psychology/
 [3]: programming/
+[4]: english/
