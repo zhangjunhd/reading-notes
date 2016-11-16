@@ -41,6 +41,7 @@
 
 ## [英语学习][4]
 1. [纸牌屋人物S01](english/character_relation_s01.md)
+1. [纸牌屋.House.Of.Cards.2013.S01E01](english/house-of-cards-2013-s01e01.md)
 
 ## 操作系统
 1. [Linux动态库与静态库](linux_lib.md)
