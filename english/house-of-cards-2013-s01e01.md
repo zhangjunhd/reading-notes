@@ -6,7 +6,7 @@ Hey, what are you doing?
 Jesus!
 天哪
 
-Did you get a good look?
+Could you get a good look?
 你看清肇事的车了吗
 
 Blue Toyota Camry, it's all I saw.
@@ -15,8 +15,7 @@ Blue Toyota Camry, it's all I saw.
 It's the Wharton's dog.
 是沃顿家的狗
 
-- Oh, man. - He's not gonna make it.
--天哪  -他撑不了多久了
+Oh, man. He's not gonna make it.天哪。  他撑不了多久了
 
 Go see if they're at home.
 去看看他们在不在家
@@ -42,8 +41,8 @@ I have no patience for useless things.
 Moments like this require someone who will act...
 这种时刻  需要有人采取行动
 
-or do the unpleasant thing,
-或做一些不好的事
+do the unpleasant thing,
+做一些不好的事
 
 or the necessary thing.
 但也是必要的事
@@ -69,11 +68,13 @@ he'll put his people on it.
 We'll track him down.
 我们会找到那个司机的
 
-You're stunning.
-你真是光彩照人
+Stunning.
+光彩照人
 
 Shall we?
 我们走吧
+
+---
 
 Three two...one...
 三...二...一...
@@ -93,8 +94,10 @@ Do I believe in him? That's beside the point.
 Any politician that gets 70 million votes
 任何一个能获得七千万选票的政客
 
-has tapped into something larger than himself,
+is tapped into something larger than himself,
 他所象征的含义早已超过了自身
+
+    be trapped into confessing the facts 受骗而招出实情
 
 larger than even me as much as I hate to admit it.
 当然也超过了我  尽管我不愿意承认
@@ -104,6 +107,8 @@ Look at that winning smile, those trusting eyes.
 
 I clung to him early on, and made myself vital.
 我一早便跟他站在一起  并扮演了重要角色
+
+    cling to 坚持；依靠；依附；紧握不放
 
 After 22 years in congress
 在国会待了22年
@@ -125,6 +130,8 @@ Bless his heart.
 
 And now they're about to put him out to pasture.
 现在他们打算让他退休了
+
+    Put someone out to pasture 被迫离职
 
 But he looks happy, now doesn't he?
 但他看上去挺开心的  不是吗
@@ -165,11 +172,21 @@ I keep things moving in a Congress
 choked by pettiness, and lassitude.
 和倦怠堵塞的众议院的运转
 
+    Choked by the tears 流泪哽咽
+    pettiness n. 琐碎；卑鄙；小气；微小
+    lassitude n. 疲乏；懒散；厌倦
+
 My job is to clear the pipes, and keep the sludge moving.
 我的工作就是疏通管道  让污泥流动
 
+    sludge n. 烂泥；泥泞；泥状雪；沉淀物；（海上）小浮冰
+
 But I won't have to be a plumber much longer. I've done my time.
 但我这水管工要退休了  我尽了职责
+
+    I've done my time.
+    I'm coming home; I've done my time.我回家了，我挥霍了我的时间。
+
 
 I backed the right man.
 我支持了正确的候选人
@@ -180,7 +197,9 @@ Give and take.
 Welcome to Washington.
 这就是华盛顿
 
-You need a hai  rcut.
+---
+
+You need a hair cut.
 你需要理发了
 
 You think?
