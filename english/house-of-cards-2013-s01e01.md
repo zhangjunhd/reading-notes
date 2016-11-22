@@ -97,7 +97,7 @@ Any politician that gets 70 million votes
 is tapped into something larger than himself,
 他所象征的含义早已超过了自身
 
-    be trapped into confessing the facts 受骗而招出实情
+    It's something everybody is tapped into. 这是大家都在用的东西。
 
 larger than even me as much as I hate to admit it.
 当然也超过了我  尽管我不愿意承认
@@ -148,7 +148,7 @@ I got her hired. She's a woman, check.
 And a Latina, check.
 又是拉丁裔
 
-But more important than that, she's as tough as two-dollar steak.
+But more important than that, she's as tough as a two-dollar steak.
 但更重要的是  她像一块廉价牛排一样坚韧
 
 Check, check, check.
@@ -184,7 +184,6 @@ My job is to clear the pipes, and keep the sludge moving.
 But I won't have to be a plumber much longer. I've done my time.
 但我这水管工要退休了  我尽了职责
 
-    I've done my time.
     I'm coming home; I've done my time.我回家了，我挥霍了我的时间。
 
 
