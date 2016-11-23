@@ -210,11 +210,16 @@ A little trim.
 What are you gonna wear?
 你准备穿什么
 
-- You mean for the meeting? - For the announcement.
--参加会议吗  -正式宣布的时候
+You mean for the meeting?
+参加会议吗
+
+For the announcement.
+正式宣布的时候
 
 I'm wearing my navy blue, the one with the pinstripes.
 我准备穿海军蓝  带细条纹的那套
+
+    pinstripes 细条纹做的衣服
 
 Good.
 很好
@@ -233,6 +238,8 @@ As soon as it's official, Sancorp will write you the check.
 
 This is going to be a big year for us.
 今年对我们将会是重要的一年
+
+---
 
 Community of what?
 哪一个委员会
