@@ -1,13 +1,18 @@
 # React Starter Kit源码研究
 ## 部署与运维
 ### 连接已重置
-用curl 定位localhost:3000是否正常
+用curl 定位是否正常
+
+```
+curl localhost:3000
+```
 
 ### 部署代码
 
 ```sh
 git pull
 npm run build — —release
+cd build
 pm2 restart server.js
 ```
 
