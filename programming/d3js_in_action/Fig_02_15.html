@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 2 - Example 5</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+</head>
+<style>
+  svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+  }
+</style>
+<body>
+
+<div>
+  <svg>
+  </svg>
+</div>
+</body>
+  <footer>
+    
+<script>
+d3.select("svg")
+.selectAll("rect")
+.data([15, 50, 22, 8, 100, 10])
+.enter()
+.append("rect")
+.attr("width", 10)
+.attr("height", function(d) {return d})
+.style("fill", "blue")
+.style("stroke", "red")
+.style("stroke-width", "1px")
+.style("opacity", .25)
+.attr("x", function(d,i) {return i * 10})
+.attr("y", function(d) {return 100 - d})
+
+</script>
+  </footer>
+
+</html>
