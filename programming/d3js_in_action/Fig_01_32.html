@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 1 - Example 7</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+</head>
+<style>
+svg {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border: 1px solid lightgray;
+}
+</style>
+<body>
+
+<div id="vizcontainer">
+  <svg></svg>
+</div>
+</body>
+  <footer>
+    
+<script>
+d3.select("svg").append("line").attr("x1", 20).attr("y1", 20).attr("x2",400).attr("y2",400).style("stroke", "black").style("stroke-width","2px");
+
+d3.select("svg").append("text").attr("x",20).attr("y",20).text("HELLO");
+
+d3.select("svg").append("circle").attr("r", 20).attr("cx",20).attr("cy",20).style("fill","red");
+
+d3.select("svg").append("circle").attr("r", 100).attr("cx",400).attr("cy",400).style("fill","lightblue");
+
+d3.select("svg").append("text").attr("x",400).attr("y",400).text("WORLD");
+
+
+</script>
+  </footer>
+
+</html>

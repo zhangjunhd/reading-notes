@@ -36,6 +36,7 @@
 ## [程序设计][3]
 1. [C++ API设计-C++ API兼容性](programming/cpp_api_design.md)
 1. [搜索引擎](programming/search_engine.md)
+1. [D3.js in Action](programming/d3js_in_action.md)
 1. [前端架构演变](programming/front-end_architecture.md)
 1. [React Starter Kit源码研究](programming/react-start-kit.md)
 
