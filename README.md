@@ -29,6 +29,7 @@
 1. [自控力](psychology/the_willpower_instinct.md)
 1. [拖延心理学](psychology/procrastination.md)
 1. [叔本华的治疗](psychology/the_schopenhauer_cure.md)
+1. [幸福是陷阱?](psychology/the_happiness_trap.md)
 
 ## 自律
 1. [读gtdlife博客摘录](gtdlife.md)
@@ -39,13 +40,11 @@
 1. [D3.js in Action](programming/d3js_in_action.md)
 1. [前端架构演变](programming/front-end_architecture.md)
 1. [React Starter Kit源码研究](programming/react-start-kit.md)
+1. [Linux动态库与静态库](programming/linux_lib.md)
 
 ## [英语学习][4]
 1. [纸牌屋人物S01](english/character_relation_s01.md)
 1. [纸牌屋.House.Of.Cards.2013.S01E01](english/house-of-cards-2013-s01e01.md)
-
-## 操作系统
-1. [Linux动态库与静态库](linux_lib.md)
 
 [1]: eastern_philosophy/
 [2]: psychology/
