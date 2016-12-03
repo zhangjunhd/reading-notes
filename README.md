@@ -23,6 +23,7 @@
 1. [悉达多](eastern_philosophy/xi_da_duo.md)
 
 ## [心理学][2]
+1. [精神分析引论](psychology/general_introduction_to_psycho_analysis.md)
 1. [荣格心理学入门](psychology/a_primer_of_jungian_psychology.md)
 1. [自卑与超越](psychology/inferiority_and_superiority.md)
 1. [意志力](psychology/willpower.md)
