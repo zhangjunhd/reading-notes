@@ -15,6 +15,7 @@
 - [2.Information visualization data flow][2]
 - [3.Data-driven design and interaction][3]
 - [4.Chart components][4]
+- [5.Layouts][5]
 
 
 [1]: d3js_in_action/d3js_in_action_ch1.md
