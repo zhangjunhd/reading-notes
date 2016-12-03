@@ -1,0 +1,124 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 3 - Example 9</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="colorbrewer.js" type="text/JavaScript"></script>
+</head>
+<style>
+  svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+  }
+  
+  text {
+font-size: 10px;
+}
+
+g > text.active {
+font-size: 30px;
+}
+
+circle {
+fill: pink;
+stroke: black;
+stroke-width: 1px;
+}
+
+circle.active {
+fill: red;
+}
+
+circle.inactive {
+fill: gray;
+}
+
+.highlight {
+  font-size: 24px;
+}
+
+#modal {
+    position:fixed;
+    left:20px;
+    top:20px;
+    z-index:1;
+    background: white;
+    border: 1px black solid;
+    box-shadow: 10px 10px 5px #888888;
+  }
+  
+  tr {
+    border: 1px gray solid;
+  }
+
+  td {
+    font-size: 10px;
+  }
+  td.data {
+    font-weight: 900;
+  }
+
+
+
+</style>
+<body>
+
+<div id="viz">
+  <svg>
+  </svg>
+</div>
+<div id="controls" />
+</body>
+  <footer>
+    
+<script>
+  d3.csv("worldcup.csv", function(data) {
+    overallTeamViz(data);
+  })
+  
+function overallTeamViz(incomingData) {
+d3.select("svg")
+.append("g")
+.attr("id", "teamsG")
+.attr("transform", "translate(50,300)")
+.selectAll("g")
+.data(incomingData)
+.enter()
+.append("g")
+.attr("class", "overallG")
+.attr("transform", function (d,i) {return "translate(" + (i * 50) + ", 0)"});
+    
+var teamG = d3.selectAll("g.overallG")
+.on("click", teamClick);
+    
+teamG
+.append("circle")
+.attr("r", 20);
+
+teamG
+.append("text")
+.style("text-anchor", "middle")
+.attr("y", 30)
+.text(function(d) {return d.team});
+
+d3.selectAll("g.overallG").insert("image", "text")
+.attr("xlink:href", function(d) {
+return "images/" + d.team + ".png"
+})
+.attr("width", "45px").attr("height", "20px").attr("x", "-22")
+.attr("y", "-10")
+
+d3.text("resources/modal.html", function(data) {d3.select("body").append("div").attr("id", "modal").html(data)});
+
+function teamClick(d) {
+  d3.selectAll("td.data").data(d3.values(d)).html(function(p) {return p})
+} 
+
+
+  }
+
+</script>
+  </footer>
+
+</html>
