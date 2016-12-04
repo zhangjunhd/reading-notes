@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 5 - Example 1</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="colorbrewer.js" type="text/JavaScript"></script>
+</head>
+<style>
+  svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+  }
+  
+  rect {
+    fill: lightgray;
+    stroke: black;
+    stroke-width: 1px;
+  }
+  
+  line {
+  shape-rendering: crispEdges;
+  stroke: #000000;
+  }
+
+  line.minor  {
+    stroke: #777777;
+    stroke-dasharray: 2,2;
+  }
+
+  path.domain {
+    fill: none;
+    stroke: black;
+  }
+
+
+</style>
+<body>
+
+<div id="viz">
+  <svg>
+  </svg>
+</div>
+<div id="controls" />
+</body>
+  <footer>
+    
+<script>
+
+    d3.json("tweets.json",function(error,data) {histogram(data.tweets)});
+    
+    function histogram(tweetsData) {
+
+    xScale = d3.scale.linear().domain([0,5]).range([0,500])
+    var yScale = d3.scale.linear()
+    .domain([0, 10])
+    .range([400, 0]);
+    
+    var xAxis = d3.svg.axis()
+    .scale(xScale)
+    .ticks(5)
+    .orient("bottom");
+
+      var histoChart = d3.layout.histogram();
+      
+      histoChart.bins([0, 1, 2, 3, 4, 5])
+      .value(function(d) {return d.favorites.length});
+      
+      histoData = histoChart(tweetsData);
+
+    d3.select("svg").selectAll("rect")
+    .data(histoData)
+    .enter()
+    .append("rect")
+    .attr("x", function(d) {return xScale(d.x)})
+    .attr("y", function(d) {return yScale(d.y)})
+    .attr("width", xScale(histoData[0].dx) - 2)
+    .attr("height", function(d) { return 400 - yScale(d.y); })
+    .on("click", retweets)
+
+    d3.select("svg").append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0,400)")
+    .call(xAxis);
+    
+    d3.select("g.axis").selectAll("text").attr("dx", 50)
+    function retweets() {
+            histoChart.value(function(d) {return d.retweets.length});
+            
+            histoData = histoChart(tweetsData);
+            
+            d3.selectAll("rect").data(histoData)
+            .transition().duration(500)
+            .attr("x", function(d) {return xScale(d.x)})
+            .attr("y", function(d) {return yScale(d.y)})
+            .attr("height", function(d) { return 400 - yScale(d.y); });
+    }
+
+    }
+</script>
+  </footer>
+
+</html>

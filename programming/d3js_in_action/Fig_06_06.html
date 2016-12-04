@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 6 - Example 2</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="colorbrewer.js" type="text/JavaScript"></script>
+<script src="queue.js" type="text/JavaScript"></script>
+</head>
+<style>
+  svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+  }
+
+</style>
+<body>
+
+<div id="viz">
+  <svg>
+  </svg>
+</div>
+<div id="controls" />
+</body>
+  <footer>
+    
+<script>
+    queue()
+    .defer(d3.csv, "nodelist.csv")
+    .defer(d3.csv, "edgelist.csv")
+    .await(function(error, file1, file2) { createArcDiagram(file1, file2); });
+    function createArcDiagram(nodes,edges) {
+
+      var nodeHash = {};
+      for (x in nodes) {
+        nodeHash[nodes[x].id] = nodes[x];
+        nodes[x].x = parseInt(x) * 40;
+      }
+      for (x in edges) {
+        edges[x].weight = parseInt(edges[x].weight);
+        edges[x].source = nodeHash[edges[x].source];
+        edges[x].target = nodeHash[edges[x].target];
+      }
+      
+      linkScale = d3.scale.linear().domain(d3.extent(edges, function (d) {return d.weight})).range([5,10])
+      
+      var arcG = d3.select("svg").append("g").attr("id", "arcG").attr("transform", "translate(50,250)");
+
+      arcG.selectAll("path")
+      .data(edges)
+      .enter()
+      .append("path")
+      .style("stroke", "black")
+      .style("stroke-width", function(d) {return d.weight * 2})
+      .style("opacity", .25)
+      .style("fill", "none")
+      .attr("d", arc)
+      .on("mouseover", edgeOver)
+      
+      arcG.selectAll("circle")
+      .data(nodes)
+      .enter()
+      .append("circle")
+      .attr("r", 10)
+      .style("fill", "lightgray")
+      .style("stroke", "black")
+      .style("stroke-width", "1px")
+      .attr("cx", function (d) {return d.x})
+      .on("mouseover", nodeOver)
+      
+      function arc(d,i) {
+        var draw = d3.svg.line().interpolate("basis");
+        var midX = (d.source.x + d.target.x) / 2;
+        var midY = (d.source.x - d.target.x) * 2;
+        return draw([[d.source.x,0],[midX,midY],[d.target.x,0]])
+      }
+      
+      function shapedEdge(d,i) {
+        var draw = d3.svg.line().interpolate("basis");
+        var sw = linkScale(d.weight)
+        var midX = (d.source.x + d.target.x) / 2;
+        var midY = d.source.x - d.target.x - sw;
+        var midY2 = d.source.x - d.target.x + sw;
+        return draw([[d.source.x,0],[midX,midY],[d.target.x + (sw*1.5),0],[d.target.x - (sw*1.5),0],[midX,midY2],[d.source.x,0]])
+      }
+      
+      function nodeOver(d,i) {
+        d3.selectAll("circle").style("fill", function (p) {return p == d ? "red" : "lightgray"})
+        d3.selectAll("path").style("stroke", function (p) {return p.source == d || p.target == d ? "red" : "black"})
+      }
+      
+      function edgeOver(d) {
+        d3.selectAll("path").style("stroke", function(p) {return p == d ? "red" : "black"})
+        d3.selectAll("circle").style("fill", function(p) {return p == d.source ? "blue" : p == d.target ? "green" : "lightgray"})}      
+    }
+</script>
+  </footer>
+
+</html>

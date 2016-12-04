@@ -1,0 +1,101 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 5 - Example 10</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="colorbrewer.js" type="text/JavaScript"></script>
+</head>
+<style>
+  svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+  }
+  line {
+  shape-rendering: crispEdges;
+  stroke: #000000;
+  }
+
+line.minor  {
+  stroke: #777777;
+  stroke-dasharray: 2,2;
+}
+
+path.domain {
+  fill: none;
+  stroke: black;
+}
+</style>
+<body>
+
+<div id="viz">
+  <svg>
+  </svg>
+</div>
+<div id="controls" />
+</body>
+  <footer>
+    
+<script>
+    d3.csv("movies.csv", function(error,data) {dataViz(data)});
+
+  function dataViz(incData) {
+    expData = incData;
+    stackData = [];
+    
+    var xScale = d3.scale.linear()
+    .domain([1, 10])
+    .range([20, 440]);
+
+    var yScale = d3.scale.linear()
+    .domain([0, 70])
+    .range([480, 0]);
+
+    var heightScale = d3.scale.linear()
+    .domain([0, 70])
+    .range([0, 480]);
+    
+    var movieColors = d3.scale.category10(["movie1","movie2","movie3","movie4","movie5","movie6"]);
+
+    for (x in incData[0]) {
+      if (x != "day") {
+        var newMovieObject = {name: x, values: []};
+        for (y in incData) {
+          newMovieObject.values.push({x: parseInt(incData[y]["day"]) ,y: parseInt(incData[y][x])})
+        }
+        stackData.push(newMovieObject);
+      }
+    }
+
+    stackLayout = d3.layout.stack()
+    .values(function(d) { return d.values; });
+    
+    xAxis = d3.svg.axis().scale(xScale).orient("bottom").tickSize(480).ticks(10);    
+    d3.select("svg").append("g").attr("id", "xAxisG").call(xAxis);
+    
+    yAxis = d3.svg.axis().scale(yScale).orient("right").ticks(8).tickSize(480).tickSubdivide(true);    
+    d3.select("svg").append("g").attr("id", "yAxisG").call(yAxis);
+
+
+    d3.select("svg").selectAll("g.bar")
+    .data(stackLayout(stackData))
+    .enter()
+    .append("g")
+    .attr("class", "bar")
+    .each(function(d) {
+    d3.select(this).selectAll("rect")
+    .data(d.values)
+    .enter()
+    .append("rect")
+    .attr("x", function(p) { return xScale(p.x) - 15; })
+    .attr("y", function(p) { return yScale(p.y + p.y0); })
+    .attr("height", function(p) { return heightScale(p.y); })
+    .attr("width", 30)
+    .style("fill", movieColors(d.name))      
+    })
+    
+  }
+</script>
+  </footer>
+
+</html>

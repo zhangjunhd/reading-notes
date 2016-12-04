@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 5 - Example 12</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="colorbrewer.js" type="text/JavaScript"></script>
+<script src="d3.layout.cloud.js" type="text/JavaScript"></script>
+</head>
+<style>
+  svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+  }
+
+</style>
+<body>
+
+<div id="viz">
+  <svg>
+  </svg>
+</div>
+<div id="controls" />
+</body>
+  <footer>
+    
+<script>
+    
+    d3.csv("worddata.csv", function(data) {dataViz(data)});
+    
+    wordScale=d3.scale.linear().domain([0,100]).range([10,160]).clamp(true);
+    
+    function dataViz(data) {
+
+    randomRotate=d3.scale.linear().domain([0,1]).range([-20,20]);
+
+     d3.layout.cloud().size([500, 500])
+      .words(data)
+      .rotate(0)
+      .fontSize(function(d) { return wordScale(d.frequency); })
+      .on("end", draw)
+      .start();
+      
+      function draw(words) {
+        
+      var wordG = d3.select("svg").append("g").attr("id", "wordCloudG").attr("transform","translate(250,250)");
+
+      wordG.selectAll("text")
+      .data(words)
+      .enter()
+      .append("text")
+      .style("font-size", function(d) { return d.size + "px"; })
+        .style("opacity", .75)
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; });
+      }
+
+    }
+</script>
+  </footer>
+
+</html>

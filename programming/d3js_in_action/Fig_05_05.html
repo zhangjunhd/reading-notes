@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 5 - Example 2</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="colorbrewer.js" type="text/JavaScript"></script>
+</head>
+<style>
+  svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+  }
+  
+
+
+</style>
+<body>
+
+<div id="viz">
+  <svg>
+  </svg>
+</div>
+<div id="controls" />
+</body>
+  <footer>
+    
+<script>
+var pieChart = d3.layout.pie();
+var yourPie = pieChart([1,1,2]);
+
+var newArc = d3.svg.arc();
+newArc.outerRadius(100);
+
+      d3.select("svg")
+     .append("g")
+     .attr("transform","translate(250,250)")
+     .selectAll("path")
+     .data(yourPie)
+     .enter()
+     .append("path")
+     .attr("d", newArc)
+     .style("fill", "blue")
+     .style("opacity", .5)
+     .style("stroke", "black")
+     .style("stroke-width", "2px")
+
+</script>
+  </footer>
+
+</html>
