@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 8 - Example 5</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+</head>
+<style>
+tr {
+  border: 1px gray solid;
+}
+
+td {
+  border: 2px black solid;
+}
+
+div.table {
+  position:relative;
+}
+div.data {
+  position: absolute;
+  width: 90px;
+  padding: 0 5px;
+}
+
+div.head {
+  position: absolute;
+}
+
+div.datarow {
+  position: absolute;
+  width: 100%;
+  border-top: 2px black solid;
+  background: white;
+  height: 35px;
+  overflow: hidden;
+}
+
+div.gallery {
+  position: relative;
+}
+
+img.infinite {
+  position: absolute;
+  background: rgba(255,255,255,0);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+}
+
+</style>
+<body>
+<div id="traditional"> 
+</div>
+</body>
+  <footer>
+    
+<script>
+d3.select("#traditional")
+.append("canvas")
+.attr("height", 500)
+.attr("width", 500);
+  
+  var context = d3.select("canvas").node().getContext("2d");
+
+  context.strokeStyle = "black";
+  context.lineWidth = 2;
+  context.fillStyle = "red";
+  context.beginPath();
+  context.arc(250,250,200,0,2*Math.PI);
+  context.fill();
+  context.stroke();
+  
+  context.textAlign = "center";
+  context.font="200px Georgia";
+  context.fillStyle = "black";
+  context.textAligh = "center";
+  context.fillText("1",250,250);
+
+
+</script>
+  </footer>
+
+</html>

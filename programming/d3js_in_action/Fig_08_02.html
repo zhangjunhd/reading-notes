@@ -1,0 +1,93 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 8 - Example 1</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+</head>
+<style>
+tr {
+  border: 1px gray solid;
+}
+
+td {
+  border: 2px black solid;
+}
+
+div.table {
+  position:relative;
+}
+div.data {
+  position: absolute;
+  width: 90px;
+  padding: 0 5px;
+}
+
+div.head {
+  position: absolute;
+}
+
+div.datarow {
+  position: absolute;
+  width: 100%;
+  border-top: 2px black solid;
+  background: white;
+  height: 35px;
+  overflow: hidden;
+}
+
+div.gallery {
+  position: relative;
+}
+
+img.infinite {
+  position: absolute;
+  background: rgba(255,255,255,0);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+}
+
+</style>
+<body>
+<div id="traditional"> 
+</div>
+</body>
+  <footer>
+    
+<script>
+d3.json("tweets.json",function(error,data) { createSpreadsheet(data.tweets)});
+      
+      function createSpreadsheet(incData) {
+        
+        var keyValues = d3.keys(incData[0])
+        
+        d3.select("#traditional")
+        .append("table")
+
+        d3.select("table")
+        .append("tr")
+        .attr("class", "head")
+        .selectAll("th")
+        .data(keyValues)
+        .enter()
+        .append("th")
+        .html(function (d) {return d})
+        
+        d3.select("table")
+        .selectAll("tr.data")
+        .data(incData).enter()
+        .append("tr")
+        .attr("class", "data")
+        
+        d3.selectAll("tr")
+        .selectAll("td")
+        .data(function(d) {return d3.entries(d)})
+        .enter()
+        .append("td")
+        .html(function (d) {return d.value})
+      }
+
+</script>
+  </footer>
+
+</html>
