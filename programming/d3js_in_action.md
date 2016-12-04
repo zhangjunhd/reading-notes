@@ -19,6 +19,7 @@
 - [6.Network visualization][6]
 - [7.Geospatial information visualization][7]
 - [8.Traditional DOM manipulation with D3][8]
+- [9.Composing interactive applications][9]
 
 
 [1]: d3js_in_action/d3js_in_action_ch1.md

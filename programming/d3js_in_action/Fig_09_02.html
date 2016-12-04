@@ -1,0 +1,217 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 9 - Example 1</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="colorbrewer.js" type="text/JavaScript"></script>
+</head>
+<style>
+body,html {
+width: 100%;
+height: 100%; #a
+}
+.svgDash {
+width: 50%;
+height: 50%;
+background: #fcfcfc;
+}
+
+#leftSVG {
+ float:left; 
+}
+
+#spreadsheet {
+width: 100%;
+height: 50%;
+overflow:auto;
+background: #fcfcfc;
+}
+
+circle.pack {
+stroke: black;
+stroke-width: 2px;
+}
+
+rect.bar {
+fill: gray;
+stroke: black;
+stroke-width: 1px;
+}
+
+</style>
+<body>
+  <svg id="leftSVG" class="svgDash"></svg>
+<svg id="rightSVG"  class="svgDash"></svg>
+<div id="spreadsheet"></div>
+</body>
+  <footer>
+    
+<script>
+  
+  window.onresize = function(event) {
+      redraw();
+  }
+  
+  d3.json("tweets.json",function(error,data) {main(data.tweets)});
+
+//  d3.selectAll("svg").append("rect").attr("width", 100).attr("height", 100);
+
+  function main(incData) {
+  createSpreadsheet(incData, "#controls");
+    
+  var nestedTweets = d3.nest()
+    .key(function (el) {return el.user})
+    .entries(incData);
+
+    packableTweets = {id: "root", values: nestedTweets}
+
+    createBar(nestedTweets, "#rightSVG");
+    createPack(packableTweets, "#leftSVG");
+    redraw();
+  }
+  
+  function canvasSize(targetElement) {
+    var newHeight = parseFloat(d3.select(targetElement).node().clientHeight);
+    var newWidth = parseFloat(d3.select(targetElement).node().clientWidth);
+    return [newWidth,newHeight];
+  }
+  
+  function redraw() {
+      var leftSize = canvasSize("#leftSVG");
+      packChart.size(leftSize)
+
+      d3.select("#leftSVG")
+      .selectAll("circle")
+      .data(packChart(packableTweets))
+      .attr("r", function(d) {return d.r - (d.depth * 0)})
+      .attr("cx", function(d) {return d.x})
+      .attr("cy", function(d) {return d.y})
+      .style("stroke", "black")
+      .style("stroke", "2px")
+      
+      var rectNumber = d3.select("#rightSVG").selectAll("rect").size();
+      var rectData = d3.select("#rightSVG").selectAll("rect").data();
+      var rectMax = d3.max(rectData, function(d) {return d.values.length});
+      
+      var rightSize = canvasSize("#rightSVG");
+
+      barXScale = d3.scale.ordinal().domain(rectData.map(function(d){return d.key})).rangeBands([0, rightSize[0]]);
+
+      barYScale = d3.scale.linear()
+      .domain([0, rectMax])
+      .range([rightSize[1],0])
+      
+      d3.select("#rightSVG")
+      .selectAll("rect")
+      .attr("x", function(d,i) {return barXScale(d.key) + 5})
+      .attr("width", function() {return barXScale.rangeBand() - 5})
+      .attr("y", function(d) {return barYScale(d.values.length)})
+      .attr("height", function(d) {return rightSize[1] - barYScale(d.values.length)})
+  }
+  
+  function createBar(incData,targetSVG) {
+      
+      d3.select(targetSVG).selectAll("rect").data(incData)
+      .enter()
+      .append("rect")
+      .attr("fill", "darkred")
+      }
+  
+  function createPack(incData,targetSVG) {
+
+      var depthScale = d3.scale.quantize().domain([0,1,2]).range(colorbrewer.Reds[3]);
+
+      packChart = d3.layout.pack();
+      packChart.size([500,500])
+      .children(function(d) {return d.values})
+      .value(function(d) {return 1})
+
+      d3.select(targetSVG)
+      .append("g")
+      .attr("transform", "translate(0,0)")
+      .selectAll("circle")
+      .data(packChart(incData))
+      .enter()
+      .append("circle")
+      .style("fill", function(d) {return depthScale(d.depth)});
+    }
+      function createSpreadsheet(incData, targetDiv) {
+        
+        var keyValues = d3.keys(incData[0])
+        
+        d3.select(targetDiv)
+        .append("div")
+        .attr("class", "table")
+
+        d3.select("div.table")
+        .append("div")
+        .attr("class", "head row")
+        .selectAll("div.data")
+        .data(keyValues)
+        .enter()
+        .append("div")
+        .attr("class", "data")
+        .html(function (d) {return d})
+        .style("left", function(d,i) {return (i * 100) + "px"});
+
+        d3.select("div.table")
+        .selectAll("div.datarow")
+        .data(incData, function(d) {return d.content}).enter()
+        .append("div")
+        .attr("class", "datarow row")
+        .style("top", function(d,i) {return (40 + (i * 40)) + "px"});
+        
+        d3.selectAll("div.datarow")
+        .selectAll("div.data")
+        .data(function(d) {return d3.entries(d)})
+        .enter()
+        .append("div")
+        .attr("class", "data")
+        .html(function (d) {return d.value})
+        .style("left", function(d,i,j) {return (i * 100) + "px"});
+
+        
+        function restoreRows() {
+          d3.selectAll("div.datarow")
+            .transition()
+            .duration(2000)
+            .style("top", function(d,i) {return (40 + (i * 40)) + "px"});
+        }
+        function sortColumns() {
+          d3.selectAll("div.row")
+          .selectAll("div.data")
+            .transition()
+            .duration(10000)
+        .style("left", function(d,i,j) {return (Math.abs(i - 4) * 100) + "px"});
+        }
+
+        function restoreColumns() {
+          d3.selectAll("div.row")
+          .selectAll("div.data")
+            .transition()
+            .duration(2000)
+        .style("left", function(d,i,j) {return (i * 100) + "px"});
+        }
+
+        function sortRows() {
+          var dataset = d3.selectAll("div.datarow").data();
+            dataset.sort(function(a,b) {
+              var aDate = new Date(a.timestamp);
+              var bDate = new Date(b.timestamp);
+    if (aDate > bDate)
+    return 1;
+    if (aDate < bDate)
+    return -1;
+    return 0;
+    });
+            d3.selectAll("div.datarow")
+            .data(dataset, function(d) {return d.content})
+            .transition()
+            .duration(2000)
+            .style("top", function(d,i) {return (40 + (i * 40)) + "px"});
+        }
+      }  
+</script>
+  </footer>
+
+</html>
