@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 7 - Example 1</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="colorbrewer.js" type="text/JavaScript"></script>
+<script src="queue.js" type="text/JavaScript"></script>
+</head>
+<style>
+  svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+  }
+  
+  .countries {
+    fill: red;
+    fill-opacity: .5;
+    stroke: black;
+    stroke-width: 1px;
+  }
+
+</style>
+<body>
+
+<div id="viz">
+  <svg>
+  </svg>
+</div>
+<div id="controls" />
+</body>
+  <footer>
+    
+<script>
+  d3.json("world.geojson", createMap);
+  
+  function createMap(countries) {
+    var aProjection = d3.geo.mercator();
+    var geoPath = d3.geo.path().projection(aProjection);
+    d3.select("svg").selectAll("path").data(countries.features)
+    	.enter()
+.append("path")
+.attr("d", geoPath)
+.attr("class", "countries")
+}
+
+</script>
+  </footer>
+
+</html>

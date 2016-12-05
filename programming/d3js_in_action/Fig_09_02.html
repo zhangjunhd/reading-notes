@@ -17,7 +17,7 @@ background: #fcfcfc;
 }
 
 #leftSVG {
- float:left; 
+ float:left;
 }
 
 #spreadsheet {
@@ -45,20 +45,20 @@ stroke-width: 1px;
 <div id="spreadsheet"></div>
 </body>
   <footer>
-    
+
 <script>
-  
+
   window.onresize = function(event) {
       redraw();
   }
-  
+
   d3.json("tweets.json",function(error,data) {main(data.tweets)});
 
 //  d3.selectAll("svg").append("rect").attr("width", 100).attr("height", 100);
 
   function main(incData) {
   createSpreadsheet(incData, "#controls");
-    
+
   var nestedTweets = d3.nest()
     .key(function (el) {return el.user})
     .entries(incData);
@@ -69,13 +69,13 @@ stroke-width: 1px;
     createPack(packableTweets, "#leftSVG");
     redraw();
   }
-  
+
   function canvasSize(targetElement) {
     var newHeight = parseFloat(d3.select(targetElement).node().clientHeight);
     var newWidth = parseFloat(d3.select(targetElement).node().clientWidth);
     return [newWidth,newHeight];
   }
-  
+
   function redraw() {
       var leftSize = canvasSize("#leftSVG");
       packChart.size(leftSize)
@@ -88,11 +88,11 @@ stroke-width: 1px;
       .attr("cy", function(d) {return d.y})
       .style("stroke", "black")
       .style("stroke", "2px")
-      
+
       var rectNumber = d3.select("#rightSVG").selectAll("rect").size();
       var rectData = d3.select("#rightSVG").selectAll("rect").data();
       var rectMax = d3.max(rectData, function(d) {return d.values.length});
-      
+
       var rightSize = canvasSize("#rightSVG");
 
       barXScale = d3.scale.ordinal().domain(rectData.map(function(d){return d.key})).rangeBands([0, rightSize[0]]);
@@ -100,7 +100,7 @@ stroke-width: 1px;
       barYScale = d3.scale.linear()
       .domain([0, rectMax])
       .range([rightSize[1],0])
-      
+
       d3.select("#rightSVG")
       .selectAll("rect")
       .attr("x", function(d,i) {return barXScale(d.key) + 5})
@@ -108,15 +108,15 @@ stroke-width: 1px;
       .attr("y", function(d) {return barYScale(d.values.length)})
       .attr("height", function(d) {return rightSize[1] - barYScale(d.values.length)})
   }
-  
+
   function createBar(incData,targetSVG) {
-      
+
       d3.select(targetSVG).selectAll("rect").data(incData)
       .enter()
       .append("rect")
       .attr("fill", "darkred")
       }
-  
+
   function createPack(incData,targetSVG) {
 
       var depthScale = d3.scale.quantize().domain([0,1,2]).range(colorbrewer.Reds[3]);
@@ -136,9 +136,9 @@ stroke-width: 1px;
       .style("fill", function(d) {return depthScale(d.depth)});
     }
       function createSpreadsheet(incData, targetDiv) {
-        
+
         var keyValues = d3.keys(incData[0])
-        
+
         d3.select(targetDiv)
         .append("div")
         .attr("class", "table")
@@ -160,7 +160,7 @@ stroke-width: 1px;
         .append("div")
         .attr("class", "datarow row")
         .style("top", function(d,i) {return (40 + (i * 40)) + "px"});
-        
+
         d3.selectAll("div.datarow")
         .selectAll("div.data")
         .data(function(d) {return d3.entries(d)})
@@ -170,7 +170,7 @@ stroke-width: 1px;
         .html(function (d) {return d.value})
         .style("left", function(d,i,j) {return (i * 100) + "px"});
 
-        
+
         function restoreRows() {
           d3.selectAll("div.datarow")
             .transition()
@@ -210,7 +210,7 @@ stroke-width: 1px;
             .duration(2000)
             .style("top", function(d,i) {return (40 + (i * 40)) + "px"});
         }
-      }  
+      }
 </script>
   </footer>
 

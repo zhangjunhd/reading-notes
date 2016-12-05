@@ -1,0 +1,114 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 11 - Example 8</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+</head>
+<style>
+body, html {
+    margin: 0;
+  }
+canvas {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+svg {
+  position: absolute;
+  width:500px;
+  height:500px;
+}
+path.country {
+    fill: gray;
+    stroke-width: 1;
+    stroke: black;
+    opacity: .5;
+}
+path.sample {
+    stroke: black;
+    stroke-width: 1px;
+    fill: red;
+    fill-opacity: .5;
+}
+line.link {
+      stroke-width: 1px;
+      stroke: black;
+      stroke-opacity: .5;
+}
+circle.node {
+  fill: red;
+  stroke: white;
+  stroke-width: 1px;
+}
+circle.xy {
+  fill: pink;
+  stroke: black;
+  stroke-width: 1px;
+}
+rect.extent {
+  fill-opacity:.1;
+  stroke: black;
+  stroke-width: 1px;
+}
+</style>
+<body>
+<canvas height="500" width="500"></canvas>
+<div id="viz">
+  <svg></svg>
+</div>
+</body>
+  <footer>
+    
+<script>
+  sampleData = d3.range(10000).map(function(d) {
+    var datapoint = {};
+    datapoint.id = "Sample Node " + d;
+    datapoint.x = Math.random() * 500;
+    datapoint.y = Math.random() * 500;
+    
+    return datapoint;
+  })
+  
+  quadtree = d3.geom.quadtree()
+    .extent([[0,0], [500,500]])
+    .x(function(d) {return d.x})
+    .y(function(d) {return d.y});
+    
+  quadData = quadtree(sampleData);
+  
+  d3.select("svg").selectAll("circle").data(sampleData)
+  .enter()
+  .append("circle")
+  .attr("r", 3)
+  .attr("cx", function(d) {return d.x})
+  .attr("cy", function(d) {return d.y})
+  .style("fill", "pink")
+  .style("stroke", "black")
+  .style("stroke-width", "1px")
+
+  var brush = d3.svg.brush()
+    .x(d3.scale.identity().domain([0, 500]))
+    .y(d3.scale.identity().domain([0, 500]))
+    .on("brush", brushed);
+    
+  d3.select("svg").call(brush);
+  
+function brushed() {
+  var e = brush.extent();
+  
+  d3.selectAll("circle").filter(function(d) {return d.selected}).style("fill", "pink").each(function(d) {d.selected = false})
+
+  quadData.visit(function(node,x1,y1,x2,y2) {
+    if (node.point) {
+      if (node.point.x >= e[0][0] && node.point.x <= e[1][0] && node.point.y >= e[0][1] && node.point.y <= e[1][1]) {
+        node.point.selected = true;
+      }
+    }
+    return x1 > e[1][0] || y1 > e[1][1] || x2 < e[0][0] || y2 < e[0][1];
+  })
+  d3.selectAll("circle").filter(function(d) {return d.selected}).style("fill", "darkred")
+}
+</script>
+  </footer>
+
+</html>

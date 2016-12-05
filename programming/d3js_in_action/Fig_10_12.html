@@ -1,0 +1,237 @@
+<html>
+<head>
+  <title>D3 in Action Chapter 10 - Example 4</title>
+  <meta charset="utf-8" />
+<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="colorbrewer.js" type="text/JavaScript"></script>
+</head>
+<style>
+  svg {
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+  }
+</style>
+<body>
+  <div id="viz">
+  <svg></svg>
+</div>
+</body>
+  <footer>
+    
+<script>
+  d3.json("world.geojson", function(error, data) {
+      legendComponent(data);
+    })
+  
+  function legendComponent(data) {
+    var grid = d3.layout.grid();
+    grid.size([300,300]);
+    var griddedData = grid(data.features);
+
+    griddedData.forEach(function (country) {
+      country.size = d3.geo.area(country);
+    })
+    
+    
+    d3.select("svg")
+    .append("g")
+    .attr("transform", "translate(50,50)")
+    .selectAll("circle").data(griddedData)
+    .enter()
+    .append("circle")
+    .attr("cx", function(d) {return d.x})
+    .attr("cy", function(d) {return d.y})
+    .attr("r", 10)
+    .style("fill", "lightgray")
+    .style("stroke", "black")
+    .style("stroke-width", "1px")
+
+    var sizeExtent = d3.extent(griddedData, function (d) {return d.size})
+    countryColor = d3.scale.quantile().domain(sizeExtent).range(colorbrewer.Reds[7]);
+
+    d3.selectAll("circle").style("fill", function (d) {return countryColor(d.size)});
+    
+    newLegend = d3.svg.legend().scale(countryColor).title("Country Size").formatter(d3.format(".2f")).unitLabel("Steradians");
+    d3.select("svg").append("g").attr("transform", "translate(50,400)")
+    .attr("id", "legend")
+    .call(newLegend)
+    
+    d3.select("#legend").selectAll("rect").on("mouseover", legendOver);
+  }
+  
+  d3.layout.grid = function() {
+  var gridSize = [10,10];
+  var gridColumns;
+  var gridRows;
+  var gridXScale = d3.scale.linear();
+  var gridYScale = d3.scale.linear();
+
+    function processGrid(data) {
+
+      var rows = Math.ceil(Math.sqrt(data.length));
+      var columns = Math.ceil(Math.sqrt(data.length));
+
+      gridXScale.domain([1,columns]).range([0,gridSize[0]]);
+      gridYScale.domain([1,rows]).range([0,gridSize[1]]);
+
+      var x = 0;
+
+        for (i = 1; i <= rows; i++) { 
+          for (j = 1; j <= columns; j++) {
+            if (data[x]) {
+              data[x].x = gridXScale(j);
+              data[x].y = gridYScale(i);
+              x++;
+            }
+            else {
+              break;
+            }
+          }
+        }
+      
+      return data;
+    }
+    
+    processGrid.size = function(newSize) {
+      	if (!arguments.length) return gridSize;
+
+        gridSize = newSize;
+        return this;
+    }
+
+    return processGrid;
+  }
+  
+    d3.svg.legend = function() {
+      var data = [];
+      var size = [300,20];
+      var xScale = d3.scale.linear();
+      var scale;
+      var title = "Legend";
+      var numberFormat = d3.format(".4n");
+      var units = "Units";
+
+    function legend(gSelection) {
+      
+      createLegendData(scale);
+      
+      var xMin = d3.min(data, function(d) {return d.domain[0]});
+      var xMax = d3.max(data, function(d) {return d.domain[1]});
+      xScale.domain([xMin,xMax]).range([0,size[0]])
+
+      gSelection.selectAll("rect")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("height", size[1])
+      .attr("width", function (d) {return xScale(d.domain[1]) -  xScale(d.domain[0])})
+      .attr("x", function (d) {return xScale(d.domain[0])})
+      .style("fill", function(d) {return d.color})
+
+      gSelection.selectAll("line")
+      .data(data)
+      .enter()
+      .append("line")
+      .attr("x1", function (d) {return xScale(d.domain[0])})
+      .attr("x2", function (d) {return xScale(d.domain[0])})
+      .attr("y1", 0)
+      .attr("y2", size[1] + 5)
+      .style("stroke", "black")
+      .style("stroke-width", "2px")
+
+      gSelection.selectAll("text")
+      .data(data)
+      .enter()
+      .append("g")
+      .attr("transform", function (d) {return "translate(" + (xScale(d.domain[0])) +"," + (size[1] + 20) + ")"})
+      .style("text-anchor", "middle")
+      .append("text")
+      .text(function(d) {return numberFormat(d.domain[0])})
+
+      gSelection.append("text")
+      .attr("transform", function (d) {return "translate(" + (xScale(xMin)) +"," + (size[1] - 30) + ")"})
+      .text(title)
+
+      gSelection.append("text")
+      .attr("transform", function (d) {return "translate(" + (xScale(xMax)) +"," + (size[1] + 20) + ")"})
+      .text(units)
+
+      return legend;
+    }
+    
+    function createLegendData(incScale) {
+      var rangeArray = incScale.range();
+      data = [];
+      
+      for (x in rangeArray) {
+        var colorValue = rangeArray[x];
+        var domainValues = incScale.invertExtent(colorValue);
+        data.push({color: colorValue, domain: domainValues})
+      }
+    }
+
+    
+    legend.scale = function(newScale) {
+      if (!arguments.length) return scale;
+      scale = newScale;
+      return this;
+    }
+
+    legend.title = function(newTitle) {
+      if (!arguments.length) return title;
+      title = newTitle;
+      return this;
+    }
+
+    legend.unitLabel = function(newUnits) {
+      if (!arguments.length) return units;
+      units = newUnits;
+      return this;
+    }
+
+    legend.formatter = function(newFormatter) {
+      if (!arguments.length) return numberFormat;
+      numberFormat = newFormatter;
+      return this;
+    }
+
+    return legend;
+  }
+
+      d3.svg.legend0 = function() {
+
+    function legend(gSelection) {
+      var testData = [1,2,3,4,5]
+      
+      gSelection.selectAll("rect")
+      .data(testData)
+      .enter()
+      .append("rect")
+      .attr("height", 20)
+      .attr("width", 20)
+      .attr("x", function (d,i) {return i *25})
+      .style("fill", "red")
+      
+      return legend;
+    }
+
+    return legend;
+  }
+  
+  function legendOver(d) {
+    console.log(d)
+    d3.selectAll("circle")
+    .style("opacity", function(p) {
+      if (p.size >= d.domain[0] && p.size <= d.domain[1]) {
+        return 1;
+      }
+      else {
+        return .25;
+      }
+    })
+  }
+</script>
+  </footer>
+
+</html>

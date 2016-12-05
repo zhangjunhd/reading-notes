@@ -20,7 +20,8 @@
 - [7.Geospatial information visualization][7]
 - [8.Traditional DOM manipulation with D3][8]
 - [9.Composing interactive applications][9]
-
+- [10.Writing layouts and components][10]
+- [11.Big data visualization][11]
 
 [1]: d3js_in_action/d3js_in_action_ch1.md
 [2]: d3js_in_action/d3js_in_action_ch2.md
