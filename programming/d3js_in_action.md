@@ -34,4 +34,3 @@
 [9]: d3js_in_action/d3js_in_action_ch9.md
 [10]: d3js_in_action/d3js_in_action_ch10.md
 [11]: d3js_in_action/d3js_in_action_ch11.md
-[12]: d3js_in_action/d3js_in_action_ch12.md
