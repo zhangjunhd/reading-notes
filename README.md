@@ -31,6 +31,7 @@
 1. [拖延心理学](psychology/procrastination.md)
 1. [叔本华的治疗](psychology/the_schopenhauer_cure.md)
 1. [幸福是陷阱?](psychology/the_happiness_trap.md)
+1. [语言本能](psychology/the_language_instinct.md)
 
 ## 自律
 1. [读gtdlife博客摘录](gtdlife.md)
