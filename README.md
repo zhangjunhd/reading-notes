@@ -1,5 +1,5 @@
 # reading-notes
-## [儒释道][1]
+## [东方哲学][1]
 1. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
 1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
 1. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
@@ -17,7 +17,6 @@
 1. [庄子的快活](eastern_philosophy/zhuang_zi_de_kuai_huo.md)
 1. [关系之镜：两性的真爱](eastern_philosophy/liang_xing_de_zhen_ai.md)
 1. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
-1. [活着活着就老了-十信](eastern_philosophy/shi_xin.md)
 1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
 1. [悉达多](eastern_philosophy/xi_da_duo.md)
@@ -33,16 +32,21 @@
 1. [幸福是陷阱?](psychology/the_happiness_trap.md)
 1. [语言本能](psychology/the_language_instinct.md)
 
-## 自律
-1. [读gtdlife博客摘录](gtdlife.md)
+## [自律][5]
+1. [读gtdlife博客摘录](autonomy/gtdlife.md)
+1. [如何不用额外咖啡因也能保持专注](autonomy/concentration.md)
+1. [新生——七年就是一辈子](autonomy/rebirth.md)
+1. [写博客是一种“写作式学习”](autonomy/blogger.md)
+1. [冯鑫家信：怎样才算好好活着](autonomy/a_letter_home_by_fengxin.md)
+1. [活着活着就老了-十信](autonomy/shi_xin_by_fengtang.md)
 
-## [程序设计][3]
-1. [C++ API设计-C++ API兼容性](programming/cpp_api_design.md)
-1. [搜索引擎](programming/search_engine.md)
-1. [D3.js in Action](programming/d3js_in_action.md)
-1. [前端架构演变](programming/front-end_architecture.md)
-1. [React Starter Kit源码研究](programming/react-start-kit.md)
-1. [Linux动态库与静态库](programming/linux_lib.md)
+## [信息技术][3]
+1. [C++ API设计-C++ API兼容性](it/cpp_api_design.md)
+1. [搜索引擎](it/search_engine.md)
+1. [D3.js in Action](it/d3js_in_action.md)
+1. [前端架构演变](it/front-end_architecture.md)
+1. [React Starter Kit源码研究](it/react-start-kit.md)
+1. [Linux动态库与静态库](it/linux_lib.md)
 
 ## [英语学习][4]
 1. [纸牌屋人物S01](english/character_relation_s01.md)
@@ -50,5 +54,6 @@
 
 [1]: eastern_philosophy/
 [2]: psychology/
-[3]: programming/
+[3]: it/
 [4]: english/
+[5]: autonomy/
