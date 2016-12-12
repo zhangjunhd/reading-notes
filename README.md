@@ -39,6 +39,7 @@
 1. [写博客是一种“写作式学习”](autonomy/blogger.md)
 1. [冯鑫家信：怎样才算好好活着](autonomy/a_letter_home_by_fengxin.md)
 1. [活着活着就老了-十信](autonomy/shi_xin_by_fengtang.md)
+1. [暗时间](autonomy/dark_time.md)
 
 ## [信息技术][3]
 1. [C++ API设计-C++ API兼容性](it/cpp_api_design.md)
