@@ -21,26 +21,6 @@
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
 1. [悉达多](eastern_philosophy/xi_da_duo.md)
 
-## [心理学][2]
-1. [精神分析引论](psychology/general_introduction_to_psycho_analysis.md)
-1. [荣格心理学入门](psychology/a_primer_of_jungian_psychology.md)
-1. [自卑与超越](psychology/inferiority_and_superiority.md)
-1. [意志力](psychology/willpower.md)
-1. [自控力](psychology/the_willpower_instinct.md)
-1. [拖延心理学](psychology/procrastination.md)
-1. [叔本华的治疗](psychology/the_schopenhauer_cure.md)
-1. [幸福是陷阱?](psychology/the_happiness_trap.md)
-1. [语言本能](psychology/the_language_instinct.md)
-
-## [自律][5]
-1. [读gtdlife博客摘录](autonomy/gtdlife.md)
-1. [如何不用额外咖啡因也能保持专注](autonomy/concentration.md)
-1. [新生——七年就是一辈子](autonomy/rebirth.md)
-1. [写博客是一种“写作式学习”](autonomy/blogger.md)
-1. [冯鑫家信：怎样才算好好活着](autonomy/a_letter_home_by_fengxin.md)
-1. [活着活着就老了-十信](autonomy/shi_xin_by_fengtang.md)
-1. [暗时间](autonomy/dark_time.md)
-
 ## [信息技术][3]
 1. [C++ API设计-C++ API兼容性](it/cpp_api_design.md)
 1. [搜索引擎](it/search_engine.md)
@@ -57,4 +37,3 @@
 [2]: psychology/
 [3]: it/
 [4]: english/
-[5]: autonomy/
