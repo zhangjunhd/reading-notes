@@ -21,19 +21,10 @@
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
 1. [悉达多](eastern_philosophy/xi_da_duo.md)
 
-## [信息技术][3]
-1. [C++ API设计-C++ API兼容性](it/cpp_api_design.md)
-1. [搜索引擎](it/search_engine.md)
-1. [D3.js in Action](it/d3js_in_action.md)
-1. [前端架构演变](it/front-end_architecture.md)
-1. [React Starter Kit源码研究](it/react-start-kit.md)
-1. [Linux动态库与静态库](it/linux_lib.md)
+## 测试
+数学公式
 
-## [英语学习][4]
-1. [纸牌屋人物S01](english/character_relation_s01.md)
-1. [纸牌屋.House.Of.Cards.2013.S01E01](english/house-of-cards-2013-s01e01.md)
+`$\frac{1}{2}$`
 
 [1]: eastern_philosophy/
 [2]: psychology/
-[3]: it/
-[4]: english/
