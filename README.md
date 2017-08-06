@@ -24,7 +24,7 @@
 ## 测试
 数学公式
 
-`$\frac{1}{2}$`
+$$\frac{1}{2}$$
 
 [1]: eastern_philosophy/
 [2]: psychology/
