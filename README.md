@@ -34,6 +34,7 @@
 ## [互联网][4]
 1. [维基经济学](internet/wikinomics.md)
 1. [长尾理论2.0](internet/long_tail.md)
+1. [从0到1](internet/zero_to_one.md)
 
 [1]: eastern_philosophy/
 [2]: success/
