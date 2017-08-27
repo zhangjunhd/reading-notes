@@ -1,4 +1,3 @@
-# reading-notes
 ## [东方哲学][1]
 1. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
 1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
