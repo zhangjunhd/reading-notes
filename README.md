@@ -38,7 +38,7 @@
 1. [知识的边界](internet/too_big_to_know.md)
 1. [隐形VISA](internet/visa.md)
 1. [如何打造超级IP](internet/create_ip.md)
-
+1. [超级IP](internet/super_ip.md)
 
 
 
