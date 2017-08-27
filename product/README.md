@@ -3,3 +3,4 @@
     - [笔记2017.8.27](note20170827_perspective_product.md)
     - [运营数据指标](operation_data.md)
     - [你真的了解MVP（最小化可用产品）么？](mvp.md)
+    - [如何撰写MRD和PRD](mrd_prd.md)
