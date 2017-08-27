@@ -29,7 +29,7 @@
 1. [周鸿祎自述-我的互联网方法论](product/zhou_hong_yi.md)
 1. [互联网+小米案例版](product/internet_plus_xiaomi.md)
 1. [重来ReWork](product/rework.md)
-
+1. [Inspired-How To Create Products Customers Love](product/inspired.md)
 
 
 [1]: eastern_philosophy/
