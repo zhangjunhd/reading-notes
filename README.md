@@ -24,5 +24,9 @@
 ## [成功学][2]
 1. [新生——七年就是一辈子](success/xin_sheng.md)
 
+## [产品经理][3]
+1. [产品的视角：从热闹到门道](product/perspective_product.md)
+
 [1]: eastern_philosophy/
 [2]: success/
+[3]: product/
