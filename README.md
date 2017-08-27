@@ -31,7 +31,7 @@
 1. [重来ReWork](product/rework.md)
 1. [Inspired-How To Create Products Customers Love](product/inspired.md)
 
-## 互联网
+## [互联网][4]
 1. [维基经济学](internet/wikinomics.md)
 
 
