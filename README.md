@@ -27,6 +27,10 @@
 ## [产品经理][3]
 1. [产品的视角：从热闹到门道](product/perspective_product.md)
 1. [周鸿祎自述-我的互联网方法论](product/zhou_hong_yi.md)
+1. [互联网+小米案例版](product/internet_plus_xiaomi.md)
+
+
+
 
 [1]: eastern_philosophy/
 [2]: success/
