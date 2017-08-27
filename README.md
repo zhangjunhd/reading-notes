@@ -31,7 +31,11 @@
 1. [重来ReWork](product/rework.md)
 1. [Inspired-How To Create Products Customers Love](product/inspired.md)
 
+## 互联网
+1. [维基经济学](internet/wikinomics.md)
+
 
 [1]: eastern_philosophy/
 [2]: success/
 [3]: product/
+[4]: internet/
