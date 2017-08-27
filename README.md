@@ -37,6 +37,10 @@
 1. [从0到1](internet/zero_to_one.md)
 1. [知识的边界](internet/too_big_to_know.md)
 1. [隐形VISA](internet/visa.md)
+1. [如何打造超级IP](internet/create_ip.md)
+
+
+
 
 [1]: eastern_philosophy/
 [2]: success/
