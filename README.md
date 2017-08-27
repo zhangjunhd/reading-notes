@@ -36,6 +36,7 @@
 1. [长尾理论2.0](internet/long_tail.md)
 1. [从0到1](internet/zero_to_one.md)
 1. [知识的边界](internet/too_big_to_know.md)
+1. [隐形VISA](internet/visa.md)
 
 [1]: eastern_philosophy/
 [2]: success/
