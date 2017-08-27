@@ -39,9 +39,11 @@
 1. [如何打造超级IP](internet/create_ip.md)
 1. [超级IP](internet/super_ip.md)
 
-
+# [管理][5]
+1. [成为技术领导者](management/tech_leader.md)
 
 [1]: eastern_philosophy/
 [2]: success/
 [3]: product/
 [4]: internet/
+[5]: management/
