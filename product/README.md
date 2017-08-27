@@ -7,3 +7,4 @@
 1. [周鸿祎自述-我的互联网方法论](zhou_hong_yi.md)
 1. [互联网+小米案例版](internet_plus_xiaomi.md)
 1. [重来ReWork](rework.md)
+1. [Inspired-How To Create Products Customers Love](inspired.md)
