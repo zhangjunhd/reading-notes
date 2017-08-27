@@ -1,4 +1,4 @@
-## [东方哲学][1]
+# [东方哲学][1]
 1. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
 1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
 1. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
@@ -20,17 +20,17 @@
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
 1. [悉达多](eastern_philosophy/xi_da_duo.md)
 
-## [成功学][2]
+# [成功学][2]
 1. [新生——七年就是一辈子](success/xin_sheng.md)
 
-## [产品经理][3]
+# [产品经理][3]
 1. [产品的视角：从热闹到门道](product/perspective_product.md)
 1. [周鸿祎自述-我的互联网方法论](product/zhou_hong_yi.md)
 1. [互联网+小米案例版](product/internet_plus_xiaomi.md)
 1. [重来ReWork](product/rework.md)
 1. [Inspired-How To Create Products Customers Love](product/inspired.md)
 
-## [互联网][4]
+# [互联网][4]
 1. [维基经济学](internet/wikinomics.md)
 1. [长尾理论2.0](internet/long_tail.md)
 1. [从0到1](internet/zero_to_one.md)
