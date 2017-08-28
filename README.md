@@ -43,6 +43,7 @@
 1. [成为技术领导者](management/tech_leader.md)
 1. [人件（第2版）](management/peopleware.md)
 1. [软件随想录](management/more_joel_on_software.md)
+1. [工业人的未来](management/the_future_of_industrial_man.md)
 
 [1]: eastern_philosophy/
 [2]: success/
