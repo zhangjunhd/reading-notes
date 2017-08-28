@@ -41,6 +41,7 @@
 
 # [管理][5]
 1. [成为技术领导者](management/tech_leader.md)
+1. [人件（第2版）](management/peopleware.md)
 
 [1]: eastern_philosophy/
 [2]: success/
