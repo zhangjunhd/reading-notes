@@ -47,3 +47,7 @@ Product Backlog:
 计划纸牌，它的作用是防止项目在开发过程中，被某些人所领导。怎么用的呢？比如A程序员开发一个功能，需要5个小时，B程序员认为只需要半小时，那他们各自取相应的牌，藏在手中，最后摊牌，如果时间差距很大，那么A和B就可以讨论A为什么要5个小时...
 
 ![6](http://ou8qjsj0m.bkt.clouddn.com//17-8-31/30350981.jpg)
+
+Sprint燃尽图（Sprint Burn-down Chart)显示了Sprint中累积剩余的工作量，它是一个反映工作量完成状况的趋势图。 图中Y轴代表的是剩余工作量，X轴代表的是Sprint的工作日。
+
+![7](http://ou8qjsj0m.bkt.clouddn.com//17-8-31/41245238.jpg)
