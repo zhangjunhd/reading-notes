@@ -6,6 +6,7 @@
     - [如何撰写MRD和PRD](mrd_prd.md)
     - [波士顿矩阵使用方法](bcg_matrix.md)
     - [SWOT分析法](swot.md)
+1. [人人都是产品经理2.0](product_manager_sujie.md)
 1. [周鸿祎自述-我的互联网方法论](zhou_hong_yi.md)
 1. [互联网+小米案例版](internet_plus_xiaomi.md)
 1. [重来ReWork](rework.md)
