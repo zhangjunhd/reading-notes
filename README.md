@@ -47,8 +47,12 @@
 1. [工业人的未来](management/the_future_of_industrial_man.md)
 1. [Scrum概念](management/scrum.md)
 
+# [媒体][6]
+1. [时尚：幕后的策动](media/fashion_editor.md)
+
 [1]: eastern_philosophy/
 [2]: success/
 [3]: product/
 [4]: internet/
 [5]: management/
+[6]: media/
