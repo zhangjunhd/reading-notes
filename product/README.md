@@ -11,3 +11,4 @@
 1. [互联网+小米案例版](internet_plus_xiaomi.md)
 1. [重来ReWork](rework.md)
 1. [Inspired-How To Create Products Customers Love](inspired.md)
+1. [定位](positioning.md)
