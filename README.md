@@ -30,6 +30,7 @@
 1. [互联网+小米案例版](product/internet_plus_xiaomi.md)
 1. [重来ReWork](product/rework.md)
 1. [Inspired-How To Create Products Customers Love](product/inspired.md)
+1. [定位](product/positioning.md)
 
 # [互联网][4]
 1. [维基经济学](internet/wikinomics.md)
