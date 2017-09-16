@@ -51,7 +51,7 @@
 # [媒体][6]
 1. [时尚：幕后的策动](media/fashion_editor.md)
 1. [平面排版基本的基本](media/graphic_design.md)
-
+1. [徐建军-开始吧](media/kaistart.md)
 
 [1]: eastern_philosophy/
 [2]: success/
