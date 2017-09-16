@@ -7,3 +7,4 @@
 1. [如何打造超级IP](create_ip.md)
 1. [超级IP](super_ip.md)
 1. [思维病毒](virus-of-the-mind.md)
+1. [万维钢-注意力商人](the-attention-merchants.md)
