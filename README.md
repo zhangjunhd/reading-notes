@@ -41,6 +41,7 @@
 1. [如何打造超级IP](internet/create_ip.md)
 1. [超级IP](internet/super_ip.md)
 1. [思维病毒](internet/virus-of-the-mind.md)
+1. [万维钢-注意力商人](internet/the-attention-merchants.md)
 
 # [管理][5]
 1. [成为技术领导者](management/tech_leader.md)
