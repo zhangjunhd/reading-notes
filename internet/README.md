@@ -6,3 +6,4 @@
 1. [隐形VISA](visa.md)
 1. [如何打造超级IP](create_ip.md)
 1. [超级IP](super_ip.md)
+1. [思维病毒](virus-of-the-mind.md)
