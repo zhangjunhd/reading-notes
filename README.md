@@ -40,6 +40,7 @@
 1. [隐形VISA](internet/visa.md)
 1. [如何打造超级IP](internet/create_ip.md)
 1. [超级IP](internet/super_ip.md)
+1. [思维病毒](internet/virus-of-the-mind.md)
 
 # [管理][5]
 1. [成为技术领导者](management/tech_leader.md)
