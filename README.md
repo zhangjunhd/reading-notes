@@ -54,7 +54,7 @@
 1. [平面排版基本的基本](media/graphic_design.md)
 1. [徐建军-开始吧](media/kaistart.md)
 1. [访美记](media/fang-mei.md)
-
+1. [新闻写作艺术辩证](media/the-dialectical-art-of-news-writing.md)
 
 
 
