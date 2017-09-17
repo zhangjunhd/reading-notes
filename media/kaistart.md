@@ -103,7 +103,7 @@
     - 等开始吧壮大了，如果未来必有一战，对手会是谁呢？徐建军停顿了一下，回答：「新美大。」
 
 [1]: https://36kr.com/p/5046180.html
-[2]: https://mp.weixin.qq.com/s?src=3&timestamp=1505560673&ver=1&signature=XN1ZdoVHRFkqV61ST57WGWUZotQGH3TSYwf3fK5ine0bQm4KhJOIMlClUCUfdHHivy1hTR7482YtZTxf*bszgRQoeIZGa-9*nv6pHBtONPGzWy9DSy7HZHOIw*cl9nrZu8PTUgSHIpby-hQbcyq40tfPZ4kuVIo5KSySqww80oQ=
+[2]: http://www.sohu.com/a/140812943_652756
 [3]: https://36kr.com/p/5062394.html
 [4]: http://www.sohu.com/a/119743853_355115
 [5]: https://mp.weixin.qq.com/s?__biz=MzIxODIzMTYyNw==&mid=2649924069&idx=1&sn=6f9cecd2273a64a3d3751bd0521983a6&scene=0#wechat_redirect
