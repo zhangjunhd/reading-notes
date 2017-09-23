@@ -38,7 +38,7 @@
 1. [冯鑫家信：怎样才算好好活着](success/fengxin-letter.md)
 1. [六个步骤把资料转换成知识](success/6-step-knowledge.md)
 1. [高效能人士的七个习惯](success/the-seven-habits-of-highly-effective-people.md)
-
+1. [如何高效学习](success/learn-more-study-less.md)
 
 
 # [产品经理][3]
