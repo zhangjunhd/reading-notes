@@ -22,3 +22,4 @@
 1. [如何阅读一本书](how-to-read-a-book.md)
 1. [如何不用额外咖啡因也能保持专注](focus.md)
 1. [把时间当作朋友](lixiaolai-time.md)
+1. [奇特的一生](qi-te-de-yi-sheng.md)
