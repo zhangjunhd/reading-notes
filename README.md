@@ -26,6 +26,9 @@
 1. [练习的心态](success/the-practicing-mind.md)
 1. [精进：如何成为一个很厉害的人](success/jingjin.md)
 1. [刻意练习](success/peak.md)
+1. [身份的焦虑](success/status-anxiety.md)
+
+
 
 
 
