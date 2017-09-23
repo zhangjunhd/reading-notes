@@ -20,3 +20,4 @@
 1. [如何高效学习](learn-more-study-less.md)
 1. [尽管去做——无压工作的艺术](gtd.md)
 1. [如何阅读一本书](how-to-read-a-book.md)
+1. [如何不用额外咖啡因也能保持专注](focus.md)
