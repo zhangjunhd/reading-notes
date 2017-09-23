@@ -17,3 +17,4 @@
 1. [冯鑫家信：怎样才算好好活着](fengxin-letter.md)
 1. [六个步骤把资料转换成知识](6-step-knowledge.md)
 1. [高效能人士的七个习惯](the-seven-habits-of-highly-effective-people.md)
+1. [如何高效学习](learn-more-study-less.md)
