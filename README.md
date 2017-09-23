@@ -40,6 +40,11 @@
 1. [高效能人士的七个习惯](success/the-seven-habits-of-highly-effective-people.md)
 1. [如何高效学习](success/learn-more-study-less.md)
 1. [尽管去做——无压工作的艺术](success/gtd.md)
+1. [如何阅读一本书](success/how-to-read-a-book.md)
+
+
+
+
 
 # [产品经理][3]
 1. [产品的视角：从热闹到门道](product/perspective_product.md)
