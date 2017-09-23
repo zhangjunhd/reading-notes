@@ -24,6 +24,10 @@
 1. [新生——七年就是一辈子](success/xin_sheng.md)
 1. [微习惯](success/mini-habits.md)
 1. [练习的心态](success/the-practicing-mind.md)
+1. [精进：如何成为一个很厉害的人](success/jingjin.md)
+
+
+
 
 # [产品经理][3]
 1. [产品的视角：从热闹到门道](product/perspective_product.md)
