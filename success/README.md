@@ -12,3 +12,4 @@
 1. [活着活着就老了-十信](fengtang-shixin.md)
 1. [活法](huofa.md)
 1. [伟大是熬出来的](fenglun.md)
+1. [蔡康永的说话之道](caikangyong.md)
