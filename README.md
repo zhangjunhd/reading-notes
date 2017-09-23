@@ -32,7 +32,7 @@
 1. [读gtdlife博客摘录](success/gtdlife.md)
 1. [活着活着就老了-十信](success/fengtang-shixin.md)
 1. [活法](success/huofa.md)
-
+1. [伟大是熬出来的](success/fenglun.md)
 
 
 
