@@ -8,3 +8,4 @@
 1. [身份的焦虑](status-anxiety.md)
 1. [学习之道](a-mind-for-numbers.md)
 1. [暗时间](dark-time.md)
+1. [读gtdlife博客摘录](gtdlife.md)
