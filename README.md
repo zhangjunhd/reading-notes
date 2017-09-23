@@ -42,7 +42,7 @@
 1. [尽管去做——无压工作的艺术](success/gtd.md)
 1. [如何阅读一本书](success/how-to-read-a-book.md)
 1. [如何不用额外咖啡因也能保持专注](success/focus.md)
-
+1. [把时间当作朋友](success/lixiaolai-time.md)
 
 
 
