@@ -22,6 +22,8 @@
 
 # [成功学][2]
 1. [新生——七年就是一辈子](success/xin_sheng.md)
+1. [微习惯](success/mini-habits.md)
+
 
 # [产品经理][3]
 1. [产品的视角：从热闹到门道](product/perspective_product.md)
