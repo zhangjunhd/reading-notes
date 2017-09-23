@@ -28,7 +28,7 @@
 1. [刻意练习](success/peak.md)
 1. [身份的焦虑](success/status-anxiety.md)
 1. [学习之道](success/a-mind-for-numbers.md)
-
+1. [暗时间](success/dark-time.md)
 
 
 
