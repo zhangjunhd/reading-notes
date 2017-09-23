@@ -16,3 +16,4 @@
 1. [少有人走的路-心智成熟的旅程](the-road-less-traveled.md)
 1. [冯鑫家信：怎样才算好好活着](fengxin-letter.md)
 1. [六个步骤把资料转换成知识](6-step-knowledge.md)
+1. [高效能人士的七个习惯](the-seven-habits-of-highly-effective-people.md)
