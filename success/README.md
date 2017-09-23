@@ -5,3 +5,4 @@
 1. [练习的心态](the-practicing-mind.md)
 1. [精进：如何成为一个很厉害的人](jingjin.md)
 1. [刻意练习](peak.md)
+1. [身份的焦虑](status-anxiety.md)
