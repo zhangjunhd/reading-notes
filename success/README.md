@@ -24,3 +24,4 @@
 1. [把时间当作朋友](lixiaolai-time.md)
 1. [奇特的一生](qi-te-de-yi-sheng.md)
 1. [习惯的力量](the-power-of-habit.md)
+1. [第五项修炼](the-fifth-discipline.md)
