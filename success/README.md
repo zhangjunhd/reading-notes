@@ -23,3 +23,4 @@
 1. [如何不用额外咖啡因也能保持专注](focus.md)
 1. [把时间当作朋友](lixiaolai-time.md)
 1. [奇特的一生](qi-te-de-yi-sheng.md)
+1. [习惯的力量](the-power-of-habit.md)
