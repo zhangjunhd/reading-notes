@@ -11,3 +11,4 @@
 1. [读gtdlife博客摘录](gtdlife.md)
 1. [活着活着就老了-十信](fengtang-shixin.md)
 1. [活法](huofa.md)
+1. [伟大是熬出来的](fenglun.md)
