@@ -13,3 +13,4 @@
 1. [活法](huofa.md)
 1. [伟大是熬出来的](fenglun.md)
 1. [蔡康永的说话之道](caikangyong.md)
+1. [少有人走的路-心智成熟的旅程](the-road-less-traveled.md)
