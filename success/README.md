@@ -10,3 +10,4 @@
 1. [暗时间](dark-time.md)
 1. [读gtdlife博客摘录](gtdlife.md)
 1. [活着活着就老了-十信](fengtang-shixin.md)
+1. [活法](huofa.md)
