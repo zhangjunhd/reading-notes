@@ -35,6 +35,11 @@
 1. [伟大是熬出来的](success/fenglun.md)
 1. [蔡康永的说话之道](success/caikangyong.md)
 1. [少有人走的路-心智成熟的旅程](success/the-road-less-traveled.md)
+1. [冯鑫家信：怎样才算好好活着](success/fengxin-letter.md)
+
+
+
+
 
 # [产品经理][3]
 1. [产品的视角：从热闹到门道](product/perspective_product.md)
