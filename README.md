@@ -30,7 +30,7 @@
 1. [学习之道](success/a-mind-for-numbers.md)
 1. [暗时间](success/dark-time.md)
 1. [读gtdlife博客摘录](success/gtdlife.md)
-
+1. [活着活着就老了-十信](success/fengtang-shixin.md)
 
 # [产品经理][3]
 1. [产品的视角：从热闹到门道](product/perspective_product.md)
