@@ -27,7 +27,7 @@
 1. [精进：如何成为一个很厉害的人](success/jingjin.md)
 1. [刻意练习](success/peak.md)
 1. [身份的焦虑](success/status-anxiety.md)
-
+1. [学习之道](success/a-mind-for-numbers.md)
 
 
 
