@@ -43,7 +43,7 @@
 1. [如何阅读一本书](success/how-to-read-a-book.md)
 1. [如何不用额外咖啡因也能保持专注](success/focus.md)
 1. [把时间当作朋友](success/lixiaolai-time.md)
-
+1. [奇特的一生](success/qi-te-de-yi-sheng.md)
 
 
 # [产品经理][3]
