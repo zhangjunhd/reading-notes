@@ -45,6 +45,7 @@
 1. [把时间当作朋友](success/lixiaolai-time.md)
 1. [奇特的一生](success/qi-te-de-yi-sheng.md)
 1. [习惯的力量](success/the-power-of-habit.md)
+1. [第五项修炼](success/the-fifth-discipline.md)
 
 # [产品经理][3]
 1. [产品的视角：从热闹到门道](product/perspective_product.md)
