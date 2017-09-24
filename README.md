@@ -47,6 +47,9 @@
 1. [习惯的力量](success/the-power-of-habit.md)
 1. [第五项修炼](success/the-fifth-discipline.md)
 
+# [历史][7]
+1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
+
 # [产品经理][3]
 1. [产品的视角：从热闹到门道](product/perspective_product.md)
 1. [人人都是产品经理2.0](product/product_manager_sujie.md)
@@ -92,3 +95,4 @@
 [4]: internet/
 [5]: management/
 [6]: media/
+[7]: history/
