@@ -6,6 +6,7 @@
 1. [这个世界会好吗-梁漱溟晚年口述](liang_shu_min_wan_nian_kou_shu.md)
 1. [人生的三路向:宗教、道德与人生](ren_sheng_de_san_lu_xiang.md)
 1. [传习录](chuan_xi_lu.md)
+1. [王阳明心学](wang-yang-ming-xin-xue.md)
 1. [庄子的享受](zhuang_zi_de_xiang_shou.md)
 1. [一个瑜伽行者的自传](yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
 1. [论语译注](lun_yu_yi_zhu.md)
