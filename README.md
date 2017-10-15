@@ -94,8 +94,8 @@
 1. [新闻采访与写作](media/news-interview-and-writing.md)
 1. [网络新闻写作与编辑实务](media/news-writing.md)
 
-
-
+# [人工智能][8]
+1. [人工智能的未来](ai/OnIntelligence.md)
 
 [1]: eastern_philosophy/
 [2]: success/
@@ -104,3 +104,4 @@
 [5]: management/
 [6]: media/
 [7]: history/
+[8]: ai/
