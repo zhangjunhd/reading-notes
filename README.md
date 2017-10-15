@@ -98,6 +98,8 @@
 # [人工智能][8]
 1. [人工智能的未来](ai/OnIntelligence.md)
 1. [与机器赛跑](ai/RaceAgainstTheMachine.md)
+1. [智能时代](ai/intelligence-times.md)
+
 
 [1]: eastern_philosophy/
 [2]: success/
