@@ -99,7 +99,7 @@
 1. [人工智能的未来](ai/OnIntelligence.md)
 1. [与机器赛跑](ai/RaceAgainstTheMachine.md)
 1. [智能时代](ai/intelligence-times.md)
-
+1. [科学的极致：漫谈人工智能](ai/talk-ai.md)
 
 [1]: eastern_philosophy/
 [2]: success/
