@@ -21,6 +21,9 @@
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
 1. [悉达多](eastern_philosophy/xi_da_duo.md)
 
+# [心理学][9]
+1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
+
 # [成功学][2]
 1. [新生——七年就是一辈子](success/xin_sheng.md)
 1. [微习惯](success/mini-habits.md)
@@ -110,3 +113,4 @@
 [6]: media/
 [7]: history/
 [8]: ai/
+[9]: psychology/
