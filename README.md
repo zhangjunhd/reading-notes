@@ -97,6 +97,7 @@
 1. [新闻写作艺术辩证](media/the-dialectical-art-of-news-writing.md)
 1. [新闻采访与写作](media/news-interview-and-writing.md)
 1. [网络新闻写作与编辑实务](media/news-writing.md)
+1. [Vox Media调研](media/vox-media.md)
 
 # [人工智能][8]
 1. [人工智能的未来](ai/OnIntelligence.md)
