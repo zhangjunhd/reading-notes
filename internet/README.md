@@ -9,3 +9,4 @@
 1. [思维病毒](virus-of-the-mind.md)
 1. [万维钢-注意力商人](the-attention-merchants.md)
 1. [技术的本质](TheNatureOfTechnology.md)
+1. [链接](linked.md)
