@@ -23,6 +23,8 @@
 
 # [心理学][9]
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
+1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
+
 
 # [成功学][2]
 1. [新生——七年就是一辈子](success/xin_sheng.md)
