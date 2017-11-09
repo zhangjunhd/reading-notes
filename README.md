@@ -69,6 +69,7 @@
 1. [重来ReWork](product/rework.md)
 1. [Inspired-How To Create Products Customers Love](product/inspired.md)
 1. [定位](product/positioning.md)
+1. [企业家](product/entrepreneur.md)
 
 # [互联网][4]
 1. [维基经济学](internet/wikinomics.md)
