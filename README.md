@@ -57,6 +57,7 @@
 1. [习惯的力量](success/the-power-of-habit.md)
 1. [第五项修炼](success/the-fifth-discipline.md)
 1. [富兰克林自传](success/franklin.md)
+1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
 
 # [历史][7]
 1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
