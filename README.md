@@ -27,7 +27,7 @@
 1. [拖延心理学](psychology/procrastination.md)
 1. [幸福是陷阱?](psychology/the-happiness-trap.md)
 1. [专念](psychology/mindfulness.md)
-
+1. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
 
 
 # [成功学][2]
