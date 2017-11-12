@@ -5,3 +5,4 @@
 1. [工业人的未来](the_future_of_industrial_man.md)
 1. [Scrum概念](scrum.md)
     1. [Scrum管理文档结构图](scrum_doc.md)
+1. [Apprenticeship Patterns](ApprenticeshipPatterns.md)
