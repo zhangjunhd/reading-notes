@@ -1,1 +1,10 @@
 ## 西方哲学
+1. [苏菲的世界](SophieWorld.md)
+1. [咖啡与哲学](CoffeeAndPhilosophy.md)
+1. [新教伦理与资本主义精神](kapitalismus.md)
+1. [康德三大批判合集](kant.md)
+1. [常识](CommonSense.md)
+1. [叔本华人生的智慧](Schopenhauer1.md)
+1. [叔本华论道德与自由](Schopenhauer2.md)
+1. [叔本华思想随笔](Schopenhauer3.md)
+1. [叔本华美学随笔](Schopenhauer4.md)

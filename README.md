@@ -21,6 +21,21 @@
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
 1. [悉达多](eastern_philosophy/xi_da_duo.md)
 
+# [西方哲学][10]
+1. [苏菲的世界](western_philosophy/SophieWorld.md)
+1. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
+1. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
+1. [康德三大批判合集](western_philosophy/kant.md)
+1. [常识](western_philosophy/CommonSense.md)
+1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
+1. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
+1. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
+1. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
+
+
+
+
+
 # [心理学][9]
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
 1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
@@ -66,6 +81,9 @@
 1. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 
+# [财经][11]
+1. [一本书读懂财报](finance_economics/FinancialStatements.md)
+1. [富爸爸，穷爸爸](finance_economics/RichDadPoorDad.md)
 
 
 # [商业][3]
@@ -127,3 +145,5 @@
 [7]: history/
 [8]: ai/
 [9]: psychology/
+[10]: western_philosophy/
+[11]: finance_economics/
