@@ -4,3 +4,4 @@
 1. [拖延心理学](procrastination.md)
 1. [幸福是陷阱?](the-happiness-trap.md)
 1. [专念](mindfulness.md)
+1. [叔本华的治疗](TheSchopenhauerCure.md)
