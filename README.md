@@ -98,6 +98,7 @@
 1. [软件随想录](management/more_joel_on_software.md)
 1. [工业人的未来](management/the_future_of_industrial_man.md)
 1. [Scrum概念](management/scrum.md)
+1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
 
 # [媒体][6]
 1. [时尚：幕后的策动](media/fashion_editor.md)
