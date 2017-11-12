@@ -25,6 +25,10 @@
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
 1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
 1. [拖延心理学](psychology/procrastination.md)
+1. [幸福是陷阱?](psychology/the-happiness-trap.md)
+
+
+
 
 # [成功学][2]
 1. [新生——七年就是一辈子](success/xin_sheng.md)
