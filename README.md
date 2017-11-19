@@ -80,6 +80,8 @@
 1. [中国大历史](history/big-history.md)
 1. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
+# 小说
+1. [1984](novel/NineteenEightyFour.md)
 
 # [财经][11]
 1. [一本书读懂财报](finance_economics/FinancialStatements.md)
