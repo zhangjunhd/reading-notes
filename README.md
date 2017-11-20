@@ -43,7 +43,7 @@
 1. [幸福是陷阱?](psychology/the-happiness-trap.md)
 1. [专念](psychology/mindfulness.md)
 1. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-
+1. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
 
 # [成功学][2]
 1. [新生——七年就是一辈子](success/xin_sheng.md)
