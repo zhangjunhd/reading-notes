@@ -36,7 +36,7 @@
 
 
 
-# [心理学][9]
+# 心理学
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
 1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
 1. [拖延心理学](psychology/procrastination.md)
@@ -146,6 +146,5 @@
 [6]: media/
 [7]: history/
 [8]: ai/
-[9]: psychology/
 [10]: western_philosophy/
 [11]: finance_economics/
