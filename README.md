@@ -31,7 +31,7 @@
 1. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
 1. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
 1. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
-
+1. [身份的焦虑](western_philosophy/status-anxiety.md)
 
 
 
@@ -51,7 +51,6 @@
 1. [练习的心态](success/the-practicing-mind.md)
 1. [精进：如何成为一个很厉害的人](success/jingjin.md)
 1. [刻意练习](success/peak.md)
-1. [身份的焦虑](success/status-anxiety.md)
 1. [学习之道](success/a-mind-for-numbers.md)
 1. [暗时间](success/dark-time.md)
 1. [读gtdlife博客摘录](success/gtdlife.md)
