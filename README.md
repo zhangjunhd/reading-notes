@@ -21,7 +21,7 @@
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
 1. [悉达多](eastern_philosophy/xi_da_duo.md)
 
-# [西方哲学][10]
+# 西方哲学
 1. [苏菲的世界](western_philosophy/SophieWorld.md)
 1. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
 1. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
@@ -145,5 +145,4 @@
 [6]: media/
 [7]: history/
 [8]: ai/
-[10]: western_philosophy/
 [11]: finance_economics/
