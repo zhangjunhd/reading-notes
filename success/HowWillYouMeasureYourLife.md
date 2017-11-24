@@ -85,12 +85,20 @@ Before you take a job, carefully list what things others are going to need to do
 
 Equally important, ask yourself what assumptions have to prove true for you to be happy in the choice you are contemplating. Are you basing your position on extrinsic or intrinsic motivators? Why do you think this is going to be something you enjoy doing? What evidence do you have? Every time you consider a career move, keep thinking about the most important assumptions that have to prove true, and how you can swiftly and inexpensively test if they are valid. Make sure you are being realistic about the path ahead of you.
 
+- J20130406：当事业面临选择时，你通常会思考hygiene factors and motivation factors两方面来进行判断。但是很多时候，抉择似乎是意外发生的，而不像是事先缜密安排好的。
+- J20130406：在做决定之前，应该把所有做的假设按重要度为优先级全部列出来，你应该明白你的选择是基于如上这些假设的，所以你要好好思考这些假设是否合理？
+- J20130406：再说的具体些，对于换工作这件事情，你应该仔细的列出所有驱使你加入新工作的所有假设，它们真的能让你成功么？比现在成功么？这些假设合理么？按重要度优先级全部列出来。
+- J20130406：下一步，最重要的一步，就是证明这些假设是合理的。新的工作能使得你更加快乐么？两因素理论在这里开始派上用场。然后对于所有这些假设要用一些简单的方法证明它们的有效性。这样对于你做出的选择，你已经尽力做到现实判断与思考了。
+
 ## CHAPTER FOUR Your Strategy Is Not What You Say It Is
 Here is a way to frame the investments that we make in the strategy that becomes our lives: we have resources—which include personal time, energy, talent, and wealth—and we are using them to try to grow several “businesses” in our personal lives. These include having a rewarding relationship with our spouse or significant other; raising great children; succeeding in our careers; contributing to our church or community; and so on. Unfortunately, however, our resources are limited and these businesses are competing for them. How should we devote our resources to each of these pursuits?
 
 Unless you manage it mindfully, your personal resource allocation process will decide investments for you according to the “default” criteria that essentially are wired into your brain and your heart. As is true in companies, your resources are not decided and deployed in a single meeting or when you review your calendar for the week ahead. It is a continuous process—and you have, in your brain, a filter for making choices about what to prioritize.
 
 The danger for high-achieving people is that they’ll unconsciously allocate their resources to activities that yield the most immediate, tangible accomplishments. They prioritized things that gave them immediate returns—such as a promotion, a raise, or a bonus—rather than the things that require long-term work, the things that you won’t see a return on for decades, like raising good children.
+
+- J20130406：虽然我们都清楚，我们企图在各个方面获得成就，事业，家庭，友情，社区等等。但是人的资源和精力是有限的，我们虽然说我们更关注家庭方面，但是我们却很少投入其中。真正的优先级不是按你说的来判定，而是按你实际生活中做的来判定。我们花了太多的精力在那些可以马上获得回报的事情上，比如获得升职，获得奖励。而那些长期重要的事情呢？如关心家庭，它们似乎在短期内看不到效果，所以被我们忽略了。
+- J20150326：希望自己的欲望马上得到满足是人的天性，而抑制它需要心智的成熟。
 
 # SECTION II Finding Happiness in Your Relationships
 The happiest moments of my life have been the few which I have passed at home in the bosom of my family.
@@ -107,6 +115,8 @@ The theory of good money and bad money essentially frames Bhide’s work as a si
 That is why capital that seeks growth before profits is bad capital.
 
 But the reason why both types of capital appear in the name of the theory is that once a viable strategy has been found, investors need to change what they seek—they should become impatient for growth and patient for profit.
+
+- J20130406：93%的最终获得成功的企业都放弃了它们最初的战略，因为这些战略被证明是不可行的。基于此，我们可以推论：当企业在初创阶段并没有找到制胜的战略时，投资人应该对企业成长保持耐心，而对企业获利表示迫切。当企业找到制胜的战略时，则刚好相反，对企业成长表示迫切，而对企业获利保持耐心。
 
 ### Planting Saplings When You Decide You Need Shade
 Some of the most frequent offenders in failing to abide by this theory are big investors and successful existing businesses looking to invest in new growth businesses. The way in which this happens is through a predictable and simple three-step process, as articulated by Matthew Olson and Derek van Bever in Stall Points.
@@ -143,15 +153,21 @@ There is no one right answer for all circumstances. You have to start by underst
 
 Every successful product or service, either explicitly or implicitly, was structured around a job to be done. Addressing a job is the causal mechanism behind a purchase. If someone develops a product that is interesting, but which doesn’t intuitively map in customers’ minds on a job that they are trying to do, that product will struggle to succeed—unless the product is adapted and repositioned on an important job.
 
+- J20130406：把产品或者服务当成一种打工，你的客户为啥要雇佣你？
+
 ### Hiring School for a Job
 The conclusion we reached was that going to school is not a job that children are trying to get done. It is something that a child might hire to do the job, but it isn’t the job itself. The two fundamental jobs that children need to do are to feel successful and to have friends—every day. Sure, they could hire school to get these jobs done. Some achieve success and friends in the classroom, the band, the math club, or the basketball team. But to feel successful and have friends, they could also drop out of school and join a gang, or buy a car and cruise the streets. Viewed from the perspective of jobs, it becomes very clear that schools don’t often do these jobs well at all—in fact, all too often, schools are structured to help most students feel like failures. We had assumed going in that those who succeed at school do so because they are motivated. But we concluded that all students are similarly motivated—to succeed. The problem is, only a fraction of students feel successful through school.
 
 Indeed, we learned that just as the fast-food restaurant had been improving the milkshake on dimensions of improvement irrelevant to the jobs that customers were trying to do, our schools were improving themselves on dimensions of improvement irrelevant to the job that students are trying to do. There is no way that we can motivate children to work harder in class by convincing them that they should do this. Rather, we need to offer children experiences in school that help them do these jobs—to feel successful and do it with friends.
 
+- J20130406：站在学校的角度来看，孩子们来你这里读书，也是一种雇佣，孩子们为什么要雇佣你？
+
 ### What Job Are You Being Hired For?
 Like those milkshake buyers, you and your wife can’t always articulate what the fundamental jobs are that you each are personally trying to do, let alone articulate the fundamental jobs that your wife has, for which she might hire a husband to get done. Understanding the job requires the critical ingredients of intuition and empathy. You have to be able to put yourself not just in her shoes, but her chair—and indeed, her life. More important, the jobs that your spouse is trying to do are often very different from the jobs that you think she should want to do.
 
 I suspect that if we studied marriage from the job-to-be-done lens, we would find that the husbands and wives who are most loyal to each other are those who have figured out the jobs that their partner needs to be done—and then they do the job reliably and well. I know for me, this has a profound effect. By working to truly understand the job she needs done, and doing it well, I can cause myself to fall more deeply in love with my spouse, and, I hope, her with me. Divorce, on the other hand, often has its roots when one frames marriage only in terms of whether she is giving me what I want. If she isn’t, then I dispense with her, and find someone else who will.
+
+- J20130406：作为丈夫，你可被雇佣的价值在哪里？
 
 ### Sacrifice and Commitment
 This may sound counterintuitive, but I deeply believe that the path to happiness in a relationship is not just about finding someone who you think is going to make you happy. Rather, the reverse is equally true: the path to happiness is about finding someone who you want to make happy, someone whose happiness is worth devoting yourself to. If what causes us to fall deeply in love is mutually understanding and then doing each other’s job to be done, then I have observed that what cements that commitment is the extent to which I sacrifice myself to help her succeed and for her to be happy.
@@ -161,6 +177,8 @@ This principle—that sacrifice deepens our commitment—doesn’t just work in 
 It’s natural to want the people you love to be happy. What can often be difficult is understanding what your role is in that. Thinking about your relationships from the perspective of the job to be done is the best way to understand what’s important to the people who mean the most to you. It allows you to develop true empathy. Asking yourself “What job does my spouse most need me to do?” gives you the ability to think about it in the right unit of analysis. When you approach your relationships from this perspective, the answers will become much more clear than they would by simply speculating about what might be the right thing to do.
 
 But you have to go beyond understanding what job your spouse needs you to do. You have to do that job. You’ll have to devote your time and energy to the effort, be willing to suppress your own priorities and desires, and focus on doing what is required to make the other person happy. Nor should we be timid in giving our children and our spouses the same opportunities to give of themselves to others. You might think this approach would actually cause resentment in relationships because one person is so clearly giving up something for the other. But I have found that it has the opposite effect. In sacrificing for something worthwhile, you deeply strengthen your commitment to it.
+
+- J20130406：如何快乐？要找到那些你期望他快乐的人，他的快乐就是你的快乐。
 
 ## CHAPTER SEVEN Sailing Your Kids on Theseus’s Ship
 ### Understand Your Capabilities
