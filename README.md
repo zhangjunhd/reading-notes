@@ -45,7 +45,7 @@
 1. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
 1. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
 
-# [成功学][2]
+# 成功学
 1. [新生——七年就是一辈子](success/xin_sheng.md)
 1. [微习惯](success/mini-habits.md)
 1. [练习的心态](success/the-practicing-mind.md)
@@ -138,7 +138,6 @@
 1. [人工智能狂潮](ai/ai-japan.md)
 
 [1]: eastern_philosophy/
-[2]: success/
 [3]: business/
 [4]: internet/
 [5]: management/
