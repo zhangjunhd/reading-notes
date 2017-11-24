@@ -38,12 +38,20 @@
 
 # 心理学
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
+1. [荣格心理学入门](psychology/Jung.md)
 1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-1. [拖延心理学](psychology/procrastination.md)
 1. [幸福是陷阱?](psychology/the-happiness-trap.md)
 1. [专念](psychology/mindfulness.md)
 1. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
 1. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+1. [Level 3 of Meme](psychology/Level3OfMeme.md)
+1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
+1. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
+1. [拖延心理学](psychology/procrastination.md)
+1. [意志力](psychology/willpower.md)
+1. [自控力](psychology/TheWillpowerInstinct.md)
+
+
 
 # 成功学
 1. [新生——七年就是一辈子](success/xin_sheng.md)
