@@ -81,7 +81,7 @@
 1. [富兰克林自传](success/franklin.md)
 1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
 
-# [历史][7]
+# 历史
 1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
 1. [万历十五年](history/1587.md)
 1. [中国大历史](history/big-history.md)
@@ -150,6 +150,5 @@
 [4]: internet/
 [5]: management/
 [6]: media/
-[7]: history/
 [8]: ai/
 [11]: finance_economics/
