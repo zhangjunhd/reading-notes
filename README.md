@@ -132,7 +132,7 @@
 1. [Scrum概念](management/scrum.md)
 1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
 
-# [媒体][6]
+# 媒体
 1. [时尚：幕后的策动](media/fashion_editor.md)
 1. [平面排版基本的基本](media/graphic_design.md)
 1. [徐建军-开始吧](media/kaistart.md)
@@ -153,6 +153,5 @@
 [3]: business/
 [4]: internet/
 [5]: management/
-[6]: media/
 [8]: ai/
 [11]: finance_economics/
