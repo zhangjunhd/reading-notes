@@ -1,4 +1,4 @@
-# [东方哲学][1]
+# 东方哲学
 1. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
 1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
 1. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
@@ -94,7 +94,7 @@
 # 小说
 1. [1984](novel/NineteenEightyFour.md)
 
-# [财经][11]
+# 财经
 1. [一本书读懂财报](finance_economics/FinancialStatements.md)
 1. [富爸爸，穷爸爸](finance_economics/RichDadPoorDad.md)
 
@@ -109,7 +109,7 @@
 1. [定位](business/positioning.md)
 1. [企业家](business/entrepreneur.md)
 
-# [互联网][4]
+# 互联网
 1. [维基经济学](internet/wikinomics.md)
 1. [长尾理论2.0](internet/long_tail.md)
 1. [从0到1](internet/zero_to_one.md)
@@ -149,9 +149,6 @@
 1. [科学的极致：漫谈人工智能](ai/talk-ai.md)
 1. [人工智能狂潮](ai/ai-japan.md)
 
-[1]: eastern_philosophy/
 [3]: business/
-[4]: internet/
 [5]: management/
 [8]: ai/
-[11]: finance_economics/
