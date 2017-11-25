@@ -82,10 +82,14 @@
 1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
 
 # 历史
+1. [全球通史](history/a-global-history.md)
 1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
 1. [万历十五年](history/1587.md)
 1. [中国大历史](history/big-history.md)
 1. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+1. [我心自由-杜尚传](history/MarcelDuchamp.md)
+
+
 
 # 小说
 1. [1984](novel/NineteenEightyFour.md)
