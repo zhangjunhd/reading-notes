@@ -39,6 +39,7 @@
 # 心理学
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
 1. [荣格心理学入门](psychology/Jung.md)
+1. [活出生命的意义](psychology/MansSearchForMeaning.md)
 1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
 1. [幸福是陷阱?](psychology/the-happiness-trap.md)
 1. [专念](psychology/mindfulness.md)
