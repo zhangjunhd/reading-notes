@@ -32,7 +32,7 @@
 1. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
 1. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
 1. [身份的焦虑](western_philosophy/status-anxiety.md)
-
+1. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
 
 
 
