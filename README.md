@@ -95,6 +95,7 @@
 
 # 小说
 1. [1984](novel/NineteenEightyFour.md)
+1. [变形记](novel/DieVerwandlung.md)
 
 # 财经
 1. [一本书读懂财报](finance_economics/FinancialStatements.md)
