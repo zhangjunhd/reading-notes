@@ -102,8 +102,13 @@
 1. [富爸爸，穷爸爸](finance_economics/RichDadPoorDad.md)
 
 
-# [商业][3]
+# 商业
 1. [产品的视角：从热闹到门道](business/perspective_product.md)
+    - [运营数据指标](business/operation_data.md)
+    - [你真的了解MVP（最小化可用产品）么？](business/mvp.md)
+    - [如何撰写MRD和PRD](business/mrd_prd.md)
+    - [波士顿矩阵使用方法](business/bcg_matrix.md)
+    - [SWOT分析法](business/swot.md)
 1. [人人都是产品经理2.0](business/product_manager_sujie.md)
 1. [周鸿祎自述-我的互联网方法论](business/zhou_hong_yi.md)
 1. [互联网+小米案例版](business/internet_plus_xiaomi.md)
@@ -152,6 +157,6 @@
 1. [科学的极致：漫谈人工智能](ai/talk-ai.md)
 1. [人工智能狂潮](ai/ai-japan.md)
 
-[3]: business/
+
 [5]: management/
 [8]: ai/
