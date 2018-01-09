@@ -158,5 +158,10 @@
 1. [人工智能狂潮](ai/ai-japan.md)
 
 
+# 设计
+1. [Search Patterns](design/SearchPatterns.md)
+1. [Sketching User Experiences](design/SketchingUserExperiences.md)
+1. [About Face 3](design/AboutFace3.md)
+
 [5]: management/
 [8]: ai/
