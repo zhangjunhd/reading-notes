@@ -1,5 +1,5 @@
 # Sketching User Experiences
-[!cover](https://img3.doubanio.com/lpic/s4356540.jpg)
+![cover](https://img3.doubanio.com/lpic/s4356540.jpg)
 
     作者: Bill Buxton 
     出版社: Morgan Kaufmann
