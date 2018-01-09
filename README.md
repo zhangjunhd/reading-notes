@@ -162,6 +162,8 @@
 1. [Search Patterns](design/SearchPatterns.md)
 1. [Sketching User Experiences](design/SketchingUserExperiences.md)
 1. [About Face 3](design/AboutFace3.md)
+1. [Design Driven Innovation](design/DesignDrivenInnovation.md)
+1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 [5]: management/
 [8]: ai/
