@@ -34,7 +34,7 @@
 1. [身份的焦虑](western_philosophy/status-anxiety.md)
 1. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
 1. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-
+1. [论自然](western_philosophy/nature.md)
 
 # 心理学
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
