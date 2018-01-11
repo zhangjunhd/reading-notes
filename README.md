@@ -151,7 +151,7 @@
 1. [网络新闻写作与编辑实务](media/news-writing.md)
 1. [Vox Media调研](media/vox-media.md)
 
-# [人工智能][8]
+# 人工智能
 1. [人工智能的未来](ai/OnIntelligence.md)
 1. [与机器赛跑](ai/RaceAgainstTheMachine.md)
 1. [智能时代](ai/intelligence-times.md)
@@ -165,5 +165,3 @@
 1. [About Face 3](design/AboutFace3.md)
 1. [Design Driven Innovation](design/DesignDrivenInnovation.md)
 1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
-
-[8]: ai/
