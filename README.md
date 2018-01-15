@@ -35,6 +35,7 @@
 1. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
 1. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
 1. [论自然](western_philosophy/nature.md)
+1. [灵魂之旅-中国当代文学的生存意境](western_philosophy/a-spiritual-journey.md)
 
 # 心理学
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
