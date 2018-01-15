@@ -110,6 +110,7 @@
     - [波士顿矩阵使用方法](business/bcg_matrix.md)
     - [SWOT分析法](business/swot.md)
 1. [人人都是产品经理2.0](business/product_manager_sujie.md)
+1. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](business/business_model.md)
 1. [周鸿祎自述-我的互联网方法论](business/zhou_hong_yi.md)
 1. [互联网+小米案例版](business/internet_plus_xiaomi.md)
 1. [重来ReWork](business/rework.md)
