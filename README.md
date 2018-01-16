@@ -118,6 +118,8 @@
 1. [Inspired-How To Create Products Customers Love](business/inspired.md)
 1. [定位](business/positioning.md)
 1. [企业家](business/entrepreneur.md)
+1. [Lean Analytics](business/LeanAnalytics.md)
+
 
 # 互联网
 1. [维基经济学](internet/wikinomics.md)
