@@ -90,7 +90,11 @@
 1. [万历十五年](history/1587.md)
 1. [中国大历史](history/big-history.md)
 1. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
-1. [我心自由-杜尚传](history/MarcelDuchamp.md)
+
+
+
+# 艺术
+1. [我心自由-杜尚传](art/MarcelDuchamp.md)
 
 
 
