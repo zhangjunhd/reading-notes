@@ -12,4 +12,4 @@
     ISBN: 9781449335670
 
 - [豆瓣链接](https://book.douban.com/subject/19992844/)
-- [safaribook](https://www.safaribooksonline.com/library/view/lean-analytics/9781449335687/ch07.html)
+- [safaribook](https://www.safaribooksonline.com/library/view/lean-analytics/9781449335687/)
