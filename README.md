@@ -83,6 +83,7 @@
 1. [富兰克林自传](success/franklin.md)
 1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
 1. [食物是最好的医药](success/food.md)
+1. [原则](success/principles.md)
 
 # 历史
 1. [全球通史](history/a-global-history.md)
