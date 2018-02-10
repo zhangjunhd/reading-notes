@@ -87,6 +87,7 @@
 
 # 历史
 1. [全球通史](history/a-global-history.md)
+1. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
 1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
 1. [万历十五年](history/1587.md)
 1. [中国大历史](history/big-history.md)
