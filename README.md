@@ -126,7 +126,7 @@
 1. [定位](business/positioning.md)
 1. [企业家](business/entrepreneur.md)
 1. [精益数据分析](business/LeanAnalytics.md)
-
+1. [第4消费时代](business/4th-consumerist.md)
 
 # 互联网
 1. [维基经济学](internet/wikinomics.md)
