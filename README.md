@@ -36,7 +36,7 @@
 1. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
 1. [论自然](western_philosophy/nature.md)
 1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
-1. [灵魂之旅-中国当代文学的生存意境](western_philosophy/a-spiritual-journey.md)
+
 
 # 心理学
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
@@ -103,6 +103,7 @@
 
 
 # 小说
+1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
 1. [1984](novel/NineteenEightyFour.md)
 1. [变形记](novel/DieVerwandlung.md)
 
