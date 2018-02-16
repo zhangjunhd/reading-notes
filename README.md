@@ -106,6 +106,8 @@
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
 1. [1984](novel/NineteenEightyFour.md)
 1. [变形记](novel/DieVerwandlung.md)
+1. [异乡人](novel/L'Etranger.md)
+
 
 # 财经
 1. [一本书读懂财报](finance_economics/FinancialStatements.md)
