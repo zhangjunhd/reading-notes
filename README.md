@@ -46,7 +46,6 @@
 1. [幸福是陷阱?](psychology/the-happiness-trap.md)
 1. [专念](psychology/mindfulness.md)
 1. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-1. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
 1. [Level 3 of Meme](psychology/Level3OfMeme.md)
 1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
 1. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
@@ -107,7 +106,7 @@
 1. [1984](novel/NineteenEightyFour.md)
 1. [变形记](novel/DieVerwandlung.md)
 1. [异乡人](novel/L'Etranger.md)
-
+1. [妈妈及生命的意义](novel/MommaAndTheMeaningOfLife.md)
 
 # 财经
 1. [一本书读懂财报](finance_economics/FinancialStatements.md)
