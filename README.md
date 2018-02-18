@@ -25,6 +25,7 @@
 1. [苏菲的世界](western_philosophy/SophieWorld.md)
 1. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
 1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
+1. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
 1. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
 1. [康德三大批判合集](western_philosophy/kant.md)
 1. [常识](western_philosophy/CommonSense.md)
