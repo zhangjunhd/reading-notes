@@ -108,6 +108,7 @@
 1. [异乡人](novel/L'Etranger.md)
 1. [妈妈及生命的意义](novel/MommaAndTheMeaningOfLife.md)
 1. [叔本华的治疗](novel/TheSchopenhauerCure.md)
+1. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
 
 # 财经
 1. [一本书读懂财报](finance_economics/FinancialStatements.md)
