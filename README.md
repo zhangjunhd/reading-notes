@@ -149,7 +149,7 @@
 1. [技术的本质](internet/TheNatureOfTechnology.md)
 1. [链接](internet/linked.md)
 1. [黑天鹅](internet/TheBlackSwan.md)
-
+1. [必然](internet/The-Inevitable.md)
 
 # 管理
 1. [成为技术领导者](management/tech_leader.md)
