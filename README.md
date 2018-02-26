@@ -113,22 +113,13 @@
 1. [叔本华的治疗](novel/TheSchopenhauerCure.md)
 1. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
 
-# 财经
+
+# 商业
+## 财经
 1. [一本书读懂财报](finance_economics/FinancialStatements.md)
 1. [富爸爸，穷爸爸](finance_economics/RichDadPoorDad.md)
 
-
-# 商业
-1. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](business/business_model.md)
-1. [周鸿祎自述-我的互联网方法论](business/zhou_hong_yi.md)
-1. [互联网+小米案例版](business/internet_plus_xiaomi.md)
-1. [重来ReWork](business/rework.md)
-1. [定位](business/positioning.md)
-1. [企业家](business/entrepreneur.md)
-1. [精益数据分析](business/LeanAnalytics.md)
-1. [第4消费时代](business/4th-consumerist.md)
-
-# 互联网
+## 互联网
 1. [维基经济学](internet/wikinomics.md)
 1. [长尾理论2.0](internet/long_tail.md)
 1. [从0到1](internet/zero_to_one.md)
@@ -144,16 +135,17 @@
 1. [必然](internet/The-Inevitable.md)
 1. [新经济，新规则](internet/NewRulesForTheNewEconomy.md)
 
-# 管理
-1. [成为技术领导者](management/tech_leader.md)
-1. [人件（第2版）](management/peopleware.md)
-1. [软件随想录](management/more_joel_on_software.md)
-1. [工业人的未来](management/the_future_of_industrial_man.md)
-1. [Scrum概念](management/scrum.md)
-    - [Scrum管理文档结构图](management/scrum_doc.md)
-1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
 
-# 媒体
+## 商业思维
+1. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](business/business_model.md)
+1. [周鸿祎自述-我的互联网方法论](business/zhou_hong_yi.md)
+1. [互联网+小米案例版](business/internet_plus_xiaomi.md)
+1. [重来ReWork](business/rework.md)
+1. [定位](business/positioning.md)
+1. [企业家](business/entrepreneur.md)
+1. [第4消费时代](business/4th-consumerist.md)
+
+## 媒体
 1. [时尚：幕后的策动](media/fashion_editor.md)
 1. [平面排版基本的基本](media/graphic_design.md)
 1. [徐建军-开始吧](media/kaistart.md)
@@ -164,27 +156,39 @@
 1. [Vox Media调研](media/vox-media.md)
 1. [Web Content Management](media/cms.md)
 
-# 人工智能
+## 人工智能
 1. [人工智能的未来](ai/OnIntelligence.md)
 1. [与机器赛跑](ai/RaceAgainstTheMachine.md)
 1. [智能时代](ai/intelligence-times.md)
 1. [科学的极致：漫谈人工智能](ai/talk-ai.md)
 1. [人工智能狂潮](ai/ai-japan.md)
 
-## 产品
-1. 产品经理
-    1. [产品的视角：从热闹到门道](pm/perspective_product.md)
-        - [运营数据指标](pm/operation_data.md)
-        - [你真的了解MVP（最小化可用产品）么？](pm/mvp.md)
-        - [如何撰写MRD和PRD](pm/mrd_prd.md)
-        - [波士顿矩阵使用方法](pm/bcg_matrix.md)
-        - [SWOT分析法](pm/swot.md)
-    1. [人人都是产品经理2.0](pm/product_manager_sujie.md)
-    1. [Inspired-How To Create Products Customers Love](pm/inspired.md)
-1. 设计
-    1. [Search Patterns](design/SearchPatterns.md)
-    1. [Sketching User Experiences](design/SketchingUserExperiences.md)
-    1. [About Face 3](design/AboutFace3.md)
-    1. [Design Driven Innovation](design/DesignDrivenInnovation.md)
-    1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
-1. 数据分析
+# 产品
+## 产品经理
+1. [产品的视角：从热闹到门道](pm/perspective_product.md)
+    - [运营数据指标](pm/operation_data.md)
+    - [你真的了解MVP（最小化可用产品）么？](pm/mvp.md)
+    - [如何撰写MRD和PRD](pm/mrd_prd.md)
+    - [波士顿矩阵使用方法](pm/bcg_matrix.md)
+    - [SWOT分析法](pm/swot.md)
+1. [人人都是产品经理2.0](pm/product_manager_sujie.md)
+1. [Inspired-How To Create Products Customers Love](pm/inspired.md)
+
+## 管理
+1. [成为技术领导者](management/tech_leader.md)
+1. [人件（第2版）](management/peopleware.md)
+1. [软件随想录](management/more_joel_on_software.md)
+1. [工业人的未来](management/the_future_of_industrial_man.md)
+1. [Scrum概念](management/scrum.md)
+    - [Scrum管理文档结构图](management/scrum_doc.md)
+1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
+
+## 设计
+1. [Search Patterns](design/SearchPatterns.md)
+1. [Sketching User Experiences](design/SketchingUserExperiences.md)
+1. [About Face 3](design/AboutFace3.md)
+1. [Design Driven Innovation](design/DesignDrivenInnovation.md)
+1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
+
+## 数据分析
+1. [精益数据分析](data/LeanAnalytics.md)
