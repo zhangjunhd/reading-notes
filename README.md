@@ -142,7 +142,6 @@
 1. [互联网+小米案例版](business/internet_plus_xiaomi.md)
 1. [重来ReWork](business/rework.md)
 1. [定位](business/positioning.md)
-1. [企业家](business/entrepreneur.md)
 1. [第4消费时代](business/4th-consumerist.md)
 
 ## 媒体
@@ -163,6 +162,10 @@
 1. [科学的极致：漫谈人工智能](ai/talk-ai.md)
 1. [人工智能狂潮](ai/ai-japan.md)
 
+## 企业家精神
+1. [工业人的未来](entrepreneur/the_future_of_industrial_man.md)
+1. [企业家](entrepreneur/entrepreneur.md)
+
 # 产品
 ## 产品经理
 1. [产品的视角：从热闹到门道](pm/perspective_product.md)
@@ -178,7 +181,6 @@
 1. [成为技术领导者](management/tech_leader.md)
 1. [人件（第2版）](management/peopleware.md)
 1. [软件随想录](management/more_joel_on_software.md)
-1. [工业人的未来](management/the_future_of_industrial_man.md)
 1. [Scrum概念](management/scrum.md)
     - [Scrum管理文档结构图](management/scrum_doc.md)
 1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
