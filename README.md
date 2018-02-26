@@ -102,7 +102,7 @@
 # 艺术
 1. [我心自由-杜尚传](art/MarcelDuchamp.md)
 
-## 社会学
+# 社会学
 1. [第4消费时代](sociology/4th-consumerist.md)
 
 # 小说
