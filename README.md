@@ -119,18 +119,10 @@
 
 
 # 商业
-1. [产品的视角：从热闹到门道](business/perspective_product.md)
-    - [运营数据指标](business/operation_data.md)
-    - [你真的了解MVP（最小化可用产品）么？](business/mvp.md)
-    - [如何撰写MRD和PRD](business/mrd_prd.md)
-    - [波士顿矩阵使用方法](business/bcg_matrix.md)
-    - [SWOT分析法](business/swot.md)
-1. [人人都是产品经理2.0](business/product_manager_sujie.md)
 1. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](business/business_model.md)
 1. [周鸿祎自述-我的互联网方法论](business/zhou_hong_yi.md)
 1. [互联网+小米案例版](business/internet_plus_xiaomi.md)
 1. [重来ReWork](business/rework.md)
-1. [Inspired-How To Create Products Customers Love](business/inspired.md)
 1. [定位](business/positioning.md)
 1. [企业家](business/entrepreneur.md)
 1. [精益数据分析](business/LeanAnalytics.md)
@@ -179,10 +171,20 @@
 1. [科学的极致：漫谈人工智能](ai/talk-ai.md)
 1. [人工智能狂潮](ai/ai-japan.md)
 
-
-# 设计
-1. [Search Patterns](design/SearchPatterns.md)
-1. [Sketching User Experiences](design/SketchingUserExperiences.md)
-1. [About Face 3](design/AboutFace3.md)
-1. [Design Driven Innovation](design/DesignDrivenInnovation.md)
-1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
+## 产品
+1. 产品经理
+    1. [产品的视角：从热闹到门道](pm/perspective_product.md)
+        - [运营数据指标](pm/operation_data.md)
+        - [你真的了解MVP（最小化可用产品）么？](pm/mvp.md)
+        - [如何撰写MRD和PRD](pm/mrd_prd.md)
+        - [波士顿矩阵使用方法](pm/bcg_matrix.md)
+        - [SWOT分析法](pm/swot.md)
+    1. [人人都是产品经理2.0](pm/product_manager_sujie.md)
+    1. [Inspired-How To Create Products Customers Love](pm/inspired.md)
+1. 设计
+    1. [Search Patterns](design/SearchPatterns.md)
+    1. [Sketching User Experiences](design/SketchingUserExperiences.md)
+    1. [About Face 3](design/AboutFace3.md)
+    1. [Design Driven Innovation](design/DesignDrivenInnovation.md)
+    1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
+1. 数据分析
