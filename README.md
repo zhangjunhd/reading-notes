@@ -150,6 +150,7 @@
 1. [链接](internet/linked.md)
 1. [黑天鹅](internet/TheBlackSwan.md)
 1. [必然](internet/The-Inevitable.md)
+1. [新经济，新规则 ](internet/NewRulesForTheNewEconomy)
 
 # 管理
 1. [成为技术领导者](management/tech_leader.md)
