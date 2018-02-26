@@ -102,7 +102,8 @@
 # 艺术
 1. [我心自由-杜尚传](art/MarcelDuchamp.md)
 
-
+## 社会学
+1. [第4消费时代](sociology/4th-consumerist.md)
 
 # 小说
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
@@ -134,15 +135,13 @@
 1. [黑天鹅](internet/TheBlackSwan.md)
 1. [必然](internet/The-Inevitable.md)
 1. [新经济，新规则](internet/NewRulesForTheNewEconomy.md)
+1. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](internet/business_model.md)
+1. [周鸿祎自述-我的互联网方法论](internet/zhou_hong_yi.md)
+1. [互联网+小米案例版](internet/internet_plus_xiaomi.md)
+1. [重来ReWork](internet/rework.md)
 
-
-## 商业思维
-1. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](business/business_model.md)
-1. [周鸿祎自述-我的互联网方法论](business/zhou_hong_yi.md)
-1. [互联网+小米案例版](business/internet_plus_xiaomi.md)
-1. [重来ReWork](business/rework.md)
-1. [定位](business/positioning.md)
-1. [第4消费时代](business/4th-consumerist.md)
+## 营销
+1. [定位](marketing/positioning.md)
 
 ## 媒体
 1. [时尚：幕后的策动](media/fashion_editor.md)
