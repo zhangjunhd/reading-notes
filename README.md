@@ -1,4 +1,5 @@
 # 东方哲学
+1. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
 1. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
 1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
 1. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
@@ -104,6 +105,7 @@
 
 # 社会学
 1. [第4消费时代](sociology/4th-consumerist.md)
+1. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
 
 # 小说
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
