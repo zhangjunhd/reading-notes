@@ -134,7 +134,6 @@
 1. [万维钢-注意力商人](internet/the-attention-merchants.md)
 1. [技术的本质](internet/TheNatureOfTechnology.md)
 1. [链接](internet/linked.md)
-1. [黑天鹅](internet/TheBlackSwan.md)
 1. [必然](internet/The-Inevitable.md)
 1. [新经济，新规则](internet/NewRulesForTheNewEconomy.md)
 1. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](internet/business_model.md)
@@ -194,6 +193,7 @@
 1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 ## 统计学与数据分析
+1. [黑天鹅](data/TheBlackSwan.md)
 1. [精益数据分析](data/LeanAnalytics.md)
 1. [统计与真理](data/statistics-and-truth.ipynb)
 1. [机会的数学](data/chance-of-math.ipynb)
