@@ -198,3 +198,4 @@
 1. [统计与真理](data/statistics-and-truth.ipynb)
 1. [机会的数学](data/chance-of-math.ipynb)
 1. [赤裸裸的统计学](data/naked-statistics.ipynb)
+1. [最大似然估计(Maximum likelihood estimation)](data/mle.ipynb)
