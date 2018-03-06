@@ -195,3 +195,4 @@
 
 ## 统计学与数据分析
 1. [精益数据分析](data/LeanAnalytics.md)
+1. [统计与真理](data/statistics-and-truth.ipynb)
