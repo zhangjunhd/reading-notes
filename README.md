@@ -103,7 +103,7 @@
 # 艺术
 1. [我心自由-杜尚传](art/MarcelDuchamp.md)
 
-# 社会学
+# 社会学与经济学
 1. [第4消费时代](sociology/4th-consumerist.md)
 1. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
 
@@ -193,5 +193,5 @@
 1. [Design Driven Innovation](design/DesignDrivenInnovation.md)
 1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
-## 数据分析
+## 统计学与数据分析
 1. [精益数据分析](data/LeanAnalytics.md)
