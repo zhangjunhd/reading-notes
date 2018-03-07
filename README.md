@@ -144,6 +144,13 @@
 ## 营销
 1. [定位](marketing/positioning.md)
 
+## 广告
+1. [程序化购买的历史沿革及展望](advertising/rtb.md)
+1. [Building a Real-Time Bidding Platform on AWS](advertising/rtb-aws.md)
+1. [中国互联网广告生态](advertising/internet-advertising-supply-chain-2014.md)
+1. [Computational Advertising: Techniques for Targeting Relevant Ads](advertising/ComputationalAdvertising.md)
+1. [计算广告](advertising/computational_ad)
+
 ## 媒体
 1. [时尚：幕后的策动](media/fashion_editor.md)
 1. [平面排版基本的基本](media/graphic_design.md)
