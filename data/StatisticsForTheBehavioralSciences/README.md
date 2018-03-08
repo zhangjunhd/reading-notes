@@ -44,9 +44,9 @@
     - [两个独立样本的t检验](2independent-sample-t-score.ipynb)
     - [两个相关样本的t检验](2relevent-sample-t-score.ipynb)
     - [估计](estimation.ipynb)
-    - [方差分析][49]
-    - [重复测量方差分析][50]
-    - [双因素方差分析（独立测量）][51]
+    - [方差分析](anova.ipynb)
+    - [重复测量方差分析](repeat-anova.ipynb)
+    - [双因素方差分析（独立测量）](independent-test-anova.ipynb)
 - 相关与非参数检验
     - [相关][52]
     - [回归][53]
