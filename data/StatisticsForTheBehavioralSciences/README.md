@@ -48,8 +48,8 @@
     - [重复测量方差分析](repeat-anova.ipynb)
     - [双因素方差分析（独立测量）](independent-test-anova.ipynb)
 - 相关与非参数检验
-    - [相关][52]
-    - [回归][53]
+    - [相关](relevance.ipynb)
+    - [回归](regression.ipynb)
     - [卡方检验：拟合度与独立性检验][54]
     - [二项检验][55]
     - [顺序数据的统计方法][56]
