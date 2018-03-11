@@ -106,6 +106,7 @@
 # 社会学与经济学
 1. [第4消费时代](sociology/4th-consumerist.md)
 1. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
+1. [经济学通识课](sociology/a-little-history-of-economics.md)
 
 # 小说
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
