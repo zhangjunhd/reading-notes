@@ -1,3 +1,8 @@
+# 牛津通识读本
+## 学科系列
+1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
+
+
 # 东方哲学
 1. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
 1. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
@@ -39,6 +44,8 @@
 1. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
 1. [论自然](western_philosophy/nature.md)
 1. [本质与境况](western_philosophy/Essence-and-Condition.md)
+1. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
+
 
 # 心理学
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
@@ -55,7 +62,8 @@
 1. [意志力](psychology/willpower.md)
 1. [自控力](psychology/TheWillpowerInstinct.md)
 
-
+## 认知心理学
+1. [思想本质](cognitive_psychology/TheStuffOfThought.md)
 
 # 成功学
 1. [新生——七年就是一辈子](success/xin_sheng.md)
@@ -92,7 +100,6 @@
 1. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
 1. [人类简史](history/A-brief-history-of-humankind.md)
 1. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
-1. [科学革命](history/TheScientificRevolution.md)
 1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
 1. [万历十五年](history/1587.md)
 1. [中国大历史](history/big-history.md)
