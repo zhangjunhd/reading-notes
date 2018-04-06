@@ -3,6 +3,10 @@
 1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
 
 
+## 哲学家系列
+1. [福柯](A-Very-Short-Introductions/Foucault.md)
+
+
 # 东方哲学
 1. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
 1. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
