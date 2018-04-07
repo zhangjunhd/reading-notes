@@ -30,7 +30,7 @@
 1. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
 1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
-1. [悉达多](eastern_philosophy/xi_da_duo.md)
+
 
 # 西方哲学
 1. [苏菲的世界](western_philosophy/SophieWorld.md)
@@ -128,7 +128,7 @@
 1. [妈妈及生命的意义](novel/MommaAndTheMeaningOfLife.md)
 1. [叔本华的治疗](novel/TheSchopenhauerCure.md)
 1. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
-
+1. [悉达多](novel/Siddhartha.md)
 
 # 商业
 ## 财经
