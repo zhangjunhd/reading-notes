@@ -6,7 +6,7 @@
 ## 哲学家系列
 1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
 1. [福柯](A-Very-Short-Introductions/Foucault.md)
-
+1. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
 
 # 东方哲学
 1. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
