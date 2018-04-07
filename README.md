@@ -1,7 +1,7 @@
 # 牛津通识读本
 ## 学科系列
 1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
-
+1. [我们时代的伦理学](A-Very-Short-Introductions/Ethics.md)
 
 ## 哲学家系列
 1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
