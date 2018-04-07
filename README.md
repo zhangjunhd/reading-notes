@@ -4,6 +4,7 @@
 
 
 ## 哲学家系列
+1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
 1. [福柯](A-Very-Short-Introductions/Foucault.md)
 
 
