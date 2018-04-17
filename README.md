@@ -32,6 +32,7 @@
     1. [这个世界会好吗-梁漱溟晚年口述](eastern_philosophy/liang_shu_min_wan_nian_kou_shu.md)
     1. [人生的三路向:宗教、道德与人生](eastern_philosophy/ren_sheng_de_san_lu_xiang.md)
     1. [梁漱溟先生论儒佛道](eastern_philosophy/liang_shu_min_xian_sheng_lun_ru_fo_dao.md)
+    1. [人心与人生](eastern_philosophy/renxin_yu_rensheng.md)
 
 # 西方哲学
 1. [苏菲的世界](western_philosophy/SophieWorld.md)
