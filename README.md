@@ -201,11 +201,13 @@
 
 ## 管理
 1. [成为技术领导者](management/tech_leader.md)
+1. [人月神话](management/TheMythicalMan-Month.md)
 1. [人件（第2版）](management/peopleware.md)
 1. [软件随想录](management/more_joel_on_software.md)
 1. [Scrum概念](management/scrum.md)
     - [Scrum管理文档结构图](management/scrum_doc.md)
 1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
+
 
 ## 设计
 1. [Search Patterns](design/SearchPatterns.md)
