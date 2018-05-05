@@ -219,6 +219,7 @@
 
 ## 统计学与数据分析
 1. [黑天鹅](data/TheBlackSwan.md)
+1. [简单统计学](data/StandardDeviations.md)
 1. [精益数据分析](data/LeanAnalytics.md)
 1. [统计与真理](data/statistics-and-truth.ipynb)
 1. [机会的数学](data/chance-of-math.ipynb)
