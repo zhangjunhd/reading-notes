@@ -62,6 +62,7 @@
 1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
 1. [幸福是陷阱?](psychology/the-happiness-trap.md)
 1. [专念](psychology/mindfulness.md)
+1. [The Complete Idiot's Guide to Memes](psychology/TheCompleteIdiotsGuideToMemes.md)
 1. [Level 3 of Meme](psychology/Level3OfMeme.md)
 1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
 1. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)

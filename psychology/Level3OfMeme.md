@@ -19,7 +19,7 @@ These ideas that we communicate are called [memes](http://www.memecentral.com/in
 
 Like all things, memes fit better with some things than others. Some memes naturally fit better in people’s minds. Some memes naturally fit better with other memes. When a group of memes fit well together and pull the strings of someone’s mouth and vocal cords so that they pass them on to others, a new, self-replicating thing gets created. The new thing is called a `memeplex`.
 
-Self-replication is the most powerful force in the universe. One person tells two, two tell four, four tell eight, and pretty soon the whole universe is full of people sharing the memeplex.
+`Self-replication` is the most powerful force in the universe. One person tells two, two tell four, four tell eight, and pretty soon the whole universe is full of people sharing the memeplex.
 
 Sometimes a self-replicating memeplex makes a mistake in copying itself. The memeplex with a mistake in it will either be better, worse, or the same at making copies of itself. If it’s better soon there will be more copies of the new memeplex than the old in the universe.
 
