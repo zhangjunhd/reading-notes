@@ -69,9 +69,8 @@
 1. [拖延心理学](psychology/procrastination.md)
 1. [意志力](psychology/willpower.md)
 1. [自控力](psychology/TheWillpowerInstinct.md)
-
-## 认知心理学
-1. [思想本质](cognitive_psychology/TheStuffOfThought.md)
+1. 史蒂芬平克
+    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 
 # 成功学
 1. [新生——七年就是一辈子](success/xin_sheng.md)
@@ -230,4 +229,7 @@
 1. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
 1. [行为科学统计](data/StatisticsForTheBehavioralSciences)
 
-
+# 计算机科学
+## 可计算性与算法
+1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md)
+1. [算法概论](Computation-Algorithm/Algorithms.md)
