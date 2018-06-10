@@ -178,7 +178,7 @@
 1. [Web Content Management](media/cms.md)
 
 ## 电商
-1. [S2b2c](ec/s2b2c.md)
+1. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
 
 ## 人工智能
 1. [人工智能的未来](ai/OnIntelligence.md)
