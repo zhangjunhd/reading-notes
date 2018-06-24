@@ -125,40 +125,42 @@ By thinking through the behavior of a simulation of the NFA, we’ve begun to co
 ![](https://www.safaribooksonline.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690724.png)
 
 ## Chapter 4. Just Add Power
+### Deterministic Pushdown Automata
+A finite state machine with a built-in stack is called a `pushdown automaton (PDA)`, and when that machine’s rules are deterministic, we call it a `deterministic pushdown automaton (DPDA)`.
 
+Choosing a special character to mark the bottom of the stack—the dollar sign, `$`.It’s easy enough to rewrite the balanced-bracket DPDA’s rules in this format:
 
+- When in state 1 and an opening bracket is read, pop the character `$`, push the characters `b$`, and move into state 2.
+- When in state 2 and an opening bracket is read, pop the character b, push the characters bb, and stay in state 2.
+- When in state 2 and a closing bracket is read, pop the character b, push no characters, and stay in state 2.
+- When in state 2 (without reading any character), pop the character `$`, push the character `$`, and move into state 1.
 
+![](https://www.safaribooksonline.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690730.png)
 
+### Nondeterministic Pushdown Automata
+Unsurprisingly, a pushdown automaton without determinism constraints is called a `nondeterministic pushdown automaton`. Here’s one for recognizing palindromes with an even number of letters:
 
+![](https://www.safaribooksonline.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690738.png)
 
+#### Nonequivalence
+But wait: we saw in Equivalence that nondeterministic machines without a stack are exactly equivalent in power to deterministic ones.
 
+The NFA-to-DFA trick only works because we can use a single DFA state to represent many possible NFA states. To simulate an NFA, we only need to keep track of what states it could currently be in, then pick a different set of possible states each time we read an input character, and a DFA can easily do that job if we give it the right rules.
 
+But that trick doesn’t work for PDAs: we can’t usefully represent multiple NPDA configurations as a single DPDA configuration. The problem, unsurprisingly, is the stack. An NPDA simulation needs to know all the characters that could currently be on top of the stack, and it must be able to pop and push several of the simulated stacks simultaneously. There’s no way to combine all the possible stacks into a      single stack so that a DPDA can still see all the topmost characters and access every possible stack individually.
 
+So unfortunately, our NPDA simulation does not behave like a DPDA, and there isn’t an NPDA-to-DPDA algorithm. The unmarked palindrome problem is an example of a job where an NPDA can do something that a DPDA can’t, so **nondeterministic pushdown automata really do have more power than deterministic ones**.
 
+### Parsing with Pushdown Automata
+A more traditional approach is to break the parsing process apart into two separate stages:
 
+- `Lexical analysis`:Read a raw string of characters and turn it into a sequence of `tokens`. Each token represents an individual building block of program syntax, like “variable name,” “opening bracket,” or “while keyword.” A lexical analyzer uses a          language-specific set of rules called a `lexical grammar` to decide which sequences of characters should produce which tokens. This stage deals with messy character-level details like variable-naming rules, comments, and whitespace, leaving a clean sequence of tokens for the next stage to consume.
+- `Syntactic analysis`:Read a sequence of tokens and decide whether they represent a valid program according to the `syntactic grammar` of the language being parsed. If the program is valid, the syntactic analyzer may produce additional information about its structure (e.g., a parse tree).
 
+### How Much Power?
+The main consequence of having a stack is the ability to recognize certain languages that finite automata aren’t capable of recognizing, like palindromes and strings of balanced brackets. The unlimited storage provided by a stack lets a PDA remember arbitrary amounts of information during a computation and refer back to it later.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Chapter 5. The Ultimate Machine
 
 
 
