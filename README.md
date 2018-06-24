@@ -224,7 +224,7 @@
 1. [黑天鹅](data/TheBlackSwan.md)
 1. [简单统计学](data/StandardDeviations.md)
 1. [精益数据分析](data/LeanAnalytics.md)
-1. [统计与真理](data/statistics-and-truth.ipynb)
+1. [统计与真理](http://note.youdao.com/noteshare?id=1e4a6bd6698b062fea6b864877f8d484&sub=EAA7075E403749A1ACA602CEC7BB1190)
 1. [机会的数学](data/chance-of-math.ipynb)
 1. [赤裸裸的统计学](data/naked-statistics.ipynb)
 1. [最大似然估计(Maximum likelihood estimation)](data/mle.ipynb)
