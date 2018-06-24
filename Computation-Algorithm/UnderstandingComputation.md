@@ -52,7 +52,7 @@ Let’s wrap up that code and state  together in a class and call it a virtual m
 #### Big-Step Semantics
 We’ve now seen what `small-step operational semantics` looks like: we design an abstract machine that maintains some execution state, then define reduction rules that specify how each kind of program construct can make incremental progress toward being fully evaluated. In particular, small-step semantics **has a mostly iterative flavor**,   requiring the abstract machine to repeatedly perform reduction steps (the Ruby while loop in Machine#run) that are themselves constructed to produce as output the same kind of information that they require as input, making them suitable for this kind of repeated application.
 
-The small-step approach has the advantage of slicing up the complex business of executing an entire program into smaller pieces that are easier to explain and analyze, but        it does feel a bit indirect: instead of explaining how a whole program construct works, we just show how it can be reduced slightly. Why can’t we explain a statement more directly, by telling a complete story about how its execution works? Well, we can, and that’s the basis of `big-step semantics`.
+The small-step approach has the advantage of slicing up the complex business of executing an entire program into smaller pieces that are easier to explain and analyze, but it does feel a bit indirect: instead of explaining how a whole program construct works, we just show how it can be reduced slightly. Why can’t we explain a statement more directly, by telling a complete story about how its execution works? Well, we can, and that’s the basis of `big-step semantics`.
 
 The idea of big-step semantics is to specify how to get from an expression or statement straight to its result. This necessarily      involves thinking about program **execution as a recursive rather than an iterative process**: big-step semantics says that, to evaluate a large expression, we evaluate all of its smaller subexpressions and then combine their results to get our final answer.
 
@@ -61,6 +61,70 @@ This style of semantics doesn’t directly address the question of executing a p
 
 `Denotational semantics` is necessarily a more abstract approach than operational, because it just replaces one language with another instead of turning a language into real behavior.
 
+### Formal Semantics in Practice
+The branch of mathematics called `domain theory` was developed specifically to provide definitions and objects that are useful for denotational semantics, allowing a model of computation based on [fixed points][1] of [monotonic functions][2] on [partially ordered sets][3]. Programs can be understood by “compiling” them into mathematical functions, and the techniques of domain theory can be used to prove interesting properties of these functions.
+
+`Small-step semantics` is also known as `structural operational semantics` and `transition semantics`; `big-step semantics` is more often called `natural semantics` or `relational semantics`; and `denotational semantics` is also called `fixed-point semantics` or `mathematical semantics`.
+
+Other styles of formal semantics are available. One alternative is `axiomatic semantics`, which describes the meaning of a statement by making assertions about the state of the abstract machine before and after that statement executes: if one assertion (the precondition) is initially true before the statement is executed,      then the other assertion (the postcondition) will be true afterward. Axiomatic semantics is useful for verifying the correctness of programs: as statements are plugged together to make larger programs, their corresponding assertions can be plugged together to make larger assertions, with the goal of showing that an overall assertion about a program matches up with its intended specification.
+
+## Chapter 3. The Simplest Computers
+### Deterministic Finite Automata
+A `finite state machine`, also known as a `finite automaton`, is a drastically simplified model of a computer that throws out all of these features in exchange for being easy to understand, easy to reason about, and easy to implement in hardware or software.
+
+#### States, Rules, and Input
+It’s a little machine with a handful of possible `states` and the ability to keep track of which one of those states it’s currently in—think of it as a computer with enough RAM to store a single value.
+
+Instead of a general-purpose CPU for executing arbitrary programs, each finite automaton has a hardcoded collection of `rules` that determine how it should move from one state to another in response to input. The automaton starts in one particular state and reads individual characters from its `input` stream, following a rule each time it reads a character.
+
+![](https://www.safaribooksonline.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690690.png)
+
+The two circles represent the automaton’s two states, 1 and 2, and the arrow coming from nowhere shows that the automaton always starts in state 1, its `start state`.
+
+#### Output
+![](https://www.safaribooksonline.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690692.png)
+
+These special states are usually called `accept states`, which suggests the idea of a machine accepting or rejecting certain sequences of inputs.
+
+#### Determinism
+Significantly, this kind of automaton is `deterministic`: whatever state it’s currently in, and whichever character it reads, it’s always absolutely certain which state it will end up in.
+
+### Nondeterministic Finite Automata
+#### Nondeterminism
+![](https://www.safaribooksonline.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690698.png)
+
+This state machine, a `nondeterministic finite automaton (NFA)`, no longer has exactly one execution path for each sequence of inputs. When it’s in state 1 and reads b as input, it’s possible for it to follow a rule that keeps it in state 1, but it’s also possible for it to follow a different rule that takes it into state 2 instead.
+
+A DFA’s next state is always completely determined by its current state and its input, but an NFA sometimes has more than one possibility for which state to move into next, and sometimes none at all.
+
+#### Free Moves
+These are rules that the machine may spontaneously follow without reading any input, and they help here because they give the NFA an initial choice between two separate groups of states:
+
+![](https://www.safaribooksonline.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690704.png.jpg)
+
+The `free moves` are shown by the dotted unlabeled arrows from state 1 to states 2 and 4. This machine can still accept the string 'aaaa' by spontaneously moving into state 2, and then moving between states 2 and 3 as it reads the input, and likewise for 'aaaaaaaaa' if it begins with a free move into state 4. Now, though, there is no way for it to accept the string 'aaaaa': in any possible execution, it must begin by committing to a free move into either state 2 or state 4, and once it’s gone one way, there’s no route back again. Once it’s in state 2, it can only accept a string whose length is a multiple  2, and likewise once it’s in state 4, it can only accept a string whose length is a multiple of 3.
+
+### Regular Expressions
+`Regular expressions` provide a language for writing textual patterns against which strings may be matched.
+
+As we’ll see, it’s possible to convert any regular expression into an equivalent NFA—every string matched by the regular expression is accepted by the NFA, and vice versa—and then match a string by feeding it to a simulation of that NFA to see whether it gets accepted.
+
+### Equivalence
+Well, it turns out that it’s possible to convert any nondeterministic finite automaton into a deterministic one that accepts exactly the same strings.
+
+The only real difference between these two examples is that the DFA simulation moves from one current state to another, whereas the NFA simulation moves from **one current set of possible states** to another.
+
+The DFA will have a state to represent    each set of possible states of the NFA, and the rules between these DFA states will correspond to the ways in which a deterministic simulation of the NFA can move between its sets of possible states.
+
+Let’s try doing the conversion for a specific NFA. Take this one:
+
+![](https://www.safaribooksonline.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690722.png)
+
+By thinking through the behavior of a simulation of the NFA, we’ve begun to construct a state machine for that simulation:
+
+![](https://www.safaribooksonline.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690724.png)
+
+## Chapter 4. Just Add Power
 
 
 
@@ -93,3 +157,51 @@ This style of semantics doesn’t directly address the question of executing a p
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1]: http://en.wikipedia.org/wiki/Fixed_point_(mathematics)
+[2]: http://en.wikipedia.org/wiki/Monotonic_function
+[3]:http://en.wikipedia.org/wiki/Partially_ordered_set
