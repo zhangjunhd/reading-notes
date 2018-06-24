@@ -225,7 +225,7 @@
 1. [简单统计学](data/StandardDeviations.md)
 1. [精益数据分析](data/LeanAnalytics.md)
 1. [统计与真理](http://note.youdao.com/noteshare?id=1e4a6bd6698b062fea6b864877f8d484&sub=EAA7075E403749A1ACA602CEC7BB1190)
-1. [机会的数学](data/chance-of-math.ipynb)
+1. [机会的数学](http://note.youdao.com/noteshare?id=1ec5a2f2692d95fb80ff732ea6291bec&sub=6D7ECF2761EA4BEE87CBFCD79D47ABC0)
 1. [赤裸裸的统计学](data/naked-statistics.ipynb)
 1. [最大似然估计(Maximum likelihood estimation)](data/mle.ipynb)
 1. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
