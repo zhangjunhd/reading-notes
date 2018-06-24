@@ -220,7 +220,14 @@
 1. [Design Driven Innovation](design/DesignDrivenInnovation.md)
 1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
-## 统计学与数据分析
+# 机器学习
+## 自然语言处理
+
+# 计算理论
+1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md)
+1. [算法概论](Computation-Algorithm/Algorithms.md)
+
+# 统计学
 1. [黑天鹅](data/TheBlackSwan.md)
 1. [简单统计学](data/StandardDeviations.md)
 1. [精益数据分析](data/LeanAnalytics.md)
@@ -231,8 +238,3 @@
 1. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
 1. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
 1. [行为科学统计](data/StatisticsForTheBehavioralSciences)
-
-# 计算机科学
-## 可计算性与算法
-1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md)
-1. [算法概论](Computation-Algorithm/Algorithms.md)
