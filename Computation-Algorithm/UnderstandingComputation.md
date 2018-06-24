@@ -161,17 +161,37 @@ A more traditional approach is to break the parsing process apart into two separ
 The main consequence of having a stack is the ability to recognize certain languages that finite automata aren’t capable of recognizing, like palindromes and strings of balanced brackets. The unlimited storage provided by a stack lets a PDA remember arbitrary amounts of information during a computation and refer back to it later.
 
 ## Chapter 5. The Ultimate Machine
+### Deterministic Turing Machines
+A finite state machine with access to an infinitely long tape is called a `Turing machine (TM)`. That name usually refers to a machine with deterministic rules, but we can also call it a `deterministic Turing machine (DTM)` to be completely unambiguous.
 
+#### Rules
+This unified rule format has five parts:
 
+- The current state of the machine
+- The character that must appear at the tape head’s current position
+- The next state of the machine
+- The character to write at the tape head’s current position
+- The direction (left or right) in which to move the head after writing to the            tape
 
+#### Determinism
+A Turing machine’s next action is chosen according to its current state and the        character currently underneath its tape head, so a deterministic machine can only have one rule for each combination of state and character—the “no contradictions” rule—in order to prevent any ambiguity over what its next action will be.
 
+### Nondeterministic Turing Machines
+Just as with finite automata, a deterministic Turing machine can simulate a nondeterministic one. The simulation works by using the tape to store a queue of suitably encoded Turing machine configurations, each one containing a possible current state and tape of the simulated machine.
 
+### Maximum Power
+In fact, any attempt to upgrade the specification of Turing machines to make them more powerful is doomed to failure, because they’re already capable of simulating any potential enhancement.
 
+- Internal Storage
+- Subroutines
+- Multiple Tapes
+- Multidimensional Tape
 
+### General-Purpose Machines
+By reimplementing Tape, TMRule, DTMRulebook, and DTM as Turing machine rules, we are able to design a machine that can simulate any other DTM by reading its rules, accept states, and initial configuration from the tape and stepping through its execution, essentially acting as a Turing machine rulebook interpreter. A machine that does this is called a `universal Turing machine (UTM)`.
 
-
-
-
+# Part II. Computation and Computability
+## Chapter 6. Programming with Nothing
 
 
 
