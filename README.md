@@ -228,7 +228,7 @@
 1. [算法概论](Computation-Algorithm/Algorithms.md)
 
 # 统计学
-1. [黑天鹅](data/TheBlackSwan.md)
+1. [黑天鹅](http://note.youdao.com/noteshare?id=cf4830583e5cd9f3cb15de2f7e4689e7&sub=092BBB9CE91C4DB1A59438EA33558734)
 1. [简单统计学](data/StandardDeviations.md)
 1. [精益数据分析](data/LeanAnalytics.md)
 1. [统计与真理](http://note.youdao.com/noteshare?id=1e4a6bd6698b062fea6b864877f8d484&sub=EAA7075E403749A1ACA602CEC7BB1190)
