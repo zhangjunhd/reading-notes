@@ -222,6 +222,10 @@
 
 # 机器学习
 ## 自然语言处理
+- 标注
+    1. [THE PENN TREEBANK-AN OVERVIEW](http://note.youdao.com/noteshare?id=9f8f72c20d1e96f5d1a4ac58a79998b7&sub=5F2E5B1C4E894D6BA312A4CC496306CB)
+
+
 
 # 计算理论
 1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md)
