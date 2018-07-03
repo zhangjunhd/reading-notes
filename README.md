@@ -225,6 +225,7 @@
 1. 标注
     1. [THE PENN TREEBANK-AN OVERVIEW](http://note.youdao.com/noteshare?id=9f8f72c20d1e96f5d1a4ac58a79998b7&sub=5F2E5B1C4E894D6BA312A4CC496306CB)
     1. [The Proposition Bank: An Annotated Corpus of Semantic Roles](http://note.youdao.com/noteshare?id=a57cdb4ab339d1ed8e4864eff9c67cd1&sub=370A6CEAD2F44CB39D8ED76358FF7247)
+    1. [Abstract Meaning Representation for Sembanking](http://note.youdao.com/noteshare?id=cf92422824a7b712a3bd25d5a27a0c88&sub=3DE36BA2A48C482291CC0FD30B4B3C07)
 
 
 
