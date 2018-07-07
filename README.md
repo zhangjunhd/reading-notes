@@ -181,11 +181,11 @@
 1. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
 
 ## 人工智能
-1. [人工智能的未来](ai/OnIntelligence.md)
-1. [与机器赛跑](ai/RaceAgainstTheMachine.md)
-1. [智能时代](ai/intelligence-times.md)
-1. [科学的极致：漫谈人工智能](ai/talk-ai.md)
-1. [人工智能狂潮](ai/ai-japan.md)
+1. [人工智能的未来](http://note.youdao.com/noteshare?id=fbd15411b3ce9943b3f3e296440b1a94&sub=8C9CE5C546564E1B90B68529E40524E2)
+1. [与机器赛跑](http://note.youdao.com/noteshare?id=3bd43e726dd76b0d8230eb9d186c3934&sub=8196ECF808DB4010ACACC8AB307A3CEA)
+1. [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
+1. [科学的极致：漫谈人工智能](http://note.youdao.com/noteshare?id=9766fc1a0adccf237e3ff6254c948613&sub=03B8D2B3342B44B08EF14147C02DC5E0)
+1. [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
 
 ## 企业家精神
 1. [工业人的未来](entrepreneur/the_future_of_industrial_man.md)
