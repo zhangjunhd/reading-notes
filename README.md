@@ -85,7 +85,7 @@
 1. [活法](success/huofa.md)
 1. [伟大是熬出来的](success/fenglun.md)
 1. [蔡康永的说话之道](success/caikangyong.md)
-1. [少有人走的路-心智成熟的旅程](success/the-road-less-traveled.md)
+1. [少有人走的路-心智成熟的旅程](http://note.youdao.com/noteshare?id=31b11f6331ba0ab9ab587e16d05f28ce&sub=0B56E32195AE41189D78371D7553E310)
 1. [冯鑫家信：怎样才算好好活着](success/fengxin-letter.md)
 1. [六个步骤把资料转换成知识](success/6-step-knowledge.md)
 1. [高效能人士的七个习惯](success/the-seven-habits-of-highly-effective-people.md)
@@ -115,7 +115,7 @@
 
 
 # 艺术
-1. [我心自由-杜尚传](art/MarcelDuchamp.md)
+1. [我心自由-杜尚传](http://note.youdao.com/noteshare?id=bb1aeebed968ec6c3d9dcfc26cb9ed4c&sub=A8AB8E6998AC4FC9BB0F1B13DD84ABE5)
 
 # 社会学与经济学
 1. [第4消费时代](sociology/4th-consumerist.md)
