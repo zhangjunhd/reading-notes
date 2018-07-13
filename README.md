@@ -221,7 +221,7 @@
 1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 # 机器学习
-## 自然语言处理
+## Natural Language Processing
 1. General
     1. [Natural Language Processing-Jacob Eisenstein](http://note.youdao.com/noteshare?id=2e7de5e90ec5f8905389426ad442d728&sub=D871E60FB2D749EE8B9D10FD84D18BAB)
 1. Corpus
