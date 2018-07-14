@@ -93,16 +93,19 @@
     1. [把时间当作朋友](http://note.youdao.com/noteshare?id=51982ba9ef1f1d989a0f690db77c5531&sub=A29B551000104CFC8F652681420D8173)
     1. [拖延心理学](http://note.youdao.com/noteshare?id=db15b0e64460fa983aed73a69768dc8e&sub=0B70F1A4D9A84ECFA117F90385DFB95B)
     1. [暗时间](http://note.youdao.com/noteshare?id=c3c7d379ab4e772c20fa349de37df91f&sub=8CB2092E7EC74121A9896B8A9952999B)
+1. 知识管理(主题阅读、整理知识库、输出观点)
+    1. [六个步骤把资料转换成知识](http://note.youdao.com/noteshare?id=0f7dcad585bc83ca0cbb3d63510a2a76&sub=527AD3A6DF0048F9B238B7346C2B2239)
+    1. [如何阅读一本书](http://note.youdao.com/noteshare?id=0355c32dbf51713686b8edb2118ceddf&sub=FD78EC33C6464CFF817E73AC4C389086)
+1. 健康
+    1. [食物是最好的医药](http://note.youdao.com/noteshare?id=01898150e537b74f97d8e979d81a6dda&sub=CBCF6EC1EDF347EEA912CC2C2D405AA7)
+1. 沟通
+    1. [蔡康永的说话之道](http://note.youdao.com/noteshare?id=c519ae9722a855073078435eba9a08ff&sub=869CCCEB991A4CCA8785D068B0FF8025)
 1. [新生——七年就是一辈子](success/xin_sheng.md)
 1. [精进：如何成为一个很厉害的人](success/jingjin.md)
-1. [蔡康永的说话之道](success/caikangyong.md)
 1. [冯鑫家信：怎样才算好好活着](success/fengxin-letter.md)
-1. [六个步骤把资料转换成知识](success/6-step-knowledge.md)
-1. [如何阅读一本书](success/how-to-read-a-book.md)
 1. [第五项修炼](success/the-fifth-discipline.md)
 1. [富兰克林自传](success/franklin.md)
 1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
-1. [食物是最好的医药](success/food.md)
 1. [原则](success/principles.md)
 
 # 历史
