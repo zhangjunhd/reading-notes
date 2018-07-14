@@ -66,7 +66,6 @@
 1. [Level 3 of Meme](psychology/Level3OfMeme.md)
 1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
 1. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-1. [拖延心理学](psychology/procrastination.md)
 1. [意志力](psychology/willpower.md)
 1. [自控力](psychology/TheWillpowerInstinct.md)
 1. 史蒂芬平克
@@ -91,7 +90,8 @@
     1. [奇特的一生](http://note.youdao.com/noteshare?id=6e7db58f10379cfb64d508cec11813b2&sub=BE0A1AA1BF5E4786BD222AE99F21B465)
     1. [高效能人士的七个习惯](http://note.youdao.com/noteshare?id=1a1555a5ba8b90ac894c47cf46b22e4c&sub=88785F2B8CEA4C5EBA89904AC9A06DCA)
     1. [如何不用额外咖啡因也能保持专注](http://note.youdao.com/noteshare?id=49c30153e7705cdf0e54cd0a6c21a3ba&sub=665E4D80A1E24764BCE867A512378F89)
-    1. [把时间当作朋友](success/lixiaolai-time.md)
+    1. [把时间当作朋友](http://note.youdao.com/noteshare?id=51982ba9ef1f1d989a0f690db77c5531&sub=A29B551000104CFC8F652681420D8173)
+    1. [拖延心理学](http://note.youdao.com/noteshare?id=db15b0e64460fa983aed73a69768dc8e&sub=0B70F1A4D9A84ECFA117F90385DFB95B)
 1. [新生——七年就是一辈子](success/xin_sheng.md)
 1. [精进：如何成为一个很厉害的人](success/jingjin.md)
 1. [暗时间](success/dark-time.md)
