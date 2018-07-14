@@ -78,9 +78,10 @@
     1. [活着活着就老了-十信](http://note.youdao.com/noteshare?id=82f47b16b14003c51ab050cc738b1de5&sub=3132CE0FACFB4E3B86BF46DF9A111D21)
     1. [活法](http://note.youdao.com/noteshare?id=37ed50571a93713f94cf14b308a174b5&sub=4FE39EE0CD044B14AD5F668254725AE5)
     1. [伟大是熬出来的](http://note.youdao.com/noteshare?id=d0c38f54e076d44ff7c3d25533416451&sub=53ECCBC634494097989576DE764907A6)
+1. 习惯&练习
+    1. [微习惯](http://note.youdao.com/noteshare?id=85c7ac737f90d0d33378b01a9b8bb3a9&sub=5CD30129E63C422B86601B2D3AFD13F1)
+    1. [练习的心态](success/the-practicing-mind.md)
 1. [新生——七年就是一辈子](success/xin_sheng.md)
-1. [微习惯](success/mini-habits.md)
-1. [练习的心态](success/the-practicing-mind.md)
 1. [精进：如何成为一个很厉害的人](success/jingjin.md)
 1. [刻意练习](success/peak.md)
 1. [学习之道](success/a-mind-for-numbers.md)
