@@ -190,40 +190,6 @@ In fact, any attempt to upgrade the specification of Turing machines to make the
 ### General-Purpose Machines
 By reimplementing Tape, TMRule, DTMRulebook, and DTM as Turing machine rules, we are able to design a machine that can simulate any other DTM by reading its rules, accept states, and initial configuration from the tape and stepping through its execution, essentially acting as a Turing machine rulebook interpreter. A machine that does this is called a `universal Turing machine (UTM)`.
 
-# Part II. Computation and Computability
-## Chapter 6. Programming with Nothing
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [1]: http://en.wikipedia.org/wiki/Fixed_point_(mathematics)
 [2]: http://en.wikipedia.org/wiki/Monotonic_function
 [3]:http://en.wikipedia.org/wiki/Partially_ordered_set

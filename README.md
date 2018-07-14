@@ -73,6 +73,9 @@
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 
 # 成功学
+1. 信念
+    1. [少有人走的路-心智成熟的旅程](http://note.youdao.com/noteshare?id=31b11f6331ba0ab9ab587e16d05f28ce&sub=0B56E32195AE41189D78371D7553E310)
+    1. [活着活着就老了-十信](http://note.youdao.com/noteshare?id=82f47b16b14003c51ab050cc738b1de5&sub=3132CE0FACFB4E3B86BF46DF9A111D21)
 1. [新生——七年就是一辈子](success/xin_sheng.md)
 1. [微习惯](success/mini-habits.md)
 1. [练习的心态](success/the-practicing-mind.md)
@@ -81,11 +84,9 @@
 1. [学习之道](success/a-mind-for-numbers.md)
 1. [暗时间](success/dark-time.md)
 1. [读gtdlife博客摘录](success/gtdlife.md)
-1. [活着活着就老了-十信](success/fengtang-shixin.md)
 1. [活法](success/huofa.md)
 1. [伟大是熬出来的](success/fenglun.md)
 1. [蔡康永的说话之道](success/caikangyong.md)
-1. [少有人走的路-心智成熟的旅程](http://note.youdao.com/noteshare?id=31b11f6331ba0ab9ab587e16d05f28ce&sub=0B56E32195AE41189D78371D7553E310)
 1. [冯鑫家信：怎样才算好好活着](success/fengxin-letter.md)
 1. [六个步骤把资料转换成知识](success/6-step-knowledge.md)
 1. [高效能人士的七个习惯](success/the-seven-habits-of-highly-effective-people.md)
