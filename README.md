@@ -76,6 +76,8 @@
     1. [少有人走的路-心智成熟的旅程](http://note.youdao.com/noteshare?id=31b11f6331ba0ab9ab587e16d05f28ce&sub=0B56E32195AE41189D78371D7553E310)
     1. [活着活着就老了-十信](http://note.youdao.com/noteshare?id=82f47b16b14003c51ab050cc738b1de5&sub=3132CE0FACFB4E3B86BF46DF9A111D21)
     1. [活法](http://note.youdao.com/noteshare?id=37ed50571a93713f94cf14b308a174b5&sub=4FE39EE0CD044B14AD5F668254725AE5)
+    1. [富兰克林自传](http://note.youdao.com/noteshare?id=b183d6400fa13733d417f35bf9afd043&sub=5D2FEE3EA79F485B9C803864995D941F)
+    1. [How Will You Measure Your Life](http://note.youdao.com/noteshare?id=6a69da6918b447d7ebdf9dcec21b98d4&sub=AC24F4D78FA24E4F8C4B38A395DFC75F)
     1. [伟大是熬出来的](http://note.youdao.com/noteshare?id=d0c38f54e076d44ff7c3d25533416451&sub=53ECCBC634494097989576DE764907A6)
 1. 习惯&练习(构建反馈)
     1. [微习惯](http://note.youdao.com/noteshare?id=85c7ac737f90d0d33378b01a9b8bb3a9&sub=5CD30129E63C422B86601B2D3AFD13F1)
@@ -104,8 +106,6 @@
 1. [精进：如何成为一个很厉害的人](success/jingjin.md)
 1. [冯鑫家信：怎样才算好好活着](success/fengxin-letter.md)
 1. [第五项修炼](success/the-fifth-discipline.md)
-1. [富兰克林自传](success/franklin.md)
-1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
 1. [原则](success/principles.md)
 
 # 历史
