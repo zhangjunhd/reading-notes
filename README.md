@@ -105,7 +105,6 @@
 1. [新生——七年就是一辈子](success/xin_sheng.md)
 1. [精进：如何成为一个很厉害的人](success/jingjin.md)
 1. [冯鑫家信：怎样才算好好活着](success/fengxin-letter.md)
-1. [第五项修炼](success/the-fifth-discipline.md)
 1. [原则](success/principles.md)
 
 # 历史
@@ -197,8 +196,8 @@
 1. [工业人的未来](entrepreneur/the_future_of_industrial_man.md)
 1. [企业家](entrepreneur/entrepreneur.md)
 
-# 产品
-## 产品经理
+# 产品经理
+## 产品
 1. [产品的视角：从热闹到门道](pm/perspective_product.md)
     - [运营数据指标](pm/operation_data.md)
     - [你真的了解MVP（最小化可用产品）么？](pm/mvp.md)
@@ -217,7 +216,7 @@
 1. [Scrum概念](management/scrum.md)
     - [Scrum管理文档结构图](management/scrum_doc.md)
 1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
-
+1. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
 
 ## 设计
 1. [Search Patterns](design/SearchPatterns.md)
