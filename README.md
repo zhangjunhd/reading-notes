@@ -106,7 +106,7 @@
     1. [新生——七年就是一辈子](http://note.youdao.com/noteshare?id=91afdeb22c6ebe517d19963108349402&sub=4E138116988145F6B43926C034A79366)
     1. [精进：如何成为一个很厉害的人](http://note.youdao.com/noteshare?id=be6c7defcbc0240ed13c5d83e246d58c&sub=A97FB991380047D79E954D0B52A6744E)
     1. [冯鑫家信：怎样才算好好活着](http://note.youdao.com/noteshare?id=eadc55c27b04a0bbc7f75c4757b10e42&sub=44933ABA14BB44648109E5399AC79EAC)
-    1. [原则](success/principles.md)
+    1. [原则](http://note.youdao.com/noteshare?id=ac86dd731644f76567e7b5f3eb0c04e8&sub=6F11376A982446A890C23FAD5C5D014F)
 
 # 历史
 1. [全球通史](history/a-global-history.md)
