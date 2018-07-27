@@ -137,6 +137,7 @@
 1. [叔本华的治疗](novel/TheSchopenhauerCure.md)
 1. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
 1. [悉达多](novel/Siddhartha.md)
+1. [浮士德](novel/Faust.md)
 
 # 商业
 ## 财经
