@@ -35,9 +35,15 @@
     1. [人心与人生](eastern_philosophy/renxin_yu_rensheng.md)
 
 # 西方哲学
-1. [苏菲的世界](western_philosophy/SophieWorld.md)
-1. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
-1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
+1. 概论
+    1. [苏菲的世界](western_philosophy/SophieWorld.md)
+    1. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
+1. 存在主义
+    1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
+    1. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
+    1. [存在主义心理治疗](psychology/Existential-Psychology.md)
+    1. [异乡人](novel/L'Etranger.md)
+    1. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
 1. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
 1. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
 1. [康德三大批判合集](western_philosophy/kant.md)
@@ -50,14 +56,12 @@
 1. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
 1. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
 1. [论自然](western_philosophy/nature.md)
-1. [本质与境况](western_philosophy/Essence-and-Condition.md)
 1. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
 
 
 # 心理学
 1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
 1. [荣格心理学入门](psychology/Jung.md)
-1. [存在主义心理治疗](psychology/Existential-Psychology.md)
 1. [活出生命的意义](psychology/MansSearchForMeaning.md)
 1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
 1. [幸福是陷阱?](psychology/the-happiness-trap.md)
@@ -132,10 +136,8 @@
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
 1. [1984](novel/NineteenEightyFour.md)
 1. [变形记](novel/DieVerwandlung.md)
-1. [异乡人](novel/L'Etranger.md)
 1. [妈妈及生命的意义](novel/MommaAndTheMeaningOfLife.md)
 1. [叔本华的治疗](novel/TheSchopenhauerCure.md)
-1. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
 1. [悉达多](novel/Siddhartha.md)
 1. [浮士德](novel/Faust.md)
 
