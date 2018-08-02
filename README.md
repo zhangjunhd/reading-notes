@@ -114,10 +114,12 @@
     1. [原则](success/Principles.md)
 
 # 历史
+1. 赫拉利
+    1. [人类简史](history/A-brief-history-of-humankind.md)
+    1. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
+    1. [今日简史](history/21-lessons-for-the-21st-century.md)
 1. [全球通史](history/a-global-history.md)
 1. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
-1. [人类简史](history/A-brief-history-of-humankind.md)
-1. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
 1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
 1. [万历十五年](history/1587.md)
 1. [中国大历史](history/big-history.md)
