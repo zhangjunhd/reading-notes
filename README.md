@@ -43,6 +43,7 @@
     1. [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
     1. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
     1. [存在主义心理治疗](psychology/Existential-Psychology.md)
+    1. [快乐的死](novel/LaMortHeureuse.md)
     1. [异乡人](novel/L'Etranger.md)
     1. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
 1. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
