@@ -234,19 +234,20 @@
 1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 # 机器学习
+## 深度学习
 ## Natural Language Processing
-1. General
-    1. [Natural Language Processing-Jacob Eisenstein](http://note.youdao.com/noteshare?id=2e7de5e90ec5f8905389426ad442d728&sub=D871E60FB2D749EE8B9D10FD84D18BAB)
 1. Corpus
     1. [THE PENN TREEBANK-AN OVERVIEW](http://note.youdao.com/noteshare?id=9f8f72c20d1e96f5d1a4ac58a79998b7&sub=5F2E5B1C4E894D6BA312A4CC496306CB)
     1. [The Proposition Bank: An Annotated Corpus of Semantic Roles](http://note.youdao.com/noteshare?id=a57cdb4ab339d1ed8e4864eff9c67cd1&sub=370A6CEAD2F44CB39D8ED76358FF7247)
-1. Sequences&Trees
-    1. Dependency parsing
-        1. [依存文法分析](http://note.youdao.com/noteshare?id=780ed98059953f4a080a2cf89c7ac8fa&sub=7646F37F17FE4424A5D95A0DF3692654)
 1. Meaning
     1. Predicate-argument semantics
         1. [语义角色标注 Semantic Role Labeling(SRL)](http://note.youdao.com/noteshare?id=776dc2ab11f350dccb04a3c3c1db7f36&sub=25D0B5E073F44A8EAE4DFC612EAD0933)
         1. [Abstract Meaning Representation for Sembanking](http://note.youdao.com/noteshare?id=cf92422824a7b712a3bd25d5a27a0c88&sub=3DE36BA2A48C482291CC0FD30B4B3C07)
+1. Overview
+    1. [Natural Language Processing-Jacob Eisenstein](http://note.youdao.com/noteshare?id=2e7de5e90ec5f8905389426ad442d728&sub=D871E60FB2D749EE8B9D10FD84D18BAB)
+1. Sequences&Trees
+    1. Dependency parsing
+        1. [依存文法分析](http://note.youdao.com/noteshare?id=780ed98059953f4a080a2cf89c7ac8fa&sub=7646F37F17FE4424A5D95A0DF3692654)
 
 
 
