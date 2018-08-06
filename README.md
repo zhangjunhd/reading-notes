@@ -234,7 +234,8 @@
 1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 # 机器学习
-## 深度学习
+1. [Foundations of Machine Learning](http://note.youdao.com/noteshare?id=8539c322ec6efa16c7aba92e6e824f7a&sub=2EB63A66D001438A80308E7CD5246168)
+
 ## Natural Language Processing
 1. Corpus
     1. [THE PENN TREEBANK-AN OVERVIEW](http://note.youdao.com/noteshare?id=9f8f72c20d1e96f5d1a4ac58a79998b7&sub=5F2E5B1C4E894D6BA312A4CC496306CB)
@@ -249,6 +250,11 @@
     1. Dependency parsing
         1. [依存文法分析](http://note.youdao.com/noteshare?id=780ed98059953f4a080a2cf89c7ac8fa&sub=7646F37F17FE4424A5D95A0DF3692654)
 
+## 深度学习
+
+
+## 推荐系统
+1. [Amazon.com Recommendations Item-to-Item Collaborative Filtering](http://note.youdao.com/noteshare?id=25d9dd31f26a407820477541b94ce4c7&sub=D974AFA1034D45D2A4CA2681E5DE79B8),Greg Linden, Brent Smith, Jeremy York,Jan 2003
 
 
 # 计算理论
