@@ -236,7 +236,9 @@
 # 机器学习
 1. [Foundations of Machine Learning](http://note.youdao.com/noteshare?id=8539c322ec6efa16c7aba92e6e824f7a&sub=2EB63A66D001438A80308E7CD5246168)
 
-## Natural Language Processing
+## Natural Language Understanding
+1. Overview
+    1. [Natural Language Processing-Jacob Eisenstein](http://note.youdao.com/noteshare?id=2e7de5e90ec5f8905389426ad442d728&sub=D871E60FB2D749EE8B9D10FD84D18BAB)
 1. Corpus
     1. [THE PENN TREEBANK-AN OVERVIEW](http://note.youdao.com/noteshare?id=9f8f72c20d1e96f5d1a4ac58a79998b7&sub=5F2E5B1C4E894D6BA312A4CC496306CB)
     1. [The Proposition Bank: An Annotated Corpus of Semantic Roles](http://note.youdao.com/noteshare?id=a57cdb4ab339d1ed8e4864eff9c67cd1&sub=370A6CEAD2F44CB39D8ED76358FF7247)
@@ -244,18 +246,22 @@
     1. Predicate-argument semantics
         1. [语义角色标注 Semantic Role Labeling(SRL)](http://note.youdao.com/noteshare?id=776dc2ab11f350dccb04a3c3c1db7f36&sub=25D0B5E073F44A8EAE4DFC612EAD0933)
         1. [Abstract Meaning Representation for Sembanking](http://note.youdao.com/noteshare?id=cf92422824a7b712a3bd25d5a27a0c88&sub=3DE36BA2A48C482291CC0FD30B4B3C07)
-1. Overview
-    1. [Natural Language Processing-Jacob Eisenstein](http://note.youdao.com/noteshare?id=2e7de5e90ec5f8905389426ad442d728&sub=D871E60FB2D749EE8B9D10FD84D18BAB)
 1. Sequences&Trees
     1. Dependency parsing
         1. [依存文法分析](http://note.youdao.com/noteshare?id=780ed98059953f4a080a2cf89c7ac8fa&sub=7646F37F17FE4424A5D95A0DF3692654)
 
-## 深度学习
+## Deep Learning
 
 
-## 推荐系统
-1. [Amazon.com Recommendations Item-to-Item Collaborative Filtering](http://note.youdao.com/noteshare?id=25d9dd31f26a407820477541b94ce4c7&sub=D974AFA1034D45D2A4CA2681E5DE79B8),Greg Linden, Brent Smith, Jeremy York,Jan 2003
-1. [Matrix Factorization Techniques For Recommender Systems(Netflix)](http://note.youdao.com/noteshare?id=145c3c749f7b856125952d923da647c5&sub=B3C99617A5014B9EB6DB03742B97C840)
+## Recommender System
+1. [Amazon.com Recommendations Item-to-Item Collaborative Filtering](http://note.youdao.com/noteshare?id=25d9dd31f26a407820477541b94ce4c7&sub=D974AFA1034D45D2A4CA2681E5DE79B8),Greg Linden, Brent Smith, Jeremy York, Jan 2003
+1. [Matrix Factorization Techniques For Recommender Systems(Netflix)](http://note.youdao.com/noteshare?id=145c3c749f7b856125952d923da647c5&sub=B3C99617A5014B9EB6DB03742B97C840),Yehuda Koren, Robert Bell, Chris Volinsky, Aug 2009
+
+## Search Engine
+1. [What are some uses of machine learning in search engines](http://note.youdao.com/noteshare?id=3487c21901ce5428c08e881a714db83b&sub=9B8416CDE9C64955A419B7EDD12BF11D),Nikhil Dandekar, Apr 2016
+
+##
+1. [From Eliza to XiaoIce Challenges and Opportunities with Social Chatbots](http://note.youdao.com/noteshare?id=78205908719d5c7171579c2447baf8c7&sub=15222AAA28CC45B5B02E560737714DD2),Heung-Yeung Shum, Xiaodong He, Di Li, Jan 2018
 
 # 计算理论
 1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md)
