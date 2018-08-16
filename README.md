@@ -66,14 +66,16 @@
 1. [荣格心理学入门](psychology/Jung.md)
 1. [活出生命的意义](psychology/MansSearchForMeaning.md)
 1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-1. [幸福是陷阱?](psychology/the-happiness-trap.md)
 1. [专念](psychology/mindfulness.md)
 1. [The Complete Idiot's Guide to Memes](psychology/TheCompleteIdiotsGuideToMemes.md)
 1. [Level 3 of Meme](psychology/Level3OfMeme.md)
 1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
 1. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-1. [意志力](psychology/willpower.md)
-1. [自控力](psychology/TheWillpowerInstinct.md)
+1. 自我控制
+    1. [意志力](psychology/willpower.md)
+    1. [自控力](psychology/TheWillpowerInstinct.md)
+    1. [幸福是陷阱?](psychology/the-happiness-trap.md)
+    1. [棉花糖实验](psychology/TheMarshmallowTest.md)
 1. 史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 
@@ -130,6 +132,7 @@
 
 # 艺术
 1. [我心自由-杜尚传](http://note.youdao.com/noteshare?id=bb1aeebed968ec6c3d9dcfc26cb9ed4c&sub=A8AB8E6998AC4FC9BB0F1B13DD84ABE5)
+1. [光影中遇见伦勃朗](http://note.youdao.com/noteshare?id=320f99ff344f1b89b3e540e872d2bf3c&sub=CE95673D6A454BA7A20D76E70351D6A0)
 
 # 社会学与经济学
 1. [第4消费时代](sociology/4th-consumerist.md)
