@@ -71,10 +71,10 @@
 1. [Level 3 of Meme](psychology/Level3OfMeme.md)
 1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
 1. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-1. 自我控制
+1. [幸福是陷阱?](psychology/the-happiness-trap.md)
+1. 延迟满足
     1. [意志力](psychology/willpower.md)
     1. [自控力](psychology/TheWillpowerInstinct.md)
-    1. [幸福是陷阱?](psychology/the-happiness-trap.md)
     1. [棉花糖实验](psychology/TheMarshmallowTest.md)
 1. 史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
@@ -279,4 +279,5 @@
 1. [最大似然估计(Maximum likelihood estimation)](data/mle.ipynb)
 1. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
 1. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
+1. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
 1. [行为科学统计](data/StatisticsForTheBehavioralSciences)
