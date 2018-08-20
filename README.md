@@ -254,7 +254,7 @@
         1. [依存文法分析](http://note.youdao.com/noteshare?id=780ed98059953f4a080a2cf89c7ac8fa&sub=7646F37F17FE4424A5D95A0DF3692654)
 
 ## Deep Learning
-
+1. [随机神经网络模拟退火与玻尔兹曼机](http://note.youdao.com/noteshare?id=7533325f4b0c271fe25f0e4aee1f1127&sub=WEB269fcdd75c2715ba11c61e211f57c3b4),Hinton,1986
 
 ## Recommender System
 1. [Amazon.com Recommendations Item-to-Item Collaborative Filtering](http://note.youdao.com/noteshare?id=25d9dd31f26a407820477541b94ce4c7&sub=D974AFA1034D45D2A4CA2681E5DE79B8),Greg Linden, Brent Smith, Jeremy York, Jan 2003
