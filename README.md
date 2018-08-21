@@ -266,6 +266,12 @@
 ## Chatbot
 1. [From Eliza to XiaoIce Challenges and Opportunities with Social Chatbots](http://note.youdao.com/noteshare?id=78205908719d5c7171579c2447baf8c7&sub=15222AAA28CC45B5B02E560737714DD2),Heung-Yeung Shum, Xiaodong He, Di Li, Jan 2018
 
+## Knowledge Graph
+1. [语义网是什么？](http://note.youdao.com/noteshare?id=4c6293f5a644fef0ba49de70199bbe1c&sub=EF27BAC4D70648D8AF2583C00D44F9CB)
+1. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074)
+1. [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
+1. [Wikipedia as Participatory Journalism: Reliable Sources?](http://note.youdao.com/noteshare?id=6f3834675dd5ba38db86c0848666ae73&sub=A0A582A197374B3F8B1A7FC8CA49CEA7), Andrew Lih, Apr 2014
+
 # 计算理论
 1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md)
 1. [算法概论](Computation-Algorithm/Algorithms.md)
