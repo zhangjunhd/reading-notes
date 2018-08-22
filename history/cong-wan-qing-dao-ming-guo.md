@@ -10,7 +10,8 @@
     丛书: 传记文学书系
     ISBN: 9787503462252
 
-[豆瓣链接](https://book.douban.com/subject/26392466/)
+- [豆瓣链接](https://book.douban.com/subject/26392466/)
+- [豆瓣书评](https://book.douban.com/review/9608272/)
 
 有一些观点很有意思：
 
