@@ -131,8 +131,8 @@
 
 
 # 艺术
-1. [我心自由-杜尚传](http://note.youdao.com/noteshare?id=bb1aeebed968ec6c3d9dcfc26cb9ed4c&sub=A8AB8E6998AC4FC9BB0F1B13DD84ABE5)
-1. [光影中遇见伦勃朗](http://note.youdao.com/noteshare?id=320f99ff344f1b89b3e540e872d2bf3c&sub=CE95673D6A454BA7A20D76E70351D6A0)
+1. [我心自由-杜尚传](art/duchamp.md)
+1. [光影中遇见伦勃朗](art/rembrandt.md)
 
 # 社会学与经济学
 1. [第4消费时代](sociology/4th-consumerist.md)
