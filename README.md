@@ -203,6 +203,7 @@
 1. [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
 1. [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
 1. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
+1. [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
 
 ## 企业家精神
 1. [工业人的未来](entrepreneur/the_future_of_industrial_man.md)
@@ -273,7 +274,6 @@
 ## Knowledge Graph
 1. [语义网是什么？](http://note.youdao.com/noteshare?id=4c6293f5a644fef0ba49de70199bbe1c&sub=EF27BAC4D70648D8AF2583C00D44F9CB)
 1. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074)
-1. [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
 1. [Wikipedia as Participatory Journalism: Reliable Sources?](http://note.youdao.com/noteshare?id=6f3834675dd5ba38db86c0848666ae73&sub=A0A582A197374B3F8B1A7FC8CA49CEA7), Andrew Lih, Apr 2014
 
 # 计算理论
@@ -287,7 +287,6 @@
 1. [统计与真理](http://note.youdao.com/noteshare?id=1e4a6bd6698b062fea6b864877f8d484&sub=EAA7075E403749A1ACA602CEC7BB1190)
 1. [机会的数学](http://note.youdao.com/noteshare?id=1ec5a2f2692d95fb80ff732ea6291bec&sub=6D7ECF2761EA4BEE87CBFCD79D47ABC0)
 1. [赤裸裸的统计学](http://note.youdao.com/noteshare?id=5d965905fe0cc4c4c396296ee8be69a4&sub=B1EF50FF26A24C84B8AF87D0C37D6E15)
-1. [最大似然估计(Maximum likelihood estimation)](http://note.youdao.com/noteshare?id=33f613e1498b7df6043b0ba8e5dd37de&sub=67C74C311623438DB3E6430D4C56E955)
 1. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
 1. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
 1. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
