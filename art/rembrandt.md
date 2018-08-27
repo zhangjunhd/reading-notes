@@ -1,4 +1,4 @@
-![s29675918](00ECE9F10C004ECC968A3827BD2FF3F9)
+![cover](https://img1.doubanio.com/view/subject/l/public/s29675918.jpg)
 
     作者: 史作柽 
     出版社: 湖南美术出版社
