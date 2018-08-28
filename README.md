@@ -274,6 +274,7 @@
 ## Knowledge Graph
 1. [语义网是什么？](http://note.youdao.com/noteshare?id=4c6293f5a644fef0ba49de70199bbe1c&sub=EF27BAC4D70648D8AF2583C00D44F9CB)
 1. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074)
+1. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](http://note.youdao.com/noteshare?id=18d3a8432f65ff6a5b0ad3cd91f1cdd9&sub=46B9A703558842CE9F0586EE4074D350)
 1. [Wikipedia as Participatory Journalism: Reliable Sources?](http://note.youdao.com/noteshare?id=6f3834675dd5ba38db86c0848666ae73&sub=A0A582A197374B3F8B1A7FC8CA49CEA7), Andrew Lih, Apr 2014
 
 # 计算理论
