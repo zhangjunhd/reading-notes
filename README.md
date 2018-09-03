@@ -281,7 +281,8 @@
 1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md)
 1. [算法概论](Computation-Algorithm/Algorithms.md)
 
-# 统计学
+# 数学
+## 统计学
 1. [黑天鹅](http://note.youdao.com/noteshare?id=cf4830583e5cd9f3cb15de2f7e4689e7&sub=092BBB9CE91C4DB1A59438EA33558734)
 1. [简单统计学](data/StandardDeviations.md)
 1. [精益数据分析](data/LeanAnalytics.md)
@@ -292,3 +293,6 @@
 1. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
 1. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
 1. [行为科学统计](data/StatisticsForTheBehavioralSciences)
+
+## 线性代数
+1. [线性代数及其应用](http://note.youdao.com/noteshare?id=8e5a09eca90cf66ebd91525954a130f7&sub=E28E75F53DDF403E85D91FED5D701611)
