@@ -41,6 +41,7 @@
 1. 存在主义
     1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
     1. [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
+    1. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
     1. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
     1. [存在主义心理治疗](psychology/Existential-Psychology.md)
     1. [快乐的死](novel/LaMortHeureuse.md)
