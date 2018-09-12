@@ -240,6 +240,7 @@
 1. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 # 机器学习
+1. [An Introduction to Statistical Learning](http://note.youdao.com/noteshare?id=30b30c9252ae75865a373296d751f8d1&sub=5DD94B80FB964D9FBE38E1BDF6E15C17)
 1. [Foundations of Machine Learning](http://note.youdao.com/noteshare?id=8539c322ec6efa16c7aba92e6e824f7a&sub=2EB63A66D001438A80308E7CD5246168),Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar, Aug 2012
 
 ## Natural Language Understanding
