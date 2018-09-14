@@ -13,7 +13,7 @@
 1. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
 1. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
 1. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
-1. [认识与存在-《唯识三十论》解析之唯识总论](eastern_philosophy/wei_shi_san_shi_lun.md)
+1. [认识与存在-《唯识三十论》解析](eastern_philosophy/wei_shi_san_shi_lun.md)
 1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
 1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
 1. [论语译注](eastern_philosophy/lun_yu_yi_zhu.md)
@@ -257,6 +257,7 @@
         1. [依存文法分析](http://note.youdao.com/noteshare?id=780ed98059953f4a080a2cf89c7ac8fa&sub=7646F37F17FE4424A5D95A0DF3692654)
 
 ## Deep Learning
+1. [深度学习中的激活函数](http://note.youdao.com/noteshare?id=f7ff42d47a541445d017392d10cf2765&sub=927805E400C44B418DA9B203960E131B)
 1. [随机神经网络模拟退火与玻尔兹曼机](http://note.youdao.com/noteshare?id=7533325f4b0c271fe25f0e4aee1f1127&sub=WEB269fcdd75c2715ba11c61e211f57c3b4),Hinton,1986
 
 ## Recommender System
