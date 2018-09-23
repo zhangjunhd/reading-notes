@@ -226,7 +226,7 @@
 1. [人月神话](management/TheMythicalMan-Month.md)
 1. [人件（第2版）](management/peopleware.md)
 1. [软件随想录](management/more_joel_on_software.md)
-1. [硝烟中的Scrum和XP](management/ScrumAndXp.md)
+1. [硝烟中的Scrum和XP](http://note.youdao.com/noteshare?id=9b22b4103e0e8af34d90fe0e1b208cd6&sub=BF7B9F63B3C44ADDA05122F150156DED)
 1. [Scrum概念](management/scrum.md)
     - [Scrum管理文档结构图](management/scrum_doc.md)
 1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
