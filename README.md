@@ -227,7 +227,7 @@
 1. [人件（第2版）](management/peopleware.md)
 1. [软件随想录](management/more_joel_on_software.md)
 1. [硝烟中的Scrum和XP](http://note.youdao.com/noteshare?id=9b22b4103e0e8af34d90fe0e1b208cd6&sub=BF7B9F63B3C44ADDA05122F150156DED)
-1. [Scrum概念](http://note.youdao.com/noteshare?id=8a02a64f76ae273f69febe6bf4bf7cd7&sub=E9DAD2C1DBC44B168572890E34993C36)
+    - [Scrum概念](http://note.youdao.com/noteshare?id=8a02a64f76ae273f69febe6bf4bf7cd7&sub=E9DAD2C1DBC44B168572890E34993C36)
     - [Scrum管理文档结构图](management/scrum_doc.md)
 1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
 1. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
