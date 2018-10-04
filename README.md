@@ -47,6 +47,7 @@
     1. [快乐的死](novel/LaMortHeureuse.md)
     1. [异乡人](novel/L'Etranger.md)
     1. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
+    1. [等待戈多](novel/En-attendant-Godot.md)
 1. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
 1. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
 1. [康德三大批判合集](western_philosophy/kant.md)
@@ -140,7 +141,7 @@
 1. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
 1. [经济学通识课](sociology/a-little-history-of-economics.md)
 
-# 小说
+# 小说&戏剧
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
 1. [1984](novel/NineteenEightyFour.md)
 1. [变形记](novel/DieVerwandlung.md)
