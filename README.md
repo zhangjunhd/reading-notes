@@ -134,7 +134,8 @@
 1. [中国大历史](history/big-history.md)
 1. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
-
+# 科普
+1. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
 
 # 艺术
 1. [我心自由-杜尚传](art/duchamp.md)
