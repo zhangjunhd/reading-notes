@@ -8,6 +8,10 @@
 1. [福柯](A-Very-Short-Introductions/Foucault.md)
 1. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
 
+# 科普
+1. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
+1. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
+
 # 东方哲学
 1. 儒
     1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
@@ -134,8 +138,7 @@
 1. [中国大历史](history/big-history.md)
 1. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
-# 科普
-1. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
+
 
 # 艺术
 1. [我心自由-杜尚传](art/duchamp.md)
