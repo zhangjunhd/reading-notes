@@ -9,6 +9,7 @@
 1. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
 
 # 科普
+1. [时间简史](http://note.youdao.com/noteshare?id=00354b2dd05bed1d331e967494e02ef3)
 1. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
 1. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
 
@@ -239,6 +240,7 @@
     - [Scrum概念](http://note.youdao.com/noteshare?id=8a02a64f76ae273f69febe6bf4bf7cd7&sub=E9DAD2C1DBC44B168572890E34993C36)
     - [Scrum管理文档结构图](management/scrum_doc.md)
 1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
+1. [微软的软件测试之道](http://note.youdao.com/noteshare?id=372d1df81b977d3061cd022d915873ed)
 1. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
 
 ## 设计
