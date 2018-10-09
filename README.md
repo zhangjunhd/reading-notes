@@ -12,6 +12,8 @@
 1. [时间简史](http://note.youdao.com/noteshare?id=00354b2dd05bed1d331e967494e02ef3)
 1. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
 1. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
+1. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
+1. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
 
 # 东方哲学
 1. 儒
@@ -213,7 +215,6 @@
 1. [科学的极致：漫谈人工智能](http://note.youdao.com/noteshare?id=9766fc1a0adccf237e3ff6254c948613&sub=03B8D2B3342B44B08EF14147C02DC5E0)
 1. [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
 1. [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
-1. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
 1. [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
 
 ## 企业家精神
