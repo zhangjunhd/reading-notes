@@ -147,7 +147,7 @@
 1. [我心自由-杜尚传](art/duchamp.md)
 1. [光影中遇见伦勃朗](art/rembrandt.md)
 
-# 社会学与经济学
+# 经济学
 1. [第4消费时代](sociology/4th-consumerist.md)
 1. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
 1. [经济学通识课](sociology/a-little-history-of-economics.md)
@@ -161,6 +161,13 @@
 1. [悉达多](novel/Siddhartha.md)
 1. [浮士德](novel/Faust.md)
 
+# 传播学
+1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
+1. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
+1. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
+1. [万维钢-注意力商人](http://note.youdao.com/noteshare?id=0e68f91ac7f4439102e81bd9947f6282)
+1. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
+
 # 商业
 ## 财经
 1. [一本书读懂财报](finance_economics/FinancialStatements.md)
@@ -171,10 +178,6 @@
 1. [长尾理论2.0](internet/long_tail.md)
 1. [从0到1](internet/zero_to_one.md)
 1. [隐形VISA](internet/visa.md)
-1. [如何打造超级IP](internet/create_ip.md)
-1. [超级IP](internet/super_ip.md)
-1. [思维病毒](internet/virus-of-the-mind.md)
-1. [万维钢-注意力商人](internet/the-attention-merchants.md)
 1. [技术的本质](internet/TheNatureOfTechnology.md)
 1. [链接](internet/linked.md)
 1. [必然](internet/The-Inevitable.md)
