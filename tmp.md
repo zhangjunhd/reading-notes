@@ -16,10 +16,15 @@
         - [Chatbots](#chatbots)
             - [Generative Chatbot Model](#generative-chatbot-model)
             - [How Do Chatbots Work?](#how-do-chatbots-work)
-            - [Rise of the Chatbots—Conversational Commerce](#rise-of-the chatbotsconversational-commerce)
+            - [Rise of the Chatbots—Conversational Commerce](#rise-of-the-chatbotsconversational-commerce)
                 - [The Role of Chatbots](#the-role-of-chatbots)
                 - [The Role of Humans](#the-role-of-humans)
-            - [The Structure of a Bot](#the-structure-of-a bot)
+            - [The Structure of a Bot](#the-structure-of-a-bot)
+    - [2. Microsoft Bot Framework](#2-microsoft-bot-framework)
+        - [Creating a Simple Bot Framework App](#creating-a-simple-bot-framework-app)
+        - [Managing State](#managing-state)
+        - [Understanding the Use of Dialogs](#understanding-the-use-of-dialogs)
+    - [3. Wit.ai and Dialogflow](#3-witai-and-dialogflow)
 
 <!-- /TOC -->
 
@@ -81,3 +86,180 @@ Next, we describe the `intent` that forms the basis of the bot’s communication
 We use `entities` to break the piece of information that is message flow to better understand what is happening for our usage to communicate. 
 
 Finally, we create a workflow for the bot to get organized. This flow which allows the entire process to work efficiently it is either called a `dialog flow` or `form flow`.
+
+## 2. Microsoft Bot Framework
+### Creating a Simple Bot Framework App
+```c#
+using System;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web.Http;
+using System.Web.Http.Description;
+using Microsoft.Bot.Connector;
+using Newtonsoft.Json;
+namespace Bot_Application1
+{
+    [BotAuthentication]
+    public class MessagesController : ApiController
+    {
+        /// <summary>
+        /// POST: api/Messages
+        /// Receive a message from a user and reply to it
+        /// </summary>
+        public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
+        {
+            if (activity.Type == ActivityTypes.Message)
+            {
+                ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+                // calculate something for us to return
+                int length = (activity.Text ?? string.Empty).Length;
+                // return our reply to the user
+                Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
+                await connector.Conversations.ReplyToActivityAsync(reply);
+            }
+            else
+            {
+                HandleSystemMessage(activity);
+            }
+            var response = Request.CreateResponse(HttpStatusCode.OK);
+            return response;
+        }
+        private Activity HandleSystemMessage(Activity message)
+        {
+            if (message.Type == ActivityTypes.DeleteUserData)
+            {
+                // Implement user deletion here
+                // If we handle user deletion, return a real message
+            }
+            else if (message.Type == ActivityTypes.ConversationUpdate)
+            {
+                // Handle conversation state changes, like members being added and removed
+                // Use Activity.MembersAdded and Activity.MembersRemoved and Activity.Action for info
+                // Not available in all channels
+            }
+            else if (message.Type == ActivityTypes.ContactRelationUpdate)
+            {
+                // Handle add/remove from contact lists
+                // Activity.From + Activity.Action represent what happened
+            }
+            else if (message.Type == ActivityTypes.Typing)
+            {
+                // Handle knowing tha the user is typing
+            }
+            else if (message.Type == ActivityTypes.Ping)
+            {
+            }
+            return null;
+        }
+    }
+}
+```
+
+Listing 2-4 Entire Message Reply Code Block
+
+The bot code and the logic is a combination of three things, illustrated in Figure 2-16.
+
+![2-16](https://www.safaribooksonline.com/library/view/beginning-ai-bot/9781484237540/images/457478_1_En_2_Chapter/457478_1_En_2_Fig16_HTML.png)
+
+The `connector` handles all communications. The `activities` are the events that occur between a bot and a user. The `messages` are the messages that are displayed between a bot and a user.
+
+### Managing State
+When we have to manage complex communication, we need to have a kind of communication medium, or a place, to get the conversation going. Figure 2-18 shows options for managing states in bots. Table 2-1 explains each state.
+
+![2-18](https://www.safaribooksonline.com/library/view/beginning-ai-bot/9781484237540/images/457478_1_En_2_Chapter/457478_1_En_2_Fig18_HTML.png)
+
+Figure 2-18 Ways of managing bots
+
+Table 2-1 Managing States
+
+| Managing State  | Description
+| --- | ---
+| Storage methods | We can save the state of a bot with the help of databases. We can save the data in SQL Server, Azure, and so forth.
+| Class-specific logic at runtime | We can initiate a class at runtime and make the bot work. Then we can understand the logic as the bot evolves with different functionality for the lifetime of the bot.
+| Form flow, or dialog flow | If we want to initiate certain things sequentially, we need to implement form flow, or dialog processes.
+| State client | This option is similar to viewing state or session states in .NET or MVCs.
+
+### Understanding the Use of Dialogs                        
+`Dialogs` are the flow of conversation to provide a way to communicate a response by using messages in chained manner.
+
+```c#
+if (activity.Type == ActivityTypes.Message)
+{
+    ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+    // calculate something for us to return
+    // int length = (activity.Text ?? string.Empty).Length;
+    // return our reply to the user
+    // Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
+    //await connector.Conversations.ReplyToActivityAsync(reply);
+    await Conversation.SendAsync(activity, () => Dialogs.RandomFactDialog.Dialog);
+}
+```
+
+The most important part being this piece of code where we link it to the Dialog class we created.
+
+```c#
+await Conversation.SendAsync(activity, () => Dialogs.RandomFactDialog.Dialog);
+```
+
+Listing 2-6 Referencing the RandomFactDialog Class File
+
+Now the RandomFactDialog class file where you implement chaining for messages looks like Listing 2-7.
+
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Microsoft.Bot.Builder.Dialogs;
+
+namespace ManishaBot.Dialogs
+{    
+    [Serializable]    
+    public class RandomFactDialog    
+    {        
+        public static readonly IDialog<object> Dialog = Chain
+            .PostToChain()
+            .Select(m => "The fact is,you said **" + m.Text + "**")            
+            .PostToUser();    
+    }
+}
+```
+
+Listing 2-7 Chaining Messages
+
+Now you will develop a more complex dialog chaining. Listing 2-8 shows the changes in the structure of the dialog chaining.
+
+```c#
+public static readonly IDialog<object> Dialog = Chain
+            .PostToChain()
+            .Select(m => m.Text)
+            .Switch
+            (
+                Chain.Case
+                (
+                    new Regex("^tell me a fact"),
+                    (context, text) =>
+                Chain.Return("Grabbing a fact...")
+                .PostToUser()
+                .ContinueWith<string, string>(async (ctx, res) =>
+                {
+                    var response = await res;
+                   // var fact = await Helpers.GeneralHelper.GetRandomFactAsync();
+                    return Chain.Return("**FACT:** *" +"** We are working on a fact that we are writing for Apress**" + "*");
+                })
+                ),
+                Chain.Default<string, IDialog<string>>(
+                    (context, text) =>
+                        Chain.Return("Say 'tell me a fact'")
+                )
+            )
+            .Unwrap().PostToUser();
+```
+
+## 3. Wit.ai and Dialogflow
+
+
+
+
