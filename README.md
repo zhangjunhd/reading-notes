@@ -282,24 +282,24 @@
 1. [Matrix Factorization Techniques For Recommender Systems(Netflix)](http://note.youdao.com/noteshare?id=145c3c749f7b856125952d923da647c5&sub=B3C99617A5014B9EB6DB03742B97C840),Yehuda Koren, Robert Bell, Chris Volinsky, Aug 2009
 
 ## Search Engine
-1. [What are some uses of machine learning in search engines](http://note.youdao.com/noteshare?id=3487c21901ce5428c08e881a714db83b&sub=9B8416CDE9C64955A419B7EDD12BF11D),Nikhil Dandekar, Apr 2016
 1. [What is faceted search](http://note.youdao.com/noteshare?id=509780f11b37957d72588baff7014652&sub=B51E547AE640437FBC7EB1643F17061E)
-1. [Lucene in Action(2nd Edition)](http://note.youdao.com/noteshare?id=76c2eed01db37aed06863153e33172fd&sub=BEE9FBDDC079448F8F8A07C9320C77E8)
+1. [搜索引擎-信息检索实践](http://note.youdao.com/noteshare?id=586a7aacc7da913043f34cfc2148c5a3&sub=10640022C7FC43B0A4A2ABF74D668167), W.Bruce Croft, Jun 2010
+1. [Lucene in Action(2nd Edition)](http://note.youdao.com/noteshare?id=76c2eed01db37aed06863153e33172fd&sub=BEE9FBDDC079448F8F8A07C9320C77E8), Michael McCandless, Jul 2010
 1. [Elasticsearch Basic Concepts](http://note.youdao.com/noteshare?id=db4915ecf31290c2f013f493e62a3e77&sub=9D8B40EBB7D74C3F85083395588FB345)
-1. [搜索引擎-信息检索实践](http://note.youdao.com/noteshare?id=586a7aacc7da913043f34cfc2148c5a3&sub=10640022C7FC43B0A4A2ABF74D668167)
+1. [What are some uses of machine learning in search engines](http://note.youdao.com/noteshare?id=3487c21901ce5428c08e881a714db83b&sub=9B8416CDE9C64955A419B7EDD12BF11D),Nikhil Dandekar, Apr 2016
 
 ## Chatbot
 1. [From Eliza to XiaoIce Challenges and Opportunities with Social Chatbots](http://note.youdao.com/noteshare?id=78205908719d5c7171579c2447baf8c7&sub=15222AAA28CC45B5B02E560737714DD2),Heung-Yeung Shum, Xiaodong He, Di Li, Jan 2018
-1. [Beginning AI Bot Frameworks](tmp.md)
+1. [Beginning AI Bot Frameworks](tmp.md), Manisha Biswas, Sep 2018
 
 ## Knowledge Graph
 1. [语义网是什么？](http://note.youdao.com/noteshare?id=4c6293f5a644fef0ba49de70199bbe1c&sub=EF27BAC4D70648D8AF2583C00D44F9CB)
-1. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074)
+1. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074),Ｇrigoris Antoniou, Apr 2008
 1. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](http://note.youdao.com/noteshare?id=18d3a8432f65ff6a5b0ad3cd91f1cdd9&sub=46B9A703558842CE9F0586EE4074D350)
 1. [Wikipedia as Participatory Journalism: Reliable Sources?](http://note.youdao.com/noteshare?id=6f3834675dd5ba38db86c0848666ae73&sub=A0A582A197374B3F8B1A7FC8CA49CEA7), Andrew Lih, Apr 2014
 
 # 计算理论
-1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md)
+1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md), Tom Stuart, Jun 2013
 1. [算法概论](Computation-Algorithm/Algorithms.md)
 
 # 数学
