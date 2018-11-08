@@ -37,6 +37,20 @@
         - [Building a Custom Welcome intent](#building-a-custom-welcome-intent)
         - [Building a get feeling custom follow-up intent](#building-a-get-feeling-custom-follow-up-intent)
         - [Writing code for a feeling custom follow-up intent](#writing-code-for-a-feeling-custom-follow-up-intent)
+- [Building a Get Fortune Cookie by an author](#building-a-get-fortune-cookie-by-an-author)
+    - [Building an Author entity](#building-an-author-entity)
+    - [About rich response](#about-rich-response)
+    - [Creating a text response](#creating-a-text-response)
+    - [Creating an image response](#creating-an-image-response)
+    - [Creating quick replies](#creating-quick-replies)
+    - [Creating a card response](#creating-a-card-response)
+    - [Creating a listSelect response](#creating-a-listselect-response)
+    - [Building a Get Authors intent](#building-a-get-authors-intent)
+        - [Building a listSelect response in code](#building-a-listselect-response-in-code)
+    - [Building a Get Author Quote intent](#building-a-get-author-quote-intent)
+        - [Building a Get Author Quote intent's webhook](#building-a-get-author-quote-intents-webhook)
+    - [Integrating SSML and audio to Default Welcome intent](#integrating-ssml-and-audio-to-default-welcome-intent)
+    - [Using Analytics](#using-analytics)
 
 <!-- /TOC -->
 
@@ -345,7 +359,8 @@ The following code describes the `sendResponse` function, which will build Dialo
 function sendResponse (responseToUser) { 
     let responseJson = { fulfillmentText: responseToUser };
     console.log('Response to Fortune Cookie: ' + JSON.stringify(responseJson)); 
-    response.json(responseJson);}
+    response.json(responseJson);
+}
 ```
 
 The following code stitches together everything we've built so far and processes the request by extracting the action from `request.body.queryResult.action` and sending the response back to Dialogflow by executing the intent handler:
@@ -588,8 +603,7 @@ function sendWelcome () {
                 name: "custom_welcome_event"      
             }    
         };  
-    }  
-    else {    
+    } else {    
         responseJson = { fulfillmentText: 'Hello, Welcome to Henry\'s Fortune Cookie!' };   
     }  
     console.log('sendWelcome: ' + JSON.stringify(responseJson));  response.json(responseJson);
@@ -617,8 +631,7 @@ function processV2Request () {
     let action = (request.body.queryResult.action) ? request.body.queryResult.action : 'default';  parameters = request.body.queryResult.parameters || {};  
     if (intentHandlers[action]) {     
         intentHandlers[action]();  
-    }  
-    else {    
+    } else {    
         intentHandlers['default']();     
     }
 }
@@ -633,11 +646,246 @@ function sendQuoteWithFeeling () {
     let responseJson, randomNumber;  
     if(parameters.Feeling === "happy"){    
         randomNumber = Math.floor(Math.random() * 5)  
-    }  
-    else {    
+    } else {    
         randomNumber = Math.floor(Math.random() * 4) + 6  
     }  
     responseJson = { fulfillmentText: quotes[randomNumber].quote };   
     console.log('sendQuoteWithFeeling: ' + JSON.stringify(responseJson));  
     response.json(responseJson);}
 ```
+
+## Building a Get Fortune Cookie by an author
+### Building an Author entity
+Start by building the `Author` entity, which will be used by the Get Author Quote intent that matches the author's name in order to send a quote by that author. The following JSON data shows multiple ways to identify the author:
+
+```json
+[    
+    { "value": "T. S. Eliot", "synonyms": [ "T. S. Eliot", "Eliot" ] },    
+    { "value": "J. B. White", "synonyms": [ "J. B. White", "White" ] },    
+    { "value": "Dave Stutman", "synonyms": [ "Dave Stutman", "Dave", "Stutman" ] },    
+    { "value": "Winston Churchill", "synonyms": [ "Winston Churchill", "Winston", "Churchill" ] },    
+    { "value": "Woody Allen", "synonyms": [ "Woody Allen", "Woody", "Allen" ] },    
+    { "value": "Confucius", "synonyms": [ "Confucius" ] },    { "value": "Mark Twain", "synonyms": [ "Mark Twain", "Mark", "Twain" ] },    
+    { "value": "Albert Einstein", "synonyms": [ "Albert Einstein", "Albert", "Einstein" ] },    
+    { "value": "Steven Wright", "synonyms": [ "Steven Wright", "Steven", "Wright" ] }
+]
+```
+
+### About rich response                                     
+Normally, when you send a response to the user, you create a response object with the `fulfillmentText` property set with what your user will hear. But rich response allows you to send hyperlinks, images, a list of items, and cards, where the user can not only see, but can also interact with the response. In order to send a rich response, create a response object with the `fulfillmentMessages` object that contains the rich message objects.
+
+### Creating a text response
+A text message is similar to the response the intent will send to the user.
+
+The following code shows a text message object that displays text to the user:
+
+```json
+"text": {
+    "text": [ "hi", "hello" ] 
+},
+```
+
+### Creating an image response
+If the user asks what a cat looks like, you can send an image of a cat, which will get displayed on the user's phone.
+
+The following code shows an image message object:
+
+```json
+"image": { "imageUri": "http://myweb.com/cat.png" }
+```
+
+### Creating quick replies                                  
+Quick replies display a list of replies displayed on the screen that the user can click.
+
+The following code shows a quickReplies object:
+
+```json
+"quickReplies": { "title": "Select an option", "quickReplies": [ "option1", "option2" ] }
+```
+
+### Creating a card response                                
+The card contains an image, a title, a subtitle, and a button that the user can click, which will open a web link. Ask Google Assistant on your phone where good Chinese restaurants near you are and it will display cards.
+
+The following image shows card responses:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/81ad5540-cae8-4911-a801-77bfe11f4ff6.png)
+
+The following code shows how to build a card response:
+
+```json
+"card": {
+    "title": "My Restaurant",
+    "subtitle": "Chinese Food",
+    "imageUri": "http://myweb.com/image.png",
+    "buttons": [
+    {
+        "text": "my button",
+        "postback": "text send to Dialogflow",
+    }
+    ]
+}
+```
+
+### Creating a listSelect response                          
+A listSelect response allows you to respond to the user by displaying a list of items that the user can click. The clicked item will send to the Dialogflow. In this section, you will use this to list authors so that the user can choose an author, which will trigger an intent.
+
+The following code shows how to build a listSelect  response:
+
+```json
+"listSelect": {  
+    "title": "Select an Author",  
+    "items": [    
+        { "info": { "key": "Eliot" }, "title": "T. S. Eliot"},    
+        { "info": { "key": "White" }, "title": "J. B. White"},  
+    ]
+}
+```
+
+### Building a Get Authors intent
+A `Get Authors` intent will be used to capture the user's request to display a list of authors. You will learn how to build a `listSelect` response, where the user can click the name of the author from the list. First, build a `Get Authors` intent by adding `show me authors` and `list authors` to the User says section. Name the Action `input.authors` so that you can identify the request from server. Finally, enable `Use webhook` in the Fulfillment section.
+
+The following screenshot shows the `Get Authors` settings:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/83c67f65-531c-42e1-8845-0a2e7657a304.png)
+
+Get Authors intent
+
+#### Building a listSelect response in code
+1. First, add to the `intentHandler`, which captures the Action named `input.authors`, which executes the `sendAuthors` function. The following code, which captures the `input.authors` action, is added to `intentHandler`:
+
+```js
+'input.authors': () => {
+    sendAuthors(); 
+}
+```
+
+2. The next thing do is to create the `sendAuthors` function, where the `listSelect` response will be created. Setting `fulfillmentText` with `defaultText`, asking the user to say the author's name is important because not every device has capability to display response on the screen. For example, on Google Home there is no way to display a list of authors so it will default to simply saying `fulfillmentText`.
+
+The following code shows the completed `sendAuthors` function, which will send the `listSelect` response to the user:
+
+```js
+function sendAuthors () {
+  let defaultText = "Choose an author. T S Eliot, J B White, Dave Stutman, Winston Churchill, ";
+  defaultText = defaultText + "Woody Allen, Confucius, Mark Twain, Albert Einstein, Steven Wright";
+  let responseJson = { 
+    fulfillmentText: defaultText,
+    fulfillmentMessages: [
+      {
+        platform: "ACTIONS_ON_GOOGLE",
+        listSelect: {
+          title: "Select an Author",
+          items: [
+            { info: { key: "Eliot" }, title: "T. S. Eliot"},
+            { info: { key: "White" }, title: "J. B. White"},
+            { info: { key: "Stutman" }, title: "Dave Stutman"},
+            { info: { key: "Churchill" }, title: "Winston  
+            Churchill"},
+            { info: { key: "Allen" }, title: "Woody Allen"},
+            { info: { key: "Confucius" }, title: "Confucius"},
+            { info: { key: "Twain" }, title: "Mark Twain"},
+            { info: { key: "Einstein" }, title: "Albert Einstein"},
+            { info: { key: "Wright" }, title: "Steven Wright"}
+          ]
+        }
+      }
+    ] 
+  }; 
+  console.log('sendAuthors: ' + JSON.stringify(responseJson));
+  response.json(responseJson);  
+}
+```
+
+3. Deploy the code and test the `list authors` command in the simulator and you will see that the list of authors will be displayed.
+
+The following screenshot shows the displayed `listSelect` response, containing the author names:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/59abc0ad-de9f-4f90-a7bb-383b75437072.png)
+
+### Building a Get Author Quote intent
+When the user selects the author from the list, the author's name will be sent back to Dialogflow and you will want to build an intent that captures the authors and then selects a quote by that selected author. Using the `Author` entity, build an intent that gets triggered when the user says the author's name or the author's name is selected from the list. Create `Get Author Quote` and add `@Author:Author` to User says and enable Use webhook.
+
+The following screenshot shows the `Get Author Quote` intent settings:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/d37a4e3b-82a5-4d86-8a51-f3527fa8ef63.png)
+
+Get Author Quote intent
+
+#### Building a Get Author Quote intent's webhook
+1. When the `Get Author Quote` intent is triggered, the request will come into the webhook with the Action name `input.author.quote`, and `input.author.quote` needs to be added to `intentHandler`, which will execute the `sendAuthorQuote` function.
+
+The following code handles the request with the Action name input.author.quote triggered by the Get Author Quote intent and will execute the sendAuthorQuote function:
+
+```js
+'input.author.quote': () => {
+    sendAuthorQuote(); 
+},
+```
+
+2. Now create a `sendAuthorQuote` function, which will build a response with the request author. When `Get Author Quote` is triggered, either by the user saying the author's name or by selecting from the list of the authors, the request will be sent with `parameters.Author`.
+
+The following line of code uses `parameters.Author` to search the quotes array and extract the author's quote:
+
+```js
+quotes.find(x => x.author.toLowerCase().indexOf(parameters.Author.toLowerCase())>=0).quote
+```
+
+3. Finally, the author's quote is set to `fulfillmentText` and sent as a response and the user will hear the author's quote.
+
+The following code shows the completed version of the `sendAuthorQuote` function:
+
+```js
+function sendAuthorQuote () {  
+    let authorQuote = quotes.find(x => x.author.toLowerCase().indexOf(parameters.Author.toLowerCase())>=0).quote;  
+    let responseJson = { fulfillmentText: authorQuote };   
+    console.log('sendAuthorQuote: ' + JSON.stringify(responseJson));  
+    response.json(responseJson);  
+}
+```
+
+### Integrating SSML and audio to Default Welcome intent
+Previously, Default Welcome intent simply greeted the user with _Hello, Welcome to Henry's Fortune Cookie!_ by setting `fulfillmentText` in the response object. Let's enhance this by using the `simpleResponses` object in the `fulfillmentMessages` property of the response object. The `simpleResponses` object contains properties called `ssml` and `displayText`. The `ssml` property contains SSML speech and also part of SSML speech the audio sound can be incorporated. `displayText` is displayed if the device does not have the audio capability.
+
+In `ssml`, the speech will start with the thunder sound `<audio src="https://actions.google.com/sounds/v1/weather/thunder_crack.ogg" />` and then there will be a pause of 200 ms, `<break time="200ms"/>`. Finally, _Hello Welcome to Henry's Fortune Cookie!_ will be inside `<prosody rate="medium" pitch="+2st">`, where the speech rate is set to medium with a slightly higher pitch, set at `+2st`.
+
+>Setting a high pitch with a medium speech rate will give the effect of being excited and happy.
+
+The following code shows the `simpleResponse` object set with the SSML speech, which contains the audio in the `sendWelcome` function:
+
+```js
+responseJson = {       
+    fulfillmentText: 'Hello, Welcome to Henry\'s Fortune Cookie!',      
+    fulfillmentMessages: [        
+        {          
+            platform: "ACTIONS_ON_GOOGLE",          simpleResponses: {            
+                simpleResponses: [              
+                    {                
+                        ssml: `<speak><audio src="https://actions.google.com/sounds/v1/weather/thunder_crack.ogg" />                        
+                        <break time="200ms"/>               
+                        <prosody rate="medium" pitch="+2st">                          
+                            Hello Welcome to Henry's Fortune Cookie!          
+                        </prosody>
+                        </speak>`,                
+                        displayText: "Hello, Welcome to Henry\'s Fortune Cookie!"         
+                    } 
+                ] 
+            } 
+        } 
+    ] 
+ };
+```
+
+### Using Analytics
+In Dialogflow, there is an Analytics section, where you can see the performance of the agent. The following data metrics are collected:
+
+- The number of queries per user session
+- The number of times the intent was called
+- The percentage of where user exited
+- The average response time to user requests
+
+One of the important metrics is the number of times the intent was called, because it gives us an insight into the most popular intent in your VUIs. Once you know which intent is popular, you can continue to improve it. Also, knowing the average response time to user requests provides important information, as you would not want your user to wait a long time for a response.
+
+The following image shows you the all the metrics collected by Dialogflow Analytics:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/6f3185cc-97d6-43c4-b279-9e842e060faf.png)
+
+Dialogflow Analytics
