@@ -130,3 +130,5 @@ Notice that there is a number 5 next to the GET_NAME context. This number define
 ![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/591cc099-592c-4d54-9dc0-b0380cfaf2a0.png)
 
 Get President Birthday intent
+
+9. You can create the text response using the `$username` variable, making the response more personable by using `$username $president-birthday.original's birthday is on $president-birthday`.
