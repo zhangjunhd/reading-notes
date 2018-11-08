@@ -1,264 +1,91 @@
-# Beginning AI Bot Frameworks: Getting Started with Bot Development
-![cover](https://www.safaribooksonline.com/library/cover/9781484237540/)
+# Voice User Interface Projects
+![cover](https://www.safaribooksonline.com/library/cover/9781788473354/)
 
-    by Manisha Biswas
-    Publisher: Apress
-    Release Date: September 2018
-    ISBN: 9781484237540
+    by Henry Lee
+    Publisher: Packt Publishing
+    Release Date: July 2018
+    ISBN: 9781788473354
     Topic: Chatbots
 
-[safaribooks](https://www.safaribooksonline.com/library/view/beginning-ai-bot/9781484237540/)
+[safaribooks](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/)
 
 <!-- TOC -->
 
-- [Beginning AI Bot Frameworks: Getting Started with Bot Development](#beginning-ai-bot-frameworks-getting-started-with-bot-development)
-    - [1. AI and Bot Basics](#1-ai-and-bot-basics)
-        - [Chatbots](#chatbots)
-            - [Generative Chatbot Model](#generative-chatbot-model)
-            - [How Do Chatbots Work?](#how-do-chatbots-work)
-            - [Rise of the Chatbots—Conversational Commerce](#rise-of-the-chatbotsconversational-commerce)
-                - [The Role of Chatbots](#the-role-of-chatbots)
-                - [The Role of Humans](#the-role-of-humans)
-            - [The Structure of a Bot](#the-structure-of-a-bot)
-    - [2. Microsoft Bot Framework](#2-microsoft-bot-framework)
-        - [Creating a Simple Bot Framework App](#creating-a-simple-bot-framework-app)
-        - [Managing State](#managing-state)
-        - [Understanding the Use of Dialogs](#understanding-the-use-of-dialogs)
-    - [3. Wit.ai and Dialogflow](#3-witai-and-dialogflow)
+- [Voice User Interface Projects](#voice-user-interface-projects)
+    - [Building an FAQs Chatbot](#building-an-faqs-chatbot)
+        - [What are intents?](#what-are-intents)
+            - [Creating your first intent](#creating-your-first-intent)
+        - [What are entities?](#what-are-entities)
+            - [Using entities](#using-entities)
 
 <!-- /TOC -->
 
-## 1. AI and Bot Basics
-### Chatbots
-If a human being analyzes both a bot and a human conversation and is unable to tell the difference between the two, we say it passes the `Turing test`.
+## Building an FAQs Chatbot
+### What are intents?
+Dialogflow is a platform with complicated machine learning and artificial intelligence capabilities that matches what the user said to the `intent`. You can think of intents as questions that users will be asking about U.S. Presidents. When you first start with the FaqChatBot agent in Dialogflow, you will see two default intents: the `Welcome Intent` and the `Fallback Intent`, as shown in the following flowchart.
 
-Traditionally speaking, chatbots have used what we call a `retrieval-based model` . In this model, a programmer's code provides predefined responses, and chatbots learn in a heuristic way to pick the appropriate response.
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/9bd95b24-d1a5-4a3f-9526-b30ab07c9550.png)
 
-#### Generative Chatbot Model
-A `generative chatbot model` relies on predefined responses, and whatever we do, we should write them from scratch. 
+#### Creating your first intent
+The following screenshot shows the `First-President` intent that was created in Dialogflow:
 
-- Open Domain:In an open domain, a conversation can go anywhere. There are infinite things to talk about.
-- Closed Domain:In a closed domain, a conversation focuses on a single subject or topic. The chatbots evolve based on the kind of conversation we want: long or short. Short conversations are easier to use.
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/1c41dcfd-7879-491f-9d75-13a813800720.png)
 
-#### How Do Chatbots Work?
-The best way to learn how chatbots work is to first understand the brain of bot. We call this a `digital brain` , and it consists of three main parts:
+First, notice that when you enter _Who is the first president of USA?_ into the User says input box, the words `first` and `USA` are highlighted in yellow and orange, respectively. Dialogflow automatically identifies the word first as the type `ordinal (@sys.ordinal)` and the word USA as the type `geo-country (@sys.geo-country)` and basically creates a templatized question. The FaqChatBot agent will use those parameters to match against the user's question. 
 
-- Knowledge source: Where we need to find out which informations needs to provided to the bot so the conversation starts and for Q and A
-- Stock phrases: Its something where we can handle general phrases of conversation which is used more often
-- Conversational memory: When we are doing a conversation we have to remember the flow what has happened so conversational memory is required
+When you type _who is the first president of USA?_, it shows the matching intent name `First-President`, and two parameters, `geo-country` as `United States of America` and `ordinal 1`, which are used to match the intent. 
 
-When we start communicating with a bot, we may send a message (for example, “hello”), and the bot starts working—or more accurately, analyzing the message. The bot’s activity is known as `parsing`. Next the bot will look for keywords in order to reply to the message.
+### What are entities?
+`Entities` are like keywords that are used to extract values from voice input. As seen in the previous section, Creating your first intent, the intent used the Dialogflow system entities `@sys.ordinal` and `@sys.geo-county` to extract the values **1** and **USA** from the voice input. The entities also help to create templatized questions so that you do not have to enter multiple variations of questions that result in the same answer. 
 
-![1-11](https://www.safaribooksonline.com/library/view/beginning-ai-bot/9781484237540/images/457478_1_En_1_Chapter/457478_1_En_1_Fig11_HTML.png)
+#### Using entities
+In the `First-President` intent, you noticed that the intent had a problem answering the question _who is the second president of USA?_ because the response was static, only replying with the first president, George Washington, and not the second president, John Adams, regardless of which ordinal positions were given by the user. Let's address this issue by dynamically creating the response using an entity:
 
-Figure 1-11 The bot’s digital brain
+1. Let's start by creating an entity called `president-number`. In the first column, add the presidents' names, and in the second column, add the ordinals that match the president. The following screenshot shows the `president-number` entity:
 
-![1-12](https://www.safaribooksonline.com/library/view/beginning-ai-bot/9781484237540/images/457478_1_En_1_Chapter/457478_1_En_1_Fig12_HTML.png)
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/1d083ebc-3504-4bd4-bb57-5174f8f462e6.png)
 
-Figure 1-12 The response being generated by the bot
+Creating a president-number entity
 
-#### Rise of the Chatbots—Conversational Commerce
-`Conversational` means it uses some kind of voice or text medium to transfer data and understand how people communicate.
+2. Now, create a new intent called `Find President`. Enter _who is the first president of USA?_ in the User says textbox and then highlight the words `first president` and you will see that a drop-down pops out, where you can search and select the entity that you created, called `president-number`. The following screenshot shows the process of mapping the entity to the highlighted word:![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/1fdb1e43-a5f8-4643-9e2b-706bda26cf64.png)
 
-The advent of conversational commerce allows users to talk to companies and have companies also talk back in an easy manner. This can happen in three ways:
+Mapping an entity to a word
 
-- Bidirectional: That is the communication flow is faster and seamless within the bot
-- Asynchronous: Allowing the messaging to be controlled at timely mannere and not within specified time intervals
-- In real time: The communication response is to make it realtime
+By accessing the entity value within the response, you have the ability to create a dynamic response that can map the ordinal value to the president's name. $president-number.original refers to the user's ordinal input, first president, and $president-number refers to the ordinal value mapped to the name George Washington in the president-name entity. The response The $president-number.original of $geo-country is $president-number creates a proper answer to the user's question about who was the first or second President of the USA. When you test this in Google Assistant in Dialogflow, you will see that the proper response gets returned: The second president of USA is John Adams.
 
-##### The Role of Chatbots
-Chatbots work on the following:
+3. Now, create a second question that does not have a geo-country, USA: _Who is first president?_, and create an equivalent response `The $president-number.original is $president-number`. The `FaqChatBot` agent will be smart enough to figure out that if the geo-country is omitted in the question, the agent will use the response that does not have `$geo-country`. The following screenshot shows the completed Find President intent:
 
-- Basic operations
-- Basic things answering the general queries with ease
-- Basic questions
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/ff4b0c47-6ad7-44e9-9441-57fbfb0e54fc.png)
 
-##### The Role of Humans
-Conversational commerce is powered by humans. The UI developed is powered by humans. The structure (also called an `interface`) is designed by humans and is where the communication occurs.
+Find President intent
 
-#### The Structure of a Bot
-![1-13](https://www.safaribooksonline.com/library/view/beginning-ai-bot/9781484237540/images/457478_1_En_1_Chapter/457478_1_En_1_Fig13_HTML.png)
 
-We first start with `texting` with some questions, then we move to the `place`/`template` where we start developing or coding the logic of the bot here the response flow is generated. 
 
-Next, we describe the `intent` that forms the basis of the bot’s communication, in order to provide a textual response and making the chatbot interactive.
 
-We use `entities` to break the piece of information that is message flow to better understand what is happening for our usage to communicate. 
 
-Finally, we create a workflow for the bot to get organized. This flow which allows the entire process to work efficiently it is either called a `dialog flow` or `form flow`.
 
-## 2. Microsoft Bot Framework
-### Creating a Simple Bot Framework App
-```c#
-using System;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Http.Description;
-using Microsoft.Bot.Connector;
-using Newtonsoft.Json;
-namespace Bot_Application1
-{
-    [BotAuthentication]
-    public class MessagesController : ApiController
-    {
-        /// <summary>
-        /// POST: api/Messages
-        /// Receive a message from a user and reply to it
-        /// </summary>
-        public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
-        {
-            if (activity.Type == ActivityTypes.Message)
-            {
-                ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-                // calculate something for us to return
-                int length = (activity.Text ?? string.Empty).Length;
-                // return our reply to the user
-                Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
-                await connector.Conversations.ReplyToActivityAsync(reply);
-            }
-            else
-            {
-                HandleSystemMessage(activity);
-            }
-            var response = Request.CreateResponse(HttpStatusCode.OK);
-            return response;
-        }
-        private Activity HandleSystemMessage(Activity message)
-        {
-            if (message.Type == ActivityTypes.DeleteUserData)
-            {
-                // Implement user deletion here
-                // If we handle user deletion, return a real message
-            }
-            else if (message.Type == ActivityTypes.ConversationUpdate)
-            {
-                // Handle conversation state changes, like members being added and removed
-                // Use Activity.MembersAdded and Activity.MembersRemoved and Activity.Action for info
-                // Not available in all channels
-            }
-            else if (message.Type == ActivityTypes.ContactRelationUpdate)
-            {
-                // Handle add/remove from contact lists
-                // Activity.From + Activity.Action represent what happened
-            }
-            else if (message.Type == ActivityTypes.Typing)
-            {
-                // Handle knowing tha the user is typing
-            }
-            else if (message.Type == ActivityTypes.Ping)
-            {
-            }
-            return null;
-        }
-    }
-}
-```
 
-Listing 2-4 Entire Message Reply Code Block
 
-The bot code and the logic is a combination of three things, illustrated in Figure 2-16.
 
-![2-16](https://www.safaribooksonline.com/library/view/beginning-ai-bot/9781484237540/images/457478_1_En_2_Chapter/457478_1_En_2_Fig16_HTML.png)
 
-The `connector` handles all communications. The `activities` are the events that occur between a bot and a user. The `messages` are the messages that are displayed between a bot and a user.
 
-### Managing State
-When we have to manage complex communication, we need to have a kind of communication medium, or a place, to get the conversation going. Figure 2-18 shows options for managing states in bots. Table 2-1 explains each state.
 
-![2-18](https://www.safaribooksonline.com/library/view/beginning-ai-bot/9781484237540/images/457478_1_En_2_Chapter/457478_1_En_2_Fig18_HTML.png)
 
-Figure 2-18 Ways of managing bots
 
-Table 2-1 Managing States
 
-| Managing State  | Description
-| --- | ---
-| Storage methods | We can save the state of a bot with the help of databases. We can save the data in SQL Server, Azure, and so forth.
-| Class-specific logic at runtime | We can initiate a class at runtime and make the bot work. Then we can understand the logic as the bot evolves with different functionality for the lifetime of the bot.
-| Form flow, or dialog flow | If we want to initiate certain things sequentially, we need to implement form flow, or dialog processes.
-| State client | This option is similar to viewing state or session states in .NET or MVCs.
 
-### Understanding the Use of Dialogs                        
-`Dialogs` are the flow of conversation to provide a way to communicate a response by using messages in chained manner.
 
-```c#
-if (activity.Type == ActivityTypes.Message)
-{
-    ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-    // calculate something for us to return
-    // int length = (activity.Text ?? string.Empty).Length;
-    // return our reply to the user
-    // Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
-    //await connector.Conversations.ReplyToActivityAsync(reply);
-    await Conversation.SendAsync(activity, () => Dialogs.RandomFactDialog.Dialog);
-}
-```
 
-The most important part being this piece of code where we link it to the Dialog class we created.
 
-```c#
-await Conversation.SendAsync(activity, () => Dialogs.RandomFactDialog.Dialog);
-```
 
-Listing 2-6 Referencing the RandomFactDialog Class File
 
-Now the RandomFactDialog class file where you implement chaining for messages looks like Listing 2-7.
 
-```c#
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Microsoft.Bot.Builder.Dialogs;
 
-namespace ManishaBot.Dialogs
-{    
-    [Serializable]    
-    public class RandomFactDialog    
-    {        
-        public static readonly IDialog<object> Dialog = Chain
-            .PostToChain()
-            .Select(m => "The fact is,you said **" + m.Text + "**")            
-            .PostToUser();    
-    }
-}
-```
 
-Listing 2-7 Chaining Messages
 
-Now you will develop a more complex dialog chaining. Listing 2-8 shows the changes in the structure of the dialog chaining.
 
-```c#
-public static readonly IDialog<object> Dialog = Chain
-            .PostToChain()
-            .Select(m => m.Text)
-            .Switch
-            (
-                Chain.Case
-                (
-                    new Regex("^tell me a fact"),
-                    (context, text) =>
-                Chain.Return("Grabbing a fact...")
-                .PostToUser()
-                .ContinueWith<string, string>(async (ctx, res) =>
-                {
-                    var response = await res;
-                   // var fact = await Helpers.GeneralHelper.GetRandomFactAsync();
-                    return Chain.Return("**FACT:** *" +"** We are working on a fact that we are writing for Apress**" + "*");
-                })
-                ),
-                Chain.Default<string, IDialog<string>>(
-                    (context, text) =>
-                        Chain.Return("Say 'tell me a fact'")
-                )
-            )
-            .Unwrap().PostToUser();
-```
 
-## 3. Wit.ai and Dialogflow
+
 
 
 

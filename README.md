@@ -290,7 +290,7 @@
 
 ## Chatbot
 1. [From Eliza to XiaoIce Challenges and Opportunities with Social Chatbots](http://note.youdao.com/noteshare?id=78205908719d5c7171579c2447baf8c7&sub=15222AAA28CC45B5B02E560737714DD2),Heung-Yeung Shum, Xiaodong He, Di Li, Jan 2018
-1. [Beginning AI Bot Frameworks](tmp.md), Manisha Biswas, Sep 2018
+1. [Voice User Interface Projects](tmp.md), Henry Lee, Jul 2018
 
 ## Knowledge Graph
 1. [语义网是什么？](http://note.youdao.com/noteshare?id=4c6293f5a644fef0ba49de70199bbe1c&sub=EF27BAC4D70648D8AF2583C00D44F9CB)
