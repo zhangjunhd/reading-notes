@@ -1,6 +1,7 @@
-# Voice User Interface Projects
 ![cover](https://www.safaribooksonline.com/library/cover/9781788473354/)
 
+    Voice User Interface Projects
+    
     by Henry Lee
     Publisher: Packt Publishing
     Release Date: July 2018
@@ -11,19 +12,23 @@
 
 <!-- TOC -->
 
-- [Voice User Interface Projects](#voice-user-interface-projects)
-    - [Building an FAQs Chatbot](#building-an-faqs-chatbot)
-        - [What are intents?](#what-are-intents)
-            - [Creating your first intent](#creating-your-first-intent)
-        - [What are entities?](#what-are-entities)
-            - [Using entities](#using-entities)
-        - [About action](#about-action)
-        - [What is context?](#what-is-context)
-            - [Creating your first context](#creating-your-first-context)
-            - [No context](#no-context)
-            - [Testing context and no context scenarios](#testing-context-and-no-context-scenarios)
-        - [Machine learning classification threshold](#machine-learning-classification-threshold)
-        - [Training data](#training-data)
+- [Building an FAQs Chatbot](#building-an-faqs-chatbot)
+    - [What are intents?](#what-are-intents)
+        - [Creating your first intent](#creating-your-first-intent)
+    - [What are entities?](#what-are-entities)
+        - [Using entities](#using-entities)
+    - [About action](#about-action)
+    - [What is context?](#what-is-context)
+        - [Creating your first context](#creating-your-first-context)
+        - [No context](#no-context)
+        - [Testing context and no context scenarios](#testing-context-and-no-context-scenarios)
+    - [Machine learning classification threshold](#machine-learning-classification-threshold)
+    - [Training data](#training-data)
+- [Building a Fortune Cookie Application](#building-a-fortune-cookie-application)
+    - [About the Fortune Cookie project](#about-the-fortune-cookie-project)
+    - [About webhook](#about-webhook)
+    - [Setting up an agent](#setting-up-an-agent)
+    - [Enabling webhook](#enabling-webhook)
 
 <!-- /TOC -->
 
@@ -229,3 +234,49 @@ Now, go to the Get name intent and you will notice that I am henry is matched 
 ![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/2297f755-db2a-4b49-a574-58ed41511fe2.png)
 
 Unknown input assigned to Get Name intent
+
+## Building a Fortune Cookie Application
+### About the Fortune Cookie project
+The Fortune Cookie application will be able to respond to the following set of remarks:
+
+- Tell me a quote
+- Give me a fortune cookie
+- I feel sad/happy
+- Show me authors
+
+### About webhook
+In Dialogflow, the concept of allowing your middle-tier server to serve responses dynamically is called `fulfilling intents through webhook`. Dialogflow provides a built-in Node.js server to handle simple requests dynamically.
+
+The following flowchart shows a simple webhook architecture:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/ac623626-0008-4c7f-9da4-bbe1e9356f59.png)
+
+Webhook architecture
+
+### Setting up an agent                                    
+First, log in to the Dialogflow website and a create new agent called `FortuneCookie`. Make sure to enable Dialogflow V2 API and leave the rest of the settings leave as their defaults.                 
+
+The following screenshot shows the `FortuneCookie` agent creation settings:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/c33752b0-21b9-439b-a36e-0b76f7743c9c.png)
+
+Creating a FortuneCookie agent
+
+### Enabling webhook
+Before we start to build the Fortune Cookie application, let's enable the webhook feature of Dialogflow so that all intents can be routed to the Dialogflow Node.js server.
+
+1. In Dialogflow, go to Fulfillment and enable Inline Editor. This will allow you to enter Node.js code into the editor.
+
+The following screenshot shows enabling webhook in the Dialogflow fulfillment:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/61a7dfa1-27bb-4477-bae2-fb470c607829.png)
+
+
+
+
+
+
+
+
+
+
