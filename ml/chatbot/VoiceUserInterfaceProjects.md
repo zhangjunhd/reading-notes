@@ -31,6 +31,12 @@
     - [Enabling webhook](#enabling-webhook)
     - [Building a Get Quote intent](#building-a-get-quote-intent)
     - [Handling the Get Quote intent from the Webhook](#handling-the-get-quote-intent-from-the-webhook)
+    - [Building a Get Quote based on the user feelings](#building-a-get-quote-based-on-the-user-feelings)
+        - [Building a Feeling entity](#building-a-feeling-entity)
+        - [Building events to get Feeling-based quotes](#building-events-to-get-feeling-based-quotes)
+        - [Building a Custom Welcome intent](#building-a-custom-welcome-intent)
+        - [Building a get feeling custom follow-up intent](#building-a-get-feeling-custom-follow-up-intent)
+        - [Writing code for a feeling custom follow-up intent](#writing-code-for-a-feeling-custom-follow-up-intent)
 
 <!-- /TOC -->
 
@@ -470,4 +476,168 @@ function sendQuote () {
     let responseJson = { 
         fulfillmentText: quotes[randomNumber].quote };   
         console.log('sendQuote: ' + JSON.stringify(responseJson));  response.json(responseJson);}
+```
+
+### Building a Get Quote based on the user feelings
+In this section, you will learn how to build a Feeling intent, where you will take the user's current feelings as input and properly display appropriate quotes that will go with the user's feelings. 
+
+The following flowchart shows the flow of getting a quote based on the user's feeling:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/56db53ad-de23-4d09-b9b3-a73fdf8e7a5f.png)
+
+Get Quote based on Feeling flow
+
+#### Building a Feeling entity
+In order to create an intent template to match the user's feeling, create a Feeling entity with `happy` and `sad`. The Feeling entity can be expanded to handle more diverse ranges of emotions such as anger, frustration, and fear. For the purpose of keeping the project simple, only two emotions will be added.
+
+The following code shows the Feeling entity in JSON format, which can be imported into Dialogflow:
+
+```json
+[    
+    {        
+        "value": "happy",        
+        "synonyms": [ "happy" ]    
+    },    
+    {        
+        "value": "sad",        
+        "synonyms": [ "sad" ]    
+    }
+]
+```
+
+#### Building events to get Feeling-based quotes
+So far, you have learned about triggering intents by matching user requests. You have also used entities to create `templatized patterns` for what the user will be saying in order to create the intent. Another way to trigger an intent is to use an `event`. In an intent, there is a section called Events, where you can enter your own custom events and then, in the code, you can trigger the intent by simply referencing the event name you entered for the intent.
+
+#### Building a Custom Welcome intent
+The Custom Welcome intent does not contain any `User says` properties because it will be triggered by the Default Welcome intent. There will be a 50/50 chance that the Default Welcome intent will proceed normally by greeting the user and will wait for the user request or the Default Welcome intent will trigger the Custom Welcome intent, which will greet the user and ask them how they feel today. Create a Custom Welcome intent and, in the Events box, enter `custom_welcome_event`. Then, in Text response, add `Welcome to Henry's fortune cookie. How are you feeling today?`
+
+The following image shows the Custom Welcome intent settings:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/26046a0b-fa86-40aa-962a-9d4d62d2c45b.png)
+
+Custom Welcome intent
+
+#### Building a get feeling custom follow-up intent
+A follow-up intent is like any other intent you have created, the only difference being that a follow-up intent is chained after another intent as part of the follow-up conversation or to provide the user with confirmation. When creating a follow-up intent, you have the option to create a custom follow-up intent or use existing follow-up intents. Here are the pre-built follow-up intents that you can use (more information can be found at http://bit.ly/2Gwr98h)):
+
+- yes: Used for affirmation (yes, do it, sure, exactly, of course)
+- no: Used for negation (no, don't do it, definitely not, I disagree)
+- later: Doing something later (later, not yet, ask me later, next time)
+- cancel: Used for canceling an action (cancel, stop, dismiss, skip)
+- more: Asking for more information (more, more results, anything else, what else)
+- next: Moving to the next item in a list (next, next page, show me next)
+- previous: Moving to the previous item in a list (back, go back, previous page)
+- repeat: Asking to do something again (repeat, come again, do it again)
+- select.number: Selecting items from a list (third, I choose number 3, select the first one)
+
+Let's now build a follow-up intent called `Get Feeling`. On the intent list screen, if you hover over the Custom Welcome intent, you will see the Add follow-up intent link.
+
+The following screenshot shows the Add follow-up intent link when hovering over the Custom Welcome intent:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/637eb6c0-2901-4a26-befd-9027322593bd.png)
+
+Add follow-up intent
+
+1. Click Add follow-up intent and select custom intent. Name the follow-up intent `Get Feeling` and, in the User says section, add the following two templates, which utilize the Feeling entity:
+    1. I am feeling `@Feeling:Feeling`
+    2. I feel `@Feeling:Feeling`
+2. In the Action section, enter `input.feeling`, which will be used to identify which intent got triggered in the code in order to respond properly by selecting the `FortuneCookie` based on the user's emotion. Finally, enable the Use webhook in the Fulfillment section.
+
+The following screenshot shows the `Get Feeling` follow-up intent settings:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/a21bb144-776c-4200-8ccf-b2919fbae67b.png)
+
+Get Feeling follow-up intent
+
+#### Writing code for a feeling custom follow-up intent     
+1. Let's first add and modify `intentHandlers`. Modify `sendWelcome` so that it does not take any arguments and add the `input.feeling` action in order to handle the `Get Feeling` custom follow-up intent.
+
+The following code shows the modified `sendWelcome` and a new intent handler, called `input.feeling`:
+
+```js
+const intentHandlers = {  
+    'input.welcome': () => {    
+        sendWelcome();   
+    },  
+    'input.unknown': () => {    
+        sendResponse('I\'m having trouble, can you try that again?');   
+    },  
+    'input.fortune': () => {    
+        sendQuote();   
+    },  
+    'input.feeling': () => {    
+        sendQuoteWithFeeling();   
+    },  
+    'default': () => {    
+        sendResponse('This is Henry\'s Fortune Cookie!' );  
+    }
+};
+```
+
+2. Modify the `sendWelcome` intent such that it will randomly redirect the user to `custom_welcome_event`, which is determined by `executeCustomWelcome = Math.random()  > = 0.5`. Otherwise, the user will be greeted normally with _Hello, Welcome to Henry's Fortune Cookie!_. Notice that `followupEventInput` will be populated in the response with the name of the event to be executed.
+
+The following code modifies the previously written `sendWelcome` method, triggering `custom_welcome_event` 50% of the time:
+
+```js
+function sendWelcome () {  
+    let responseJson;  
+    let executeCustomWelcome = Math.random() >= 0.5;  
+    if(executeCustomWelcome) {     
+        responseJson = {      
+            followupEventInput: {        
+                name: "custom_welcome_event"      
+            }    
+        };  
+    }  
+    else {    
+        responseJson = { fulfillmentText: 'Hello, Welcome to Henry\'s Fortune Cookie!' };   
+    }  
+    console.log('sendWelcome: ' + JSON.stringify(responseJson));  response.json(responseJson);
+}
+```
+
+3. Now let's write code to handle the `input.feeling` action, where a quote based on the user's feeling will be sent as a response. First, you need to capture parameters from the request, so add it to the global variable.
+
+The following code declares the global variable parameters:
+
+```js
+var request, response, parameters;
+```
+
+The following code captures the parameters from the request:
+
+```js
+parameters = request.body.queryResult.parameters || {};
+```
+
+The following code shows the entire modified processV2Request function, which includes capturing the parameters value:
+
+```js
+function processV2Request () {  
+    let action = (request.body.queryResult.action) ? request.body.queryResult.action : 'default';  parameters = request.body.queryResult.parameters || {};  
+    if (intentHandlers[action]) {     
+        intentHandlers[action]();  
+    }  
+    else {    
+        intentHandlers['default']();     
+    }
+}
+```
+
+4. Since the parameters value containing the user's feeling is captured, you can go ahead and write the `sendQuoteWithFeeling` function, which will be executed when the request action is `input.feeling`. The `Get Feeling Custom` follow-up intent will contain the parameter called `Feeling`, which will come through the `parameters.Feeling` Dialogflow request object. After comparing `parameters.Feeling` to `happy`, if true, a random number will be selected from 0 to 5, or if not, a random number will be selected from 6 to 9 and then an appropriate quote corresponding to the feeling will be selected using `quotes[randomNumber].quote`.
+
+The following code describes the `sendQuoteWithFeeling` function, which creates a Dialogflow response that sends the quote based on the user's feeling:
+
+```js
+function sendQuoteWithFeeling () {  
+    let responseJson, randomNumber;  
+    if(parameters.Feeling === "happy"){    
+        randomNumber = Math.floor(Math.random() * 5)  
+    }  
+    else {    
+        randomNumber = Math.floor(Math.random() * 4) + 6  
+    }  
+    responseJson = { fulfillmentText: quotes[randomNumber].quote };   
+    console.log('sendQuoteWithFeeling: ' + JSON.stringify(responseJson));  
+    response.json(responseJson);}
 ```
