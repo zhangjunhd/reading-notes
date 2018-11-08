@@ -29,6 +29,8 @@
     - [About webhook](#about-webhook)
     - [Setting up an agent](#setting-up-an-agent)
     - [Enabling webhook](#enabling-webhook)
+    - [Building a Get Quote intent](#building-a-get-quote-intent)
+    - [Handling the Get Quote intent from the Webhook](#handling-the-get-quote-intent-from-the-webhook)
 
 <!-- /TOC -->
 
@@ -351,4 +353,121 @@ function processV2Request () {
         intentHandlers['default']();     
     }
 }
+```
+
+### Building a Get Quote intent                             
+First, let's build an entity that contains the keywords `Fortune Cookie` and `Quote`.  The following code shows the `Fortune` entity, which contains two keywords that will be used to match the user's request to the fortune cookie or the quote:
+
+```json
+[    
+    {        
+        "value": "Fortune Cookie",        
+        "synonyms": [            
+            "Fortune Cookie",            
+            "Quote"        
+        ]    
+    }
+]
+```
+
+Using the `Fortune` entity, create templatized questions for the Get Quote intent, as follows:
+
+- @ Tell me a @Fortune.Fortune
+- @ Give me @Fortune.Fortune
+
+Now, a user will be able to ask a combination of questions using `Tell me` and the `Fortune` entity. For example, the user can say _Tell me a fortune cookie_ or _Tell me a quote_. Now, give it an Action name, `input.fortune`, which will capture the HTTPS request event and map it to the `intentHandler`. Finally, in Fulfillment, enable the Use webhook option.
+
+The following image shows the Get Quote intent settings:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/2e5765db-19e6-486e-9d9d-9f2ea30d188e.png)
+
+Get Quote intent
+
+Note that the Get Quote intent has an empty text response. From here on, all intents will be routed to the webhook and the response will be programmatically created in the middle-tier server.
+
+### Handling the Get Quote intent from the Webhook
+You will be adding quotes to the Inline Editor that you just worked on. Go to Fulfillment in Dialogflow and add an array of nine quotes to the code. Notice here that there is author information and tags, which you will use to build the Get Author Quote intent.
+
+The following variable array, named quotes, contains nine quotes, from which you will randomly select one and respond to the user when the Get Quote intent is triggered:
+
+```js
+const quotes = [  
+    {    
+        "author": "T. S. Eliot", 
+        "tags": "happy",    
+        "quote": "Do not stop to ask what is it;  Let us go and make our visit."  
+    },  
+    {    
+        "author": "J. B. White", 
+        "tags": "happy",    
+        "quote": "at least I thought I was dancing, til somebody stepped on my hand."  
+    }, 
+    {    
+        "author": "Dave Stutman", 
+        "tags": "happy",    
+        "quote": "Complacency is the enemy of progress."   
+    }, 
+    {    
+        "author": "Winston Churchill", 
+        "tags": "happy",    
+        "quote": "Success is the ability to go from one failure to another with no loss of enthusiasm."  
+    },  
+    {    
+        "author": "Woody Allen", 
+        "tags": "happy",    "quote": "There's more to life than sitting around in the sun in your underwear playing the clarinet."
+    },  
+    {    
+        "author": "Confucius", 
+        "tags": "sad",    
+        "quote": "It does not matter how slowly you go so long as you do not stop."  
+    },  
+    {    
+        "author": "Mark Twain", 
+        "tags": "sad",    
+        "quote": "It usually takes me more than three weeks to prepare a good impromptu speech."      
+    },  
+    {    
+        "author": "Albert Einstein", 
+        "tags": "sad",    
+        "quote": "Imagination is more important than knowledge."  
+    },  
+    {    
+        "author": "Steven Wright", 
+        "tags": "sad",    
+        "quote": "You can't have everything. Where would you put it?"      
+    }
+];
+```
+
+Now, in `intentHandler`, you will need to add the `input.fortune` action in order to handle the Get Quote intent.
+
+The following code shows `input.fortune` added to `intentHandlers`, which calls the `sendQuote` function:
+
+```js
+const intentHandlers = {  
+    'input.welcome': () => {    
+        sendResponse('Hello, Welcome to Henry\'s Fortune Cookie!');   
+    },  
+    'input.unknown': () => {    
+        sendResponse('I\'m having trouble, can you try that again?');   
+    },  
+    'input.fortune': () => {    
+        sendQuote();   
+    },  
+    'default': () => {    
+        sendResponse('This is Henry\'s Fortune Cookie!' ); 
+    }
+};
+```
+
+In the `sendQuote` function, a number between 0 and 9 will be randomly generated using `Math.random()`, and then that randomly generated number will be used to select a quote from the array of quotes. The Dialogflow fulfillmentText response will be assigned with `quotes[randomNumber].quote.`
+
+The following code shows the `sendQuote` function, where the Dialogflow response will be generated and sent using one of the quotes:
+
+```js
+function sendQuote () {  
+    var randomNumber = Math.floor(Math.random() * 9);  
+    let responseJson = { 
+        fulfillmentText: quotes[randomNumber].quote };   
+        console.log('sendQuote: ' + JSON.stringify(responseJson));  response.json(responseJson);}
 ```
