@@ -20,6 +20,8 @@
         - [About action](#about-action)
         - [What is context?](#what-is-context)
             - [Creating your first context](#creating-your-first-context)
+            - [No context](#no-context)
+            - [Testing context and no context scenarios](#testing-context-and-no-context-scenarios)
 
 <!-- /TOC -->
 
@@ -132,3 +134,65 @@ Notice that there is a number 5 next to the GET_NAME context. This number define
 Get President Birthday intent
 
 9. You can create the text response using the `$username` variable, making the response more personable by using `$username $president-birthday.original's birthday is on $president-birthday`.
+
+#### No context
+In the previous section, we used the context from the external intent Get Name to get the data needed for the Get President Birthday intent. What if you do not always want to use the context, but simply want to ask the user for the missing data?
+
+1. In the User says section, add  `I want to know @president-birthday:president-birthday`. Notice that the `president-birthday` parameter in the Action section is automatically added.
+2. Have a REQUIRED checkbox checked for `president-birthday`.
+3. Click on the Define prompts link that appears in the PROMPTS column.
+4. Enter the prompt that asks, Which president's birthday would you like to know?.
+
+The following screenshot shows steps 2 to 4 with the required parameter, `president-birthday`:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/8d7252a8-4061-4b03-af92-02c09b3eb1a9.png)
+
+No context
+
+The following screenshot shows the default prompt if the required parameter, president name, is not given:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/d6932084-0581-49b5-b67b-b7e5d280febb.png)
+
+Default prompt for the required parameter
+
+When the user asks `what is his birthday?`, the Get President Birthday intent will get triggered, but since no `president-birthday` entity is captured from the user's request, the intent will prompt the user with Which president's birthday would you like to know? As soon as the user gives the answer, the intent will provide a response.
+
+#### Testing context and no context scenarios
+Let's test the context using Google Assistant simulator from the Dialogflow console. In the Try it now textbox, enter `my name is Henry` and you will see the response, Henry you can ask me anything about the president of America. Notice that, in the Contexts section, it shows that the `GET_NAME` context is set and also has the username parameter value of `Henry`.
+
+The following screenshot shows us testing the `get_name` context:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/36f763aa-8f15-4c9a-9f67-f9e5633768f1.png)
+
+Testing the get_name context
+
+If you enter the next question, `I want to know John Adams' birthday`, you will see that the response contains the username when responding about the president's birthday.
+
+The following screenshot shows the debugger showing the Get President Birthday intent with the `get_name` context:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/144bd266-8689-4c02-abf2-24b357bfb38d.png)
+
+Testing the Get President Birthday intent with the get_name context
+
+Test out the no context scenario by typing in, `What is his birthday?`. The intent will trigger the prompt, asking Which president's birthday would you like to know? When you respond with `George Washington`, the response returns George Washington's birthday.
+
+The following screenshot shows the intent triggering the prompt, asking the user which president's birthday they would like to know about:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/f5de98fb-3e3f-49d8-bee8-bd5efd4ed8ac.png)
+
+Testing no context
+
+The following screenshot shows the chatbot providing the president's name as a response to Get President Birthday:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/af3872d0-9b48-4675-a901-d73c9a9b8b55.png)
+
+Providing the president's name as a response
+
+
+
+
+
+
+
+
+
