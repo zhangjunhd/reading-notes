@@ -271,12 +271,84 @@ The following screenshot shows enabling webhook in the Dialogflow fulfillment:
 
 ![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/61a7dfa1-27bb-4477-bae2-fb470c607829.png)
 
+The text in this screenshot is not important. This image gives you an idea of how to enable webhook
 
+2. Notice that there are default codes. First, let's replace those codes by declaring Google Cloud Functions for Firebase.
 
+```js
+'use strict';
 
+const firebase = require('firebase-functions');
+```
 
+Dialogflow's built-in Node.js server uses Google Cloud Functions for Firebase, which allows you to write code that intercepts HTTPS events. For example, when an intent is triggered, Dialogflow will send a HTTPS request to Firebase and allows Google Cloud Functions to execute. In this case, the Google Cloud Function triggered is the code that you will be writing in the Dialogflow Inline Editor.
 
+3. Next, capture the HTTPS request and response. The request object will contain a Dialogflow request (http://bit.ly/2Gnj31K) and send back the response (http://bit.ly/2rNf0Zn) to Dialogflow so that it can properly answer the user's intent.
 
+The following code intercepts the HTTPS request initiated by Dialogflow when the intent is triggered and the Firebase event is notified firebase.https.onRequest:
 
+```js
+var request, response;
+exports.dialogflowFirebaseFulfillment = firebase.https.onRequest((req, res) => {  
+    request = req;  
+    response = res;    
+    console.log('Fortune Cookie Request headers: ' + JSON.stringify(request.headers));  
+    console.log('Fortune Cookie Request body: ' + JSON.stringify(request.body));  
+    if (request.body.queryResult) {    
+        processV2Request();
+    } else {
+        console.log('Invalid Request');    
+        return response.status(400).end('Invalid Webhook Request');  
+    }
+});
+```
 
+4. Now let's create intent handlers that will create proper responses to Dialogflow requesting that the server handles the user's intents. By default, two intents will always be created when the agent is created: Default Fallback Intent and Default Welcome Intent. 
 
+The following code shows handlers that respond to the fallback (input.unknown) and the welcome intent (input.welcome):
+
+```js
+const intentHandlers = {  
+    'input.welcome': () => {    
+        sendResponse('Hello, Welcome to Henry\'s Fortune Cookie!');   
+    },  
+    'input.unknown': () => {    
+        sendResponse('I\'m having trouble, can you try that again?');   
+    },  
+    'default': () => {    
+        sendResponse('This is Henry\'s Fortune Cookie!');  
+    }
+};
+```
+
+An intent in Dialogflow is associated with an action and when Dialogflow sends a request to the Node.js server, the request body will contain `queryResult.action`, which will map to the `intentHandlers` functions, where the proper text response will be sent to the user. For the welcome intent, the _Hello, Welcome to Henry's Fortune Cookie!_ response will be sent to Dialogflow and then to the user. For `input.unknown`, which is the fallback intent, the _I'm having trouble, can you try that again?_ response will be sent back. If for some reason, the action is never sent by Dialogflow, the default intent handler will send the _This is Henry's Fortune Cookie!_ response.
+
+The following image shows the Default Welcome Intent with the Action name `input.welcome` used in the code and also, in the Fulfillment section, Use webhook is checked, which will allow the intent to be handled in the code:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/d27daa1a-dd9b-4a13-af14-14f3dfd49a84.png)
+
+Default Welcome Intent with Action name and Enabling Webhook
+
+5. Let's create a `sendResponse` function that will respond with a simple response. First, we need to build the Dialogflow response object that contains the `fulfillmentText` property. Finally, the response object will be logged and the response will be sent to Dialogflow. `fullfilmentText` will be used by Dialogflow to translate text into the voice and the response will be spoken to the user.
+
+The following code describes the `sendResponse` function, which will build Dialogflow's simple text response, which will be translated into voice and sent to the user:
+
+```js
+function sendResponse (responseToUser) { 
+    let responseJson = { fulfillmentText: responseToUser };
+    console.log('Response to Fortune Cookie: ' + JSON.stringify(responseJson)); 
+    response.json(responseJson);}
+```
+
+The following code stitches together everything we've built so far and processes the request by extracting the action from `request.body.queryResult.action` and sending the response back to Dialogflow by executing the intent handler:
+
+```js
+function processV2Request () {  
+    let action = (request.body.queryResult.action) ? request.body.queryResult.action : 'default';  
+    if (intentHandlers[action]) {     
+        intentHandlers[action]();  
+    } else {    
+        intentHandlers['default']();     
+    }
+}
+```
