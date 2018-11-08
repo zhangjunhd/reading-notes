@@ -22,6 +22,8 @@
             - [Creating your first context](#creating-your-first-context)
             - [No context](#no-context)
             - [Testing context and no context scenarios](#testing-context-and-no-context-scenarios)
+        - [Machine learning classification threshold](#machine-learning-classification-threshold)
+        - [Training data](#training-data)
 
 <!-- /TOC -->
 
@@ -188,10 +190,16 @@ The following screenshot shows the chatbot providing the president's name as a�
 
 Providing the president's name as a response
 
+### Machine learning classification threshold
+The machine learning classification threshold basically defines the confidence level percentage that the user request matches the intent. In Dialogflow, you can find this by clicking on the FaqChatBot agent setting and going to ML Settings.
 
+The following screenshot shows the ML Settings section of the `FaqChatBot` agent:
 
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/e7df0d0a-c0bb-4d37-8f08-41f8f3e03e79.png)
 
+Machine learning classification threshold
 
+### Training data
 
 
 
