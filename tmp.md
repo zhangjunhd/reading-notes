@@ -17,6 +17,9 @@
             - [Creating your first intent](#creating-your-first-intent)
         - [What are entities?](#what-are-entities)
             - [Using entities](#using-entities)
+        - [About action](#about-action)
+        - [What is context?](#what-is-context)
+            - [Creating your first context](#creating-your-first-context)
 
 <!-- /TOC -->
 
@@ -59,34 +62,71 @@ By accessing the entity value within the response, you have the ability to creat
 
 Find President intent
 
+### About action
+`Action` in Dialogflow is a rather simple concept. In the previous section, you created an intent using the template _who is the first president?_. Action in the FaqChatbot agent is responsible for extracting parameters such as `@president-number` and `@sys.geo-country` from the intent. Typically, you do not have to define the name of the action, as Dialogflow will automatically add the action name, but you can also give the action name manually, `president_number`, as shown:The following screenshot shows the action:
 
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/8fe4b4eb-d2a5-4c25-b884-e6e0f6b78a18.png)
 
+Action
 
+### What is context?
+`Context` is like a session, where previous session information is maintained so that the next context can have access to that session information. For example, upon meeting a stranger in a bar, you initiate a conversation, asking the name of the person you are speaking with. From that point on, you know his or her name and you might use his or her name during the conversation. Another example is during a conversation, where you are asked the ambiguous question, "When is his birthday?" by a friend, but you do not know who "he" refers to, in which case, you might ask your friend who he or she is referring to. When your friend explains that they are asking about John Doe's birthday, you have successfully established the context that "he" refers to John Doe.
 
+In Dialogflow, contexts can also be used to establish and control conversational flow, allowing only a specific intent to be triggered if specific contextual requirements are met. For example, during the checkout process in an e-commerce store, you only allow the user to buy an item if all the necessary requirements are gathered, such as credit card information and a shipping address.
 
+#### Creating your first context
+The following flowchart shows the conversational flow that you will learn to build for `FaqChatBot`, which is asking about the Presidents' birthdays:
 
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/2d02d9b4-2482-413a-9c97-b7823c097e88.png)
 
+President Birthday Context flow diagram
 
+1. In `FaqChatBot`, you will find the list of intents created by Dialogflow: Default Fallback Intent and Default Welcome Intent. The following screenshot shows the default welcome and fallback intents:
 
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/b9433e5a-6f80-496e-b7a4-3ba78b2e7188.png)
 
+Default welcome and fallback intents
 
+2. The Default Welcome Intent is triggered the very first time the user uses `FaqChatBot`. Modify the Default Welcome Intent by changing the text response to _Hi! Welcome to FAQ Chatbot. What is your name?_ so that the user will be greeted and asked what his or her name is. The following screenshot shows the modified Default Welcome Intent text response:
 
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/52120448-da88-469d-a613-333fa0887a2b.png)
 
+Modified default welcome intent text response
 
+3. Create Get Name and, in the Contexts section, type in `GET_NAME` in the Add output context textbox. `GET_NAME` can now be used as the input context in other intents, allowing other intents to access all the parameters captured by the Get Name intent.
+4. From the `@sys.given-name:username` template or `my name is @sys.given-name:username`, the intent will extract the username `@sys.given-name:username` and store it in the `$username` variable.
+5. Create a personalized text response using the user's name stored in the `$username` variable, `$username` you can ask me anything about the president of America. The following image shows the Get Name intent, which gets triggered when the user responds with his or her name: 
 
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/de2f0be8-0256-4892-b41d-5611dcbcf2b8.png)
 
+Get name intent context and user says
 
+The following screenshot shows the username variable, which contains the captured username found in the Action section of the Get Name intent:
 
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/a40af000-fe6f-41f7-882d-8ce70ed01d56.png)
 
+Get name intent action and response
 
+Notice that there is a number 5 next to the GET_NAME context. This number defines the lifespan of the context. The number 5 means that the context will be available for the next 5 requests or for the next 10 minutes after the time context is activated. You can simply increase the lifespan number by editing the number to something greater. This will all depend on the use cases for the context.
 
+6. Before we can start creating the intent that can use the `GET_NAME` context, let's create a new entity for the Presidents' birthdays, called `president-birthday`, using JSON. The following code shows the `president-birthday` entity:
 
+```json
+[
+    {
+        "value": "December 14, 1799",
+        "synonyms": [ "George Washington" ]
+    },
+    {
+        "value": "October 30, 1735",
+        "synonyms": [ "John Adams" ]
+    }
+]
+```
 
+7. Once the `president-birthday` entity has been created, you can create the Get President Birthday intent, as shown in the following screenshot. Notice that, in the Contexts section, there is the `GET_NAME` context as the input context, which comes from the output context of the Get Name intent. By adding the `GET_NAME` context as the input, the Get President Birthday intent has access to all the parameters in the `Get_Name` intent.
+8. In the Action section, you can add the parameter called username, which maps to the parameter from the Get Name intent, `#GET_NAME.username`. The following screenshot shows the get President Birthday intent, which shows the username variable mapping to `#GET_NAME.username`:
 
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/591cc099-592c-4d54-9dc0-b0380cfaf2a0.png)
 
-
-
-
-
-
-
+Get President Birthday intent
