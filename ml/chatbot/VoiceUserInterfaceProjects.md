@@ -200,7 +200,32 @@ The following screenshot shows the ML Settings section of the `FaqChatBot` agent
 Machine learning classification threshold
 
 ### Training data
+So, what do you do with those that did not have any intents to match? Rather than ignoring unknown requests, send them back into the system to train the Dialogflow agent.
 
+Let's see this in the following example. Go to the simulator and say `I am Henry`, and the returned response will show that the intent is unknown. The following screenshot shows the unknown input:
 
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/3260408c-3d00-401d-b5f1-44a1aa2090b1.png)
 
+Unknown input
 
+In Dialogflow, click Training, and you will notice that it lists unknown inputs where no matching intents are found.
+
+The following screenshot shows the training data list, where you can find unknown inputs:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/c8d1cd7e-61e7-4e23-9d61-1c4fff48fc3a.png)
+
+Training data list
+
+One of the inputs is i am henry. If you click on i am henry, you will see that it requires approval and also requires the proper intent to be assigned. So, go ahead and assign the Get Name intent and approve it. Once approved, you will see a green checkmark.
+
+The following screenshot shows the window where you can approve and assign an unknown input to an existing intent:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/20859757-ae10-4328-883a-be20a8093c1e.png)
+
+Approving and assigning the "I am Henry" input to the Get Name intent
+
+Now, go to the Get name intent and you will notice that I am henry is matched with the proper entity applied. Over time, you can monitor the Training section data and learn what users are asking, and then you can create or update intents.  Over time, the Dialogflow agent will become smart enough to handle multiple variations of questions, but asked differently. Having to anticipate every possible combination is not humanly possible. Although it is difficult, the ability to train a machine to learn and anticipate the future is as simple as being a few mouse clicks away in Dialogflow. The following screenshot shows an unknown input assigned to the Get Name intent:
+
+![](https://www.safaribooksonline.com/library/view/voice-user-interface/9781788473354/assets/2297f755-db2a-4b49-a574-58ed41511fe2.png)
+
+Unknown input assigned to Get Name intent
