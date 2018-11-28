@@ -248,6 +248,7 @@
 1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
 1. [微软的软件测试之道](http://note.youdao.com/noteshare?id=372d1df81b977d3061cd022d915873ed)
 1. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
+1. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
 
 ## 设计
 1. [Search Patterns](design/SearchPatterns.md)
