@@ -137,10 +137,11 @@
     1. [今日简史](history/21-lessons-for-the-21st-century.md)
 1. [全球通史](history/a-global-history.md)
 1. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
-1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
-1. [万历十五年](history/1587.md)
-1. [中国大历史](history/big-history.md)
-1. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+2. [创新简史](http://note.youdao.com/noteshare?id=3235007e91a172933233a19ac49efd10)
+3. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
+4. [万历十五年](history/1587.md)
+5. [中国大历史](history/big-history.md)
+6. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 
 
