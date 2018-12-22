@@ -233,11 +233,8 @@
 1. [产品的视角：从热闹到门道](pm/perspective_product.md)
     - [运营数据指标](pm/operation_data.md)
     - [你真的了解MVP（最小化可用产品）么？](pm/mvp.md)
-    - [如何撰写MRD和PRD](pm/mrd_prd.md)
-    - [波士顿矩阵使用方法](pm/bcg_matrix.md)
-    - [SWOT分析法](pm/swot.md)
-1. [人人都是产品经理2.0](pm/product_manager_sujie.md)
-1. [Inspired-How To Create Products Customers Love](pm/inspired.md)
+2. [人人都是产品经理2.0](pm/product_manager_sujie.md)
+3. [Inspired-How To Create Products Customers Love](pm/inspired.md)
 
 ## 管理
 1. [成为技术领导者](management/tech_leader.md)
