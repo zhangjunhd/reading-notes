@@ -236,18 +236,21 @@
 2. [人人都是产品经理2.0](pm/product_manager_sujie.md)
 3. [Inspired-How To Create Products Customers Love](pm/inspired.md)
 
+## 运营
+1. [运营之光](http://note.youdao.com/noteshare?id=dc03950de704f18fc35c635ccfeddc31)
+
 ## 管理
 1. [成为技术领导者](management/tech_leader.md)
-1. [人月神话](management/TheMythicalMan-Month.md)
-1. [人件（第2版）](management/peopleware.md)
-1. [软件随想录](management/more_joel_on_software.md)
-1. [硝烟中的Scrum和XP](http://note.youdao.com/noteshare?id=9b22b4103e0e8af34d90fe0e1b208cd6&sub=BF7B9F63B3C44ADDA05122F150156DED)
+2. [人月神话](management/TheMythicalMan-Month.md)
+3. [人件（第2版）](management/peopleware.md)
+4. [软件随想录](management/more_joel_on_software.md)
+5. [硝烟中的Scrum和XP](http://note.youdao.com/noteshare?id=9b22b4103e0e8af34d90fe0e1b208cd6&sub=BF7B9F63B3C44ADDA05122F150156DED)
     - [Scrum概念](http://note.youdao.com/noteshare?id=8a02a64f76ae273f69febe6bf4bf7cd7&sub=E9DAD2C1DBC44B168572890E34993C36)
     - [Scrum管理文档结构图](management/scrum_doc.md)
-1. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
-1. [微软的软件测试之道](http://note.youdao.com/noteshare?id=372d1df81b977d3061cd022d915873ed)
-1. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
-1. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
+6. [Apprenticeship Patterns](management/ApprenticeshipPatterns.md)
+7. [微软的软件测试之道](http://note.youdao.com/noteshare?id=372d1df81b977d3061cd022d915873ed)
+8. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
+9. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
 
 ## 设计
 1. [Search Patterns](design/SearchPatterns.md)
