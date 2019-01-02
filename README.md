@@ -166,11 +166,30 @@
 1. [浮士德](novel/Faust.md)
 
 # 传播学
-1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
-1. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
+## 理论
+1. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
 1. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
 1. [万维钢-注意力商人](http://note.youdao.com/noteshare?id=0e68f91ac7f4439102e81bd9947f6282)
-1. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
+
+## IP
+1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
+2. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
+
+## 新闻
+1. [访美记](media/fang-mei.md)
+1. [新闻写作艺术辩证](media/the-dialectical-art-of-news-writing.md)
+1. [新闻采访与写作](media/news-interview-and-writing.md)
+1. [网络新闻写作与编辑实务](media/news-writing.md)
+
+## 杂志
+1. [时尚：幕后的策动](media/fashion_editor.md)
+
+## 新媒体
+1. [徐建军-开始吧](media/kaistart.md)
+
+## 工具
+1. [Vox Media调研](media/vox-media.md)
+1. [Web Content Management](media/cms.md)
 
 # 商业
 ## 财经
@@ -201,16 +220,6 @@
 1. [Computational Advertising: Techniques for Targeting Relevant Ads](advertising/ComputationalAdvertising.md)
 1. [计算广告](advertising/computational_ad)
 
-## 媒体
-1. [时尚：幕后的策动](media/fashion_editor.md)
-1. [平面排版基本的基本](media/graphic_design.md)
-1. [徐建军-开始吧](media/kaistart.md)
-1. [访美记](media/fang-mei.md)
-1. [新闻写作艺术辩证](media/the-dialectical-art-of-news-writing.md)
-1. [新闻采访与写作](media/news-interview-and-writing.md)
-1. [网络新闻写作与编辑实务](media/news-writing.md)
-1. [Vox Media调研](media/vox-media.md)
-1. [Web Content Management](media/cms.md)
 
 ## 电商
 1. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
@@ -253,6 +262,7 @@
 9. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
 
 ## 设计
+1. [平面排版基本的基本](media/graphic_design.md)
 1. [Search Patterns](design/SearchPatterns.md)
 1. [Sketching User Experiences](design/SketchingUserExperiences.md)
 1. [About Face 3](design/AboutFace3.md)
