@@ -187,6 +187,7 @@
 ## 新媒体
 1. [徐建军-开始吧](media/kaistart.md)
 1. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
+1. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
 
 ## 工具
 1. [Vox Media调研](media/vox-media.md)
