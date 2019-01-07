@@ -12,7 +12,6 @@
 1. [时间简史](http://note.youdao.com/noteshare?id=00354b2dd05bed1d331e967494e02ef3)
 1. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
 1. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
-1. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
 1. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
 
 # 东方哲学
@@ -149,6 +148,8 @@
 # 艺术
 1. [我心自由-杜尚传](art/duchamp.md)
 1. [光影中遇见伦勃朗](art/rembrandt.md)
+
+# 社交
 1. [24堂葡萄酒大师课](http://note.youdao.com/noteshare?id=27ada53808a843d24a8ff5a798b81111)
 
 # 经济学
@@ -165,11 +166,16 @@
 1. [悉达多](novel/Siddhartha.md)
 1. [浮士德](novel/Faust.md)
 
+# 信息论
+1. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
+
+
+
 # 传播学
 ## 理论
 1. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
-1. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
-1. [万维钢-注意力商人](http://note.youdao.com/noteshare?id=0e68f91ac7f4439102e81bd9947f6282)
+2. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
+3. [万维钢-注意力商人](http://note.youdao.com/noteshare?id=0e68f91ac7f4439102e81bd9947f6282)
 
 ## IP
 1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
