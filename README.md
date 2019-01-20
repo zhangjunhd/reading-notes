@@ -160,6 +160,7 @@
 # 小说&戏剧
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
 1. [1984](novel/NineteenEightyFour.md)
+1. [美丽新世界](novel/BraveNewWorld.md)
 1. [变形记](novel/DieVerwandlung.md)
 1. [妈妈及生命的意义](novel/MommaAndTheMeaningOfLife.md)
 1. [叔本华的治疗](novel/TheSchopenhauerCure.md)
