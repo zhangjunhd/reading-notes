@@ -169,7 +169,7 @@
 
 # 信息论
 1. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
-
+1. [重塑-信息经济的结构](http://note.youdao.com/noteshare?id=831a7bdbec54230eb70c0005e3d4db78)
 
 
 # 传播学
