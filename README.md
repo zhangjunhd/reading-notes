@@ -183,14 +183,15 @@
 1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
 2. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
 
-## 新闻
-1. [访美记](media/fang-mei.md)
+## 写作
 1. [新闻写作艺术辩证](media/the-dialectical-art-of-news-writing.md)
 1. [新闻采访与写作](media/news-interview-and-writing.md)
 1. [网络新闻写作与编辑实务](media/news-writing.md)
+1. [从零开始写故事：一个南方周末记者的特稿笔记](http://note.youdao.com/noteshare?id=0892276d6e76318d2948f5d5da5191d4)
 
-## 杂志
+## 媒体
 1. [时尚：幕后的策动](media/fashion_editor.md)
+1. [访美记](media/fang-mei.md)
 
 ## 新媒体
 1. [徐建军-开始吧](media/kaistart.md)
