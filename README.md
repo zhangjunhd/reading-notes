@@ -175,8 +175,9 @@
 # 传播学
 ## 理论
 1. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
-2. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
-3. [万维钢-注意力商人](http://note.youdao.com/noteshare?id=0e68f91ac7f4439102e81bd9947f6282)
+1. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
+1. [疯传](http://note.youdao.com/noteshare?id=54e8a54f1e462fb52947c7a27235ce5a)
+1. [万维钢-注意力商人](http://note.youdao.com/noteshare?id=0e68f91ac7f4439102e81bd9947f6282)
 
 ## IP
 1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
