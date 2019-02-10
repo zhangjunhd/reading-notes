@@ -76,21 +76,22 @@
 
 
 # 心理学
-1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
-1. [荣格心理学入门](psychology/Jung.md)
-1. [活出生命的意义](psychology/MansSearchForMeaning.md)
-1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-1. [专念](psychology/mindfulness.md)
-1. [The Complete Idiot's Guide to Memes](psychology/TheCompleteIdiotsGuideToMemes.md)
-1. [Level 3 of Meme](psychology/Level3OfMeme.md)
-1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
-1. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-1. [幸福是陷阱?](psychology/the-happiness-trap.md)
-1. 延迟满足
+1. 精神分析
+   1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
+   2. [荣格心理学入门](psychology/Jung.md)
+1. 辛福
+   1. [活出生命的意义](psychology/MansSearchForMeaning.md)
+   2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
+   3. [专念](psychology/mindfulness.md)
+   4.  [幸福是陷阱?](psychology/the-happiness-trap.md)
+2. 批判性思维
+   1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
+   2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
+3.  延迟满足
     1. [意志力](psychology/willpower.md)
-    1. [自控力](psychology/TheWillpowerInstinct.md)
-    1. [棉花糖实验](psychology/TheMarshmallowTest.md)
-1. 史蒂芬平克
+    2. [自控力](psychology/TheWillpowerInstinct.md)
+    3. [棉花糖实验](psychology/TheMarshmallowTest.md)
+4.  史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 
 # 成功学
@@ -173,34 +174,31 @@
 
 
 # 传播学
-## 理论
-1. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
-1. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
-1. [疯传](http://note.youdao.com/noteshare?id=54e8a54f1e462fb52947c7a27235ce5a)
-1. [万维钢-注意力商人](http://note.youdao.com/noteshare?id=0e68f91ac7f4439102e81bd9947f6282)
-
-## IP
-1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
-2. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
-
-## 写作
-1. [新闻写作艺术辩证](media/the-dialectical-art-of-news-writing.md)
-1. [新闻采访与写作](media/news-interview-and-writing.md)
-1. [网络新闻写作与编辑实务](media/news-writing.md)
-1. [从零开始写故事：一个南方周末记者的特稿笔记](http://note.youdao.com/noteshare?id=0892276d6e76318d2948f5d5da5191d4)
-
-## 媒体
-1. [时尚：幕后的策动](media/fashion_editor.md)
-1. [访美记](media/fang-mei.md)
-
-## 新媒体
-1. [徐建军-开始吧](media/kaistart.md)
-1. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
-1. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
-
-## 工具
-1. [Vox Media调研](media/vox-media.md)
-1. [Web Content Management](media/cms.md)
+1. 理论
+   1. [The Complete Idiot's Guide to Memes](psychology/TheCompleteIdiotsGuideToMemes.md)
+   2. [Level 3 of Meme](psychology/Level3OfMeme.md)
+   3. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
+   4. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
+   5. [疯传](http://note.youdao.com/noteshare?id=54e8a54f1e462fb52947c7a27235ce5a)
+   6. [万维钢-注意力商人](http://note.youdao.com/noteshare?id=0e68f91ac7f4439102e81bd9947f6282)
+1. IP
+   1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
+   2. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
+1. 写作
+   1. [新闻写作艺术辩证](media/the-dialectical-art-of-news-writing.md)
+   2. [新闻采访与写作](media/news-interview-and-writing.md)
+   3. [网络新闻写作与编辑实务](media/news-writing.md)
+   4. [从零开始写故事：一个南方周末记者的特稿笔记](http://note.youdao.com/noteshare?id=0892276d6e76318d2948f5d5da5191d4)
+1. 媒体
+   1. [时尚：幕后的策动](media/fashion_editor.md)
+   2. [访美记](media/fang-mei.md)
+1. 新媒体
+   1. [徐建军-开始吧](media/kaistart.md)
+   2. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
+   3. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
+1. 工具
+   1. [Vox Media调研](media/vox-media.md)
+   2. [Web Content Management](media/cms.md)
 
 # 商业
 ## 财经
@@ -255,6 +253,7 @@
     - [你真的了解MVP（最小化可用产品）么？](pm/mvp.md)
 2. [人人都是产品经理2.0](pm/product_manager_sujie.md)
 3. [Inspired-How To Create Products Customers Love](pm/inspired.md)
+4. [内容算法](http://note.youdao.com/noteshare?id=c8a2044f569574dc6ad459c76833336c)
 
 ## 运营
 1. [运营之光](http://note.youdao.com/noteshare?id=dc03950de704f18fc35c635ccfeddc31)
