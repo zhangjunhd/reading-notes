@@ -83,7 +83,9 @@
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    3. [专念](psychology/mindfulness.md)
-   4.  [幸福是陷阱?](psychology/the-happiness-trap.md)
+   4. [幸福是陷阱?](psychology/the-happiness-trap.md)
+   5. [妈妈及生命的意义](novel/MommaAndTheMeaningOfLife.md)
+   6. [叔本华的治疗](novel/TheSchopenhauerCure.md)
 2. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
@@ -163,8 +165,6 @@
 1. [1984](novel/NineteenEightyFour.md)
 1. [美丽新世界](novel/BraveNewWorld.md)
 1. [变形记](novel/DieVerwandlung.md)
-1. [妈妈及生命的意义](novel/MommaAndTheMeaningOfLife.md)
-1. [叔本华的治疗](novel/TheSchopenhauerCure.md)
 1. [悉达多](novel/Siddhartha.md)
 1. [浮士德](novel/Faust.md)
 
