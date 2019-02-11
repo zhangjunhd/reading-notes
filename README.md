@@ -84,8 +84,8 @@
    2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    3. [专念](psychology/mindfulness.md)
    4. [幸福是陷阱?](psychology/the-happiness-trap.md)
-   5. [妈妈及生命的意义](novel/MommaAndTheMeaningOfLife.md)
-   6. [叔本华的治疗](novel/TheSchopenhauerCure.md)
+   5. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+   6. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
 2. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
