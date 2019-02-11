@@ -113,7 +113,7 @@
 1. 精神分析
    1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
    2. [荣格心理学入门](psychology/Jung.md)
-1. 幸福
+1. 意义
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    3. [专念](psychology/mindfulness.md)
@@ -127,7 +127,9 @@
     1. [意志力](psychology/willpower.md)
     2. [自控力](psychology/TheWillpowerInstinct.md)
     3. [棉花糖实验](psychology/TheMarshmallowTest.md)
-4.  史蒂芬平克
+4. 群体
+   1. [乌合之众](http://note.youdao.com/noteshare?id=160e8f71b1b779dc30368773631dfc86)
+5. 史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 
 # 成功学
@@ -160,7 +162,6 @@
     1. [六个步骤把资料转换成知识](http://note.youdao.com/noteshare?id=0f7dcad585bc83ca0cbb3d63510a2a76&sub=527AD3A6DF0048F9B238B7346C2B2239)
     2. [如何阅读一本书](http://note.youdao.com/noteshare?id=0355c32dbf51713686b8edb2118ceddf&sub=FD78EC33C6464CFF817E73AC4C389086)
 5. 健康
-    1. [食物是最好的医药](http://note.youdao.com/noteshare?id=01898150e537b74f97d8e979d81a6dda&sub=CBCF6EC1EDF347EEA912CC2C2D405AA7)
 6. 沟通
     1. [蔡康永的说话之道](http://note.youdao.com/noteshare?id=c519ae9722a855073078435eba9a08ff&sub=869CCCEB991A4CCA8785D068B0FF8025)
 7. 综合
