@@ -143,6 +143,7 @@ The left half deals mainly in words and is associated with analysis and logical 
 The word critical often carries negative connotation, implying excessive faultfinding. That connotation does not apply to the term critical thinking, which refers to the process of evaluating ideas. When we think critically, we judge the accuracy of statements and the soundness of the reasoning that leads to conclusions. Critical thinking helps us interpret complex ideas, appraise the evidence offered in support of arguments, and distinguish between reasonableness and unreasonableness. Both problem solving and decision making depend on critical thinking, as does the meaningful discussion of controversial issues.
 
 One of the keys to proficiency in critical thinking is skill in asking relevant questions.
+
 Thought|Question
 ----|------
 Professor Vile cheated me in my composition grade. He weighted some themes more heavily than others.|Did he grade everyone on the same standard? Were the different weightings justified?
