@@ -150,7 +150,7 @@
 3. 时间管理(要事第一、启动效应、感知时间)
     1. [小强的时间管理博客摘录](http://note.youdao.com/noteshare?id=ac3146279afd16984366639925329ad3&sub=EE9A0D2E827A43F8BD63DD77E8655055)
     2. [尽管去做——无压工作的艺术](http://note.youdao.com/noteshare?id=f64427d5fc9383ba57cc97af9b9b65f5&sub=59442A6F901F431D899EEFFFFB196AAD)
-    3. [奇特的一生](http://note.youdao.com/noteshare?id=6e7db58f10379cfb64d508cec11813b2&sub=BE0A1AA1BF5E4786BD222AE99F21B465)
+    3. [奇特的一生](success/Lyubishchev.md)
     4. [高效能人士的七个习惯](http://note.youdao.com/noteshare?id=1a1555a5ba8b90ac894c47cf46b22e4c&sub=88785F2B8CEA4C5EBA89904AC9A06DCA)
     5. [如何不用额外咖啡因也能保持专注](http://note.youdao.com/noteshare?id=49c30153e7705cdf0e54cd0a6c21a3ba&sub=665E4D80A1E24764BCE867A512378F89)
     6. [把时间当作朋友](http://note.youdao.com/noteshare?id=51982ba9ef1f1d989a0f690db77c5531&sub=A29B551000104CFC8F652681420D8173)
