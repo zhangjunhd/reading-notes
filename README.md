@@ -147,8 +147,6 @@
     2. [练习的心态](success/the-practicing-mind.md)
     3. [刻意练习](http://note.youdao.com/noteshare?id=daf5296d89f0a61f8b26b4c8eb2126be&sub=9154C32FDE814AFE9B5E8B1A9BA0A662)
     4. [习惯的力量](http://note.youdao.com/noteshare?id=28e8c874dfc4a0a0fbd5a0b097f0ed99&sub=F358E1F126F54A5F84BCD643450C5309)
-    5. [学习之道](http://note.youdao.com/noteshare?id=03da93fdb76778dd591e45d552c3cf66&sub=14258E2C1D574A8B90A4883D7B241246)
-    6. [如何高效学习](http://note.youdao.com/noteshare?id=ac62d84238c1cb5c1afb7f957dbafa29&sub=486EF57587B946D9B9B4AD4533EA743B)
 3. 时间管理(要事第一、启动效应、感知时间)
     1. [小强的时间管理博客摘录](http://note.youdao.com/noteshare?id=ac3146279afd16984366639925329ad3&sub=EE9A0D2E827A43F8BD63DD77E8655055)
     2. [尽管去做——无压工作的艺术](http://note.youdao.com/noteshare?id=f64427d5fc9383ba57cc97af9b9b65f5&sub=59442A6F901F431D899EEFFFFB196AAD)
@@ -161,6 +159,8 @@
 4. 知识管理(主题阅读、整理知识库、输出观点)
     1. [六个步骤把资料转换成知识](http://note.youdao.com/noteshare?id=0f7dcad585bc83ca0cbb3d63510a2a76&sub=527AD3A6DF0048F9B238B7346C2B2239)
     2. [如何阅读一本书](http://note.youdao.com/noteshare?id=0355c32dbf51713686b8edb2118ceddf&sub=FD78EC33C6464CFF817E73AC4C389086)
+    3. [学习之道](http://note.youdao.com/noteshare?id=03da93fdb76778dd591e45d552c3cf66&sub=14258E2C1D574A8B90A4883D7B241246)
+    4. [如何高效学习](http://note.youdao.com/noteshare?id=ac62d84238c1cb5c1afb7f957dbafa29&sub=486EF57587B946D9B9B4AD4533EA743B)
 5. 健康
 6. 沟通
     1. [蔡康永的说话之道](http://note.youdao.com/noteshare?id=c519ae9722a855073078435eba9a08ff&sub=869CCCEB991A4CCA8785D068B0FF8025)
