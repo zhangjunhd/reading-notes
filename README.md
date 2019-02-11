@@ -74,6 +74,40 @@
 1. [论自然](western_philosophy/nature.md)
 1. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
 
+# 历史
+1. 赫拉利
+    1. [人类简史](history/A-brief-history-of-humankind.md)
+    1. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
+    1. [今日简史](history/21-lessons-for-the-21st-century.md)
+1. [全球通史](history/a-global-history.md)
+1. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
+2. [创新简史](http://note.youdao.com/noteshare?id=3235007e91a172933233a19ac49efd10)
+3. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
+4. [万历十五年](history/1587.md)
+5. [中国大历史](history/big-history.md)
+6. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+
+
+
+# 艺术
+1. [我心自由-杜尚传](art/duchamp.md)
+1. [光影中遇见伦勃朗](art/rembrandt.md)
+
+# 社交
+1. [24堂葡萄酒大师课](http://note.youdao.com/noteshare?id=27ada53808a843d24a8ff5a798b81111)
+
+# 经济学
+1. [第4消费时代](sociology/4th-consumerist.md)
+2. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
+3. [经济学通识课](sociology/a-little-history-of-economics.md)
+
+# 小说&戏剧
+1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
+1. [1984](novel/NineteenEightyFour.md)
+1. [美丽新世界](novel/BraveNewWorld.md)
+1. [变形记](novel/DieVerwandlung.md)
+1. [悉达多](novel/Siddhartha.md)
+1. [浮士德](novel/Faust.md)
 
 # 心理学
 1. 精神分析
@@ -133,40 +167,7 @@
     1. [冯鑫家信：怎样才算好好活着](http://note.youdao.com/noteshare?id=eadc55c27b04a0bbc7f75c4757b10e42&sub=44933ABA14BB44648109E5399AC79EAC)
     1. [原则](success/Principles.md)
 
-# 历史
-1. 赫拉利
-    1. [人类简史](history/A-brief-history-of-humankind.md)
-    1. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
-    1. [今日简史](history/21-lessons-for-the-21st-century.md)
-1. [全球通史](history/a-global-history.md)
-1. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
-2. [创新简史](http://note.youdao.com/noteshare?id=3235007e91a172933233a19ac49efd10)
-3. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
-4. [万历十五年](history/1587.md)
-5. [中国大历史](history/big-history.md)
-6. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
-
-
-# 艺术
-1. [我心自由-杜尚传](art/duchamp.md)
-1. [光影中遇见伦勃朗](art/rembrandt.md)
-
-# 社交
-1. [24堂葡萄酒大师课](http://note.youdao.com/noteshare?id=27ada53808a843d24a8ff5a798b81111)
-
-# 经济学
-1. [第4消费时代](sociology/4th-consumerist.md)
-2. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
-3. [经济学通识课](sociology/a-little-history-of-economics.md)
-
-# 小说&戏剧
-1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
-1. [1984](novel/NineteenEightyFour.md)
-1. [美丽新世界](novel/BraveNewWorld.md)
-1. [变形记](novel/DieVerwandlung.md)
-1. [悉达多](novel/Siddhartha.md)
-1. [浮士德](novel/Faust.md)
 
 # 信息论
 1. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
