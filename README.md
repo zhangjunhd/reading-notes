@@ -79,7 +79,7 @@
 1. 精神分析
    1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
    2. [荣格心理学入门](psychology/Jung.md)
-1. 辛福
+1. 幸福
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    3. [专念](psychology/mindfulness.md)
