@@ -1,5 +1,5 @@
 # 长尾理论2.0
-![cover](https://img1.doubanio.com/lpic/s3750308.jpg)
+![cover](https://img1.doubanio.com/view/subject/l/public/s3750308.jpg)
 
     作者:  [英] 安德森 
     出版社: 中信出版社
