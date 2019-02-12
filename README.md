@@ -178,7 +178,7 @@
 # 商业
 1. 财经
    1. [一本书读懂财报](finance/FinancialStatements.md)
-   2. [富爸爸，穷爸爸](finance/RichDadPoorDad.md)
+   2. [富爸爸，穷爸爸](http://note.youdao.com/noteshare?id=4792187d4563b5f13ce6285305a05a5b)
 2. 互联网
    1. [维基经济学](internet/wikinomics.md)
    2. [长尾理论2.0](internet/long_tail.md)
