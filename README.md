@@ -196,8 +196,8 @@
    1. [必然](bussiness/kk/The-Inevitable.md)
    2. [新经济，新规则](bussiness/kk/NewRulesForTheNewEconomy.md)
 6. 传播学
-   1. [The Complete Idiot's Guide to Memes](psychology/TheCompleteIdiotsGuideToMemes.md)
-   2. [Level 3 of Meme](psychology/Level3OfMeme.md)
+   1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
+   2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
    3. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
    4. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
    5. [疯传](http://note.youdao.com/noteshare?id=54e8a54f1e462fb52947c7a27235ce5a)
