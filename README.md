@@ -223,11 +223,9 @@
 12. 营销
     1.  [定位](bussiness/marketing/positioning.md)
 13. 广告
-    1. [程序化购买的历史沿革及展望](advertising/rtb.md)
-    2. [Building a Real-Time Bidding Platform on AWS](advertising/rtb-aws.md)
-    3. [中国互联网广告生态](advertising/internet-advertising-supply-chain-2014.md)
-    4. [Computational Advertising: Techniques for Targeting Relevant Ads](advertising/ComputationalAdvertising.md)
-    5. [计算广告](advertising/computational_ad)
+    1. [中国互联网广告生态](advertising/internet-advertising-supply-chain-2014.md)
+    2. [Computational Advertising: Techniques for Targeting Relevant Ads](advertising/ComputationalAdvertising.md)
+    3. [计算广告](advertising/computational_ad)
 14. 电商
     1.  [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
 15. 人工智能
