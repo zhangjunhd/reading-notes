@@ -221,7 +221,7 @@
     1.  [Vox Media调研](bussiness/cms/vox-media.md)
     2.  [Web Content Management](bussiness/cms/cms.md)
 12. 营销
-    1.  [定位](marketing/positioning.md)
+    1.  [定位](bussiness/marketing/positioning.md)
 13. 广告
     1. [程序化购买的历史沿革及展望](advertising/rtb.md)
     2. [Building a Real-Time Bidding Platform on AWS](advertising/rtb-aws.md)
