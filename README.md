@@ -177,7 +177,7 @@
 
 # 商业
 1. 财经
-   1. [一本书读懂财报](finance/FinancialStatements.md)
+   1. [一本书读懂财报](http://note.youdao.com/noteshare?id=278355a3445618dfebfa785a4b861880)
    2. [富爸爸，穷爸爸](http://note.youdao.com/noteshare?id=4792187d4563b5f13ce6285305a05a5b)
 2. 互联网
    1. [维基经济学](internet/wikinomics.md)
