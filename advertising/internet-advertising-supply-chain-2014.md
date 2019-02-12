@@ -15,7 +15,7 @@ Ad Network（广告网络）从Publishers（网站和apps）收购广告位，�
 
 与Ad Network联合publishers不同，Ad Exchange不仅仅联合publishers，它同样把Ad Network联合起来，这些拥有广告位的，被统一用“供应方”（supply side）一词来指代。
 
-Ad Exchange比Ad Network先进的地方在于它的定价机制。Ad Network上，对于供需双方而言，其实都没有对广告位的定价权，而是由Ad Network这个“中央政府”定价的“计划经济”；而Ad Exchange，则是一个真正意义上按照供需关系来运转的“市场经济”。Ad Exchange为每一个商品（商品这里暂时指广告位）提供了“价高者得”的机制。
+**Ad Exchange比Ad Network先进的地方在于它的定价机制**。Ad Network上，对于供需双方而言，其实都没有对广告位的定价权，而是由Ad Network这个“中央政府”定价的“计划经济”；而Ad Exchange，则是一个真正意义上按照供需关系来运转的“市场经济”。Ad Exchange为每一个商品（商品这里暂时指广告位）提供了“价高者得”的机制。
 
 ![3](http://www.chinawebanalytics.cn/wp-content/uploads/2014/10/network-and-exchange.png)
 
