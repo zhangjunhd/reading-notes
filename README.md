@@ -211,15 +211,15 @@
    3. [网络新闻写作与编辑实务](bussiness/writing/news-writing.md)
    4. [从零开始写故事：一个南方周末记者的特稿笔记](http://note.youdao.com/noteshare?id=0892276d6e76318d2948f5d5da5191d4)
 9.  媒体
-    1.  [时尚：幕后的策动](media/fashion_editor.md)
-    2.  [访美记](media/fang-mei.md)
+    1.  [时尚：幕后的策动](bussiness/media/fashion_editor.md)
+    2.  [访美记](bussiness/media/fang-mei.md)
 10. 新媒体
-    1.  [徐建军-开始吧](media/kaistart.md)
+    1.  [徐建军-开始吧](bussiness/new_media/kaistart.md)
     2.  [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
     3.  [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
-11. 工具
-    1.  [Vox Media调研](media/vox-media.md)
-    2.  [Web Content Management](media/cms.md)
+11. CMS
+    1.  [Vox Media调研](bussiness/cms/vox-media.md)
+    2.  [Web Content Management](bussiness/cms/cms.md)
 12. 营销
     1.  [定位](marketing/positioning.md)
 13. 广告
@@ -265,7 +265,7 @@
    8. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
    9. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
 4. 设计
-   1. [平面排版基本的基本](media/graphic_design.md)
+   1. [平面排版基本的基本](design/graphic_design.md)
    2. [Search Patterns](design/SearchPatterns.md)
    3. [Sketching User Experiences](design/SketchingUserExperiences.md)
    4. [About Face 3](design/AboutFace3.md)
