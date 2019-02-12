@@ -220,36 +220,36 @@
 9. 营销
    1. [定位](marketing/positioning.md)
 10. 广告
-   2. [程序化购买的历史沿革及展望](advertising/rtb.md)
-   3. [Building a Real-Time Bidding Platform on AWS](advertising/rtb-aws.md)
-   4. [中国互联网广告生态](advertising/internet-advertising-supply-chain-2014.md)
-   5. [Computational Advertising: Techniques for Targeting Relevant Ads](advertising/ComputationalAdvertising.md)
-   6. [计算广告](advertising/computational_ad)
+    1. [程序化购买的历史沿革及展望](advertising/rtb.md)
+    2. [Building a Real-Time Bidding Platform on AWS](advertising/rtb-aws.md)
+    3. [中国互联网广告生态](advertising/internet-advertising-supply-chain-2014.md)
+    4. [Computational Advertising: Techniques for Targeting Relevant Ads](advertising/ComputationalAdvertising.md)
+    5. [计算广告](advertising/computational_ad)
 11. 电商
-   7. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
+    1.  [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
 12. 人工智能
-   8. [人工智能的未来](http://note.youdao.com/noteshare?id=fbd15411b3ce9943b3f3e296440b1a94&sub=8C9CE5C546564E1B90B68529E40524E2)
-   9. [与机器赛跑](http://note.youdao.com/noteshare?id=3bd43e726dd76b0d8230eb9d186c3934&sub=8196ECF808DB4010ACACC8AB307A3CEA)
-   10. [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
-   11. [科学的极致：漫谈人工智能](http://note.youdao.com/noteshare?id=9766fc1a0adccf237e3ff6254c948613&sub=03B8D2B3342B44B08EF14147C02DC5E0)
-   12. [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
-   13. [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
-   14. [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
+    1.  [人工智能的未来](http://note.youdao.com/noteshare?id=fbd15411b3ce9943b3f3e296440b1a94&sub=8C9CE5C546564E1B90B68529E40524E2)
+    2.  [与机器赛跑](http://note.youdao.com/noteshare?id=3bd43e726dd76b0d8230eb9d186c3934&sub=8196ECF808DB4010ACACC8AB307A3CEA)
+    3.  [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
+    4.  [科学的极致：漫谈人工智能](http://note.youdao.com/noteshare?id=9766fc1a0adccf237e3ff6254c948613&sub=03B8D2B3342B44B08EF14147C02DC5E0)
+    5.  [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
+    6.  [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
+    7.  [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
 13. 企业家精神
-   15. [工业人的未来](entrepreneur/the_future_of_industrial_man.md)
-   16. [企业家](entrepreneur/entrepreneur.md)
+    1.  [工业人的未来](entrepreneur/the_future_of_industrial_man.md)
+    2.  [企业家](entrepreneur/entrepreneur.md)
 
 # 产品经理
 1. 产品
    1. [产品的视角：从热闹到门道](pm/perspective_product.md)
-    - [运营数据指标](pm/operation_data.md)
-    - [你真的了解MVP（最小化可用产品）么？](pm/mvp.md)
+      1. [运营数据指标](pm/operation_data.md)
+      2. [你真的了解MVP（最小化可用产品）么？](pm/mvp.md)
    2. [人人都是产品经理2.0](pm/product_manager_sujie.md)
    3. [Inspired-How To Create Products Customers Love](pm/inspired.md)
    4. [内容算法](http://note.youdao.com/noteshare?id=c8a2044f569574dc6ad459c76833336c)
-1. 运营
+2. 运营
    1. [运营之光](http://note.youdao.com/noteshare?id=dc03950de704f18fc35c635ccfeddc31)
-1. 管理
+3. 管理
    1. [成为技术领导者](management/tech_leader.md)
    2. [人月神话](management/TheMythicalMan-Month.md)
    3. [人件（第2版）](management/peopleware.md)
@@ -261,7 +261,7 @@
    7. [微软的软件测试之道](http://note.youdao.com/noteshare?id=372d1df81b977d3061cd022d915873ed)
    8. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
    9. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
-1. 设计
+4. 设计
    1. [平面排版基本的基本](media/graphic_design.md)
    2. [Search Patterns](design/SearchPatterns.md)
    3. [Sketching User Experiences](design/SketchingUserExperiences.md)
