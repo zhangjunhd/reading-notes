@@ -186,15 +186,15 @@
    4. [链接](bussiness/theory/linked.md)
 3. 创业
    1. [从0到1](bussiness/startup/zero_to_one.md)
+   2. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
 4. 商业模式
    1. [隐形VISA](bussiness/model/visa.md)
    2. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](internet/business_model.md)
 5. 凯文·凯利
    1. [必然](internet/The-Inevitable.md)
    2. [新经济，新规则](internet/NewRulesForTheNewEconomy.md)
-   3.  [周鸿祎自述-我的互联网方法论](internet/zhou_hong_yi.md)
-   4.  [互联网+小米案例版](internet/internet_plus_xiaomi.md)
-   5.  [重来ReWork](internet/rework.md)
+   3.  [互联网+小米案例版](internet/internet_plus_xiaomi.md)
+   4.  [重来ReWork](internet/rework.md)
 6. 传播学
    1. [The Complete Idiot's Guide to Memes](psychology/TheCompleteIdiotsGuideToMemes.md)
    2. [Level 3 of Meme](psychology/Level3OfMeme.md)
