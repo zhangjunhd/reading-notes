@@ -211,17 +211,17 @@
    3. [网络新闻写作与编辑实务](media/news-writing.md)
    4. [从零开始写故事：一个南方周末记者的特稿笔记](http://note.youdao.com/noteshare?id=0892276d6e76318d2948f5d5da5191d4)
 9.  媒体
-   5. [时尚：幕后的策动](media/fashion_editor.md)
-   6. [访美记](media/fang-mei.md)
+    1.  [时尚：幕后的策动](media/fashion_editor.md)
+    2.  [访美记](media/fang-mei.md)
 10. 新媒体
-   7. [徐建军-开始吧](media/kaistart.md)
-   8. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
-   9. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
+    1.  [徐建军-开始吧](media/kaistart.md)
+    2.  [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
+    3.  [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
 11. 工具
-   10. [Vox Media调研](media/vox-media.md)
-   11. [Web Content Management](media/cms.md)
+    1.  [Vox Media调研](media/vox-media.md)
+    2.  [Web Content Management](media/cms.md)
 12. 营销
-   12. [定位](marketing/positioning.md)
+    1.  [定位](marketing/positioning.md)
 13. 广告
     1. [程序化购买的历史沿革及展望](advertising/rtb.md)
     2. [Building a Real-Time Bidding Platform on AWS](advertising/rtb-aws.md)
