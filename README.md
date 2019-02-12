@@ -177,8 +177,8 @@
 
 # 商业
 1. 财经
-   1. [一本书读懂财报](finance_economics/FinancialStatements.md)
-   2. [富爸爸，穷爸爸](finance_economics/RichDadPoorDad.md)
+   1. [一本书读懂财报](finance/FinancialStatements.md)
+   2. [富爸爸，穷爸爸](finance/RichDadPoorDad.md)
 2. 互联网
    1. [维基经济学](internet/wikinomics.md)
    2. [长尾理论2.0](internet/long_tail.md)
@@ -192,52 +192,52 @@
    10. [周鸿祎自述-我的互联网方法论](internet/zhou_hong_yi.md)
    11. [互联网+小米案例版](internet/internet_plus_xiaomi.md)
    12. [重来ReWork](internet/rework.md)
-1. 传播学
+3. 传播学
    1. [The Complete Idiot's Guide to Memes](psychology/TheCompleteIdiotsGuideToMemes.md)
    2. [Level 3 of Meme](psychology/Level3OfMeme.md)
    3. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
    4. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
    5. [疯传](http://note.youdao.com/noteshare?id=54e8a54f1e462fb52947c7a27235ce5a)
    6. [万维钢-注意力商人](http://note.youdao.com/noteshare?id=0e68f91ac7f4439102e81bd9947f6282)
-1. IP
+4. IP
    1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
    2. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
-1. 写作
+5. 写作
    1. [新闻写作艺术辩证](media/the-dialectical-art-of-news-writing.md)
    2. [新闻采访与写作](media/news-interview-and-writing.md)
    3. [网络新闻写作与编辑实务](media/news-writing.md)
    4. [从零开始写故事：一个南方周末记者的特稿笔记](http://note.youdao.com/noteshare?id=0892276d6e76318d2948f5d5da5191d4)
-1. 媒体
+6. 媒体
    1. [时尚：幕后的策动](media/fashion_editor.md)
    2. [访美记](media/fang-mei.md)
-1. 新媒体
+7. 新媒体
    1. [徐建军-开始吧](media/kaistart.md)
    2. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
    3. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
-1. 工具
+8. 工具
    1. [Vox Media调研](media/vox-media.md)
    2. [Web Content Management](media/cms.md)
-3. 营销
+9. 营销
    1. [定位](marketing/positioning.md)
-4. 广告
-   1. [程序化购买的历史沿革及展望](advertising/rtb.md)
-   2. [Building a Real-Time Bidding Platform on AWS](advertising/rtb-aws.md)
-   3. [中国互联网广告生态](advertising/internet-advertising-supply-chain-2014.md)
-   4. [Computational Advertising: Techniques for Targeting Relevant Ads](advertising/ComputationalAdvertising.md)
-   5. [计算广告](advertising/computational_ad)
-5. 电商
-   1. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
-6. 人工智能
-   1. [人工智能的未来](http://note.youdao.com/noteshare?id=fbd15411b3ce9943b3f3e296440b1a94&sub=8C9CE5C546564E1B90B68529E40524E2)
-   2. [与机器赛跑](http://note.youdao.com/noteshare?id=3bd43e726dd76b0d8230eb9d186c3934&sub=8196ECF808DB4010ACACC8AB307A3CEA)
-   3. [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
-   4. [科学的极致：漫谈人工智能](http://note.youdao.com/noteshare?id=9766fc1a0adccf237e3ff6254c948613&sub=03B8D2B3342B44B08EF14147C02DC5E0)
-   5. [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
-   6. [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
-   7. [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
-7. 企业家精神
-   1. [工业人的未来](entrepreneur/the_future_of_industrial_man.md)
-   2. [企业家](entrepreneur/entrepreneur.md)
+10. 广告
+   2. [程序化购买的历史沿革及展望](advertising/rtb.md)
+   3. [Building a Real-Time Bidding Platform on AWS](advertising/rtb-aws.md)
+   4. [中国互联网广告生态](advertising/internet-advertising-supply-chain-2014.md)
+   5. [Computational Advertising: Techniques for Targeting Relevant Ads](advertising/ComputationalAdvertising.md)
+   6. [计算广告](advertising/computational_ad)
+11. 电商
+   7. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
+12. 人工智能
+   8. [人工智能的未来](http://note.youdao.com/noteshare?id=fbd15411b3ce9943b3f3e296440b1a94&sub=8C9CE5C546564E1B90B68529E40524E2)
+   9. [与机器赛跑](http://note.youdao.com/noteshare?id=3bd43e726dd76b0d8230eb9d186c3934&sub=8196ECF808DB4010ACACC8AB307A3CEA)
+   10. [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
+   11. [科学的极致：漫谈人工智能](http://note.youdao.com/noteshare?id=9766fc1a0adccf237e3ff6254c948613&sub=03B8D2B3342B44B08EF14147C02DC5E0)
+   12. [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
+   13. [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
+   14. [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
+13. 企业家精神
+   15. [工业人的未来](entrepreneur/the_future_of_industrial_man.md)
+   16. [企业家](entrepreneur/entrepreneur.md)
 
 # 产品经理
 1. 产品
