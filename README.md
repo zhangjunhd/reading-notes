@@ -236,8 +236,8 @@
     6.  [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
     7.  [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
 16. 企业家精神
-    1.  [工业人的未来](entrepreneur/the_future_of_industrial_man.md)
-    2.  [企业家](entrepreneur/entrepreneur.md)
+    1.  [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
+    2.  [企业家](bussiness/entrepreneur/entrepreneur.md)
 
 # 产品经理
 1. 产品
