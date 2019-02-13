@@ -189,6 +189,7 @@
    2. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
    3. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
    4. [重来ReWork](bussiness/startup/rework.md)
+   5. [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
 4. 商业模式
    1. [隐形VISA](bussiness/model/visa.md)
    2. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
@@ -234,7 +235,6 @@
     4.  [科学的极致：漫谈人工智能](http://note.youdao.com/noteshare?id=9766fc1a0adccf237e3ff6254c948613&sub=03B8D2B3342B44B08EF14147C02DC5E0)
     5.  [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
     6.  [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
-    7.  [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
 16. 企业家精神
     1.  [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
     2.  [企业家](bussiness/entrepreneur/entrepreneur.md)
