@@ -241,7 +241,7 @@
 
 # 产品经理
 1. 产品
-   1. [产品的视角：从热闹到门道](pm/perspective_product.md)
+   1. [产品的视角：从热闹到门道](pm/product/perspective_product.md)
       1. [运营数据指标](pm/operation_data.md)
       2. [你真的了解MVP（最小化可用产品）么？](pm/product/mvp.md)
    2. [人人都是产品经理2.0](pm/product_manager_sujie.md)
