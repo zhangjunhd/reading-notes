@@ -242,12 +242,12 @@
 # 产品经理
 1. 产品
    1. [产品的视角：从热闹到门道](pm/product/perspective_product.md)
-      1. [运营数据指标](pm/operation_data.md)
-      2. [你真的了解MVP（最小化可用产品）么？](pm/product/mvp.md)
-   2. [Inspired-How To Create Products Customers Love](pm/inspired.md)
+      1. [你真的了解MVP（最小化可用产品）么？](pm/product/mvp.md)
+   2. [Inspired-How To Create Products Customers Love](pm/product/inspired.md)
    3. [内容算法](http://note.youdao.com/noteshare?id=c8a2044f569574dc6ad459c76833336c)
 2. 运营
    1. [运营之光](http://note.youdao.com/noteshare?id=dc03950de704f18fc35c635ccfeddc31)
+      1. [运营数据指标](pm/operation/operation_data.md)
 3. 管理
    1. [成为技术领导者](management/tech_leader.md)
    2. [人月神话](management/TheMythicalMan-Month.md)
