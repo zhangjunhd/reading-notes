@@ -244,9 +244,8 @@
    1. [产品的视角：从热闹到门道](pm/product/perspective_product.md)
       1. [运营数据指标](pm/operation_data.md)
       2. [你真的了解MVP（最小化可用产品）么？](pm/product/mvp.md)
-   2. [人人都是产品经理2.0](pm/product_manager_sujie.md)
-   3. [Inspired-How To Create Products Customers Love](pm/inspired.md)
-   4. [内容算法](http://note.youdao.com/noteshare?id=c8a2044f569574dc6ad459c76833336c)
+   2. [Inspired-How To Create Products Customers Love](pm/inspired.md)
+   3. [内容算法](http://note.youdao.com/noteshare?id=c8a2044f569574dc6ad459c76833336c)
 2. 运营
    1. [运营之光](http://note.youdao.com/noteshare?id=dc03950de704f18fc35c635ccfeddc31)
 3. 管理
