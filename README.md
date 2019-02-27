@@ -256,7 +256,7 @@
    3. [人件（第2版）](pm/management/peopleware.md)
    4. [软件随想录](pm/management/more_joel_on_software.md)
    5. [硝烟中的Scrum和XP](http://note.youdao.com/noteshare?id=9b22b4103e0e8af34d90fe0e1b208cd6&sub=BF7B9F63B3C44ADDA05122F150156DED)
-      - [Scrum概念](http://note.youdao.com/noteshare?id=8a02a64f76ae273f69febe6bf4bf7cd7&sub=E9DAD2C1DBC44B168572890E34993C36)
+      - [Scrum概念](pm/management/scrum.md)
    6. [Apprenticeship Patterns](pm/management/ApprenticeshipPatterns.md)
    7. [微软的软件测试之道](http://note.youdao.com/noteshare?id=372d1df81b977d3061cd022d915873ed)
    8. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
