@@ -263,11 +263,12 @@
    9. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
 4. 设计
    1. [平面排版基本的基本](design/graphic_design.md)
-   2. [Search Patterns](design/SearchPatterns.md)
-   3. [Sketching User Experiences](design/SketchingUserExperiences.md)
-   4. [About Face 3](design/AboutFace3.md)
-   5. [Design Driven Innovation](design/DesignDrivenInnovation.md)
-   6. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
+   2. [写给大家看的设计书（第3版）](http://note.youdao.com/noteshare?id=c66e7c3796bc882aefb55f95768fa0b7)
+   3. [Search Patterns](design/SearchPatterns.md)
+   4. [Sketching User Experiences](design/SketchingUserExperiences.md)
+   5. [About Face 3](design/AboutFace3.md)
+   6. [Design Driven Innovation](design/DesignDrivenInnovation.md)
+   7. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 # 机器学习
 1. [An Introduction to Statistical Learning](http://note.youdao.com/noteshare?id=30b30c9252ae75865a373296d751f8d1&sub=5DD94B80FB964D9FBE38E1BDF6E15C17)
