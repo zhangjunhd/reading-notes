@@ -311,6 +311,8 @@
    4. [Rule-based query answering method for a knowledge base of economic crimes](ml/kg/rule-thesis.ipynb),Jarosław Ksawery BAK,2013
    5. pyDatalog
       1. Github主页：[链接](https://github.com/pcarbonn/pyDatalog)
+      2. [变量和表达式](ml/kg/pyDatalog-变量和表达式.ipynb)
+      3. [逻辑函数与字典](ml/kg/pyDatalog-逻辑函数与字典.ipynb)
 
 # 计算理论
 1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md), Tom Stuart, Jun 2013
