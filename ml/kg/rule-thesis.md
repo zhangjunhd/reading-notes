@@ -52,9 +52,9 @@ Informally, the semantics of the first-order logic language is defined by attrib
     2. An interpretation function $·^I$ , which assigns elements of the alphabet to $△^I$ satisfying the following conditions:
         - Each constant c is mapped to an element $c^I \in △^I$
         - Each function symbol f of arity n is mapped to a function: 
-          - $f^I :(△^I)^n \to △^I$
+          - $$f^I :(△^I)^n \to △^I$$
         - Each predicate symbol p of arity n is mapped to a function: 
-          - $p^I :(△^I)^n \to \{true,false\}$
+          - $$p^I :(△^I)^n \to \{true,false\}$$
 - Definition 2.11 (`Assignment`).
     1. Variable Assignment. A variable assignment is a mapping function σ, which assigns an element $c \in △^I$ to every variable x from a set of variables $\bar{X}$:
        - $σ : \bar{X} \to △^I$
