@@ -48,20 +48,20 @@ A symbol of arity 1 is called a unary symbol; a symbol of arity 2 is called a bi
 Informally, the semantics of the first-order logic language is defined by attributing meaning (or truth values) to well-formed formulae (sentences). The sentences are mapped to some statements about a given domain through a process known as `interpretation`. If an interpretation gives the `true` value to a sentence then it is said to `satisfy` the sentence. Such an interpretation is called a `model` for the sentence.
 
 - Definition 2.10 (`Interpretation`). An interpretation I consists of the following:
-    1. A non-empty set $△^I$ called the universe of I or the domain of the interpretation. The members of $△^I$ are called individuals of I.
-    2. An interpretation function $·^I$ , which assigns elements of the alphabet to $△^I$ satisfying the following conditions:
-        - Each constant c is mapped to an element $c^I \in △^I$
+    1. A non-empty set $\Delta^I$ called the universe of I or the domain of the interpretation. The members of $\Delta^I$ are called individuals of I.
+    2. An interpretation function $·^I$ , which assigns elements of the alphabet to $\Delta^I$ satisfying the following conditions:
+        - Each constant c is mapped to an element $c^I \in \Delta^I$
         - Each function symbol f of arity n is mapped to a function: 
-          - $f^I :(△^I)^n \to △^I$
+          - $f^I :(\Delta^I)^n \to \Delta^I$
         - Each predicate symbol p of arity n is mapped to a function: 
-          - $p^I :(△^I)^n \to \{true,false\}$
+          - $p^I :(\Delta^I)^n \to \{true,false\}$
 - Definition 2.11 (`Assignment`).
-    1. Variable Assignment. A variable assignment is a mapping function σ, which assigns an element $c \in △^I$ to every variable x from a set of variables $\bar{X}$:
-       - $σ : \bar{X} \to △^I$
-    1. Term Assignment. The term assignment w.r.t. σ of the term $t \in △^I$ is defined as:
+    1. Variable Assignment. A variable assignment is a mapping function σ, which assigns an element $c \in \Delta^I$ to every variable x from a set of variables $\bar{X}$:
+       - $σ : \bar{X} \to \Delta^I$
+    1. Term Assignment. The term assignment w.r.t. σ of the term $t \in \Delta^I$ is defined as:
         - Each variable assignment is given according to σ,
         - Each constant assignment is given according to I,
-        - If $t^′_1, t^′_2, ..., t^′_n$ are term assignments of $t_1, t_2, ..., t_n$ and $f^′$ is the assignment of the function symbol f with arity n according to I, then $f^′(t^′_1,t^′_2,...,t^′_n) \in △^I$ is the term assignment of $f(t_1,t_2,...,t_n)$.
+        - If $t^′_1, t^′_2, ..., t^′_n$ are term assignments of $t_1, t_2, ..., t_n$ and $f^′$ is the assignment of the function symbol f with arity n according to I, then $f^′(t^′_1,t^′_2,...,t^′_n) \in \Delta^I$ is the term assignment of $f(t_1,t_2,...,t_n)$.
 
 
 
