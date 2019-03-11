@@ -310,6 +310,7 @@
    3. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](http://note.youdao.com/noteshare?id=18d3a8432f65ff6a5b0ad3cd91f1cdd9&sub=46B9A703558842CE9F0586EE4074D350)
    4. [Rule-based query answering method for a knowledge base of economic crimes](ml/kg/rule-thesis.ipynb),Jarosław Ksawery BAK,2013
    5. [pyDatalog](ml/kg)
+   6. [离散数学及其应用（原书第7版）](ml/kg)
 
 # 计算理论
 1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md), Tom Stuart, Jun 2013

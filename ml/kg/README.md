@@ -7,3 +7,6 @@
     4. [聚合函数与递归](pydatalog/pyDatalog-聚合函数与递归.ipynb)
     5. [动态语句](pydatalog/pyDatalog-动态语句.ipynb)
     6. [与“知识图谱”的交互](pydatalog/pyDatalog-与“知识图谱”的交互.ipynb)
+1. 离散数学及其应用（原书第7版）
+    1. [封面](discrete_math)
+
