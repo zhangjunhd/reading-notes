@@ -9,3 +9,4 @@
     6. [与“知识图谱”的交互](pydatalog/pyDatalog-与“知识图谱”的交互.ipynb)
 1. [离散数学及其应用（原书第7版）](discrete_math)
     1. [基础：逻辑与证明](discrete_math/1-The-Foundations-Logic-and-Proofs.ipynb)
+1. [Knowledge Representation and Reasoning](knowledge_representation_and_reasoning)
