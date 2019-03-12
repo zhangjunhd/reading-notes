@@ -396,7 +396,7 @@ All the assumptions discussed so far have concerned relatively routine matters. 
 Which of those assumptions are warranted? Those for which the person ahs sufficient experience that supports that assumption better than any other one. What is "sufficient" depends on the situation; the more general and sweeping the assumption, the more experience would be needed. Unfortunately, it is very easy to take too much for granted, to assume something with little or no experience or for which the experience leads equally well to an entirely different view.
 
 ## 13.2 Recognizing Unwarranted Assumptions
-It is not too difficult to evaluate an assumption and decide whether or not it is warranted. The real difficulty is in identifying it in the first place. The reason for this is that, unlike the other problems in thinking we have discussed, assumptions are usually unexpressed. To recognize the assumptions in your thinking and the thinking of others, develop the habit of reading (and listening) between the lines. In other words, become sensitive to those ideas that are not stated but are nevertheless clearly implied.
+It is not too difficult to evaluate an assumption and decide whether or not it is warranted. The real difficulty is in identifying it in the first place. The reason for this is that, unlike the other problems in thinking we have discussed, **assumptions are usually unexpressed**. To recognize the assumptions in your thinking and the thinking of others, develop the habit of reading (and listening) between the lines. In other words, become sensitive to those ideas that are not stated but are nevertheless clearly implied.
 
 # CHAPTER FOURTEEN Logical Fallacies
 ## 14.1 Either-Or Thinking
