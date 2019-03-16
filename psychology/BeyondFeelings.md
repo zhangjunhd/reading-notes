@@ -175,7 +175,7 @@ Are interested in other people's ideas, so are willing to read and listen attent
 Recognize that extreme views (whether conservative or liberal) are seldom correct, so they avoid them, practice fair- mindedness, and seek a balanced view.|Ignore the need for balance and give preference to views that support their established views.
 Practice restraint, controlling their feelings rather than being controlled by them, and thinking before acting.|Tend to follow their feelings and act impulsively.
 
-As the desirable qualities suggested, critical thinking depends on mental discipline. Effective thinkers exert control over their mental life, direct their thoughts rather than being directed by them, and withhold their endorsement of any idea – even their own – until they have tested and proved it.
+As the desirable qualities suggested, **critical thinking depends on mental discipline**. Effective thinkers exert control over their mental life, direct their thoughts rather than being directed by them, and withhold their endorsement of any idea – even their own – until they have tested and proved it.
 
 ## 2.4 The Role Of Intuition
 And two facts are common to all these experiences, great and small alike. The first is that intuition cannot be controlled; the second is that intuition is not completely trustworthy. Even the strongest intuition can prove wrong. For both reasons, though intuition is always a welcome companion to critical thinking, it is never a substitute for it. This, of course, is no cause for concern because many other skills of thinking can be controlled and developed.
