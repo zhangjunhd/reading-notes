@@ -188,10 +188,11 @@
    4. [链接](bussiness/theory/linked.md)
 3. 创业
    1. [从0到1](bussiness/startup/zero_to_one.md)
-   2. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
-   3. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
-   4. [重来ReWork](bussiness/startup/rework.md)
-   5. [知识图谱行业分析](bussiness/startup/kg.md)
+   2. [创业时，不可不知的细节](bussiness/startup/details.md)
+   3. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
+   4. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
+   5. [重来ReWork](bussiness/startup/rework.md)
+   6. [知识图谱行业分析](bussiness/startup/kg.md)
 4. 商业模式
    1. [隐形VISA](bussiness/model/visa.md)
    2. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
