@@ -191,7 +191,7 @@
    2. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
    3. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
    4. [重来ReWork](bussiness/startup/rework.md)
-   5. [知识图谱行业分析](http://note.youdao.com/noteshare?id=e74e55701f65d0601120ab53eef5b36a&sub=C5CA9F8602E54AFCA845DE7B01DE641F)
+   5. [知识图谱行业分析](bussiness/startup/kg.md)
 4. 商业模式
    1. [隐形VISA](bussiness/model/visa.md)
    2. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
