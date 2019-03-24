@@ -11,6 +11,8 @@
 
 [豆瓣链接](https://book.douban.com/subject/4843462/)
 
+[大佛顶首楞严经-圆瑛大师](http://blog.sina.com.cn/s/articlelist_1940742844_1_1.html)
+
 - [正说妙定](#%E6%AD%A3%E8%AF%B4%E5%A6%99%E5%AE%9A)
   - [一、依常住真心以开圆解(如来密因)](#%E4%B8%80%E4%BE%9D%E5%B8%B8%E4%BD%8F%E7%9C%9F%E5%BF%83%E4%BB%A5%E5%BC%80%E5%9C%86%E8%A7%A3%E5%A6%82%E6%9D%A5%E5%AF%86%E5%9B%A0)
     - [七处征心](#%E4%B8%83%E5%A4%84%E5%BE%81%E5%BF%83)
