@@ -11,4 +11,5 @@
     1. [基础：逻辑与证明](discrete_math/1-The-Foundations-Logic-and-Proofs.ipynb)
     1. [基本结构：集合、函数、序列、求和与矩阵](discrete_math/2-Basic-Structures-Sets-Functions-Sequences-Sums-and-Matrices.ipynb)
     1. [算法](discrete_math/3-Algorithms.ipynb)
+    1. [数论和密码学](discrete_math/4-Number-Theory-and-Cryptography.ipynb)
 1. [Knowledge Representation and Reasoning](knowledge_representation_and_reasoning)
