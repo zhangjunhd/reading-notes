@@ -314,7 +314,8 @@
    4. [Rule-based query answering method for a knowledge base of economic crimes](ml/kg/rule-thesis.ipynb),Jarosław Ksawery BAK,2013
    5. [pyDatalog](ml/kg)
    6. [离散数学及其应用（原书第7版）](ml/kg)
-   7. [Knowledge Representation and Reasoning](ml/kg)
+   7. [数理逻辑（第2版）](ml/kg)
+   8. [Knowledge Representation and Reasoning](ml/kg)
 
 # 计算理论
 1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md), Tom Stuart, Jun 2013
