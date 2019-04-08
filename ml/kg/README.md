@@ -15,4 +15,5 @@
     1. [归纳与递归](discrete_math/5-Induction-and-Recursion.ipynb)
 1. [数理逻辑](logic_math)
     1. [绪论：从直观到形式](logic_math/1.ipynb)
+    1. [集合](logic_math/2.ipynb)
 1. [Knowledge Representation and Reasoning](knowledge_representation_and_reasoning)
