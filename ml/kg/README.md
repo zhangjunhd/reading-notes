@@ -16,4 +16,5 @@
 1. [数理逻辑](logic_math)
     1. [绪论：从直观到形式](logic_math/1.ipynb)
     1. [集合](logic_math/2.ipynb)
+    1. [一阶语言的语形](logic_math/3.ipynb)
 1. [Knowledge Representation and Reasoning](knowledge_representation_and_reasoning)
