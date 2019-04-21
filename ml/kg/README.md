@@ -19,4 +19,5 @@
     1. [一阶语言的语形](logic_math/3.ipynb)
     1. [经典语义学](logic_math/4.ipynb)
     1. [自然推演系统](logic_math/5.ipynb)
+    1. [可靠性与完全性](logic_math/6.ipynb)
 1. [Knowledge Representation and Reasoning](knowledge_representation_and_reasoning)
