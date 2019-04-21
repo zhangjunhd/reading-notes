@@ -1,19 +1,19 @@
-# 牛津通识读本
-## 学科系列
-1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
-1. [我们时代的伦理学](A-Very-Short-Introductions/Ethics.md)
 
-## 哲学家系列
-1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
-1. [福柯](A-Very-Short-Introductions/Foucault.md)
-1. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
 
 # 科普
-1. [时间简史](http://note.youdao.com/noteshare?id=00354b2dd05bed1d331e967494e02ef3)
-1. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
-1. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
-1. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
-1. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
+1. 牛津通识读本
+   1. 学科系列
+      1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
+      2. [我们时代的伦理学](A-Very-Short-Introductions/Ethics.md)
+   2. 哲学家系列
+      1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
+      2. [福柯](A-Very-Short-Introductions/Foucault.md)
+      3. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
+2. [时间简史](http://note.youdao.com/noteshare?id=00354b2dd05bed1d331e967494e02ef3)
+3. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
+4. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
+5. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
+6. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
 
 # 东方哲学
 1. 儒
@@ -317,22 +317,21 @@
    7. [数理逻辑](ml/kg)
    8. [Knowledge Representation and Reasoning](ml/kg)
 
-# 计算理论
+# 算法
 1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md), Tom Stuart, Jun 2013
 2. [算法概论](Computation-Algorithm/Algorithms.md)
 
 # 数学
-## 统计学
-1. [黑天鹅](http://note.youdao.com/noteshare?id=cf4830583e5cd9f3cb15de2f7e4689e7&sub=092BBB9CE91C4DB1A59438EA33558734)
-1. [简单统计学](data/StandardDeviations.md)
-1. [精益数据分析](data/LeanAnalytics.md)
-1. [统计与真理](http://note.youdao.com/noteshare?id=1e4a6bd6698b062fea6b864877f8d484&sub=EAA7075E403749A1ACA602CEC7BB1190)
-1. [机会的数学](http://note.youdao.com/noteshare?id=1ec5a2f2692d95fb80ff732ea6291bec&sub=6D7ECF2761EA4BEE87CBFCD79D47ABC0)
-1. [赤裸裸的统计学](http://note.youdao.com/noteshare?id=5d965905fe0cc4c4c396296ee8be69a4&sub=B1EF50FF26A24C84B8AF87D0C37D6E15)
-1. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
-1. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
-1. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
-1. [行为科学统计](data/StatisticsForTheBehavioralSciences)
-
-## 线性代数
-1. [线性代数及其应用](http://note.youdao.com/noteshare?id=8e5a09eca90cf66ebd91525954a130f7&sub=E28E75F53DDF403E85D91FED5D701611)
+1. 统计学
+   1. [黑天鹅](http://note.youdao.com/noteshare?id=cf4830583e5cd9f3cb15de2f7e4689e7&sub=092BBB9CE91C4DB1A59438EA33558734)
+   2. [简单统计学](data/StandardDeviations.md)
+   3. [精益数据分析](data/LeanAnalytics.md)
+   4. [统计与真理](http://note.youdao.com/noteshare?id=1e4a6bd6698b062fea6b864877f8d484&sub=EAA7075E403749A1ACA602CEC7BB1190)
+   5. [机会的数学](http://note.youdao.com/noteshare?id=1ec5a2f2692d95fb80ff732ea6291bec&sub=6D7ECF2761EA4BEE87CBFCD79D47ABC0)
+   6. [赤裸裸的统计学](http://note.youdao.com/noteshare?id=5d965905fe0cc4c4c396296ee8be69a4&sub=B1EF50FF26A24C84B8AF87D0C37D6E15)
+   7. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
+   8. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
+   9. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
+   10. [行为科学统计](data/StatisticsForTheBehavioralSciences)
+1. 线性代数
+   1. [线性代数及其应用](http://note.youdao.com/noteshare?id=8e5a09eca90cf66ebd91525954a130f7&sub=E28E75F53DDF403E85D91FED5D701611)
