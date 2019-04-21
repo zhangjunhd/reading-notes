@@ -322,7 +322,7 @@
    1. [From Eliza to XiaoIce Challenges and Opportunities with Social Chatbots](http://note.youdao.com/noteshare?id=78205908719d5c7171579c2447baf8c7&sub=15222AAA28CC45B5B02E560737714DD2),Heung-Yeung Shum, Xiaodong He, Di Li, Jan 2018
    2. [Voice User Interface Projects](ml/chatbot/VoiceUserInterfaceProjects.md), Henry Lee, Jul 2018
 1. Knowledge Graph
-   1. [语义网是什么？](http://note.youdao.com/noteshare?id=4c6293f5a644fef0ba49de70199bbe1c&sub=EF27BAC4D70648D8AF2583C00D44F9CB)
+   1. [语义网是什么？](ml/kg/semantic_web.md)
    2. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074),Ｇrigoris Antoniou, Apr 2008
    3. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](http://note.youdao.com/noteshare?id=18d3a8432f65ff6a5b0ad3cd91f1cdd9&sub=46B9A703558842CE9F0586EE4074D350)
    4. [Rule-based query answering method for a knowledge base of economic crimes](ml/kg/rule-thesis.ipynb),Jarosław Ksawery BAK,2013
