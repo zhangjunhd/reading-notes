@@ -324,7 +324,7 @@
 1. Knowledge Graph
    1. [语义网是什么？](ml/kg/semantic_web.md)
    2. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074),Ｇrigoris Antoniou, Apr 2008
-   3. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](http://note.youdao.com/noteshare?id=18d3a8432f65ff6a5b0ad3cd91f1cdd9&sub=46B9A703558842CE9F0586EE4074D350)
+   3. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](ml/kg/json-ld.md)
    4. [Rule-based query answering method for a knowledge base of economic crimes](ml/kg/rule-thesis.ipynb),Jarosław Ksawery BAK,2013
    5. [pyDatalog](ml/kg)
    6. [离散数学及其应用（原书第7版）](ml/kg)
