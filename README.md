@@ -303,7 +303,7 @@
            2. [Abstract Meaning Representation for Sembanking](http://note.youdao.com/noteshare?id=cf92422824a7b712a3bd25d5a27a0c88&sub=3DE36BA2A48C482291CC0FD30B4B3C07),Laura Banarescu, 2013
     4. Sequences&Trees
         1. Dependency parsing
-            1. [依存文法分析](http://note.youdao.com/noteshare?id=780ed98059953f4a080a2cf89c7ac8fa&sub=7646F37F17FE4424A5D95A0DF3692654)
+            1. [依存文法分析](ml/nlu/dp.md)
 1. Deep Learning
    1. [深度学习中的激活函数](http://note.youdao.com/noteshare?id=f7ff42d47a541445d017392d10cf2765&sub=927805E400C44B418DA9B203960E131B)
    2. [随机神经网络模拟退火与玻尔兹曼机](http://note.youdao.com/noteshare?id=7533325f4b0c271fe25f0e4aee1f1127&sub=WEB269fcdd75c2715ba11c61e211f57c3b4),Hinton,1986
