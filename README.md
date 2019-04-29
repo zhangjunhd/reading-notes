@@ -299,7 +299,7 @@
        2. [The Proposition Bank: An Annotated Corpus of Semantic Roles](http://note.youdao.com/noteshare?id=a57cdb4ab339d1ed8e4864eff9c67cd1&sub=370A6CEAD2F44CB39D8ED76358FF7247), Martha Palmer, 2003
     3. Meaning
        1. Predicate-argument semantics
-           1. [语义角色标注 Semantic Role Labeling(SRL)](http://note.youdao.com/noteshare?id=776dc2ab11f350dccb04a3c3c1db7f36&sub=25D0B5E073F44A8EAE4DFC612EAD0933)
+           1. [语义角色标注 Semantic Role Labeling(SRL)](ml/nlu/srl.md)
            2. [Abstract Meaning Representation for Sembanking](http://note.youdao.com/noteshare?id=cf92422824a7b712a3bd25d5a27a0c88&sub=3DE36BA2A48C482291CC0FD30B4B3C07),Laura Banarescu, 2013
     4. Sequences&Trees
         1. Dependency parsing
@@ -312,7 +312,7 @@
 1. Recommender System
    1. [Amazon.com Recommendations Item-to-Item Collaborative Filtering](http://note.youdao.com/noteshare?id=25d9dd31f26a407820477541b94ce4c7&sub=D974AFA1034D45D2A4CA2681E5DE79B8),Greg Linden, Brent Smith, Jeremy York, Jan 2003
    2. [Matrix Factorization Techniques For Recommender Systems(Netflix)](http://note.youdao.com/noteshare?id=145c3c749f7b856125952d923da647c5&sub=B3C99617A5014B9EB6DB03742B97C840),Yehuda Koren, Robert Bell, Chris Volinsky, Aug 2009
-1.  Search Engine
+1. Search Engine
     1. [What is faceted search](http://note.youdao.com/noteshare?id=509780f11b37957d72588baff7014652&sub=B51E547AE640437FBC7EB1643F17061E)
     2. [搜索引擎-信息检索实践](http://note.youdao.com/noteshare?id=586a7aacc7da913043f34cfc2148c5a3&sub=10640022C7FC43B0A4A2ABF74D668167), W.Bruce Croft, Jun 2010
     3. [Lucene in Action(2nd Edition)](http://note.youdao.com/noteshare?id=76c2eed01db37aed06863153e33172fd&sub=BEE9FBDDC079448F8F8A07C9320C77E8), Michael McCandless, Jul 2010
