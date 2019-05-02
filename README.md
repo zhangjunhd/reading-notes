@@ -11,7 +11,7 @@
 - [商业](#%E5%95%86%E4%B8%9A)
 - [产品经理](#%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86)
 - [机器学习](#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)
-- [算法](#%E7%AE%97%E6%B3%95)
+- [计算](#%E8%AE%A1%E7%AE%97)
 - [数学](#%E6%95%B0%E5%AD%A6)
 
 # 科普
@@ -331,7 +331,7 @@
    7. [数理逻辑](ml/kg)
    8. [Knowledge Representation and Reasoning](ml/kg)
 
-# 算法
+# 计算
 1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md), Tom Stuart, Jun 2013
 2. [算法概论](Computation-Algorithm/Algorithms.md)
 
