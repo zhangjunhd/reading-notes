@@ -327,13 +327,13 @@
    3. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](ml/kg/json-ld.md)
    4. [Rule-based query answering method for a knowledge base of economic crimes](ml/kg/rule-thesis.ipynb),Jarosław Ksawery BAK,2013
    5. [pyDatalog](ml/kg)
-   6. [离散数学及其应用（原书第7版）](ml/kg)
-   7. [数理逻辑](ml/kg)
-   8. [Knowledge Representation and Reasoning](ml/kg)
+   6. [数理逻辑](ml/kg)
+   7. [Knowledge Representation and Reasoning](ml/kg)
 
 # 计算
-1. [Understanding Computation](Computation-Algorithm/UnderstandingComputation.md), Tom Stuart, Jun 2013
-2. [算法概论](Computation-Algorithm/Algorithms.md)
+1. [离散数学及其应用（原书第7版）](computation)
+2. [Understanding Computation](computation/UnderstandingComputation.md), Tom Stuart, Jun 2013
+3. [算法概论](computation/Algorithms.md)
 
 # 数学
 1. 统计学
