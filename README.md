@@ -331,7 +331,7 @@
    7. [Knowledge Representation and Reasoning](ml/kg)
 
 # 计算
-1. [离散数学及其应用（原书第7版）](computation)
+1. [离散数学及其应用（原书第7版）](computation/discrete_math)
 2. [Understanding Computation](computation/UnderstandingComputation.md), Tom Stuart, Jun 2013
 3. [算法概论](computation/Algorithms.md)
 

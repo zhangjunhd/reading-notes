@@ -13,3 +13,10 @@
     ISBN: 9787111453826
 
 [豆瓣链接](https://book.douban.com/subject/26316200/)
+
+
+1. [基础：逻辑与证明](1-The-Foundations-Logic-and-Proofs.ipynb)
+2. [基本结构：集合、函数、序列、求和与矩阵](2-Basic-Structures-Sets-Functions-Sequences-Sums-and-Matrices.ipynb)
+3. [算法](3-Algorithms.ipynb)
+4. [数论和密码学](4-Number-Theory-and-Cryptography.ipynb)
+5. [归纳与递归](5-Induction-and-Recursion.ipynb)
