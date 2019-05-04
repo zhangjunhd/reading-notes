@@ -108,7 +108,7 @@
 # 经济学
 2. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
 3. [经济学通识课](economics/a-little-history-of-economics.md)
-1. [重塑-信息经济的结构](http://note.youdao.com/noteshare?id=831a7bdbec54230eb70c0005e3d4db78)
+
 
 # 社会学
 1. [第4消费时代](sociology/4th-consumerist.md)
@@ -199,6 +199,7 @@
    2. [长尾理论2.0](bussiness/theory/long_tail.md)
    3. [技术的本质](bussiness/theory/TheNatureOfTechnology.md)
    4. [链接](bussiness/theory/linked.md)
+   5. [重塑-信息经济的结构](http://note.youdao.com/noteshare?id=831a7bdbec54230eb70c0005e3d4db78)
 3. 创业
    1. [从0到1](bussiness/startup/zero_to_one.md)
    2. [创业时，不可不知的细节](bussiness/startup/details.md)
