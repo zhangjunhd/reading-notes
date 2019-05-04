@@ -106,8 +106,8 @@
 7. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 # 经济学
-2. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
-3. [经济学通识课](economics/a-little-history-of-economics.md)
+1. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
+1. [经济学通识课](economics/a-little-history-of-economics.md)
 
 
 # 社会学
