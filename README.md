@@ -3,6 +3,7 @@
 - [西方哲学](#%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6)
 - [历史](#%E5%8E%86%E5%8F%B2)
 - [经济学](#%E7%BB%8F%E6%B5%8E%E5%AD%A6)
+- [社会学](#%E7%A4%BE%E4%BC%9A%E5%AD%A6)
 - [艺术](#%E8%89%BA%E6%9C%AF)
 - [社交](#%E7%A4%BE%E4%BA%A4)
 - [小说&戏剧](#%E5%B0%8F%E8%AF%B4%E6%88%8F%E5%89%A7)
@@ -105,10 +106,13 @@
 7. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 # 经济学
-1. [第4消费时代](sociology/4th-consumerist.md)
 2. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
 3. [经济学通识课](sociology/a-little-history-of-economics.md)
 1. [重塑-信息经济的结构](http://note.youdao.com/noteshare?id=831a7bdbec54230eb70c0005e3d4db78)
+
+# 社会学
+1. [第4消费时代](sociology/4th-consumerist.md)
+1. [乌合之众](sociology/Psychologie-des-Foules.md)
 
 # 艺术
 1. [我心自由-杜尚传](art/duchamp.md)
@@ -139,13 +143,11 @@
 2. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-3.  延迟满足
+3. 延迟满足
     1. [意志力](psychology/willpower.md)
     2. [自控力](psychology/TheWillpowerInstinct.md)
     3. [棉花糖实验](psychology/TheMarshmallowTest.md)
-4. 群体
-   1. [乌合之众](http://note.youdao.com/noteshare?id=160e8f71b1b779dc30368773631dfc86)
-5. 史蒂芬平克
+4. 史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 
 # 成功学
