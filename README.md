@@ -107,7 +107,7 @@
 
 # 经济学
 2. [有闲阶级论](sociology/The-Theory-of-the-Leisure-Class.md)
-3. [经济学通识课](sociology/a-little-history-of-economics.md)
+3. [经济学通识课](economics/a-little-history-of-economics.md)
 1. [重塑-信息经济的结构](http://note.youdao.com/noteshare?id=831a7bdbec54230eb70c0005e3d4db78)
 
 # 社会学
