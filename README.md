@@ -113,6 +113,7 @@
 # 社会学
 1. [第4消费时代](sociology/4th-consumerist.md)
 1. [乌合之众](sociology/Psychologie-des-Foules.md)
+1. [乡土中国](sociology/native-china.md)
 
 # 艺术
 1. [我心自由-杜尚传](art/duchamp.md)
