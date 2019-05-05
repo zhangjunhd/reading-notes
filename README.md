@@ -109,6 +109,10 @@
 1. [有闲阶级论](economics/The-Theory-of-the-Leisure-Class.md)
 1. [经济学通识课](economics/a-little-history-of-economics.md)
 1. [亚洲大趋势](economics/aisa-big-trend.md)
+1. [城市化转型与土地陷阱](economics/urbanization.md)
+
+
+
 
 # 社会学
 1. [第4消费时代](sociology/4th-consumerist.md)
