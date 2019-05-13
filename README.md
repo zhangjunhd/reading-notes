@@ -98,16 +98,18 @@
     1. [今日简史](history/21-lessons-for-the-21st-century.md)
 1. [全球通史](history/a-global-history.md)
 1. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
-2. [创新简史](http://note.youdao.com/noteshare?id=3235007e91a172933233a19ac49efd10)
-3. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
-4. [万历十五年](history/1587.md)
-5. [中国大历史-黄仁宇版](history/big-history.md)
-6. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
-7. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+1. [创新简史](http://note.youdao.com/noteshare?id=3235007e91a172933233a19ac49efd10)
+1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
+1. [万历十五年](history/1587.md)
+1. [中国大历史-黄仁宇版](history/big-history.md)
+1. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
+1. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+
 
 # 经济金融
 1. [有闲阶级论](economics/The-Theory-of-the-Leisure-Class.md)
 1. [经济学通识课](economics/a-little-history-of-economics.md)
+1. [百年中国经济史笔记](economics/china-economic-modern-history.md)
 1. [亚洲大趋势](economics/aisa-big-trend.md)
 1. [城市化转型与土地陷阱](economics/urbanization.md)
 
