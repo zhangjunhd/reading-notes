@@ -2,7 +2,7 @@
 - [东方哲学](#%E4%B8%9C%E6%96%B9%E5%93%B2%E5%AD%A6)
 - [西方哲学](#%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6)
 - [历史](#%E5%8E%86%E5%8F%B2)
-- [经济学](#%E7%BB%8F%E6%B5%8E%E5%AD%A6)
+- [经济金融](#%E7%BB%8F%E6%B5%8E%E9%87%91%E8%9E%8D)
 - [社会学](#%E7%A4%BE%E4%BC%9A%E5%AD%A6)
 - [艺术](#%E8%89%BA%E6%9C%AF)
 - [社交](#%E7%A4%BE%E4%BA%A4)
@@ -105,7 +105,7 @@
 6. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
 7. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
-# 经济学
+# 经济金融
 1. [有闲阶级论](economics/The-Theory-of-the-Leisure-Class.md)
 1. [经济学通识课](economics/a-little-history-of-economics.md)
 1. [亚洲大趋势](economics/aisa-big-trend.md)
