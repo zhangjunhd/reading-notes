@@ -212,6 +212,7 @@
    5. [重来ReWork](bussiness/startup/rework.md)
    6. [知识图谱行业分析](bussiness/startup/kg.md)
    7. [刷新](bussiness/startup/hit-refresh.md)
+   8. [重新理解创业](bussiness/startup/rethink-startup.md)
 4. 商业模式
    1. [隐形VISA](bussiness/model/visa.md)
    2. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
