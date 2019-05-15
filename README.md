@@ -112,7 +112,7 @@
 1. [百年中国经济史笔记](economics/china-economic-modern-history.md)
 1. [亚洲大趋势](economics/aisa-big-trend.md)
 1. [城市化转型与土地陷阱](economics/urbanization.md)
-
+1. [解读中国经济](economics/china-economics.md)
 
 
 
