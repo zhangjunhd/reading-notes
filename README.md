@@ -127,7 +127,7 @@
 1. [光影中遇见伦勃朗](art/rembrandt.md)
 
 # 社交
-1. [24堂葡萄酒大师课](http://note.youdao.com/noteshare?id=27ada53808a843d24a8ff5a798b81111)
+1. [24堂葡萄酒大师课](socialcontact/the-24-hour-wine-expert.md)
 
 # 小说&戏剧
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
