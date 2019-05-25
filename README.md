@@ -128,6 +128,7 @@
 
 # 社交
 1. [24堂葡萄酒大师课](socialcontact/the-24-hour-wine-expert.md)
+1. [单一麦芽威士忌](socialcontact/SingleMaltWhisky.md)
 
 # 小说&戏剧
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
