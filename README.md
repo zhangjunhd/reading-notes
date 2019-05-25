@@ -3,7 +3,6 @@
 - [西方哲学](#%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6)
 - [历史](#%E5%8E%86%E5%8F%B2)
 - [经济金融](#%E7%BB%8F%E6%B5%8E%E9%87%91%E8%9E%8D)
-- [社会学](#%E7%A4%BE%E4%BC%9A%E5%AD%A6)
 - [艺术](#%E8%89%BA%E6%9C%AF)
 - [社交](#%E7%A4%BE%E4%BA%A4)
 - [小说&戏剧](#%E5%B0%8F%E8%AF%B4%E6%88%8F%E5%89%A7)
@@ -92,39 +91,40 @@
 1. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
 
 # 历史
-1. 赫拉利
+1. 社会学
+   1. [第4消费时代](history/4th-consumerist.md)
+   2. [乌合之众](history/Psychologie-des-Foules.md)
+2. 人类学
     1. [人类简史](history/A-brief-history-of-humankind.md)
-    1. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
-    1. [今日简史](history/21-lessons-for-the-21st-century.md)
-1. [全球通史](history/a-global-history.md)
-1. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
-1. [创新简史](http://note.youdao.com/noteshare?id=3235007e91a172933233a19ac49efd10)
-1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
-1. [万历十五年](history/1587.md)
-1. [中国大历史-黄仁宇版](history/big-history.md)
-1. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
-1. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+    2. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
+    3. [今日简史](history/21-lessons-for-the-21st-century.md)
+3. 通史
+   1. [全球通史](history/a-global-history.md)
+   2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
+   3. [创新简史](http://note.youdao.com/noteshare?id=3235007e91a172933233a19ac49efd10)
+4. 中国史
+   1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
+   2. [万历十五年](history/1587.md)
+   3. [乡土中国](history/native-china.md)
+   4. [中国大历史-黄仁宇版](history/big-history.md)
+   5. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
+   6. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 
 # 经济金融
 1. [有闲阶级论](economics/The-Theory-of-the-Leisure-Class.md)
-1. [经济学通识课](economics/a-little-history-of-economics.md)
-1. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
-1. [百年中国经济史笔记](economics/china-economic-modern-history.md)
-1. [亚洲大趋势](economics/aisa-big-trend.md)
-1. [解读中国经济](economics/china-economics.md)
-1. [城市化转型与土地陷阱](economics/urbanization.md)
-1. [改革的逻辑](economics/reform-logic.md)
+2. [经济学通识课](economics/a-little-history-of-economics.md)
+3. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
+4. [百年中国经济史笔记](economics/china-economic-modern-history.md)
+5. [亚洲大趋势](economics/aisa-big-trend.md)
+6. [解读中国经济](economics/china-economics.md)
+7. [城市化转型与土地陷阱](economics/urbanization.md)
+8. [改革的逻辑](economics/reform-logic.md)
 
-
-# 社会学
-1. [第4消费时代](sociology/4th-consumerist.md)
-1. [乌合之众](sociology/Psychologie-des-Foules.md)
-1. [乡土中国](sociology/native-china.md)
 
 # 艺术
 1. [我心自由-杜尚传](art/duchamp.md)
-1. [光影中遇见伦勃朗](art/rembrandt.md)
+2. [光影中遇见伦勃朗](art/rembrandt.md)
 
 # 社交
 1. [24堂葡萄酒大师课](socialcontact/the-24-hour-wine-expert.md)
