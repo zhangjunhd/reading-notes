@@ -92,8 +92,9 @@
 
 # 历史
 1. 社会学
-   1. [第4消费时代](history/4th-consumerist.md)
-   2. [乌合之众](history/Psychologie-des-Foules.md)
+   1. [有闲阶级论](history/The-Theory-of-the-Leisure-Class.md)
+   2. [第4消费时代](history/4th-consumerist.md)
+   3. [乌合之众](history/Psychologie-des-Foules.md)
 2. 人类学
     1. [人类简史](history/A-brief-history-of-humankind.md)
     2. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
@@ -115,15 +116,14 @@
 
 
 # 经济金融
-1. [有闲阶级论](economics/The-Theory-of-the-Leisure-Class.md)
-2. [经济学通识课](economics/a-little-history-of-economics.md)
-3. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
-4. [百年中国经济史笔记](economics/china-economic-modern-history.md)
-5. [亚洲大趋势](economics/aisa-big-trend.md)
-6. [解读中国经济](economics/china-economics.md)
-7. [城市化转型与土地陷阱](economics/urbanization.md)
-8. [大国大城](economics/great-nation-needs-bigger-city.md)
-9. [改革的逻辑](economics/reform-logic.md)
+1. [经济学通识课](economics/a-little-history-of-economics.md)
+2. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
+3. [百年中国经济史笔记](economics/china-economic-modern-history.md)
+4. [亚洲大趋势](economics/aisa-big-trend.md)
+5. [解读中国经济](economics/china-economics.md)
+6. [城市化转型与土地陷阱](economics/urbanization.md)
+7. [大国大城](economics/great-nation-needs-bigger-city.md)
+8. [改革的逻辑](economics/reform-logic.md)
 
 
 # 艺术
