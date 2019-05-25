@@ -119,7 +119,8 @@
 5. [亚洲大趋势](economics/aisa-big-trend.md)
 6. [解读中国经济](economics/china-economics.md)
 7. [城市化转型与土地陷阱](economics/urbanization.md)
-8. [改革的逻辑](economics/reform-logic.md)
+8. [大国大城](economics/great-nation-needs-bigger-city.md)
+9. [改革的逻辑](economics/reform-logic.md)
 
 
 # 艺术
