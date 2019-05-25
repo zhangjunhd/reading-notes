@@ -101,7 +101,7 @@
 3. 通史
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
-   3. [创新简史](http://note.youdao.com/noteshare?id=3235007e91a172933233a19ac49efd10)
+   3. [创新简史](history/A-brief-history-of-innovation.md)
 4. 中国史
    1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
    2. [万历十五年](history/1587.md)
