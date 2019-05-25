@@ -104,6 +104,7 @@
    3. [创新简史](history/A-brief-history-of-innovation.md)
 4. 政治学
    1. [世界秩序](history/WorldOrder.md)
+   2. [看世界](history/see-the-world.md)
 5. 中国史
    1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
    2. [万历十五年](history/1587.md)
