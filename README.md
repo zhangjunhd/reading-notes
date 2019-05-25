@@ -102,7 +102,9 @@
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
    3. [创新简史](history/A-brief-history-of-innovation.md)
-4. 中国史
+4. 政治学
+   1. [世界秩序](history/WorldOrder.md)
+5. 中国史
    1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
    2. [万历十五年](history/1587.md)
    3. [乡土中国](history/native-china.md)
