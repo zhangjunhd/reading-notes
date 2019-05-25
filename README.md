@@ -124,6 +124,7 @@
 6. [城市化转型与土地陷阱](economics/urbanization.md)
 7. [大国大城](economics/great-nation-needs-bigger-city.md)
 8. [改革的逻辑](economics/reform-logic.md)
+9. [经济运行的逻辑](economics/economics-logic.md)
 
 
 # 艺术
