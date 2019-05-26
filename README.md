@@ -19,6 +19,7 @@
    1. 学科系列
       1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
       2. [我们时代的伦理学](A-Very-Short-Introductions/Ethics.md)
+      3. [资本主义](A-Very-Short-Introductions/Capitalism.md)
    2. 哲学家系列
       1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
       2. [福柯](A-Very-Short-Introductions/Foucault.md)
