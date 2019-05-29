@@ -227,40 +227,40 @@
 5. 凯文·凯利
    1. [必然](bussiness/kk/The-Inevitable.md)
    2. [新经济，新规则](bussiness/kk/NewRulesForTheNewEconomy.md)
-6. 传播学
-   1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
-   2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
-   3. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
-   4. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
-   5. [疯传](http://note.youdao.com/noteshare?id=54e8a54f1e462fb52947c7a27235ce5a)
-   6. [注意力经济](bussiness/communication/TheAttentionMerchants.md)
-   7. [热点](bussiness/communication/TheContentCode.md)
-7. IP
-   1. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
-   2. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
-8. 写作
-   1. [新闻写作艺术辩证](bussiness/writing/the-dialectical-art-of-news-writing.md)
-   2. [新闻采访与写作](bussiness/writing/news-interview-and-writing.md)
-   3. [网络新闻写作与编辑实务](bussiness/writing/news-writing.md)
-   4. [从零开始写故事：一个南方周末记者的特稿笔记](http://note.youdao.com/noteshare?id=0892276d6e76318d2948f5d5da5191d4)
-9.  媒体
-    1.  [时尚：幕后的策动](bussiness/media/fashion_editor.md)
-    2.  [访美记](bussiness/media/fang-mei.md)
-10. 新媒体
-    1.  [徐建军-开始吧](bussiness/new_media/kaistart.md)
-    2.  [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
-    3.  [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
-11. CMS
-    1.  [Vox Media调研](bussiness/cms/vox-media.md)
-    2.  [Web Content Management](bussiness/cms/cms.md)
-12. 营销
+6. 传媒
+   1. 传播学
+      1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
+      2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
+      3. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
+      4. [思维病毒](http://note.youdao.com/noteshare?id=5edc8d99b3b1230ed34c97835201d234)
+      5. [疯传](http://note.youdao.com/noteshare?id=54e8a54f1e462fb52947c7a27235ce5a)
+      6. [注意力经济](bussiness/communication/TheAttentionMerchants.md)
+      7. [热点](bussiness/communication/TheContentCode.md)
+   2. 写作
+      1. [新闻写作艺术辩证](bussiness/writing/the-dialectical-art-of-news-writing.md)
+      2. [新闻采访与写作](bussiness/writing/news-interview-and-writing.md)
+      3. [网络新闻写作与编辑实务](bussiness/writing/news-writing.md)
+      4. [从零开始写故事：一个南方周末记者的特稿笔记](http://note.youdao.com/noteshare?id=0892276d6e76318d2948f5d5da5191d4)
+   3.  媒体
+       1. [时尚：幕后的策动](bussiness/media/fashion_editor.md)
+       2. [访美记](bussiness/media/fang-mei.md)
+   4.  新媒体
+       1. [徐建军-开始吧](bussiness/new_media/kaistart.md)
+       2. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
+       3. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
+       4. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
+       5. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
+   5.  CMS
+       1.  [Vox Media调研](bussiness/cms/vox-media.md)
+       2.  [Web Content Management](bussiness/cms/cms.md)
+7.  营销
     1.  [定位](bussiness/marketing/positioning.md)
-13. 广告
+8.  广告
     1. [中国互联网广告生态](bussiness/advertising/internet-advertising-supply-chain-2014.md)
     2. [计算广告](advertising/computational_ad)
-14. 电商
+9.  电商
     1.  [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
-15. 人工智能
+10. 人工智能
     1.  [人工智能的未来](http://note.youdao.com/noteshare?id=fbd15411b3ce9943b3f3e296440b1a94&sub=8C9CE5C546564E1B90B68529E40524E2)
     2.  [与机器赛跑](http://note.youdao.com/noteshare?id=3bd43e726dd76b0d8230eb9d186c3934&sub=8196ECF808DB4010ACACC8AB307A3CEA)
     3.  [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
@@ -268,7 +268,7 @@
     5.  [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
     6.  [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
     7.  [终极算法](http://note.youdao.com/noteshare?id=9bd15571010d82897a8754f06d09a1df)
-16. 企业家精神
+11. 企业家精神
     1.  [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
     2.  [企业家](bussiness/entrepreneur/entrepreneur.md)
 
