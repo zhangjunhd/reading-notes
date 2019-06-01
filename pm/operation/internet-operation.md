@@ -90,9 +90,9 @@
 
 这两种状态之间的对比，有点像下面这两张在网上被传得很火的图。
 
-![snip20181222_14.png](https://note.youdao.com/yws/res/64283/WEBRESOURCEb81e2008bee6dade919d06e846d8f994)
+![snip20181222_14.png](internet1.png)
 
-![snip20181222_15.png](https://note.youdao.com/yws/res/64285/WEBRESOURCEe4b17f2871ea5bcd83d6e4473d099d8a)
+![snip20181222_15.png](internet2.png)
 
 而最终，你也会发现，运营工作中的很大一个组成部分就是如何通过不断思考、判断和执行，找到投入产出比较优的路径和方法，来达成你想要的结果。
 
