@@ -281,7 +281,7 @@
    1. [运营之光](pm/operation/internet-operation.md)
       1. [运营数据指标](pm/operation/operation_data.md)
    2. [从零开始做运营](pm/operation/operation-start-from-scratch.md)
-   3. [内容算法](http://note.youdao.com/noteshare?id=c8a2044f569574dc6ad459c76833336c)
+   3. [内容算法](pm/operation/content-algorithm.md)
 3. 管理
    1. [成为技术领导者](pm/management/tech_leader.md)
    2. [人月神话](pm/management/TheMythicalMan-Month.md)
