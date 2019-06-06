@@ -172,7 +172,7 @@
     1. [伟大是熬出来的](http://note.youdao.com/noteshare?id=d0c38f54e076d44ff7c3d25533416451&sub=53ECCBC634494097989576DE764907A6)
     1. 冯唐
        1. [活着活着就老了-十信](success/fengtang-ten-belief.md)
-       2. [无所畏](http://note.youdao.com/noteshare?id=e59f91c0c71459080292b5b5919a3d3f)
+       2. [无所畏](success/fengtang-not-to-matter.md)
 2. 习惯&练习(构建反馈)
     1. [微习惯](http://note.youdao.com/noteshare?id=85c7ac737f90d0d33378b01a9b8bb3a9&sub=5CD30129E63C422B86601B2D3AFD13F1)
     2. [练习的心态](success/the-practicing-mind.md)
