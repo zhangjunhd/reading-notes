@@ -251,8 +251,8 @@
        4. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
        5. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
    5.  CMS
-       1.  [Vox Media调研](bussiness/cms/vox-media.md)
-       2.  [Web Content Management](bussiness/cms/cms.md)
+       1. [Vox Media调研](bussiness/cms/vox-media.md)
+       2. [Web Content Management](bussiness/cms/cms.md)
 7.  营销
     1.  [定位](bussiness/marketing/positioning.md)
 8.  广告
