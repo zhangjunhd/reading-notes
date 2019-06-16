@@ -249,7 +249,7 @@
        2. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
        3. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
        4. [如何打造超级IP](http://note.youdao.com/noteshare?id=fcfab123c756fd6a01b8972f3941816d)
-       5. [超级IP](http://note.youdao.com/noteshare?id=9258546890179704523d8c70fd1324eb)
+       5. [超级IP](bussiness/new_media/xtreme-ip.md)
    5.  CMS
        1. [Vox Media调研](bussiness/cms/vox-media.md)
        2. [Web Content Management](bussiness/cms/cms.md)
