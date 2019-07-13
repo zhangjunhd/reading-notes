@@ -139,11 +139,14 @@
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
 2. 王小波
    1. [人为什么活着](novel/why-do-people-live.md)
-3. [1984](novel/NineteenEightyFour.md)
-4. [美丽新世界](novel/BraveNewWorld.md)
-5. [变形记](novel/DieVerwandlung.md)
-6. [悉达多](novel/Siddhartha.md)
-7. [浮士德](novel/Faust.md)
+3. 冯唐
+   1. [活着活着就老了-十信](novel/fengtang-ten-belief.md)
+   2. [无所畏](novel/fengtang-not-to-matter.md)
+4. [1984](novel/NineteenEightyFour.md)
+5. [美丽新世界](novel/BraveNewWorld.md)
+6. [变形记](novel/DieVerwandlung.md)
+7. [悉达多](novel/Siddhartha.md)
+8. [浮士德](novel/Faust.md)
 
 # 心理学
 1. 精神分析
@@ -173,9 +176,6 @@
     1. [富兰克林自传](http://note.youdao.com/noteshare?id=b183d6400fa13733d417f35bf9afd043&sub=5D2FEE3EA79F485B9C803864995D941F)
     1. [How Will You Measure Your Life](http://note.youdao.com/noteshare?id=6a69da6918b447d7ebdf9dcec21b98d4&sub=AC24F4D78FA24E4F8C4B38A395DFC75F)
     1. [伟大是熬出来的](http://note.youdao.com/noteshare?id=d0c38f54e076d44ff7c3d25533416451&sub=53ECCBC634494097989576DE764907A6)
-    1. 冯唐
-       1. [活着活着就老了-十信](success/fengtang-ten-belief.md)
-       2. [无所畏](success/fengtang-not-to-matter.md)
 2. 习惯&练习(构建反馈)
     1. [微习惯](http://note.youdao.com/noteshare?id=85c7ac737f90d0d33378b01a9b8bb3a9&sub=5CD30129E63C422B86601B2D3AFD13F1)
     2. [练习的心态](success/the-practicing-mind.md)
