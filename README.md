@@ -138,6 +138,7 @@
 3. 冯唐
    1. [活着活着就老了-十信](novel/fengtang-ten-belief.md)
    2. [无所畏](novel/fengtang-not-to-matter.md)
+   3. [在宇宙间不易被风吹散](novel/fengtang-buddhist-mood.md)
 4. 加缪
    1. [快乐的死](novel/LaMortHeureuse.md)
    2. [异乡人](novel/L'Etranger.md)
