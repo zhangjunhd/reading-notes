@@ -137,11 +137,13 @@
 
 # 小说&戏剧
 1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
-1. [1984](novel/NineteenEightyFour.md)
-1. [美丽新世界](novel/BraveNewWorld.md)
-1. [变形记](novel/DieVerwandlung.md)
-1. [悉达多](novel/Siddhartha.md)
-1. [浮士德](novel/Faust.md)
+2. 王小波
+   1. [人为什么活着](novel/why-do-people-live.md)
+3. [1984](novel/NineteenEightyFour.md)
+4. [美丽新世界](novel/BraveNewWorld.md)
+5. [变形记](novel/DieVerwandlung.md)
+6. [悉达多](novel/Siddhartha.md)
+7. [浮士德](novel/Faust.md)
 
 # 心理学
 1. 精神分析
