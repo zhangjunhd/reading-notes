@@ -73,10 +73,6 @@
     1. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
     1. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
     1. [存在主义心理治疗](psychology/Existential-Psychology.md)
-    1. [快乐的死](novel/LaMortHeureuse.md)
-    1. [异乡人](novel/L'Etranger.md)
-    1. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
-    1. [等待戈多](novel/En-attendant-Godot.md)
 1. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
 1. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
 1. [康德三大批判合集](western_philosophy/kant.md)
@@ -142,11 +138,16 @@
 3. 冯唐
    1. [活着活着就老了-十信](novel/fengtang-ten-belief.md)
    2. [无所畏](novel/fengtang-not-to-matter.md)
-4. [1984](novel/NineteenEightyFour.md)
-5. [美丽新世界](novel/BraveNewWorld.md)
-6. [变形记](novel/DieVerwandlung.md)
-7. [悉达多](novel/Siddhartha.md)
-8. [浮士德](novel/Faust.md)
+4. 加缪
+   1. [快乐的死](novel/LaMortHeureuse.md)
+   2. [异乡人](novel/L'Etranger.md)
+   3. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
+5. [等待戈多](novel/En-attendant-Godot.md)
+6. [1984](novel/NineteenEightyFour.md)
+7. [美丽新世界](novel/BraveNewWorld.md)
+8. [变形记](novel/DieVerwandlung.md)
+9. [悉达多](novel/Siddhartha.md)
+10. [浮士德](novel/Faust.md)
 
 # 心理学
 1. 精神分析
