@@ -100,6 +100,7 @@
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
    3. [创新简史](history/A-brief-history-of-innovation.md)
+   4. [木心文学回忆录](history/literature-memoirs.md)
 4. 政治学
    1. [世界秩序](history/WorldOrder.md)
    2. [看世界](history/see-the-world.md)
