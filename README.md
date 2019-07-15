@@ -2,10 +2,10 @@
 - [东方哲学](#%E4%B8%9C%E6%96%B9%E5%93%B2%E5%AD%A6)
 - [西方哲学](#%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6)
 - [历史](#%E5%8E%86%E5%8F%B2)
+- [小说&戏剧](#%E5%B0%8F%E8%AF%B4%E6%88%8F%E5%89%A7)
 - [经济金融](#%E7%BB%8F%E6%B5%8E%E9%87%91%E8%9E%8D)
 - [艺术](#%E8%89%BA%E6%9C%AF)
 - [社交](#%E7%A4%BE%E4%BA%A4)
-- [小说&戏剧](#%E5%B0%8F%E8%AF%B4%E6%88%8F%E5%89%A7)
 - [心理学](#%E5%BF%83%E7%90%86%E5%AD%A6)
 - [成功学](#%E6%88%90%E5%8A%9F%E5%AD%A6)
 - [商业](#%E5%95%86%E4%B8%9A)
@@ -100,7 +100,8 @@
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
    3. [创新简史](history/A-brief-history-of-innovation.md)
-   4. [木心文学回忆录](history/literature-memoirs.md)
+   4. 木心文学回忆录
+      1. [古代之卷](history/literature-memoirs.md)
 4. 政治学
    1. [世界秩序](history/WorldOrder.md)
    2. [看世界](history/see-the-world.md)
@@ -111,6 +112,29 @@
    4. [中国大历史-黄仁宇版](history/big-history.md)
    5. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
    6. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+
+
+
+# 小说&戏剧
+1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
+2. 王小波
+   1. [人为什么活着](novel/why-do-people-live.md)
+3. 冯唐
+   1. [活着活着就老了-十信](novel/fengtang-ten-belief.md)
+   2. [无所畏](novel/fengtang-not-to-matter.md)
+   3. [在宇宙间不易被风吹散](novel/fengtang-buddhist-mood.md)
+4. 加缪
+   1. [快乐的死](novel/LaMortHeureuse.md)
+   2. [异乡人](novel/L'Etranger.md)
+   3. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
+5. 黑塞
+   1. [悉达多](novel/Siddhartha.md)
+6. [等待戈多](novel/En-attendant-Godot.md)
+7. [1984](novel/NineteenEightyFour.md)
+8. [美丽新世界](novel/BraveNewWorld.md)
+9.  [变形记](novel/DieVerwandlung.md)
+10. [浮士德](novel/Faust.md)
+
 
 
 # 经济金融
@@ -132,25 +156,7 @@
 1. [单一麦芽威士忌](socialcontact/SingleMaltWhisky.md)
 1. [汽车是怎样跑起来的](socialcontact/how-does-a-car-run.md)
 
-# 小说&戏剧
-1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
-2. 王小波
-   1. [人为什么活着](novel/why-do-people-live.md)
-3. 冯唐
-   1. [活着活着就老了-十信](novel/fengtang-ten-belief.md)
-   2. [无所畏](novel/fengtang-not-to-matter.md)
-   3. [在宇宙间不易被风吹散](novel/fengtang-buddhist-mood.md)
-4. 加缪
-   1. [快乐的死](novel/LaMortHeureuse.md)
-   2. [异乡人](novel/L'Etranger.md)
-   3. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
-5. 黑塞
-   1. [悉达多](novel/Siddhartha.md)
-6. [等待戈多](novel/En-attendant-Godot.md)
-7. [1984](novel/NineteenEightyFour.md)
-8. [美丽新世界](novel/BraveNewWorld.md)
-9.  [变形记](novel/DieVerwandlung.md)
-10. [浮士德](novel/Faust.md)
+
 
 # 心理学
 1. 精神分析
