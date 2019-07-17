@@ -79,7 +79,7 @@
 
 ![humankind2](humankind2.png)
 
-图解世界经济史：
+图解世界经济史：
 
 ![humankind3](humankind3.png)
 
