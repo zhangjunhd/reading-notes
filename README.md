@@ -101,7 +101,8 @@
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
    3. [创新简史](history/A-brief-history-of-innovation.md)
    4. 木心文学回忆录
-      1. [古代之卷](history/literature-memoirs.md)
+      1. [古代之卷](history/muxin1.md)
+      2. [中世纪—十七世纪之卷](history/muxin2.md)
 4. 政治学
    1. [世界秩序](history/WorldOrder.md)
    2. [看世界](history/see-the-world.md)
