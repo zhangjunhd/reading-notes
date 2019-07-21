@@ -130,11 +130,12 @@
    3. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
 5. 黑塞
    1. [悉达多](novel/Siddhartha.md)
-6. [等待戈多](novel/En-attendant-Godot.md)
-7. [1984](novel/NineteenEightyFour.md)
-8. [美丽新世界](novel/BraveNewWorld.md)
-9.  [变形记](novel/DieVerwandlung.md)
-10. [浮士德](novel/Faust.md)
+6. 歌德
+   1. [浮士德](novel/Faust.md)
+7. [等待戈多](novel/En-attendant-Godot.md)
+8. [1984](novel/NineteenEightyFour.md)
+9. [美丽新世界](novel/BraveNewWorld.md)
+10. [变形记](novel/DieVerwandlung.md)
 
 
 
