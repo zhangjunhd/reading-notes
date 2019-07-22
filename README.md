@@ -151,6 +151,7 @@
 
 
 # 艺术
+1. [古典主义、浪漫主义、现实主义与现代主义的比较](art/genre.md)
 1. [我心自由-杜尚传](art/duchamp.md)
 2. [光影中遇见伦勃朗](art/rembrandt.md)
 
