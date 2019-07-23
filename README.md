@@ -117,26 +117,26 @@
 1. 木心文学回忆录
     1. [古代之卷](history/muxin1.md)
     2. [中世纪—十七世纪之卷](history/muxin2.md)
-2. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
+2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
 3. 王小波
-   1. [人为什么活着](novel/why-do-people-live.md)
+   1. [人为什么活着](literature/why-do-people-live.md)
 4. 冯唐
-   1. [活着活着就老了-十信](novel/fengtang-ten-belief.md)
-   2. [无所畏](novel/fengtang-not-to-matter.md)
-   3. [在宇宙间不易被风吹散](novel/fengtang-buddhist-mood.md)
-   4. [三十六大](novel/fengtang-36-messages-for-life.md)
+   1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
+   2. [无所畏](literature/fengtang-not-to-matter.md)
+   3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
+   4. [三十六大](literature/fengtang-36-messages-for-life.md)
 5. 加缪
-   1. [快乐的死](novel/LaMortHeureuse.md)
-   2. [异乡人](novel/L'Etranger.md)
-   3. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
+   1. [快乐的死](literature/LaMortHeureuse.md)
+   2. [异乡人](literature/L'Etranger.md)
+   3. [西西弗斯神话](literature/The-Myth-of-Sysyphus.md)
 6. 黑塞
-   1. [悉达多](novel/Siddhartha.md)
+   1. [悉达多](literature/Siddhartha.md)
 7. 歌德
-   1. [浮士德](novel/Faust.md)
-8. [等待戈多](novel/En-attendant-Godot.md)
-9. [1984](novel/NineteenEightyFour.md)
-10. [美丽新世界](novel/BraveNewWorld.md)
-11. [变形记](novel/DieVerwandlung.md)
+   1. [浮士德](literature/Faust.md)
+8. [等待戈多](literature/En-attendant-Godot.md)
+9. [1984](literature/NineteenEightyFour.md)
+10. [美丽新世界](literature/BraveNewWorld.md)
+11. [变形记](literature/DieVerwandlung.md)
 
 
 
