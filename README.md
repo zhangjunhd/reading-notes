@@ -115,8 +115,8 @@
 
 # 小说&戏剧
 1. 木心文学回忆录
-    1. [古代之卷](history/muxin1.md)
-    2. [中世纪—十七世纪之卷](history/muxin2.md)
+    1. [古代之卷](literature/muxin1.md)
+    2. [中世纪—十七世纪之卷](literature/muxin2.md)
 2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
 3. 王小波
    1. [人为什么活着](literature/why-do-people-live.md)
