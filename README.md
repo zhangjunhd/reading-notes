@@ -1,18 +1,18 @@
-- [科普](#%E7%A7%91%E6%99%AE)
-- [东方哲学](#%E4%B8%9C%E6%96%B9%E5%93%B2%E5%AD%A6)
-- [西方哲学](#%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6)
-- [历史](#%E5%8E%86%E5%8F%B2)
-- [小说&戏剧](#%E5%B0%8F%E8%AF%B4%E6%88%8F%E5%89%A7)
-- [经济金融](#%E7%BB%8F%E6%B5%8E%E9%87%91%E8%9E%8D)
-- [艺术](#%E8%89%BA%E6%9C%AF)
-- [社交](#%E7%A4%BE%E4%BA%A4)
-- [心理学](#%E5%BF%83%E7%90%86%E5%AD%A6)
-- [成功学](#%E6%88%90%E5%8A%9F%E5%AD%A6)
-- [商业](#%E5%95%86%E4%B8%9A)
-- [产品经理](#%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86)
-- [机器学习](#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)
-- [计算](#%E8%AE%A1%E7%AE%97)
-- [数学](#%E6%95%B0%E5%AD%A6)
+- [科普](#%e7%a7%91%e6%99%ae)
+- [东方哲学](#%e4%b8%9c%e6%96%b9%e5%93%b2%e5%ad%a6)
+- [西方哲学](#%e8%a5%bf%e6%96%b9%e5%93%b2%e5%ad%a6)
+- [历史](#%e5%8e%86%e5%8f%b2)
+- [小说&戏剧](#%e5%b0%8f%e8%af%b4%e6%88%8f%e5%89%a7)
+- [经济金融](#%e7%bb%8f%e6%b5%8e%e9%87%91%e8%9e%8d)
+- [艺术](#%e8%89%ba%e6%9c%af)
+- [社交](#%e7%a4%be%e4%ba%a4)
+- [心理学](#%e5%bf%83%e7%90%86%e5%ad%a6)
+- [成功学](#%e6%88%90%e5%8a%9f%e5%ad%a6)
+- [商业](#%e5%95%86%e4%b8%9a)
+- [产品经理](#%e4%ba%a7%e5%93%81%e7%bb%8f%e7%90%86)
+- [机器学习](#%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0)
+- [计算](#%e8%ae%a1%e7%ae%97)
+- [数学](#%e6%95%b0%e5%ad%a6)
 
 # 科普
 1. 牛津通识读本
@@ -100,9 +100,6 @@
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
    3. [创新简史](history/A-brief-history-of-innovation.md)
-   4. 木心文学回忆录
-      1. [古代之卷](history/muxin1.md)
-      2. [中世纪—十七世纪之卷](history/muxin2.md)
 4. 政治学
    1. [世界秩序](history/WorldOrder.md)
    2. [看世界](history/see-the-world.md)
@@ -117,26 +114,29 @@
 
 
 # 小说&戏剧
-1. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
-2. 王小波
+1. 木心文学回忆录
+    1. [古代之卷](history/muxin1.md)
+    2. [中世纪—十七世纪之卷](history/muxin2.md)
+2. [灵魂之旅-中国当代文学的生存意境](novel/a-spiritual-journey.md)
+3. 王小波
    1. [人为什么活着](novel/why-do-people-live.md)
-3. 冯唐
+4. 冯唐
    1. [活着活着就老了-十信](novel/fengtang-ten-belief.md)
    2. [无所畏](novel/fengtang-not-to-matter.md)
    3. [在宇宙间不易被风吹散](novel/fengtang-buddhist-mood.md)
    4. [三十六大](novel/fengtang-36-messages-for-life.md)
-4. 加缪
+5. 加缪
    1. [快乐的死](novel/LaMortHeureuse.md)
    2. [异乡人](novel/L'Etranger.md)
    3. [西西弗斯神话](novel/The-Myth-of-Sysyphus.md)
-5. 黑塞
+6. 黑塞
    1. [悉达多](novel/Siddhartha.md)
-6. 歌德
+7. 歌德
    1. [浮士德](novel/Faust.md)
-7. [等待戈多](novel/En-attendant-Godot.md)
-8. [1984](novel/NineteenEightyFour.md)
-9. [美丽新世界](novel/BraveNewWorld.md)
-10. [变形记](novel/DieVerwandlung.md)
+8. [等待戈多](novel/En-attendant-Godot.md)
+9. [1984](novel/NineteenEightyFour.md)
+10. [美丽新世界](novel/BraveNewWorld.md)
+11. [变形记](novel/DieVerwandlung.md)
 
 
 
