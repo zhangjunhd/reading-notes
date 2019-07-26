@@ -127,19 +127,23 @@
    2. [无所畏](literature/fengtang-not-to-matter.md)
    3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
    4. [三十六大](literature/fengtang-36-messages-for-life.md)
-5. 加缪
+5. 阿城
+   1. [棋王](literature/Chess.md)
+6. 加缪
    1. [快乐的死](literature/LaMortHeureuse.md)
    2. [异乡人](literature/L'Etranger.md)
    3. [西西弗斯神话](literature/The-Myth-of-Sysyphus.md)
-6. 黑塞
+7. 黑塞
    1. [悉达多](literature/Siddhartha.md)
-7. 歌德
+8. 歌德
    1. [少年维特的烦恼](literature/Die-Leiden-des-jungen-Werthers.md)
    2. [浮士德](literature/Faust.md)
-8. [等待戈多](literature/En-attendant-Godot.md)
-9. [1984](literature/NineteenEightyFour.md)
-10. [美丽新世界](literature/BraveNewWorld.md)
-11. [变形记](literature/DieVerwandlung.md)
+9.  卡夫卡
+   3. [变形记](literature/DieVerwandlung.md)
+10. [等待戈多](literature/En-attendant-Godot.md)
+11. [1984](literature/NineteenEightyFour.md)
+12. [美丽新世界](literature/BraveNewWorld.md)
+
 
 
 
