@@ -137,7 +137,7 @@
    1. [少年维特的烦恼](literature/Die-Leiden-des-jungen-Werthers.md)
    2. [浮士德](literature/Faust.md)
 8. [等待戈多](literature/En-attendant-Godot.md)
-9.  [1984](literature/NineteenEightyFour.md)
+9. [1984](literature/NineteenEightyFour.md)
 10. [美丽新世界](literature/BraveNewWorld.md)
 11. [变形记](literature/DieVerwandlung.md)
 
