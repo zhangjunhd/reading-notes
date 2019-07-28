@@ -244,12 +244,12 @@
    3. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
    4. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
    5. [重来ReWork](bussiness/startup/rework.md)
-   6. [知识图谱行业分析](bussiness/startup/kg.md)
-   7. [刷新](bussiness/startup/hit-refresh.md)
-   8. [重新理解创业](bussiness/startup/rethink-startup.md)
+   6. [刷新](bussiness/startup/hit-refresh.md)
+   7. [重新理解创业](bussiness/startup/rethink-startup.md)
 4. 商业模式
    1. [隐形VISA](bussiness/model/visa.md)
    2. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
+   3. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
 5. 凯文·凯利
    1. [必然](bussiness/kk/The-Inevitable.md)
    2. [新经济，新规则](bussiness/kk/NewRulesForTheNewEconomy.md)
@@ -284,9 +284,7 @@
 8.  广告
     1. [中国互联网广告生态](bussiness/advertising/internet-advertising-supply-chain-2014.md)
     2. [计算广告](advertising/computational_ad)
-9.  电商
-    1.  [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
-10. 人工智能
+9.  人工智能
     1.  [人工智能的未来](http://note.youdao.com/noteshare?id=fbd15411b3ce9943b3f3e296440b1a94&sub=8C9CE5C546564E1B90B68529E40524E2)
     2.  [与机器赛跑](http://note.youdao.com/noteshare?id=3bd43e726dd76b0d8230eb9d186c3934&sub=8196ECF808DB4010ACACC8AB307A3CEA)
     3.  [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
@@ -294,7 +292,8 @@
     5.  [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
     6.  [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
     7.  [终极算法](http://note.youdao.com/noteshare?id=9bd15571010d82897a8754f06d09a1df)
-11. 企业家精神
+    8.  [知识图谱行业分析](bussiness/startup/kg.md)
+10. 企业家
     1.  [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
     2.  [企业家](bussiness/entrepreneur/entrepreneur.md)
 
