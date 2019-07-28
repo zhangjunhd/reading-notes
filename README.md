@@ -205,7 +205,7 @@
     3. [刻意练习](success/PEAK.md)
     4. [习惯的力量](success/ThePowerOfHabit.md)
 3. 时间管理(要事第一、启动效应、感知时间)
-    1. [小强的时间管理博客摘录](http://note.youdao.com/noteshare?id=ac3146279afd16984366639925329ad3&sub=EE9A0D2E827A43F8BD63DD77E8655055)
+    1. [小强的时间管理博客摘录](success/XiaoQiang.md)
     2. [尽管去做——无压工作的艺术](http://note.youdao.com/noteshare?id=f64427d5fc9383ba57cc97af9b9b65f5&sub=59442A6F901F431D899EEFFFFB196AAD)
     3. [奇特的一生](success/Lyubishchev.md)
     4. [高效能人士的七个习惯](http://note.youdao.com/noteshare?id=1a1555a5ba8b90ac894c47cf46b22e4c&sub=88785F2B8CEA4C5EBA89904AC9A06DCA)
