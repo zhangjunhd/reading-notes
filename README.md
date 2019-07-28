@@ -220,7 +220,7 @@
     4. [如何高效学习](http://note.youdao.com/noteshare?id=ac62d84238c1cb5c1afb7f957dbafa29&sub=486EF57587B946D9B9B4AD4533EA743B)
 5. 健康
 6. 沟通
-    1. [蔡康永的说话之道](http://note.youdao.com/noteshare?id=c519ae9722a855073078435eba9a08ff&sub=869CCCEB991A4CCA8785D068B0FF8025)
+    1. [蔡康永的说话之道](success/CaiKangYong.md)
 7. 综合
     1. [新生——七年就是一辈子](success/rebirth.md)
     2. [精进：如何成为一个很厉害的人](success/refinement.md)
