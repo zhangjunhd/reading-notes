@@ -195,7 +195,7 @@
 # 成功学
 1. 信念(自律、利他、独立)
     1. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
-    1. [活法](http://note.youdao.com/noteshare?id=37ed50571a93713f94cf14b308a174b5&sub=4FE39EE0CD044B14AD5F668254725AE5)
+    1. [活法](success/LivingLaw.md)
     1. [富兰克林自传](http://note.youdao.com/noteshare?id=b183d6400fa13733d417f35bf9afd043&sub=5D2FEE3EA79F485B9C803864995D941F)
     1. [How Will You Measure Your Life](http://note.youdao.com/noteshare?id=6a69da6918b447d7ebdf9dcec21b98d4&sub=AC24F4D78FA24E4F8C4B38A395DFC75F)
     1. [伟大是熬出来的](http://note.youdao.com/noteshare?id=d0c38f54e076d44ff7c3d25533416451&sub=53ECCBC634494097989576DE764907A6)
