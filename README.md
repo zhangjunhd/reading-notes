@@ -215,7 +215,7 @@
     8. [暗时间](success/DarkTime.md)
 4. 知识管理(主题阅读、整理知识库、输出观点)
     1. [六个步骤把资料转换成知识](http://note.youdao.com/noteshare?id=0f7dcad585bc83ca0cbb3d63510a2a76&sub=527AD3A6DF0048F9B238B7346C2B2239)
-    2. [如何阅读一本书](http://note.youdao.com/noteshare?id=0355c32dbf51713686b8edb2118ceddf&sub=FD78EC33C6464CFF817E73AC4C389086)
+    2. [如何阅读一本书](success/HowToReadABook.md)
     3. [学习之道](http://note.youdao.com/noteshare?id=03da93fdb76778dd591e45d552c3cf66&sub=14258E2C1D574A8B90A4883D7B241246)
     4. [如何高效学习](http://note.youdao.com/noteshare?id=ac62d84238c1cb5c1afb7f957dbafa29&sub=486EF57587B946D9B9B4AD4533EA743B)
 5. 健康
