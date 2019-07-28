@@ -202,7 +202,7 @@
 2. 习惯&练习(构建反馈)
     1. [微习惯](success/MiniHabits.md)
     2. [练习的心态](success/the-practicing-mind.md)
-    3. [刻意练习](http://note.youdao.com/noteshare?id=daf5296d89f0a61f8b26b4c8eb2126be&sub=9154C32FDE814AFE9B5E8B1A9BA0A662)
+    3. [刻意练习](success/PEAK.md)
     4. [习惯的力量](http://note.youdao.com/noteshare?id=28e8c874dfc4a0a0fbd5a0b097f0ed99&sub=F358E1F126F54A5F84BCD643450C5309)
 3. 时间管理(要事第一、启动效应、感知时间)
     1. [小强的时间管理博客摘录](http://note.youdao.com/noteshare?id=ac3146279afd16984366639925329ad3&sub=EE9A0D2E827A43F8BD63DD77E8655055)
