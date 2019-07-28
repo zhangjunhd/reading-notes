@@ -209,7 +209,7 @@
     2. [尽管去做——无压工作的艺术](success/GTD.md)
     3. [奇特的一生](success/Lyubishchev.md)
     4. [高效能人士的七个习惯](success/7Habits.md)
-    5. [如何不用额外咖啡因也能保持专注](http://note.youdao.com/noteshare?id=49c30153e7705cdf0e54cd0a6c21a3ba&sub=665E4D80A1E24764BCE867A512378F89)
+    5. [如何不用额外咖啡因也能保持专注](success/KeepFocus.md)
     6. [把时间当作朋友](http://note.youdao.com/noteshare?id=51982ba9ef1f1d989a0f690db77c5531&sub=A29B551000104CFC8F652681420D8173)
     7. [拖延心理学](success/Procrastination.md)
     8. [暗时间](success/DarkTime.md)
