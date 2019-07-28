@@ -211,7 +211,7 @@
     4. [高效能人士的七个习惯](success/7Habits.md)
     5. [如何不用额外咖啡因也能保持专注](http://note.youdao.com/noteshare?id=49c30153e7705cdf0e54cd0a6c21a3ba&sub=665E4D80A1E24764BCE867A512378F89)
     6. [把时间当作朋友](http://note.youdao.com/noteshare?id=51982ba9ef1f1d989a0f690db77c5531&sub=A29B551000104CFC8F652681420D8173)
-    7. [拖延心理学](http://note.youdao.com/noteshare?id=db15b0e64460fa983aed73a69768dc8e&sub=0B70F1A4D9A84ECFA117F90385DFB95B)
+    7. [拖延心理学](success/Procrastination.md)
     8. [暗时间](success/DarkTime.md)
 4. 知识管理(主题阅读、整理知识库、输出观点)
     1. [六个步骤把资料转换成知识](http://note.youdao.com/noteshare?id=0f7dcad585bc83ca0cbb3d63510a2a76&sub=527AD3A6DF0048F9B238B7346C2B2239)
