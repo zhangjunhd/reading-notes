@@ -215,7 +215,7 @@
 4. 知识管理(主题阅读、整理知识库、输出观点)
     1. [六个步骤把资料转换成知识](success/6step.md)
     2. [如何阅读一本书](success/HowToReadABook.md)
-    3. [学习之道](http://note.youdao.com/noteshare?id=03da93fdb76778dd591e45d552c3cf66&sub=14258E2C1D574A8B90A4883D7B241246)
+    3. [学习之道](success/A-Mind-for-Numbers.md)
     4. [如何高效学习](success/LearnMoreStudyLess.md)
 5. 沟通
     1. [蔡康永的说话之道](success/CaiKangYong.md)
