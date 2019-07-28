@@ -134,7 +134,8 @@
    2. [异乡人](literature/L'Etranger.md)
    3. [西西弗斯神话](literature/The-Myth-of-Sysyphus.md)
 7. 黑塞
-   1. [悉达多](literature/Siddhartha.md)
+   1. [德米安](literature/Demian.md)
+   2. [悉达多](literature/Siddhartha.md)
 8. 歌德
    1. [少年维特的烦恼](literature/Die-Leiden-des-jungen-Werthers.md)
    2. [浮士德](literature/Faust.md)
