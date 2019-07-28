@@ -216,11 +216,10 @@
     1. [六个步骤把资料转换成知识](success/6step.md)
     2. [如何阅读一本书](success/HowToReadABook.md)
     3. [学习之道](http://note.youdao.com/noteshare?id=03da93fdb76778dd591e45d552c3cf66&sub=14258E2C1D574A8B90A4883D7B241246)
-    4. [如何高效学习](http://note.youdao.com/noteshare?id=ac62d84238c1cb5c1afb7f957dbafa29&sub=486EF57587B946D9B9B4AD4533EA743B)
-5. 健康
-6. 沟通
+    4. [如何高效学习](success/LearnMoreStudyLess.md)
+5. 沟通
     1. [蔡康永的说话之道](success/CaiKangYong.md)
-7. 综合
+6. 综合
     1. [新生——七年就是一辈子](success/rebirth.md)
     2. [精进：如何成为一个很厉害的人](success/refinement.md)
     3. [冯鑫家信：怎样才算好好活着](success/a-letter-home-by-fengxin.md)
