@@ -206,7 +206,7 @@
     4. [习惯的力量](success/ThePowerOfHabit.md)
 3. 时间管理(要事第一、启动效应、感知时间)
     1. [小强的时间管理博客摘录](success/XiaoQiang.md)
-    2. [尽管去做——无压工作的艺术](http://note.youdao.com/noteshare?id=f64427d5fc9383ba57cc97af9b9b65f5&sub=59442A6F901F431D899EEFFFFB196AAD)
+    2. [尽管去做——无压工作的艺术](success/GTD.md)
     3. [奇特的一生](success/Lyubishchev.md)
     4. [高效能人士的七个习惯](success/7Habits.md)
     5. [如何不用额外咖啡因也能保持专注](http://note.youdao.com/noteshare?id=49c30153e7705cdf0e54cd0a6c21a3ba&sub=665E4D80A1E24764BCE867A512378F89)
