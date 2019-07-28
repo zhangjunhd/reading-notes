@@ -219,7 +219,7 @@
     4. [如何高效学习](success/LearnMoreStudyLess.md)
 5. 沟通
     1. [蔡康永的说话之道](success/CaiKangYong.md)
-6. 综合
+6. 价值
     1. [新生——七年就是一辈子](success/rebirth.md)
     2. [精进：如何成为一个很厉害的人](success/refinement.md)
     3. [冯鑫家信：怎样才算好好活着](success/a-letter-home-by-fengxin.md)
