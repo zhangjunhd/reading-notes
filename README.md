@@ -200,7 +200,7 @@
     1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
     1. [伟大是熬出来的](success/Fenglun.md)
 2. 习惯&练习(构建反馈)
-    1. [微习惯](http://note.youdao.com/noteshare?id=85c7ac737f90d0d33378b01a9b8bb3a9&sub=5CD30129E63C422B86601B2D3AFD13F1)
+    1. [微习惯](success/MiniHabits.md)
     2. [练习的心态](success/the-practicing-mind.md)
     3. [刻意练习](http://note.youdao.com/noteshare?id=daf5296d89f0a61f8b26b4c8eb2126be&sub=9154C32FDE814AFE9B5E8B1A9BA0A662)
     4. [习惯的力量](http://note.youdao.com/noteshare?id=28e8c874dfc4a0a0fbd5a0b097f0ed99&sub=F358E1F126F54A5F84BCD643450C5309)
