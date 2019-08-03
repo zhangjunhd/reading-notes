@@ -24,11 +24,13 @@
       1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
       2. [福柯](A-Very-Short-Introductions/Foucault.md)
       3. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
-2. [时间简史](http://note.youdao.com/noteshare?id=00354b2dd05bed1d331e967494e02ef3)
-3. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
-4. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
-5. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
-6. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
+2. 世界观科普
+   1. [时间简史](http://note.youdao.com/noteshare?id=00354b2dd05bed1d331e967494e02ef3)
+   2. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
+   3. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
+3. 信息技术科普
+   1. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
+   2. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
 
 # 东方哲学
 1. 儒
