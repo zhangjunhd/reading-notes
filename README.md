@@ -31,6 +31,7 @@
 3. 信息技术科普
    1. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
    2. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
+   3. [计算机是怎样跑起来的](intro/computer.md)
 
 # 东方哲学
 1. 儒
