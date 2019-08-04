@@ -2,7 +2,7 @@
 - [东方哲学](#%e4%b8%9c%e6%96%b9%e5%93%b2%e5%ad%a6)
 - [西方哲学](#%e8%a5%bf%e6%96%b9%e5%93%b2%e5%ad%a6)
 - [历史](#%e5%8e%86%e5%8f%b2)
-- [小说&戏剧](#%e5%b0%8f%e8%af%b4%e6%88%8f%e5%89%a7)
+- [文学](#%e6%96%87%e5%ad%a6)
 - [经济金融](#%e7%bb%8f%e6%b5%8e%e9%87%91%e8%9e%8d)
 - [艺术](#%e8%89%ba%e6%9c%af)
 - [社交](#%e7%a4%be%e4%ba%a4)
@@ -68,27 +68,28 @@
 
 # 西方哲学
 1. 概论
-    1. [苏菲的世界](western_philosophy/SophieWorld.md)
-    1. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
-1. 存在主义
-    1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
-    1. [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
-    1. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
-    1. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
-    1. [存在主义心理治疗](psychology/Existential-Psychology.md)
-1. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
-1. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
-1. [康德三大批判合集](western_philosophy/kant.md)
-1. [常识](western_philosophy/CommonSense.md)
-1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
-1. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
-1. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
-1. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
-1. [身份的焦虑](western_philosophy/status-anxiety.md)
-1. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
-1. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-1. [论自然](western_philosophy/nature.md)
-1. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
+   1. [苏菲的世界](western_philosophy/SophieWorld.md)
+   2. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
+2. 叔本华
+   1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
+   2. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
+   3. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
+   4. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
+3. 存在主义
+   1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
+   2. [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
+   3. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
+   4. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
+   5. [存在主义心理治疗](psychology/Existential-Psychology.md)
+4. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
+5. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
+6. [康德三大批判合集](western_philosophy/kant.md)
+7. [常识](western_philosophy/CommonSense.md)
+8.  [身份的焦虑](western_philosophy/status-anxiety.md)
+9.  [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
+10. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
+11. [论自然](western_philosophy/nature.md)
+12. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
 
 # 历史
 1. 社会学
@@ -116,7 +117,7 @@
 
 
 
-# 小说&戏剧
+# 文学
 1. 木心文学回忆录
     1. [古代之卷](literature/muxin1.md)
     2. [中世纪—十七世纪之卷](literature/muxin2.md)
