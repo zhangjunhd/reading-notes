@@ -330,9 +330,6 @@
    7. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 # 机器学习
-1. Introduction
-   1. [An Introduction to Statistical Learning](http://note.youdao.com/noteshare?id=30b30c9252ae75865a373296d751f8d1&sub=5DD94B80FB964D9FBE38E1BDF6E15C17)
-   2. [Foundations of Machine Learning](http://note.youdao.com/noteshare?id=8539c322ec6efa16c7aba92e6e824f7a&sub=2EB63A66D001438A80308E7CD5246168),Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar, Aug 2012
 1.  Natural Language Understanding
     1. [Natural Language Processing](http://note.youdao.com/noteshare?id=2e7de5e90ec5f8905389426ad442d728&sub=D871E60FB2D749EE8B9D10FD84D18BAB),Jacob Eisenstein, Jun 2018
     2. Corpus
@@ -345,21 +342,21 @@
     4. Sequences&Trees
         1. Dependency parsing
             1. [依存文法分析](ml/nlu/dp.md)
-1. Deep Learning
+2. Deep Learning
    1. [深度学习中的激活函数](http://note.youdao.com/noteshare?id=f7ff42d47a541445d017392d10cf2765&sub=927805E400C44B418DA9B203960E131B)
    2. [随机神经网络模拟退火与玻尔兹曼机](http://note.youdao.com/noteshare?id=7533325f4b0c271fe25f0e4aee1f1127&sub=WEB269fcdd75c2715ba11c61e211f57c3b4),Hinton,1986
    3. [Neural Network and Deep Learning](http://note.youdao.com/noteshare?id=6875fe50064b41c3524eef9b74581b79&sub=705960D7EC56415FB60A720E5DEA436D)
    4. [Fundamentals of Deep Learning](http://note.youdao.com/noteshare?id=25d1fffe3b0b52aa764a258a1ec563bc&sub=58D934A6CBF444C49B927BEA19159D1E)
-2. Search Engine
+3. Search Engine
     1. [What is faceted search](http://note.youdao.com/noteshare?id=509780f11b37957d72588baff7014652&sub=B51E547AE640437FBC7EB1643F17061E)
     2. [搜索引擎-信息检索实践](http://note.youdao.com/noteshare?id=586a7aacc7da913043f34cfc2148c5a3&sub=10640022C7FC43B0A4A2ABF74D668167), W.Bruce Croft, Jun 2010
     3. [Lucene in Action(2nd Edition)](http://note.youdao.com/noteshare?id=76c2eed01db37aed06863153e33172fd&sub=BEE9FBDDC079448F8F8A07C9320C77E8), Michael McCandless, Jul 2010
     4. [Elasticsearch Basic Concepts](http://note.youdao.com/noteshare?id=db4915ecf31290c2f013f493e62a3e77&sub=9D8B40EBB7D74C3F85083395588FB345)
     5. [What are some uses of machine learning in search engines](http://note.youdao.com/noteshare?id=3487c21901ce5428c08e881a714db83b&sub=9B8416CDE9C64955A419B7EDD12BF11D),Nikhil Dandekar, Apr 2016
-3. Chatbot
+4. Chatbot
    1. [From Eliza to XiaoIce Challenges and Opportunities with Social Chatbots](http://note.youdao.com/noteshare?id=78205908719d5c7171579c2447baf8c7&sub=15222AAA28CC45B5B02E560737714DD2),Heung-Yeung Shum, Xiaodong He, Di Li, Jan 2018
    2. [Voice User Interface Projects](ml/chatbot/VoiceUserInterfaceProjects.md), Henry Lee, Jul 2018
-4. Knowledge Graph
+5. Knowledge Graph
    1. [语义网是什么？](ml/kg/semantic_web.md)
    2. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074),Ｇrigoris Antoniou, Apr 2008
    3. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](ml/kg/json-ld.md)
