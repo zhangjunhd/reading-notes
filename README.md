@@ -10,7 +10,6 @@
 - [成功学](#%e6%88%90%e5%8a%9f%e5%ad%a6)
 - [商业](#%e5%95%86%e4%b8%9a)
 - [产品经理](#%e4%ba%a7%e5%93%81%e7%bb%8f%e7%90%86)
-- [机器学习](#%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0)
 - [计算](#%e8%ae%a1%e7%ae%97)
 - [数学](#%e6%95%b0%e5%ad%a6)
 
@@ -328,16 +327,6 @@
    5. [About Face 3](design/AboutFace3.md)
    6. [Design Driven Innovation](design/DesignDrivenInnovation.md)
    7. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
-
-# 机器学习                 
-1. Knowledge Graph
-   1. [语义网是什么？](ml/kg/semantic_web.md)
-   2. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074),Ｇrigoris Antoniou, Apr 2008
-   3. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](ml/kg/json-ld.md)
-   4. [Rule-based query answering method for a knowledge base of economic crimes](ml/kg/rule-thesis.ipynb),Jarosław Ksawery BAK,2013
-   5. [pyDatalog](ml/kg)
-   6. [数理逻辑](ml/kg)
-   7. [Knowledge Representation and Reasoning](ml/kg)
 
 # 计算
 1. [离散数学及其应用（原书第7版）](computation/discrete_math)
