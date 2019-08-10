@@ -1,5 +1,0 @@
-@prefix : <http://www.blmoistawinde.org/example1#>.
-
-:ZhongShanJingWang :IsA :ZongQin .
-
-:LiuBei :FatherOf :LiuShan.
