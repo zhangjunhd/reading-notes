@@ -329,13 +329,8 @@
    6. [Design Driven Innovation](design/DesignDrivenInnovation.md)
    7. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
-# 机器学习           
-1. Deep Learning
-   1. [深度学习中的激活函数](http://note.youdao.com/noteshare?id=f7ff42d47a541445d017392d10cf2765&sub=927805E400C44B418DA9B203960E131B)
-   2. [随机神经网络模拟退火与玻尔兹曼机](http://note.youdao.com/noteshare?id=7533325f4b0c271fe25f0e4aee1f1127&sub=WEB269fcdd75c2715ba11c61e211f57c3b4),Hinton,1986
-   3. [Neural Network and Deep Learning](http://note.youdao.com/noteshare?id=6875fe50064b41c3524eef9b74581b79&sub=705960D7EC56415FB60A720E5DEA436D)
-   4. [Fundamentals of Deep Learning](http://note.youdao.com/noteshare?id=25d1fffe3b0b52aa764a258a1ec563bc&sub=58D934A6CBF444C49B927BEA19159D1E)       
-2. Knowledge Graph
+# 机器学习                 
+1. Knowledge Graph
    1. [语义网是什么？](ml/kg/semantic_web.md)
    2. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074),Ｇrigoris Antoniou, Apr 2008
    3. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](ml/kg/json-ld.md)
