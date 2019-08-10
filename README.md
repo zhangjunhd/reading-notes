@@ -350,19 +350,16 @@
    2. [随机神经网络模拟退火与玻尔兹曼机](http://note.youdao.com/noteshare?id=7533325f4b0c271fe25f0e4aee1f1127&sub=WEB269fcdd75c2715ba11c61e211f57c3b4),Hinton,1986
    3. [Neural Network and Deep Learning](http://note.youdao.com/noteshare?id=6875fe50064b41c3524eef9b74581b79&sub=705960D7EC56415FB60A720E5DEA436D)
    4. [Fundamentals of Deep Learning](http://note.youdao.com/noteshare?id=25d1fffe3b0b52aa764a258a1ec563bc&sub=58D934A6CBF444C49B927BEA19159D1E)
-1. Recommender System
-   1. [Amazon.com Recommendations Item-to-Item Collaborative Filtering](http://note.youdao.com/noteshare?id=25d9dd31f26a407820477541b94ce4c7&sub=D974AFA1034D45D2A4CA2681E5DE79B8),Greg Linden, Brent Smith, Jeremy York, Jan 2003
-   2. [Matrix Factorization Techniques For Recommender Systems(Netflix)](http://note.youdao.com/noteshare?id=145c3c749f7b856125952d923da647c5&sub=B3C99617A5014B9EB6DB03742B97C840),Yehuda Koren, Robert Bell, Chris Volinsky, Aug 2009
-1. Search Engine
+2. Search Engine
     1. [What is faceted search](http://note.youdao.com/noteshare?id=509780f11b37957d72588baff7014652&sub=B51E547AE640437FBC7EB1643F17061E)
     2. [搜索引擎-信息检索实践](http://note.youdao.com/noteshare?id=586a7aacc7da913043f34cfc2148c5a3&sub=10640022C7FC43B0A4A2ABF74D668167), W.Bruce Croft, Jun 2010
     3. [Lucene in Action(2nd Edition)](http://note.youdao.com/noteshare?id=76c2eed01db37aed06863153e33172fd&sub=BEE9FBDDC079448F8F8A07C9320C77E8), Michael McCandless, Jul 2010
     4. [Elasticsearch Basic Concepts](http://note.youdao.com/noteshare?id=db4915ecf31290c2f013f493e62a3e77&sub=9D8B40EBB7D74C3F85083395588FB345)
     5. [What are some uses of machine learning in search engines](http://note.youdao.com/noteshare?id=3487c21901ce5428c08e881a714db83b&sub=9B8416CDE9C64955A419B7EDD12BF11D),Nikhil Dandekar, Apr 2016
-1. Chatbot
+3. Chatbot
    1. [From Eliza to XiaoIce Challenges and Opportunities with Social Chatbots](http://note.youdao.com/noteshare?id=78205908719d5c7171579c2447baf8c7&sub=15222AAA28CC45B5B02E560737714DD2),Heung-Yeung Shum, Xiaodong He, Di Li, Jan 2018
    2. [Voice User Interface Projects](ml/chatbot/VoiceUserInterfaceProjects.md), Henry Lee, Jul 2018
-1. Knowledge Graph
+4. Knowledge Graph
    1. [语义网是什么？](ml/kg/semantic_web.md)
    2. [语义网基础教程](http://note.youdao.com/noteshare?id=0cefe9a20548b66102c14d5e4a494fca&sub=156AE0F00684436EBA12B1D9CA0D0074),Ｇrigoris Antoniou, Apr 2008
    3. [JSON-LD 1.0 - A JSON-based Serialization for Linked Data](ml/kg/json-ld.md)
