@@ -71,6 +71,9 @@
   - [8.9 使用数据对象向DBMS发送SQL语句](#89-%e4%bd%bf%e7%94%a8%e6%95%b0%e6%8d%ae%e5%af%b9%e8%b1%a1%e5%90%91dbms%e5%8f%91%e9%80%81sql%e8%af%ad%e5%8f%a5)
   - [8.10 事务控制也可以交给DBMS](#810-%e4%ba%8b%e5%8a%a1%e6%8e%a7%e5%88%b6%e4%b9%9f%e5%8f%af%e4%bb%a5%e4%ba%a4%e7%bb%99dbms)
 - [第9章 通过七个简单的实验理解TCP/IP网络](#%e7%ac%ac9%e7%ab%a0-%e9%80%9a%e8%bf%87%e4%b8%83%e4%b8%aa%e7%ae%80%e5%8d%95%e7%9a%84%e5%ae%9e%e9%aa%8c%e7%90%86%e8%a7%a3tcpip%e7%bd%91%e7%bb%9c)
+  - [9.1 实验环境](#91-%e5%ae%9e%e9%aa%8c%e7%8e%af%e5%a2%83)
+  - [9.2 实验1：查看网卡的MAC地址](#92-%e5%ae%9e%e9%aa%8c1%e6%9f%a5%e7%9c%8b%e7%bd%91%e5%8d%a1%e7%9a%84mac%e5%9c%b0%e5%9d%80)
+  - [9.3 实验2：查看计算机的IP地址](#93-%e5%ae%9e%e9%aa%8c2%e6%9f%a5%e7%9c%8b%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%9a%84ip%e5%9c%b0%e5%9d%80)
 
 ## 第1章 计算机的三大原则
 ### 1.1 计算机的三个根本性原则
@@ -911,6 +914,47 @@ conn.close()
 在使用ADO创建应用程序时，可以分别使用Connection类的Begin Trans、CommitTrans和Rollback Trans方法实现上述三个操作。
 
 ## 第9章 通过七个简单的实验理解TCP/IP网络
+### 9.1 实验环境
+图9.1 作为实验对象的网络环境
 
+![](computer40.png)
+
+在所有网络上的计算机中，
+
+- `服务器`（Server，服务的提供者）
+- `客户端`（Client,服务的使用者）
+- `“集线器（Hub）”`是负责把各台计算机的网线互相连接在一起的集线设备
+- `“路由器（Router）”`是负责把公司内的网络和因特网连接起来的设备
+
+通常把像这样部署在一间办公室内的小规模网络称为`LAN`；把像因特网那样将企业和企业连接起来的大规模网络称为`WAN`。路由器负责将LAN连接到WAN上。
+
+### 9.2 实验1：查看网卡的MAC地址
+在组建公司内部的网络时，笔者购买了如下4种硬件：
+
+1. 安装到每台计算机上的网卡（NIC，Network Interface Card）；
+2. 插到网卡上的网线；
+3. 把网线汇集起来连接到一处的集线器；
+4. 用于接入到因特网的路由器。
+
+图9.2 CSMA/CD的工作方式
+
+![](computer41.png)
+
+这套机制叫做`CSMA/CD`（Carrier Sense Multiple Access With Collision Detection，带冲突检测的载波监听多路访问）。
+
+- 所谓`载波监听（Carrier Sense）`指的是这套机制会监听（Sense）表示网络是否正在使用的电信号（Carrier）。
+- `多路访问（Multiple Access）`指的是多个（Multiple）设备可以同时访问（Access）传输介质。
+- `带冲突检测（with Collision Detection）`则表示这套机制会检测（Detection）因同一时刻的传输而导致的电信号冲突（Collision）。
+
+可以用被称为`MAC（Media Access Control）地址`来指定电信号的接收者。在每块网卡的ROM（Read Only Memory，只读存储器）中都预先烧录一个唯一的MAC地址。网卡制造厂商负责确定这个MAC地址是什么。因为MAC地址是由制造厂商的编号和产品编号两部分组成，所以世界上的每个MAC地址都是独一无二的。
+
+查看各自计算机网卡的MAC地址，输入如下命令：
+
+```
+ipconfig /all
+```
+
+### 9.3 实验2：查看计算机的IP地址
+在因特网这样的环境中，只使用MAC地址的话，仅仅是寻找信息的发送目的地就要花费大量的时间。
 
 
