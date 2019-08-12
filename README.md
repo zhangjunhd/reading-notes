@@ -178,22 +178,23 @@
 # 心理学
 1. 精神分析
    1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
-   2. [荣格心理学入门](psychology/Jung.md)
-1. 意义
+   2. [荣格心理学入门](psychology/Jung-intro.md)
+   3. [天资差异](psychology/GiftsDiffering.md)
+2. 意义
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    3. [专念](psychology/mindfulness.md)
    4. [幸福是陷阱?](psychology/the-happiness-trap.md)
    5. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
    6. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-2. 批判性思维
+3. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-3. 延迟满足
+4. 延迟满足
     1. [意志力](psychology/willpower.md)
     2. [自控力](psychology/TheWillpowerInstinct.md)
     3. [棉花糖实验](psychology/TheMarshmallowTest.md)
-4. 史蒂芬平克
+5. 史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 
 # 成功学
