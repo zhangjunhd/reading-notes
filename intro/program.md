@@ -86,6 +86,7 @@
   - [10.7 函数调用机制](#107-%e5%87%bd%e6%95%b0%e8%b0%83%e7%94%a8%e6%9c%ba%e5%88%b6)
   - [10.8 函数内部的处理](#108-%e5%87%bd%e6%95%b0%e5%86%85%e9%83%a8%e7%9a%84%e5%a4%84%e7%90%86)
   - [10.9 始终确保全局变量用的内存空间](#109-%e5%a7%8b%e7%bb%88%e7%a1%ae%e4%bf%9d%e5%85%a8%e5%b1%80%e5%8f%98%e9%87%8f%e7%94%a8%e7%9a%84%e5%86%85%e5%ad%98%e7%a9%ba%e9%97%b4)
+  - [10.10 临时确保局部变量用的内存空间](#1010-%e4%b8%b4%e6%97%b6%e7%a1%ae%e4%bf%9d%e5%b1%80%e9%83%a8%e5%8f%98%e9%87%8f%e7%94%a8%e7%9a%84%e5%86%85%e5%ad%98%e7%a9%ba%e9%97%b4)
 
 ## 1.对程序员来说CPU是什么
 ### 1.1 CPU的内部结构解析
@@ -928,8 +929,144 @@ _AddNum    endp
 5. （6）中 ret 指令运行后，函数返回目的地的内存地址会自动出栈，据此，程序流程就会跳转返回到代码清单 10-4 的（6）（Call _AddNum 的下一行）。
 
 ### 10.9 始终确保全局变量用的内存空间
+C 语言中，在函数外部定义的变量称为`全局变量`，在函数内部定义的变量称为`局部变量`。全局变量可以引用源代码的任意部分，而局部变量只能在定义该变量的函数内进行引用。
 
+代码清单 10-6　使用全局变量和局部变量的 C 语言源代码
 
+```c
+//定义被初始化的全局变量
+int a1 = 1;
+int a2 = 2;
+int a3 = 3;
+int a4 = 4;
+int a5 = 5;
+//定义没有初始化的全局变量
+int b1, b2, b3, b4, b5;
+
+//定义函数
+void MyFunc()
+{
+     //定义局部变量
+     int c1, c2, c3, c4, c5, c6, c7, c8, c9, c10;
+
+     //给局部变量赋值
+     c1 = 1;
+     c2 = 2;
+     c3 = 3;
+     c4 = 4;
+     c5 = 5;
+     c6 = 6;
+     c7 = 7;
+     c8 = 8;
+     c9 = 9;
+     c10 = 10;
+
+     //把局部变量的值赋给全局变量
+     a1 = c1;
+     a2 = c2;
+     a3 = c3;
+     a4 = c4;
+     a5 = c5;
+     b1 = c6;
+     b2 = c7;
+     b3 = c8;
+     b4 = c9;
+     b5 = c10;
+}
+```
+
+代码清单 10-7　代码清单 10-6 转换成汇编语言后的结果
+
+```
+_DATA  segment dword public use32 'DATA'--------------------┐
+_a1    label   dword ----------------------------------（4）│
+       dd      1 --------------------------------------（5）│
+_a2    label   dword                                        │
+       dd      2                                            │
+_a3    label   dword                                      （1）
+       dd      3                                            │
+_a4    label   dword                                        │
+       dd      4                                            │
+_a5    label   dword                                        │
+       dd      5                                            │
+_DATA  ends ------------------------------------------------┘
+
+_BSS   segment dword public use32 'BSS' --------------------┐
+_b1    label   dword                                        │
+       db      4 dup(?) -------------------------------（6）│
+_b2    label   dword                                        │
+       db      4 dup(?)                                     │
+_b3    label   dword                                      （2）
+       db      4 dup(?)                                     │
+_b4    label   dword                                        │
+       db      4 dup(?)                                     │
+_b5    label   dword                                        │
+       db      4 dup(?) ------------------------------------┘
+_BSS   ends
+
+_TEXT  segment dword public use32 'CODE' -------------------┐
+_MyFunc        proc    near ---------------------------┐   │
+       push      ebp                                   │   │
+       mov       ebp,esp ------------------------（11）│   │
+       add       esp,-20 ------------------------（10）│   │
+       push      ebx                                   │   │
+       push      esi                                   │   │
+       mov       eax,1 ---------------------------┐   │   │
+       mov       edx,2                            │   │   │
+       mov       ecx,3                          （8）  │   │
+       mov       ebx,4                            │   │   │
+       mov       esi,5 ---------------------------┘   │   │
+       mov       dword ptr [ebp-4],6 -------------┐   │   │
+       mov       dword ptr [ebp-8],7              │   │   │
+       mov       dword ptr [ebp-12],8           （9）  │   │
+       mov       dword ptr [ebp-16],9             │   │   │
+       mov       dword ptr [ebp-20],10 -----------┘   │   │
+       mov       dword ptr [_a1],eax                   │   │
+       mov       dword ptr [_a2],edx                   │   │
+       mov       dword ptr [_a3],ecx                 （7） （3）
+       mov       dword ptr [_a4],ebx                   │   │
+       mov       dword ptr [_a5],esi                   │   │
+       mov       eax,dword ptr [ebp-4]                 │   │
+       mov       dword ptr [_b1],eax                   │   │
+       mov       edx,dword ptr [ebp-8]                 │   │
+       mov       dword ptr [_b2],edx                   │   │
+       mov       ecx,dword ptr [ebp-12]                │   │
+       mov       dword ptr [_b3],ecx                   │   │
+       mov       eax,dword ptr [ebp-16]                │   │
+       mov       dword ptr [_b4],eax                   │   │
+       mov       edx,dword ptr [ebp-20]                │   │
+       mov       dword ptr [_b5],edx                   │   │
+       pop       esi                                   │   │
+       pop       ebx                                   │   │
+       mov       esp,ebp -----------------------（12） │   │
+       pop       ebp                                   │   │
+       ret                                             │   │
+_MyFunc        endp -----------------------------------┘   │
+_TEXT ends -------------------------------------------------┘
+
+```
+
+表 10-3　代码清单 10-7、10-9、10-12、10-14 中用到的汇编语言指令的功能
+
+操作码 | 操作数 | 功能
+----|-----|---
+add | A,B | 把A的值和B的值相加，并把结果存入A
+call | A | 调用函数A
+cmp | A,B | 对A和B的值进行比较，比较结果会自动存入标志寄存器中
+inc | A | A的值加1
+jge | 标签名 | 和cmp命令组合使用。跳转到标签行
+jl | 标签名 | 和cmp命令组合使用。跳转到标签行
+jle | 标签名 | 和cmp命令组合使用。跳转到标签行
+jmp | 标签名 | 将控制无条件跳转到指定标签行
+mov | A,B | 把B的值赋值给A
+pop | A | 从栈中读取出数值并存入A中
+push | A | 把A的值存入栈中
+ret | 无 | 将处理返回到调用源
+xor | A,B | A和B的位进行异或比较，并将结果存入A中
+
+编译后的程序，会被归类到名为`段定义`的组。初始化的全局变量，会像代码清单 10-7 的（1）那样被汇总到名为 `_DATA` 的段定义中，没有初始化的全局变量，会像（2）那样被汇总到名为 `_BSS` 的段定义中。指令则会像（3）那样被汇总到名为 `_TEXT` 的段定义中。
+
+### 10.10 临时确保局部变量用的内存空间
 
 
 
