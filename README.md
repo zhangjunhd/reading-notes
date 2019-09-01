@@ -299,7 +299,7 @@
     2.  [与机器赛跑](bussiness/ai/RaceAgainstTheMachine.md)
     3.  [智能时代](bussiness/ai/IntelligenceEra.md)
     4.  [科学的极致：漫谈人工智能](bussiness/ai/talk-ai.md)
-    5.  [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
+    5.  [人工智能狂潮](bussiness/ai/ai-torrent.md)
     6.  [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
     7.  [终极算法](http://note.youdao.com/noteshare?id=9bd15571010d82897a8754f06d09a1df)
     8.  [知识图谱行业分析](bussiness/startup/kg.md)
