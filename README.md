@@ -301,7 +301,7 @@
     4.  [科学的极致：漫谈人工智能](bussiness/ai/talk-ai.md)
     5.  [人工智能狂潮](bussiness/ai/ai-torrent.md)
     6.  [知识的边界](bussiness/ai/knowledge-boundary.md)
-    7.  [终极算法](http://note.youdao.com/noteshare?id=9bd15571010d82897a8754f06d09a1df)
+    7.  [终极算法](bussiness/ai/TheMasterAlgorithm.md)
     8.  [知识图谱行业分析](bussiness/ai/kg.md)
 9.  企业家精神
     1.  [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
