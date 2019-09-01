@@ -295,7 +295,7 @@
     1. [中国互联网广告生态](bussiness/advertising/internet-advertising-supply-chain-2014.md)
     2. [计算广告](advertising/computational_ad)
 8.  人工智能
-    1.  [人工智能的未来](http://note.youdao.com/noteshare?id=fbd15411b3ce9943b3f3e296440b1a94&sub=8C9CE5C546564E1B90B68529E40524E2)
+    1.  [人工智能的未来](bussiness/ai/OnIntelligence.md)
     2.  [与机器赛跑](http://note.youdao.com/noteshare?id=3bd43e726dd76b0d8230eb9d186c3934&sub=8196ECF808DB4010ACACC8AB307A3CEA)
     3.  [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
     4.  [科学的极致：漫谈人工智能](http://note.youdao.com/noteshare?id=9766fc1a0adccf237e3ff6254c948613&sub=03B8D2B3342B44B08EF14147C02DC5E0)
