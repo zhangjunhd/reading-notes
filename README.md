@@ -245,7 +245,7 @@
       4. [重来ReWork](bussiness/startup/rework.md)
       5. [刷新](bussiness/startup/hit-refresh.md)
    2. 项目管理
-      1. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
+      1. [OKR工作法](bussiness/management/okr.md)
    3. 创业
       1. [从0到1](bussiness/startup/zero_to_one.md)
       2. [创业时，不可不知的细节](bussiness/startup/details.md)
