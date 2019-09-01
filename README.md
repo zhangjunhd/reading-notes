@@ -32,6 +32,7 @@
    2. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
    3. [计算机是怎样跑起来的](intro/computer.md)
    4. [程序是怎样跑起来的](intro/program.md)
+   5. [网络是怎样连接的](intro/network.md)
 
 # 东方哲学
 1. 儒
