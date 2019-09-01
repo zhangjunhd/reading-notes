@@ -1,4 +1,4 @@
-![s29237441.jpg](http://note.youdao.com/yws/res/67833/WEBRESOURCE8a8e76e45894d884bdab743f1d029ea2)
+![s29237441.jpg](https://img3.doubanio.com/view/subject/l/public/s29237441.jpg)
 
     作者: [美] 佩德罗·多明戈斯 
     出版社: 中信出版集团
