@@ -223,7 +223,9 @@
    4. [如何高效学习](success/LearnMoreStudyLess.md)
 5. 沟通
    1. [蔡康永的说话之道](success/CaiKangYong.md)
-6. 价值
+6. 理财
+   1. [富爸爸，穷爸爸](http://note.youdao.com/noteshare?id=4792187d4563b5f13ce6285305a05a5b)
+7. 价值
    1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    2. [新生——七年就是一辈子](success/rebirth.md)
    3. [精进：如何成为一个很厉害的人](success/refinement.md)
@@ -232,9 +234,8 @@
    6. [请停止无效努力](success/please-stop-trying.md)
 
 # 商业
-1. 财经
+1. 财务
    1. [一本书读懂财报](http://note.youdao.com/noteshare?id=278355a3445618dfebfa785a4b861880)
-   2. [富爸爸，穷爸爸](http://note.youdao.com/noteshare?id=4792187d4563b5f13ce6285305a05a5b)
 2. 理论
    1. [维基经济学](bussiness/theory/wikinomics.md)
    2. [长尾理论2.0](bussiness/theory/long_tail.md)
