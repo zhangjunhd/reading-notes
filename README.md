@@ -225,7 +225,7 @@
 5. 沟通
    1. [蔡康永的说话之道](success/CaiKangYong.md)
 6. 理财
-   1. [富爸爸，穷爸爸](http://note.youdao.com/noteshare?id=4792187d4563b5f13ce6285305a05a5b)
+   1. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
 7. 价值
    1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    2. [新生——七年就是一辈子](success/rebirth.md)
