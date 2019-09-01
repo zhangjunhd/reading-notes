@@ -14,6 +14,17 @@
     丛书: 重来
     ISBN: 9787508623610
 
+- [Takedowns](#takedowns)
+- [Progress](#progress)
+- [Productivity](#productivity)
+- [Competitors](#competitors)
+- [Evolution](#evolution)
+- [Promotion](#promotion)
+- [Hiring](#hiring)
+- [Danger Control](#danger-control)
+- [Culture](#culture)
+- [Conclusion](#conclusion)
+
 ## Takedowns
 1. Ignore the real world 真实的世界不是一个地方,而是一个借口。是为什么也不尝试而辩护。这对你没有任何好处。
 2. Learning from mistakes is overrated(从错误里面学到东西被高估了)自然法则是确切的。进化不会逗留在过去的失败中,它总是基于已经成功的。你觉得呢?
