@@ -240,16 +240,16 @@
 2. 管理
    1. 企业管理
       1. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
+      2. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
+      3. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
+      4. [重来ReWork](bussiness/startup/rework.md)
+      5. [刷新](bussiness/startup/hit-refresh.md)
    2. 项目管理
       1. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
    3. 创业
       1. [从0到1](bussiness/startup/zero_to_one.md)
       2. [创业时，不可不知的细节](bussiness/startup/details.md)
-      3. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
-      4. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
-      5. [重来ReWork](bussiness/startup/rework.md)
-      6. [刷新](bussiness/startup/hit-refresh.md)
-      7. [重新理解创业](bussiness/startup/rethink-startup.md)
+      3. [重新理解创业](bussiness/startup/rethink-startup.md)
 3. 趋势
    1. [维基经济学](bussiness/theory/wikinomics.md)
    2. [长尾理论2.0](bussiness/theory/long_tail.md)
