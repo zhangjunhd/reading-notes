@@ -240,12 +240,15 @@
 2. 管理
    1. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
    2. [OKR工作法](http://note.youdao.com/noteshare?id=1f2c8462bf4971c3d7b78f405656f0d2)
-3. 理论
+3. 趋势
    1. [维基经济学](bussiness/theory/wikinomics.md)
    2. [长尾理论2.0](bussiness/theory/long_tail.md)
    3. [技术的本质](bussiness/theory/TheNatureOfTechnology.md)
    4. [链接](bussiness/theory/linked.md)
    5. [重塑-信息经济的结构](http://note.youdao.com/noteshare?id=831a7bdbec54230eb70c0005e3d4db78)
+   6. 凯文·凯利
+      1. [必然](bussiness/kk/The-Inevitable.md)
+      2. [新经济，新规则](bussiness/kk/NewRulesForTheNewEconomy.md)
 4. 创业
    1. [从0到1](bussiness/startup/zero_to_one.md)
    2. [创业时，不可不知的细节](bussiness/startup/details.md)
@@ -258,10 +261,7 @@
    1. [隐形VISA](bussiness/model/visa.md)
    2. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
    3. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
-6. 凯文·凯利
-   1. [必然](bussiness/kk/The-Inevitable.md)
-   2. [新经济，新规则](bussiness/kk/NewRulesForTheNewEconomy.md)
-7. 传媒
+6. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
       2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
@@ -287,12 +287,12 @@
    5.  CMS
        1. [Vox Media调研](bussiness/cms/vox-media.md)
        2. [Web Content Management](bussiness/cms/cms.md)
-8.  营销
+7.  营销
     1.  [定位](bussiness/marketing/positioning.md)
-9.  广告
+8.  广告
     1. [中国互联网广告生态](bussiness/advertising/internet-advertising-supply-chain-2014.md)
     2. [计算广告](advertising/computational_ad)
-10. 人工智能
+9.  人工智能
     1.  [人工智能的未来](http://note.youdao.com/noteshare?id=fbd15411b3ce9943b3f3e296440b1a94&sub=8C9CE5C546564E1B90B68529E40524E2)
     2.  [与机器赛跑](http://note.youdao.com/noteshare?id=3bd43e726dd76b0d8230eb9d186c3934&sub=8196ECF808DB4010ACACC8AB307A3CEA)
     3.  [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
@@ -301,7 +301,7 @@
     6.  [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
     7.  [终极算法](http://note.youdao.com/noteshare?id=9bd15571010d82897a8754f06d09a1df)
     8.  [知识图谱行业分析](bussiness/startup/kg.md)
-11. 企业家
+10. 企业家
     1.  [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
     2.  [企业家](bussiness/entrepreneur/entrepreneur.md)
 
