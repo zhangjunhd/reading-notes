@@ -297,7 +297,7 @@
 8.  人工智能
     1.  [人工智能的未来](bussiness/ai/OnIntelligence.md)
     2.  [与机器赛跑](bussiness/ai/RaceAgainstTheMachine.md)
-    3.  [智能时代](http://note.youdao.com/noteshare?id=c9f8ff4e1cde9594900edcf78cd2671b&sub=6AADBB0F1C6E4F2BB8017C76A9AF0144)
+    3.  [智能时代](bussiness/ai/IntelligenceEra.md)
     4.  [科学的极致：漫谈人工智能](http://note.youdao.com/noteshare?id=9766fc1a0adccf237e3ff6254c948613&sub=03B8D2B3342B44B08EF14147C02DC5E0)
     5.  [人工智能狂潮](http://note.youdao.com/noteshare?id=92cd17dc4a67ac4cfa6540c44661972e&sub=15D288909B784464A667AC28BD8716F8)
     6.  [知识的边界](http://note.youdao.com/noteshare?id=34c1f31d8de4da895fe8856b523c7d20&sub=E1D0A4752B1D4A58830EA444C282D02D)
