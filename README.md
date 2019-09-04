@@ -239,7 +239,7 @@
    1. [一本书读懂财报](bussiness/finance/OneBookLearnFinancialReport.md)
 2. 管理
    1. 企业管理
-      1. [第五项修炼](http://note.youdao.com/noteshare?id=eaecd3ec032c0e04d552888f253e320c&sub=7ECA1EEA425F47E89A22060B16D67755)
+      1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
       2. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
       3. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
       4. [重来ReWork](bussiness/startup/rework.md)
