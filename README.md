@@ -28,11 +28,12 @@
    2. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
    3. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
 3. 信息技术
+   1. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
+   2. [计算机是怎样跑起来的](intro/computer.md)
+   3. [程序是怎样跑起来的](intro/program.md)
+   4. [网络是怎样连接的](intro/network.md)
+4. 数学
    1. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
-   2. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
-   3. [计算机是怎样跑起来的](intro/computer.md)
-   4. [程序是怎样跑起来的](intro/program.md)
-   5. [网络是怎样连接的](intro/network.md)
 
 # 东方哲学
 1. 儒
