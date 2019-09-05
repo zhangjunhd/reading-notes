@@ -326,7 +326,7 @@
    5. [硝烟中的Scrum和XP](http://note.youdao.com/noteshare?id=9b22b4103e0e8af34d90fe0e1b208cd6&sub=BF7B9F63B3C44ADDA05122F150156DED)
       - [Scrum概念](pm/management/scrum.md)
    6. [Apprenticeship Patterns](pm/management/ApprenticeshipPatterns.md)
-   7. [微软的软件测试之道](http://note.youdao.com/noteshare?id=372d1df81b977d3061cd022d915873ed)
+   7. [微软的软件测试之道](pm/management/MicrosoftTest.md)
 4. 设计
    1. [平面排版基本的基本](design/graphic_design.md)
    2. [写给大家看的设计书（第3版）](http://note.youdao.com/noteshare?id=c66e7c3796bc882aefb55f95768fa0b7)
