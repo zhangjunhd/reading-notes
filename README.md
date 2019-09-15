@@ -245,6 +245,7 @@
       3. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
       4. [重来ReWork](bussiness/startup/rework.md)
       5. [刷新](bussiness/startup/hit-refresh.md)
+      6. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
    2. 项目管理
       1. [OKR工作法](bussiness/management/okr.md)
    3. 创业
