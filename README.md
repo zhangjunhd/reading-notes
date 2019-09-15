@@ -2,6 +2,7 @@
 - [东方哲学](#%e4%b8%9c%e6%96%b9%e5%93%b2%e5%ad%a6)
 - [西方哲学](#%e8%a5%bf%e6%96%b9%e5%93%b2%e5%ad%a6)
 - [历史](#%e5%8e%86%e5%8f%b2)
+- [政治](#%e6%94%bf%e6%b2%bb)
 - [文学](#%e6%96%87%e5%ad%a6)
 - [经济金融](#%e7%bb%8f%e6%b5%8e%e9%87%91%e8%9e%8d)
 - [艺术](#%e8%89%ba%e6%9c%af)
@@ -86,18 +87,16 @@
 4. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
 5. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
 6. [康德三大批判合集](western_philosophy/kant.md)
-7. [常识](western_philosophy/CommonSense.md)
-8.  [身份的焦虑](western_philosophy/status-anxiety.md)
-9.  [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
-10. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-11. [论自然](western_philosophy/nature.md)
-12. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
+7. [身份的焦虑](western_philosophy/status-anxiety.md)
+8. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
+9.  [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
+10. [论自然](western_philosophy/nature.md)
+11. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
 
 # 历史
 1. 社会学
-   1. [有闲阶级论](history/The-Theory-of-the-Leisure-Class.md)
-   2. [第4消费时代](history/4th-consumerist.md)
-   3. [乌合之众](history/Psychologie-des-Foules.md)
+   1. [第4消费时代](history/4th-consumerist.md)
+   2. [乌合之众](history/Psychologie-des-Foules.md)
 2. 人类学
     1. [人类简史](history/A-brief-history-of-humankind.md)
     2. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
@@ -106,10 +105,7 @@
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
    3. [创新简史](history/A-brief-history-of-innovation.md)
-4. 政治学
-   1. [世界秩序](history/WorldOrder.md)
-   2. [看世界](history/see-the-world.md)
-5. 中国史
+4. 中国史
    1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
    2. [万历十五年](history/1587.md)
    3. [乡土中国](history/native-china.md)
@@ -117,7 +113,11 @@
    5. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
    6. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
-
+# 政治
+1. [常识](western_philosophy/CommonSense.md)
+2. [有闲阶级论](history/The-Theory-of-the-Leisure-Class.md)
+3. [世界秩序](history/WorldOrder.md)
+4. [看世界](history/see-the-world.md)
 
 # 文学
 1. 木心文学回忆录
