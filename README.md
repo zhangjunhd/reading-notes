@@ -242,10 +242,10 @@
    1. 企业管理
       1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
       2. [重新定义公司](bussiness/management/HowGoogleWorks.md)
-      3. [周鸿祎自述-我的互联网方法论](bussiness/startup/zhou_hong_yi.md)
-      4. [互联网+小米案例版](bussiness/startup/internet_plus_xiaomi.md)
-      5. [重来ReWork](bussiness/startup/rework.md)
-      6. [刷新](bussiness/startup/hit-refresh.md)
+      3. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
+      4. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
+      5. [重来ReWork](bussiness/management/rework.md)
+      6. [刷新](bussiness/management/hit-refresh.md)
       7. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
    2. 项目管理
       1. [OKR工作法](bussiness/management/okr.md)
