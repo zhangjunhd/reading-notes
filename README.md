@@ -114,10 +114,10 @@
    6. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 # 政治
-1. [常识](western_philosophy/CommonSense.md)
-2. [有闲阶级论](history/The-Theory-of-the-Leisure-Class.md)
-3. [世界秩序](history/WorldOrder.md)
-4. [看世界](history/see-the-world.md)
+1. [常识](politics/CommonSense.md)
+2. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
+3. [世界秩序](politics/WorldOrder.md)
+4. [看世界](politics/see-the-world.md)
 
 # 文学
 1. 木心文学回忆录
