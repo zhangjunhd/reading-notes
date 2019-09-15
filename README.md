@@ -251,8 +251,9 @@
    3. 创业
       1. [从0到1](bussiness/startup/zero_to_one.md)
       2. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
-      3. [创业时，不可不知的细节](bussiness/startup/details.md)
-      4. [重新理解创业](bussiness/startup/rethink-startup.md)
+      3. [精益创业](bussiness/startup/TheLeanStartup.md)
+      4. [创业时，不可不知的细节](bussiness/startup/details.md)
+      5. [重新理解创业](bussiness/startup/rethink-startup.md)
 3. 趋势
    1. [维基经济学](bussiness/theory/wikinomics.md)
    2. [长尾理论2.0](bussiness/theory/long_tail.md)
