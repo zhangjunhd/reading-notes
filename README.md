@@ -247,6 +247,7 @@
       5. [重来ReWork](bussiness/management/rework.md)
       6. [刷新](bussiness/management/hit-refresh.md)
       7. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
+      8. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
    2. 项目管理
       1. [OKR工作法](bussiness/management/okr.md)
    3. 创业
