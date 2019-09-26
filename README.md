@@ -34,7 +34,8 @@
    3. [程序是怎样跑起来的](intro/program.md)
    4. [网络是怎样连接的](intro/network.md)
 4. 数学
-   1. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
+   1. [黑天鹅](math/TheBlackSwan.md)
+   2. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
 
 # 东方哲学
 1. 儒
@@ -348,15 +349,14 @@
 
 # 数学
 1. 统计学
-   1. [黑天鹅](http://note.youdao.com/noteshare?id=cf4830583e5cd9f3cb15de2f7e4689e7&sub=092BBB9CE91C4DB1A59438EA33558734)
-   2. [简单统计学](data/StandardDeviations.md)
-   3. [精益数据分析](data/LeanAnalytics.md)
-   4. [统计与真理](http://note.youdao.com/noteshare?id=1e4a6bd6698b062fea6b864877f8d484&sub=EAA7075E403749A1ACA602CEC7BB1190)
-   5. [机会的数学](http://note.youdao.com/noteshare?id=1ec5a2f2692d95fb80ff732ea6291bec&sub=6D7ECF2761EA4BEE87CBFCD79D47ABC0)
-   6. [赤裸裸的统计学](http://note.youdao.com/noteshare?id=5d965905fe0cc4c4c396296ee8be69a4&sub=B1EF50FF26A24C84B8AF87D0C37D6E15)
-   7. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
-   8. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
-   9. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
-   10. [行为科学统计](data/StatisticsForTheBehavioralSciences)
-1. 线性代数
+   1. [简单统计学](data/StandardDeviations.md)
+   2. [精益数据分析](data/LeanAnalytics.md)
+   3. [统计与真理](http://note.youdao.com/noteshare?id=1e4a6bd6698b062fea6b864877f8d484&sub=EAA7075E403749A1ACA602CEC7BB1190)
+   4. [机会的数学](http://note.youdao.com/noteshare?id=1ec5a2f2692d95fb80ff732ea6291bec&sub=6D7ECF2761EA4BEE87CBFCD79D47ABC0)
+   5. [赤裸裸的统计学](http://note.youdao.com/noteshare?id=5d965905fe0cc4c4c396296ee8be69a4&sub=B1EF50FF26A24C84B8AF87D0C37D6E15)
+   6. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
+   7. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
+   8. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
+   9.  [行为科学统计](data/StatisticsForTheBehavioralSciences)
+2. 线性代数
    1. [线性代数及其应用](http://note.youdao.com/noteshare?id=8e5a09eca90cf66ebd91525954a130f7&sub=E28E75F53DDF403E85D91FED5D701611)
