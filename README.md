@@ -36,7 +36,8 @@
 4. 数学
    1. [黑天鹅](math/TheBlackSwan.md)
    2. [统计与真理](math/StatisticsAndTruth.md)
-   3. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
+   3. [机会的数学](math/OpportunisticMath.md)
+   4. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
 
 # 东方哲学
 1. 儒
@@ -352,11 +353,10 @@
 1. 统计学
    1. [简单统计学](data/StandardDeviations.md)
    2. [精益数据分析](data/LeanAnalytics.md)
-   3. [机会的数学](http://note.youdao.com/noteshare?id=1ec5a2f2692d95fb80ff732ea6291bec&sub=6D7ECF2761EA4BEE87CBFCD79D47ABC0)
-   4. [赤裸裸的统计学](http://note.youdao.com/noteshare?id=5d965905fe0cc4c4c396296ee8be69a4&sub=B1EF50FF26A24C84B8AF87D0C37D6E15)
-   5. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
-   6. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
-   7. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
-   8.  [行为科学统计](data/StatisticsForTheBehavioralSciences)
+   3. [赤裸裸的统计学](http://note.youdao.com/noteshare?id=5d965905fe0cc4c4c396296ee8be69a4&sub=B1EF50FF26A24C84B8AF87D0C37D6E15)
+   4. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
+   5. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
+   6. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
+   7.  [行为科学统计](data/StatisticsForTheBehavioralSciences)
 2. 线性代数
    1. [线性代数及其应用](http://note.youdao.com/noteshare?id=8e5a09eca90cf66ebd91525954a130f7&sub=E28E75F53DDF403E85D91FED5D701611)
