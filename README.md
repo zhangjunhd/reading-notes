@@ -25,7 +25,7 @@
       2. [福柯](A-Very-Short-Introductions/Foucault.md)
       3. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
 2. 世界观
-   1. [时间简史](http://note.youdao.com/noteshare?id=00354b2dd05bed1d331e967494e02ef3)
+   1. [时间简史](world_view/A-Brief-History-of-Time.md)
    2. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
    3. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
 3. 信息技术
