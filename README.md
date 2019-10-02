@@ -29,7 +29,7 @@
    2. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
    3. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
 3. 信息技术
-   1. [信息简史](http://note.youdao.com/noteshare?id=a73a8b88cf73cd9483191cce968986b2)
+   1. [信息简史](info/TheInformation.md)
    2. [计算机是怎样跑起来的](intro/computer.md)
    3. [程序是怎样跑起来的](intro/program.md)
    4. [网络是怎样连接的](intro/network.md)
