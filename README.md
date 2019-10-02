@@ -47,19 +47,18 @@
     5. [人工智能狂潮](bussiness/ai/ai-torrent.md)
     6. [知识的边界](bussiness/ai/knowledge-boundary.md)
     7. [终极算法](bussiness/ai/TheMasterAlgorithm.md)
-    8. [知识图谱行业分析](bussiness/ai/kg.md)
 
 # 东方哲学
 1. 儒
     1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
-    1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
-    1. [论语译注](eastern_philosophy/lun_yu_yi_zhu.md)
-    1. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
-    1. [传习录](eastern_philosophy/chuan_xi_lu.md)
-    1. [王阳明心学](eastern_philosophy/wang-yang-ming-xin-xue.md)
-    1. [曾国藩家书](eastern_philosophy/zen_guo_fan_letter.md)
-    2. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
-    3. 梁漱溟
+    2. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
+    3. [论语译注](eastern_philosophy/lun_yu_yi_zhu.md)
+    4. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
+    5. [传习录](eastern_philosophy/chuan_xi_lu.md)
+    6. [王阳明心学](eastern_philosophy/wang-yang-ming-xin-xue.md)
+    7. [曾国藩家书](eastern_philosophy/zen_guo_fan_letter.md)
+    8. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
+    9. 梁漱溟
         1. [中国最后一个大儒](eastern_philosophy/liang_shu_min.md)
         2. [这个世界会好吗-梁漱溟晚年口述](eastern_philosophy/liang_shu_min_wan_nian_kou_shu.md)
         3. [人生的三路向:宗教、道德与人生](eastern_philosophy/ren_sheng_de_san_lu_xiang.md)
@@ -282,6 +281,7 @@
    1. [隐形VISA](bussiness/model/visa.md)
    2. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
    3. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
+   4. [知识图谱行业分析](bussiness/model/kg.md)
 5. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
