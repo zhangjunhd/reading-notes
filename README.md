@@ -38,7 +38,7 @@
    2. [简单统计学](math/StandardDeviations.md)
    3. [统计与真理](math/StatisticsAndTruth.md)
    4. [机会的数学](math/OpportunisticMath.md)
-   5. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
+   5. [数学之美](math/MathBeauty.md)
 5. 人工智能
     1. [人工智能的未来](ai/OnIntelligence.md)
     2. [与机器赛跑](ai/RaceAgainstTheMachine.md)
