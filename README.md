@@ -86,6 +86,7 @@
 1. 概论
    1. [苏菲的世界](western_philosophy/SophieWorld.md)
    2. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
+   3. [大众哲学](western_philosophy/PublicPhilosophy.md)
 2. 叔本华
    1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
    2. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
