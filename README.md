@@ -124,7 +124,8 @@
    3. [乡土中国](history/native-china.md)
    4. [中国大历史-黄仁宇版](history/big-history.md)
    5. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
-   6. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+   6. [毛泽东传](history/Mao.md)
+   7. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 # 政治
 1. [常识](politics/CommonSense.md)
