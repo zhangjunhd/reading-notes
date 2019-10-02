@@ -39,6 +39,15 @@
    3. [统计与真理](math/StatisticsAndTruth.md)
    4. [机会的数学](math/OpportunisticMath.md)
    5. [数学之美](http://note.youdao.com/noteshare?id=46f0e48ed3a8ef00e27dfce4ab34abb4&sub=5DCFF373C4F24DD38C580110F0E01352)
+5. 人工智能
+    1. [人工智能的未来](bussiness/ai/OnIntelligence.md)
+    2. [与机器赛跑](bussiness/ai/RaceAgainstTheMachine.md)
+    3. [智能时代](bussiness/ai/IntelligenceEra.md)
+    4. [科学的极致：漫谈人工智能](bussiness/ai/talk-ai.md)
+    5. [人工智能狂潮](bussiness/ai/ai-torrent.md)
+    6. [知识的边界](bussiness/ai/knowledge-boundary.md)
+    7. [终极算法](bussiness/ai/TheMasterAlgorithm.md)
+    8. [知识图谱行业分析](bussiness/ai/kg.md)
 
 # 东方哲学
 1. 儒
@@ -304,16 +313,7 @@
 7.  广告
     1. [中国互联网广告生态](bussiness/advertising/internet-advertising-supply-chain-2014.md)
     2. [计算广告](advertising/computational_ad)
-8.  人工智能
-    1.  [人工智能的未来](bussiness/ai/OnIntelligence.md)
-    2.  [与机器赛跑](bussiness/ai/RaceAgainstTheMachine.md)
-    3.  [智能时代](bussiness/ai/IntelligenceEra.md)
-    4.  [科学的极致：漫谈人工智能](bussiness/ai/talk-ai.md)
-    5.  [人工智能狂潮](bussiness/ai/ai-torrent.md)
-    6.  [知识的边界](bussiness/ai/knowledge-boundary.md)
-    7.  [终极算法](bussiness/ai/TheMasterAlgorithm.md)
-    8.  [知识图谱行业分析](bussiness/ai/kg.md)
-9.  企业家精神
+8.  企业家精神
     1.  [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
     2.  [企业家](bussiness/entrepreneur/entrepreneur.md)
 
