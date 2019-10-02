@@ -26,7 +26,7 @@
       3. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
 2. 物理学
    1. [时间简史](physics/A-Brief-History-of-Time.md)
-   2. [上帝掷骰子吗-量子物理史话](http://note.youdao.com/noteshare?id=3f91296ed64b9f8ef2f028fdcec0db45)
+   2. [上帝掷骰子吗-量子物理史话](physics/QuantumPhysicsHistory.md)
    3. [现实不似你所见](http://note.youdao.com/noteshare?id=4bc6ce2ff1c150ca3970ef72081ebf53)
 3. 信息学
    1. [信息简史](info/TheInformation.md)
