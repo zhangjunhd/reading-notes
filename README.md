@@ -119,14 +119,15 @@
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
    3. [创新简史](history/A-brief-history-of-innovation.md)
-4. 中国史
+4. 中国古代史
+   1. [万历十五年](history/1587.md)
+   2. [乡土中国](history/native-china.md)
+   3. [中国大历史-黄仁宇版](history/big-history.md)
+   4. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
+5. 中国近代史
    1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
-   2. [万历十五年](history/1587.md)
-   3. [乡土中国](history/native-china.md)
-   4. [中国大历史-黄仁宇版](history/big-history.md)
-   5. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
-   6. [毛泽东传](history/Mao.md)
-   7. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+   2. [毛泽东传](history/Mao.md)
+   3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 # 政治
 1. [常识](politics/CommonSense.md)
