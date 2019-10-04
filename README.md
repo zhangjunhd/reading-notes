@@ -48,6 +48,7 @@
     5. [人工智能狂潮](ai/ai-torrent.md)
     6. [知识的边界](ai/knowledge-boundary.md)
     7. [终极算法](ai/TheMasterAlgorithm.md)
+    8. [人类的终极命运](ai/InOurOwnImage.md)
 
 # 东方哲学
 1. 儒
