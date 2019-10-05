@@ -49,6 +49,7 @@
     6. [知识的边界](ai/knowledge-boundary.md)
     7. [终极算法](ai/TheMasterAlgorithm.md)
     8. [人类的终极命运](ai/InOurOwnImage.md)
+    9. [暗知识](ai/DarkKnowledge.md)
 
 # 东方哲学
 1. 儒
