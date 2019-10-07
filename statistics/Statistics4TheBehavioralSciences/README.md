@@ -63,7 +63,7 @@
   - 无偏估计与有偏估计
 
 ## 推论性统计
-- [z分数](z-score.ipynb)
+- [z分数](z-score.md)
 - [概率](probability.ipynb)
     - 随机样本
     - 正态分布
