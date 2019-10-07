@@ -15,7 +15,7 @@
 [豆瓣链接](https://book.douban.com/subject/3171735/)
 
 - 描述性统计
-    - [变异性](variance.ipynb)
+    - [变异性](variance.md)
         - 全矩和四分位距
         - 总体的方差和标准差
         - 样本的方差和标准差
