@@ -86,7 +86,7 @@
   - 标准误的进一步讨论
 
 ## 平均数差异推论
-- [假设检验](hypothesis-testing.ipynb)
+- [假设检验](hypothesis-testing.md)
     - 虚无假设
     - 备择假设
     - α水平
