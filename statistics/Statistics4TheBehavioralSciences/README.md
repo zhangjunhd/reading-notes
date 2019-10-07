@@ -14,6 +14,7 @@
 
 [豆瓣链接](https://book.douban.com/subject/3171735/)
 
+## 描述性统计
 - [统计学入门](intro.md)
   - 统计、科学与观察
   - 总体与样本
@@ -52,42 +53,47 @@
   - 集中趋势与分布形状
     - 对称分布
     - 偏态分布
-- 描述性统计
-    - [变异性](variance.md)
-        - 全矩和四分位距
-        - 总体的方差和标准差
-        - 样本的方差和标准差
-        - 无偏估计与有偏估计
-- 推论性统计
-    - [z分数](z-score.ipynb)
-    - [概率](probability.ipynb)
-        - 随机样本
-        - 正态分布
-        - 二项分布
-        - 推论统计
-    - [概率和样本：样本平均数的分布](sample.ipynb)
-        - 中心极限定理
-        - 标准误
-- 平均数差异推论
-    - [假设检验](hypothesis-testing.ipynb)
-        - 虚无假设
-        - 备择假设
-        - α水平
-        - z分数
-        - 第一类误差
-        - 第二类误差
-        - 显著效应
-        - 科恩d值
-    - [t分数](t-score.ipynb)
-    - [两个独立样本的t检验](2independent-sample-t-score.ipynb)
-    - [两个相关样本的t检验](2relevent-sample-t-score.ipynb)
-    - [估计](estimation.ipynb)
-    - [方差分析](anova.ipynb)
-    - [重复测量方差分析](repeat-anova.ipynb)
-    - [双因素方差分析（独立测量）](independent-test-anova.ipynb)
-- 相关与非参数检验
-    - [相关](relevance.ipynb)
-    - [回归](regression.ipynb)
-    - [卡方检验：拟合度与独立性检验][54]
-    - [二项检验][55]
-    - [顺序数据的统计方法][56]
+- [变异性](variance.md)
+  - 概述
+  - 全矩和四分位距
+  - 总体的方差和标准差
+    - 总体方差及标准差的公式
+    - 方差及标准差
+  - 样本的方差和标准差
+  - 无偏估计与有偏估计
+
+## 推论性统计
+- [z分数](z-score.ipynb)
+- [概率](probability.ipynb)
+    - 随机样本
+    - 正态分布
+    - 二项分布
+    - 推论统计
+- [概率和样本：样本平均数的分布](sample.ipynb)
+    - 中心极限定理
+    - 标准误
+
+## 平均数差异推论
+- [假设检验](hypothesis-testing.ipynb)
+    - 虚无假设
+    - 备择假设
+    - α水平
+    - z分数
+    - 第一类误差
+    - 第二类误差
+    - 显著效应
+    - 科恩d值
+- [t分数](t-score.ipynb)
+- [两个独立样本的t检验](2independent-sample-t-score.ipynb)
+- [两个相关样本的t检验](2relevent-sample-t-score.ipynb)
+- [估计](estimation.ipynb)
+- [方差分析](anova.ipynb)
+- [重复测量方差分析](repeat-anova.ipynb)
+- [双因素方差分析（独立测量）](independent-test-anova.ipynb)
+
+## 相关与非参数检验
+- [相关](relevance.ipynb)
+- [回归](regression.ipynb)
+- [卡方检验：拟合度与独立性检验][54]
+- [二项检验][55]
+- [顺序数据的统计方法][56]
