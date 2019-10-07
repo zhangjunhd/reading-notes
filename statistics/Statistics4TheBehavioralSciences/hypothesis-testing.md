@@ -44,21 +44,19 @@ z=得到的差异/偶然引起的差异
 #### 第二类误差
 `第二类误差`发生在当研究者不能拒绝一个错误的虚无假设时。在典型的研究中，第二类误差意味着假设检验不能检测出真正的处理效应。-`假阴性`
 
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-25/11878068.jpg)
+![](hypothesis-testing2.png)
 
 #### 选择α水平
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-25/36425130.jpg)
+![](hypothesis-testing3.png)
 
 #### 假设检验的例子
+![](hypothesis-testing4.png)
+![](hypothesis-testing5.png)
+![](hypothesis-testing6.png)
+
 如果当虚无假设是正确的情况下，一个结果非常不可能出现，那么，这个结果就被称为是`显著的`或统计上显著的，即效应充分到足以拒绝虚无假设。因此，如果假设检验的判定是拒绝H0，那么处理`有显著效应`。
 
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-25/66139813.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-25/57420659.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-25/48571345.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-25/74140716.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-25/25256589.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-25/90924075.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-25/51756215.jpg)
+![](hypothesis-testing7.png)
 
 ### 方向性（单尾）假设检验
 在方向性检验，或`单尾检验`中，统计假设（H0和H1）规定了总体平均数的增加或减少，即它们作出关于效应方向的陈述。
