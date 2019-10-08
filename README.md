@@ -102,6 +102,7 @@
    5. [存在主义心理治疗](psychology/Existential-Psychology.md)
 4. 辩证法
    1. [大众哲学](western_philosophy/PublicPhilosophy.md)
+   2. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
 5. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
 6. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
 7. [康德三大批判合集](western_philosophy/kant.md)
