@@ -97,7 +97,7 @@
   - 方向性（单尾）假设检验
   - 关于假设检验：测量效应大小（科恩d值）
   - 统计效能
-- [t分数](t-score.ipynb)
+- [t分数](t-score.md)
 - [两个独立样本的t检验](2independent-sample-t-score.ipynb)
 - [两个相关样本的t检验](2relevent-sample-t-score.ipynb)
 - [估计](estimation.ipynb)
