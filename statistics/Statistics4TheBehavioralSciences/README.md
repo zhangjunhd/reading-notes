@@ -98,6 +98,16 @@
   - 关于假设检验：测量效应大小（科恩d值）
   - 统计效能
 - [t分数](t-score.md)
+  - t分数——代替z分数的一种方法
+    - 自由度
+  - 假设检验和t分数
+    - 过程与步骤
+    - 假设检验的例子
+    - 有关t检验的假设
+  - t检验中效应大小的测量
+    - 估算科恩d值
+    - $r^2$值
+  - 方向性假设与单尾检验
 - [两个独立样本的t检验](2independent-sample-t-score.ipynb)
 - [两个相关样本的t检验](2relevent-sample-t-score.ipynb)
 - [估计](estimation.ipynb)
