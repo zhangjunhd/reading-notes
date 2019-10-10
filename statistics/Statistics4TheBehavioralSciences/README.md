@@ -108,7 +108,7 @@
     - 估算科恩d值
     - $r^2$值
   - 方向性假设与单尾检验
-- [两个独立样本的t检验](2independent-sample-t-score.ipynb)
+- [两个独立样本的t检验](2independent-sample-t-score.md)
 - [两个相关样本的t检验](2relevent-sample-t-score.ipynb)
 - [估计](estimation.ipynb)
 - [方差分析](anova.ipynb)
