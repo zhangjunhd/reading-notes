@@ -62,14 +62,11 @@ $\mu_D=M_D \pm t_{s_{M_D}}\ (12.4)$
 ![](estimation6.png)
 
 #### 独立测量研究中对μ1-μ2的估计
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/66580067.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/5807795.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/86728059.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/3574181.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/81170086.jpg)
+![](estimation7.png)
+![](estimation8.png)
+![](estimation9.png)
 
 #### 重复测量研究中对μD的估计
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/48985596.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/73468178.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/25649339.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/80351387.jpg)
+![](estimation10.png)
+![](estimation11.png)
+![](estimation12.png)
