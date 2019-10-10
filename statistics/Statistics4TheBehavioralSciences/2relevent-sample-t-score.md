@@ -58,9 +58,9 @@ t=(样本统计量-总体参数)/估计标准误
 
 ### 重复测量设计的假设检验和效应大小
 #### 重复测量t检验例子
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/44383993.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/55515196.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/40689033.jpg)
+![](2relevent-sample-t-score2.png)
+![](2relevent-sample-t-score3.png)
+![](2relevent-sample-t-score4.png)
 
 #### 重复测量t检验的效应大小
 我们能够估计d值如下：
