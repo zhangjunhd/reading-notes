@@ -139,7 +139,7 @@
     - 单样本研究中对μ的估计
     - 独立测量研究中对μ1-μ2的估计
     - 重复测量研究中对μD的估计
-- [方差分析](anova.ipynb)
+- [方差分析](anova.md)
 - [重复测量方差分析](repeat-anova.ipynb)
 - [双因素方差分析（独立测量）](independent-test-anova.ipynb)
 
