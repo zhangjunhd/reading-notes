@@ -54,10 +54,12 @@ $\mu_1-\mu_2=M_1-M_2 \pm t_{s_{M_1-M_2}}\ (12.3)$
 $\mu_D=M_D \pm t_{s_{M_D}}\ (12.4)$
 
 #### 单样本研究中对μ的估计
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/41426605.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/69167980.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/23721064.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/35322282.jpg)
+例12.1
+
+![](estimation3.png)
+![](estimation4.png)
+![](estimation5.png)
+![](estimation6.png)
 
 #### 独立测量研究中对μ1-μ2的估计
 ![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/66580067.jpg)
