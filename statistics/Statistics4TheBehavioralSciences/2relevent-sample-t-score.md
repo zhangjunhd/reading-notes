@@ -80,8 +80,8 @@ $r^2=\frac{t^2}{t^2+df}=\frac{(4.47)^2}{(4.47)^2+4}=0.833$或83.3%
 对于这些数据，差值的方差83.3%是由放松训练的效应解释的。
 
 #### 方向性假设与单尾检验
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/72747304.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/24081469.jpg)
+![](2relevent-sample-t-score5.png)
+![](2relevent-sample-t-score6.png)
 
 ### 相关样本t检验的应用与假设
 相关样本的t检验要求两个假设：
