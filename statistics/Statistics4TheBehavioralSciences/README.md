@@ -123,7 +123,17 @@
   - 独立测量t分数公式的根本假设
     - Hartley检验
 - [两个相关样本的t检验](2relevent-sample-t-score.md)
-- [估计](estimation.ipynb)
+  - 概述（重复测量与匹配被试）
+  - 相关样本t检验
+    - 差值：相关样本研究的数据
+    - 相关样本检验的假设
+    - 相关样本t检验
+  - 重复测量设计的假设检验和效应大小
+    - 重复测量t检验例子
+    - 重复测量t检验的效应大小
+    - 方向性假设与单尾检验
+  - 相关样本t检验的应用与假设
+- [估计](estimation.md)
 - [方差分析](anova.ipynb)
 - [重复测量方差分析](repeat-anova.ipynb)
 - [双因素方差分析（独立测量）](independent-test-anova.ipynb)
