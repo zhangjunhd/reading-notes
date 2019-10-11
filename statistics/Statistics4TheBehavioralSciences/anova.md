@@ -225,11 +225,13 @@ $F=\frac{MS_{between}}{MS_{error}}\ (13.13)$
 ![](anova9.png)
 
 ### ANOVA中假设检验和效应大小的例子
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/42718151.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/63001290.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/7962779.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/26998967.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/69594290.jpg)
+例13.1 表13.4描述的是一个测量三种止痛药（A、B和C）功效的独立测量实验的数据。第四组用的是安慰剂，同时也接受了检验。
+
+![](anova10.png)
+![](anova11.png)
+![](anova12.png)
+![](anova13.png)
+![](anova14.png)
 
 #### 效应大小
 对于方差分析，最简单和最直接的测量效应大小的方法是计算$r^2$，它是能够被解释的方差的百分比。简单地说，$r^2$测量了可以由处理间差异解释的分数间的差异是多大。对于方差分析，$r^2$的计算和概念是非常简单的。
@@ -250,10 +252,10 @@ $SS_{between}$测量的是由处理间差异解释的变异性，$SS_{total}$测
 $MS_{error}=\frac{SS_{error}}{df_{error}}=\frac{\sum{SS}}{\sum{df}}=\frac{SS_1+SS_2+SS_3+......}{df_1+df_2+df_3+......}$
 
 #### 样本大小不相等例子
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/43473777.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/51468434.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/28691369.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/75990444.jpg)
+![](anova15.png)
+![](anova16.png)
+![](anova17.png)
+![](anova18.png)
 
 ### 事后比较
 如同前面提到的，ANOVA的最大优势（与t检验相比）是：在有多于两个处理条件的时候，允许研究者检验平均数差异。方差分析通过在一个检验中同时比较所有的单独平均数差异来达到这一优势。不幸的是，把多个平均数差异合并成一个统计检验的过程使得解释检验结果变得困难。特别是，当得到一个显著的F值（拒绝H0）时，只表明在所有的平均数差异中至少有一个是比由偶然引起的差异大。换句话说，总的F值只是表明了显著差异的存在，并没有表明到底是哪些平均数是显著不同的，哪些平均数不是显著不同的。
@@ -263,7 +265,7 @@ $MS_{error}=\frac{SS_{error}}{df_{error}}=\frac{\sum{SS}}{\sum{df}}=\frac{SS_1+S
 #### Tukey真实显著差异检验
 检验的公式：$HSD=q\sqrt{\frac{MS_{error}}{n}}\ (13.15)$
 
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/4291077.jpg)
+![](anova19.png)
 
 #### Scheffe检验
 Scheffe检验是降低第一类误差的一种谨慎的方法，它可能是最安全的事后比较。Scheffe检验用F值来检验任意两个处理条件间的显著差异。F分数的分子是处理间的MS，是通过计算你只想比较的两个处理而得来的。分母是处理内的同一个MS，它被用来计算总的ANOVA。Scheffe检验的“安全因素”是从下面两点考虑得来的：
@@ -271,8 +273,8 @@ Scheffe检验是降低第一类误差的一种谨慎的方法，它可能是最�
 1. 尽管只是比较了两个处理，Scheffe检验用原始实验的k值来计算处理间的df。因此，F分数分子上的df是k-1。
 2. Scheffe F分数的临界值与用来评估总的ANOVA中F分数的临界值是一样的。因此，Scheffe要求每个事后比较都要满足与用来完成方差分析的标准相同。下面的例子用表13.6中的数据，展示了Scheffe检验的过程。
 
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/85699646.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/58042458.jpg)
+![](anova20.png)
+![](anova21.png)
 
 ### ANOVA与t检验之间的关系
 $F=t^2$
