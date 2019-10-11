@@ -134,6 +134,12 @@
     - 方向性假设与单尾检验
   - 相关样本t检验的应用与假设
 - [估计](estimation.md)
+  - 估计概述
+  - 对t分数的估计
+    - 单样本研究中对μ的估计
+    - 独立测量研究中对μ1-μ2的估计
+    - 重复测量研究中对μD的估计
+- [方差分析](anova.md)
   - 概述
     - ANOVA的统计假设
     - ANOVA的检验统计量
@@ -163,8 +169,7 @@
     - Scheffe检验
   - ANOVA与t检验之间的关系
     - 独立测量ANOVA的假设
-- [方差分析](anova.md)
-- [重复测量方差分析](repeat-anova.ipynb)
+- [重复测量方差分析](repeat-anova.md)
 - [双因素方差分析（独立测量）](independent-test-anova.ipynb)
 
 ## 相关与非参数检验
