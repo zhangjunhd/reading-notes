@@ -7,6 +7,7 @@
     - [测量双因素ANOVA的效应大小](#%e6%b5%8b%e9%87%8f%e5%8f%8c%e5%9b%a0%e7%b4%a0anova%e7%9a%84%e6%95%88%e5%ba%94%e5%a4%a7%e5%b0%8f)
   - [解释双因素ANOVA的结果](#%e8%a7%a3%e9%87%8a%e5%8f%8c%e5%9b%a0%e7%b4%a0anova%e7%9a%84%e7%bb%93%e6%9e%9c)
   - [双因素ANOVA的假设](#%e5%8f%8c%e5%9b%a0%e7%b4%a0anova%e7%9a%84%e5%81%87%e8%ae%be)
+    - [多因素设计](#%e5%a4%9a%e5%9b%a0%e7%b4%a0%e8%ae%be%e8%ae%a1)
 
 ## 平均数差异推论-双因素方差分析（独立测量）
 ### 概述
@@ -109,13 +110,17 @@ H1：在两个因素存在交互作用。处理条件之间的平均数差异不
 交互作用的$\eta^2=\frac{60}{360-120-60}=0.33$ （或33%）
 
 ### 解释双因素ANOVA的结果
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/54307783.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/88983427.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/81408493.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/49018531.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/27174838.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/26209496.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/5979772.jpg)
+![](independent-test-anova13.png)
+![](independent-test-anova14.png)
+![](independent-test-anova15.png)
+![](independent-test-anova16.png)
 
 ### 双因素ANOVA的假设
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/43975703.jpg)
+本章中讲到的方差分析的效应，同样依赖于我们在独立测量设计的假设检验中使用的三个假设：
+
+1. 每个样本中的观察必须是独立的。
+2. 抽取样本的总体必须是正态的。
+3. 抽取样本的总体必须有相等的方差（方差齐性）。
+
+#### 多因素设计
+在三因素实验中，你将分别评估三个因素的主效应，并且你将评估一组两两交互的作用：$A \times B$，$B \times C$与$A \times C$。另外，额外的因素提供了存在三项交互作用的可能：$A \times B \times C$。
