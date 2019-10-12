@@ -86,8 +86,27 @@ H1：在两个因素存在交互作用。处理条件之间的平均数差异不
 ![](independent-test-anova12.png)
 
 #### 测量双因素ANOVA的效应大小
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/92788548.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/82994368.jpg)
+在我们计算因素A的$\eta^2$前，我们需要先排除能用因素B与交互作用解释的差异性。得到的公式是：
+
+对于因素A，$\eta^2=\frac{SS_A}{SS_{total}-SS_B-SS_{A \times B}}\ (15.14)$
+
+注意，公式15.14的分母含有能用因素A解释的变异性和其他不能解释的变异性。因此，与此等价的一个公式是：
+
+对于因素A，$\eta^2=\frac{SS_A}{SS_A+SS_{inner}}\ (15.15)$
+
+同样，因素B和交互作用的$\eta^2$公式如下：
+
+对于因素B，$\eta^2=\frac{SS_B}{SS_{total}-SS_A-SS_{A \times B}}=\frac{SS_B}{SS_B+SS_{inner}}\ (15.16)$
+
+对于$A \times B$，$\eta^2=\frac{SS_{A \times B}}{SS_{total}-SS_A-SS_B}=\frac{SS_{A \times B}}{SS_{A \times B}+SS_{inner}}\ (15.17)$
+
+由于每个$\eta^2$公式计算的百分率都不是基于分数的总变异性，这个结果通常被称作偏$\eta^2$。对于在例15.2中的数据，公式给出了下面的值：
+
+因素A（难度）的$\eta^2=\frac{120}{360-60-60}=0.50$ （或50%）
+
+因素B（唤起）的$\eta^2=\frac{60}{360-120-60}=0.33$ （或33%）
+
+交互作用的$\eta^2=\frac{60}{360-120-60}=0.33$ （或33%）
 
 ### 解释双因素ANOVA的结果
 ![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/54307783.jpg)
