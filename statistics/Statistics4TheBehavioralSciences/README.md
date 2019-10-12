@@ -193,7 +193,7 @@
     - 多因素设计
 
 ## 相关与非参数检验
-- [相关](relevance.ipynb)
+- [相关](relevance.md)
 - [回归](regression.ipynb)
 - [卡方检验：拟合度与独立性检验][54]
 - [二项检验][55]
