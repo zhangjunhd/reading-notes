@@ -181,7 +181,7 @@
     - 重复测量ANOVA的假定
   - 重复测量设计的优点
   - 个体差异和处理效应的一致性
-- [双因素方差分析（独立测量）](independent-test-anova.ipynb)
+- [双因素方差分析（独立测量）](independent-test-anova.md)
 
 ## 相关与非参数检验
 - [相关](relevance.ipynb)
