@@ -41,17 +41,29 @@ $\chi^2=\sum{\frac{(f_0-f_e)^2}{f_e}}\ (18.2)$
 
 ![](chi-square-test4.png)
 
+#### 卡方分布与自由度
+1. 卡方公式中包括将平方值相加，因此不可能得到负值。所有卡方值大于等于零。
+2. 当H0正确时，你期望数据($f_0$值)接近于假设($f_e$值)。因此，当H0正确时，我们期望卡方值较小。
 
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/64279387.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/89832338.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/4141011.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/73721842.jpg)
+这两个因素说明，典型的卡方分布应是正偏态的（图18.2）。
+
+![](chi-square-test5.png)
+
+从技术上来说，每个特定的卡方分布可以由自由度（df）决定，而不是类别的个数。在拟合度检验中，自由度为：
+
+df=C-1 (18.3)
+
+其中C是类别个数。关于df公式的简短讨论见补充阅读18.2。图18.3表示了df与卡方分布形状之间的一般关系。当df增加时，卡方分布的峰值（众数）变得越来越大。
+
+![](chi-square-test6.png)
+
+![](chi-square-test7.png)
 
 #### 拟合度的卡方检验举例
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/51151405.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/28420136.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/72112069.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/75532201.jpg)
+![](chi-square-test8.png)
+![](chi-square-test9.png)
+![](chi-square-test8.png10)
+![](chi-square-test8.png11)
 
 #### 拟合度与单样本t检验
 虽然卡方检验与单样本t检验明显不同，但也是很相似的。具体来说，两个检验都是使用从单一样本中得出的数据作出对单一总体的假设检验。
@@ -61,7 +73,7 @@ $\chi^2=\sum{\frac{(f_0-f_e)^2}{f_e}}\ (18.2)$
 ### 独立性的卡方检验
 当两个变量之间没有稳定可预测的关系时，即为`独立`。在这种情况下，一个变量的频数分布与另一个变量的类别是不相关的（或依赖的）。因此，当两个变量相互独立时，一个变量的频数分布与第二个变量的类别将有同样的形状。
 
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/21072934.jpg)
+![](chi-square-test12.png)
 
 H0：对于学生的一般总体，在颜色喜好与性格之间不存在关系。
 
