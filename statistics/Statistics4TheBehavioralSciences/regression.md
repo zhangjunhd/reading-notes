@@ -12,7 +12,6 @@
     - [根据残差计算$R^2$与$1-R^2$](#%e6%a0%b9%e6%8d%ae%e6%ae%8b%e5%b7%ae%e8%ae%a1%e7%ae%97r2%e4%b8%8e1-r2)
     - [估计的标准误](#%e4%bc%b0%e8%ae%a1%e7%9a%84%e6%a0%87%e5%87%86%e8%af%af-1)
     - [多元回归方程的显著性检验：回归分析](#%e5%a4%9a%e5%85%83%e5%9b%9e%e5%bd%92%e6%96%b9%e7%a8%8b%e7%9a%84%e6%98%be%e8%91%97%e6%80%a7%e6%a3%80%e9%aa%8c%e5%9b%9e%e5%bd%92%e5%88%86%e6%9e%90)
-  - [评估每个预测值的贡献](#%e8%af%84%e4%bc%b0%e6%af%8f%e4%b8%aa%e9%a2%84%e6%b5%8b%e5%80%bc%e7%9a%84%e8%b4%a1%e7%8c%ae)
 
 ## 相关与非参数检验-回归
 ### 线性方程与回归
@@ -164,9 +163,32 @@ $MS_{residual}=\frac{SS_{residual}}{df}$
 估计标准误=$\sqrt{MS_{residual}}$
 
 #### 多元回归方程的显著性检验：回归分析
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/81610865.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/4215948.jpg)
+与一元公式一样，我们可以通过计算F分数来评估多元回归方程的显著性，F分数可以确定方程是否显著的预测了Y的方差的一部分。Y的总变异被分为两个部分：$SS_{regression}$与$SS_{residual}$。当有两个预测变量时，$SS_{regression}$的df=2，$SS_{residual}$的df=n-3。因此，F分数的两个MS值是：
 
-### 评估每个预测值的贡献
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/13325829.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/73130482.jpg)
+$MS_{regression}=\frac{SS_{regression}}{2}\ (17.19)$
+
+以及，
+
+$MS_{residual}=\frac{SS_{residual}}{n-3}\ (17.20)$
+
+表17.2中，n=10的数据有$R^2=0.617$（或61.7%），$SS_Y=90$。因此：
+
+$SS_{regression}=R^2SS_Y=0.617 * 90 = 55.53$
+
+$SS_{residual}=(1-R^2)SS_Y=0.383 * 90 = 34.47$
+
+因此，
+
+$MS_{regression}=\frac{55.53}{2}=27.77$
+
+$MS_{residual}=\frac{34.47}{7}=4.92$
+
+$F=\frac{MS_{regression}}{MS_{residual}}=\frac{27.77}{4.92}=5.64$
+
+当df=2，7，$\alpha=.05$时，这个F分数达到显著，因此，我们可以得出结论回归方程对Y分数方差的贡献达到显著。回归分析的总结如下表所示。
+
+来源 | SS | df | MS | F
+---|----|----|----|--
+回归 | 55.53 | 2 | 27.77 | 5.64
+残差 | 34.47 | 7 | 4.92
+总和 | 90.00 | 9
