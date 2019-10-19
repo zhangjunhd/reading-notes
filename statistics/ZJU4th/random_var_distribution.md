@@ -57,9 +57,9 @@ $lim_{n \to\infty}\binom{n}{k}p^k_n(1-p_n )^{n-k}=\frac{\lambda^k e^{-k}}{k!}$
 ![1](random_var_distribution11.png)
 
 #### 3σ法则
-一般，若 $X \sim N(\mu,sigma^2)$，我们只要通过一个线性变换就能将它化成标准正态分布。
+一般，若 $X \sim N(\mu,\sigma^2)$，我们只要通过一个线性变换就能将它化成标准正态分布。
 
-**引理** 若$X \sim N(\mu,sigma^2)$，则$Z=\frac{X-\mu}{\sigma}\sim N(0,1)$。
+**引理** 若$X \sim N(\mu,\sigma^2)$，则$Z=\frac{X-\mu}{\sigma}\sim N(0,1)$。
 
 #### 上α分位点
 ![1](random_var_distribution12.png)
