@@ -47,7 +47,7 @@
 
 ### （二）t分布
 ![Image0](sample9.png)
-![Image1](hsample10.png)
+![Image1](sample10.png)
 
 ### （三）F分布
 ![Image0](sample11.png)
