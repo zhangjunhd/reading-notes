@@ -18,61 +18,54 @@
 
 # 第二章 随机变量及其分布
 ## 1 随机变量
-![1](https://note.youdao.com/yws/res/57145/5CA27BDBC22545E3ABF86095AA09609F)
+**定义** 设随机试验的样本空间为S={e}。X=X(e)是定义在样本空间S上的实值单值函数。称X=X(e)为随机变量。
 
 ## 2 离散型随机变量及其分布律
-![1](https://note.youdao.com/yws/res/57148/365B28CB3DE44D7F8370B7161C44938C)
+![1](random_var_distribution1.png)
 
 ### （一）（0-1）分布
-![1](https://note.youdao.com/yws/res/57151/AF878461F8BF41EFB189896098DD24B8)
+![1](random_var_distribution2.png)
 
 ### （二）伯努利试验、二项分布
-![1](https://note.youdao.com/yws/res/57154/5243265344004365AC40A09E137AAB32)
-![1](https://note.youdao.com/yws/res/57156/EC8EF98149AB4538AB6A46BB72E94593)
-![1](https://note.youdao.com/yws/res/57158/1B9550042E27438AA314FE67E02A6357)
+![1](random_var_distribution3.png)
 
 ### （三）泊松分布
-![1](https://note.youdao.com/yws/res/57161/DAB58B47AF4F459F8494E758A3672EC9)
+![1](random_var_distribution4.png)
 
 #### 泊松定理（泊松分布逼近二项分布）
-![1](https://note.youdao.com/yws/res/57164/0F25398A04834EB1B4AF5000F6CD97B3)
+**泊松定理** 设$\lambda>0$是一个常数，n是任意正整数，设$np_n=\lambda$，则对于任一固定的非负整数k，有
+
+$lim_{n \to\infty}\binom{n}{k}p^k_n(1-p_n )^{n-k}=\frac{\lambda^k e^{-k}}{k!}$
 
 ## 3 随机变量的分布函数
-![1](https://note.youdao.com/yws/res/57176/1E236BD895B44C439D908A72030954C9)
-![1](https://note.youdao.com/yws/res/57178/7084260AFBD3427BBCB80C6E9F1994C2)
+![1](random_var_distribution5.png)
 
 ## 4 连续型随机变量及其密度函数
-![1](https://note.youdao.com/yws/res/57181/FE3F3174B43A4B8C9DDFB1C86C8F5C56)
-![1](https://note.youdao.com/yws/res/57183/A22E95BF1AFE4878B21ABE09582A1F05)
-![1](https://note.youdao.com/yws/res/57185/22270E6E058B47A5B0CFF38066DEC1E0)
+![1](random_var_distribution6.png)
 
 ### （一）均匀分布
-![1](https://note.youdao.com/yws/res/57188/77E6AEE14DA64E259A308B3DD6ACE389)
-![1](https://note.youdao.com/yws/res/57190/692932ECB481435B918D43F905FB7F1F)
+![1](random_var_distribution7.png)
 
 ### （二）指数分布
-![1](https://note.youdao.com/yws/res/57193/33F6FDEB342D4013AF2634508809C0C1)
-![1](https://note.youdao.com/yws/res/57195/CE802EE34CF640258DA497612D68B18B)
+![1](random_var_distribution8.png)
 
 ### （三）正态分布
-![1](https://note.youdao.com/yws/res/57199/CF0AD676FDB54F27BB906BBF81B01CF4)
-![1](https://note.youdao.com/yws/res/57201/F1E06193A26C44CCB567F040293F6DA0)
-![1](https://note.youdao.com/yws/res/57203/0E774EA6097742CF97CE77CDDF2E2EA4)
-![1](https://note.youdao.com/yws/res/57205/BAF155250A9D4A029441E440E64EE7E3)
-![1](https://note.youdao.com/yws/res/57207/E3847FF2B4044296B07F39637B82A11E)
-![1](https://note.youdao.com/yws/res/57209/3FA0495813AC466E9D06BFFC3EBB43FF)
+![1](random_var_distribution9.png)
+![1](random_var_distribution10.png)
 
 #### 转换标准正态
-![1](https://note.youdao.com/yws/res/57215/816FBCFC8C08406FA02F2F0B3C1EDC2E)
+![1](random_var_distribution11.png)
 
 #### 3σ法则
-![1](https://note.youdao.com/yws/res/57218/FA046D4C68C84E2E901FEB23926E7FE1)
+一般，若 $X \sim N(\mu,sigma^2)$，我们只要通过一个线性变换就能将它化成标准正态分布。
+
+**引理** 若$X \sim N(\mu,sigma^2)$，则$Z=\frac{X-\mu}{\sigma}\sim N(0,1)$。
 
 #### 上α分位点
-![1](https://note.youdao.com/yws/res/57221/E23149B636234AB5B7BF6F76BA3F1329)
+![1](random_var_distribution12.png)
 
 ## 5 随机变量的函数的分布
-![1](https://note.youdao.com/yws/res/57224/17F1435299C84BD386ACAE8C9852C013)
+![1](random_var_distribution13.png)
 
 ### （证明）转换标准正态分布
-![1](https://note.youdao.com/yws/res/57227/6C3331F260124DF6BEB55EA574DB0565)
+![1](random_var_distribution14.png)
