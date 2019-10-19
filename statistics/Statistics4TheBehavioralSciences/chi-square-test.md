@@ -13,7 +13,6 @@
     - [决定期望频数的简单公式](#%e5%86%b3%e5%ae%9a%e6%9c%9f%e6%9c%9b%e9%a2%91%e6%95%b0%e7%9a%84%e7%ae%80%e5%8d%95%e5%85%ac%e5%bc%8f)
     - [卡方与自由度](#%e5%8d%a1%e6%96%b9%e4%b8%8e%e8%87%aa%e7%94%b1%e5%ba%a6)
     - [独立性卡方检验、皮尔逊相关与独立测量t检验](#%e7%8b%ac%e7%ab%8b%e6%80%a7%e5%8d%a1%e6%96%b9%e6%a3%80%e9%aa%8c%e7%9a%ae%e5%b0%94%e9%80%8a%e7%9b%b8%e5%85%b3%e4%b8%8e%e7%8b%ac%e7%ab%8b%e6%b5%8b%e9%87%8ft%e6%a3%80%e9%aa%8c)
-    - [独立性卡方检验例子](#%e7%8b%ac%e7%ab%8b%e6%80%a7%e5%8d%a1%e6%96%b9%e6%a3%80%e9%aa%8c%e4%be%8b%e5%ad%90)
   - [测量独立性卡方检验的效应大小](#%e6%b5%8b%e9%87%8f%e7%8b%ac%e7%ab%8b%e6%80%a7%e5%8d%a1%e6%96%b9%e6%a3%80%e9%aa%8c%e7%9a%84%e6%95%88%e5%ba%94%e5%a4%a7%e5%b0%8f)
     - [$\varphi$系数](#varphi%e7%b3%bb%e6%95%b0)
     - [Cramer’s V](#cramers-v)
@@ -149,6 +148,7 @@ $\chi^2=\sum\frac{(f_0-f_e)^2}{f_e}$
 
 df=(R-1)(C-1) (18.5)
 
+#### 独立性卡方检验、皮尔逊相关与独立测量t检验
 假定一个研究者在调查10岁儿童的学习成绩与自尊之间的关系。研究者指明了两个变量，研究的问题涉及它们之间的关系。根据研究者将如何测量两个变量，相关、独立测量t检验或独立性卡方检验将成为评估这种关系的恰当的统计过程。
 
 例如，如果研究者得到了两个变量的数值，那么得到的数据可以计算[皮尔逊相关](relevance.md#皮尔逊相关)。在这种情况下，数据形式如下：
@@ -178,17 +178,6 @@ D | 65 | 23
 ![](chi-square-test15.png)
 ![](chi-square-test16.png)
 ![](chi-square-test17.png)
-
-#### 独立性卡方检验、皮尔逊相关与独立测量t检验
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/5380227.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/70946569.jpg)
-
-#### 独立性卡方检验例子
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/46530792.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/1747850.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/63563292.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/13696783.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/12789283.jpg)
 
 ### 测量独立性卡方检验的效应大小
 #### $\varphi$系数
