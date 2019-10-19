@@ -335,7 +335,8 @@
    1. [运营之光](pm/operation/internet-operation.md)
       1. [运营数据指标](pm/operation/operation_data.md)
    2. [从零开始做运营](pm/operation/operation-start-from-scratch.md)
-   3. [内容算法](pm/operation/content-algorithm.md)
+   3. [精益数据分析](pm/operation/LeanAnalytics.md)
+   4. [内容算法](pm/operation/content-algorithm.md)
 3. 软件项目管理
    1. [成为技术领导者](pm/management/tech_leader.md)
    2. [人月神话](pm/management/TheMythicalMan-Month.md)
@@ -361,10 +362,7 @@
 
 # 数学
 1. 统计学
-   1. [精益数据分析](data/LeanAnalytics.md)
-   2. [最大后验估计(Maximum-a-Posteriori (MAP) Estimation)](data/map.ipynb)
-   3. [从最大似然到EM算法浅解](data/MLE-EM.ipynb)
-   4. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
-   5.  [行为科学统计](statistics/Statistics4TheBehavioralSciences)
+   1. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
+   2. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
 2. 线性代数
    1. [线性代数及其应用](http://note.youdao.com/noteshare?id=8e5a09eca90cf66ebd91525954a130f7&sub=E28E75F53DDF403E85D91FED5D701611)
