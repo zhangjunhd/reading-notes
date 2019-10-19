@@ -362,7 +362,7 @@
 
 # 数学
 1. 统计学
-   1. [概率论与数理统计(浙大·第四版)](http://note.youdao.com/noteshare?id=53611372bbbc169d6e86428810c8a65b&sub=C4169DB5F9D649F2AA44931473FA2147)
+   1. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
    2. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
 2. 线性代数
    1. [线性代数及其应用](http://note.youdao.com/noteshare?id=8e5a09eca90cf66ebd91525954a130f7&sub=E28E75F53DDF403E85D91FED5D701611)
