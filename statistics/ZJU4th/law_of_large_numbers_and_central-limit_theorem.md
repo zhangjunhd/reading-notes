@@ -7,19 +7,16 @@
 
 # 第五章 大数定律及中心极限定理
 ## 1 大数定律
-![浙大《概率论与数理统计》第四版_pdf（第_129_页，共_424_页）](https://note.youdao.com/yws/res/57338/4985CFE8814F4EA89DB6413FE1494354)
-![浙大《概率论与数理统计》第四版_pdf（第_130_页，共_424_页）](https://note.youdao.com/yws/res/57337/FA5B594C63CC44C1A756B4F74B70BE75)
+![浙大《概率论与数理统计》第四版_pdf（第_129_页，共_424_页）](law_of_large_numbers_and_central-limit_theorem1.png)
 
 ## 2 中心极限定理
 ### 独立同分布的中心极限定理
-![浙大《概率论与数理统计》第四版_pdf（第_131_页，共_424_页）](https://note.youdao.com/yws/res/57341/24F2011B76934AD0912482A65F34A321)
-![浙大《概率论与数理统计》第四版_pdf（第_132_页，共_424_页）](https://note.youdao.com/yws/res/57342/B58CC75A629944C9A0BD28D962C16C19)
+![浙大《概率论与数理统计》第四版_pdf（第_131_页，共_424_页）](law_of_large_numbers_and_central-limit_theorem2.png)
+![浙大《概率论与数理统计》第四版_pdf（第_132_页，共_424_页）](law_of_large_numbers_and_central-limit_theorem3.png)
 
 ### 李雅普诺夫（Lyapunov）定理
-![浙大《概率论与数理统计》第四版_pdf（第_132_页，共_424_页） 2](https://note.youdao.com/yws/res/57349/14CDA8CF94634437AD0A5FE96ED8AC97)
-![浙大《概率论与数理统计》第四版_pdf（第_132_页，共_424_页） 3](https://note.youdao.com/yws/res/57345/60FF528530F647D9BE708070E708C5F4)
-![浙大《概率论与数理统计》第四版_pdf（第_133_页，共_424_页）](https://note.youdao.com/yws/res/57348/12FD719B336F4CC89F5FA4921F1321B4)
+![浙大《概率论与数理统计》第四版_pdf（第_132_页，共_424_页） 2](law_of_large_numbers_and_central-limit_theorem4.png)
+![浙大《概率论与数理统计》第四版_pdf（第_133_页，共_424_页）](law_of_large_numbers_and_central-limit_theorem5.png)
 
 ### 棣莫弗-拉普拉斯定理
-![浙大《概率论与数理统计》第四版_pdf（第_133_页，共_424_页）](https://note.youdao.com/yws/res/57353/9D2930B2C00D405387C61F679D85E9E2)
-![浙大《概率论与数理统计》第四版_pdf（第_133_页，共_424_页） 2](https://note.youdao.com/yws/res/57355/CD66AD60A6D745F6A1036B077E3EF34C)
+![浙大《概率论与数理统计》第四版_pdf（第_133_页，共_424_页）](law_of_large_numbers_and_central-limit_theorem6.png)
