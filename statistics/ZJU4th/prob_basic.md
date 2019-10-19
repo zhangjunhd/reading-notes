@@ -26,10 +26,10 @@
 
 ### 3 频率与概率
 #### （一）频率
-![1]( prob_basic1.png)
+![1](prob_basic1.png)
 
 #### （二）概率
-![1]( prob_basic2.png)
+![1](prob_basic2.png)
 
 ### 4 等可能概型（古典概型）
 1. 试验的样本空间只包含有限个元素；
@@ -39,19 +39,13 @@
 
 ### 5 条件概率
 #### （一）条件概率
-![1](https://note.youdao.com/yws/res/57117/C5A2B377D25D436AAD16A216E18EC0ED)
-![1](https://note.youdao.com/yws/res/57119/C089DF71A67B4A05B872A10E98C57146)
+![1](prob_basic3.png)
 
 #### （二）乘法定理
-![1](https://note.youdao.com/yws/res/57122/11E3E646FB9A4C28A184F945E8C570BD)
+![1](prob_basic4.png)
 
 #### （三）全概率公式与贝叶斯公式
-![1](https://note.youdao.com/yws/res/57126/B179ED87760645C1B62919E78E0DE763)
-![1](https://note.youdao.com/yws/res/57128/61AEE8A9C54C41D384EA47C7C2323355)
-![1](https://note.youdao.com/yws/res/57130/679B766244404D63811F3EEE343B48B6)
+![1](prob_basic5.png)
 
 ### 6 独立性
-![1](https://note.youdao.com/yws/res/57133/4D281B29ABFA465BA4BCC6BCD295ED4A)
-![1](https://note.youdao.com/yws/res/57135/FDD8FB4040184690B3811F6DC16D81C5)
-![1](https://note.youdao.com/yws/res/57137/83BD9C771C514A62956AE2125C7E1FE3)
-![1](https://note.youdao.com/yws/res/57139/64F0C736FCC244939E77DB3A5D2AE72D)
+![1](prob_basic6.png)
