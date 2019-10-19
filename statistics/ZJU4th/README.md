@@ -12,3 +12,4 @@
 
 [豆瓣链接](https://book.douban.com/subject/3165271/)
 
+- [概率论的基本概念](prob_basic.md)
