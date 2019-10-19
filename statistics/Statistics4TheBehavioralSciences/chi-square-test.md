@@ -187,8 +187,9 @@ $\varphi=\sqrt{\frac{\chi^2}{n}}\ (18.6)$
 
 $\varphi$系数的值完全由2x2数据矩阵的比例决定，与频数大小的绝对值完全无关。然而，卡方值不仅被比例影响，还被频数的大小影响。这个区别如下面的例子所示。
 
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/74771322.jpg)
-![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/29719938.jpg)
+![](chi-square-test18.png)
+
+因而两个样本的比例是一样的，$\varphi$系数的值没有变化。然而，比起较小的样本，较大的样本提供了更令人信服的证据，因此较大的样本可以提供更显住的结果。
 
 #### Cramer’s V
 ![](http://ou8qjsj0m.bkt.clouddn.com//17-10-26/82186680.jpg)
