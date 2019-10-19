@@ -260,3 +260,18 @@
   - 符号检验
     - 符号检验的零差异
 - [顺序数据的统计方法](ranking-data-test.md)
+  - 顺序量表的数据
+  - Mann-Whitney检验 U检验：独立测量t检验的替代方法
+    - Mann-Whitney检验的虚无假设
+    - Mann-Whitney U假设检验完整例子
+    - Mann-Whitney U的假设检验
+    - Mann-Whitney U的正态近似
+  - Wilcoxon符号秩和检验：重复测量t检验的替代方法
+    - Wilcoxon T假设检验完整例子
+    - Wilcoxon T检验的正态近似
+  - Kruskal-Wallis检验：独立测量ANOVA的替代方法
+    - Kruskal-Wallis检验的虚无假设
+    - Kruskal-Wallis检验的公式与符号
+  - Fridman检验：重复测量ANOVA的替代方法
+    - Fridman检验的虚无假设
+    - Fridman检验的符号与计算
