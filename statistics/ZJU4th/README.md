@@ -59,3 +59,4 @@
       - 正态随机变量的线性组合
     - （二）Z=X/Y的分布、Z=XY的分布
     - （三）M=max{X,Y}及N=min{X,Y}的分布
+- [随机变量的数字特征](random_var_numeral_characteristic.md)
