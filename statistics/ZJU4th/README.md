@@ -146,3 +146,10 @@
     - （八）可化为一元线性回归的例子
   - 4 多元线性回归
 - [bootstrap方法](bootstrap.md)
+  - 1 非参数bootstrap方法
+    - （一）估计量的标准误差的bootstrap估计
+    - （二）估计量的均方误差及偏差的bootstrap估计
+    - （三）bootstrap的置信区间
+    - （四）bootstrap-t法求均值μ的bootstrap置信区间
+  - 2 参数bootstrap方法
+- [随机过程及其统计描述](random_process.md)
