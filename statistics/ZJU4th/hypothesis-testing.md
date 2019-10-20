@@ -44,52 +44,40 @@
 ![Image1](hypothesis-testing8.png)
 
 ### 正态总体均值、方差的检验法（显著性水平α）
-![Image0](https://note.youdao.com/yws/res/58280/AC268D658D024CAC82A72CB2FB19B891)
-![Image1](https://note.youdao.com/yws/res/58279/2A340A2F079140FAA580D36810AFD713)
+![Image0](hypothesis-testing9.png)
+![Image1](hypothesis-testing10.png)
 
 ### （二）两个总体的情况（F检验法）
-![Image0](https://note.youdao.com/yws/res/58283/4EA43A27B0CE403D8CAE2E3136EBAA20)
+![Image0](hypothesis-testing11.png)
 
 ## 4 置信区间与假设检验之间的关系
-![Image0](https://note.youdao.com/yws/res/58286/DEE06134A4294B729AC97FF8DFEE28DB)
-![Image1](https://note.youdao.com/yws/res/58287/F94239B461ED412D9F44946A57E2362B)
-![Image2](https://note.youdao.com/yws/res/58289/F0ED2BB267264EB39CA67C0A40431199)
+![Image0](hypothesis-testing12.png)
+![Image1](hypothesis-testing13.png)
 
 ## 5 样本容量的选取
-![Image0](https://note.youdao.com/yws/res/58292/DDAFB867D0404EA7BDD87266D0BCAC03)
-![Image1](https://note.youdao.com/yws/res/58293/12FB460B9D9F48A4BFAABCE0FDF50158)
-![Image2](https://note.youdao.com/yws/res/58295/FE2D9207B82B45878C0DD2CBA1D1CE82)
-![Image3](https://note.youdao.com/yws/res/58294/A287D45B46E2480CA2C076FBCCACA331)
-![Image0](https://note.youdao.com/yws/res/58299/D59B6EABEAA74C96BB57385244D44C57)
-![Image1](https://note.youdao.com/yws/res/58298/68E9D12AD9E843F692A392382AC969F7)
-![Image2](https://note.youdao.com/yws/res/58297/A64006C6C38A424D818EBEA708587896)
+![Image0](hypothesis-testing14.png)
+![Image1](hypothesis-testing15.png)
+![Image2](hypothesis-testing16.png)
+![Image3](hypothesis-testing17.png)
 
 ## 6 分布拟合检验
 ### （一）单个分布的χ2拟合检验法
-![Image0](https://note.youdao.com/yws/res/58304/AF53AECEE9044142AADFF2A4CF388CDC)
-![Image1](https://note.youdao.com/yws/res/58302/B4713832C70D4CF0AE47B1F9BE28B515)
-![Image2](https://note.youdao.com/yws/res/58303/DB47447ABD954D51A187406A1FC17D54)
+![Image0](hypothesis-testing18.png)
 
 ### （二）分布族的χ2拟合检验
-![Image0](https://note.youdao.com/yws/res/58308/A791082D0ECA4A7880E42F8C4C5AA2E2)
-![Image1](https://note.youdao.com/yws/res/58310/9AB741B2F02D43CC90D6D83833B9A0C5)
+![Image0](hypothesis-testing19.png)
 
 ### （三）偏度、峰度检验
-![Image0](https://note.youdao.com/yws/res/58313/50564849533D4E089D440B001DD3D8B2)
-![Image1](https://note.youdao.com/yws/res/58314/07059137DDE84927B8274277A20BAF4D)
-![Image2](https://note.youdao.com/yws/res/58315/2D9BE44A0639440DA583B367BA201781)
-![Image3](https://note.youdao.com/yws/res/58317/B5A783C4431C4E38A48DE5D19A6A9812)
+![Image0](hypothesis-testing20.png)
+![Image1](hypothesis-testing21.png)
 
 ## 7 秩和检验
-![Image0](https://note.youdao.com/yws/res/58321/8366BDE2C681406C881657BA48C49910)
-![Image1](https://note.youdao.com/yws/res/58323/083CFA34A2384CC58530088CD7FE8B49)
-![Image2](https://note.youdao.com/yws/res/58324/EC280A6CFA7D4B38B6C40154B09900F3)
-![Image3](https://note.youdao.com/yws/res/58325/C1E89F0D55CB4CB5B0AF902C2DDBFE5D)
+![Image0](hypothesis-testing22.png)
+![Image1](hypothesis-testing23.png)
+
+如果知道R1的分布，则临界点$C_U(\frac{\alpha}{2}),C_L(\frac{\alpha}{2})$是不难求得的。
 
 ## 8 假设检验问题的p值检验法
-![Image0](https://note.youdao.com/yws/res/58328/4B45465AB62B4348A063C4F0FA1E9856)
-![Image1](https://note.youdao.com/yws/res/58330/586263A988BF442B9BC6F52129014203)
-![Image2](https://note.youdao.com/yws/res/58332/5E67608B306D417A8D8575B8B799A5DF)
-![Image3](https://note.youdao.com/yws/res/58331/085F09018F5A470CA78930CBBACCE019)
-![Image0](https://note.youdao.com/yws/res/58334/08EE7BB9A278451089503BBBBBA35586)
-![Image1](https://note.youdao.com/yws/res/58335/1423A3563A6A437B97CDAAA23276A8EA)
+![Image0](hypothesis-testing24.png)
+![Image1](hypothesis-testing25.png)
+![Image2](hypothesis-testing26.png)
