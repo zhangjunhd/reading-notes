@@ -15,9 +15,12 @@
 [豆瓣链接](https://book.douban.com/subject/1425950/)
 
 - [线性方程组](linear_system_of_equations.md)
-
-
-
+- [矩阵代数](matrix_algebra.md)
+- [行列式](det.md)
+- [向量空间](vector_space.md)
+- [特征值与特征向量](eigen.md)
+- [正交性和最小二乘法](lsm.md)
+- [对称矩阵和二次型](quadric_form.md)
 
 
 
