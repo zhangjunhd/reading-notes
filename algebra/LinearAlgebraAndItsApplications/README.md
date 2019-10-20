@@ -14,7 +14,7 @@
 
 [豆瓣链接](https://book.douban.com/subject/1425950/)
 
-
+- [线性方程组](linear_system_of_equations.md)
 
 
 
