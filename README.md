@@ -253,7 +253,7 @@
    2. [新生——七年就是一辈子](success/rebirth.md)
    3. [精进：如何成为一个很厉害的人](success/refinement.md)
    4. [冯鑫家信：怎样才算好好活着](success/a-letter-home-by-fengxin.md)
-   5. [原则](success/Principles.md)
+   5. [原则-生活原则](success/Principles.md)
    6. [请停止无效努力](success/please-stop-trying.md)
 
 # 商业
