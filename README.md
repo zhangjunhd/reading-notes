@@ -259,6 +259,7 @@
 # 商业
 1. 财务
    1. [一本书读懂财报](bussiness/finance/OneBookLearnFinancialReport.md)
+   2. [一本书看透股权架构](bussiness/finance/OneBookLearnShareholdingStructure.md)
 2. 管理
    1. 企业管理
       1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
