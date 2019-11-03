@@ -178,13 +178,14 @@
 
 # 经济金融
 1. [经济学通识课](economics/a-little-history-of-economics.md)
-2. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
-3. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
-4. [百年中国经济史笔记](economics/china-economic-modern-history.md)
-5. [亚洲大趋势](economics/aisa-big-trend.md)
-6. [解读中国经济](economics/china-economics.md)
-7. [城市化转型与土地陷阱](economics/urbanization.md)
-8. [大国大城](economics/great-nation-needs-bigger-city.md)
+2. [经济学的思维方式](economics/BasicEconomics.md)
+3. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
+4. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
+5. [百年中国经济史笔记](economics/china-economic-modern-history.md)
+6. [亚洲大趋势](economics/aisa-big-trend.md)
+7. [解读中国经济](economics/china-economics.md)
+8. [城市化转型与土地陷阱](economics/urbanization.md)
+9. [大国大城](economics/great-nation-needs-bigger-city.md)
 
 
 # 艺术
