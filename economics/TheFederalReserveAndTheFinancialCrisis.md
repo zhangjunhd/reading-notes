@@ -9,6 +9,12 @@
 
 [豆瓣链接](https://book.douban.com/subject/27046569/)
 
+- [第一讲 美联储的起源与使命](#%e7%ac%ac%e4%b8%80%e8%ae%b2-%e7%be%8e%e8%81%94%e5%82%a8%e7%9a%84%e8%b5%b7%e6%ba%90%e4%b8%8e%e4%bd%bf%e5%91%bd)
+  - [央行是什么？](#%e5%a4%ae%e8%a1%8c%e6%98%af%e4%bb%80%e4%b9%88)
+  - [金本位制的利与弊](#%e9%87%91%e6%9c%ac%e4%bd%8d%e5%88%b6%e7%9a%84%e5%88%a9%e4%b8%8e%e5%bc%8a)
+  - [美联储的第一次大挑战](#%e7%be%8e%e8%81%94%e5%82%a8%e7%9a%84%e7%ac%ac%e4%b8%80%e6%ac%a1%e5%a4%a7%e6%8c%91%e6%88%98)
+- [第二讲 “二战”后的美联储](#%e7%ac%ac%e4%ba%8c%e8%ae%b2-%e4%ba%8c%e6%88%98%e5%90%8e%e7%9a%84%e7%be%8e%e8%81%94%e5%82%a8)
+
 ## 第一讲 美联储的起源与使命
 ### 央行是什么？
 中央银行的职能是什么？
@@ -38,13 +44,18 @@
 ### 美联储的第一次大挑战
 ![](TheFederalReserveAndTheFinancialCrisis1.png)
 
+图1–3描述的是美国股市，图左侧的一条垂线表示1929年10月股票价格的一次急剧下跌。
 
+![](TheFederalReserveAndTheFinancialCrisis2.png)
 
+图1-4a 1925~1934年实际GDP
 
+实体经济，即非金融经济，在这次“大萧条”中同样受到了很大冲击。图1–4a反映的是实际GDP的增长情况。
 
+![](TheFederalReserveAndTheFinancialCrisis3.png)
 
+图1-4b 1925~1934年间消费者价格指数
 
+正如图1–4b所示，1931~1932年间，物价下跌了将近10%。
 
-
-
-
+## 第二讲 “二战”后的美联储
