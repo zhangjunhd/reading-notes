@@ -139,6 +139,7 @@
 2. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
 3. [世界秩序](politics/WorldOrder.md)
 4. [看世界](politics/see-the-world.md)
+5. [未来30年2](politics/next30years2.md)
 
 # 文学
 1. 木心文学回忆录
