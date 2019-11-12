@@ -2,13 +2,13 @@
 - [东方哲学](#%e4%b8%9c%e6%96%b9%e5%93%b2%e5%ad%a6)
 - [西方哲学](#%e8%a5%bf%e6%96%b9%e5%93%b2%e5%ad%a6)
 - [文学](#%e6%96%87%e5%ad%a6)
-- [历史](#%e5%8e%86%e5%8f%b2)
-- [政治](#%e6%94%bf%e6%b2%bb)
-- [经济金融](#%e7%bb%8f%e6%b5%8e%e9%87%91%e8%9e%8d)
 - [艺术](#%e8%89%ba%e6%9c%af)
 - [社交](#%e7%a4%be%e4%ba%a4)
 - [心理学](#%e5%bf%83%e7%90%86%e5%ad%a6)
 - [成功学](#%e6%88%90%e5%8a%9f%e5%ad%a6)
+- [历史](#%e5%8e%86%e5%8f%b2)
+- [政治](#%e6%94%bf%e6%b2%bb)
+- [经济金融](#%e7%bb%8f%e6%b5%8e%e9%87%91%e8%9e%8d)
 - [商业](#%e5%95%86%e4%b8%9a)
 - [产品经理](#%e4%ba%a7%e5%93%81%e7%bb%8f%e7%90%86)
 - [计算](#%e8%ae%a1%e7%ae%97)
@@ -145,51 +145,6 @@
 11. [1984](literature/NineteenEightyFour.md)
 12. [美丽新世界](literature/BraveNewWorld.md)
 
-# 历史
-1. 社会学
-   1. [第4消费时代](history/4th-consumerist.md)
-   2. [乌合之众](history/Psychologie-des-Foules.md)
-2. 人类学
-   1. [人类简史](history/A-brief-history-of-humankind.md)
-   2. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
-   3. [今日简史](history/21-lessons-for-the-21st-century.md)
-3. 通史
-   1. [全球通史](history/a-global-history.md)
-   2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
-   3. [创新简史](history/A-brief-history-of-innovation.md)
-4. 中国古代史
-   1. [万历十五年](history/1587.md)
-   2. [乡土中国](history/native-china.md)
-   3. [中国大历史-黄仁宇版](history/big-history.md)
-   4. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
-5. 中国近代史
-   1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
-   2. [毛泽东传](history/Mao.md)
-   3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
-
-
-
-# 政治
-1. [常识](politics/CommonSense.md)
-2. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
-3. [世界秩序](politics/WorldOrder.md)
-4. [看世界](politics/see-the-world.md)
-5. [未来30年2](politics/next30years2.md)
-
-
-
-
-
-# 经济金融
-1. [经济学通识课](economics/a-little-history-of-economics.md)
-2. [经济学的思维方式](economics/BasicEconomics.md)
-3. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
-4. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
-5. [百年中国经济史笔记](economics/china-economic-modern-history.md)
-6. [亚洲大趋势](economics/aisa-big-trend.md)
-7. [解读中国经济](economics/china-economics.md)
-8. [城市化转型与土地陷阱](economics/urbanization.md)
-9. [大国大城](economics/great-nation-needs-bigger-city.md)
 
 
 # 艺术
@@ -261,6 +216,53 @@
    4. [冯鑫家信：怎样才算好好活着](success/a-letter-home-by-fengxin.md)
    5. [原则-生活原则](success/Principles.md)
    6. [请停止无效努力](success/please-stop-trying.md)
+
+# 历史
+1. 社会学
+   1. [第4消费时代](history/4th-consumerist.md)
+   2. [乌合之众](history/Psychologie-des-Foules.md)
+2. 人类学
+   1. [人类简史](history/A-brief-history-of-humankind.md)
+   2. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
+   3. [今日简史](history/21-lessons-for-the-21st-century.md)
+3. 通史
+   1. [全球通史](history/a-global-history.md)
+   2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
+   3. [创新简史](history/A-brief-history-of-innovation.md)
+4. 中国古代史
+   1. [万历十五年](history/1587.md)
+   2. [乡土中国](history/native-china.md)
+   3. [中国大历史-黄仁宇版](history/big-history.md)
+   4. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
+5. 中国近代史
+   1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
+   2. [毛泽东传](history/Mao.md)
+   3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+
+
+
+# 政治
+1. [常识](politics/CommonSense.md)
+2. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
+3. [世界秩序](politics/WorldOrder.md)
+4. [看世界](politics/see-the-world.md)
+5. [未来30年2](politics/next30years2.md)
+
+
+
+
+
+# 经济金融
+1. [经济学通识课](economics/a-little-history-of-economics.md)
+2. [经济学的思维方式](economics/BasicEconomics.md)
+3. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
+4. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
+5. [百年中国经济史笔记](economics/china-economic-modern-history.md)
+6. [亚洲大趋势](economics/aisa-big-trend.md)
+7. [解读中国经济](economics/china-economics.md)
+8. [城市化转型与土地陷阱](economics/urbanization.md)
+9. [大国大城](economics/great-nation-needs-bigger-city.md)
+
 
 # 商业
 1. 财务
