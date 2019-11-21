@@ -252,13 +252,13 @@
 5. [未来30年](politics/next30years.md)
 6. [未来30年2](politics/next30years2.md)
 7. [不确定的未来](politics/UncertainFuture.md)
-8. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
-9. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
-10. [百年中国经济史笔记](economics/china-economic-modern-history.md)
-11. [亚洲大趋势](economics/aisa-big-trend.md)
-12. [解读中国经济](economics/china-economics.md)
-13. [城市化转型与土地陷阱](economics/urbanization.md)
-14. [大国大城](economics/great-nation-needs-bigger-city.md)
+8. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
+9. [金融的本质](politics/TheFederalReserveAndTheFinancialCrisis.md)
+10. [百年中国经济史笔记](politics/china-economic-modern-history.md)
+11. [亚洲大趋势](politics/aisa-big-trend.md)
+12. [解读中国经济](politics/china-economics.md)
+13. [城市化转型与土地陷阱](politics/urbanization.md)
+14. [大国大城](politics/great-nation-needs-bigger-city.md)
 
 
 # 商业
