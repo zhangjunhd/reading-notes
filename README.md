@@ -110,7 +110,7 @@
 6. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
 7. [康德三大批判合集](western_philosophy/kant.md)
 8. [身份的焦虑](western_philosophy/status-anxiety.md)
-9.  [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
+9. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
 10. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
 11. [论自然](western_philosophy/nature.md)
 12. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
@@ -202,7 +202,7 @@
    4. [高效能人士的七个习惯](success/7Habits.md)
    5. [如何不用额外咖啡因也能保持专注](success/KeepFocus.md)
    6. [拖延心理学](success/Procrastination.md)
-   7.  [暗时间](success/DarkTime.md)
+   7. [暗时间](success/DarkTime.md)
 4. 知识管理(主题阅读、整理知识库、输出观点)
    1. [六个步骤把资料转换成知识](success/6step.md)
    2. [如何阅读一本书](success/HowToReadABook.md)
@@ -325,13 +325,13 @@
        1. [Vox Media调研](bussiness/cms/vox-media.md)
        2. [Web Content Management](bussiness/cms/cms.md)
 6.  营销
-    1.  [定位](bussiness/marketing/positioning.md)
+    1. [定位](bussiness/marketing/positioning.md)
 7.  广告
     1. [中国互联网广告生态](bussiness/advertising/internet-advertising-supply-chain-2014.md)
     2. [计算广告](advertising/computational_ad)
 8.  企业家精神
-    1.  [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
-    2.  [企业家](bussiness/entrepreneur/entrepreneur.md)
+    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
+    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
 
 # 产品经理
 1. 产品
