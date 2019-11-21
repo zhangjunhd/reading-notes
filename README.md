@@ -7,8 +7,7 @@
 - [心理学](#%e5%bf%83%e7%90%86%e5%ad%a6)
 - [成功学](#%e6%88%90%e5%8a%9f%e5%ad%a6)
 - [历史](#%e5%8e%86%e5%8f%b2)
-- [政治](#%e6%94%bf%e6%b2%bb)
-- [经济金融](#%e7%bb%8f%e6%b5%8e%e9%87%91%e8%9e%8d)
+- [政治经济](#%e6%94%bf%e6%b2%bb%e7%bb%8f%e6%b5%8e)
 - [商业](#%e5%95%86%e4%b8%9a)
 - [产品经理](#%e4%ba%a7%e5%93%81%e7%bb%8f%e7%90%86)
 - [计算](#%e8%ae%a1%e7%ae%97)
@@ -52,7 +51,9 @@
     9. [暗知识](ai/DarkKnowledge.md)
     10. [生命3.0](ai/Life3.md)
 6.  经济学
-    1.  [写给企业家的经济学](economics/economics4entrepreneur.md)
+    1. [经济学通识课](economics/a-little-history-of-economics.md)
+    2. [经济学的思维方式](economics/BasicEconomics.md)
+    3. [写给企业家的经济学](economics/economics4entrepreneur.md)
 
 # 东方哲学
 1. 儒
@@ -243,7 +244,7 @@
 
 
 
-# 政治
+# 政治经济
 1. [常识](politics/CommonSense.md)
 2. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
 3. [世界秩序](politics/WorldOrder.md)
@@ -251,20 +252,13 @@
 5. [未来30年](politics/next30years.md)
 6. [未来30年2](politics/next30years2.md)
 7. [不确定的未来](politics/UncertainFuture.md)
-
-
-
-
-# 经济金融
-1. [经济学通识课](economics/a-little-history-of-economics.md)
-2. [经济学的思维方式](economics/BasicEconomics.md)
-3. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
-4. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
-5. [百年中国经济史笔记](economics/china-economic-modern-history.md)
-6. [亚洲大趋势](economics/aisa-big-trend.md)
-7. [解读中国经济](economics/china-economics.md)
-8. [城市化转型与土地陷阱](economics/urbanization.md)
-9. [大国大城](economics/great-nation-needs-bigger-city.md)
+8. [21世纪资本论](economics/Capital-in-the-Twenty-First-Century.md)
+9. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
+10. [百年中国经济史笔记](economics/china-economic-modern-history.md)
+11. [亚洲大趋势](economics/aisa-big-trend.md)
+12. [解读中国经济](economics/china-economics.md)
+13. [城市化转型与土地陷阱](economics/urbanization.md)
+14. [大国大城](economics/great-nation-needs-bigger-city.md)
 
 
 # 商业
