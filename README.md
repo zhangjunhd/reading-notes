@@ -51,6 +51,8 @@
     8. [人类的终极命运](ai/InOurOwnImage.md)
     9. [暗知识](ai/DarkKnowledge.md)
     10. [生命3.0](ai/Life3.md)
+6.  经济学
+    1.  [写给企业家的经济学](economics/economics4entrepreneur.md)
 
 # 东方哲学
 1. 儒
