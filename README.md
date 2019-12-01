@@ -259,6 +259,7 @@
 12. [解读中国经济](politics/china-economics.md)
 13. [城市化转型与土地陷阱](politics/urbanization.md)
 14. [大国大城](politics/great-nation-needs-bigger-city.md)
+15. [中国当代社会阶层分析](politics/china-society-level.md)
 
 
 # 商业
