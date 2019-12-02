@@ -288,7 +288,7 @@
    2. [长尾理论2.0](bussiness/theory/long_tail.md)
    3. [技术的本质](bussiness/theory/TheNatureOfTechnology.md)
    4. [链接](bussiness/theory/linked.md)
-   5. [重塑-信息经济的结构](http://note.youdao.com/noteshare?id=831a7bdbec54230eb70c0005e3d4db78)
+   5. [重塑-信息经济的结构](bussiness/theory/reshaping.md)
    6. 凯文·凯利
       1. [必然](bussiness/kk/The-Inevitable.md)
       2. [新经济，新规则](bussiness/kk/NewRulesForTheNewEconomy.md)
