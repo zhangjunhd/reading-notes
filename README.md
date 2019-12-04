@@ -232,6 +232,7 @@
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
    3. [创新简史](history/A-brief-history-of-innovation.md)
+   4. [20世纪思想史](history/TheModernMind.md)
 4. 中国古代史
    1. [万历十五年](history/1587.md)
    2. [乡土中国](history/native-china.md)
