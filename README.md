@@ -224,15 +224,15 @@
 1. 社会学
    1. [第4消费时代](history/4th-consumerist.md)
    2. [乌合之众](history/Psychologie-des-Foules.md)
-2. 人类学
+2. 人类史
    1. [人类简史](history/A-brief-history-of-humankind.md)
    2. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
    3. [今日简史](history/21-lessons-for-the-21st-century.md)
+   4. [20世纪思想史](history/TheModernMind.md)
 3. 通史
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
    3. [创新简史](history/A-brief-history-of-innovation.md)
-   4. [20世纪思想史](history/TheModernMind.md)
 4. 中国古代史
    1. [万历十五年](history/1587.md)
    2. [乡土中国](history/native-china.md)
