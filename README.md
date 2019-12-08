@@ -260,6 +260,7 @@
 14. [城市化转型与土地陷阱](politics/urbanization.md)
 15. [大国大城](politics/great-nation-needs-bigger-city.md)
 16. [中国当代社会阶层分析](politics/china-society-level.md)
+17. [王剑每日财经观察](politics/wangjian.md)
 
 # 商业
 1. 财务
