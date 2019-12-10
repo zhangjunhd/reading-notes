@@ -1,4 +1,3 @@
-# 技术的本质
 ![cover](https://img3.doubanio.com/lpic/s27237790.jpg)
 
     作者: 布莱恩•阿瑟（Brian Arthur） 
