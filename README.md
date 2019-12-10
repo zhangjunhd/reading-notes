@@ -97,23 +97,25 @@
    2. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
    3. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
    4. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
-3. 存在主义
+3. 尼采
+   1. [作为教育家的叔本华](western_philosophy/SchopenhauerAlsErzieher.md)
+4. 存在主义
    1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
    2. [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
    3. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
    4. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
    5. [存在主义心理治疗](psychology/Existential-Psychology.md)
-4. 辩证法
+5. 辩证法
    1. [大众哲学](western_philosophy/PublicPhilosophy.md)
    2. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
-5. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
-6. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
-7. [康德三大批判合集](western_philosophy/kant.md)
-8. [身份的焦虑](western_philosophy/status-anxiety.md)
-9. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
-10. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-11. [论自然](western_philosophy/nature.md)
-12. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
+6. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
+7. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
+8. [康德三大批判合集](western_philosophy/kant.md)
+9.  [身份的焦虑](western_philosophy/status-anxiety.md)
+10. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
+11. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
+12. [论自然](western_philosophy/nature.md)
+13. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
 
 # 文学
 1. 木心文学回忆录
