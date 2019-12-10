@@ -290,7 +290,7 @@
    1. [维基经济学](bussiness/model/wikinomics.md)
    2. [长尾理论2.0](bussiness/model/long_tail.md)
    3. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
-   4. [链接](bussiness/theory/linked.md)
+   4. [链接](bussiness/model/linked.md)
    5. [重塑-信息经济的结构](bussiness/theory/reshaping.md)
    6. 凯文·凯利
       1. [必然](bussiness/kk/The-Inevitable.md)
