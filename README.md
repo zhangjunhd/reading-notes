@@ -293,8 +293,8 @@
    4. [链接](bussiness/model/linked.md)
    5. [重塑-信息经济的结构](bussiness/model/reshaping.md)
    6. 凯文·凯利
-      1. [必然](bussiness/kk/The-Inevitable.md)
-      2. [新经济，新规则](bussiness/kk/NewRulesForTheNewEconomy.md)
+      1. [必然](bussiness/model/kk-The-Inevitable.md)
+      2. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
    7. [隐形VISA](bussiness/model/visa.md)
    8. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
    9. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
