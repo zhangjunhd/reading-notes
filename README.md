@@ -286,8 +286,8 @@
       3. [精益创业](bussiness/startup/TheLeanStartup.md)
       4. [创业时，不可不知的细节](bussiness/startup/details.md)
       5. [重新理解创业](bussiness/startup/rethink-startup.md)
-3. 趋势
-   1. [维基经济学](bussiness/theory/wikinomics.md)
+3. 商业模式
+   1. [维基经济学](bussiness/model/wikinomics.md)
    2. [长尾理论2.0](bussiness/theory/long_tail.md)
    3. [技术的本质](bussiness/theory/TheNatureOfTechnology.md)
    4. [链接](bussiness/theory/linked.md)
@@ -295,12 +295,11 @@
    6. 凯文·凯利
       1. [必然](bussiness/kk/The-Inevitable.md)
       2. [新经济，新规则](bussiness/kk/NewRulesForTheNewEconomy.md)
-4. 商业模式
-   1. [隐形VISA](bussiness/model/visa.md)
-   2. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
-   3. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
-   4. [知识图谱行业分析](bussiness/model/kg.md)
-5. 传媒
+   7. [隐形VISA](bussiness/model/visa.md)
+   8. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
+   9. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
+   10. [知识图谱行业分析](bussiness/model/kg.md)
+4. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
       2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
@@ -326,12 +325,12 @@
    5.  CMS
        1. [Vox Media调研](bussiness/cms/vox-media.md)
        2. [Web Content Management](bussiness/cms/cms.md)
-6.  营销
+5.  营销
     1. [定位](bussiness/marketing/positioning.md)
-7.  广告
+6.  广告
     1. [中国互联网广告生态](bussiness/advertising/internet-advertising-supply-chain-2014.md)
     2. [计算广告](advertising/computational_ad)
-8.  企业家精神
+7.  企业家精神
     1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
     2. [企业家](bussiness/entrepreneur/entrepreneur.md)
 
