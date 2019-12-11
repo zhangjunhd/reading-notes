@@ -298,8 +298,7 @@
       2. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
    7. [隐形VISA](bussiness/model/visa.md)
    8. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
-   9. [曾鸣谈S2b2c模式](http://note.youdao.com/noteshare?id=1283a2767602ac9352ca25be622ed909&sub=2B7F607C2E424AD9A0207570CC8FF5BD)
-   10. [知识图谱行业分析](bussiness/model/kg.md)
+   9.  [知识图谱行业分析](bussiness/model/kg.md)
 4. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
