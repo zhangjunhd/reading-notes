@@ -10,7 +10,7 @@
 - [政治经济](#%e6%94%bf%e6%b2%bb%e7%bb%8f%e6%b5%8e)
 - [商业](#%e5%95%86%e4%b8%9a)
 - [产品经理](#%e4%ba%a7%e5%93%81%e7%bb%8f%e7%90%86)
-- [计算](#%e8%ae%a1%e7%ae%97)
+  - [软件](#%e8%bd%af%e4%bb%b6)
 
 # 科技
 1. 牛津通识读本
@@ -366,7 +366,7 @@
    6. [Design Driven Innovation](design/DesignDrivenInnovation.md)
    7. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
-# 计算
-1. [Understanding Computation](computation/UnderstandingComputation.md), Tom Stuart, Jun 2013
-2. [算法概论](computation/Algorithms.md)
+## 软件
+1. [Understanding Computation](software/UnderstandingComputation.md), Tom Stuart, Jun 2013
+1. [算法概论](software/Algorithms.md)
 
