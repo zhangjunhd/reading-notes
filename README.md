@@ -1,4 +1,4 @@
-- [科普](#%e7%a7%91%e6%99%ae)
+- [科技](#%e7%a7%91%e6%8a%80)
 - [东方哲学](#%e4%b8%9c%e6%96%b9%e5%93%b2%e5%ad%a6)
 - [西方哲学](#%e8%a5%bf%e6%96%b9%e5%93%b2%e5%ad%a6)
 - [文学](#%e6%96%87%e5%ad%a6)
@@ -11,9 +11,8 @@
 - [商业](#%e5%95%86%e4%b8%9a)
 - [产品经理](#%e4%ba%a7%e5%93%81%e7%bb%8f%e7%90%86)
 - [计算](#%e8%ae%a1%e7%ae%97)
-- [数学](#%e6%95%b0%e5%ad%a6)
 
-# 科普
+# 科技
 1. 牛津通识读本
    1. 学科系列
       1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
@@ -39,6 +38,9 @@
    4. [机会的数学](math/OpportunisticMath.md)
    5. [赤裸裸的统计学](math/NakedStatistics.md)
    6. [数学之美](math/MathBeauty.md)
+   7. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
+   8. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
+   9. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
 5. 人工智能
     1. [人工智能的未来](ai/OnIntelligence.md)
     2. [与机器赛跑](ai/RaceAgainstTheMachine.md)
@@ -368,9 +370,3 @@
 2. [Understanding Computation](computation/UnderstandingComputation.md), Tom Stuart, Jun 2013
 3. [算法概论](computation/Algorithms.md)
 
-# 数学
-1. 统计学
-   1. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
-   2. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
-2. 线性代数
-   1. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
