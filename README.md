@@ -41,6 +41,7 @@
    7. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
    8. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
    9. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
+   10. [离散数学及其应用（原书第7版）](discrete_math)
 5. 人工智能
     1. [人工智能的未来](ai/OnIntelligence.md)
     2. [与机器赛跑](ai/RaceAgainstTheMachine.md)
@@ -366,7 +367,6 @@
    7. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 # 计算
-1. [离散数学及其应用（原书第7版）](computation/discrete_math)
-2. [Understanding Computation](computation/UnderstandingComputation.md), Tom Stuart, Jun 2013
-3. [算法概论](computation/Algorithms.md)
+1. [Understanding Computation](computation/UnderstandingComputation.md), Tom Stuart, Jun 2013
+2. [算法概论](computation/Algorithms.md)
 
