@@ -306,7 +306,7 @@
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
       2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
-      3. [大众传播理论](http://note.youdao.com/noteshare?id=9d4876b1797fb32eea1692d2c0247076)
+      3. [大众传播理论](bussiness/communication/MassCommunicationTheory.md)
       4. [思维病毒](bussiness/communication/VirusOfTheMind.md)
       5. [疯传](bussiness/communication/contagious.md)
       6. [注意力经济](bussiness/communication/TheAttentionMerchants.md)
