@@ -68,9 +68,11 @@
     6. [王阳明心学](eastern_philosophy/wang-yang-ming-xin-xue.md)
     7. [曾国藩家书](eastern_philosophy/zen_guo_fan_letter.md)
     8. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
-    9. 胡适
-       1.  [人生大策略](eastern_philosophy/BigStrategy4Life.md)
-    10. 梁漱溟
+    9. 南怀瑾
+       1.  [南怀瑾谈性格与人生](eastern_philosophy/nan1.md)
+    10. 胡适
+       2.  [人生大策略](eastern_philosophy/BigStrategy4Life.md)
+    11. 梁漱溟
         1. [中国最后一个大儒](eastern_philosophy/liang_shu_min.md)
         2. [这个世界会好吗-梁漱溟晚年口述](eastern_philosophy/liang_shu_min_wan_nian_kou_shu.md)
         3. [人生的三路向:宗教、道德与人生](eastern_philosophy/ren_sheng_de_san_lu_xiang.md)
