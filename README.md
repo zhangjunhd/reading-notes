@@ -288,9 +288,8 @@
       7. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
       8. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
       9. [关键对话](bussiness/management/CrucialConversations.md)
-   2. 项目管理
-      1. [OKR工作法](bussiness/management/okr.md)
-   3. 创业
+      10. [OKR工作法](bussiness/management/okr.md)
+   2. 创业
       1. [从0到1](bussiness/startup/zero_to_one.md)
       2. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
       3. [精益创业](bussiness/startup/TheLeanStartup.md)
