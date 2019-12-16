@@ -70,6 +70,7 @@
     8. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
     9. 南怀瑾
        1.  [南怀瑾谈性格与人生](eastern_philosophy/nan1.md)
+       2.  [南怀瑾谈生活与生存](eastern_philosophy/nan2.md)
     10. 胡适
         1.  [人生大策略](eastern_philosophy/BigStrategy4Life.md)
     11. 梁漱溟
