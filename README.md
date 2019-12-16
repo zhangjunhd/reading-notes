@@ -71,7 +71,7 @@
     9. 南怀瑾
        1.  [南怀瑾谈性格与人生](eastern_philosophy/nan1.md)
     10. 胡适
-       2.  [人生大策略](eastern_philosophy/BigStrategy4Life.md)
+        1.  [人生大策略](eastern_philosophy/BigStrategy4Life.md)
     11. 梁漱溟
         1. [中国最后一个大儒](eastern_philosophy/liang_shu_min.md)
         2. [这个世界会好吗-梁漱溟晚年口述](eastern_philosophy/liang_shu_min_wan_nian_kou_shu.md)
