@@ -364,7 +364,7 @@
    7. [微软的软件测试之道](pm/management/MicrosoftTest.md)
 4. 设计
    1. [平面排版基本的基本](design/graphic_design.md)
-   2. [写给大家看的设计书（第3版）](http://note.youdao.com/noteshare?id=c66e7c3796bc882aefb55f95768fa0b7)
+   2. [写给大家看的设计书（第3版）](design/TheNon-DesignersDesignBook.md)
    3. [Search Patterns](design/SearchPatterns.md)
    4. [Sketching User Experiences](design/SketchingUserExperiences.md)
    5. [About Face 3](design/AboutFace3.md)
