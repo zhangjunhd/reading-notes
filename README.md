@@ -358,7 +358,7 @@
    2. [人月神话](pm/management/TheMythicalMan-Month.md)
    3. [人件（第2版）](pm/management/peopleware.md)
    4. [软件随想录](pm/management/more_joel_on_software.md)
-   5. [硝烟中的Scrum和XP](http://note.youdao.com/noteshare?id=9b22b4103e0e8af34d90fe0e1b208cd6&sub=BF7B9F63B3C44ADDA05122F150156DED)
+   5. [硝烟中的Scrum和XP](pm/management/scrum-xp.md)
       - [Scrum概念](pm/management/scrum.md)
    6. [Apprenticeship Patterns](pm/management/ApprenticeshipPatterns.md)
    7. [微软的软件测试之道](pm/management/MicrosoftTest.md)
