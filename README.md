@@ -324,13 +324,12 @@
    3.  媒体
        1. [时尚：幕后的策动](bussiness/media/fashion_editor.md)
        2. [访美记](bussiness/media/fang-mei.md)
-   4.  新媒体
-       1. [徐建军-开始吧](bussiness/new_media/kaistart.md)
-       2. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
-       3. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
-       4. [如何打造超级IP](bussiness/new_media/how-to-create-ip.md)
-       5. [超级IP](bussiness/new_media/xtreme-ip.md)
-   5.  CMS
+       3. [徐建军-开始吧](bussiness/new_media/kaistart.md)
+       4. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
+       5. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
+       6. [如何打造超级IP](bussiness/new_media/how-to-create-ip.md)
+       7. [超级IP](bussiness/new_media/xtreme-ip.md)
+   4.  CMS
        1. [Vox Media调研](bussiness/cms/vox-media.md)
        2. [Web Content Management](bussiness/cms/cms.md)
 5.  营销
