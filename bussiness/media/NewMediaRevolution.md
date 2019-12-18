@@ -21,9 +21,9 @@
 
 **第三个假设前提的变化：从“消息来源”是重要的，到“在哪里最方便读到”是重要的。**
 
-![snip20190102_1.png](WEBRESOURCE1ff06ad8c18e769d09478c9344ef2f1b)
+![snip20190102_1.png](NewMediaRevolution1.png)
 
-![snip20190102_2.png](WEBRESOURCE1c70e94e8d47841633760ebb3aea1039)
+![snip20190102_2.png](NewMediaRevolution2.png)
 
 ### 虚假的生产链
 **1.记者假装给主编写稿，主编假装给记者发稿费**
@@ -81,7 +81,7 @@
 而每一份拷贝之所以有价值并能够获得市场定价，是因为其能够发行到一个信息不对称的相对密闭空间里。空间的分割和阻隔使得媒体能够保持多样性并建立生意模式。
 
 ### 第一章思维导图
-![snip20190102_3.png](WEBRESOURCE6c7e18c7ff313a0b9e53f1e68352c06c)
+![snip20190102_3.png](NewMediaRevolution3.png)
 
 ## 第二章 重塑内容
 ### 无用之用与有用之用
@@ -98,14 +98,14 @@
 - 素材——“有用之用”新闻的写作者因为是亲历者，所以提供的是基于自身经验的故事和观点；“无用之用”的写作者则是旁观者，潜意识地选择利于佐证自己观点的事实进行报道，提供的是一己的主观判断。
 - 影响力——由于写作者讲述的是“我”的故事，所以“有用之用”的新闻易于引发共鸣，唤醒互动；而古典媒体所制造的“无用之用”新闻几乎只能投射给沉默的读者，通常只有同行、被采访对象本人和其利益相关者感兴趣。
 
-![snip20190102_4.png](WEBRESOURCE99853cd3663b3951e78594630fd2b341)
+![snip20190102_4.png](NewMediaRevolution4.png)
 
 一句话，是否能够帮助我们做出当下更好的各种人生选择，是区分“有用之用”和“无用之用”信息的主要判断标准。
 
 大部分的书籍其实都是“无用之用”。不好意思，本书也是。
 
 ### 新文体，新叙事
-![snip20190102_5.png](WEBRESOURCEc48bbe590cc32c344c5d82f9684c06cc)
+![snip20190102_5.png](NewMediaRevolution5.png)
 
 ### 购买体验，而不仅是内容
 >用户不会为你讲了一个好故事而付费；
@@ -134,7 +134,7 @@
 1. 可寻性：千万事物似乎唾手可得，但有人为你提供的推荐、清单服务则值得付费。
 
 ### 第二章思维导图
-![snip20190102_6.png](WEBRESOURCE41c99f6fbbf35a377ff94d40dfbc7b8d)
+![snip20190102_6.png](NewMediaRevolution6.png)
 
 ## 第三章 你好，自媒体
 ### 你们全家都是自媒体
@@ -208,7 +208,7 @@
 杜威希望媒体的作用在于想尽办法让公众成为新闻的参与者，成为议题发起和交流的平台，告诉记者应该报道什么。
 
 ### 第三章思维导图
-![snip20190102_7.png](WEBRESOURCEb9caff99e77432a30255319e3eba136c)
+![snip20190102_7.png](NewMediaRevolution7.png)
 
 ## 第四章 真正的新媒体
 ### 重新理解媒介
@@ -233,11 +233,11 @@
 它反映了古典媒体和新媒体真正的不同：古典媒体侍奉的主人是内容——从生产、分发到回报，所以高喊“内容为王”；新媒体切换的是用户视角，以用户的需求来供给和匹配内容。
 
 ### 第四章思维导图
-![snip20190102_8.png](WEBRESOURCE328cb733ad1da044874bb30014081ffc)
+![snip20190102_8.png](NewMediaRevolution8.png)
 
 ## 第五章 （传统）公关之死
 ### 危机公关管理罗盘
-![snip20190103_9.png](WEBRESOURCE0771eaa4c1edd898dbcb7197251486e5)
+![snip20190103_9.png](NewMediaRevolution9.png)
 
 在此，我提供一个“危机公关管理罗盘”，以供企业公关人员在危机发生时使用。
 
@@ -247,20 +247,20 @@
 1. 先处理次要关系，后解决主要矛盾。对于危机来源的主要群体，短时间的沟通难以找到和解之道，应先争取次要群体的理解，扩大同盟，并保证公司经营的其他方面不受影响。比如财报出现亏损，受影响最大的是投资者，可先制定预案对用户、经销商、供应商等进行沟通，以稳定市场。
 
 ### 第五章思维导图
-![snip20190103_10.png](WEBRESOURCEe5c0750f2827e3fde0ccbdd8e8990594)
+![snip20190103_10.png](NewMediaRevolution10.png)
 
 **传统公关强调"控制"，社交传播更看重能否"失控"。**
 
-![snip20190103_12.png](WEBRESOURCE90a84b19675724c16f6dad6ca1491d74)
+![snip20190103_12.png](NewMediaRevolution11.png)
 
 ## 第六章 企业自媒体
 ### 企业自媒体运营效果评价模拟表
 （以微信公众号为例）
 
-![snip20190103_13.png](WEBRESOURCEc10bd415f397f560bf91d158e19babf7)
+![snip20190103_13.png](NewMediaRevolution12.png)
 
 ### 第六章思维导图
-![snip20190103_14.png](WEBRESOURCE51d17033ca25efcab1066b570cdd664d)
+![snip20190103_14.png](NewMediaRevolution13.png)
 
 ## 第七章 社交传播
 ### 数字化测量与数字品牌价值
@@ -270,20 +270,20 @@
 - 参与度（Engagement）——衡量受众卷入程度的指标，设为E，子指标项包括人次、身份特征以及参与行为深度等；
 - 好感度（Favorability）——衡量受众情感倾向的指标，设为F，如推荐、好感、中性、差评、反感等。
 
-![snip20190103_15.png](WEBRESOURCEbfe2edf4a6414198c7b97d441dd49ede)
+![snip20190103_15.png](NewMediaRevolution14.png)
 
 我们设置一个新的计量单位来衡量数字品牌价值的大小，这就是DB（Digital Brand）。
 
 有了DB值的计算公式，终于可以让一个企业传播和营销人员都能把熟悉的概念落到实处了，这就是心智占有率（Mindshare）。它与市场占有率（Marketshare）相对应，用以比喻品牌在消费者头脑中所形成的知名度和美誉度大小。
 
 ### 第七章思维导图
-![snip20190103_16.png](WEBRESOURCE1fd26cf3bdb9e94d3dd1342496720915)
+![snip20190103_16.png](NewMediaRevolution15.png)
 
 ## 第八章 公众与族群
-![snip20190103_17.png](WEBRESOURCE0c7da3834cb24e791da7dc1e402f4ed5)
+![snip20190103_17.png](NewMediaRevolution16.png)
 
 ## 第九章 社群经济真伪
-![snip20190103_18.png](WEBRESOURCE3aec3a7ae8cd0d9aaa73599646fb1a51)
+![snip20190103_18.png](NewMediaRevolution17.png)
 
 ## 第十章 大数据、AI与内容产业的未来
 Narrative Science就邀请各个专业记者根据各自领域的报道逻辑为其量身定做各种叙事模板（这些记者又称 **“元作者”**），如一项体育赛事的报道角度可能是“拉锯战”、“英雄式个人表演”、“强大的团队合作”或者“咸鱼翻身”等。算法还会按照重要性对各种可能的角度进行排序，并由此形成文章的整体结构。
@@ -291,7 +291,7 @@ Narrative Science就邀请各个专业记者根据各自领域的报道逻辑为
 Narrative Science 联合创始人、西北大学计算机科学家克里斯蒂安·哈蒙德（Kristian Hammond）相信，到2030年，90%的新闻都可以由机器人撰写。
 
 ### 新媒体革命的三个代际
-![snip20190103_19.png](WEBRESOURCE19d5f14d93f8c9672643ae1fd94b3893)
+![snip20190103_19.png](NewMediaRevolution18.png)
 
 只有可检索，信息才能被重新组织，而组织的方式，就是指数型增长的丰富链接。
 
@@ -327,4 +327,4 @@ Narrative Science 联合创始人、西北大学计算机科学家克里斯蒂�
 媒体的未来最大价值，就是能够清楚地说出，你所代表的受众到底是什么样的一群人，并认识他们每一个人。
 
 ### 第十章思维导图
-![snip20190103_20.png](WEBRESOURCEa9fea02c1a30527a7ad4a6b3feb75c78)
+![snip20190103_20.png](NewMediaRevolution19.png)
