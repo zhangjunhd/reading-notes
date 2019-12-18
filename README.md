@@ -326,7 +326,7 @@
        2. [访美记](bussiness/media/fang-mei.md)
        3. [徐建军-开始吧](bussiness/new_media/kaistart.md)
        4. [新媒体革命2.0](http://note.youdao.com/noteshare?id=ac0b48e7b74da21c96521ffb29253d96)
-       5. [迭代-新商业、新媒体与逆袭之路](http://note.youdao.com/noteshare?id=ff1a05225590aed2d2c2a82d5a9ecf86) 
+       5. [迭代-新商业、新媒体与逆袭之路](bussiness/media/iteration.md) 
        6. [如何打造超级IP](bussiness/new_media/how-to-create-ip.md)
        7. [超级IP](bussiness/new_media/xtreme-ip.md)
    4.  CMS
