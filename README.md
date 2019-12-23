@@ -168,8 +168,7 @@
 
 # 社交
 1. [24堂葡萄酒大师课](socialcontact/the-24-hour-wine-expert.md)
-1. [单一麦芽威士忌](socialcontact/SingleMaltWhisky.md)
-1. [汽车是怎样跑起来的](socialcontact/how-does-a-car-run.md)
+2. [汽车是怎样跑起来的](socialcontact/how-does-a-car-run.md)
 
 
 
