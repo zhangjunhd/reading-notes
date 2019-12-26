@@ -1926,11 +1926,11 @@ Figure 5. The standard performance model and some experimental results
 
 Overall, if you need to complete a job of N `Request`s and our Spider is properly tuned, you should be able to complete it in:
 
-`$t_{job}=\frac{N \dot (t_{response} + t_{overhead})}{CONCURRENT\_REQUESTS}+t_{start/stop}$`
+$t_{job}=\frac{N \dot (t_{response} + t_{overhead})}{CONCURRENT\_REQUESTS}+t_{start/stop}$
 
-`$T=\frac{N}{t_{job}-t_{start/stop}}$`
+$T=\frac{N}{t_{job}-t_{start/stop}}$
 
-By running a long job of N Requests, we can measure the `$t_{job}$` aggregated time and then it's straightforward to calculate T.
+By running a long job of N Requests, we can measure the $t_{job}$ aggregated time and then it's straightforward to calculate T.
 
 ## Solving performance problems
 ### Case #1 – saturated CPU
