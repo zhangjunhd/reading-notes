@@ -371,6 +371,7 @@
 
 # 软件
 1. [Understanding Computation](software/UnderstandingComputation.md), Tom Stuart, Jun 2013
-1. [算法概论](software/Algorithms.md)
-2. [Learning Scrapy](software/LearningScrapy.md)
+2. [算法概论](software/Algorithms.md)
+3. [Learning Scrapy](software/LearningScrapy.md)
+4. [Mastering Flask](software/MasteringFlask.md)
 
