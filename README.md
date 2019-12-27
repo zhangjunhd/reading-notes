@@ -374,8 +374,9 @@
 2. [算法概论](software/Algorithms.md)
 3. [Learning Scrapy](software/LearningScrapy.md)
 4. [Mastering Jenkins](software/MasteringJenkins.md)
-5. [Mastering Flask](software/MasteringFlask.md)
-6. [React设计思想](software/ReactBasic.md)
-7. [Learning React](software/LearningReact.md)
-8. [SQL入门经典](software/BeginningSQL.md)
+5. [Pro Git (Second Edition)](software/ProGit.md)
+6. [Mastering Flask](software/MasteringFlask.md)
+7. [React设计思想](software/ReactBasic.md)
+8. [Learning React](software/LearningReact.md)
+9. [SQL入门经典](software/BeginningSQL.md)
 
