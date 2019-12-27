@@ -377,4 +377,5 @@
 5. [Mastering Flask](software/MasteringFlask.md)
 6. [React设计思想](software/ReactBasic.md)
 7. [Learning React](software/LearningReact.md)
+8. [SQL入门经典](software/BeginningSQL.md)
 
