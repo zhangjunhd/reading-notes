@@ -351,7 +351,7 @@
    2. [从零开始做运营](pm/operation/operation-start-from-scratch.md)
    3. [精益数据分析](pm/operation/LeanAnalytics.md)
    4. [内容算法](pm/operation/content-algorithm.md)
-3. 软件项目管理
+3. 技术管理
    1. [成为技术领导者](pm/management/tech_leader.md)
    2. [人月神话](pm/management/TheMythicalMan-Month.md)
    3. [人件（第2版）](pm/management/peopleware.md)
@@ -373,6 +373,7 @@
 1. [Understanding Computation](software/UnderstandingComputation.md), Tom Stuart, Jun 2013
 2. [算法概论](software/Algorithms.md)
 3. [Learning Scrapy](software/LearningScrapy.md)
-4. [Mastering Flask](software/MasteringFlask.md)
-5. [React设计思想](software/ReactBasic.md)
+4. [Mastering Jenkins](software/MasteringJenkins.md)
+5. [Mastering Flask](software/MasteringFlask.md)
+6. [React设计思想](software/ReactBasic.md)
 
