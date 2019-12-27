@@ -376,4 +376,5 @@
 4. [Mastering Jenkins](software/MasteringJenkins.md)
 5. [Mastering Flask](software/MasteringFlask.md)
 6. [React设计思想](software/ReactBasic.md)
+7. [Learning React](software/LearningReact.md)
 
