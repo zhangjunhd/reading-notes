@@ -370,13 +370,20 @@
    7. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
 # 软件
-1. [Understanding Computation](software/UnderstandingComputation.md), Tom Stuart, Jun 2013
-2. [算法概论](software/Algorithms.md)
-3. [Learning Scrapy](software/LearningScrapy.md)
-4. [Mastering Jenkins](software/MasteringJenkins.md)
-5. [Pro Git (Second Edition)](software/ProGit.md)
-6. [Mastering Flask](software/MasteringFlask.md)
-7. [React设计思想](software/ReactBasic.md)
-8. [Learning React](software/LearningReact.md)
-9. [SQL入门经典](software/BeginningSQL.md)
+1. 计算
+   1. [Understanding Computation](software/UnderstandingComputation.md), Tom Stuart, Jun 2013
+2. 算法与数据结构
+   1. [算法概论](software/Algorithms.md)
+3. ETL
+   1. [Learning Scrapy](software/LearningScrapy.md)
+   2. [SQL入门经典](software/BeginningSQL.md)
+4. DevOps
+   1. [Mastering Jenkins](software/MasteringJenkins.md)
+   2. [Pro Git (Second Edition)](software/ProGit.md)
+   3. [Docker In Action](software/DockerInAction.md)
+5. Web开发
+   1. [Mastering Flask](software/MasteringFlask.md)
+   2. [React设计思想](software/ReactBasic.md)
+   3. [Learning React](software/LearningReact.md)
+
 
