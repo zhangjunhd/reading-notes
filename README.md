@@ -381,7 +381,7 @@
    1. [Mastering Jenkins](software/MasteringJenkins.md)
    2. [Pro Git (Second Edition)](software/ProGit.md)
    3. [Docker In Action](software/DockerInAction.md)
-   4. [Getting Started with Kubernetes](GettingStartedWithKubernetes.md)
+   4. [Getting Started with Kubernetes](software/GettingStartedWithKubernetes.md)
 5. Web开发
    1. [Mastering Flask](software/MasteringFlask.md)
    2. [React设计思想](software/ReactBasic.md)
