@@ -382,7 +382,7 @@
    2. [Pro Git (Second Edition)](software/ProGit.md)
    3. [Docker In Action](software/DockerInAction.md)
    4. [Getting Started with Kubernetes](software/GettingStartedWithKubernetes.md)
-   5. [Kubernetes Up and Running](software/KubernetesUpAndRunning.md)
+   5. [Kubernetes Up and Running,2nd Edition](software/KubernetesUpAndRunning.md)
 5. Web开发
    1. [Mastering Flask](software/MasteringFlask.md)
    2. [React设计思想](software/ReactBasic.md)
