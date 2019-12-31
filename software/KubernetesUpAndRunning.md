@@ -26,6 +26,8 @@
   - [Abstracting Your Infrastructure](#abstracting-your-infrastructure)
   - [Efficiency](#efficiency)
 - [Creating and Running Containers](#creating-and-running-containers)
+  - [Container Images](#container-images)
+    - [The Docker Image Format](#the-docker-image-format)
 
 # Introduction
 There are many reasons why people come to use containers and container APIs like Kubernetes, butwe believe they can all be traced back to one of these benefits:
@@ -92,6 +94,35 @@ When your developers build their applications in terms of container images and d
 Because developers no longer think in terms of machines, theirapplications can be colocated on the same machines without impacting the applications themselves. This means that tasks from multiple users can be packed tightly onto fewer machines.
 
 # Creating and Running Containers
+## Container Images
+A **container image** is a binarypackage that encapsulates all of the files necessary to run a program inside ofan OS container. Depending on how you first experiment with containers, you willeither build a container image from your local filesystem or download apreexisting image from a **container registry**.
+
+### The Docker Image Format
+The phrases “Docker image format” and “container images” may be a bit confusing.The **image** isn’t a single file but rather a specification for a manifest file thatpoints to other files. The manifest and associated files are often treated byusers as a unit. The level of indirection allows for more efficient storage and transmittal. Associated with this format is an API for uploading and download ingimages to an image registry.
+
+**Container images** are constructed with a series of filesystem layers, where each layer inherits and modifies the layers that came before it. To help explain this in detail, let’s build some containers. Note that for correctness the ordering of the layers should be bottom up, but for ease of understanding we take the opposite approach:
+
+```
+.
+└── container A: a base operating system only, such as Debian    
+    └── container B: build upon #A, by adding Ruby v2.1.10    
+    └── container C: build upon #A, by adding Golang v1.6
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
