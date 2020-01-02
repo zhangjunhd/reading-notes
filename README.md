@@ -10,7 +10,7 @@
 - [政治经济](#%e6%94%bf%e6%b2%bb%e7%bb%8f%e6%b5%8e)
 - [商业](#%e5%95%86%e4%b8%9a)
 - [产品经理](#%e4%ba%a7%e5%93%81%e7%bb%8f%e7%90%86)
-- [软件](#%e8%bd%af%e4%bb%b6)
+- [软件技术](#%e8%bd%af%e4%bb%b6%e6%8a%80%e6%9c%af)
 
 # 科技
 1. 牛津通识读本
@@ -369,7 +369,7 @@
    6. [Design Driven Innovation](design/DesignDrivenInnovation.md)
    7. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
 
-# 软件
+# 软件技术
 1. 计算
    1. [Understanding Computation](software/UnderstandingComputation.md), Tom Stuart, Jun 2013
 2. 算法与数据结构
@@ -377,6 +377,7 @@
 3. ETL
    1. [Learning Scrapy](software/LearningScrapy.md)
    2. [SQL入门经典](software/BeginningSQL.md)
+   3. [数据仓库](software/BuildingTheDataWarehouse.md)
 4. DevOps
    1. [Mastering Jenkins](software/MasteringJenkins.md)
    2. [Pro Git (Second Edition)](software/ProGit.md)
