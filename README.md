@@ -378,6 +378,7 @@
    1. [Learning Scrapy](software/LearningScrapy.md)
    2. [SQL入门经典](software/BeginningSQL.md)
    3. [数据仓库](software/BuildingTheDataWarehouse.md)
+   4. [语义网基础教程](software/ASemanticWebPrimer.md)
 4. DevOps
    1. [Mastering Jenkins](software/MasteringJenkins.md)
    2. [Pro Git (Second Edition)](software/ProGit.md)
