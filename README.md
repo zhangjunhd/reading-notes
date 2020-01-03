@@ -11,6 +11,7 @@
 - [商业](#%e5%95%86%e4%b8%9a)
 - [产品经理](#%e4%ba%a7%e5%93%81%e7%bb%8f%e7%90%86)
 - [软件技术](#%e8%bd%af%e4%bb%b6%e6%8a%80%e6%9c%af)
+- [机器学习](#%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0)
 
 # 科技
 1. 牛津通识读本
@@ -390,4 +391,6 @@
    2. [React设计思想](software/ReactBasic.md)
    3. [Learning React](software/LearningReact.md)
 
-
+# 机器学习
+1. 搜索引擎
+   1. [Lucene in Action, Second Edition](ml/LuceneInAction.md)
