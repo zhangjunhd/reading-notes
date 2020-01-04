@@ -375,18 +375,20 @@
    1. [Understanding Computation](software/UnderstandingComputation.md), Tom Stuart, Jun 2013
 2. 算法与数据结构
    1. [算法概论](software/Algorithms.md)
-3. ETL
+3. 架构设计
+   1. [设计模式](software/HeadFirstDesignPattern.md)
+4. ETL
    1. [Learning Scrapy](software/LearningScrapy.md)
    2. [SQL入门经典](software/BeginningSQL.md)
    3. [数据仓库](software/BuildingTheDataWarehouse.md)
    4. [语义网基础教程](software/ASemanticWebPrimer.md)
-4. DevOps
+5. DevOps
    1. [Mastering Jenkins](software/MasteringJenkins.md)
    2. [Pro Git (Second Edition)](software/ProGit.md)
    3. [Docker In Action](software/DockerInAction.md)
    4. [Getting Started with Kubernetes](software/GettingStartedWithKubernetes.md)
    5. [Kubernetes Up and Running,2nd Edition](software/KubernetesUpAndRunning.md)
-5. Web开发
+6. Web开发
    1. [Mastering Flask](software/MasteringFlask.md)
    2. [React设计思想](software/ReactBasic.md)
    3. [Learning React](software/LearningReact.md)
