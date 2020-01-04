@@ -376,7 +376,7 @@
 2. 算法与数据结构
    1. [算法概论](software/Algorithms.md)
 3. 架构设计
-   1. [设计模式](software/HeadFirstDesignPattern.md)
+   1. [Head First设计模式](software/HeadFirstDesignPattern.md)
 4. ETL
    1. [Learning Scrapy](software/LearningScrapy.md)
    2. [SQL入门经典](software/BeginningSQL.md)
