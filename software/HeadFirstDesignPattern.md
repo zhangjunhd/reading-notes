@@ -12,14 +12,26 @@
 
 [豆瓣链接](https://book.douban.com/subject/2243615/)
 
-- [1.策略模式](#1%e7%ad%96%e7%95%a5%e6%a8%a1%e5%bc%8f)
-- [2.观察者模式](#2%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f)
-- [3.装饰者模式](#3%e8%a3%85%e9%a5%b0%e8%80%85%e6%a8%a1%e5%bc%8f)
+- [1.策略模式-封装行为](#1%e7%ad%96%e7%95%a5%e6%a8%a1%e5%bc%8f-%e5%b0%81%e8%a3%85%e8%a1%8c%e4%b8%ba)
+- [2.观察者模式-封装依赖](#2%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f-%e5%b0%81%e8%a3%85%e4%be%9d%e8%b5%96)
+- [3.装饰者模式-装饰对象](#3%e8%a3%85%e9%a5%b0%e8%80%85%e6%a8%a1%e5%bc%8f-%e8%a3%85%e9%a5%b0%e5%af%b9%e8%b1%a1)
 - [4. 工厂模式](#4-%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f)
   - [4.1 简单工厂模式](#41-%e7%ae%80%e5%8d%95%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f)
   - [4.2 工厂方法模式](#42-%e5%b7%a5%e5%8e%82%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f)
+  - [4.3 抽象工厂模式](#43-%e6%8a%bd%e8%b1%a1%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f)
+- [5.单例模式(单件模式)](#5%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f%e5%8d%95%e4%bb%b6%e6%a8%a1%e5%bc%8f)
+- [6.命令模式-封装调用](#6%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f-%e5%b0%81%e8%a3%85%e8%b0%83%e7%94%a8)
+- [7.适配器模式与外观模式-随遇而安](#7%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f%e4%b8%8e%e5%a4%96%e8%a7%82%e6%a8%a1%e5%bc%8f-%e9%9a%8f%e9%81%87%e8%80%8c%e5%ae%89)
+  - [7.1 适配器模式](#71-%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f)
+  - [7.2 外观模式](#72-%e5%a4%96%e8%a7%82%e6%a8%a1%e5%bc%8f)
+- [8.模板方法模式-封装算法](#8%e6%a8%a1%e6%9d%bf%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f-%e5%b0%81%e8%a3%85%e7%ae%97%e6%b3%95)
+- [送代器与组合模式-管理良好的集合](#%e9%80%81%e4%bb%a3%e5%99%a8%e4%b8%8e%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f-%e7%ae%a1%e7%90%86%e8%89%af%e5%a5%bd%e7%9a%84%e9%9b%86%e5%90%88)
+  - [9.1 迭代器模式](#91-%e8%bf%ad%e4%bb%a3%e5%99%a8%e6%a8%a1%e5%bc%8f)
+  - [9.2 组合模式](#92-%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f)
+- [10 状态模式-事物的状态](#10-%e7%8a%b6%e6%80%81%e6%a8%a1%e5%bc%8f-%e4%ba%8b%e7%89%a9%e7%9a%84%e7%8a%b6%e6%80%81)
+- [11.代理模式-控制对象访问](#11%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f-%e6%8e%a7%e5%88%b6%e5%af%b9%e8%b1%a1%e8%ae%bf%e9%97%ae)
 
-## 1.策略模式
+## 1.策略模式-封装行为
 设计原则-**找出应用中可能需要变化之处，把它们独立出来，不要和那些不需要变化的代码混在一起**。换句话说，如果每次新的需求一来，都会使某方面的代码发生变化，那么你就可以确定，这部分代码需要被抽出来，和其他稳定的代码有所区分。这个原则的另一种思考方式：“把会变化的部分取出并封装起来，以便以后可以轻易地改动或扩充此部分，而不影响不需要变化的其他部分”。
 
 设计原则-**针对接口编程，而不是针对实现编程**。“针对接口编程”，关键就在`多态`。利用多态，程序可以针对超类型编程，执行时会根据实际状况执行真正的行为，不会被绑死在超类型的行为上。“针对超类型编程”这句话，可以更明确地说成“变量的声明类型应该是超类型，通常是一个抽象类或者是一个接口，如此，只要是具体实现此超类型的类所产生的对象，都可以指定给这个变量。这也意味着，声明类时不用理会以后执行时的真正对象类型”。
@@ -190,7 +202,7 @@ public class ADuck extends Duck {
 
 设计原则-**多用组合，少用继承**。使用组合建立系统具有很大的弹性，不仅可将算法封装成类，更可以“在运行时动态地改变行为”，只要组合的行为对象符合正确的接口标准即可。
 
-## 2.观察者模式
+## 2.观察者模式-封装依赖
 `观察者模式`-定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并自动更新。
 
 ![](HeadFirstDesignPattern2.jpg)
@@ -455,7 +467,7 @@ public class WeatherStation {
 }
 ```
 
-## 3.装饰者模式
+## 3.装饰者模式-装饰对象
 设计原则-**类应该对扩展开放，对修改关闭(开闭原则)**。目标是允许类容易扩展，在不修改现有代码的情况下，就可搭配新的行为。
 
 `装饰者模式`-动态地将责任附加到对象上。若要扩展功能，装饰者提供了比继承更有弹性的替代方案。
@@ -860,20 +872,23 @@ public class PizzaTestDrive {
 
 `工厂方法模式`-定义了创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。
 
+![](HeadFirstDesignPattern5.jpg)
 
 转换成PizzaStore的例子。
 
+![](HeadFirstDesignPattern6.jpg)
 
-设计原则-要依赖抽象，不要依赖具体类(依赖倒置原则)。不能让高层组件依赖低层组件，而且，不管高层或低层组件，“两者”都应该依赖于抽象。所谓“高层”组件，是由其他低层组件定义其行为的类。例如，PizzaStore是个高层组件，因为它的行为是由Pizza定义的：PizzaStore创建所有不同的Pizza对象，准备、烘烤、切片、装盒；而Pizza本身属于低层组件。
+设计原则-**要依赖抽象，不要依赖具体类(依赖倒置原则)**。不能让高层组件依赖低层组件，而且，不管高层或低层组件，“两者”都应该依赖于抽象。所谓“高层”组件，是由其他低层组件定义其行为的类。例如，PizzaStore是个高层组件，因为它的行为是由Pizza定义的：PizzaStore创建所有不同的Pizza对象，准备、烘烤、切片、装盒；而Pizza本身属于低层组件。
 
 几个原则可以避免在OO设计中违反依赖倒置原则：
--变量不可以持有具体类的引用。
--不要让类派生自具体类。
--不要覆盖基类中已实现的方法。
+- 变量不可以持有具体类的引用。
+- 不要让类派生自具体类。
+- 不要覆盖基类中已实现的方法。
 
 代码示例：
 PizzaStore通过方法createPizza()将产生对象推迟到子类中进行。
 
+```java
 package net.dp.factory.factoryMethod;
  
 public abstract class PizzaStore {
@@ -890,10 +905,11 @@ public abstract class PizzaStore {
         return pizza;
     }
 }
-
+```
 
 两个子类工厂NYPizzaStore和ChicagoPizzaStore。
 
+```java
 package net.dp.factory.factoryMethod;
  
 public class NYPizzaStore extends PizzaStore {
@@ -909,8 +925,7 @@ public class NYPizzaStore extends PizzaStore {
             return new NYStylePepperoniPizza();
         } else return null;
     }
-
- 
+}
 
 package net.dp.factory.factoryMethod;
  
@@ -928,10 +943,11 @@ public class ChicagoPizzaStore extends PizzaStore {
             } else return null;
     }
 }
-
+```
 
 产品类的基类Pizza。
 
+```java
 package net.dp.factory.factoryMethod;
  
 import java.util.ArrayList;
@@ -978,10 +994,12 @@ public abstract class Pizza {
         }
         return display.toString();
     }
-
+}
+```
 
 NYPizzaStore下的四种产品。
 
+```java
 package net.dp.factory.factoryMethod;
 
 public class NYStyleClamPizza extends Pizza {
@@ -995,8 +1013,6 @@ public class NYStyleClamPizza extends Pizza {
         toppings.add("Fresh Clams from Long Island Sound");
     }
 }
-
- 
 
 package net.dp.factory.factoryMethod;
  
@@ -1013,8 +1029,7 @@ public class NYStyleVeggiePizza extends Pizza {
         toppings.add("Mushrooms");
         toppings.add("Red Pepper");
     }
-
- 
+}
 
 package net.dp.factory.factoryMethod;
  
@@ -1034,8 +1049,6 @@ public class NYStylePepperoniPizza extends Pizza {
     }
 }
 
- 
-
 package net.dp.factory.factoryMethod;
  
 public class NYStyleCheesePizza extends Pizza {
@@ -1047,10 +1060,12 @@ public class NYStyleCheesePizza extends Pizza {
  
         toppings.add("Grated Reggiano Cheese");
     }
-
+}
+```
 
 ChicagoPizzaStorePizzaStore下的四种产品。
 
+```java
 package net.dp.factory.factoryMethod;
  
 public class ChicagoStyleVeggiePizza extends Pizza {
@@ -1070,8 +1085,6 @@ public class ChicagoStyleVeggiePizza extends Pizza {
     }
 }
 
- 
-
 package net.dp.factory.factoryMethod;
  
 public class ChicagoStylePepperoniPizza extends Pizza {
@@ -1090,8 +1103,7 @@ public class ChicagoStylePepperoniPizza extends Pizza {
     void cut() {
         System.out.println("Cutting the pizza into square slices");
     }
-
- 
+}
 
 package net.dp.factory.factoryMethod;
  
@@ -1110,8 +1122,6 @@ public class ChicagoStyleClamPizza extends Pizza {
     }
 }
 
- 
-
 package net.dp.factory.factoryMethod;
  
 public class ChicagoStyleCheesePizza extends Pizza {
@@ -1127,11 +1137,12 @@ public class ChicagoStyleCheesePizza extends Pizza {
     void cut() {
         System.out.println("Cutting the pizza into square slices");
     }
-
+}
+```
 
 创建两个子类工厂示例，并指定相应的产品参数，可以实例化所需要的产品。
  
-
+```java
 package net.dp.factory.factoryMethod;
  
 public class PizzaTestDrive {
@@ -1165,17 +1176,19 @@ public class PizzaTestDrive {
         System.out.println("Joel ordered a " + pizza.getName() + "\n");
     }
 } 
+```
 
+### 4.3 抽象工厂模式
+`抽象工厂模式`-提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。
 
-4.3 抽象工厂模式
-抽象工厂模式-提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。
-
+![](HeadFirstDesignPattern7.jpg)
 
 比较工厂方法模式和抽象工厂模式。工厂方法模式是通过子类来创建对象。用这种做法，客户只需要知道他们所使用的抽象类型就可以了，而由子类来负责决定具体类型。抽象工厂提供一个用来创建一个产品家族的抽象类型，这个类型的子类定义了产品被生产的方法。要想使用这个工厂，必须先实例化它，然后将它传入一些针对抽象类型所写的代码中。
 
 代码示例：
 原料工厂基类PizzaIngredientFactory(相当于AbstractFactory)
 
+```java
 package net.dp.factory.abstractFactory;
  
 public interface PizzaIngredientFactory {
@@ -1188,41 +1201,11 @@ public interface PizzaIngredientFactory {
     public Clams createClam();
  
 }
-
+```
 
 两个原料工厂子类NYPizzaIngredientFactory和ChicagoPizzaIngredientFactory(相当于ConcreteFactory)
 
-package net.dp.factory.abstractFactory;
- 
-public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
- 
-    public Dough createDough() {
-        return new ThinCrustDough();
-    }
- 
-    public Sauce createSauce() {
-        return new MarinaraSauce();
-    }
- 
-    public Cheese createCheese() {
-        return new ReggianoCheese();
-    }
- 
-    public Veggies[] createVeggies() {
-        Veggies veggies[] = { new Garlic(), new Onion(), new Mushroom(), new RedPepper() };
-        return veggies;
-    }
- 
-    public Pepperoni createPepperoni() {
-        return new SlicedPepperoni();
-    }
- 
-    public Clams createClam() {
-        return new FreshClams();
-    }
-
- 
-
+```java
 package net.dp.factory.abstractFactory;
  
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
@@ -1253,9 +1236,40 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     }
 }
 
+package net.dp.factory.abstractFactory;
+ 
+public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
+ 
+    public Dough createDough() {
+        return new ThinCrustDough();
+    }
+ 
+    public Sauce createSauce() {
+        return new MarinaraSauce();
+    }
+ 
+    public Cheese createCheese() {
+        return new ReggianoCheese();
+    }
+ 
+    public Veggies[] createVeggies() {
+        Veggies veggies[] = { new Garlic(), new Onion(), new Mushroom(), new RedPepper() };
+        return veggies;
+    }
+ 
+    public Pepperoni createPepperoni() {
+        return new SlicedPepperoni();
+    }
+ 
+    public Clams createClam() {
+        return new FreshClams();
+    }
+}
+```
 
 六种原料产品基类Dough、Sauce、Cheese、Clams、Veggies、Pepperoni
 
+```java
 package net.dp.factory.abstractFactory;
  
 public interface Dough {
@@ -1269,14 +1283,11 @@ public interface Sauce {
     public String toString();
 }
 
- 
-
 package net.dp.factory.abstractFactory;
  
 public interface Cheese {
     public String toString();
-
- 
+}
 
 package net.dp.factory.abstractFactory;
  
@@ -1284,32 +1295,30 @@ public interface Clams {
     public String toString();
 }
 
- 
-
 package net.dp.factory.abstractFactory;
  
 public interface Veggies {
     public String toString();
-
- 
+}
 
 package net.dp.factory.abstractFactory;
  
 public interface Pepperoni {
     public String toString();
 }
-
+```
 
 与上面六种产品基类对应的两组具体原料产品簇
-ThickCrustDough和ThinCrustDough对应Dough
-PlumTomatoSauce和MarinaraSauce对应Sauce
-MozzarellaCheese和ReggianoCheese对应Cheese
-FreshClams和FrozenClams对应Clams
-Garlic, Onion, Mushroom, RedPepper和BlackOlives, Spinach, Eggplant对应Veggies
-SlicedPepperoni对应Pepperoni
+- ThickCrustDough和ThinCrustDough对应Dough
+- PlumTomatoSauce和MarinaraSauce对应Sauce
+- MozzarellaCheese和ReggianoCheese对应Cheese
+- FreshClams和FrozenClams对应Clams
+- Garlic, Onion, Mushroom, RedPepper和BlackOlives, Spinach, Eggplant对应Veggies
+- SlicedPepperoni对应Pepperoni
 
 产品工厂基类PizzaStore，把产品的生产延迟到子类进行(工厂方法)
 
+```java
 package net.dp.factory.abstractFactory;
  
 public abstract class PizzaStore {
@@ -1325,10 +1334,12 @@ public abstract class PizzaStore {
         pizza.box();
         return pizza;
     }
-
+}
+```
 
 产品工厂子类NYPizzaStore和ChicagoPizzaStore
 
+```java
 package net.dp.factory.abstractFactory;
  
 public class NYPizzaStore extends PizzaStore {
@@ -1363,8 +1374,6 @@ public class NYPizzaStore extends PizzaStore {
     }
 }
 
- 
-
 package net.dp.factory.abstractFactory;
  
 public class ChicagoPizzaStore extends PizzaStore {
@@ -1397,10 +1406,12 @@ public class ChicagoPizzaStore extends PizzaStore {
         }
         return pizza;
     }
-
+}
+```
 
 产品基类
 
+```java
 package net.dp.factory.abstractFactory;
  
 public abstract class Pizza {
@@ -1470,10 +1481,11 @@ public abstract class Pizza {
         return result.toString();
     }
 }
-
+```
 
 四种产品子类，这里相当于把原料产品的生产延迟到子类(使用的是工厂方法模式)
 
+```java
 package net.dp.factory.abstractFactory;
  
 public class CheesePizza extends Pizza {
@@ -1489,8 +1501,7 @@ public class CheesePizza extends Pizza {
         sauce = ingredientFactory.createSauce();
         cheese = ingredientFactory.createCheese();
     }
-
- 
+}
 
 package net.dp.factory.abstractFactory;
  
@@ -1510,8 +1521,6 @@ public class ClamPizza extends Pizza {
     }
 }
 
- 
-
 package net.dp.factory.abstractFactory;
  
 public class VeggiePizza extends Pizza {
@@ -1528,8 +1537,7 @@ public class VeggiePizza extends Pizza {
         cheese = ingredientFactory.createCheese();
         veggies = ingredientFactory.createVeggies();
     }
-
- 
+}
 
 package net.dp.factory.abstractFactory;
  
@@ -1549,10 +1557,11 @@ public class PepperoniPizza extends Pizza {
         pepperoni = ingredientFactory.createPepperoni();
     }
 }
-
+```
 
 最终的调用方式
 
+```java
 package net.dp.factory.abstractFactory;
  
 public class PizzaTestDrive {
@@ -1586,14 +1595,16 @@ public class PizzaTestDrive {
         System.out.println("Joel ordered a " + pizza + "\n");
     }
 } 
+```
 
+## 5.单例模式(单件模式)
+`单例模式`-确保一个类只有一个实例，并提供一个全局访问点。
 
-5.单例模式(单件模式)
-单例模式-确保一个类只有一个实例，并提供一个全局访问点。
-
+![](HeadFirstDesignPattern8.jpg)
 
 经典单例模式，采用“延迟初始化(lazy instantiaze)”,只在第一次申请对象时，才初始化对象。
 
+```java
 package net.dp.singleton.classic;
  
 //NOTE: This is not thread safe!
@@ -1614,10 +1625,12 @@ public class Singleton {
     }
  
     // other useful methods here
-
+}
+```
 
 上面的例子，在多线程环境下会出现问题，简单的决绝方法是使用"急切初始化(eager instantiaze)"
 
+```java
 package net.dp.singleton.threadsafe.eager;
  
 public class Singleton {
@@ -1630,10 +1643,11 @@ public class Singleton {
         return uniqueInstance;
     }
 }
-
+```
 
 但是如果创建一个实例是需要消耗大量资源，并且它并不是每次都被使用，或者会在程序的后期才被使用到，则上面的方法效率不高。可以利用“双重检查加锁(double-checked locking)”，在第一次检查没有创建实例时，才进行同步，此时再次检查是否有创建对象，如果还是没有，则创建之。这样的做法在JDK5及其后续版本中是有效的。
 
+```java
 package net.dp.singleton.threadsafe.dcl;
  
 //double-checked locking
@@ -1656,24 +1670,28 @@ public class Singleton {
         }
         return uniqueInstance;
     }
+}
+```
 
+## 6.命令模式-封装调用
+`命令模式`-将“请求”封装成对象，以便使用不同的请求、队列或日志来参数化其他对象。命令模式也支持可撤销的操作。
 
-6.命令模式
-命令模式-将“请求”封装成对象，以便使用不同的请求、队列或日志来参数化其他对象。命令模式也支持可撤销的操作。
-
+![](HeadFirstDesignPattern9.jpg)
 
 命令模式代码示例：
 Command接口
 
+```java
 package net.dp.command.simpleremote;
  
 public interface Command {
     public void execute();
 }
-
+```
 
 所要封装的两个事物GarageDoor和Light(Receiver)
 
+```java
 package net.dp.command.simpleremote;
 
 public class GarageDoor {
@@ -1702,8 +1720,6 @@ public class GarageDoor {
     }
 }
 
- 
-
 package net.dp.command.simpleremote;
  
 public class Light {
@@ -1718,10 +1734,12 @@ public class Light {
     public void off() {
         System.out.println("Light is off");
     }
-
+}
+```
 
 封装的具体命令(ConcreteCommand)
 
+```java
 package net.dp.command.simpleremote;
  
 public class GarageDoorOpenCommand implements Command {
@@ -1735,8 +1753,6 @@ public class GarageDoorOpenCommand implements Command {
         garageDoor.up();
     }
 }
-
-
 
 package net.dp.command.simpleremote;
  
@@ -1752,8 +1768,6 @@ public class LightOnCommand implements Command {
     }
 }
 
- 
-
 package net.dp.command.simpleremote;
  
 public class LightOffCommand implements Command {
@@ -1767,10 +1781,11 @@ public class LightOffCommand implements Command {
         light.off();
     }
 }
-
+```
 
 下面是Invoker
 
+```java
 package net.dp.command.simpleremote;
  
 //
@@ -1788,10 +1803,12 @@ public class SimpleRemoteControl {
     public void buttonWasPressed() {
         slot.execute();
     }
-
+}
+```
 
 调用关系
 
+```java
 package net.dp.command.simpleremote;
  
 public class RemoteControlTest {
@@ -1808,20 +1825,23 @@ public class RemoteControlTest {
         remote.buttonWasPressed();
     }
 }
-
+```
 
 下面是带有undo功能的命令模式示例
 Command接口
 
+```java
 package net.dp.command.undo;
  
 public interface Command {
     public void execute();
     public void undo();
-
+}
+```
 
 所要封装的两个事物CeilingFan和Light(Receiver)
 
+```java
 package net.dp.command.undo;
  
 public class CeilingFan {
@@ -1862,7 +1882,6 @@ public class CeilingFan {
     }
 }
 
-
 package net.dp.command.undo;
  
 public class Light {
@@ -1897,11 +1916,13 @@ public class Light {
         return level;
     }
 }
-
+```
 
 封装的具体命令(ConcreteCommand)
+
 这里为了实现undo()，在execute()执行之前，会保存之前的对象状态。
 
+```java
 package net.dp.command.undo;
  
 public class CeilingFanHighCommand implements Command {
@@ -1929,7 +1950,6 @@ public class CeilingFanHighCommand implements Command {
         }
     }
 }
-
 
 package net.dp.command.undo;
  
@@ -1959,8 +1979,6 @@ public class CeilingFanMediumCommand implements Command {
     }
 }
 
- 
-
 package net.dp.command.undo;
  
 public class CeilingFanLowCommand implements Command {
@@ -1989,7 +2007,6 @@ public class CeilingFanLowCommand implements Command {
     }
 }
 
-
 package net.dp.command.undo;
  
 public class CeilingFanOnCommand implements Command {
@@ -2004,8 +2021,7 @@ public class CeilingFanOnCommand implements Command {
     public void undo() {
         ceilingFan.off();
     }
-
- 
+}
 
 package net.dp.command.undo;
  
@@ -2035,7 +2051,6 @@ public class CeilingFanOffCommand implements Command {
     }
 }
 
-
 package net.dp.command.undo;
  
 public class DimmerLightOnCommand implements Command {
@@ -2055,8 +2070,6 @@ public class DimmerLightOnCommand implements Command {
         light.dim(prevLevel);
     }
 }
-
- 
 
 package net.dp.command.undo;
  
@@ -2097,8 +2110,6 @@ public class LightOnCommand implements Command {
     }
 }
 
-
-
 package net.dp.command.undo;
  
 public class LightOffCommand implements Command {
@@ -2116,19 +2127,22 @@ public class LightOffCommand implements Command {
         light.on();
     }
 }
-
+```
 
 下面是一个空对象(null object)。可以将处理null的责任转移给空对象。举例来说，遥控器不可能一出厂就设置了有意义的命令对象，所以提供了NoCommand对象作为代用品，当调用它的execute()时，它不会做任何事情。
 
+```java
 package net.dp.command.undo;
  
 public class NoCommand implements Command {
     public void execute() { }
     public void undo() { }
-
+}
+```
 
 下面是Invoker
 
+```java
 package net.dp.command.undo;
  
 //
@@ -2181,10 +2195,11 @@ public class RemoteControlWithUndo {
         return stringBuff.toString();
     }
 }
-
+```
 
 调用关系
 
+```java
 package net.dp.command.undo;
  
 public class RemoteLoader {
@@ -2232,10 +2247,11 @@ public class RemoteLoader {
         remoteControl.undoButtonWasPushed();
     }
 }
-
+```
 
 设置宏命令，可以将部分命令组合在一起依次连续触发或关闭
 
+```java
 package net.dp.command.party;
  
 public class MacroCommand implements Command {
@@ -2257,10 +2273,11 @@ public class MacroCommand implements Command {
         }
     }
 }
-
+```
 
 调用关系
 
+```java
 package net.dp.command.party;
  
 public class RemoteLoader {
@@ -2298,29 +2315,32 @@ public class RemoteLoader {
         remoteControl.offButtonWasPushed(0);
     }
 } 
+```
 
-
-7.1 适配器模式
-适配器模式-将一个类的接口，转换成客户期望的另一个接口。适配器让原本不兼容的类可以合作无间。
+## 7.适配器模式与外观模式-随遇而安
+### 7.1 适配器模式
+`适配器模式`-将一个类的接口，转换成客户期望的另一个接口。适配器让原本不兼容的类可以合作无间。
 
 “对象”适配器
 
+![](HeadFirstDesignPattern10.jpg)
 
 "类"适配器
 
+![](HeadFirstDesignPattern11.jpg)
 
 下面展示对象适配器的简单用法。
 
 有两个基类Duck和Turkey
 
+```java
 package net.dp.adapter.ducks;
  
 public interface Duck {
     public void quack();
  
     public void fly();
-
- 
+}
 
 package net.dp.adapter.ducks;
  
@@ -2329,10 +2349,11 @@ public interface Turkey {
  
     public void fly();
 }
-
+```
 
 它们各自有一个子类MallardDuck和WildTurkey
 
+```java
 package net.dp.adapter.ducks;
  
 public class MallardDuck implements Duck {
@@ -2343,8 +2364,7 @@ public class MallardDuck implements Duck {
     public void fly() {
         System.out.println("I'm flying");
     }
-
- 
+}
 
 package net.dp.adapter.ducks;
  
@@ -2357,10 +2377,11 @@ public class WildTurkey implements Turkey {
         System.out.println("I'm flying a short distance");
     }
 }
-
+```
 
 现在需要互相适配对方，两个适配器类DuckAdapter和TurkeyAdapter
 
+```java
 package net.dp.adapter.ducks;
  
 import java.util.Random;
@@ -2385,8 +2406,6 @@ public class DuckAdapter implements Turkey {
     }
 }
 
- 
-
 package net.dp.adapter.ducks;
  
 public class TurkeyAdapter implements Duck {
@@ -2405,10 +2424,12 @@ public class TurkeyAdapter implements Duck {
             turkey.fly();
         }
     }
-
+}
+```
 
 调用关系
 
+```java
 package net.dp.adapter.ducks;
  
 public class DuckTestDrive {
@@ -2434,8 +2455,6 @@ public class DuckTestDrive {
     }
 }
 
- 
-
 package net.dp.adapter.ducks;
  
 public class TurkeyTestDrive {
@@ -2449,19 +2468,23 @@ public class TurkeyTestDrive {
             duckAdapter.fly();
         }
     }
+}
+```
 
+### 7.2 外观模式
+`外观模式`-提供了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。这个定义清楚地告诉我们，外观的意图是要提供一个简单的接口，好让一个子系统更易于使用。
 
-7.2 外观模式
-外观模式-提供了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。这个定义清楚地告诉我们，外观的意图是要提供一个简单的接口，好让一个子系统更易于使用。
+![](HeadFirstDesignPattern12.jpg)
 
-
-设计原则-最少知识原则：只和你的密友谈话。这个原则希望我们在设计中，不要让太多的类耦合在一起，免得修改系统中的一部分，会影响到其他部分。
+设计原则-**最少知识原则**：只和你的密友谈话。这个原则希望我们在设计中，不要让太多的类耦合在一起，免得修改系统中的一部分，会影响到其他部分。
 
 代码示例：
 
+![](HeadFirstDesignPattern13.jpg)
 
 子系统中包含的类有Amplifier,CdPlayer,DvdPlayer,Tuner,Screen,Projector,TheaterLights,PopcomPopper
 
+```java
 package net.dp.facade.hometheater;
  
 public class Amplifier {
@@ -2513,8 +2536,6 @@ public class Amplifier {
         return description;
     }
 }
-
- 
 
 package net.dp.facade.hometheater;
  
@@ -2570,8 +2591,7 @@ public class CdPlayer {
     public String toString() {
         return description;
     }
-
- 
+}
 
 package net.dp.facade.hometheater;
  
@@ -2636,8 +2656,6 @@ public class DvdPlayer {
     }
 }
 
- 
-
 package net.dp.facade.hometheater;
  
 public class Tuner {
@@ -2670,11 +2688,10 @@ public class Tuner {
         System.out.println(description + " setting FM mode");
     }
  
-        public String toString() {
-                return description;
-        }
-
- 
+    public String toString() {
+            return description;
+    }
+}
 
 package net.dp.facade.hometheater;
  
@@ -2697,8 +2714,6 @@ public class Screen {
          return description;
     }
 }
-
- 
 
 package net.dp.facade.hometheater;
  
@@ -2727,11 +2742,10 @@ public class Projector {
         System.out.println(description + " in tv mode (4x3 aspect ratio)");
     }
  
-        public String toString() {
-                return description;
-        }
-
- 
+    public String toString() {
+            return description;
+    }
+}
 
 package net.dp.facade.hometheater;
  
@@ -2759,8 +2773,6 @@ public class TheaterLights {
         }
 }
 
- 
-
 package net.dp.facade.hometheater;
  
 public class PopcornPopper {
@@ -2785,10 +2797,12 @@ public class PopcornPopper {
     public String toString() {
           return description;
     }
-
+}
+```
 
 提供一个控制子系统的外观类HomeTheaterFacade
 
+```java
 package net.dp.facade.hometheater;
  
 public class HomeTheaterFacade {
@@ -2882,10 +2896,11 @@ public class HomeTheaterFacade {
         amp.off();
     }
 }
-
+```
 
 客户端通过外观类来控制子系统
 
+```java
 package net.dp.facade.hometheater;
  
 public class HomeTheaterTestDrive {
@@ -2906,15 +2921,18 @@ public class HomeTheaterTestDrive {
         homeTheater.watchMovie("Raiders of the Lost Ark");
         homeTheater.endMovie();
     }
+}
+```
 
+## 8.模板方法模式-封装算法
+`模板方法模式`-在一个方法中定义了一个算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些步骤。
 
-8.模板方法模式
-模板方法模式-在一个方法中定义了一个算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些步骤。
-
+![](HeadFirstDesignPattern14.jpg)
 
 代码示例：
 最初的Coffee和Tea两个类设计如下，
 
+```java
 package net.dp.templatemethod.simplebarista;
  
 public class Coffee {
@@ -2943,8 +2961,6 @@ public class Coffee {
     }
 }
 
- 
-
 package net.dp.templatemethod.simplebarista;
  
 public class Tea {
@@ -2971,10 +2987,12 @@ public class Tea {
     public void pourInCup() {
         System.out.println("Pouring into cup");
     }
-
+}
+```
 
 调用关系
 
+```java
 package net.dp.templatemethod.simplebarista;
  
 public class Barista {
@@ -2988,17 +3006,19 @@ public class Barista {
         coffee.prepareRecipe();
     }
 }
-
+```
 
 这里已经观察到Coffee和Tea两个类中存在相同的冲泡逻辑。对其抽象为四个步骤：
--把水煮沸
--用热水泡咖啡或茶
--把饮料倒进杯子
--在饮料中加入适当的调料
+- 把水煮沸
+- 用热水泡咖啡或茶
+- 把饮料倒进杯子
+- 在饮料中加入适当的调料
+
 因此，我们把这一算法步骤抽象出来，把共通的部分实现调，不一些不同的步骤定义成抽象方法，使其延迟到子类中去实现。
 
 定义模板方法基类CaffeineBeverage如下，其中共通的部分是boilWater()和pourInCup()。而一些存在变化的方法brew()和addCondiments()则定义成抽象方法。
 
+```java
 package net.dp.templatemethod.barista;
  
 public abstract class CaffeineBeverage {
@@ -3022,10 +3042,11 @@ public abstract class CaffeineBeverage {
         System.out.println("Pouring into cup");
     }
 }
-
+```
 
 Coffee和Tea两个子类分别继承CaffeineBeverage，实现自己独有的两个步骤。
 
+```java
 package net.dp.templatemethod.barista;
  
 public class Coffee extends CaffeineBeverage {
@@ -3035,8 +3056,7 @@ public class Coffee extends CaffeineBeverage {
     public void addCondiments() {
         System.out.println("Adding Sugar and Milk");
     }
-
- 
+}
 
 package net.dp.templatemethod.barista;
  
@@ -3048,10 +3068,11 @@ public class Tea extends CaffeineBeverage {
         System.out.println("Adding Lemon");
     }
 }
-
+```
 
 我们也可以有“默认不做事的方法”，称这些方法为hook(钩子)。当你的子类“必须”提供算法中的某个方法或步骤的实现时，就使用抽象方法。如果算法的这个部分是可选的，就用钩子。下面的模板方法基类CaffeineBeverage定义了一个钩子。
 
+```java
 package net.dp.templatemethod.barista;
  
 public abstract class CaffeineBeverageWithHook {
@@ -3080,12 +3101,14 @@ public abstract class CaffeineBeverageWithHook {
     boolean customerWantsCondiments() {
         return true;
     }
-
+}
+```
 
 带有钩子的Coffee和Tea。
 
+```java
 package net.dp.templatemethod.barista;
- 
+
 import java.io.*;
  
 public class CoffeeWithHook extends CaffeineBeverageWithHook {
@@ -3126,8 +3149,6 @@ public class CoffeeWithHook extends CaffeineBeverageWithHook {
         return answer;
     }
 }
-
- 
 
 package net.dp.templatemethod.barista;
  
@@ -3171,10 +3192,12 @@ public class TeaWithHook extends CaffeineBeverageWithHook {
         }
         return answer;
     }
-
+}
+```
 
 调用关系。
 
+```java
 package net.dp.templatemethod.barista;
  
 public class BeverageTestDrive {
@@ -3200,21 +3223,27 @@ public class BeverageTestDrive {
         coffeeHook.prepareRecipe();
     }
 }
+```
 
+设计原则-**好莱坞原则**：别调用(打电话给)我们，我们会调用(打电话给)你。在好莱坞原则之下，我们允许低层组件将自己挂钩到系统上，但是高层组件会决定什么时候和怎样使用这些低层组件。
 
-设计原则-好莱坞原则：别调用(打电话给)我们，我们会调用(打电话给)你。在好莱坞原则之下，我们允许低层组件将自己挂钩到系统上，但是高层组件会决定什么时候和怎样使用这些低层组件。
+![](HeadFirstDesignPattern15.jpg)
 
+## 送代器与组合模式-管理良好的集合
+### 9.1 迭代器模式
+`迭代器模式`-提供一种方法顺序访问一个聚合对象中的各个元素，而又不暴露其内部的表示。迭代器模式让我们能游走于聚合内的每一个元素，而又不暴露其内部的表示。把游走的任务放在迭代器上，而不是聚合上。这样简化了聚合的接口和实现，也让责任各得其所。
 
-9.1 迭代器模式
-迭代器模式-提供一种方法顺序访问一个聚合对象中的各个元素，而又不暴露其内部的表示。迭代器模式让我们能游走于聚合内的每一个元素，而又不暴露其内部的表示。把游走的任务放在迭代器上，而不是聚合上。这样简化了聚合的接口和实现，也让责任各得其所。
+![](HeadFirstDesignPattern16.jpg)
 
-设计原则-单一责任。一个类应该只有一个引起变化的原因。类的每个责任都有改变的潜在区域。超过一个责任，意味着超过一个改变的区域。
+设计原则-**单一责任**。一个类应该只有一个引起变化的原因。类的每个责任都有改变的潜在区域。超过一个责任，意味着超过一个改变的区域。
 
 代码示例:
 
+![](HeadFirstDesignPattern17.jpg)
 
 所有的菜单元素，
 
+```java
 package net.dp.iterator.dinermerger;
  
 public class MenuItem {
@@ -3250,10 +3279,12 @@ public class MenuItem {
     public String toString() {
         return (name + ", $" + price + "\n   " + description);
     }
-
+}
+```
 
 定义迭代器接口，
 
+```java
 package net.dp.iterator.dinermerger;
  
 public interface Iterator {
@@ -3261,17 +3292,16 @@ public interface Iterator {
  
     Object next();
 }
-
+```
 
 分别有两组菜单，其中PancakeHouseMenu内部数据结构是ArrayList，DinerMenu内部数据结构是数组。它们实现了Menu接口，该接口限定需要创建迭代器实例。
 
+```java
 package net.dp.iterator.dinermerger;
  
 public interface Menu {
     public Iterator createIterator();
 }
-
- 
 
 package net.dp.iterator.dinermerger;
  
@@ -3324,8 +3354,7 @@ public class PancakeHouseMenu implements Menu {
     }
  
     // other menu methods here
-
- 
+}
 
 package net.dp.iterator.dinermerger;
  
@@ -3375,10 +3404,11 @@ public class DinerMenu implements Menu {
  
     // other menu methods here
 }
-
+```
 
 这两组菜单对应的迭代器，PancakeHouseMenuIterator和DinerMenuIterator，分别对应ArrayList和数据两种内部数据结构。
 
+```java
 package net.dp.iterator.dinermerger;
  
 import java.util.ArrayList;
@@ -3404,8 +3434,7 @@ public class PancakeHouseMenuIterator implements Iterator {
             return true;
         }
     }
-
- 
+}
 
 package net.dp.iterator.dinermerger;
  
@@ -3431,10 +3460,11 @@ public class DinerMenuIterator implements Iterator {
         }
     }
 }
-
+```
 
 对于Waitress来说，她是通过Iterator来操作这两组菜单中的MenuItem，而对于其内部数据结构是ArrayList还是数组并不知晓。
 
+```java
 package net.dp.iterator.dinermerger;
  
 public class Waitress {
@@ -3505,15 +3535,19 @@ public class Waitress {
         }
         return false;
     }
+}
+```
 
+### 9.2 组合模式
+`组合模式`-允许你将对象组合成树形结构来表现“整体/部分”层次结构。组合能让客户以一致的方式处理个别对象以及对象组合。使用组合结构，我们能把相同的操作应用在组合和个别对象上，换句话说，在大多数情况下，我们可以忽略对象组合和个别对象之间的差别。
 
-9.2 组合模式
-组合模式-允许你将对象组合成树形结构来表现“整体/部分”层次结构。组合能让客户以一致的方式处理个别对象以及对象组合。使用组合结构，我们能把相同的操作应用在组合和个别对象上，换句话说，在大多数情况下，我们可以忽略对象组合和个别对象之间的差别。
+![](HeadFirstDesignPattern18.jpg)
 
 利用组合设计菜单，
 
 MenuComponent是基类，
 
+```java
 package net.dp.composite.menu;
  
 public abstract class MenuComponent {
@@ -3550,10 +3584,11 @@ public abstract class MenuComponent {
         throw new UnsupportedOperationException();
     }
 }
-
+```
 
 Menu是枝干节点，
 
+```java
 package net.dp.composite.menu;
  
 import java.util.Iterator;
@@ -3600,10 +3635,12 @@ public class Menu extends MenuComponent {
             menuComponent.print();
         }
     }
-
+}
+```
 
 MenuItem是叶子节点，
 
+```java
 package net.dp.composite.menu;
  
 public class MenuItem extends MenuComponent {
@@ -3645,10 +3682,11 @@ public class MenuItem extends MenuComponent {
         System.out.println("     -- " + getDescription());
     }
 }
-
+```
 
 Waitress作为Client，不需要区分枝干和叶子节点，这个区别对它是透明的。
 
+```java
 package net.dp.composite.menu;
  
 public class Waitress {
@@ -3661,10 +3699,12 @@ public class Waitress {
     public void printMenu() {
         allMenus.print();
     }
-
+}
+```
 
 测试程序，
 
+```java
 package net.dp.composite.menu;
  
 public class MenuTestDrive {
@@ -3710,12 +3750,13 @@ public class MenuTestDrive {
         waitress.printMenu();
     }
 }
-
+```
 
 组合模式违反了“单一责任”的设计原则。组合模式不但要管理层次结构，还要执行菜单的操作。组合模式是以单一责任设计原则换取透明性。通过让组件的接口同时包含一些管理子节点和叶节点的操作，客户就可以将组合和叶节点一视同仁。也就是说，一个元素究竟是组合还是叶节点，对客户是透明的。
 
 为基类MenuComponent增加一个createIterator()方法，实现组合迭代器。
 
+```java
 package net.dp.composite.menuiterator;
  
 import java.util.Iterator;
@@ -3755,10 +3796,12 @@ public abstract class MenuComponent {
     public void print() {
         throw new UnsupportedOperationException();
     }
-
+}
+```
 
 对于叶子节点MenuItem，它不需要迭代出更多的节点，此时使用一个空迭代器NullIterator作为对象返回。
 
+```java
 package net.dp.composite.menuiterator;
  
 import java.util.Iterator;
@@ -3777,8 +3820,6 @@ public class NullIterator implements Iterator<MenuComponent> {
         throw new UnsupportedOperationException();
     }
 }
-
- 
 
 package net.dp.composite.menuiterator;
  
@@ -3827,10 +3868,12 @@ public class MenuItem extends MenuComponent {
         System.out.println(", " + getPrice());
         System.out.println("     -- " + getDescription());
     }
-
+}
+```
 
 作为枝干节点Menu，返回一个组合迭代器对象CompositeIterator，它的内部数据结构使用一个堆栈，利用它深度遍历树的所有节点。
 
+```java
 package net.dp.composite.menuiterator;
  
 import java.util.Iterator;
@@ -3874,8 +3917,6 @@ public class CompositeIterator implements Iterator<MenuComponent> {
         throw new UnsupportedOperationException();
     }
 }
-
- 
 
 package net.dp.composite.menuiterator;
  
@@ -3930,10 +3971,12 @@ public class Menu extends MenuComponent {
             menuComponent.print();
         }
     }
-
+}
+```
 
 利用组合迭代器，Waitress可以遍历所有的节点，当前它会打印所有符合Vegetarian要求的节点。
 
+```java
 package net.dp.composite.menuiterator;
  
 import java.util.Iterator;
@@ -3964,10 +4007,11 @@ public class Waitress {
         }
     }
 }
-
+```
 
 测试程序，
 
+```java
 package net.dp.composite.menuiterator;
  
 public class MenuTestDrive {
@@ -4079,21 +4123,25 @@ public class MenuTestDrive {
         waitress.printVegetarianMenu();
  
     }
+}
+```
 
+## 10 状态模式-事物的状态
+`状态模式`-允许对象在内部状态改变时改变它的行为，对象看起来修改了它的类。这个模式将状态封装成为独立的类，并将动作委托到代表当前状态的对象。使用组合通过简单引用不同的状态对象来造成类改变状态的假象。
 
-10 状态模式
-状态模式-允许对象在内部状态改变时改变它的行为，对象看起来修改了它的类。这个模式将状态封装成为独立的类，并将动作委托到代表当前状态的对象。使用组合通过简单引用不同的状态对象来造成类改变状态的假象。
+![](HeadFirstDesignPattern19.jpg)
 
-
-策略模式与状态模式-一般来说，我们把策略模式想成是除了继承之外的一种弹性替代方案。如果你使用继承定义了一个类的行为，你将被这个行为困住，甚至要修改它都很难。有了策略模式，你可以通过组合不同的对象来改变行为。我们把状态模式想成是不用在context中放置许多条件判断的替代方案。通过将行为包装进状态对象中，你可以通过在context内简单地改变状态对象来改变context的行为。
+策略模式与状态模式-一般来说，我们把策略模式想成是除了继承之外的一种弹性替代方案。如果你使用继承定义了一个类的行为，你将被这个行为困住，甚至要修改它都很难。有了策略模式，你可以通过组合不同的对象来改变行为。我们**把状态模式想成是不用在context中放置许多条件判断的替代方案**。通过将行为包装进状态对象中，你可以通过在context内简单地改变状态对象来改变context的行为。
 
 糖果机例子，它的状态图如下，
 
+![](HeadFirstDesignPattern20.jpg)
 
 从图中我们可以分析出系统存在四种状态：没有25分钱(NO_QUARTER)，有25分钱(HAS_QUARTER)，糖果售罄(SOLD_OUT)，出售糖果(SOLD)。将系统中可以发成的动作归纳为：投入25分钱(insertQuarter)，退回25分钱(ejectQuarter)，转动曲柄(turnCrank)，发放糖果(dispense)。每种动作的发生，都会导致系统中状态的转换。
 
 不使用状态模式，
 
+```java
 package net.dp.state.gumball;
  
 public class GumballMachine {
@@ -4199,10 +4247,11 @@ public class GumballMachine {
         return result.toString();
     }
 }
-
+```
 
 测试程序，
 
+```java
 package net.dp.state.gumball;
  
 public class GumballMachineTestDrive {
@@ -4241,13 +4290,14 @@ public class GumballMachineTestDrive {
  
         System.out.println(gumballMachine);
     }
-
+}
+```
 
 现在我们使用状态模式，将四种状态抽象成类，
 
-Jun20130110：以状态为对象，抽象所有的action，当施以这种action的时候，状态会transfer。
 状态接口，
 
+```java
 package net.dp.state.gumballstate;
  
 public interface State {
@@ -4260,10 +4310,11 @@ public interface State {
  
     public void dispense();
 }
-
+```
 
 四种状态，我们可以发现，所有的动作实现其实就是当前状态至其他几种状态的转变过程。这一过程很好的融入在各个状态子类中。
 
+```java
 package net.dp.state.gumballstate;
  
 public class HasQuarterState implements State {
@@ -4296,8 +4347,6 @@ public class HasQuarterState implements State {
     }
 }
 
- 
-
 package net.dp.state.gumballstate;
  
 public class NoQuarterState implements State {
@@ -4327,8 +4376,7 @@ public class NoQuarterState implements State {
     public String toString() {
         return "waiting for quarter";
     }
-
- 
+}
 
 package net.dp.state.gumballstate;
  
@@ -4361,8 +4409,6 @@ public class SoldOutState implements State {
         return "sold out";
     }
 }
-
- 
 
 package net.dp.state.gumballstate;
  
@@ -4399,10 +4445,12 @@ public class SoldState implements State {
     public String toString() {
         return "dispensing a gumball";
     }
-
+}
+```
 
 糖果机中没有了各种状态互相之间转换的繁杂逻辑，
 
+```java
 package net.dp.state.gumballstate;
  
 public class GumballMachine {
@@ -4493,10 +4541,11 @@ public class GumballMachine {
         return result.toString();
     }
 }
-
+```
 
 测试程序，
 
+```java
 package net.dp.state.gumballstate;
  
 public class GumballMachineTestDrive {
@@ -4518,10 +4567,12 @@ public class GumballMachineTestDrive {
  
         System.out.println(gumballMachine);
     }
-
+}
+```
 
 使用状态模式，对于系统新增状态也会变得非常简单，现在增加一种情况，“当曲柄被转动时，有10%机率掉下来的是两颗糖果”
 
+```java
 package net.dp.state.gumballstatewinner;
  
 public class WinnerState implements State {
@@ -4563,10 +4614,11 @@ public class WinnerState implements State {
         return "despensing two gumballs for your quarter, because YOU'RE A WINNER!";
     }
 }
-
+```
 
 修改有25分钱状态，增加其触发至“10%机率获得两颗糖果”的状态
 
+```java
 package net.dp.state.gumballstatewinner;
  
 import java.util.Random;
@@ -4605,10 +4657,12 @@ public class HasQuarterState implements State {
     public String toString() {
         return "waiting for turn of crank";
     }
-
+}
+```
 
 糖果机中新增一种状态
 
+```java
 package net.dp.state.gumballstatewinner;
  
 public class GumballMachine {
@@ -4705,10 +4759,11 @@ public class GumballMachine {
         return result.toString();
     }
 }
-
+```
 
 测试程序，
 
+```java
 package net.dp.state.gumballstatewinner;
  
 public class GumballMachineTestDrive {
@@ -4754,16 +4809,19 @@ public class GumballMachineTestDrive {
  
         System.out.println(gumballMachine);
     }
+}
+```
 
+## 11.代理模式-控制对象访问
+`代理模式`-为另一个对象提供一个替身或占位符以控制对这个对象的访问。使用代理模式创建代表对象，让代表对象控制某对象的访问，被代理的对象可以是远程的对象、创建开销大的对象或需要安全控制的对象。
 
-11.代理模式
-代理模式-为另一个对象提供一个替身或占位符以控制对这个对象的访问。使用代理模式创建代表对象，让代表对象控制某对象的访问，被代理的对象可以是远程的对象、创建开销大的对象或需要安全控制的对象。
-
+![](HeadFirstDesignPattern21.jpg)
 
 下面演示一种创建开销大的对象的代理的用法，ImageProxy首先创建一个ImageIcon，然后开始从网络URL上加载图片。在加载过程中，ImageProxy显示“CD封面加载中，请稍候......”。当图片加载完毕，ImageProxy把所有方法调用委托给真正的ImageIcon，这些方法包括了paintIcon(),getWidth()和getHeight()。如果用户请求新的图像，我们就创建新的代理，重复这样的过程。
 
 Image组件，
 
+```java
 package net.dp.proxy.virtualproxy;
  
 import java.awt.Graphics;
@@ -4795,10 +4853,11 @@ class ImageComponent extends JComponent {
         icon.paintIcon(this, g, x, y);
     }
 }
-
+```
 
 其中对于ImageIcon，使用了代理，
 
+```java
 package net.dp.proxy.virtualproxy;
  
 import java.awt.Component;
@@ -4854,10 +4913,12 @@ class ImageProxy implements Icon {
             }
         }
     }
-
+}
+```
 
 最终在Image组件中组装Icon时，创建了Icon的代理对象，
 
+```java
 package net.dp.proxy.virtualproxy;
  
 import java.awt.event.ActionEvent;
@@ -4941,10 +5002,4 @@ public class ImageProxyTestDrive {
         }
     }
 } 
-
-
-
-
-
-
-
+```
