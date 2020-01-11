@@ -377,20 +377,22 @@
    1. [算法概论](software/Algorithms.md)
 3. 架构设计
    1. [Head First设计模式](software/HeadFirstDesignPattern.md)
-4. 计算机网络
+4. 操作系统
+   1. [Modern Operating Systems](ModernOperatingSystems.md)
+5. 计算机网络
    1. [TCP/IP详解卷1:协议](software/TcpIpProtocol.md)
-5. ETL
+6. ETL
    1. [Learning Scrapy](software/LearningScrapy.md)
    2. [SQL入门经典](software/BeginningSQL.md)
    3. [数据仓库](software/BuildingTheDataWarehouse.md)
    4. [语义网基础教程](software/ASemanticWebPrimer.md)
-6. DevOps
+7. DevOps
    1. [Mastering Jenkins](software/MasteringJenkins.md)
    2. [Pro Git (Second Edition)](software/ProGit.md)
    3. [Docker In Action](software/DockerInAction.md)
    4. [Getting Started with Kubernetes](software/GettingStartedWithKubernetes.md)
    5. [Kubernetes Up and Running,2nd Edition](software/KubernetesUpAndRunning.md)
-7. Web开发
+8. Web开发
    1. [Mastering Flask](software/MasteringFlask.md)
    2. [React设计思想](software/ReactBasic.md)
    3. [Learning React](software/LearningReact.md)
