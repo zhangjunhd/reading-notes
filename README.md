@@ -378,7 +378,7 @@
 3. 架构设计
    1. [Head First设计模式](software/HeadFirstDesignPattern.md)
 4. 操作系统
-   1. [Modern Operating Systems](ModernOperatingSystems.md)
+   1. [Modern Operating Systems](software/ModernOperatingSystems.md)
 5. 计算机网络
    1. [TCP/IP详解卷1:协议](software/TcpIpProtocol.md)
 6. ETL
