@@ -34,6 +34,12 @@
     - [2.3.6 Mutexes](#236-mutexes)
     - [2.3.7 Monitors](#237-monitors)
     - [2.3.8 Message Passing](#238-message-passing)
+    - [2.3.9 Barriers](#239-barriers)
+  - [2.4 CLASSICAL IPC PROBLEMS](#24-classical-ipc-problems)
+    - [2.4.1 The Dining Philosophers Problem](#241-the-dining-philosophers-problem)
+    - [2.4.2 The Readers and Writers Problem](#242-the-readers-and-writers-problem)
+    - [2.4.3 The Sleeping Barber Problem](#243-the-sleeping-barber-problem)
+  - [2.5 SCHEDULING](#25-scheduling)
 
 # 2 PROCESSES AND THREADS
 The most central concept in any operating system is the process: an abstraction of a running program.
@@ -414,4 +420,228 @@ receive(source, &message);
 ```
 
 Message passing is commonly used in parallel programming systems. One well-known message-passing system, for example, is MPI (Message-Passing Interface).
+
+### 2.3.9 Barriers
+When a process reaches the barrier, it is blocked until all processes have reached the barrier. The operation of a barrier is illustrated in Fig. 2-30.
+
+![](ModernOperatingSystems14.png)
+
+Figure 2-30. Use of a barrier. (a) Processes approaching a barrier. (b) All processes but one blocked at the barrier. (c) When the last process arrives at the barrier, all of them are let through.
+
+## 2.4 CLASSICAL IPC PROBLEMS
+### 2.4.1 The Dining Philosophers Problem
+![](ModernOperatingSystems15.png)
+
+Figure 2-31. Lunch time in the Philosophy Department.
+
+Figure 2-32 shows the obvious solution. The procedure take_fork waits until the specified fork is available and then seizes it. Unfortunately, the obvious solution is wrong. Suppose that all five philosophers take their left forks simultaneously. None will be able to take their right forks, and there will be a deadlock.
+
+```c
+#define N 5                /* number of philosophers */
+void philosopher(int i)    /* i: philosopher number, from 0 to 4 */
+{     
+    while (TRUE) 
+    {         
+        think( );              /* philosopher is thinking */
+        take_fork(i);          /* take left fork */         
+        take_fork((i+1) % N);  /* take right fork; % is modulo operator */         
+        eat();                 /* yum-yum, spaghetti */
+        put_fork(i);           /* Put left fork back on the table */         
+        put_fork((i+1) % N);   /* put right fork back on the table */     
+    }
+}
+```
+
+Figure 2-32. A nonsolution to the dining philosophers problem.
+
+A situation like this, in which all the programs continue to run indefinitely but fail to make any progress is called starvation
+
+The solution presented in Fig. 2-33 is deadlock-free and allows the maximum parallelism for an arbitrary number of philosophers. It uses an array, state, to keep track of whether a philosopher is eating, thinking, or hungry (trying to acquire forks). A philosopher may move only into eating state if neither neighbor is eating. Philosopher i’s neighbors are defined by the macros LEFT and RICHT. In other words, if i is 2, LEFT is 1 and RIGHT is 3.
+
+The program uses an array of semaphores, one per philosopher, so hungry philosophers can block if the needed forks are busy. Note that each process runs the procedure philosopher as its main code, but the other procedures, take_forks,put_forks, and test are ordinary procedures and not separate processes.
+
+```c
+#define N  5             /* number of philosophers */
+#define LEFT  (i+N−1)%N  /* number of i's left neighbor */
+#define RIGHT (i+1)%N    /* number of i's right neighbor */
+#define THINKING 0       /* philosopher is thinking */ 
+#define HUNGRY   1       /* philosopher is trying to get forks */ 
+#define EATING     2     /* philosopher is eating */
+
+typedef int semaphore;   /* semaphores are a special kind of int */ 
+int state[N];            /* array to keep track of everyone's state */ 
+semaphore mutex = 1;     /* mutual exclusion for critical regions */
+semaphore s[N];          /* one semaphore per philosopher */ 
+
+void philosopher (int i) /* i: philosopher number, from 0 to N−1 */
+{     
+    while (TRUE)         /* repeat forever */
+    {                 
+        think();         /* philosopher is thinking */
+        take_forks(i);   /* acquire two forks or block */         
+        eat();           /* yum-yum, spaghetti */         
+        put_forks(i);    /* put both forks back on table */
+    } 
+}
+void take_forks(int i)  /* i: philosopher number, from 0 to N−1 */
+{    
+    down(&mutex);       /* enter critical region */
+    state[i] = HUNGRY;  /* record fact that philosopher i is hungry */     
+    test(i);            /* try to acquire 2 forks */     
+    up(&mutex);         /* exit critical region */
+    down(&s[i]);        /* block if forks were not acquired */ 
+}
+
+void put_forks(i)       /* i: philosopher number, from 0 to N−1 */ 
+{     
+    down(&mutex);       /* enter critical region */
+    state[i] = THINKING;/* philosopher has finished eating */     
+    test(LEFT);         /* see if left neighbor can now eat */     
+    test(RIGHT);        /* see if right neighbor can now eat */
+    up(&mutex);         /* exit critical region */ 
+}
+
+void test(i)            /* i: philosopher number, from 0 to N−1 */ 
+{   
+    if (state[i] == HUNGRY && state[LEFT] != EATING && state[RIGHT] != EATING) 
+    {
+        state[i] = EATING;     
+        up(&s[i]);   
+    }
+}
+```
+
+Figure 2-33. A solution to the dining philosophers problem.
+
+### 2.4.2 The Readers and Writers Problem
+Imagine, for example, an airline reservation system, with many competing processes wishing to read and write it. It is acceptable to have multiple processes reading the database at the same time, but if one process is updating (writing) the database, no other processes may have access to the database, not even readers. The question is how do you program the readers and the writers? One solution is shown in Fig. 2-34.
+
+```c
+typedef int semaphore;         /* use your imagination */ 
+semaphore mutex = 1;           /* controls access to 'rc' */ 
+semaphore db = 1;              /* controls access to the database */
+int rc = 0;                    /* # of processes reading or wanting to */ 
+
+void reader(void)
+{     
+    while (TRUE)               /* repeat forever */
+    {                     
+        down(&mutex);          /* get exclusive access to 'rc' */
+        rc = rc + 1;           /* one reader more now */         
+        if (re == 1) 
+            down(&db);         /* if this is the first reader… */         
+        up{&mutex);            /* release exclusive access to 'rc' */
+        read_data_base();      /* access the data */        
+        down(&mutex);          /* get exclusive access to 'rc' */        
+        rc = rc − 1;           /* one reader fewer now */
+
+        if (rc == 0) up(&db);  /* if this is the last reader… */         
+            up(&mutex);        /* release exclusive access to 'rc' */         
+        use_data_read();       /* noncritical region */
+    } 
+}
+
+void writer(void) 
+{     
+    while (TRUE)               /* repeat forever */
+    {             
+        think_up_data();       /* noncritical region */         
+        down(&db);             /* get exclusive access */         
+        write_data_base();     /* update the data */
+        up(&db);               /* release exclusive access */    
+    }
+}
+```
+### 2.4.3 The Sleeping Barber Problem
+Another classical IPC problem takes place in a barber shop. The barber shop has one barber, one barber chair, and n chairs for waiting customers, if any, to sit on. If there are no customers present, the barber sits down in the barber chair and falls asleep, as illustrated in Fig. 2-35. When a customer arrives, he has to wake up the sleeping barber. If additional customers arrive while the barber is cutting a customer’s hair, they either sit down (if there are empty chairs) or leave the shop (if all chairs are full).
+
+![](ModernOperatingSystems16.png)
+
+```c
+#define CHAIRS 5               /* # chairs for waiting customers */ 
+typedef int semaphore;         /* use your imagination */ 
+semaphore customers = 0;       /* # of customers waiting for service */
+semaphore barbers = 0;         /* # of barbers waiting for customers */ 
+semaphore mutex = 1;           /* for mutual exclusion */ 
+int waiting = 0;               /* customers are waiting (not being cut) */
+
+void barber(void) 
+{
+    white (TRUE)
+    {        
+        down(&customers);      /* go to sleep if # of customers is 0 */        
+        down(&mutex);          /* acquire access to 'waiting' */
+        waiting = waiting − 1; /* decrement count of waiting customers */            
+        up(&barbers);          /* one barber is now ready to cut hair */         
+        up(&mutex);            /* release 'waiting' */
+        cut_hair();            /* cut hair (outside critical region) */     
+    } 
+} 
+
+void customer(void) 
+{
+    down(&mutex);              /* enter critical region */     
+    if (waiting < CHAIRS)      /* if there are no free chairs, leave */
+    {             
+        waiting = waiting + 1; /* increment count of waiting customers */
+        up(&customers);        /* wake up barber if necessary */         
+        up(&mutex);            /* release access to 'waiting' */         
+        down(&barbers);        /* go to sleep if # of free barbers is 0 */
+        get_haircut();         /* be seated and be serviced */     
+    } 
+    else 
+    {         
+        up(&mutex);            /* shop is full; do not wait */
+    }
+}
+```
+
+Figure 2-36. A solution to the sleeping barber problem.
+
+## 2.5 SCHEDULING
+When a computer is multiprogrammed, it frequently has multiple processes competing for the CPU at the same time. This situation occurs whenever two or more processes are simultaneously in the ready state. If only one CPU is available, a choice has to be made which process to run next. The part of the operating system that makes the choice is called the scheduler and the algorithm it uses is called the scheduling algorithm.
+
+Process Behavior
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
