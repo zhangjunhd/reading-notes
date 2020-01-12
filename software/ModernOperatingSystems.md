@@ -40,6 +40,24 @@
     - [2.4.2 The Readers and Writers Problem](#242-the-readers-and-writers-problem)
     - [2.4.3 The Sleeping Barber Problem](#243-the-sleeping-barber-problem)
   - [2.5 SCHEDULING](#25-scheduling)
+- [3 DEADLOCKS](#3-deadlocks)
+  - [3.1 RESOURCES](#31-resources)
+  - [3.2 INTRODUCTION TO DEADLOCKS](#32-introduction-to-deadlocks)
+  - [3.3 THE OSTRICH ALGORITHM](#33-the-ostrich-algorithm)
+  - [3.4 DEADLOCK DETECTION AND RECOVERY](#34-deadlock-detection-and-recovery)
+    - [3.4.1 Deadlock Detection with One Resource of Each Type](#341-deadlock-detection-with-one-resource-of-each-type)
+    - [3.4.2 Deadlock Detection with Multiple Resource of Each Type](#342-deadlock-detection-with-multiple-resource-of-each-type)
+    - [3.4.3 Recovery from Deadlock](#343-recovery-from-deadlock)
+  - [3.5 DEADLOCK AVOIDANCE](#35-deadlock-avoidance)
+    - [3.5.1 Resource Trajectories](#351-resource-trajectories)
+    - [3.5.3 The Banker’s Algorithm for a Single Resource](#353-the-bankers-algorithm-for-a-single-resource)
+    - [3.5.4 The Banker’s Algorithm for Multiple Resources](#354-the-bankers-algorithm-for-multiple-resources)
+  - [3.6 DEADLOCK PREVENTION](#36-deadlock-prevention)
+  - [3.7 OTHER ISSUES](#37-other-issues)
+    - [Two-Phase Locking](#two-phase-locking)
+- [4 MEMORY MANAGEMENT](#4-memory-management)
+  - [4.1 BASIC MEMORY MANAGEMENT](#41-basic-memory-management)
+    - [4.1.1 Monoprogramming without Swapping or Paging](#411-monoprogramming-without-swapping-or-paging)
 
 # 2 PROCESSES AND THREADS
 The most central concept in any operating system is the process: an abstraction of a running program.
@@ -603,33 +621,173 @@ When a computer is multiprogrammed, it frequently has multiple processes competi
 
 Process Behavior
 
+![](ModernOperatingSystems17.png)
 
+Figure 2-37. Bursts of CPU usage alternate with periods of waiting for I/O. (a) A CPU-bound process. (b) An I/O-bound process.
 
+The important thing to notice about Fig. 2-37 is that some processes, such as the one in Fig. 2-37(a), spend most of their time computing, while others, such as the one in Fig. 2-37(b), spend most of their time waiting for I/O. The former are called compute-bound; the latter are called I/O-bound.
 
+When to Schedule 
 
+A nonpreemptive scheduling algorithm picks a process to run and then just lets it run until it blocks (either on I/O or waiting for another process) or until it voluntarily releases the CPU. In contrast, a preemptive scheduling algorithm picks a process and lets it run for a maximum of some fixed time.
 
+Categories of Scheduling Algorithms
+1. Batch.
+2. Interactive.
+3. Real time.
 
+Scheduling Algorithm Goals
+* All systems
+    * Fairness - giving each process a fair share of the CPU
+    * Policy enforcement - seeing that stated policy is carried out
+    * Balance - keeping all parts of the system busy
+* Batch systems
+    * Throughput - maximize jobs per hour
+    * Turnaround time - minimize time between submission and termination
+    * CPU utilization - keep the CPU busy all the time
+* Interactive systems
+    * Response time - respond to requests quickly
+    * Proportionality - meet users’ expectations
+* Real-time systems
+    * Meeting deadlines - avoid losing data
+    * Predictability - avoid quality degradation in multimedia systems
 
+Scheduling in Batch Systems
+* First-Come First-Served
+* Shortest Job First
+* Shortest Remaining Time Next
+    * A preemptive version of shortest job first is shortest remaining time next.
+* Three-Level Scheduling
 
+![](ModernOperatingSystems18.png)
 
+As jobs arrive at the system, they are initially placed in an input queue stored on the disk. The admission scheduler decides which jobs to admit to the system. The others are kept in the input queue until they are selected. A typical algorithm for admission control might be to look for a mix of compute-bound jobs and I/O-bound jobs. Alternatively, short jobs could be admitted quickly whereas longer jobs would have to wait. The admission scheduler is free to hold some jobs in the input queue and admit jobs that arrive later if it so chooses.
 
+Once a job has been admitted to the system, a process can be created for it and it can contend for the CPU. However, it might well happen that the number of processes is so large that there is not enough room for all of them in memory. In that case, some of the processes have to be swapped out to disk. The second level of scheduling is deciding which processes should be kept in memory and which ones kept on disk. We will call this scheduler the memory scheduler, since it determines which processes are kept in memory and which on the disk.
 
+The third level of scheduling is actually picking one of the ready processes in main memory to run next. Often this is called the CPU scheduler and is the one people usually mean when they talk about the “scheduler.” Any suitable algorithm can be used here, either preemptive or nonpreemptive.
 
+Scheduling in Interactive Systems
+* Round-Robin Scheduling
+* Priority Scheduling
+* Shortest Process Next
+* Guaranteed Scheduling
+* Lottery Scheduling
+* Fair-Share Scheduling
 
+# 3 DEADLOCKS
+## 3.1 RESOURCES
+Deadlocks can occur when processes have been granted exclusive access to devices, files, and so forth. To make the discussion of deadlocks as general as possible, we will refer to the objects granted as resources.
 
+## 3.2 INTRODUCTION TO DEADLOCKS
+Deadlock can be defined formally as follows:A set of processes is deadlocked if each process in the set is waiting for an event that only another process in the set can cause.
 
+Coffman et al. (1971) showed that four conditions must hold for there to be a deadlock:
+1. Mutual exclusion condition. Each resource is either currently assigned to exactly one process or is available.
+2. Hold and wait condition. Processes currently holding resources granted earlier can request new resources.
+3. No preemption condition. Resources previously granted cannot be forcibly taken away from a process. They must be explicitly released by the process holding them.
+4. Circular wait condition. There must be a circular chain of two or more processes, each of which is waiting for a resource held by the next member of the chain.
 
+In general, four strategies are used for dealing with deadlocks.
+1. Just ignore the problem altogether. Maybe if you ignore it, it will ignore you.
+2. Detection and recovery. Let deadlocks occur, detect them, and take action.
+3. Dynamic avoidance by careful resource allocation.
+4. Prevention, by structurally negating one of the four conditions necessary to cause a deadlock.
 
+## 3.3 THE OSTRICH ALGORITHM
+The simplest approach is the ostrich algorithm: stick your head in the sand and pretend there is no problem at all.
 
+## 3.4 DEADLOCK DETECTION AND RECOVERY
+### 3.4.1 Deadlock Detection with One Resource of Each Type
+The state of which resources are currently owned and which ones are currently being requested is as follows:
+1. Process A holds R and wants S.
+2. Process B holds nothing but wants T.
+3. Process C holds nothing but wants S.
+4. Process D holds U and wants S and T.
+5. Process E holds T and wants V.
+6. Process F holds W and wants S.
+7. Process G holds V and wants U.
 
+The question is: “Is this system deadlocked, and if so, which processes are involved?”
 
+To answer this question, we can construct the resource graph of Fig. 3-5(a). This graph contains one cycle, which can be seen by visual inspection. The cycle is shown in Fig. 3-5(b). From this cycle, we can see that processes D, E, and G are all deadlocked.
 
+![](ModernOperatingSystems19.png)
 
+Figure 3-5. (a) A resource graph. (b) A cycle extracted from (a).
 
+The algorithm operates by carrying out the following steps as specified:
+1. For each node, N in the graph, perform the following 5 steps with N as the starting node.
+2. Initialize L to the empty list, and designate all the arcs as unmarked.
+3. Add the current node to the end of L and check to see if the node now appears in L two times. If it does, the graph contains a cycle (listed in L) and the algorithm terminates.
+4. From the given node, see if there are any unmarked outgoing arcs. If so, go to step 5; if not, go to step 6.
+5. Pick an unmarked outgoing arc at random and mark it. Then follow it to the new current node and go to step 3.
+6. We have now reached a dead end. Remove it and go back to the previous node, that is, the one that was current just before this one, make that one the current node, and go to step 3. If this node is the initial node, the graph does not contain any cycles and the algorithm terminates.
 
+### 3.4.2 Deadlock Detection with Multiple Resource of Each Type
+E is the existing resource vector. It gives the total number of instances of each resource in existence. Let A be the available resource vector, with Ai giving the number of instances of resource i that are currently available (i.e., unassigned). Now we need two arrays, C, the current allocation matrix, and R, the request matrix.
 
+![](ModernOperatingSystems20.png)
 
+Figure 3-6. The four data structures needed by the deadlock detection algorithm.
 
+In particular, every resource is either allocated or is available. This observation means that
+
+$\sum_{i=1}^n C_{ij}+A_j=E_j$
+
+The deadlock detection algorithm can now be given, as follows.
+1. Look for an unmarked process, Pi, for which the i-th row of R is less than or equal to A.
+2. If such a process is found, add the i-th row of C to A, mark the process, and go back to step 1.
+3. If no such process exists, the algorithm terminates.
+
+### 3.4.3 Recovery from Deadlock
+* Recovery through Preemption
+* Recovery through Rollback
+* Recovery through Killing Processes
+
+## 3.5 DEADLOCK AVOIDANCE
+### 3.5.1 Resource Trajectories
+In Fig. 3-8 we see a model for dealing with two processes and two resources, for example, a printer and a plotter. The horizontal axis represents the number of instructions executed by process A. The vertical axis represents the number of instructions executed by process B. At I1 A requests a printer; at I2 it needs a plotter. The printer and plotter are released at I3 and I4, respectively. Process B needs the plotter from I5 to I7 and the printer from I6 to I8.
+
+![](ModernOperatingSystems21.png)
+
+Figure 3-8. Two process resource trajectories.
+
+### 3.5.3 The Banker’s Algorithm for a Single Resource
+A scheduling algorithm that can avoid deadlocks is due to Dijkstra (1965) and is known as the banker’s algorithm and is an extension of the deadlock detection algorithm given in Sec. 3.4.1. It is modeled on the way a small-town banker might deal with a group of customers to whom he has granted lines of credit. What the algorithm does is check to see if granting the request leads to an unsafe state. If it does, the request is denied. If granting the request leads to a safe state, it is carried out.
+
+![](ModernOperatingSystems22.png)
+
+Figure 3-11. Three resource allocation states: (a) Safe. (b) Safe (c) Unsafe.
+
+### 3.5.4 The Banker’s Algorithm for Multiple Resources
+The banker’s algorithm can be generalized to handle multiple resources.
+
+![](ModernOperatingSystems23.png)
+
+Figure 3-12. The banker’s algorithm with multiple resources.
+
+The algorithm for checking to see if a state is safe can now be stated.
+1. Look for a row, R, whose unmet resource needs are all smaller than or equal to A. If no such row exists, the system will eventually deadlock since no process can run to completion.
+2. Assume the process of the row chosen requests all the resources it needs (which is guaranteed to be possible) and finishes. Mark that process as terminated and add all its resources to the A vector.
+3. Repeat steps 1 and 2 until either all processes are marked terminated, in which case the initial state was safe, or until a deadlock occurs, in which case it was not.
+
+## 3.6 DEADLOCK PREVENTION
+* Attacking the Mutual Exclusion Condition
+* Attacking the Hold and Wait Condition
+* Attacking the No Preemption Condition
+* Attacking the Circular Wait Condition
+
+## 3.7 OTHER ISSUES
+### Two-Phase Locking
+As an example, in many database systems, an operation that occurs frequently is requesting locks on several records and then updating all the locked records. When multiple processes are running at the same time, there is a real danger of deadlock.
+
+The approach often used is called two-phase locking. In the first phase the process tries to lock all the records it needs, one at a time. If it succeeds, it begins the second phase, performing its updates and releasing the locks. No real work is done in the first phase.
+
+# 4 MEMORY MANAGEMENT
+## 4.1 BASIC MEMORY MANAGEMENT
+### 4.1.1 Monoprogramming without Swapping or Paging
+Three variations on this theme are shown in Fig. 4-1. The operating system may be at the bottom of memory in RAM (Random Access Memory), as shown in Fig. 4-1(a), or it may be in ROM (Read-Only Memory) at the top of memory, as shown in Fig. 4-1(b), or the device drivers may be at the top of memory in a ROM and the rest of the system in RAM down below, as shown in Fig. 4-1(c). The first model was formerly used on mainframes and minicomputers but is rarely used any more. The second model is used on some palmtop computers and embedded systems. The third model was used by early personal computers (e.g., running MS-DOS), where the portion of the system in the ROM is called the BIOS (Basic Input Output System).
 
 
 
