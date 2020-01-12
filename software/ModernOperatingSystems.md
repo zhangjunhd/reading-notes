@@ -112,6 +112,23 @@
     - [5.3.2 Device Drivers](#532-device-drivers)
     - [5.3.3 Device-Independent I/O Software](#533-device-independent-io-software)
     - [5.3.4 User-Space I/O Software](#534-user-space-io-software)
+  - [5.4 DISKS](#54-disks)
+    - [5.4.1 Disk Hardware](#541-disk-hardware)
+    - [5.4.2 Disk Formatting](#542-disk-formatting)
+    - [5.4.3 Disk Arm Scheduling Algorithms](#543-disk-arm-scheduling-algorithms)
+    - [5.4.4 Error Handling](#544-error-handling)
+    - [5.4.5 Stable Storage](#545-stable-storage)
+  - [5.5 CLOCKS](#55-clocks)
+    - [5.5.1 Clock Hardware](#551-clock-hardware)
+    - [5.5.3 Soft Timers](#553-soft-timers)
+  - [5.6 CHARACTER-ORIENTED TERMINALS](#56-character-oriented-terminals)
+    - [5.6.1 RS-232 Terminal Hardware](#561-rs-232-terminal-hardware)
+    - [5.6.2 Input Software](#562-input-software)
+    - [5.6.3 Output Software](#563-output-software)
+- [6 FILE SYSTEMS](#6-file-systems)
+  - [6.1 FILES](#61-files)
+    - [6.1.1 File Naming](#611-file-naming)
+    - [6.1.2 File Structure](#612-file-structure)
 
 # 2 PROCESSES AND THREADS
 The most central concept in any operating system is the process: an abstraction of a running program.
@@ -1443,6 +1460,143 @@ printf("The square of %3d is %6d\n", i, i*i);
 Not all user-level I/O software consists of library procedures. Another important category is the spooling system. Spooling is a way of dealing with dedicated I/O devices in a multiprogramming system. Consider a typical spooled device: a printer.
 
 Instead what is done is to create a special process, called a daemon, and a special directory, called a spooling directory. To print a file, a process first generates the entire file to be printed and puts it in the spooling directory.
+
+![](ModernOperatingSystems75.png)
+
+Figure 5-16. Layers of the I/O system and the main functions of each layer.
+
+## 5.4 DISKS
+### 5.4.1 Disk Hardware
+Magnetic disks are organized into cylinders, each one containing as many-tracks as there are heads stacked vertically. The tracks are divided into sectors, with the number of sectors around the circumference typically being 8 to 32 on floppy disks, and up to several hundred on hard disks. The number of heads varies from 1 to about 16.
+
+A device feature that has important implications for the disk driver is the possibility of a controller doing seeks on two or more drives at the same time. These are known as overlapped seeks.
+
+![](ModernOperatingSystems76.png)
+
+Figure 5-18. (a) Physical geometry of a disk with two zones. (b) A possible virtual geometry for this disk.
+
+To get around this limit, many disks now support a system called logical block addressing, in which disk sectors are just numbered consecutively starting at 0, without regard to the disk geometry.
+
+In their 1988 paper, Patterson et al. suggested six specific disk organizations that could be used to improve disk performance, reliability, or both (Patterson et al., 1988). These ideas were quickly adopted by industry and have led to a new class of I/O device called a RAID. Patterson et al. defined RAID as Redundant Array of Inexpensive Disks, but industry redefined the I to be “Independent” rather than “Inexpensive” (maybe so they could use expensive disks?).
+
+RAID level 0 is illustrated in Fig. 5-19(a). It consists of viewing the virtual single disk simulated by the RAID as being divided up into strips of k sectors each, with sectors 0 to k – 1 being strip 0, sectors k to 2k – 1 as strip 1, and so on. Distributing data over multiple drives like this is called striping.
+
+RAID level 1, shown in Fig. 5-19(b), is a true RAID. It duplicates all the disks, so there are four primary disks and four backup disks. On a write, every strip is written twice. On a read, either copy can be used, distributing the load over more drives.
+
+Unlike levels 0 and 1, which work with strips of sectors, RAID level 2 works on a word basis, possibly even a byte basis. Imagine splitting each byte of the single virtual disk into a pair of 4-bit nibbles, then adding a Hamming code to each one to form a 7-bit word, of which bits 1, 2, and 4 were parity bits. Further imagine that the seven drives of Fig. 5-19(c) were synchronized in terms of arm position and rotational position. Then it would be possible to write the 7-bit Hamming coded word over the seven drives, one bit per drive.
+
+RAID level 3 is a simplified version of RAID level 2. It is illustrated in Fig. 5-19(d). Here a single parity bit is computed for each data word and written to a parity drive. At first thought, it might appear that a single parity bit gives only error detection, not error correction.
+
+RAID level 4 [see Fig. 5-19(e)] is like RAID level 0, with a strip-for-strip parity written onto an extra drive.
+
+As a consequence of the heavy load on the parity drive, it may become a bottleneck. This bottleneck is eliminated in RAID level 5 by distributing the parity bits uniformly over all the drives, round robin fashion, as shown in Fig. 5-19(f).
+
+![](ModernOperatingSystems77.png)
+
+Figure 5-19. RAID levels 0 through 5. Backup and parity drives are shown shaded.
+
+### 5.4.2 Disk Formatting
+A hard disk consists of a stack of aluminum, alloy, or glass platters 5.25 inch or 3.5 inch in diameter (or even smaller on notebook computers). On each platter is deposited a thin magnetizable metal oxide.
+
+Before the disk can be used, each platter must receive a low-level format done by software. The format consists of a series of concentric tracks, each containing some number of sectors, with short gaps between the sectors. The format of a sector is shown in Fig. 5-24.
+
+![](ModernOperatingSystems78.png)
+
+Figure 5-24. A disk sector.
+
+After reading the first sector from the disk and doing the ECC calculation, the data must be transferred to main memory. While this transfer is taking place, the next sector will fly by the head. When the copy to memory is complete, the controller will have to wait almost an entire rotation time for the second sector to come around again.
+
+This problem can be eliminated by numbering the sectors in an interleaved fashion when formatting the disk. In Fig. 5-26(a), we see the usual numbering pattern (ignoring cylinder skew here). In Fig. 5-26(b), we see single interleaving, which gives the controller some breathing space between consecutive sectors in order to copy the buffer to main memory. If the copying process is very slow, the double interleaving of Fig. 5-27(c) may be needed.
+
+![](ModernOperatingSystems79.png)
+
+Figure 5-26. (a) No interleaving. (b) Single interleaving. (c) Double interleaving.
+
+After low-level formatting is completed, the disk is partitioned. Logically, each partition is like a separate disk. On the Pentium and most other computers, sector 0 contains the master boot record, which contains some boot code plus the partition table at the end. The partition table gives the starting sector and size of each partition.
+
+The final step in preparing a disk for use is to perform a high-level format of each partition (separately). This operation lays down a boot block, the free storage administration (free list or bitmap), root directory, and an empty file system. It also puts a code in the partition table entry telling which file system is used in the partition because many operating systems support multiple incompatible file systems (for historical reasons). At this point the system can be booted.
+
+When the power is turned on, the BIOS runs initially and then reads in the master boot record and jumps to it. This boot program then checks to see which partition is active. Then it reads in the boot sector from that partition and runs it. The boot sector contains a small program that searches the root directory for a certain program (either the operating system or a larger bootstrap loader). That program is loaded into memory and executed.
+
+### 5.4.3 Disk Arm Scheduling Algorithms
+First, consider how long it takes to read or write a disk block. The time required is determined by three factors:
+1. Seek time (the time to move the arm to the proper cylinder).
+2. Rotational delay (the time for the proper sector to rotate under the head).
+3. Actual data transfer time.
+
+For most disks, the seek time dominates the other two times, so reducing the mean seek time can improve system performance substantially.
+
+![](ModernOperatingSystems80.png)
+
+Figure 5-27. Shortest Seek First (SSF) disk scheduling algorithm.
+
+![](ModernOperatingSystems81.png)
+
+Figure 5-28. The elevator algorithm for scheduling disk requests.
+
+### 5.4.4 Error Handling
+![](ModernOperatingSystems82.png)
+
+Figure 5-29. (a) A disk track with a bad sector. (b) Substituting a spare for the bad sector. (c) Shifting all the sectors to bypass the bad one.
+
+### 5.4.5 Stable Storage
+What is achievable is a disk subsystem that has the following property: when a write is issued to it, the disk either correctly writes the data or it does nothing, leaving the existing data intact. Such as system is called stable storage and is implemented in software (Lampson and Sturgis, 1979).
+
+Stable storage uses a pair of identical disks with the corresponding blocks working together to form one error-free block. In the absence of errors, the corresponding blocks on both drives are the same. Either one can be read to get the same result. To achieve this goal, the following three operations are defined:
+1. Stable writes. A stable write consists of first writing the block on drive 1, then reading it back to verify that it was written correctly. If it was not written correctly, the write and reread are done again up to n times until they work. After n consecutive failures, the block is remapped onto a spare and the operation repeated until it succeeds, no matter how many spares have to be tried. After the write to drive 1 has succeeded, the corresponding block on drive 2 is written and reread, repeatedly if need be, until it, too, finally succeeds. In the absence of CPU crashes, when a stable write completes, the block has correctly been written onto both drives and verified on both of them.
+2. Stable reads. A stable read first reads the block from drive 1. If this yields an incorrect ECC, the read is tried again, up to n times. If all of these give bad ECCs, the corresponding block is read from drive 2. Given the fact that a successful stable write leaves two good copies of the block behind, and our assumption that the probability of the same block spontaneously going bad on both drives in a reasonable time interval is negligible, a stable read always succeeds.
+3. Crash recovery. After a crash, a recovery program scans both disks comparing corresponding blocks. If a pair of blocks are both good and the same, nothing is done. If one of them has an ECC error, the bad block is overwritten with the corresponding good block. It a pair of blocks are both good but different, the block from drive 1 is written onto drive 2.
+
+## 5.5 CLOCKS
+### 5.5.1 Clock Hardware
+Clock is built out of three components: a crystal oscillator, a counter, and a holding register, as shown in Fig. 5-31. When a piece of quartz crystal is properly cut and mounted under tension, it can be made to generate a periodic signal of very high accuracy, typically in the range of several hundred megahertz, depending on the crystal chosen. Using electronics, this base signal can be multiplied by a small integer to get frequencies up to 1000 MHz or even more. At least one such circuit is usually found in any computer, providing a synchronizing signal to the computer’s various circuits. This signal is fed into the counter to make it count down to zero. When the counter gets to zero, it causes a CPU interrupt.
+
+![](ModernOperatingSystems83.png)
+
+Figure 5-31. A programmable clock.
+
+Programmable clocks typically have several modes of operation. In one-shot mode, when the clock is started, it copies the value of the holding register into the counter and then decrements the counter at each pulse from the crystal. When the counter gets to zero, it causes an interrupt and stops until it is explicitly started again by the software. In square-wave mode, after getting to zero and causing the interrupt, the holding register is automatically copied into the counter, and the whole process is repeated again indefinitely. These periodic interrupts are called clock ticks.
+
+![](ModernOperatingSystems84.png)
+
+Figure 5-32. Three ways to maintain the time of day.
+
+If many signals are expected, it is more efficient to simulate multiple clocks by chaining all the pending clock requests together, sorted on time, in a linked list, as shown in Fig. 5-33. Each entry on the list tells how many clock ticks following the previous one to wait before causing a signal. In this example, signals are pending for 4203, 4207, 4213, 4215, and 4216.
+
+![](ModernOperatingSystems85.png)
+
+### 5.5.3 Soft Timers
+Soft timers avoid interrupts. Instead, whenever the kernel is running for some other reason, just before it returns to user mode it checks the real time clock to see if a soft timer has expired. If the timer has expired, the scheduled event (e.g., packet transmission or checking for an incoming packet) is performed, with no need to switch into kernel mode since the system is already there. After the work has been performed, the soft timer is reset to go off again. All that has to be done is copy the current clock value to the timer and add the timeout interval to it. Soft timers stand or fall with the rate at which kernel entries are made for other reasons. These reasons include
+1. System calls.
+2. TLB misses.
+3. Page faults.
+4. I/O interrupts.
+5. The CPU going idle.
+
+## 5.6 CHARACTER-ORIENTED TERMINALS
+### 5.6.1 RS-232 Terminal Hardware
+RS-232 terminals are hardware devices containing both a keyboard and a display and which communicate using a serial interface, one bit at a time (see Fig. 5-34). These terminals use a 9-pin or 25-pin connector, of which one pin is used for transmitting data, one pin is for receiving data, and one pin is ground. The other pins are for various control functions, most of which are not used. Lines in which characters are sent one bit at a time (as opposed to 8 bits in parallel the way printers are interfaced to PCs) are called serial lines.
+
+![](ModernOperatingSystems86.png)
+
+Figure 5-34. An RS-232 terminal communicates with a computer over a communication line, one bit at a time.
+
+### 5.6.2 Input Software
+### 5.6.3 Output Software
+
+# 6 FILE SYSTEMS
+## 6.1 FILES
+### 6.1.1 File Naming
+Many operating systems support two-part file names, with the two parts separated by a period, as in prog.c. The part following the period is called the file extension and usually indicates something about the file.
+
+### 6.1.2 File Structure
+
+
+
+
+
+
+
 
 
 
