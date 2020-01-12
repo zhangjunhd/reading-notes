@@ -129,6 +129,29 @@
   - [6.1 FILES](#61-files)
     - [6.1.1 File Naming](#611-file-naming)
     - [6.1.2 File Structure](#612-file-structure)
+    - [6.1.3 File Types](#613-file-types)
+    - [6.1.4 File Access](#614-file-access)
+    - [6.1.5 File Attributes](#615-file-attributes)
+    - [6.1.6 File Operations](#616-file-operations)
+    - [6.1.8 Memory-Mapped Files](#618-memory-mapped-files)
+  - [6.2 DIRECTORIES](#62-directories)
+    - [6.2.1 Single-Level Directory Systems](#621-single-level-directory-systems)
+    - [6.2.2 Two-level Directory Systems](#622-two-level-directory-systems)
+    - [6.2.3 Hierarchical Directory Systems](#623-hierarchical-directory-systems)
+    - [6.2.4 Path Names](#624-path-names)
+    - [6.2.5 Directory Operations](#625-directory-operations)
+  - [6.3 FILE SYSTEM IMPLEMENTATION](#63-file-system-implementation)
+    - [6.3.1 File System Layout](#631-file-system-layout)
+    - [6.3.2 Implementing Files](#632-implementing-files)
+    - [6.3.3 Implementing Directories](#633-implementing-directories)
+    - [6.3.4 Shared Files](#634-shared-files)
+    - [6.3.5 Disk Space Management](#635-disk-space-management)
+    - [6.3.6 File System Reliability](#636-file-system-reliability)
+    - [6.3.7 File System Performance](#637-file-system-performance)
+    - [6.3.8 Log-Structured File Systems](#638-log-structured-file-systems)
+- [8 MULTIPLE PROCESSOR SYSTEMS](#8-multiple-processor-systems)
+  - [8.1 MULTIPROCESSORS](#81-multiprocessors)
+    - [8.1.1 Multiprocessor Hardware](#811-multiprocessor-hardware)
 
 # 2 PROCESSES AND THREADS
 The most central concept in any operating system is the process: an abstraction of a running program.
@@ -1590,6 +1613,218 @@ Figure 5-34. An RS-232 terminal communicates with a computer over a communicatio
 Many operating systems support two-part file names, with the two parts separated by a period, as in prog.c. The part following the period is called the file extension and usually indicates something about the file.
 
 ### 6.1.2 File Structure
+![](ModernOperatingSystems87.png)
+
+Figure 6-2. Three kinds of files. (a) Byte sequence. (b) Record sequence. (c) Tree.
+
+### 6.1.3 File Types
+Regular files are the ones that contain user information. All the files of Fig. 6-2 are regular files. Directories are system files for maintaining the structure of the file system. We will study directories below. Character special files are related to input/output and used to model serial I/O devices such as terminals, printers, and networks. Block special files are used to model disks.
+
+Although technically the file is just a sequence of bytes, the operating system will only execute a file if it has the proper format. It has five sections: header, text, data, relocation bits, and symbol table. The header starts with a so-called magic number, identifying the file as an executable file (to prevent the accidental execution of a file not in this format). Then come the sizes of the various pieces of the file, the address at which execution starts, and some flag bits. Following the header are the text and data of the program itself. These are loaded into memory and relocated using the relocation bits. The symbol table is used for debugging.
+
+![](ModernOperatingSystems88.png)
+
+Figure 6-3. (a) An executable file. (b) An archive.
+
+### 6.1.4 File Access
+Early operating systems provided only one kind of file access: sequential access. Files whose bytes or records can be read in any order are called random access files.
+
+### 6.1.5 File Attributes
+![](ModernOperatingSystems89.png)
+
+Figure 6-4. Some possible file attributes.
+
+### 6.1.6 File Operations
+1. Create. The file is created with no data. The purpose of the call is to announce that the file is coming and to set some of the attributes.
+2. Delete. When the file is no longer needed, it has to be deleted to free up disk space. There is always a system call for this purpose.
+3. Open. Before using a file, a process must open it. The purpose of theopen call is to allow the system to fetch the attributes and list of disk addresses into main memory for rapid access on later calls.
+4. Close. When all the accesses are finished, the attributes and disk addresses are no longer needed, so the file should be closed to free up internal table space. Many systems encourage this by imposing a maximum number of open files on processes. A disk is written in blocks, and closing a file forces writing of the file’s last block, even though that block may not be entirely full yet.
+5. Read. Data are read from file. Usually, the bytes come from the current position. The caller must specify how much data are needed and must also provide a buffer to put them in.
+6. Write. Data are written to the file, again, usually at the current position. If the current position is the end of the file, the file’s size increases. If the current position is in the middle of the file, existing data are overwritten and lost forever.
+7. Append. This call is a restricted form of write. It can only add data to the end of the file. Systems that provide a minimal set of system calls do not generally have append, but many systems provide multiple ways of doing the same thing, and these systems sometimes have append.
+8. Seek. For random access files, a method is needed to specify from where to take the data. One common approach is a system call, seek, that repositions the file pointer to a specific place in the file. After this call has completed, data can be read from, or written to, that position,
+9. Get attributes. Processes often need to read file attributes to do their work. For example, the UNIX make program is commonly used to manage software development projects consisting of many source files. When make is called, it examines the modification times of all the source and object files and arranges for the minimum number of compilations required to bring everything up to date. To do its job, it must look at the attributes, namely, the modification times.
+10. Set attributes. Some of the attributes are user settable and can be changed after the file has been created. This system call makes that possible. The protection mode information is an obvious example. Most of the flags also fall in this category.
+11. Rename. It frequently happens that a user needs to change the name of an existing file. This system call makes that possible. It is not always strictly necessary, because the file can usually be copied to a new file with the new name, and the old file then deleted.
+
+### 6.1.8 Memory-Mapped Files
+Some operating systems, starting with MULTICS, have provided a way to map files into the address space of a running process. Conceptually, we can imagine the existence of two new system calls, map and unmap. The former gives a file name and a virtual address, which causes the operating system to map the file into the address space at the virtual address.
+
+## 6.2 DIRECTORIES
+### 6.2.1 Single-Level Directory Systems
+The simplest form of directory system is having one directory containing all the files. Sometimes it is called the root directory, but since it is the only one, the name does not matter much.
+
+![](ModernOperatingSystems90.png)
+
+Figure 6-7. A single-level directory system containing four files, owned by three different people, A, B, and C.
+
+### 6.2.2 Two-level Directory Systems
+![](ModernOperatingSystems91.png)
+
+Figure 6-8. A two-level directory system. The letters indicate the owners of the directories and files.
+
+### 6.2.3 Hierarchical Directory Systems
+![](ModernOperatingSystems92.png)
+
+Figure 6-9. A hierarchical directory system.
+
+### 6.2.4 Path Names
+When the file system is organized as a directory tree, some way is needed for specifying file names. Two different methods are commonly used. In the first method, each file is given an absolute path name consisting of the path from the root directory to the file. The other kind of name is the relative path name. This is used in conjunction with the concept of the working directory (also called the current directory).
+
+### 6.2.5 Directory Operations
+1. Create. A directory is created. It is empty except for dot and dotdot, which are put there automatically by the system (or in a few cases, by the mkdir program).
+2. Delete. A directory is deleted. Only an empty directory can be deleted. A directory containing only dot and dotdot is considered empty as these cannot usually be deleted.
+3. Opendir. Directories can be read. For example, to list all the files in a directory, a listing program opens the directory to read out the names of all the files it contains. Before a directory can be read, it must be opened, analogous to opening and reading a file.
+4. Closedir. When a directory has been read, it should be closed to free up internal table space.
+5. Readdir. This call returns the next entry in an open directory. Formerly, it was possible to read directories using the usual read system call, but that approach has the disadvantage of forcing the programmer to know and deal with the internal structure of directories. In contrast, readdiralways returns one entry in a standard format, no matter which of the possible directory structures is being used.
+6. Rename. In many respects, directories are just like files and can be renamed the same way files can be.
+7. Link. Linking is a technique that allows a file to appear in more than one directory. This system call specifies an existing file and a path name, and creates a link from the existing file to the name specified by the path. In this way, the same file may appear in multiple directories. A link of this kind, which increments the counter in the file’s i-node (to keep track of the number of directory entries containing the file), is sometimes called a hard link.
+8. Unlink. A directory entry is removed. If the file being unlinked is only present in one directory (the normal case), it is removed from the file system. If it is present in multiple directories, only the path name specified is removed. The others remain. In UNIX, the system call for deleting files (discussed earlier) is, in fact, unlink.
+
+## 6.3 FILE SYSTEM IMPLEMENTATION
+### 6.3.1 File System Layout
+File systems are stored on disks. Most disks can be divided up into one or more partitions, with independent file systems on each partition. Sector 0 of the disk is called the MBR (Master Boot Record) and is used to boot the computer. The end of the MBR contains the partition table. This table gives the starting and ending addresses of each partition. One of the partitions in the table is marked as active. When the computer is booted, the BIOS reads in and executes the MBR. The first thing the MBR program does is locate the active partition, read in its first block, called the boot block, and execute it. The program in the boot block loads the operating system contained in that partition. For uniformity, every partition starts with a boot block, even if it does not contain a bootable operating system.
+
+Other than starting with a boot block, the layout of a disk partition varies strongly from file system to file system. Often the file system will contain some of the items shown in Fig. 6-11. The first one is the superblock. It contains all the key parameters about the file system and is read into memory when the computer is booted or the file system is first touched. Typical information in the superblock includes a magic number to identify the file system type, the number of blocks in the file system, and other key administrative information.
+
+Next might come information about free blocks in the file system, for example in the form of a bitmap or a list of pointers. This might be followed by the i-nodes, an array of data structures, one per file, telling all about the file. After that might come the root directory, which contains the top of the file system tree. Finally, the remainder of the disk typically contains all the other directories and files.
+
+![](ModernOperatingSystems93.png)
+
+Figure 6-11. A possible file system layout.
+
+### 6.3.2 Implementing Files
+Contiguous Allocation
+
+![](ModernOperatingSystems94.png)
+
+Figure 6-12. (a) Contiguous allocation of disk space for seven files. (b) The state of the disk after files D and F have been removed.
+
+Linked List Allocation
+
+![](ModernOperatingSystems95.png)
+
+Figure 6-13. Storing a file as a linked list of disk blocks.
+
+Linked List Allocation Using a Table in Memory
+
+Figure 6-14 shows what the table looks like for the example of Fig. 6-13.Such a table in main memory is called a FAT (File Allocation Table).
+
+![](ModernOperatingSystems96.png)
+
+Figure 6-14. Linked list allocation using a file allocation table in main memory.
+
+I-nodes
+
+Our last method for keeping track of which blocks belong to which file is to associate with each file a data structure called an i-node (index-node), which lists the attributes and disk addresses of the files blocks. A simple example is depicted in Fig. 6-15.
+
+![](ModernOperatingSystems97.png)
+
+Figure 6-15. An example i-node.
+
+### 6.3.3 Implementing Directories
+![](ModernOperatingSystems98.png)
+
+Figure 6-16. (a) A simple directory containing fixed-size entries with the disk addresses and attributes in the directory entry. (b) A directory in which each entry just refers to an i-node.
+
+![](ModernOperatingSystems99.png)
+
+Figure 6-17. Two ways of handling long file names in a directory. (a) In-line. (b) In a heap.
+
+### 6.3.4 Shared Files
+Figure 6-18 shows the file system of Fig. 6-9 again, only with one of C’s files now present in one of B’s directories as well. The connection between B’s directory and the shared file is called a link. The file system itself is now a Directed Acyclic Graph, or DAG, rather than a tree.
+
+![](ModernOperatingSystems100.png)
+
+Figure 6-18. File system combining a shared file.
+
+When B reads from the linked file, the operating system sees that the file being read from is of type LINK, looks up the name of the file, and reads that file. This approach is called symbolic linking.
+
+Creating a link does not change the ownership (see Fig. 6-19), but it does increase the link count in the i-node, so the system knows how many directory entries currently point to the file.
+
+![](ModernOperatingSystems101.png)
+
+Figure 6-19. (a) Situation prior to linking. (b) After the link is created. (c) After the original owner removes the file.
+
+### 6.3.5 Disk Space Management
+Block Size
+
+Once it has been decided to store files in fixed-size blocks, the question arises of how big the block should be.
+
+![](ModernOperatingSystems102.png)
+
+Figure 6-20. The solid curve (left-hand scale) gives the data rate of a disk. The dashed curve (right-hand scale) gives the disk space efficiency. All files are 2 KB.
+
+Keeping Track of Free Blocks
+
+![](ModernOperatingSystems103.png)
+
+Figure 6-21. (a) Storing the free list on a linked list. (b) A bitmap.
+
+Disk Quotas
+
+![](ModernOperatingSystems104.png)
+
+Figure 6-23. Quotas are kept track of on a per-user basis in a quota table.
+
+### 6.3.6 File System Reliability
+Backups
+
+Backups to tape are generally made to handle one of two potential problems:
+1. Recover from disaster.
+2. Recover from stupidity.
+* First, should the entire file system be backed up or only part of it?
+* Second, it is wasteful to back up files that have not changed since the last backup, which leads to the idea of incremental dumps.
+* Third, since immense amounts of data are typically dumped, it may be desirable to compress the data before writing them to tape.
+* Fourth, it is difficult to perform a backup on an active file system. If files and directories are being added, deleted, and modified during the dumping process, the resulting dump may be inconsistent.
+* Fifth and last, making backups introduces many nontechnical problems into an organization. The best online security system in the world may be useless if the system administrator keeps all the backup tapes in his office and leaves it open and unguarded whenever he walks down the hall to get output from the printer.
+
+Two strategies can be used for dumping a disk to tape: a physical dump or a logical dump. A physical dump starts at block 0 of the disk, writes all the disk blocks onto the output tape in order, and stops when it has copied the last one. A logical dump starts at one or more specified directories and recursively dumps all files and directories found there that have changed since some given base date.
+
+File System Consistency
+
+![](ModernOperatingSystems105.png)
+
+Figure 6-26. The system states. (a) Consistent. (b) Missing block. (c) Duplicate block in free list. (d) Duplicate data block.
+
+### 6.3.7 File System Performance
+Caching
+
+The most common technique used to reduce disk accesses is the block cache or buffer cache.
+
+Block Read Ahead
+
+A second technique for improving perceived file system performance is to try to get blocks into the cache before they are needed to increase the hit rate. In particular, many files are read sequentially.
+
+Reducing Disk Arm Motion
+
+Another important technique is to reduce the amount of disk arm motion by putting blocks that are likely to be accessed in sequence close to each other, preferably in the same cylinder. When an output file is written, the file system has to allocate the blocks one at a time, as they are needed. If the free blocks are recorded in a bitmap, and the whole bitmap is in main memory, it is easy enough to choose a free block as close as possible to the previous block. With a free list, part of which is on disk, it is much harder to allocate blocks close together.
+
+Another performance bottleneck in systems that use i-nodes or anything equivalent to i-nodes is that reading even a short file requires two disk accesses: one for the i-node and one for the block. The usual i-node placement is shown in Fig. 6-28(a). Here all the i-nodes are near the beginning of the disk, so the average distance between an i-node and its blocks will be about half the number of cylinders, requiring long seeks.
+
+One easy performance improvement is to put the i-nodes in the middle of the disk, rather than at the start, thus reducing the average seek between the i-node and the first block by a factor of two. Another idea, shown in Fig. 6-28(b), is to divide the disk into cylinder groups, each with its own i-nodes, blocks, and free list (McKusick et. al., 1984).
+
+![](ModernOperatingSystems106.png)
+
+Figure 6-28. (a) I-nodes placed at the start of the disk. (b) Disk divided into cylinder groups, each with its own blocks und i-nodes.
+
+### 6.3.8 Log-Structured File Systems
+Changes in technology are putting pressure on current file systems. In particular, CPUs keep getting faster, disks are becoming much bigger and cheaper (but not much faster), and memories are growing exponentially in size. The one parameter that is not improving by leaps and bounds is disk seek time. The combination of these factors means that a performance bottleneck is arising in many file systems. Research done at Berkeley attempted to alleviate this problem by designing a completely new kind of file system. LFS (the Log-structured File System).
+
+The basic idea is to structure the entire disk as a log. Periodically, and when there is a special need for it, all the pending writes being buffered in memory are collected into a single segment and written to the disk as a single contiguous segment at the end of the log. A single segment may thus contain i-nodes, directory blocks, and data blocks, all mixed together. At the start of each segment is a segment summary, telling what can be found in the segment. If the average segment can be made to be about 1 MB, almost the full bandwidth of the disk can be utilized.
+
+In this design, i-nodes still exist and have the same structure as in UNIX, but they are now scattered all over the log, instead of being at a fixed position on the disk. Nevertheless, when an i-node is located, locating the blocks is done in the usual way. Of course, finding an i-node is now much harder, since its address cannot simply be calculated from its i-number, as in UNIX. To make it possible to find i-nodes, an i-node map, indexed by i-number, is maintained.
+
+To summarize what we have said so far, all writes are initially buffered in memory, and periodically all the buffered writes are written to the disk in a single segment, at the end of the log. Opening a file now consists of using the map to locate the i-node for the file. Once the i-node has been located, the addresses of the blocks can be found from it. All of the blocks will themselves be in segments, somewhere in the log.
+
+# 8 MULTIPLE PROCESSOR SYSTEMS
+## 8.1 MULTIPROCESSORS
+A shared-memory multiprocessor (or just multiprocessor henceforth) is a computer system in which two or more CPUs share full access to a common RAM.
+
+### 8.1.1 Multiprocessor Hardware
+Although all multiprocessors have the property that every CPU can address all of memory, some multiprocessors have the additional property that every memory word can be read as fast as every other memory word. These machines are called UMA(Uniform Memory Access) multiprocessors. In contrast, NUMA (Nonuniform Memory Access) multiprocessors do not have this property.
+
+UMA Bus-Based SMP Architectures
 
 
 
