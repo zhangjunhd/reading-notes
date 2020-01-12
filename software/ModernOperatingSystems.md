@@ -94,6 +94,24 @@
   - [4.8 SEGMENTATION](#48-segmentation)
     - [4.8.1 Implementation of Pure Segmentation](#481-implementation-of-pure-segmentation)
     - [4.8.2 Segmentation with Paging: MULTICS](#482-segmentation-with-paging-multics)
+    - [4.8.3 Segmentation with Paging: The Intel Pentium](#483-segmentation-with-paging-the-intel-pentium)
+- [5 INPUT/OUTPUT](#5-inputoutput)
+  - [5.1 PRINCIPLES OF I/O HARDWARE](#51-principles-of-io-hardware)
+    - [5.1.1 I/O Devices](#511-io-devices)
+    - [5.1.2 Device Controllers](#512-device-controllers)
+    - [5.1.3 Memory-Mapped I/O](#513-memory-mapped-io)
+    - [5.1.4 Direct Memory Access (DMA)](#514-direct-memory-access-dma)
+    - [5.1.5 Interrupts Revisited](#515-interrupts-revisited)
+  - [5.2 PRINCIPLES OF I/O SOFTWARE](#52-principles-of-io-software)
+    - [5.2.1 Goals of the I/O Software](#521-goals-of-the-io-software)
+    - [5.2.2 Programmed I/O](#522-programmed-io)
+    - [5.2.3 Interrupt-Driven I/O](#523-interrupt-driven-io)
+    - [5.2.4 I/O Using DMA](#524-io-using-dma)
+  - [5.3 I/O SOFTWARE LAYERS](#53-io-software-layers)
+    - [5.3.1 Interrupt Handlers](#531-interrupt-handlers)
+    - [5.3.2 Device Drivers](#532-device-drivers)
+    - [5.3.3 Device-Independent I/O Software](#533-device-independent-io-software)
+    - [5.3.4 User-Space I/O Software](#534-user-space-io-software)
 
 # 2 PROCESSES AND THREADS
 The most central concept in any operating system is the process: an abstraction of a running program.
@@ -1206,6 +1224,229 @@ Figure 4-38. (a)-(d) Development of checkerboarding. (e) Removal of the checkerb
 ![](ModernOperatingSystems57.png)
 
 Figure 4-39. The MULTICS virtual memory. (a) The descriptor segment points to the page tables. (b) A segment descriptor. The numbers are the field lengths.
+
+![](ModernOperatingSystems58.png)
+
+Figure 4-40. A 34-bit MULTICS virtual address.
+
+![](ModernOperatingSystems59.png)
+
+Figure 4-41. Conversion of a two-part MULTICS address into a main memory address.
+
+![](ModernOperatingSystems60.png)
+
+Figure 4-42. A simplified version of the MULTICS TLB. The existence of two page sizes makes the actual TLB more complicated.
+
+### 4.8.3 Segmentation with Paging: The Intel Pentium
+The heart of the Pentium virtual memory consists of two tables, the LDT (Local Descriptor Table) and the GDT (Global Descriptor Table).Each program has its own LDT, but there is a single GDT, shared by all the programs on the computer. The LDT describes segments local to each program, including its code, data, stack, and so on, whereas the GDT describes system segments, including the operating system itself.
+
+![](ModernOperatingSystems61.png)
+
+Figure 4-43. A Pentium selector.
+
+![](ModernOperatingSystems62.png)
+
+Figure 4-44. Pentium code segment descriptor. Data segments differ slightly.
+
+![](ModernOperatingSystems63.png)
+
+Figure 4-45. Conversion of a (selector, offset) pair to a linear address.
+
+Each running program has a page directory consisting of 1024 32-bit entries. It is located at an address pointed to by a global register. Each entry in this directory points to a page table also containing 1024 32-bit entries. The page table entries point to page frames. The scheme is shown in Fig. 4-46.
+
+![](ModernOperatingSystems64.png)
+
+Figure 4-46. Mapping of a linear address onto a physical address.
+
+# 5 INPUT/OUTPUT
+## 5.1 PRINCIPLES OF I/O HARDWARE
+### 5.1.1 I/O Devices
+I/O devices can be roughly divided into two categories: block devices and character devices. 
+
+A block device is one that stores information in fixed-size blocks, each one with its own address. Common block sizes range from 512 bytes to 32,768 bytes. The essential property of a block device is that it is possible to read or write each block independently of all the other ones. Disks are the most common block devices.
+
+The other type of I/O device is the character device. A character device delivers or accepts a stream of characters, without regard to any block structure. It is not addressable and does not have any seek operation. Printers, network interfaces, mice (for pointing), rats (for psychology lab experiments), and most other devices that are not disk-like can be seen as character devices.
+
+### 5.1.2 Device Controllers
+I/O units typically consist of a mechanical component and an electronic component.The electronic component is called the device controller or adapter.
+
+### 5.1.3 Memory-Mapped I/O
+Each controller has a few registers that are used for communicating with the CPU. The issue thus arises of how the CPU communicates with the control registers and the device data buffers. Two alternatives exist. In the first approach, each control register is assigned an I/O port number, an 8- or 16-bit integer. The second approach, introduced with the PDP-11, is to map all the control registers into the memory space, as shown in Fig. 5-2(b). Each control register is assigned a unique memory address to which no memory is assigned. This system is called memory-mapped I/O.
+
+![](ModernOperatingSystems65.png)
+
+Figure 5-2. (a) Separate I/O and memory space. (b) Memory mapped I/O. (c) Hybrid.
+
+### 5.1.4 Direct Memory Access (DMA)
+No matter whether a CPU does or does not have memory-mapped I/O, it needs to address the device controllers to exchange data with them. The CPU can request data from an I/O controller one byte at a time but doing so wastes the CPU’s time, so a different scheme, called DMA (Direct Memory Access) is often used.
+
+![](ModernOperatingSystems66.png)
+
+Figure 5-4. Operation of a DMA transfer.
+
+Many buses can operate in two modes: word-at-a-time mode and block mode. Some DMA controllers can also operate in either mode. In the former mode, the operation is as described above: the DMA controller requests for the transfer of one word and gets it. If the CPU also wants the bus, it has to wait. The mechanism is called cycle stealing because the device controller sneaks in and steals an occasional bus cycle from the CPU once in a while, delaying it slightly. In block mode, the DMA controller tells the device to acquire the bus, issue a series of transfers, then release the bus. This form of operation is called burst mode.
+
+### 5.1.5 Interrupts Revisited
+![](ModernOperatingSystems67.png)
+
+Figure 5-5. How an interrupt happens. The connections between the devices and the interrupt controller actually use interrupt lines on the bus rather than dedicated wires.
+
+An interrupt that leaves the machine in a well-defined state is called a precise interrupt (Walker and Cragon, 1995). Such an interrupt has four properties:
+1. The PC (Program Counter) is saved in a known place.
+2. All instructions before the one pointed to by the PC have fully executed.
+3. No instruction beyond the one pointed to by the PC has been executed.
+4. The execution state of the instruction pointed to by the PC is known.
+
+An interrupt that does not meet these requirements is called an imprecise interrupt and makes life extremely unpleasant for the operating system writer, who now has to figure out what has happened and what still has to happen.
+
+## 5.2 PRINCIPLES OF I/O SOFTWARE
+### 5.2.1 Goals of the I/O Software
+A key concept in the design of I/O software is known as device independence. What it means is that it should be possible to write programs that can access any I/O device without having to specify the device in advance.
+
+Closely related to device independence is the goal of uniform naming. The name of a file or a device should simply be a string or an integer and not depend on the device in any way.
+
+Another important issue for I/O software is error handling. In general, errors should be handled as close to the hardware as possible. If the controller discovers a read error, it should try to correct the error itself if it can. If it cannot, then the device driver should handle it, perhaps by just trying to read the block again. Many errors are transient, such as read errors caused by specks of dust on the read head, and will go away if the operation is repeated. Only if the lower layers are not able to deal with the problem should the upper layers be told about it. In many cases, error recovery can be done transparently at a low level without the upper levels even knowing about the error.
+
+Still another key issue is synchronous (blocking) versus asynchronous (interrupt-driven) transfers. Most physical I/O is asynchronous—the CPU starts the transfer and goes off to do something else until the interrupt arrives. User programs are much easier to write if the I/O operations are blocking—after a read system call the program is automatically suspended until the data are available in the buffer. It is up to the operating system to make operations that are actually interrupt-driven look blocking to the user programs.
+
+Another issue for the I/O software is buffering. Often data that come off a device cannot be stored directly in its final destination. For example, when a packet comes in off the network, the operating system does not know where to put it until it has stored the packet somewhere and examined it. Also, some devices have severe real-time constraints (for example, digital audio devices), so the data must be put into an output buffer in advance to decouple the rate at which the buffer is filled from the rate at which it is emptied, in order to avoid buffer underruns. Buffering involves considerable copying and often has a major impact on I/O performance.
+
+The final concept that we will mention here is sharable versus dedicated devices. Some I/O devices, such as disks, can be used by many users at the same time. No problems are caused by multiple users having open files on the same disk at the same time. Other devices, such as tape drives, have to be dedicated to a single user until that user is finished. Then another user can have the tape drive. Having two or more users writing blocks intermixed at random to the same tape will definitely not work. Introducing dedicated (unshared) devices also introduces a variety of problems, such as deadlocks. Again, the operating system must be able to handle both shared and dedicated devices in a way that avoids problems.
+
+### 5.2.2 Programmed I/O
+There are three fundamentally different ways that I/O can be performed. In this section we will look at the first one (programmed I/O). In the next two sections we will examine the others (interrupt-driven I/O and I/O using DMA). The simplest form of I/O is to have the CPU do all the work. This method is called programmed I/O.
+
+![](ModernOperatingSystems68.png)
+
+Figure 5-6. Steps in printing a string.
+
+This behavior is often called polling or busy waiting.
+
+```c
+copy_from_user(buffer, p, count);      /* p is the kernel buffer */ 
+for (i = 0; i < count; i++) {          /* loop on every character */     
+    while (*printer_status_reg != READY) ;  /* loop until ready */
+    *printer_data_register = p[i];          /* output one character */
+}
+return_to_user();
+```
+
+Figure 5-7. Writing a string to the printer using programmed I/O.
+
+### 5.2.3 Interrupt-Driven I/O
+(a)
+
+```c
+copy_from_user(buffer, p, count);
+enable_interrupts();
+while(*printer_status_reg != READY) ;
+*printer_data_register = p[0];
+scheduler();
+```
+
+(b)
+
+```c
+if(count == 0) {
+    unblock_user();
+} else {
+    *printer_data_register = p[i];
+    count = count – 1;
+    i = i + 1;
+}
+acknowledge_interrupt();
+return_from_interrupt();
+```
+
+Figure 5-8. Writing a string to the printer using interrupt-driven I/O. (a) Code executed when the print system call is made. (b) Interrupt service procedure.
+
+### 5.2.4 I/O Using DMA
+(a)
+
+```c
+copy_from_user(buffer, p, count);
+set_up_DMA_controller();
+scheduler();
+```
+
+(b)
+
+```c
+acknowledge_interrupt();
+unblock_user();
+return_from_interrupt();
+```
+
+Figure 5-9. Printing a string using DMA. (a) Code executed when the print system call is made. (b) Interrupt service procedure.
+
+## 5.3 I/O SOFTWARE LAYERS
+### 5.3.1 Interrupt Handlers
+![](ModernOperatingSystems69.png)
+
+Figure 5-10. Layers of the I/O software system.
+
+1. Save any registers (including the PSW) that have not already been saved by the interrupt hardware.
+2. Set up a context for the interrupt service procedure. Doing this may involve setting up the TLB, MMU and a page table.
+3. Set up a stack for the interrupt service procedure.
+4. Acknowledge the interrupt controller. If there is no centralized interrupt controller, reenable interrupts.
+5. Copy the registers from where they were saved (possibly some stack) to the process table.
+6. Run the interrupt service procedure. It will extract information from the interrupting device controller’s registers.
+7. Choose which process to run next. If the interrupt has caused some high-priority process that was blocked to become ready, it may be chosen to run now.
+8. Set up the MMU context for the process to run next. Some TLB set up may also be needed.
+9. Load the new process’ registers, including its PSW.
+10. Start running the new process.
+
+### 5.3.2 Device Drivers
+Each I/O device attached to a computer needs some device-specific code for controlling it. This code, called the device driver, is generally written by the device’s manufacturer and delivered along with the device.
+
+Device drivers are normally positioned below the rest of the operating system, as illustrated in Fig. 5-11.
+
+![](ModernOperatingSystems70.png)
+
+Figure 5-11.
+
+Operating systems usually classify drivers into one of a small number of categories. The most common categories are the block devices, such as disks, which contain multiple data blocks that can be addressed independently, and the character devices, such as keyboards and printers, which generate or accept a stream of characters.
+
+### 5.3.3 Device-Independent I/O Software
+![](ModernOperatingSystems71.png)
+
+Figure 5-12. Functions of the device-independent I/O software.
+
+Uniform Interfacing for Device Drivers
+
+![](ModernOperatingSystems72.png)
+
+Figure 5-13. (a) Without a standard driver interlace. (b) With a standard driver interface.
+
+Buffering
+
+![](ModernOperatingSystems73.png)
+
+Figure 5-14. (a) Unbuffered input. (b) Buffering in user space. (c) Buffering in the kernel followed by copying to user space. (d) Double buffering in the kernel.
+
+![](ModernOperatingSystems74.png)
+
+Figure 5-15. Networking may involve many copies of a packet.
+
+Error Reporting
+
+Allocating and Releasing Dedicated Devices
+
+Device-Independent Block Size
+
+### 5.3.4 User-Space I/O Software
+```c
+count = write(fd, buffer, nbytes);
+printf("The square of %3d is %6d\n", i, i*i);
+```
+
+Not all user-level I/O software consists of library procedures. Another important category is the spooling system. Spooling is a way of dealing with dedicated I/O devices in a multiprogramming system. Consider a typical spooled device: a printer.
+
+Instead what is done is to create a special process, called a daemon, and a special directory, called a spooling directory. To print a file, a process first generates the entire file to be printed and puts it in the spooling directory.
+
+
+
+
 
 
 
