@@ -71,6 +71,29 @@
     - [4.3.3 TLBs—Translation Lookaside Buffers](#433-tlbstranslation-lookaside-buffers)
     - [4.3.4 Inverted Page Tables](#434-inverted-page-tables)
   - [4.4 PAGE REPLACEMENT ALGORITHMS](#44-page-replacement-algorithms)
+  - [4.5 MODELING PAGE REPLACEMENT ALGORITHMS](#45-modeling-page-replacement-algorithms)
+    - [4.5.1 Belady’s Anomaly](#451-beladys-anomaly)
+    - [4.5.2 Stack Algorithms](#452-stack-algorithms)
+    - [4.5.3 The Distance String](#453-the-distance-string)
+    - [4.5.4 Predicting Page Fault Rates](#454-predicting-page-fault-rates)
+  - [4.6 DESIGN ISSUES FOR PAGING SYSTEMS](#46-design-issues-for-paging-systems)
+    - [4.6.1 Local versus Global Allocation Policies](#461-local-versus-global-allocation-policies)
+    - [4.6.2 Load Control](#462-load-control)
+    - [4.6.3 Page Size](#463-page-size)
+    - [4.6.4 Separate Instruction and Data Spaces](#464-separate-instruction-and-data-spaces)
+    - [4.6.5 Shared Pages](#465-shared-pages)
+    - [4.6.6 Cleaning Policy](#466-cleaning-policy)
+    - [4.6.7 Virtual Memory Interface](#467-virtual-memory-interface)
+  - [4.7 IMPLEMENTATION ISSUES](#47-implementation-issues)
+    - [4.7.1 Operating System Involvement with Paging](#471-operating-system-involvement-with-paging)
+    - [4.7.2 Page Fault Handling](#472-page-fault-handling)
+    - [4.7.3 Instruction Backup](#473-instruction-backup)
+    - [4.7.4 Locking Pages in Memory](#474-locking-pages-in-memory)
+    - [4.7.5 Backing Store](#475-backing-store)
+    - [4.7.6 Separation of Policy and Mechanism](#476-separation-of-policy-and-mechanism)
+  - [4.8 SEGMENTATION](#48-segmentation)
+    - [4.8.1 Implementation of Pure Segmentation](#481-implementation-of-pure-segmentation)
+    - [4.8.2 Segmentation with Paging: MULTICS](#482-segmentation-with-paging-multics)
 
 # 2 PROCESSES AND THREADS
 The most central concept in any operating system is the process: an abstraction of a running program.
@@ -981,6 +1004,208 @@ Figure 4-21. The working set algorithm.
         * In the former case, the hand just keeps moving, looking for a clean page. Since one or more writes have been scheduled, eventually some write will complete and its page will be marked as clean. The first clean page encountered is evicted. This page is not necessarily the first write scheduled because the disk driver may reorder writes in order to optimize disk performance.
         * In the latter case, all pages are in the working set, otherwise at least one write would have been scheduled. Lacking additional information, the simplest thing to do is claim any clean page and use it. The location of a clean page could be kept track of during the sweep. If no clean pages exist, then the current page is chosen and written back to disk.
 
+![](ModernOperatingSystems43.png)
+
+Figure 4-22. Operation of the WSClock algorithm. (a) and (b) give an example of what happens when R = 1. (c) and (d) give an example of R = 0.
+
+Summary of Page Replacement Algorithms
+
+![](ModernOperatingSystems44.png)
+
+## 4.5 MODELING PAGE REPLACEMENT ALGORITHMS
+### 4.5.1 Belady’s Anomaly
+Intuitively, it might seem that the more page frames the memory has, the fewer page faults a program will get. Surprisingly enough, this is not always the case. Belady et al. (1969) discovered a counterexample, in which FIFO caused more page faults with four page frames than with three. This strange situation has become known as Belady’s anomaly. It is illustrated in Fig. 4-24 for a program with five virtual pages, numbered from 0 to 4. The pages are referenced in the order
+
+![](ModernOperatingSystems45.png)
+
+Figure 4-24. Belady’s anomaly. (a) FIFO with three page frames. (b) FIFO with four page frames. The P’s show which page references cause page faults.
+
+### 4.5.2 Stack Algorithms
+All of this work begins with the observation that every process generates a sequence of memory references as it runs. Each memory reference corresponds to a specific virtual page. Thus conceptually, a process’ memory access can be characterized by an (ordered) list of page numbers. This list is called the reference string, and plays a central role in the theory.
+
+A paging system can be characterized by three items:
+1. The reference string of the executing process.
+2. The page replacement algorithm.
+3. The number of page frames available in memory, m.
+
+ At the top of Fig. 4-25 we have a reference string consisting of the 24 pages:
+
+    0 2 1 3 5 4 6 3 7 4 7 3 3 5 5 3 1 1 1 7 2 3 4 1
+
+![](ModernOperatingSystems46.png)
+
+Figure 4-25. The state of the memory array, M, after each item in the reference string is processed. The distance string will be discussed in the next section.
+
+Although this example uses LRU, the model works equally well with other algorithms. In particular, there is one class of algorithms that is especially interesting: algorithms that have the property
+
+    M (m, r ) ⊆ M (m + l, r )
+
+From examination of Fig. 4-25 and a little thought about how it works, it should be clear that LRU has this property. Some other algorithms (e.g. optimal page replacement) also have it, but FIFO does not. Algorithms that have this property are called stack algorithms. These algorithms do not suffer from Belady‘s anomaly and are thus much loved by virtual memory theorists.
+
+### 4.5.3 The Distance String
+For stack algorithms, it is often convenient to represent the reference string in a more abstract way than the actual page numbers. A page reference will be henceforth denoted by the distance from the top of the stack where the referenced page was located.
+
+The statistical properties of the distance string have a big impact on the performance of the algorithm. In Fig. 4-26(a) we see the probability density function for the entries in a (ficticious) distance string, d. Most of the entries in the string are between 1 and k. With a memory of k page frames, few page faults occur.
+
+![](ModernOperatingSystems47.png)
+
+Figure 4-26. Probability density functions for two hypothetical distance strings.
+
+In contrast, in Fig. 4-26(b), the references are so spread out that the only way to avoid a large number of page faults is to give the program us many page frames as it has virtual pages. Having a program like this is just bad luck.
+
+### 4.5.4 Predicting Page Fault Rates
+One of the nice properties of the distance string is that it can be used to predict the number of page faults that will occur with memories of different sizes.
+
+The algorithm starts by scanning the distance string, page by page. It keeps track of the number of times 1 occurs, the number of times 2 occurs, and so on. Let Ci be the number of occurrences of i. For the distance string of Fig. 4-25, the C vector is illustrated in Fig. 4-27(a). In this example, it happens four times that the page referenced is already on top of the stack. Three times the reference is to the next-to-the-top page, and so forth. Let C ∞ be the number of times ∞ occurs in the distance string.
+
+![](ModernOperatingSystems48.png)
+
+Figure 4-27. Computation of the page fault rate from the distance string. (a) The C vector. (b) F vector.
+
+Now compute the F vector according to the formula
+
+$F_m=\sum_{k=m+1}^n C_k + C_{\infty}$
+
+The value of Fm is the number of page faults that will occur with the given distance string and m page frames. For the distance string of Fig. 4-25, Fig. 4-27(b) gives theF vector. For example, F1 is 20, meaning that with a memory holding only 1 page frame, out of the 24 references in the string, all get page faults except the four that are the same as the previous page reference.
+
+## 4.6 DESIGN ISSUES FOR PAGING SYSTEMS
+### 4.6.1 Local versus Global Allocation Policies
+The algorithm of Fig. 4-28(b) is said to be a local page replacement algorithm, whereas that of Fig. 4-28(c) is said to be a global algorithm. Local algorithms effectively correspond to allocating every process a fixed fraction of the memory. Global algorithms dynamically allocate page frames among the runnable processes. Thus the number of page frames assigned to each process varies in time.
+
+In general, global algorithms work better, especially when the working set size can vary over the lifetime of a process. If a local algorithm is used and the working set grows, thrashing will result even if there are plenty of free page frames. If the working set shrinks, local algorithms waste memory. If a global algorithm is used, the system must continually decide how many page frames to assign to each process. One way is to monitor the working set size as indicated by the aging bits, but this approach does not necessarily prevent thrashing. The working set may change size in microseconds, whereas the aging bits are a crude measure spread over a number of clock ticks.
+
+If a global algorithm is used, it may be possible to start each process up with some number of pages proportional to the process’ size, but the allocation has to be updated dynamically as the processes run. One way to manage the allocation is to use the PFF (Page Fault Frequency) algorithm. It tells when to increase or decrease a process’ page allocation but says nothing about which page to replace on a fault. It just controls the size of the allocation set.
+
+![](ModernOperatingSystems49.png)
+
+Figure 4-29. Page fault rate as a function of the number of page frames assigned
+
+### 4.6.2 Load Control
+The way to reduce the number of processes competing for memory is to swap some of them to the disk and free up all the pages they are holding.
+
+As we saw in Fig. 4-4, when the number of processes in main memory is too low, the CPU may be idle for substantial periods of time. This consideration argues for considering not only process size and paging rate when deciding which process to swap out, but also its characteristics, such as whether it is CPU bound or I/O bound, and what characteristics the remaining processes have as well.
+
+### 4.6.3 Page Size
+Determining the best page size requires balancing several competing factors. As a result, there is no overall optimum. To start with, there are two factors that argue for a small page size. A randomly chosen text, data, or stack segment will not fill an integral number of pages. On the average, half of the final page will be empty. The extra space in that page is wasted. This wastage is called internal fragmentation. With n segments in memory and a page size of p bytes, np/2 bytes will be wasted on internal fragmentation. This reasoning argues for a small page size.
+
+Another argument for a small page size becomes apparent if we think about a program consisting of eight sequential phases of 4 KB each. With a 32-KB page size, the program must be allocated 32 KB all the time. With a 16-KB page size, it needs only 16 KB. With a page size of 4 KB or smaller it requires only 4 KB at any instant. In general, a large page size will cause more unused program to be in memory than a small page size.
+
+On the other hand, small pages mean that programs will need many pages, hence a large page table.
+
+This last point can be analyzed mathematically. Let the average process size be sbytes and the page size be p bytes. Furthermore, assume that each page entry requires e bytes. The approximate number of pages needed per process is then s/p,occupying se/p bytes of page table space. The wasted memory in the last page of the process due to internal fragmentation is p/2. Thus, the total overhead due to the page table and the internal fragmentation loss is given by the sum of these two terms:
+
+    overhead = se/p + p/2
+
+The first term (page table size) is large when the page size is small. The second term (internal fragmentation) is large when the page size is large. The optimum must lie somewhere in between. By taking the first derivative with respect to p and equating it to zero, we get the equation
+
+    –se/p2 + 1/2 = 0
+
+From this equation we can derive a formula that gives the optimum page size (considering only memory wasted in fragmentation and page table size). The result is:
+
+$p=\sqrt{2se}$
+
+### 4.6.4 Separate Instruction and Data Spaces
+Most computers have a single address space that holds both programs and data, as shown in Fig. 4-30(a). If this address space is large enough, everything works fine. However, it is often too small, forcing programmers to stand on their heads to fit everything into the address space.
+
+![](ModernOperatingSystems50.png)
+
+Figure 4-30. (a) One address space (b) Separate I and D spaces.
+
+One solution, pioneered on the (16-bit) PDP-11, is to have separate address spaces for instructions (program text) and data. These are called I-space and D-space, respectively. Each address space runs from 0 to some maximum.
+
+In a computer with this design, both address spaces can be paged, independently from one another. Each one has its own page table, with its own mapping of virtual pages to physical page frames.
+
+### 4.6.5 Shared Pages
+In particular, pages that are read-only, such as program text, can be shared, but data pages cannot.
+
+![](ModernOperatingSystems51.png)
+
+Figure 4-31. Two processes sharing the same program sharing its page table.
+
+As long as both processes just read their data, without modifying it, this situation can continue. As soon as either process updates a memory word, the violation of the read-only protection causes a trap to the operating system. A copy is then made of the page so that each process now has its own private copy. Both copies are now set to READ-WRITE so subsequent writes to either copy proceed without trapping. This strategy means that those pages that are never written (including all the program pages) need not be copied. Only the data pages that are actually written need be copied. This approach, called copy on write, improves performance by reducing copying.
+
+### 4.6.6 Cleaning Policy
+If every page frame is full, and furthermore modified, before a new page can be brought in, an old page must first be written to disk. To insure a plentiful supply of free page frames, many paging systems have a background process, called the paging daemon, that sleeps most of the time but is awakened periodically to inspect the state of memory. If too few page frames are free, the paging daemon begins selecting pages to evict using the chosen page replacement algorithm, if these pages have been modified since being loaded, they are written to disk.
+
+One way to implement this cleaning policy is with a two-handed clock. The front hand is controlled by the paging daemon. When it points to a dirty page, that page it written back to disk and the front hand advanced. When it points to a clean page, it is just advanced. The back hand is used for page replacement, as in the standard clock algorithm. Only now, the probability of the back hand hitting a clean page is increased due to the work of the paging daemon.
+
+### 4.6.7 Virtual Memory Interface
+One reason for giving programmers control over their memory map is to allow two or more processes to share the same memory.Sharing of pages can also be used to implement a high-performance message-passing system.
+
+## 4.7 IMPLEMENTATION ISSUES
+### 4.7.1 Operating System Involvement with Paging
+There are four times when the operating system has work to do relating to paging: process creation time, process execution time, page fault time, and process termination time.
+
+### 4.7.2 Page Fault Handling
+1. The hardware traps to the kernel, saving the program counter on the stack.
+2. An assembly code routine is started to save the general registers and other volatile information, to keep the operating system from destroying it.
+3. The operating system discovers that a page fault has occurred, and tries to discover which virtual page is needed.
+4. Once the virtual address that caused the fault is known, the system checks to see if this address is valid and the protection consistent with the access. If not, the process is sent a signal or killed. If the address is valid and no protection fault has occurred, the system checks to see if a page frame is free. It no frames are free, the page replacement algorithm is run to select a victim.
+5. If the page frame selected is dirty, the page is scheduled for transfer to the disk, and a context switch takes place, suspending the faulting process and letting another one run until the disk transfer has completed. In any event, the frame is marked as busy to prevent it from being used for another purpose.
+6. As soon as the page frame is clean (either immediately or after it is written to disk), the operating system looks up the disk address where the needed page is, and schedules a disk operation to bring it in. While the page is being loaded, the faulting process is still suspended and another user process is run, if one is available.
+7. When the disk interrupt indicates that the page has arrived, the page tables are updated to reflect its position, and the frame is marked as being in normal state.
+8. The faulting instruction is backed up to the state it had when it began and the program counter is reset to point to that instruction.
+9. The faulting process is scheduled, and the operating system returns to the assembly language routine that called it.
+10. This routine reloads the registers and other state information and returns to user space to continue execution, as if no fault had occurred.
+
+### 4.7.3 Instruction Backup
+When a program references a page that is not in memory, the instruction causing the fault is stopped part way through and a trap to the operating system occurs. After the operating system has fetched the page needed, it must restart the instruction causing the trap.
+
+### 4.7.4 Locking Pages in Memory
+If an I/O device is currently in the process of doing a DMA transfer to that page, removing it will cause part of the data to be written in the buffer where they belong and part of the data to be written over the newly loaded page. One solution to this problem is to lock pages engaged in I/O in memory so that they will not be removed.Locking a page is often called pinning it in memory. Another solution is to do all I/O to kernel buffers and then copy the data to user pages later.
+
+### 4.7.5 Backing Store
+![](ModernOperatingSystems52.png)
+
+Figure 4-33. (a) Paging to a static swap area. (b) Backing up pages dynamically.
+
+### 4.7.6 Separation of Policy and Mechanism
+A simple example of how policy and mechanism can be separated is shown in Fig. 4-34. Here the memory management system is divided into three parts:
+1. A low-level MMU handler.
+2. A page fault handler that is part of the kernel.
+3. An external pager running in user space.
+
+All the details of how the MMU works are encapsulated in the MMU handler, which is machine-dependent code and has to be rewritten for each new platform the operating system is ported to. The page-fault handler is machine independent code and contains most of the mechanism for paging. The policy is largely determined by the external pager, which runs as a user process.
+
+![](ModernOperatingSystems53.png)
+
+Figure 4-34. Page fault handling with an external pager.
+
+The main advantage of this implementation is more modular code and greater flexibility. The main disadvantage is the extra overhead of crossing the user-kernel boundary several times and the overhead of the various messages being sent between the pieces of the system. At the moment, the subject is highly controversial, but as computers get faster and faster, and the software gets more and more complex, in the long run sacrificing some performance for more reliable software will probably be acceptable to most implementers.
+
+## 4.8 SEGMENTATION
+For example, a compiler has many tables that are built up as compilation proceeds, possibly including
+1. The source text being saved for the printed listing (on batch systems).
+2. The symbol table, containing the names and attributes of variables.
+3. The table containing all the integer and floating-point constants used.
+4. The parse tree, containing the syntactic analysis of the program.
+5. The stack used for procedure calls within the compiler.
+
+Each of the first four tables grows continuously as compilation proceeds. The last one grows and shrinks in unpredictable ways during compilation. In a one-dimensional memory, these five tables would have to be allocated contiguous chunks of virtual address space, as in Fig. 4-35.
+
+![](ModernOperatingSystems54.png)
+
+Figure 4-35. In a one-dimensional address space with growing tables, one table may bump into another.
+
+Figure 4-36 illustrates a segmented memory being used for the compiler tables discussed earlier. Five independent segments are shown here.
+
+![](ModernOperatingSystems55.png)
+
+Figure 4-36. A segmented memory allows each table to grow or shrink independently of the other tables.
+
+Segmentation also facilitates sharing procedures or data between several processes. A common example is the shared library.
+
+### 4.8.1 Implementation of Pure Segmentation
+This phenomenon, called checker boarding or external fragmentation, wastes memory in the holes. It can be dealt with by compaction, as shown in Fig. 4-38(e).
+
+![](ModernOperatingSystems56.png)
+
+Figure 4-38. (a)-(d) Development of checkerboarding. (e) Removal of the checkerboarding by compaction.
+
+### 4.8.2 Segmentation with Paging: MULTICS
+![](ModernOperatingSystems57.png)
+
+Figure 4-39. The MULTICS virtual memory. (a) The descriptor segment points to the page tables. (b) A segment descriptor. The numbers are the field lengths.
 
 
 
