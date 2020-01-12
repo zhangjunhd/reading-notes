@@ -29,6 +29,7 @@
   - [2.3 INTERPROCESS COMMUNICATION](#23-interprocess-communication)
     - [2.3.1 Race Conditions](#231-race-conditions)
     - [2.3.2 Critical Regions](#232-critical-regions)
+    - [2.3.3 Mutual Exclusion with Busy Waiting](#233-mutual-exclusion-with-busy-waiting)
     - [2.3.4 Sleep and Wakeup](#234-sleep-and-wakeup)
     - [2.3.5 Semaphores](#235-semaphores)
     - [2.3.6 Mutexes](#236-mutexes)
@@ -172,13 +173,13 @@
     - [9.2.4 Digital Signatures](#924-digital-signatures)
 
 # 2 PROCESSES AND THREADS
-The most central concept in any operating system is the process: an abstraction of a running program.
+The most central concept in any operating system is the `process`: an abstraction of a running program.
 
 ## 2.1 PROCESSES
 While, strictly speaking, at any instant of time, the CPU is running only one program, in the course of 1 second, it may work on several programs, thus giving the users the illusion of parallelism. Sometimes people speak of pseudoparallelism in this context, to contrast it with the true hardware parallelism of multiprocessor systems(which have two or more CPUs sharing the same physical memory).
 
 ### 2.1.1 The Process Model
-In this model, all the runnable software on the computer, sometimes including the operating system, is organized into a number of sequential processes, or just processes for short. In reality, of course, the real CPU switches back and forth from process to process, but to understand the system, it is much easier to think about a collection of processes running in (pseudo) parallel, than to try to keep track of how the CPU switches from program to program. This rapid switching back and forth is called multiprogramming.
+In this model, all the runnable software on the computer, sometimes including the operating system, is organized into a number of sequential processes, or just processes for short. In reality, of course, the real CPU switches back and forth from process to process, but to understand the system, it is much easier to think about a collection of processes running in (pseudo) parallel, than to try to keep track of how the CPU switches from program to program. This rapid switching back and forth is called `multiprogramming`.
 
 ![](ModernOperatingSystems1.png)
 
@@ -216,7 +217,7 @@ In Fig. 2-2 we see a state diagram showing the three states a process may be in:
 Figure 2-2. A process can be in running, blocked, or ready state. Transitions between these states are as shown.
 
 ### 2.1.6 Implementation of Processes
-To implement the process model, the operating system maintains a table (an array of structures), called the process table, with one entry per process. (Some authors call these entries process control blocks.)
+To implement the process model, the operating system maintains a table (an array of structures), called the `process table`, with one entry per process. (Some authors call these entries process control blocks.)
 
 ![](ModernOperatingSystems3.png)
 
@@ -291,17 +292,17 @@ The arrival of a message causes the system to create a new thread to handle the 
 Figure 2-15. Creation of a new thread when a message arrives. (a) Before the message arrives. (b) After the message arrives.
 
 ## 2.3 INTERPROCESS COMMUNICATION
-In the following sections we will look at some of the issues related to this Interprocess Communication or IPC
+In the following sections we will look at some of the issues related to this `Interprocess Communication` or `IPC`.
 
 Very briefly, there are three issues here. The first was alluded to above: how one process can pass information to another. The second has to do with making sure two or more processes do not get into each other’s way when engaging in critical activities (suppose two processes each try to grab the last 1 MB of memory). The third concerns proper sequencing when dependencies are present: if process A produces data and process B prints them, B has to wait until A has produced some data before starting to print.
 
 ### 2.3.1 Race Conditions
-Situations like this, where two or more processes are reading or writing some shared data and the final result depends on who runs precisely when, are called race conditions.
+Situations like this, where two or more processes are reading or writing some shared data and the final result depends on who runs precisely when, are called `race conditions`.
 
 ### 2.3.2 Critical Regions
 What we need is mutual exclusion, that is, some way of making sure that if one process is using a shared variable or file, the other processes will be excluded from doing the same thing.
 
-That part of the program where the shared memory is accessed is called the critical region or critical section. If we could arrange matters such that no two processes were ever in their critical regions at the same time, we could avoid races.
+That part of the program where the shared memory is accessed is called the `critical region` or critical section. If we could arrange matters such that no two processes were ever in their critical regions at the same time, we could avoid races.
 
 Although this requirement avoids race conditions, this is not sufficient for having parallel processes cooperate correctly and efficiently using shared data. We need four conditions to hold to have a good solution:
 1. No two processes may be simultaneously inside their critical regions.
@@ -313,7 +314,7 @@ Although this requirement avoids race conditions, this is not sufficient for hav
 
 Figure 2-19. Mutual exclusion using critical regions.
 
-2.3.3 Mutual Exclusion with Busy Waiting
+### 2.3.3 Mutual Exclusion with Busy Waiting
 Disabling Interrupts The simplest solution is to have each process disable all interrupts just after entering its critical region and re-enable them just before leaving it. With interrupts disabled, no clock interrupts can occur. The CPU is only switched from process to process as a result of clock or other interrupts, after all, and with interrupts turned off the CPU will not be switched to another process. Thus, once a process has disabled interrupts, it can examine and update the shared memory without fear that any other process will intervene.
  
 The conclusion is: disabling interrupts is often a useful technique within the operating system itself but is not appropriate as a general mutual exclusion mechanism for user processes.
