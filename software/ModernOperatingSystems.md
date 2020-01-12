@@ -152,6 +152,24 @@
 - [8 MULTIPLE PROCESSOR SYSTEMS](#8-multiple-processor-systems)
   - [8.1 MULTIPROCESSORS](#81-multiprocessors)
     - [8.1.1 Multiprocessor Hardware](#811-multiprocessor-hardware)
+    - [8.1.2 Multiprocessor Operating System Types](#812-multiprocessor-operating-system-types)
+    - [8.1.3 Multiprocessor Synchronization](#813-multiprocessor-synchronization)
+    - [8.1.4 Multiprocessor Scheduling](#814-multiprocessor-scheduling)
+  - [8.2 MULTICOMPUTERS](#82-multicomputers)
+    - [8.2.1 Multicomputer Hardware](#821-multicomputer-hardware)
+    - [8.2.2 Low-Level Communication Software](#822-low-level-communication-software)
+    - [8.2.3 User-Level Communication Software](#823-user-level-communication-software)
+    - [8.2.4 Remote Procedure Call](#824-remote-procedure-call)
+    - [8.2.5 Distributed Shared Memory](#825-distributed-shared-memory)
+    - [8.2.6 Multicomputer Scheduling](#826-multicomputer-scheduling)
+    - [8.2.7 Load Balancing](#827-load-balancing)
+  - [8.3 DISTRIBUTED SYSTEMS](#83-distributed-systems)
+- [9 SECURITY](#9-security)
+  - [9.2 BASICS OF CRYPTOGRAPHY](#92-basics-of-cryptography)
+    - [9.2.1 Secret-Key Cryptography](#921-secret-key-cryptography)
+    - [9.2.2 Public-Key Cryptography](#922-public-key-cryptography)
+    - [9.2.3 One-Way Functions](#923-one-way-functions)
+    - [9.2.4 Digital Signatures](#924-digital-signatures)
 
 # 2 PROCESSES AND THREADS
 The most central concept in any operating system is the process: an abstraction of a running program.
@@ -1826,17 +1844,220 @@ Although all multiprocessors have the property that every CPU can address all of
 
 UMA Bus-Based SMP Architectures
 
+![](ModernOperatingSystems107.png)
 
+Figure 8-2. Three bus-based multiprocessors. (a) Without caching. (b) With caching. (c) With caching and private memories.
 
+UMA Multiprocessors Using Crossbar Switches
 
+Even with the best caching, the use of a single bus limits the size of a UMA multiprocessor to about 16 or 32 CPUs. To go beyond that, a different kind of interconnection network is needed. The simplest circuit for connecting n CPUs to kmemories is the crossbar switch, shown in Fig. 8-3. Crossbar switches have been used for decades within telephone switching exchanges to connect a group of incoming lines to a set of outgoing lines in an arbitrary way.
 
+At each intersection of a horizontal (incoming) and vertical (outgoing) line is a crosspoint. A crosspoint is a small switch that can be electrically opened or closed, depending on whether the horizontal and vertical lines are to be connected or not.
 
+![](ModernOperatingSystems108.png)
 
+Figure 8-3. (a) An 8 × 8 crossbar switch. (b) An open crosspoint. (c) A closed crosspoint.
 
+UMA Multiprocessors Using Multistage Switching Networks
 
+![](ModernOperatingSystems109.png)
 
+Figure 8-4. (a) A 2 × 2 switch. (b) A message format.
 
+NUMA Multiprocessors
 
+NUMA machines have three key characteristics that all of them possess and which together distinguish them from other multiprocessors:
+1. There is a single address space visible to all CPUs.
+2. Access to remote memory is via LOAD and STORE instructions.
+3. Access to remote memory is slower than access to local memory.
 
+When the access time to remote memory is not hidden (because there is no caching), the system is called NC-NUMA. When coherent caches are present, the system is called CC-NUMA (Cache-Coherent NUMA).
 
+The most popular approach for building large CC-NUMA multiprocessors currently is the directory-based multiprocessor. The idea is to maintain a database telling where each cache line is and what its status is. When a cache line is referenced, the database is queried to find out where it is and whether it is clean or dirty (modified).
 
+![](ModernOperatingSystems110.png)
+
+Figure 8-6. (a) A 256-node directory-based multiprocessor. (b) Division of a 32-bit memory address into fields. (c) The directory at node 36.
+
+### 8.1.2 Multiprocessor Operating System Types
+Each CPU Has Its Own Operating System
+
+![](ModernOperatingSystems111.png)
+
+Figure 8-7. Partitioning multiprocessor memory among four CPUs, but sharing a single copy of the operating system code. The boxes marked Data are the operating system’s private data for each CPU.
+
+Master-Slave Multiprocessors
+
+![](ModernOperatingSystems112.png)
+
+Figure 8-8. A master-slave multiprocessor model.
+
+Symmetric Multiprocessors
+
+![](ModernOperatingSystems113.png)
+
+Figure 8-9. The SMP multiprocessor model.
+
+### 8.1.3 Multiprocessor Synchronization
+![](ModernOperatingSystems114.png)
+
+Figure 8-10. The TSL instruction can fail if the bus cannot be locked. These four steps show a sequence of events where the failure is demonstrated.
+
+![](ModernOperatingSystems115.png)
+
+Figure 8-11. Use of multiple locks to avoid cache thrashing.
+
+### 8.1.4 Multiprocessor Scheduling
+Timesharing
+
+![](ModernOperatingSystems116.png)
+
+Figure 8-12. Using a single data structure for scheduling a multiprocessor.
+
+Suppose that the process holds a spin lock, not unusual on multiprocessors, as discussed above. Other CPUs waiting on the spin lock just waste their time spinning until that process is scheduled again and releases the lock. On a uniprocessor, spin locks are rarely used so if a process is suspended while it holds a mutex, and another process starts and tries to acquire the mutex, it will be immediately blocked, so little time is wasted.
+
+To get around this anomaly, some systems use smart scheduling, in which a process acquiring a spin lock sets a process-wide flag to show that it currently has a spin lock (Zahorjan et al., 1991). When it releases the lock, it clears the flag. The scheduler then does not stop a process holding a spin lock, but instead gives it a little more time to complete its critical region and release the lock.
+
+Another issue that plays a role in scheduling is the fact that while all CPUs are equal, some CPUs are more equal. In particular, when process A has run for a long time on CPU k, CPU k’s cache will be full of A’s blocks. If A gets to run again soon, it may perform better if it is run on CPU k, because k’s cache may still contain some of A’s blocks. Having cache blocks preloaded will increase the cache hit rate and thus the process’ speed. In addition, the TLB may also contain the right pages, reducing TLB faults.
+
+Some multiprocessors take this effect into account and use what is called affinity scheduling (Vaswani and Zahorjan, 1991). The basic idea here is to make a serious effort to have a process run on the same CPU it ran on last time. One way to create this affinity is to use a two-level scheduling algorithm. When a process is created, it is assigned to a CPU, for example based on which one has the smallest load at that moment. This assignment of processes to CPUs is the top level of the algorithm. As a result, each CPU acquires its own collection of processes.
+
+Space Sharing
+
+Scheduling multiple threads at the same time across multiple CPUs is called space sharing.
+
+The simplest space sharing algorithm works like this. Assume that an entire group of related threads is created at once. At the time it is created, the scheduler checks to see if there are as many free CPUs as there are threads. If there are, each thread is given its own dedicated (i.e., nonmultiprogrammed) CPU and they all start. If there are not enough CPUs, none of the threads are started until enough CPUs are available. Each thread holds onto its CPU until it terminates, at which time the CPU is put back into the pool of available CPUs. If a thread blocks on I/O, it continues to hold the CPU, which is simply idle until the thread wakes up. When the next batch of threads appears, the same algorithm is applied.
+
+![](ModernOperatingSystems117.png)
+
+Figure 8-13. A set of 32 CPUs split into four partitions, with two CPUs available.
+
+Gang Scheduling
+
+A clear advantage of space sharing is the elimination of multiprogramming, which eliminates the context switching overhead. However, an equally clear disadvantage is the time wasted when a CPU blocks and has nothing at all to do until it becomes ready again.
+
+The solution to this problem is gang scheduling, which is an outgrowth of co-scheduling(Ousterhout, 1982). Gang scheduling has three parts:
+1. Groups of related threads are scheduled as a unit, a gang.
+2. All members of a gang run simultaneously, on different timeshared CPUs.
+3. All gang members start and end their time slices together.
+
+## 8.2 MULTICOMPUTERS
+### 8.2.1 Multicomputer Hardware
+Interconnection Technology
+
+Two kinds of switching schemes are used in multicomputers. In the first one, each message is first broken up (either by the user software or the network interface) into a chunk of some maximum length called a packet. The switching scheme, called store-and-forward packet switching, consists of the packet being injected into the first switch by the source node’s network interface board, as shown in Fig. 8-17(a). The bits come in one at a time, and when the whole packet has arrived, it is copied to the next switch along the path, as shown in Fig. 8-17(b). When the packet arrives at the switch attached to the destination node, as shown in Fig. 8-17(c), the packet is copied to that node’s network interface board and eventually to its RAM.
+
+![](ModernOperatingSystems118.png)
+
+Figure 8-17. Store-and-forward packet switching.
+
+The other switching regime, circuit switching, consists of the first switch first establishing a path through all the switches to the destination switch. Once that path has been set up, the bits are pumped all the way from the source to the destination nonstop. There is no intermediate buffering at the intervening switches. Circuit switching requires a setup phase, which takes some time, but is faster once the setup has been completed. After the packet has been sent, the path must be torn down again. A variation on circuit switching, called wormhole routing, breaks each packet up into subpackets and allows the first subpacket to start flowing even before the full path has been built.
+
+Network Interfaces
+
+![](ModernOperatingSystems119.png)
+
+Figure 8-18. Position of the network interface boards in a multicomputer.
+
+### 8.2.2 Low-Level Communication Software
+![](ModernOperatingSystems120.png)
+
+Figure 8-19. Use of send and receive rings to coordinate the main CPU with the on-board CPU.
+
+### 8.2.3 User-Level Communication Software
+Send and Receive
+
+Blocking versus Nonblocking Calls
+
+Thus the choices on the sending side are
+1. Blocking send (CPU idle during message transmission).
+2. Nonblocking send with copy (CPU time wasted for the extra copy).
+3. Nonblocking send with interrupt (makes programming difficult),
+4. Copy on write (extra copy probably needed eventually).
+
+### 8.2.4 Remote Procedure Call
+![](ModernOperatingSystems121.png)
+
+Figure 8-21. Steps in making a remote procedure call. The stubs are shaded gray.
+
+### 8.2.5 Distributed Shared Memory
+![](ModernOperatingSystems122.png)
+
+Figure 8-22. Various layers where shared memory can be implemented. (a) The hardware. (b) The operating system. (c) User-level software.
+
+Replication
+
+False Sharing
+
+Achieving Sequential Consistency
+
+### 8.2.6 Multicomputer Scheduling
+### 8.2.7 Load Balancing
+
+A Graph-Theoretic Deterministic Algorithm
+
+![](ModernOperatingSystems123.png)
+
+Figure 8-25. Two ways of allocating nine processes to three nodes.
+
+In Fig. 8-25(a), we have partitioned the graph with processes A, E, and G on node 1, processes B, F, and H on node 2, and processes C, D, and I on node 3. The total network traffic is the sum of the arcs intersected by the cuts (the dashed lines), or 30 units. In Fig. 8-25(b) we have a different partitioning that has only 28 units of network traffic. Assuming that it meets all the memory and CPU constraints, this is a better choice because it requires less communication.
+
+Intuitively, what we are doing is looking for clusters that are tightly coupled (high intracluster traffic flow) but which interact little with other clusters (low intercluster traffic flow). Some of the earliest papers discussing the problem are (Chow and Abraham, 1982; Lo, 1984; and Stone and Bokhari, 1978).
+
+A Sender-Initiated Distributed Heuristic Algorithm
+
+Now let us look at some distributed algorithms. One algorithm says that when a process is created, it runs on the node that created it unless that node is overloaded. The metric for overloaded might involve too many processes, too big a total working set, or some other metric. If it is overloaded, the node selects another node at random and asks it what its load is (using the same metric). If the probed node’s load is below some threshold value, the new process is sent there (Eager et al., 1986). If not, another machine is chosen for probing. Probing does not go on forever. If no suitable host is found within N probes, the algorithm terminates and the process runs on the originating machine. The idea is for heavily loaded nodes to try to get rid of excess work, as shown in Fig. 8-26(a).
+
+![](ModernOperatingSystems124.png)
+
+Figure 8-26. (a) An overloaded node looking for a lightly loaded node to hand off processes to. (b) An empty node looking for work to do.
+
+Eager et al. (1986) constructed an analytical queueing model of this algorithm. Using this model, it was established that the algorithm behaves well and is stable under a wide range of parameters, including different threshold values, transfer costs, and probe limits.
+
+A Receiver-Initialed Distributed Heuristic Algorithm
+A complementary algorithm to the one given above, which is initiated by an overloaded sender, is one initiated by an underloaded receiver, as shown in Fig. 8-26(b). With this algorithm, whenever a process finishes, the system checks to see if it has enough work. If not, it picks some machine at random and asks it for work. If that machine has nothing to offer, a second, and then a third machine is asked. If no work is found with N probes, the node temporarily stops asking, does any work it has queued up, and tries again when the next process finishes. If no work is available, the machine goes idle. After some fixed time interval, it begins probing again.
+
+A Bidding Algorithm
+
+Another class of algorithms tries to turn the computer system into a miniature economy, with buyers and sellers of services and prices set by supply and demand (Ferguson et al. 1988). The key players in the economy are the processes, which must buy CPU time to get their work done, and nodes, which auction their cycles off to the highest bidder.
+
+## 8.3 DISTRIBUTED SYSTEMS
+
+# 9 SECURITY
+## 9.2 BASICS OF CRYPTOGRAPHY
+The purpose of cryptography is to take a message or file, called the plaintext, and encrypt it into the ciphertext in such a way that only authorized people know how to convert it back to the plaintext.
+
+The secrecy depends on parameters to the algorithms called keys. If P is the plaintext file, KE is the encryption key, C is the ciphertext, and E is the encryption algorithm (i.e., function), then C = E(P, KE). This is the definition of encryption. It says that the ciphertext is obtained by using the (known) encryption algorithm, E, with the plaintext, P, and the (secret) encryption key, KE, as parameters.
+
+Similarly, P = D(C, KD) where D is the decryption algorithm and KD is the decryption key. This says that to get the plaintext, P, back from the ciphertext, C and the decryption key,KD, one runs the algorithm D with C and KD as parameters. The relation between the various pieces is shown in Fig. 9-2.
+
+![](ModernOperatingSystems125.png)
+
+Figure 9-2. Relationship between the plaintext and the ciphertext.
+
+### 9.2.1 Secret-Key Cryptography
+To make this clearer, consider an encryption algorithm in which each letter is replaced by a different letter, for example, all As are replaced by Qs, all Bs are replaced by Ws, all Cs are replaced by Es, and so on like this:
+
+```
+plaintext:      ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+ciphertext:     QWERTYUIOPASDFGHJKLZXCVBNM
+```
+
+Many cryptographic systems, like this one, have the property that given the encryption key it is easy to find the decryption key, and vice versa. Such systems are called secret-key cryptography or symmetric-key cryptography.
+
+### 9.2.2 Public-Key Cryptography
+Secret key systems are efficient because the amount of computation required to encrypt or decrypt a message is manageable, but have a big drawback: the sender and receiver must both be in possession of the shared secret key. They may even have to get together physically for one to give it to the other. To get around this problem, public-key cryptography is used (Diffie and Hellman, 1976).
+
+A public key system called RSA exploits the fact that multiplying big numbers is much easier for a computer to do than factoring big numbers, especially when all arithmetic is done using modulo arithmetic and all the numbers involved have hundreds of digits (Rivest et al., 1978).
+
+The way public-key cryptography works is that everyone picks a (public key, private key) pair and publishes the public key. The public key is the encryption key; the private key is the decryption key.
+
+### 9.2.3 One-Way Functions
+There are various situations that we will see later in which it is desirable to have some function, f, which has the property that given f and its parameter x, computing y = f(x) is easy to do, but given only f(x), finding x is computationally infeasible.
+
+### 9.2.4 Digital Signatures
+Digital signatures make it possible to sign email messages and other digital documents in such a way that they cannot be repudiated by the sender later. One common way is to first run the document through a one-way hashing algorithm that is very hard to invert. The hashing function typically produces a fixed-length result independent of the original document size. The most popular hashing functions used are MD5 (Message Digest), which produces a 16-byte result (Rivest, 1992) and SHA (Secure Hash Algorithm), which produces a 20-byte result (NIST, 1995).
+
+![](ModernOperatingSystems126.png)
+
+Figure 9-3. (a) Computing a signature block. (b) What the receiver gets.
