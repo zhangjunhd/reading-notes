@@ -58,6 +58,19 @@
 - [4 MEMORY MANAGEMENT](#4-memory-management)
   - [4.1 BASIC MEMORY MANAGEMENT](#41-basic-memory-management)
     - [4.1.1 Monoprogramming without Swapping or Paging](#411-monoprogramming-without-swapping-or-paging)
+    - [4.1.2 Multiprogramming with Fixed Partitions](#412-multiprogramming-with-fixed-partitions)
+    - [4.1.3 Modeling Multiprogramming](#413-modeling-multiprogramming)
+    - [4.1.4 Analysis of Multiprogramming System Performance](#414-analysis-of-multiprogramming-system-performance)
+    - [4.1.5 Relocation and Protection](#415-relocation-and-protection)
+  - [4.2 SWAPPING](#42-swapping)
+    - [4.2.1 Memory Management with Bitmaps](#421-memory-management-with-bitmaps)
+    - [4.2.2 Memory Management with Linked Lists](#422-memory-management-with-linked-lists)
+  - [4.3 VIRTUAL MEMORY](#43-virtual-memory)
+    - [4.3.1 Paging](#431-paging)
+    - [4.3.2 Page Tables](#432-page-tables)
+    - [4.3.3 TLBs—Translation Lookaside Buffers](#433-tlbstranslation-lookaside-buffers)
+    - [4.3.4 Inverted Page Tables](#434-inverted-page-tables)
+  - [4.4 PAGE REPLACEMENT ALGORITHMS](#44-page-replacement-algorithms)
 
 # 2 PROCESSES AND THREADS
 The most central concept in any operating system is the process: an abstraction of a running program.
@@ -789,15 +802,184 @@ The approach often used is called two-phase locking. In the first phase the proc
 ### 4.1.1 Monoprogramming without Swapping or Paging
 Three variations on this theme are shown in Fig. 4-1. The operating system may be at the bottom of memory in RAM (Random Access Memory), as shown in Fig. 4-1(a), or it may be in ROM (Read-Only Memory) at the top of memory, as shown in Fig. 4-1(b), or the device drivers may be at the top of memory in a ROM and the rest of the system in RAM down below, as shown in Fig. 4-1(c). The first model was formerly used on mainframes and minicomputers but is rarely used any more. The second model is used on some palmtop computers and embedded systems. The third model was used by early personal computers (e.g., running MS-DOS), where the portion of the system in the ROM is called the BIOS (Basic Input Output System).
 
+![](ModernOperatingSystems24.png)
 
+Figure 4-1. Three simple ways of organizing memory with an operating system and one user process. Other possibilities also exist.
 
+### 4.1.2 Multiprogramming with Fixed Partitions
+![](ModernOperatingSystems25.png)
 
+Figure 4-2. (a) Fixed memory partitions with separate input queues for each partition. (b) Fixed memory partitions with a single input queue.
 
+### 4.1.3 Modeling Multiprogramming
+A better model is to look at CPU usage from a probabilistic viewpoint. Suppose that a process spends a fraction p of its time waiting for I/O to complete. With nprocesses in memory at once, the probability that all n processes are waiting for I/O (in which case the CPU will be idle) is pⁿ. The CPU utilization is then given by the formula
 
+    CPU utilization = 1 – pⁿ
 
+Figure 4-3 shows the CPU utilization as a function of n which is called the degree of multiprogramming.
 
+![](ModernOperatingSystems26.png)
 
+Figure 4-3. CPU utilization as a function of the number of processes in memory.
 
+### 4.1.4 Analysis of Multiprogramming System Performance
+![](ModernOperatingSystems27.png)
+
+Figure 4-4. (a) Arrival and work requirements of four jobs. (b) CPU utilization for 1 to 4 jobs with 80 percent I/O wait. (c) Sequence of events as jobs arrive and finish. The numbers above the horizontal lines show how much CPU time, in minutes, each job gets in each interval.
+
+### 4.1.5 Relocation and Protection
+For example, suppose that the first instruction is a call to a procedure at absolute address 100 within the binary file produced by the linker. If this program is loaded in partition 1 (at address 100K), that instruction will jump to absolute address 100, which is inside the operating system. What is needed is a call to 100K + 100. If the program is loaded into partition 2, it must be carried out as a call to 200K + 100, and so on. This problem is known as the relocation problem.
+
+The solution that IBM chose for protecting the 360 was to divide memory into blocks of 2-KB bytes and assign a 4-bit protection code to each block. The PSW (Program Status Word) contained a 4-bit key. The 360 hardware trapped any attempt by a running process to access memory whose protection code differed from the PSW key. Since only the operating system could change the protection codes and key, user processes were prevented from interfering with one another and with the operating system itself.
+
+An alternative solution to both the relocation and protection problems is to equip the machine with two special hardware registers, called the base and limit registers. When a process is scheduled, the base register is loaded with the address of the start of its partition, and the limit register is loaded with the length of the partition. Every memory address generated automatically has the base register contents added to it before being sent to memory.
+
+## 4.2 SWAPPING
+Two general approaches to memory management can be used, depending (in part) on the available hardware. The simplest strategy, called swapping, consists of bringing in each process in its entirety, running it for a while, then putting it back on the disk. The other strategy, called virtual memory, allows programs to run even when they are only partially in main memory.
+
+![](ModernOperatingSystems28.png)
+
+Figure 4-5. Memory allocation changes as processes come into memory and leave it. The shaded regions are unused memory.
+
+When swapping creates multiple holes in memory, it is possible to combine them all into one big one by moving all the processes downward as far as possible. This technique is known as memory compaction.
+
+![](ModernOperatingSystems29.png)
+
+Figure 4-6. (a) Allocating space for a growing data segment. (b) Allocating space for a growing stack and a growing data segment.
+
+### 4.2.1 Memory Management with Bitmaps
+![](ModernOperatingSystems30.png)
+
+Figure 4-7. (a) A part of memory with five processes and three holes. The tick marks show the memory allocation units. The shaded regions (0 in the bitmap) are free. (b) The corresponding bitmap. (c) The same information as a list.
+
+### 4.2.2 Memory Management with Linked Lists
+* first fit
+* next fit
+* best fit
+* worst fit
+* quick fit, which maintains separate lists for some of the more common sizes requested.
+
+## 4.3 VIRTUAL MEMORY
+Many years ago people were first confronted with programs that were too big to fit in the available memory. The solution usually adopted was to split the program into pieces, called overlays. Overlay 0 would start running first. When it was done, it would call another overlay.
+
+The method that was devised (Fotheringham, 1961) has come to be known as virtual memory .The basic idea behind virtual memory is that the combined size of the program, data, and stack may exceed the amount of physical memory available for it. The operating system keeps those parts of the program currently in use in main memory, and the rest on the disk.
+
+### 4.3.1 Paging
+Most virtual memory systems use a technique called paging, which we will now describe.
+
+![](ModernOperatingSystems31.png)
+
+Figure 4-9. The position and function of the MMU. Here the MMU is shown as being a part of the CPU chip because it commonly is nowadays. However, logically it could be a separate chip and was in years gone by.
+
+These program-generated addresses are called virtual addresses and form the virtual address space. On computers without virtual memory, the virtual address is put directly onto the memory bus and causes the physical memory word with the same address to be read or written. When virtual memory is used, the virtual addresses do not go directly to the memory bus. Instead, they go to an MMU (Memory Management Unit) that maps the virtual addresses onto the physical memory addresses as illustrated in Fig. 4-9.
+
+A very simple example of how this mapping works is shown in Fig. 4-10. In this example, we have a computer that can generate 16-bit addresses, from 0 up to 64K. These are the virtual addresses. This computer, however, has only 32 KB of physical memory, so although 64-KB programs can be written, they cannot be loaded into memory in their entirety and run. A complete copy of a program’s core image, up to 64 KB, must be present on the disk, however, so that pieces can be brought in as needed.
+
+The virtual address space is divided up into units called pages. The corresponding units in the physical memory are called page frames. The pages and page frames are always the same size. In this example they are 4 KB, but page sizes from 512 bytes to 64 KB have been used in real systems. With 64 KB of virtual address space and 32 KB of physical memory, we get 16 virtual pages and 8 page frames. Transfers between RAM and disk are always in units of a page.
+
+![](ModernOperatingSystems32.png)
+
+Figure 4-10. The relation between virtual addresses and physical memory addresses is given by the page table.
+
+ In the actual hardware, a Present/absent bit keeps track of which pages are physically present in memory.
+
+ The MMU notices that the page is unmapped (indicated by a cross in the figure) and causes the CPU to trap to the operating system. This trap is called a page fault. The operating system picks a little-used page frame and writes its contents back to the disk. It then fetches the page just referenced into the page frame just freed, changes the map, and restarts the trapped instruction.
+
+The page number is used as an index into the page table, yielding the number of the page frame corresponding to that virtual page.
+
+### 4.3.2 Page Tables
+![](ModernOperatingSystems33.png)
+
+Figure 4-11. The internal operation of the MMU with 16 4-KB pages.
+
+Multilevel Page Tables
+
+![](ModernOperatingSystems34.png)
+
+Figure 4-12. (a) A 32-bit address with two page table fields. (b) Two-level page tables.
+
+Structure of a Page Table Entry
+
+![](ModernOperatingSystems35.png)
+
+Figure 4-13. A typical page table entry
+
+### 4.3.3 TLBs—Translation Lookaside Buffers
+In most paging schemes, the page tables are kept in memory, due to their large size. Potentially, this design has an enormous impact on performance. The solution that has been devised is to equip computers with a small hardware device for mapping virtual addresses to physical addresses without going through the page table. The device, called a TLB (Translation Lookaside Buffer) or sometimes an associative memory, is illustrated in Fig. 4-14.
+
+![](ModernOperatingSystems36.png)
+
+Figure 4-14. A TLB to speed up paging.
+
+### 4.3.4 Inverted Page Tables
+Traditional page tables of the type described so far require one entry per virtual page, since they are indexed by virtual page number. If the address space consists of 232 bytes, with 4096 bytes per page, then over 1 million page table entries are needed.
+
+However, as 64-bit computers become more common, the situation changes drastically. If the address space is now 2⁶⁴ bytes, with 4-KB pages, we need a page table with 2⁵² entries. If each entry is 8 bytes, the table is over 30 million gigabytes.
+
+One such solution is the inverted page table. In this design, there is one entry per page frame in real memory, rather than one entry per page of virtual address space. For example, with 64-bit virtual addresses, a 4-KB page, and 256 MB of RAM, an inverted page table only requires 65,536 entries. The entry keeps track of which (process, virtual page) is located in the page frame.
+
+![](ModernOperatingSystems37.png)
+
+Figure 4-15. Comparison of a traditional page table with an inverted page table.
+
+## 4.4 PAGE REPLACEMENT ALGORITHMS
+* The Optimal Page Replacement Algorithm
+* The Not Recently Used Page Replacement Algorithm
+    * R is set whenever the page is referenced (read or written). M is set when the page is written to (i.e., modified).
+    * When a page fault occurs, the operating system inspects all the pages and divides them into four categories based on the current values of their R and M bits:
+      * Class 0: not referenced, not modified.
+      * Class 1: not referenced, modified.
+      * Class 2: referenced, not modified.
+      * Class 3: referenced, modified.
+    * Although class 1 pages seem, at first glance, impossible, they occur when a class 3 page has its R bit cleared by a clock interrupt. Clock interrupts do not clear the M bit because this information is needed to know whether the page has to be rewritten to disk or not. Clearing R but not M leads to a class 1 page.
+    * The NRU (Not Recently Used) algorithm removes a page at random from the lowest numbered nonempty class. Implicit in this algorithm is that it is better to remove a modified page that has not been referenced in at least one dock tick (typically 20 msec) than a clean page that is in heavy use.
+* The First-In, First-Out (FIFO) Page Replacement Algorithm
+* The Second Chance Page Replacement Algorithm
+* The Clock Page Replacement Algorithm
+* The Least Recently Used (LRU) Page Replacement Algorithm
+    * For a machine with n page frames, the LRU hardware can maintain a matrix of n × n bits, initially all zero. Whenever page frame k is referenced, the hardware first sets all the bits of row k to 1, then sets all the bits of column k to 0. At any instant, the row whose binary value is lowest is the least recently used, the row whose value is next lowest is next least recently used, and so forth.
+
+![](ModernOperatingSystems38.png)
+
+Figure 4-16. Operation of second chance. (a) Pages sorted in FIFO order. (b) Page list if a page fault occurs at time 20 and A has its R bit set. The numbers above the pages are their loading times.
+
+![](ModernOperatingSystems39.png)
+
+Figure 4-17. The clock page replacement algorithm.
+
+![](ModernOperatingSystems40.png)
+
+Figure 4-18. LRU using a matrix when pages are referenced in the order 0, 1, 2, 3, 2, 1, 0, 3, 2, 3.
+
+* Simulating LRU in Software
+    * One possibility is called the NFU (Not Frequently Used) algorithm. It requires a software counter associated with each page, initially zero. At each clock interrupt, the operating system scans all the pages in memory. For each page, the R bit, which is 0 or 1, is added to the counter. In effect, the counters are an attempt to keep track of how often each page has been referenced. When a page fault occurs, the page with the lowest counter is chosen for replacement.
+    * The main problem with NFU is that it never forgets anything.
+    * Fortunately, a small modification to NFU makes it able to simulate LRU quite well. The modification has two parts. First, the counters are each shifted right 1 bit before the R bit is added in. Second, the R bit is added to the leftmost, rather than the rightmost bit.
+    * Figure 4-19 illustrates how the modified algorithm, known as aging, works. Suppose that after the first clock tick the R bits for pages 0 to 5 have the values 1, 0, 1, 0, 1, and 1, respectively (page 0 is 1, page 1 is 0, page 2 is 1, etc.). In other words, between tick 0 and tick 1, pages 0, 2, 4, and 5 were referenced, setting their R bits to 1, while the other ones remain 0. After the six corresponding counters have been shifted and the R bit inserted at the left, they have the values shown in Fig. 4-19(a). The four remaining columns show the six counters after the next four clock ticks.
+
+![](ModernOperatingSystems41.png)
+
+Figure 4-19. The aging algorithm simulates LRU in software. Shown are six pages for five clock ticks. The five clock ticks are represented by (a) to (e).
+
+* The Working Set Page Replacement Algorithm
+    * In the purest form of paging, processes are started up with none of their pages in memory. As soon as the CPU tries to fetch the first instruction, it gets a page fault, causing the operating system to bring in the page containing the first instruction. Other page faults for global variables and the stack usually follow quickly. After a while, the process has most of the pages it needs and settles down to run with relatively few page faults. This strategy is called demand paging because pages are loaded only on demand, not in advance.
+    * Of course, it is easy enough to write a test program that systematically reads all the pages in a large address space, causing so many page faults that there is not enough memory to hold them all. Fortunately, most processes do not work this way. They exhibit a locality of reference, meaning that during any phase of execution, the process references only a relatively small fraction of its pages.
+    * The set of pages that a process is currently using is called its working set (Denning, 1968a; Denning, 1980). If the entire working set is in memory, the process will run without causing many faults until it moves into another execution phase (e.g., the next pass of the compiler). If the available memory is too small to hold the entire working set, the process will cause many page faults and run slowly since executing an instruction takes a few nanoseconds and reading in a page from the disk typically takes 10 milliseconds. At a rate of one or two instructions per 10 milliseconds, it will take ages to finish. A program causing page faults every few instructions is said to be thrashing (Denning, 1968b).
+    * Therefore, many paging systems try to keep track of each process‘ working set and make sure that it is in memory before letting the process run. This approach is called the working set model (Denning, 1970). It is designed to greatly reduce the page fault rate. Loading the pages before letting processes run is also called prepaging. Note that the working set changes over time.
+    * If a process starts running at time T and has had 40 msec of CPU time at real time T + 100 msec, for working set purposes, its time is 40 msec. The amount of CPU time a process has actually used has since it started is often called its current virtual time. With this approximation, the working set of a process is the set of pages it has referenced during the past τ seconds of virtual time.
+
+![](ModernOperatingSystems42.png)
+
+Figure 4-21. The working set algorithm.
+
+* The WSClock Page Replacement Algorithm
+    * The basic working set algorithm is cumbersome since the entire page table has to be scanned at each page fault until a suitable candidate is located. An improved algorithm, that is based on the clock algorithm but also uses the working set information is called WSClock.
+    * In principle, all pages might be scheduled for disk I/O on one cycle around the clock. To reduce disk traffic, a limit might be set, allowing a maximum of n pages to be written back. Once this limit has been reached, no new writes are scheduled.
+        * What happens if the hand comes all the way around to its starting point? There are two cases to distinguish:
+            * At least one write has been scheduled.
+            * No writes have been scheduled.
+        * In the former case, the hand just keeps moving, looking for a clean page. Since one or more writes have been scheduled, eventually some write will complete and its page will be marked as clean. The first clean page encountered is evicted. This page is not necessarily the first write scheduled because the disk driver may reorder writes in order to optimize disk performance.
+        * In the latter case, all pages are in the working set, otherwise at least one write would have been scheduled. Lacking additional information, the simplest thing to do is claim any clean page and use it. The location of a clean page could be kept track of during the sweep. If no clean pages exist, then the current page is chosen and written back to disk.
 
 
 
