@@ -400,3 +400,4 @@
 # 机器学习
 1. 搜索引擎
    1. [Lucene in Action, Second Edition](ml/LuceneInAction.md)
+   2. [搜索引擎-信息检索实践](ml/SearchEngines.md)
