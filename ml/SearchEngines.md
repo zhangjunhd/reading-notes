@@ -455,10 +455,10 @@ end procudure
 
 $$
 \begin{matrix} 
-& term1 & term2 & \cdots & termt \\
-doc1 & d_{11} & d_{12} & \cdots & d_{1t} \\
-doc2 & d_{21} & d_{22} & \cdots & d_{2t} \\
-\vdots & \vdots & \vdots & \cdots & \vdots \\
+& term1 & term2 & \cdots & termt \\\\
+doc1 & d_{11} & d_{12} & \cdots & d_{1t} \\\\
+doc2 & d_{21} & d_{22} & \cdots & d_{2t} \\\\
+\vdots & \vdots & \vdots & \cdots & \vdots \\\\
 docn & d_{n1} & d_{n2} & \cdots & d_{nt} 
 \end{matrix}
 $$
