@@ -454,13 +454,11 @@ end procudure
 可以表示为一个词项权值的矩阵：
 
 $$
-\begin{matrix}
- 0   & term1 & term2 & \cdots & termt \\
+\begin{matrix} & term1 & term2 & \cdots & termt \\
 doc1 & d_{11} & d_{12} & \cdots & d_{1t} \\
 doc2 & d_{21} & d_{22} & \cdots & d_{2t} \\
 \vdots & \vdots & \vdots & \cdots & \vdots \\
-docn & d_{n1} & d_{n2} & \cdots & d_{nt}
-\end{matrix}
+docn & d_{n1} & d_{n2} & \cdots & d_{nt} \end{matrix}
 $$
 
 文档可以通过计算表示文档和查询的点之间的距离来进行排序。
