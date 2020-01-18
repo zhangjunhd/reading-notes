@@ -837,6 +837,12 @@ L(x)=\left\{\begin{matrix}
 \end{matrix}\right.
 $$
 
+$$f(x)=
+\begin{cases}
+0& \text{x=0}\\\\
+1& \text{x!=0}
+\end{cases}$$
+
 这个损失函数合并进SVM最优化如下：
 
 $min:\ \frac{1}{2}\lVert w \rVert^2+C\sum_{i=1}^N \xi_i$
