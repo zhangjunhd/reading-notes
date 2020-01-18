@@ -831,10 +831,10 @@ $w \cdot x_i \le -1 \forall i\ s.t.\ Class(i)=-$
 惩罚因子（关键损失函数）：
 
 $$
-L(x)=\left\{\begin{matrix}
+\begin{matrix}L(x)=\left\{\begin{matrix}
  max(1-w \cdot x,0)\ if\ Class(i)=+ \\ 
  max(1+w \cdot x,0)\ if\ Class(i)=-
-\end{matrix}\right. %%
+\end{matrix}\right. \\ \end{matrix}
 $$
 
 这个损失函数合并进SVM最优化如下：
