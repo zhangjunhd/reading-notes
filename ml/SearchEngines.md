@@ -830,17 +830,10 @@ $w \cdot x_i \le -1 \forall i\ s.t.\ Class(i)=-$
 #### 2.线性不可分
 惩罚因子（关键损失函数）：
 
-$$
-L(x)=\left\{\begin{matrix}
- max(1-w \cdot x,0)\ if\ Class(i)=+ \\ 
- max(1+w \cdot x,0)\ if\ Class(i)=-
-\end{matrix}\right.
-$$
-
-$$f(x)=
+$$L(x)=
 \begin{cases}
-0& \text{x=0}\\\\
-1& \text{x!=0}
+max(1-w \cdot x,0)& if\ Class(i)=+\\\\
+max(1+w \cdot x,0)& if\ Class(i)=-
 \end{cases}$$
 
 这个损失函数合并进SVM最优化如下：
