@@ -834,7 +834,7 @@ $$
 L(x)=\left\{\begin{matrix}
  max(1-w \cdot x,0)\ if\ Class(i)=+ \\ 
  max(1+w \cdot x,0)\ if\ Class(i)=-
-\end{matrix}\right.
+\end{matrix}\right. %%
 $$
 
 这个损失函数合并进SVM最优化如下：
