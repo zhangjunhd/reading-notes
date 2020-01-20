@@ -1360,7 +1360,7 @@ plt.xlabel('Alpha')
 plt.show()
 ```
 
-![下载](736AC2737C5846A9B9902C09724AE60F)
+![linear_interp](FundamentalsOfDeepLearning_linear_interp.png)
 
 The cost function of a three-layer feed-forward network as we linearly interpolate on the line connecting a randomly initialized parameter vector and an SGD solution
 
