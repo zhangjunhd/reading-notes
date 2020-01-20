@@ -205,9 +205,9 @@ Figure 2-4. Convergence is difficult when our learning rate is too large
 
 Define the learning rate $\epsilon$, we want:
 
-```math
+$$
 \Delta w_k=-\epsilon \frac{\partial E}{\partial w_k}=-\epsilon\frac{\partial}{\partial w_k}(\frac{1}{2}\sum_i(t^{(i)}-y^{(i)})^2)=\sum_i \epsilon(t^{(i)}-y^{(i)})\frac{\partial y_i}{\partial w_k}=\sum_i \epsilon x_k^{(i)}(t^{(i)}-y^{(i)})
-```
+$$
 
 ## Gradient Descent with Sigmoidal Neurons
 $z=\sum_k w_k x_k$
