@@ -2565,7 +2565,7 @@ plt.imshow(pca_recon[0].reshape((28,28)), cmap=plt.cm.gray)
 plt.show()
 ```
 
-![下载 (1)](27BE06D8B9ED45A7AE970305AEA718A0)
+![pca](FundamentalsOfDeepLearning_pca.png)
 
 ![6-10](https://www.safaribooksonline.com/library/view/fundamentals-of-deep/9781491925607/assets/fodl_0610.png)
 
