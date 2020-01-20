@@ -702,7 +702,7 @@ def evaluate(output, y):
 - `tf.constant_initializer` 常量初始化函数。
 - `tf.reduce_sum` 求和，由于求和的对象是tensor，所以是沿着tensor的某些维度求和。
     - `reduction_indice` 是指沿tensor的哪些维度求和。
-    - ![reduction_indice](D3C3676868AB48749EEC6D8D10B781E9)
+    - ![reduction_indice](FundamentalsOfDeepLearning_reduction_indice.jpg)
 - `tf.equal` 是对比这两个矩阵或者向量的相等的元素，如果是相等的那就返回True，反正返回False，返回的值的矩阵维度和A是一样的。
     - 下面例子代码输出：`[[ True  True  True False False]]`
 
