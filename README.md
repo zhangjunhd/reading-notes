@@ -115,17 +115,19 @@
    3. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
    4. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
    5. [存在主义心理治疗](psychology/Existential-Psychology.md)
-5. 辩证法
+5. 结构主义
+   1. [结构主义](western_philosophy/structuralism.md)
+   2. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
+6. 辩证法
    1. [大众哲学](western_philosophy/PublicPhilosophy.md)
    2. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
-6. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
-7. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
-8. [康德三大批判合集](western_philosophy/kant.md)
-9.  [身份的焦虑](western_philosophy/status-anxiety.md)
-10. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
-11. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-12. [论自然](western_philosophy/nature.md)
-13. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
+7. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
+8. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
+9.  [康德三大批判合集](western_philosophy/kant.md)
+10. [身份的焦虑](western_philosophy/status-anxiety.md)
+11. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
+12. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
+13. [论自然](western_philosophy/nature.md)
 
 # 文学
 1. 木心文学回忆录
