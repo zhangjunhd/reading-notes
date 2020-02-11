@@ -308,7 +308,7 @@
       2. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
    7. [隐形VISA](bussiness/model/visa.md)
    8. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
-   9.  [知识图谱行业分析](bussiness/model/kg.md)
+   9. [智能商业](bussiness/model/IntelligentBusiness.md)
 4. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
