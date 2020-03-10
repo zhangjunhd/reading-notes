@@ -42,6 +42,8 @@
     - [Objects](#objects)
     - [All Together Now](#all-together-now)
 - [Chapter 3. Behavior](#chapter-3-behavior)
+  - [Patterns of Behavior](#patterns-of-behavior)
+    - [Quit](#quit)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -322,6 +324,29 @@ By working hard to serve users, refine the interface, tune the engine, enhance t
 Figure 2-20. A map of Amazon
 
 # Chapter 3. Behavior
+## Patterns of Behavior
+### Quit
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498446.png)
+
+Figure 3-2. Quit is the most common pattern
+
+In Figure 3-3 Yale University fails to state the system status clearly (e.g., “No results were found”), but otherwise provides a good combination of feedback and next steps. Links to popular pages and popular searches might also be helpful.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498448.png.jpg)
+
+Figure 3-3. No results at Yale
+
+On the other hand, if we can help users avoid “No Results” in the first place, that’s even better. As Figure 3-4 shows, we’re less likely to reach a dead end at Amazon, thanks to the autoexpand strategy of `partial match`, in which unrecognized keywords are omitted from the query string.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498450.png.jpg)
+
+Figure 3-4. Amazon works to avoid no results
+
+
+
+
+
+
 
 
 
