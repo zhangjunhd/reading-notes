@@ -37,6 +37,11 @@
   - [Content](#content)
   - [Creators](#creators)
   - [Context](#context)
+    - [Portal](#portal)
+    - [Search](#search-1)
+    - [Objects](#objects)
+    - [All Together Now](#all-together-now)
+- [Chapter 3. Behavior](#chapter-3-behavior)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -273,13 +278,50 @@ Designers of search applications must no longer accept content in its current st
 Figure 2-14. Knowledge management and search
 
 ## Context
+In the context of websites, three key areas often emerge as powerful fulcra with the potential to move mountains: the portal, search system, and destination objects, as shown in Figure 2-16.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498432.png.jpg)
 
+Figure 2-16. Three fulcra of large websites
 
+A concept map, as shown in Figure 2-17, can help us to realize this big picture. The goal is to capture the key elements so we can begin to discuss how they relate.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498434.png.jpg)
 
+Figure 2-17. A concept map
 
+### Portal
+The portal, which includes the home page and the top few layers of the website, often presents an opportunity to improve the user experience and the brand. 
 
+The portal, in conjunction with a content management system, can also serve as a powerful tool for aligning staff efforts and incentives with user needs and goals.
+
+### Search
+Sites and services as diverse as Amazon, Google, Flickr, and Wikipedia have all developed solutions that work despite their lack of centralized control over content and metadata. They have succeeded by embracing search-centered solutions that recognize that searching and browsing must be used in combination to help people effectively navigate. These solutions typically possess the following three qualities:
+
+- Federated
+  - Since most users don’t know where to look, the site should allow people to perform searches across all of its content. This should not preclude advanced, focused queries on particular collections or databases.
+- Faceted
+  - The site should embrace faceted navigation (with flexible search scopes) as widely as possible so that users can move fluidly from searching the site to searching a content collection or a product catalog without having to start over or learn a new interface. Global facets might include topic, format, date, and author. Each database might present additional category-specific facets to support narrowing and filtering.
+- Fast
+  - The organization must invest in the hardware, software, and staff necessary to deliver subsecond response times. Speed is absolutely critical in allowing users to fully engage in an iterative, interactive search experience.
+
+### Objects
+Similarly, our big organization has an opportunity to make its content more social (viral) and findable by adopting best practices in search engine optimization and social media design. This requires redesigning the objects of search to serve as destinations, gateways, and subjects of conversation. 
+
+Photos are easily findable via Google or Flickr’s own search system, and each photo offers many options for finding similar photos or for finding other photos from the same source, set, pool, or collection. Plus, users are invited to add tags, notes, and comments. Each photo is a catalyst for conversation and community. Additionally, the object isn’t stuck on the page. Users can share photos across multiple devices, channels, and services. We can order prints or add our image to stickers, calendars, business cards, T-shirts, magnets, puzzles, and mugs.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498438.png.jpg)
+
+Figure 2-19. Flickr user model
+
+### All Together Now
+By working hard to serve users, refine the interface, tune the engine, enhance the content, and motivate creators while simultaneously striving to leverage and transform the wider context, Amazon and a handful of other pioneering firms are showing us how to make search better.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498440.png.jpg)
+
+Figure 2-20. A map of Amazon
+
+# Chapter 3. Behavior
 
 
 
