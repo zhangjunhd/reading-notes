@@ -33,6 +33,7 @@
     - [User Experience Honeycomb: Searcher’s Edition](#user-experience-honeycomb-searchers-edition)
   - [Interface](#interface)
   - [Engine](#engine)
+    - [Learning + Collaboration](#learning--collaboration)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -199,10 +200,10 @@ The search engine results page or SERP, as pictured in Figure 2-9 is among the 
 Figure 2-9. Anatomy of a SERP
 
 ## Engine
+### Learning + Collaboration
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498422.png)
 
-
-
-
+Figure 2-11. Learning together
 
 
 
