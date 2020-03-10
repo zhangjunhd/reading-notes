@@ -205,6 +205,28 @@ Figure 2-9. Anatomy of a SERP
 
 Figure 2-11. Learning together
 
+Organizations often cover the bases in terms of technology and finance but fail to press vendors on exactly what will be required to support their unique mix of features and content. A typical checklist may include the following:
+
+- System architecture
+  - Formal description of the hardware and software components, including crawlers, indexers, data models, and query parsers.
+- Performance
+  - How many simultaneous queries are supported? What’s the maximum number of sources? How about the size of the data repository?
+- File formats
+  - What types of content and data (e.g., HTML, PDF, mySQL) are supported? Can the system handle both structured and unstructured data?
+- Integration
+  - Is there a standards-based Web Services API for embedding search functionality in other sites and software? Is there a list of available connectors?
+- Access control
+  - Does the system support multiple levels of access for different user types and individuals? How does it manage privacy and security?
+- Features
+  - How does the system handle full text and metadata? Does it support Boolean operators, wildcards, stemming, stop words, phrase and proximity searching, and spellcheck? What algorithms are used for ranking? What are the options for query refinement? Can results be saved, printed, and shared?
+- Implementation
+  - What sort of expertise is required for installation, configuration, and maintenance? How does the vendor handle training and support?
+- Pricing model
+  - Is the product priced by data or activity volume, CPUs, features, and/or number of unique applications? How about support, maintenance, and professional services fees? What’s the total cost of ownership?
+- Vendor credentials
+  - How long has the vendor been in business? How are they positioned in the market? Can we see their financials and customer references?
+
+
 
 
 
