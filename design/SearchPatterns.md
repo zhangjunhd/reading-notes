@@ -36,6 +36,7 @@
     - [Learning + Collaboration](#learning--collaboration)
   - [Content](#content)
   - [Creators](#creators)
+  - [Context](#context)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -259,6 +260,28 @@ Figure 2-13. To search better, search less
 So, early in the design process, it’s worth asking two questions. First, can we shrink the search space by removing ROT, content that’s redundant or outdated or trivial? By crafting a content policy that defines what’s in and out, then rigorously weeding their collections, organizations are often able to cut what’s searched by half. Second, can we add metadata fields that let users slice content into smaller sections? Even a massive article database becomes manageable when users can limit searches by topic and date.
 
 ## Creators
+Designers of search applications must no longer accept content in its current state. It’s time to shake the tree. Questions we should ask include:
+
+- Who are the current (and potential) creators of content?
+- How can we motivate them to improve quality and quantity?
+- What tools and processes will make publishing faster and easier?
+- How can we enlist users in content creation and organization?
+- How can we share analytics to inspire both use and cocreation?
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498428.png.jpg)
+
+Figure 2-14. Knowledge management and search
+
+## Context
+
+
+
+
+
+
+
+
+
 
 
 
