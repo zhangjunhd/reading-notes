@@ -34,6 +34,8 @@
   - [Interface](#interface)
   - [Engine](#engine)
     - [Learning + Collaboration](#learning--collaboration)
+  - [Content](#content)
+  - [Creators](#creators)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -225,6 +227,38 @@ Organizations often cover the bases in terms of technology and finance but fail 
   - Is the product priced by data or activity volume, CPUs, features, and/or number of unique applications? How about support, maintenance, and professional services fees? What’s the total cost of ownership?
 - Vendor credentials
   - How long has the vendor been in business? How are they positioned in the market? Can we see their financials and customer references?
+
+A supplemental checklist that’s informed by an information architecture strategy and empathy for the user might include:
+
+- Speed
+  - What will it take to ensure subsecond response in the real world? It’s worth asking this question early and often. Don’t take “slow” for an answer!
+- Relevance tuning
+  - How are results ranked? Is it possible to adjust the settings to allow for popularity, content type, date, and diversity?
+- Navigation and filtering
+  - Is it easy to customize sort order and limit options? Is there native support for faceted navigation? Is it fast?
+- Federated search
+  - How does the system handle the simultaneous search of multiple databases or indexes? What is the impact on speed? Is it possible to merge several indexes into one to dramatically improve performance?
+- Linguistic toolset
+  - Is there support for thesaurus integration and crosswalking between vocabularies? How about autocategorization and entity extraction?
+- Search analytics
+  - What tools are provided for measuring and understanding user behavior? Is there an API that supports sharing and repurposing of this data?
+
+## Content
+For starters, the availability (or lack thereof) of full text and metadata shapes the what and how of search.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498424.png.jpg)
+
+Figure 2-12. Relative value of text and metadata
+
+Since complexity of the information retrieval challenge increases exponentially with linear increases in volume, we know the most dramatic way to improve performance is to search less content.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498426.png)
+
+Figure 2-13. To search better, search less
+
+So, early in the design process, it’s worth asking two questions. First, can we shrink the search space by removing ROT, content that’s redundant or outdated or trivial? By crafting a content policy that defines what’s in and out, then rigorously weeding their collections, organizations are often able to cut what’s searched by half. Second, can we add metadata fields that let users slice content into smaller sections? Even a massive article database becomes manageable when users can limit searches by topic and date.
+
+## Creators
 
 
 
