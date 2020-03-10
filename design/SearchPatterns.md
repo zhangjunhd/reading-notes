@@ -12,6 +12,8 @@
 - [豆瓣链接](https://book.douban.com/subject/4016085/)
 - [safari链接](https://www.safaribooksonline.com/library/view/search-patterns/9781449380205/)
 
+---
+
 - [Chapter 1. Pattern Recognition](#chapter-1-pattern-recognition)
   - [Understanding Search](#understanding-search)
     - [The Box](#the-box)
@@ -26,6 +28,8 @@
         - [Share](#share)
         - [Act](#act)
       - [The Engine](#the-engine)
+- [Chapter 2. The Anatomy of Search](#chapter-2-the-anatomy-of-search)
+  - [Users](#users)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -136,5 +140,37 @@ For instance, there’s an engine called Evri, shown in Figure 1-18, that appea
 Figure 1-18. Evri’s suggestions for an iPhone article
 
 This reframing of search has produced a whole new generation of discovery tools and recommender systems. Last.fm, Pandora, Ambiently, and StumbleUpon are search without the box. We click, jump, and vote. Keywords are displaced by hearts and thumbs.
+
+# Chapter 2. The Anatomy of Search
+Our map to search features five elements: users, creators, content, engine, and interface. 
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498402.png.jpg)
+
+Figure 2-1. The anatomy of search
+
+## Users
+Do our users care more about finding only the relevant results or all the relevant results? In search design, the two are inversely related. 
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498404.png.jpg)
+
+Figure 2-2. The relevance seesaw
+
+We should also consider expertise with respect to search in general and the domain in question. Let’s say we’re building a search application for health and medicine. Will most users (or our most important users) be familiar with medical terminology? And how about their digital literacy? Are they fluent or fumbling? It’s a common mistake to conflate these two types of mastery. 
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498406.png)
+
+Figure 2-3. Expertise types
+
+
+
+
+
+
+
+
+
+
+
+
 
 
