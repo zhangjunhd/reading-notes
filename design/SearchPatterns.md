@@ -44,6 +44,7 @@
 - [Chapter 3. Behavior](#chapter-3-behavior)
   - [Patterns of Behavior](#patterns-of-behavior)
     - [Quit](#quit)
+    - [Narrow](#narrow)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -342,10 +343,10 @@ On the other hand, if we can help users avoid “No Results” in the first plac
 
 Figure 3-4. Amazon works to avoid no results
 
+### Narrow
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498452.png)
 
-
-
-
+Figure 3-5. Query refinement
 
 
 
