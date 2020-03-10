@@ -371,7 +371,7 @@
    5. [Sketching User Experiences](design/SketchingUserExperiences.md)
    6. [About Face 3](design/AboutFace3.md)
    7. [Design Driven Innovation](design/DesignDrivenInnovation.md)
-   8. [This is Service Design Thinking](design/ThisIsServiceDesignThinking.md)
+   8. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
 
 # 软件技术
 1. 计算
