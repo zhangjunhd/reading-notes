@@ -30,6 +30,9 @@
       - [The Engine](#the-engine)
 - [Chapter 2. The Anatomy of Search](#chapter-2-the-anatomy-of-search)
   - [Users](#users)
+    - [User Experience Honeycomb: Searcher’s Edition](#user-experience-honeycomb-searchers-edition)
+  - [Interface](#interface)
+  - [Engine](#engine)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -161,10 +164,41 @@ We should also consider expertise with respect to search in general and the doma
 
 Figure 2-3. Expertise types
 
+Type of search is another key variable. There’s a big difference between the simple lookup of `known-item search` and the dynamic learning of `exploratory search`. Google’s got lookup down. Fast, simple, relevant. If you know what you want, Google will find it in less than a second. It’s so fast, we use it for navigation, running queries even when we know the URL. But if you’re unsure what you need, Amazon offers a better model. `Faceted navigation` plus tools for recommendation help us learn. Search becomes an iterative, interactive experience where what we find changes what we seek. 
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498408.png.jpg)
 
+Figure 2-4. Search modes
 
+Of course, we must also consider platform, purpose, and context of use. Are we designing for desktops, laptops, televisions, kiosks, or mobiles in motion? 
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498410.png)
+
+Figure 2-5. Context of use
+
+### User Experience Honeycomb: Searcher’s Edition
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498412.png)
+
+Figure 2-6. Qualities of the searcher’s experience
+
+## Interface
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498414.png)
+
+Figure 2-7. The interface includes query and results
+
+In search, it’s helpful for creating and analyzing whole interfaces and their (perceived) affordances.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498416.png)
+
+Figure 2-8. The Five Ws (and one H)
+
+The search engine results page or SERP, as pictured in Figure 2-9 is among the most complex and important challenges to design.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498418.png.jpg)
+
+Figure 2-9. Anatomy of a SERP
+
+## Engine
 
 
 
