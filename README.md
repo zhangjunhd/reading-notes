@@ -370,7 +370,7 @@
    4. [Search Patterns](design/SearchPatterns.md)
    5. [Sketching User Experiences](design/SketchingUserExperiences.md)
    6. [About Face 3](design/AboutFace3.md)
-   7. [Design Driven Innovation](design/DesignDrivenInnovation.md)
+   7. [Designing Interfaces](design/DesigningInterfaces.md)
    8. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
 
 # 软件技术
