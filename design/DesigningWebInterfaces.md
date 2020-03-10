@@ -1,13 +1,18 @@
-# This is Service Design Thinking
-![cover](https://img1.doubanio.com/lpic/s4565959.jpg)
+![cover](https://img9.doubanio.com/view/subject/s/public/s3563593.jpg)
 
-    作者: Schneider, Jakob 
-    出版社: BIS Publishers
-    副标题: Basics - Tools - Cases
-    出版年: 2011-5-1
-    页数: 376
-    定价: USD 59.00
-    装帧: Hardcover
-    ISBN: 9789063692568
+    作者: Bill Scott / Theresa Neil
+    出版社: O'Reilly Media, Inc.
+    副标题: Principles and Patterns for Rich Interactions
+    出版年: 2009
+    页数: 332
+    定价: 49.99
+    装帧: Paperback
+    ISBN: 9780596516253
 
-[豆瓣链接](https://book.douban.com/subject/5397784/)
+- [oreilly](https://learning.oreilly.com/library/view/designing-web-interfaces/9780596155353/)
+- [豆瓣链接](https://book.douban.com/subject/3436963/)
+
+---
+
+
+
