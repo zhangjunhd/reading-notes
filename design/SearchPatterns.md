@@ -51,6 +51,9 @@
     - [Thrashing](#thrashing)
   - [Elements of Interaction](#elements-of-interaction)
   - [Principles of Design](#principles-of-design)
+    - [Incremental Construction](#incremental-construction)
+    - [Progressive Disclosure](#progressive-disclosure)
+    - [Immediate Response](#immediate-response)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -451,27 +454,27 @@ In the first 250 milliseconds, the preattentive variables of size, shape, positi
 
 Figure 3-25. Preattentive variables at the BBC
 
+### Incremental Construction
+People will build great queries incrementally, one click at a time, if we can get them past the start line and always offer at least one next step.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498494.png.jpg)
 
+Figure 3-26. Forgiving format at Amazon
 
+### Progressive Disclosure
+Google Maps offers a good example of progressive disclosure and careful adherence to the user dictate: “Show me only what I want.” The initial interface is a basic map with an overlay for popular tasks like getting directions. A click adds a colorful traffic layer and a hover reveals more options. Google designs disclosures that are responsive to users.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498496.png.jpg)
 
+Figure 3-27. Progressive disclosure in Google Maps
 
+`Faceted navigation` is a similarly progressive design pattern. Users can begin with a few keywords and end with a few results. They can ignore the facets if they choose, but the power of incremental query refinement is available, plus the quantity and specificity of metadata fields often snowballs helpfully as they go. Facets allow people to learn search on gentle slopes rather than being forced into the big step from the bunny hills of the basic interface to the black diamond mode of advanced search.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498498.png.jpg)
 
+Figure 3-28. Faceted navigation at the Triangle Research Libraries
 
-
-
-
-
-
-
-
-
-
-
-
-
+### Immediate Response
 
 
 
