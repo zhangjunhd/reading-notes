@@ -48,6 +48,9 @@
     - [Expand](#expand)
     - [Pearl Growing](#pearl-growing)
     - [Pogosticking](#pogosticking)
+    - [Thrashing](#thrashing)
+  - [Elements of Interaction](#elements-of-interaction)
+  - [Principles of Design](#principles-of-design)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -397,6 +400,75 @@ Other patterns (or antipatterns) are produced by bad design. For instance, repet
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498470.png)
 
 Figure 3-14. Pogosticking is an antipattern
+
+Perhaps our snippets and metadata lack the scent users need to effectively scan results, so they must visit each one in turn. Or, if sequential viewing of results is a desirable pattern, we need solutions that support this behavior. Cooliris, shown in Figure 3-15, uses the iPhone’s touchscreen to let users flick through image results in linear fashion.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498472.png.jpg)
+
+Figure 3-15. No pogosticking at Cooliris
+
+Lands’ End, shown in Figure 3-16, ensures the metadata and features that users need are available in the gallery of search results. It doesn’t stuff too many results on the page at the expense of rich summaries. A clear product image, displaying the sole on rollover, inline color selection, the name, and the price are just the right mix for most users.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498474.png.jpg)
+
+Figure 3-16. Gallery of search results at Lands’ End
+
+### Thrashing
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498476.png.jpg)
+
+Figure 3-17. Thrashing derives from the anchoring bias
+
+In thrashing, a design flaw resides in users’ heads in the form of the anchoring bias. We set the anchor with our initial query, and then, despite poor results, we insist on small variations of the flawed search phrase rather than trying new approaches.
+
+For instance, a user searching for a concert may try many queries that begin with the (misspelled) nickname rather than switching to the performer’s full name.
+
+```
+sachmo
+sachmo concert
+sachmo jazz concert
+sachmo jazz festival
+sachmo music festival
+sachmo summer celebration
+```
+
+In Figure 3-18, Yahoo! illustrates two ways to break this pattern. First, `autocomplete` helps users avoid typos and get the query right to begin with. Second, `autosuggest` can recommend related queries that don’t include the original search term.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498478.png.jpg)
+
+Figure 3-18. Autocomplete and autosuggest at Yahoo!
+
+## Elements of Interaction
+The distinct features and the relationships between the iPod in your palm, the iTunes desktop application, and the iTunes Store on the Web serve as a familiar model. Apple’s genius was to locate key functions on the right platforms. As shown in Figure 3-22, we play on the device, manage on the desktop, and buy at the store.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498486.png.jpg)
+
+Figure 3-22. Apple’s many interfaces
+
+## Principles of Design
+In the first 250 milliseconds, the preattentive variables of size, shape, position, alignment, orientation, color, and texture have already worked their magic. A well-crafted interface reveals its core features and layout to our subconscious before we have time to think.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498492.png.jpg)
+
+Figure 3-25. Preattentive variables at the BBC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
