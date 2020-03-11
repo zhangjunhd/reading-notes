@@ -45,6 +45,9 @@
   - [Patterns of Behavior](#patterns-of-behavior)
     - [Quit](#quit)
     - [Narrow](#narrow)
+    - [Expand](#expand)
+    - [Pearl Growing](#pearl-growing)
+    - [Pogosticking](#pogosticking)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -347,6 +350,59 @@ Figure 3-4. Amazon works to avoid no results
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498452.png)
 
 Figure 3-5. Query refinement
+
+`Faceted navigation` puts metadata on the map. As Figure 3-6 shows, Artist Rising lets us clarify whether we want drinking bars (places) or lemon bars (cuisine) and photos or paintings. Plus, we can refine by searching within these results. And even Sort provides a way to limit what we see. Artist Rising offers us many ways to narrow.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498454.png.jpg)
+
+Figure 3-6. Faceted navigation puts metadata on the map
+
+### Expand
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498456.png)
+
+Figure 3-7. Casting the net wider
+
+It’s most commonly seen in the thesaurus browsers of library databases, as shown in Figure 3-8 where structured vocabularies and the risky expectation of searcher expertise afford designers a sense of freedom to reveal the hierarchy (and potential polyhierarchy) that connects to broader terms.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498458.png.jpg)
+
+Figure 3-8. CSA Illumina’s thesaurus browser
+
+Rather than a formal hierarchy, search applications often let users expand (or at least explore) by showing related terms within matching categories, as shown in Figure 3-9.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498460.png.jpg)
+
+Figure 3-9. Matching categories and related terms
+
+### Pearl Growing
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498462.png)
+
+Figure 3-10. A strategy for finding similar results
+
+Fortunately, pearl growing is also a strategy we can spread by embedding it within the interface. Google’s Similar link is the most ubiquitous example.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498464.png.jpg)
+
+Figure 3-11. Find similar
+
+Similarly, music recommender systems make it easy to find songs we like by comparing the attributes, ratings, and collaborative filtering data of songs we know and those we don’t. Last.fm and Pandora rely heavily on up and down ratings of individual songs.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498466.png.jpg)
+
+Figure 3-12. Similar controls at Last.fm and Pandora
+
+### Pogosticking
+Other patterns (or antipatterns) are produced by bad design. For instance, repetitive bouncing between the SERP and individual results is known as pogosticking. A little pogosticking means users are sampling results. That’s to be expected, but when it happens a lot, it’s not sampling; it’s a symptom.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498470.png)
+
+Figure 3-14. Pogosticking is an antipattern
+
+
+
+
+
+
 
 
 
