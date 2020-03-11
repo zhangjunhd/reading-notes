@@ -368,7 +368,7 @@
    2. [写给大家看的设计书（第3版）](design/TheNon-DesignersDesignBook.md)
    3. [破茧成蝶](design/UED-growth.md)
    4. [Search Patterns](design/SearchPatterns.md)
-   5. [Sketching User Experiences](design/SketchingUserExperiences.md)
+   5. [Designing Web Navigation](design/DesigningWebNavigation.md)
    6. [About Face 3](design/AboutFace3.md)
    7. [Designing Interfaces](design/DesigningInterfaces.md)
    8. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
