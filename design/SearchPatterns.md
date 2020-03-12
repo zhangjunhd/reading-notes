@@ -54,6 +54,9 @@
     - [Incremental Construction](#incremental-construction)
     - [Progressive Disclosure](#progressive-disclosure)
     - [Immediate Response](#immediate-response)
+    - [Alternate Views](#alternate-views)
+    - [Predictability](#predictability)
+    - [Recognition Over Recall](#recognition-over-recall)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -475,15 +478,42 @@ Figure 3-27. Progressive disclosure in Google Maps
 Figure 3-28. Faceted navigation at the Triangle Research Libraries
 
 ### Immediate Response
+Volkswagen UK employs a wonderfully subtle form of feedback. During active control of a slider, the options to be excluded from the results fade to gray. Then, upon release of the mouse button, the faded options disappear, and the remaining cars gracefully shift into position within the smaller result set. It takes a while for this rich Internet application to load, but once running, it’s a smooth ride with great performance and quick response.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498500.png.jpg)
 
+Figure 3-29. Immediate response at Volkswagen UK
 
+### Alternate Views
+For many applications, the optimal view differs by user and task. One size does not fit all. This is certainly true in search, where the ideal mix of metadata depends upon user intent.
 
+Viewzi takes alternate views to the extreme. This intriguing application provides the basic choice between small and large images, but it doesn’t stop there. Viewzi offers more than 18 different ways to view search results. Options include simple text, image grid, timeline, tag cloud, and a fashionable cover flow interface for browsing web screenshots.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498502.png.jpg)
 
+Figure 3-30. Multiple views with Viewzi
 
+`Sort order` also provides users with the choice of alternate views. Since users rarely explore beyond the first page of results, sorts act much like filters.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498504.png.jpg)
 
+Figure 3-31. Controls for sort order
 
+Another alternate view worth reflection is that of those who can’t see. As with other features of an application, search should be universally accessible. Clearly, this means that search and result interfaces must be easy to navigate with `text-to-speech` and Braille output screen readers.
+
+### Predictability
+In search, we need predictable features and results. Controls must be easy to discover and understand. The Gap, for instance, uses a simple hover invitation to feed-forward the Quick Look feature, which leads to an overlay instead of the detailed product page. Since the invite appears in the natural flow of result selection, it’s impossible to miss.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498506.png.jpg)
+
+Figure 3-32. Hover invitation at The Gap
+
+In contrast, Bloomberg’s rotate-to-view feature is less discoverable, but once found it works well, because it’s simple and consistent. When a gesture works the same way throughout an application, habituation improves efficiency. Users become comfortable with that gesture and know what to expect.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498508.png.jpg)
+
+Figure 3-33. Rotate to view at Bloomberg
+
+### Recognition Over Recall
 
 
