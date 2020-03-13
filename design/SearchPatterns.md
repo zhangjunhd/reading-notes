@@ -62,6 +62,7 @@
     - [Context of Use](#context-of-use)
 - [4.Design Patterns](#4design-patterns)
   - [Autocomplete](#autocomplete)
+  - [Best First](#best-first)
 
 # 1.Pattern Recognition
 ## Understanding Search
@@ -567,9 +568,13 @@ Figure 3-39. Adaptive solutions on the iPhone
 
 # 4.Design Patterns
 ## Autocomplete
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498536.png)
+
+Figure 4-8. The Autocomplete design pattern
+
 It’s a pattern that first emerged within the Help functions of desktop applications. This solution solves several very common problems. First, typing takes time. Second, users can’t spell well. Third, we’re often at a loss for words. 
 
-Autocomplete is now a familiar fixture across desktop, web, and mobile platforms (Figure 4-1).
+`Autocomplete` is now a familiar fixture across desktop, web, and mobile platforms (Figure 4-1).
 
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498522.png)
 
@@ -587,11 +592,27 @@ Yahoo! steps beyond autocomplete to autosuggest, shown in Figure 4-3 by tapping
 
 Figure 4-3. Autocomplete and autosuggest
 
+`Autosuggest` can help users to pivot by highlighting alternate concepts and relevant verticals. It’s worth noting that while autocomplete and autosuggest are distinct concepts, most applications blend them together for a small footprint. Consequently, in this book, we’ve bundled both under the autocomplete pattern.
 
+Yahoo! has also experimented with visual autocomplete, shown in Figure 4-4. Sometimes users are able to clarify better with an image than a word.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498528.png.jpg)
 
+Figure 4-4. Visual autocomplete
 
+Reference sites like Answers.com, shown in Figure 4-5 draw upon a structured database to support query disambiguation, helping users to clarify before they search.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498530.png.jpg)
+
+Figure 4-5. Autocomplete at Answers.com
+
+For instance, autocomplete isn’t only about typing and spelling. Suggestions help us when we’re not sure what to seek. On websites, the information architecture provides users with structural and semantic clues that precede and inform the search. Similarly, in mobile applications, we use categories and icons to invite users to explore with a click. In this way, browse complements search by getting folks started and helping them learn what to seek.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498534.png.jpg)
+
+Figure 4-7. Browse options in Citysearch and Dopplr
+
+## Best First
 
 
 
