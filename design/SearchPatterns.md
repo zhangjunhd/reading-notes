@@ -14,7 +14,7 @@
 
 ---
 
-- [Chapter 1. Pattern Recognition](#chapter-1-pattern-recognition)
+- [1. Pattern Recognition](#1-pattern-recognition)
   - [Understanding Search](#understanding-search)
     - [The Box](#the-box)
       - [The Goal](#the-goal)
@@ -28,7 +28,7 @@
         - [Share](#share)
         - [Act](#act)
       - [The Engine](#the-engine)
-- [Chapter 2. The Anatomy of Search](#chapter-2-the-anatomy-of-search)
+- [2. The Anatomy of Search](#2-the-anatomy-of-search)
   - [Users](#users)
     - [User Experience Honeycomb: Searcher’s Edition](#user-experience-honeycomb-searchers-edition)
   - [Interface](#interface)
@@ -41,7 +41,7 @@
     - [Search](#search-1)
     - [Objects](#objects)
     - [All Together Now](#all-together-now)
-- [Chapter 3. Behavior](#chapter-3-behavior)
+- [3. Behavior](#3-behavior)
   - [Patterns of Behavior](#patterns-of-behavior)
     - [Quit](#quit)
     - [Narrow](#narrow)
@@ -60,9 +60,9 @@
     - [Minimal Disruption](#minimal-disruption)
     - [Direct Manipulation](#direct-manipulation)
     - [Context of Use](#context-of-use)
-- [Chapter 4. Design Patterns](#chapter-4-design-patterns)
+- [4. Design Patterns](#4-design-patterns)
 
-# Chapter 1. Pattern Recognition
+# 1. Pattern Recognition
 ## Understanding Search
 ### The Box
 In search, the first ball in the air is a `box`. It’s the iconic symbol of search and a great place to start. 
@@ -172,7 +172,7 @@ Figure 1-18. Evri’s suggestions for an iPhone article
 
 This reframing of search has produced a whole new generation of discovery tools and recommender systems. Last.fm, Pandora, Ambiently, and StumbleUpon are search without the box. We click, jump, and vote. Keywords are displaced by hearts and thumbs.
 
-# Chapter 2. The Anatomy of Search
+# 2. The Anatomy of Search
 Our map to search features five elements: users, creators, content, engine, and interface. 
 
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498402.png.jpg)
@@ -340,7 +340,7 @@ By working hard to serve users, refine the interface, tune the engine, enhance t
 
 Figure 2-20. A map of Amazon
 
-# Chapter 3. Behavior
+# 3. Behavior
 ## Patterns of Behavior
 ### Quit
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498446.png)
@@ -564,7 +564,7 @@ In design, `context` is a seven-letter word that means everything. It’s not en
 
 Figure 3-39. Adaptive solutions on the iPhone
 
-# Chapter 4. Design Patterns
+# 4. Design Patterns
 
 
 
