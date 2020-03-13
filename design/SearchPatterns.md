@@ -61,6 +61,7 @@
     - [Direct Manipulation](#direct-manipulation)
     - [Context of Use](#context-of-use)
 - [4.Design Patterns](#4design-patterns)
+  - [Autocomplete](#autocomplete)
 
 # 1.Pattern Recognition
 ## Understanding Search
@@ -565,26 +566,26 @@ In design, `context` is a seven-letter word that means everything. It’s not en
 Figure 3-39. Adaptive solutions on the iPhone
 
 # 4.Design Patterns
+## Autocomplete
+It’s a pattern that first emerged within the Help functions of desktop applications. This solution solves several very common problems. First, typing takes time. Second, users can’t spell well. Third, we’re often at a loss for words. 
 
+Autocomplete is now a familiar fixture across desktop, web, and mobile platforms (Figure 4-1).
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498522.png)
 
+Figure 4-1. Autocomplete in a desktop application
 
+A major prerequisite of autocomplete is a source of data for suggestions. Classic desktop applications rely on an alphabetical index of help topics. Google draws from a user’s personal search history and from the collective search behavior of many users (Figure 4-2). Firefox (also shown in Figure 4-2) taps browsing history and bookmarks. 
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498524.png.jpg)
 
+Figure 4-2. Autocomplete in Google and Firefox
 
+Yahoo! steps beyond autocomplete to autosuggest, shown in Figure 4-3 by tapping query reformulation data to recommend related queries that need not include the original search term.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498526.png.jpg)
 
-
-
-
-
-
-
-
-
-
-
-
+Figure 4-3. Autocomplete and autosuggest
 
 
 
