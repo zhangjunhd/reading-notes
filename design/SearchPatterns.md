@@ -57,6 +57,10 @@
     - [Alternate Views](#alternate-views)
     - [Predictability](#predictability)
     - [Recognition Over Recall](#recognition-over-recall)
+    - [Minimal Disruption](#minimal-disruption)
+    - [Direct Manipulation](#direct-manipulation)
+    - [Context of Use](#context-of-use)
+- [Chapter 4. Design Patterns](#chapter-4-design-patterns)
 
 # Chapter 1. Pattern Recognition
 ## Understanding Search
@@ -515,5 +519,86 @@ In contrast, Bloomberg’s rotate-to-view feature is less discoverable, but once
 Figure 3-33. Rotate to view at Bloomberg
 
 ### Recognition Over Recall
+Recognition is triggered by context. Users couldn’t recall commands, but they could easily recognize buttons and links.It’s a major reason why we shifted from CLI to GUI. 
+
+In search, the first step is to make valuable options visible.Second, we must offer tools that reduce users’ short-term memory load. 
+
+Sometimes the path to better recognition in search is browse. Search requires that we know what we want and have the words to describe our needs. In contrast, browse illustrates what’s available, shows the vocabulary, and reminds us of things we might need.
+
+In mobile, browse is especially useful, because it takes time to type and we’re unsure what to search for. Applications like Where and AroundMe don’t require users to remember the types of things to be found. Instead, we can browse the map or a traditional taxonomy. We may not recall what we want, but we’ll recognize it when we see it.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498512.png.jpg)
+
+Figure 3-35. Mobile browsing with Where and AroundMe
+
+### Minimal Disruption
+In light of our feeble memories, not to mention our general impatience and intolerance for change, it’s often best (when possible) to stay on the page. `Overlays`, `inlays`, `tabs`, `virtual scrolling` and `panning`, and `inline paging` are all creative ways to bring additional content and controls into the picture without shifting the frame.
+
+Netflix takes convenience a step further. In addition to a detail overlay, Netflix serves up actionable results, so we can add items to the Instant Queue or start playing a movie, all without leaving the results page.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498514.png.jpg)
+
+Figure 3-36. A detail overlay and actionable results at Netflix
+
+### Direct Manipulation
+Yet another factor in the success of GUI is the principle of direct manipulation. Interfaces that enable users to interact directly with visible objects are more easily learned and used. Sometimes we rely on real-world metaphors. We sort files on the desktop and drag them into the trash can. Other times, our idioms have no analog, yet direct manipulation drives them into our muscle memory. Our bodies remember what our minds forget.
+
+Searchme lets users drag results into custom search stacks for later review or for sharing with friends and colleagues. There’s also an Add to Stack link, but it lacks the visual and tactile gratification of drag-and-drop.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498516.png.jpg)
+
+Figure 3-37. Drag results to stacks at Searchme
+
+The use of drag-and-drop invokes `Fitts’ Law`: the time to acquire a target is a function of the distance to and size of the target. This means we must think carefully about the size and placement of the drop zone. Many users have a hard time getting the mouse (and cursor or drag handle) into just the right place, especially while holding down the mouse button.
+
+The pie menu (also known as a radial menu) is an interesting alternative. A music search engine named Songza illustrates the benefits. First, it’s self-revealing. When a user clicks on a result, the menu appears. Second, it plays well with Fitts’ Law. The options, including those within the nested menus, are near the original point of interaction. Third, it’s a gestural interface with the advantages of direct manipulation. Expert users can rely on muscle memory to select options without glancing at menus.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498518.png.jpg)
+
+Figure 3-38. Songza’s self-revealing pie menu
+
+### Context of Use
+In design, `context` is a seven-letter word that means everything. It’s not enough for our applications to work great in the lab; they must succeed in the real world. This means we must consider users, goals, content, features, platform, and environment. An elderly man with fat fingers may have a hard time using the tiny touch targets of a soft keyboard to search for a nearby restaurant while bouncing on a bus. That’s why the iPhone employs iceberg tips and adaptive targets to make writing a little easier. It’s also why Google Mobile uses search history, autosuggest, and voice search to let us type a little less.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498520.png.jpg)
+
+Figure 3-39. Adaptive solutions on the iPhone
+
+# Chapter 4. Design Patterns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
