@@ -65,6 +65,7 @@
   - [Best First](#best-first)
   - [Federated Search](#federated-search)
   - [Faceted Navigation](#faceted-navigation)
+  - [Advanced Search](#advanced-search)
 
 # 1.Pattern Recognition
 ## Understanding Search
@@ -652,13 +653,53 @@ By definition, federated search involves the simultaneous search of multiple dat
 Figure 4-16. Federated search at Kosmix
 
 ## Faceted Navigation
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498574.png)
+
+Figure 4-27. The faceted navigation design pattern
+
 Also called `guided navigation` and `faceted search`, the faceted navigation model leverages metadata fields and values to provide users with visible options for clarifying and refining queries.
 
-Figure 4-19 illustrates a successful implementation of faceted navigation as a model for interacting with the catalogs of several academic libraries.
+Figure 4-19 illustrates a successful implementation of faceted navigation as a model for interacting with the catalogs of several academic libraries. Faceted navigation is not simply a feature to check off a list. Success requires painstaking attention to detail and an appreciation for the vast array of possibilities for interaction design. For instance, the libraries run collapsible facets down the left. Only the most relevant facets (subject, format, location) are open. Most are closed by default. Each open facet reveals only the top four or five most heavily populated values. This allows for a small facet footprint that frees up plenty of space on the main stage for the results themselves. The number of matching results for each value (shown within parentheses) is a key element of the map, as is the reformulation of search terms and selected values as stacking breadcrumbs, which let users view and modify their current search parameters.
 
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498558.png.jpg)
 
 Figure 4-19. Searching library catalogs with faceted navigation
+
+For instance, applications rely on a mix of `scented widgets` for viewing and interacting with facet values, and some shift facet selectors to the top or right rather than the left.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498560.png.jpg)
+
+Figure 4-20. A variety of scented widgets
+
+Presenting facets along the top draws added attention to the narrowing facility. Given massive result sets, this is an effective way to highlight the data structure and draw users into filtering. 
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498562.png.jpg)
+
+Figure 4-21. Faceted navigation puts metadata on the map
+
+As shown in Figure 4-22, adaptive facets let controls conform to the content as users shift between categories and drill down within collections.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498564.png.jpg)
+
+Figure 4-22. Amazon’s adaptive facets
+
+In contrast to the relatively mature design space of the desktop Web, mobile is a platform where standards for faceted navigation have yet to emerge. Clearly, tiny screens preclude the established model. There’s insufficient space to present facets and values alongside results. Ever the pioneer, Amazon is among the first to design a mainstream application that adds faceted navigation to mobile search. As Figure 4-23 shows, it features an iterative model that requires more steps than ideal, but it’s a move in the right direction. As mobile search crosses the chasm, users will expect the features and functions to which they’ve become accustomed on the desktop, and first and foremost outside of the box, they will absolutely, positively need to narrow.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498566.png.jpg)
+
+Figure 4-23. Faceted navigation on Amazon Mobile
+
+Across all platforms, there are some qualifications and questions worth review. First, we’ve been using the term "faceted navigation” rather loosely. Formal definitions of facets may exclude simple fields and `filters`, but discrimination is unwarranted in practice, provided that filters operate independently and users can add or remove them in arbitrary order in concert with the updating of results.
+
+On the other hand, the distinction between `faceted navigation` and `parametric search` is relevant. In parametric search applications, users specify their search parameters up front using a variety of controls such as checkboxes, pull-downs, and sliders to construct what effectively is an advanced `Boolean query`. Unfortunately, it’s hard for users to set several parameters at once, especially since many combinations will produce zero results.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498568.png.jpg)
+
+Figure 4-24. Parametric problems at Snooth
+
+## Advanced Search
+
+
 
 
 
