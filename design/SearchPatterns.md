@@ -652,8 +652,8 @@ By definition, federated search involves the simultaneous search of multiple dat
 Figure 4-16. Federated search at Kosmix
 
 ## Faceted Navigation
+Also called `guided navigation` and `faceted search`, the faceted navigation model leverages metadata fields and values to provide users with visible options for clarifying and refining queries.
 
-
-
+Figure 4-19 illustrates a successful implementation of faceted navigation as a model for interacting with the catalogs of several academic libraries.
 
 
