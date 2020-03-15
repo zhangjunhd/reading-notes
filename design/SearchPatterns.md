@@ -698,6 +698,28 @@ On the other hand, the distinction between `faceted navigation` and `parametric 
 Figure 4-24. Parametric problems at Snooth
 
 ## Advanced Search
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498584.png)
+
+Figure 4-32. The advanced search design pattern
+
+Is it a user-friendly query builder for novices or a power tool for experts? Many interfaces try (and fail) to be both. For instance, isn’t it fair to assume that users who understand what “exact phrase” means also know to use quotation marks to specify such a search? The main problem with Boolean isn’t the syntax, it’s the logic. And even the plain language shown in Figure 4-28 is unlikely to help the few novices who brave the intimidating realm of advanced search.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498576.png.jpg)
+
+Figure 4-28. Advanced search at Genentech
+
+Interestingly, Exalead, shown in Figure 4-29, combines help and advanced search without asking users to leave. A click on Advanced Search launches an interactive menu below the box. It’s unconventional and a little clumsy, but definitely worth a look.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498578.png.jpg)
+
+Figure 4-29. Exalead’s integrated Help and Advanced Search
+
+What’s the basic interface missing? How else might users wish to search? These are the questions that lead to innovations like Midomi’s search by singing, GazoPa’s discover by drawing, and Etsy’s fabulously fun feature, explore by color.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498582.png.jpg)
+
+Figure 4-31. Etsy’s explore by color
+
 
 
 
