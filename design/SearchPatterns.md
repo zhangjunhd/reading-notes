@@ -63,6 +63,7 @@
 - [4.Design Patterns](#4design-patterns)
   - [Autocomplete](#autocomplete)
   - [Best First](#best-first)
+  - [Federated Search](#federated-search)
 
 # 1.Pattern Recognition
 ## Understanding Search
@@ -613,10 +614,37 @@ For instance, autocomplete isn’t only about typing and spelling. Suggestions h
 Figure 4-7. Browse options in Citysearch and Dopplr
 
 ## Best First
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498548.png.jpg)
 
+Figure 4-14. The best first design pattern
 
+It’s a safe bet that the top three results will draw 80 percent of the attention. The remaining results on the first page may each earn a few percentage points.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498540.png.jpg)
 
+Figure 4-10. Best first with Google
+
+Consequently, best first must be a top priority during search engine selection.The algorithms should account for:
+
+- Relevance
+  - These algorithms focus on topical relevance or aboutness. They aim to match the query keywords to the text of the content and metadata. Effective algorithms account for term order, proximity, location, frequency, and document length. An exact phrase match in a short title is worth more than an AND co-occurrence in a long body. A phrase that repeats on a page but is rare on the site merits extra weight. Relevance algorithms must also manage the transformation of text queries to account for plurals and other word variants (e.g., poet and poetry). Tuning may be required to get the right balance of precision and recall. Relevance is typically the default setting and is often in truth a hybrid that combines the inputs of multiple algorithms into a balanced solution.
+- Popularity
+  - In most contexts, social data can deliver a big boost to semantic algorithms. Google’s PageRank, which counts links as votes, was the first mainstream success. Today, popularity is typically a multialgorithmic measure. At Flickr, a photo’s interestingness derives from views, comments, notes, bookmarks, favorites, and so on. At Amazon, users can sort by Bestselling or Best Reviews, but even when they sort by relevance, social data influences the results.
+- Date
+  - Sorting by date is rarely a good default, but it is a useful option, especially for news and email applications in which reverse chronological order (newest first) is relatively common. In many cases, the date of publication or modification can serve as a valuable input into the general-purpose relevance algorithm by improving the freshness of top results.
+- Format
+  - In pure form, format and content type are most useful as filters, allowing users to view only images, videos, or news. However, they can also help to boost the best results. For instance, on an intranet, HTML and PDF documents may be more polished than .doc or .xls files. In such cases, application-specific tuning that brings the best formats to the top is extremely valuable.
+- Personalization
+  - A user’s search history, social network, or current location (online or off) are just a few inputs that might influence the order of results. We’ll delve into this topic when we explore the personalized search pattern. For now, let’s just note that personalization is at least as difficult as it is desirable.
+- Diversity
+  - In search, it’s easy to get too much of a good thing. Diversity algorithms guard against redundant results and support query clarification and refinement by surfacing distinct meanings (e.g., apple and AAPL) and formats. Application-specific tuning delivers the right balance and a nice blend of results.
+
+## Federated Search
+By definition, federated search involves the simultaneous search of multiple databases or collections.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498552.png.jpg)
+
+Figure 4-16. Federated search at Kosmix
 
 
 
