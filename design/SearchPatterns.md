@@ -64,6 +64,7 @@
   - [Autocomplete](#autocomplete)
   - [Best First](#best-first)
   - [Federated Search](#federated-search)
+  - [Faceted Navigation](#faceted-navigation)
 
 # 1.Pattern Recognition
 ## Understanding Search
@@ -640,13 +641,17 @@ Consequently, best first must be a top priority during search engine selection.T
   - In search, it’s easy to get too much of a good thing. Diversity algorithms guard against redundant results and support query clarification and refinement by surfacing distinct meanings (e.g., apple and AAPL) and formats. Application-specific tuning delivers the right balance and a nice blend of results.
 
 ## Federated Search
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498556.png.jpg)
+
+Figure 4-18. The federated search design pattern
+
 By definition, federated search involves the simultaneous search of multiple databases or collections.
 
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498552.png.jpg)
 
 Figure 4-16. Federated search at Kosmix
 
-
+## Faceted Navigation
 
 
 
