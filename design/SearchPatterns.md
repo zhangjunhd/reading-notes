@@ -656,4 +656,16 @@ Also called `guided navigation` and `faceted search`, the faceted navigation mod
 
 Figure 4-19 illustrates a successful implementation of faceted navigation as a model for interacting with the catalogs of several academic libraries.
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498558.png.jpg)
+
+Figure 4-19. Searching library catalogs with faceted navigation
+
+
+
+
+
+
+
+
+
 
