@@ -66,6 +66,9 @@
   - [Federated Search](#federated-search)
   - [Faceted Navigation](#faceted-navigation)
   - [Advanced Search](#advanced-search)
+  - [Personalization](#personalization)
+  - [Pagination](#pagination)
+  - [Structured Results](#structured-results)
 
 # 1.Pattern Recognition
 ## Understanding Search
@@ -719,6 +722,73 @@ What’s the basic interface missing? How else might users wish to search? These
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498582.png.jpg)
 
 Figure 4-31. Etsy’s explore by color
+
+## Personalization
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498598.png)
+
+Figure 4-39. The personalization design pattern
+
+In short, personalization is a dish best served simple. Only in limited contexts will past performance predict desired future results. The query is the clearest and most timely signal of intent. It’s a concise expression of what users need right now. History, social data, and location (online and off) can sometimes boost that signal, but for practical and ethical reasons, these personal algorithms should be transparent and open to override. When it works, personalization can play well with other patterns. In particular, it informs the suggestions of autocomplete and the algorithms of best first. Often, however, personalization must take a back seat to explicit, dynamic customization in the form of faceted navigation. 
+
+## Pagination
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498618.png)
+
+Figure 4-49. The pagination design pattern
+
+Google established the most popular pattern in the form of 10 blue links.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498600.png.jpg)
+
+Figure 4-40. Ten blue links
+
+`Snippets` are the heart and soul of search results. To pinch a phrase from multitouch, the content is the interface. The snippet reveals the aboutness of each result while also serving as the link to live and cached versions and to similar results. A purple link means you’ve already visited, an important and helpful clue for determining the next click. The two lines of text are selected for optimal scent. They provide a concise summary of the result or a brief excerpt with the keywords in context. A URL offers hints about the source and subject of the result. And throughout the snippet, query keywords are highlighted to reveal the reason for inclusion.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498602.png.jpg)
+
+Figure 4-41. A Google snippet
+
+Bing, shown in Figure 4-42, takes snippets a step further by presenting additional text and links from the destination site whenever a user hovers over a particular search result.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498604.png.jpg)
+
+Figure 4-42. Bing’s preview feature
+
+Of course, the anatomy of a snippet must adapt to fit each platform, format, and context. In mobile, snippets must be short. In reference and news and enterprise applications, URLs may be useless. And for images and video, a picture’s worth a thousand words.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498606.png.jpg)
+
+Figure 4-43. Snippet diversity
+
+At Yahoo! Shopping, users can choose whether they see 15, 30, or 45 results in list or grid view. They also have a wide variety of sort options and can select multiple items for a side-by-side comparison.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498610.png.jpg)
+
+When users advance to the next set of results, the page refresh often disrupts flow. `Inline paging` is one solution. At Endless.com, for instance, when users advance to the next result page, the old snippets fade out and new ones appear. The rest of the interface stays stable.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498612.png.jpg)
+
+Figure 4-46. Inline paging at Endless.com
+
+Several solutions are currently employed in mobile. Apple’s iTunes offers to Show 25 More at the end of each list. Amazon abolishes paging with virtual scrolling. Progressive loading ensures that the first few results are shown immediately, then, as users scroll down, more results load automatically. Kayak appears to load all matching flights, but sort and filter options are available to refine results and avoid endless scrolling.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498614.png.jpg)
+
+Figure 4-47. Mobile pagination patterns
+
+`Infinite scroll` and `inline paging` offer clear benefits, but they come at a cost. First, they’re simply more expensive to implement. Second, they may initially confuse users who have become used to the standard model. Third, they may frustrate attempts to bookmark or share a link to a specific set of results.
+
+We must find a balance between the richness of each snippet and the number of results per page. That is, unless our application affords the freedom to try something unorthodox, like a `zooming user interface` (ZUI) that positions all results within an infinite virtual desktop.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498616.png.jpg)
+
+Figure 4-48. Hard Rock’s zooming user interface
+
+## Structured Results
+
+
+
+
+
 
 
 
