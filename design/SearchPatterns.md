@@ -784,21 +784,22 @@ We must find a balance between the richness of each snippet and the number of re
 Figure 4-48. Hard Rock’s zooming user interface
 
 ## Structured Results
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498628.png.jpg)
 
+Figure 4-54. The structured results design pattern
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498620.png.jpg)
 
+Figure 4-50. Google’s structured results
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498622.png.jpg)
 
+Figure 4-51. Wolfram Alpha’s structured results
 
+Endeca, for instance, is pioneering an approach called guided summarization (shown in Figure 4-53), which integrates faceted navigation with dynamic visualizations that engage users in a rich dialog with their data. 
 
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498626.png.jpg)
 
-
-
-
-
-
-
-
-
+Figure 4-53. Endeca’s guided summarization
 
 
