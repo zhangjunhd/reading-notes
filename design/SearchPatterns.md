@@ -69,6 +69,8 @@
   - [Personalization](#personalization)
   - [Pagination](#pagination)
   - [Structured Results](#structured-results)
+  - [Actionable Results](#actionable-results)
+  - [Unified Discovery](#unified-discovery)
 
 # 1.Pattern Recognition
 ## Understanding Search
@@ -801,5 +803,53 @@ Endeca, for instance, is pioneering an approach called guided summarization (sho
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498626.png.jpg)
 
 Figure 4-53. Endeca’s guided summarization
+
+## Actionable Results
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498642.png)
+
+Figure 4-61. The actionable results design pattern
+
+First, we must ask what users want to do with their results. The most common tasks are print, save, and share.
+
+Yahoo! Search Pad (Figure 4-55) manages them all. It’s a handy application that tracks the results we visit. We can add notes, print, save, and share the annotated list of search results via Delicious, Facebook, Twitter, or by using a custom URL.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498630.png.jpg)
+
+Figure 4-55. Yahoo! Search Pad
+
+Searchme pioneered a more visual model with similar functionality (Figure 4-56), which lets users drag and drop results into shareable search stacks.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498632.png.jpg)
+
+Figure 4-56. Drag results to stacks at Searchme
+
+Users may also wish to vote, rate, and comment on results. This is clearly a core feature of Digg, a social news website that proves the power of actionable results.When signed into Google, users can remove, promote, or comment upon individual results. For now, it’s considered a personalization feature, but Google is surely storing the social data with an eye toward public results.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498634.png.jpg)
+
+Figure 4-57. Actionable results at Digg and Google
+
+Hulu, for instance, doesn’t simply list results. There’s a play button in every snippet, so we can watch TV shows and movies with a single click.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498636.png.jpg)
+
+Figure 4-58. A single click to play at Hulu
+
+Yahoo! has integrated structured and actionable results into its main search experience by presenting expanded snippets for top results when possible. As Figure 4-59 illustrates, music fans are able to play songs and watch videos without leaving the results page.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498638.png.jpg)
+
+Figure 4-59. Actionable results at Yahoo!
+
+Similarly, Spotlight Search on the iPhone isn’t just a way to find files fast. It’s also an efficient and elegant way to launch applications and make phone calls. Google Mobile goes a step further by integrating single-click phone and map features. And Apple’s iTunes lets us play songs and buy music without having to leave our results.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498640.png.jpg)
+
+Figure 4-60. Actionable results in mobile applications
+
+## Unified Discovery
+
+
+
 
 
