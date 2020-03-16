@@ -71,6 +71,7 @@
   - [Structured Results](#structured-results)
   - [Actionable Results](#actionable-results)
   - [Unified Discovery](#unified-discovery)
+- [5.Engines of Discovery](#5engines-of-discovery)
 
 # 1.Pattern Recognition
 ## Understanding Search
@@ -848,6 +849,49 @@ Similarly, Spotlight Search on the iPhone isn’t just a way to find files fast.
 Figure 4-60. Actionable results in mobile applications
 
 ## Unified Discovery
+Unified discovery provides a framework in which to integrate patterns. For each search pattern, we should ask how it might relate to browse. Autocomplete and best first might automatically feature category matches. Personalized search may be informed by our current location and browsing history. And, of course, the key fields and filters of faceted navigation should be aligned with categories and the overall information architecture.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498656.png)
+
+Figure 4-68. The unified discovery design pattern
+
+Yahoo! Glue Pages are specialized, visually appealing, browsable search results. They’re Google and Wikipedia, gateway and destination, search and browse all rolled into one.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498644.png.jpg)
+
+Figure 4-62. A Yahoo! Glue Page
+
+At Lands’ End, there’s little difference between search results and a gallery page (see Figure 4-63) that results from browse. Pagination and the sort and display options are handled the same way. Plus, even as we browse the product taxonomy, faceted navigation options appear to the left.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498646.png.jpg)
+
+Figure 4-63. Blending browse and search at Lands’ End
+
+When a user’s query partially or exactly matches a category label, we have a choice. One option, shown in Figure 4-65, is to highlight the category match and present results as usual. That’s a reasonable solution for a `partial match`. However, users may not notice the category link or understand what it represents. An alternative is to jump to the category page, also shown in Figure 4-65. This requires an exact match or the ability to map a near match onto a single category. In such cases, an override option that lets users run their original query is helpful, since the category page may not always be the desired result.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498650.png.jpg)
+
+Figure 4-65. Matching categories at Home Depot
+
+A third option is evident at Amazon (shown in Figure 4-66), where category matches are integrated as facets to the left of results. This is a balanced solution that keeps the user in search while leveraging the structure of the browsable taxonomy.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498652.png.jpg)
+
+Figure 4-66. Category match at Amazon
+
+Amazon is the champion when it comes to making search and browse work together. As Figure 4-67 shows, while we browse departments, `scoped search` offers to limit our queries to that section. A**t Amazon, whether we search or browse first, we can always switch to the other mode without losing our place**.
+
+![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498654.png.jpg)
+
+Figure 4-67. Scoped search at Amazon
+
+# 5.Engines of Discovery
+
+
+
+
+
+
 
 
 
