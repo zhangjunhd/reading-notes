@@ -71,7 +71,6 @@
   - [Structured Results](#structured-results)
   - [Actionable Results](#actionable-results)
   - [Unified Discovery](#unified-discovery)
-- [5.Engines of Discovery](#5engines-of-discovery)
 
 # 1.Pattern Recognition
 ## Understanding Search
@@ -884,16 +883,3 @@ Amazon is the champion when it comes to making search and browse work together. 
 ![](https://learning.oreilly.com/library/view/search-patterns/9781449380205/httpatomoreillycomsourceoreillyimages498654.png.jpg)
 
 Figure 4-67. Scoped search at Amazon
-
-# 5.Engines of Discovery
-
-
-
-
-
-
-
-
-
-
-
