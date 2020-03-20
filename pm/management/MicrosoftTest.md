@@ -13,8 +13,6 @@
 
 [豆瓣链接](https://book.douban.com/subject/4009658/)
 
-[微软的软件测试之道.pdf](http://note.youdao.com/noteshare?id=d11a2dbeb176f0a5ede0a7905e4ca64e&sub=6B222538BE6349458D18B5983B90652D)
-
 [How We Test Software at Microsoft](https://www.safaribooksonline.com/library/view/how-we-test/9780735624252/)
 
 <!-- TOC -->
