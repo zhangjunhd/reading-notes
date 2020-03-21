@@ -60,6 +60,10 @@
         - [Open-ended exploration](#open-ended-exploration)
         - [Information management](#information-management)
         - [Monitoring](#monitoring)
+  - [3.Context](#3context)
+    - [A Framework for Context](#a-framework-for-context)
+      - [A Context-Based Model of Search](#a-context-based-model-of-search)
+        - [Four layers of context](#four-layers-of-context)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -445,18 +449,22 @@ Applications can facilitate monitoring in two ways: on demand or automatically. 
 
 Figure 2.19 eBay allows users to save searches and, by checking a box, to be notified by email when new items are added.
 
+## 3.Context
+### A Framework for Context
+Context can also be defined in terms of its constituent parts. Myrhaug and Goker (2003), for instance, propose a framework of five key components:
 
+- Task. Any goals, tasks, actions or activities associated with what the user is doing.
+- Spatiotemporal. Attributes relating to the current time, location, direction, and so on.
+- Personal. The user’s physiological context, mental state, preferences, and so on.
+- Social. The user’s role, status, and relationships with other individuals.
+- Environmental. Factors including temperature, light, humidity, and, on a slightly different note, the information resources accessed by the user.
 
+Frameworks such as this help us understand the role of context in search and form the basis for a principled approach to design. As Lieberman and Selker (2000) put it:
 
+>A considerable portion of what we call…good design in human computer interaction actually amounts to being sensitive to the context in which the artifacts are used. Doing the “right thing” entails that it be right given the user’s current context. (p. 617)
 
-
-
-
-
-
-
-
-
+#### A Context-Based Model of Search
+##### Four layers of context
 
 
 
