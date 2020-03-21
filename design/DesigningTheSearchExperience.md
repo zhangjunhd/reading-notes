@@ -31,6 +31,10 @@
       - [From five senses to three modalities](#from-five-senses-to-three-modalities)
       - [Dual coding theory](#dual-coding-theory)
       - [Designing with overviews and previews](#designing-with-overviews-and-previews)
+  - [2.Information Seeking](#2information-seeking)
+    - [Models of Information Seeking](#models-of-information-seeking)
+      - [The classic model](#the-classic-model)
+      - [The standard model](#the-standard-model)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -210,6 +214,34 @@ Larger previews, rather than help the user quickly skim the results, gives the u
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-18-9780123969811.jpg)
 
 Figure 1.18 Apple’s Spotlight search shows document previews as the user interacts with the search results.
+
+## 2.Information Seeking
+Mankind is an endless pursuer of knowledge.
+
+We bridge this knowledge gap by asking those around us for advice, turning to books and encyclopedias, and, increasingly, searching the Internet. This journey between need and fulfillment is called `information seeking`.
+
+### Models of Information Seeking
+#### The classic model
+The classic model is one of the first models of information retrieval, widely used in information science research for over 30 years (Robertson, 1977).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-01-9780123969811.jpg)
+
+Figure 2.1 The classic model of information retrieval.
+
+#### The standard model
+In contrast with the classic model, the standard model places greater emphasis on the user. It portrays information seeking as a type of problem solving (Marchionini, 1995) involving a cycle of four activities (Sutcliffe & Ennis, 1998):
+
+1. Identifying the problem
+2. Articulating the information need
+3. Formulating the query
+4. Evaluating the results
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-02-9780123969811.jpg)
+
+Figure 2.2 The standard model of the search process.
+
+
+
 
 
 
