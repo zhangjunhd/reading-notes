@@ -24,6 +24,14 @@
       - [The filter model](#the-filter-model)
       - [The search model](#the-search-model)
       - [The structural-browse model](#the-structural-browse-model)
+    - [Navigation Shows Location](#navigation-shows-location)
+    - [Web Navigation Design](#web-navigation-design)
+      - [Why are you building the site?](#why-are-you-building-the-site)
+      - [Who will use the site?](#who-will-use-the-site)
+      - [What does the navigation provide access to?](#what-does-the-navigation-provide-access-to)
+      - [How is the site content organized?](#how-is-the-site-content-organized)
+      - [How will users navigate to the content they need?](#how-will-users-navigate-to-the-content-they-need)
+  - [2.Understanding Navigation](#2understanding-navigation)
 
 # I.Foundations of Web Navigation
 ## 1.Introducing Web Navigation
@@ -84,6 +92,57 @@ In this model, there is only a set of links, perhaps on the side of each page, t
 ![](https://learning.oreilly.com/library/view/designing-web-navigation/9780596528102/httpatomoreillycomsourceoreillyimages27474.png)
 
 Figure 1-8. The structural browse model
+
+In reality, web navigation might look more like something depicted in Figure 1-9, where various types of access are blended together. Navigation design is about creating a `system` of access to information. It is this system that gives rise to the web navigation experience.
+
+![](https://learning.oreilly.com/library/view/designing-web-navigation/9780596528102/httpatomoreillycomsourceoreillyimages27476.png)
+
+Figure 1-9. Web navigation: multiple forms of access to information
+
+### Navigation Shows Location
+While navigating a site, users generally need to know:
+
+- Where am I?
+- What’s here?
+- Where can I go from here?
+
+Location is often indicated by highlighting the currently selected option in a navigation menu or displaying the path with a `breadcrumb trail`. 
+
+Beyond orientation, knowing your location in a site has other implications:
+
+- Comprehension of a given page may improve—or even require—understanding its relationship to other pages.
+- Pages that are deeper in a site structure may be seen as more precise. Knowing how deep you are in a site can give cues as to granularity and detail of information encountered. The natural expectation is that pages higher in a site are more general in nature, and the detail comes out as you move further down the structure.
+- Knowing where you are in a site gives cues into exhaustiveness in seeking information. Location can signify if you should keep looking or not. The site navigation, then, potentially provides a sense of closure while looking for information.
+
+For instance, Figure 1-10 shows the page for financial support for students in Europe on the Open University web site (www.open.ac.uk). To get to this page, you have to make several clicks: Becoming a student > Financial Support > Students Resident in Continental Europe. The relatively deep location of this page indicates that there isn’t more on this subject on the site, and to find more information you’d have to call the phone number or write to the email address provided. Additionally, by itself, Students Resident in Continental Europe could refer to many things. Knowing that this is within the category Financial Support gives it a clear meaning.
+
+![](https://learning.oreilly.com/library/view/designing-web-navigation/9780596528102/httpatomoreillycomsourceoreillyimages27478.png)
+
+Figure 1-10. Location information in the navigation of the Open University web site
+
+### Web Navigation Design
+When considering a navigation design, ask yourself these fundamental questions:
+
+#### Why are you building the site?
+The first step in navigation design is understanding the purpose and motivation for the web site as a whole, as well as in the broader business context.
+
+#### Who will use the site?
+User research is the process of systematically investigating the visitors to a given site. It not only gives insight into the types of people visiting your site, but also into their needs and behaviors.
+
+#### What does the navigation provide access to?
+People come to a site to find answers or to perform a task. You must be providing the right content for the site to have value.
+
+#### How is the site content organized?
+Information architecture represents the underlying structures that give shape and meaning to the content and functionality on your site. It also has a major and direct impact on the navigation. As the designer, you must understand the content and how it is organized.
+
+#### How will users navigate to the content they need?
+Page layout and graphic design give the navigation its final form. This is more than just cosmetic window dressing, however. Aspects such as the order of options, their arrangement on the page, the font type and size used, and color, can be critical elements. They can make or break the navigation system.
+
+## 2.Understanding Navigation
+
+
+
+
 
 
 
