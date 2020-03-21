@@ -51,6 +51,10 @@
       - [Four stages of the sensemaking process](#four-stages-of-the-sensemaking-process)
       - [From internal to external schemas](#from-internal-to-external-schemas)
       - [Designing for sensemaking](#designing-for-sensemaking)
+        - [The shoebox](#the-shoebox)
+        - [The evidence file](#the-evidence-file)
+        - [The schema](#the-schema)
+    - [Stages of Information Seeking](#stages-of-information-seeking)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -364,30 +368,30 @@ Thus far, we’ve treated the semantic schema as the internal model of an indivi
 Sophisticated information tasks demand that one’s `internal` semantic model be disseminated into an `external` schema. External schemas can not only store a greater amount of information than an internal schema, but can also serve as a conduit for collaboration.
 
 #### Designing for sensemaking
+##### The shoebox
+The first step in many investigations is to gather potentially relevant documents into a single collection—what could be coined the shoebox (a term that recollects putting something away for later). At this stage, the analyst isn’t concerned with a close examination of each document; the top priority is to populate the shoebox as quickly as possible with anything that might be relevant to the investigation. The analyst heavily relies on information scent to make rapid judgments about which documents should and should not be included. To support this behavior, the user interface should enable the analyst to add documents to the shoebox as rapidly as possible. For instance a text link, checkbox, or icon (Figure 2.11) could be provided for quickly saving a given search result.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-11-9780123969811.jpg)
 
+Figure 2.11 Airbnb.com places a star icon next to each search result. Clicking on the star saves that result to the user’s “favorites list.”
 
+##### The evidence file
+Once the shoebox has been populated with potentially relevant documents, the analyst often then begins a more thorough examination of the curated collection. This time around, the analyst spends significantly more time scrutinizing the text and images when looking for possible leads. When the analyst spots a striking sentence or meaningful image, he or she extracts that snippet and saves it to a more cogent collection of relevant information: the evidence file.
 
+A simple example of an evidence file is Mendeley, a tool that helps academics manage their research. Mendeley provides a special bookmark that users can add to their web browsers (Figure 2.12). When clicked, a popup window appears and prompts the user to save a title, keywords, tags, and meaningful notes extracted from the current page.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-12-9780123969811.jpg)
 
+Figure 2.12 Mendeley’s document import tool.
 
+##### The schema
+The external schema provides an even bigger picture of how the extracted evidence fits together. It may be constructed of the people, places, and events surrounding a crime or the causes and symptoms of a disease (Figure 2.13). Also known as an ontology—a specification of a shared conceptualization—the external schema enables analysts to continually explore, gain insights from, and test hypotheses against the model as it is constructed.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-13-9780123969811.jpg)
 
+Figure 2.13 The “conditions and diseases” node of a much larger external semantic schema on the NHS Evidence website.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Stages of Information Seeking
 
 
 
