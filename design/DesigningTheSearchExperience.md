@@ -78,6 +78,7 @@
       - [Content frameworks](#content-frameworks)
       - [Unstructured information](#unstructured-information)
       - [Aggregate information](#aggregate-information)
+  - [4.Modes of Search and Discovery](#4modes-of-search-and-discovery)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -605,6 +606,89 @@ Another way to improve the experience of searching unstructured content is to **
 Figure 3.14 Concept clusters for the query “genesis” on Yippy.
 
 #### Aggregate information
+In business intelligence and other analytics applications, for example, the goal is not so much to find individual records but to identify patterns of distribution across the collection as a whole.
+
+In these and other analytic applications, the focus of the search experience shifts from finding and evaluating individual results to standing back and gaining a more `holistic understanding`.
+
+Our visual system is hard-wired to perceive certain visual attributes without any conscious effort. These `preattentive attributes` include shape and color.
+
+We can use this knowledge to our advantage in designing complex search applications, particularly those that involve the display of quantitative information (such as the Newssift example mentioned earlier). If we want to communicate certain patterns visually, or make them stand out from the background, we should use preattentive attributes. Figure 3.17 shows a more comprehensive list of such attributes that can be used in this manner (Few, 2004).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-17-9780123969811.jpg)
+
+Figure 3.17 Preattentive attributes of visual perception.
+
+However, not all attributes are created equal: some are more suited to the display of quantitative information than others (Cleveland and McGill, 1984). The relative strengths of the various preattentive attributes are indicated in Figure 3.18.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-18-9780123969811.jpg)
+
+Figure 3.18 The accuracy of quantitative perception for various preattentive attributes.
+
+## 4.Modes of Search and Discovery
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
