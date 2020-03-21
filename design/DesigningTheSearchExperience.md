@@ -30,6 +30,7 @@
     - [Verbal and Visual Learners](#verbal-and-visual-learners)
       - [From five senses to three modalities](#from-five-senses-to-three-modalities)
       - [Dual coding theory](#dual-coding-theory)
+      - [Designing with overviews and previews](#designing-with-overviews-and-previews)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -183,9 +184,32 @@ We experience the world through five senses, distilled by psychologists into thr
 #### Dual coding theory
 In the 1970s, psychologist Allan Paivio made an important observation: people learn best when information is presented in two modalities at the same time, which is now known as the `Dual-Coding Theory`. 
 
+#### Designing with overviews and previews
+Although dual coding theory has significant implications for website content, it’s also important for the search experience. In particular, `visual overviews` and `previews` can augment text-based lists to both describe the result set as a whole, as well as the individual result itself (Greene et al., 2000).
 
+Mapumental, for example, distills transit times, house prices, and “scenicness” ratings into a composite map overlay that helps its users choose where to live. Crunching these numbers oneself would be an enormous task, yet the map in Figure 1.15 instantly shows which areas of London are no farther than a 45-minute commute from Waterloo Station, have an average house price of less than £400,000, and score at least 2 out of 10 in scenicness.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-15-9780123969811.jpg)
 
+Figure 1.15 Mapumental visualizes a synthesis of transit times, house prices, and “scenicness” ratings to help users choose where to live.
+
+Google Finance’s stock screener, for example (shown in Figure 1.16), efficiently combines dual sliders with a histogram to provide contextual feedback for users searching for companies by financial criteria.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-16-9780123969811.jpg)
+
+Figure 1.16 Histograms, such as these from Google Finance’s stock screener, instantly convey the distribution of results.
+
+While `overviews` provide a visual depiction of the result set as a whole, `previews` help the user examine an individual result in greater detail—augmenting verbal information with a visual component to help the user make better relevance judgments. In some cases—such as ecommerce—visual thumbnails can even be more important than the text (Figure 1.17).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-17-9780123969811.jpg)
+
+Figure 1.17 For many ecommerce websites, such as NorthFace.com, visual thumbnails are more important than textual descriptions.
+
+Larger previews, rather than help the user quickly skim the results, gives the user a chance to verify the relevance of a result before committing to viewing the full item. Apple’s Spotlight search, for example (shown in Figure 1.18), previews a document as the user hovers over its title, reducing the inconvenience of opening a new document only to discover that it’s irrelevant.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-18-9780123969811.jpg)
+
+Figure 1.18 Apple’s Spotlight search shows document previews as the user interacts with the search results.
 
 
 
