@@ -55,6 +55,11 @@
         - [The evidence file](#the-evidence-file)
         - [The schema](#the-schema)
     - [Stages of Information Seeking](#stages-of-information-seeking)
+      - [The six-stage funnel](#the-six-stage-funnel)
+      - [Designing for the journey](#designing-for-the-journey)
+        - [Open-ended exploration](#open-ended-exploration)
+        - [Information management](#information-management)
+        - [Monitoring](#monitoring)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -392,6 +397,107 @@ The external schema provides an even bigger picture of how the extracted evidenc
 Figure 2.13 The “conditions and diseases” node of a much larger external semantic schema on the NHS Evidence website.
 
 ### Stages of Information Seeking
+#### The six-stage funnel
+Carol Kuhlthau, a professor at Rutgers University, performed a series of studies during the 1980s to better understand how people seek information to satisfy long-term goals (Kuhlthau, 1991). Kuhlthau identified distinct phases in what she called the `information search process` but is best described as stages of `information seeking` (Figure 2.14). She observed both the tasks and emotions unique to each of six phases:
+
+1. Initiation
+2. Selection
+3. Exploration
+4. Formulation
+5. Collection
+6. Action
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-14-9780123969811.jpg)
+
+Figure 2.14 Kuhlthau’s six stages of information seeking can be represented as a funnel that begins open-ended and ends with a resolution.
+
+#### Designing for the journey
+##### Open-ended exploration
+Whether the task is looking for a place to live, finding the perfect car, or planning a vacation, it’s unlikely that the user knows exactly which house is best, what car is ideal, or precisely where to go on holiday at the outset. Yet these are often the first questions that real estate, automotive, and travel sites ask us (Figure 2.15).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-15-9780123969811.jpg)
+
+Figure 2.15 Autotrader.co.uk asks the user to specify an exact make and model of car up front.
+
+In order to engage users earlier in their journey, we must help them explore (Marchionini, 2006). Flexible filtering controls can facilitate browsing without the need for an initial query, helping the user survey the information landscape and potentially make serendipitous discoveries along the way. Although automotive sites AutoTrader and Motors.co.uk both allow users to choose specific makes and models, the latter (Figure 2.16) also caters to those who haven’t yet formulated an exact specification, allowing them to filter by body style, color, number of doors, number of seats, and many other factors.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-16-9780123969811.jpg)
+
+Figure 2.16 Motors.co.uk provides flexible filtering options, making it easy for users to look for cars even before deciding on a particular make and model.
+
+##### Information management
+Equipping users to bookmark, categorize, and annotate findings can greatly streamline the long-term information seeking process.
+
+Bookmarking can help users refind items of interest at a later date. What’s more, grouping bookmarks into meaningful sets—like placing recipes into “meal plans” on Foodily (Figure 2.17)—can help users organize large collections of information. Ratings and annotations—such as the personal notes and one- to five-star rankings that can be added to saved properties on Globrix (Figure 2.18)—can further extend the user’s memory by making it easier to compare and differentiate saved items.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-17-9780123969811.jpg)
+
+Figure 2.17 Foodily, a recipe search engine, allows users to save their favorite recipes and organize them into meal plans.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-18-9780123969811.jpg)
+
+Figure 2.18 Property search site Globrix allows users to assign a rating and write notes on each property that they’ve bookmarked.
+
+##### Monitoring
+Applications can facilitate monitoring in two ways: on demand or automatically. Enabling the user to save a search query along with any applied filters provides a means for returning to that query `on demand` at a later date. Often, however, users may prefer to be `automatically notified` by email when a new match to their criteria appears, reducing the need to continually check back (eBay, pictured in Figure 2.19, provides both).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-19-9780123969811.jpg)
+
+Figure 2.19 eBay allows users to save searches and, by checking a box, to be notified by email when new items are added.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
