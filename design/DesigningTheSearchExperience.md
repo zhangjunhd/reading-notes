@@ -43,6 +43,10 @@
       - [Man the informavore](#man-the-informavore)
       - [Information foraging theory](#information-foraging-theory)
       - [Designing with information scent](#designing-with-information-scent)
+        - [Descriptive titles](#descriptive-titles)
+        - [Hit highlighting](#hit-highlighting)
+        - [Clear labeling](#clear-labeling)
+    - [Sensemaking](#sensemaking)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -309,5 +313,76 @@ As users traverse the Web, they encounter information scent when `“trigger wor
 In addition to information scent, Pirolli and Card’s research also helps explain `information snacking` (Nielsen, 2003). According to the marginal value theorem, the amount of time a user spends on a given website is proportional to the travel time between sites. As between-patch time decreases—thanks to Google and fast Internet connections—users spend less time on any one site. The result is that information seeking has become less of a sit-down banquet and more of an opportunistic buffet.
 
 #### Designing with information scent
+##### Descriptive titles
+Before clicking on a search result—or even reading its two-line description—the title must first be deemed relevant. Obvious though it is, the presentation of clear, descriptive titles is the surest method for providing strong information scent when displaying search results.
+
+Jared Spool found that reasonably long titles tend to work better than shorter ones, with links of 7 to 12 words being most likely to lead to a successful outcome (Figure 2.7).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-07-9780123969811.jpg)
+
+Figure 2.7 Jared Spool found that 7- to 12-word links yield the greatest likelihood of a user finding what he or she is looking for.
+
+##### Hit highlighting
+When the user performs a query, he or she inputs the most important terms to his or her search—that is, the query’s `trigger words`. Hit highlighting (Figure 2.8) is the technique of emphasizing the words included in the query wherever they appear on the search results page. Using a bold font weight helps to draw the user’s eye to the trigger words, increasing information scent.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-08-9780123969811.jpg)
+
+Figure 2.8 Bing uses a bold font weight to highlight the user’s query terms whenever they appear in the search result list, for both exact phrase matches (e.g., “artificial intelligence”) and partial matches (e.g., “intelligence”).
+
+##### Clear labeling
+When searching through online content, for instance, the user might be looking for business news and wish to skip over sport and entertainment articles (Figure 2.9). Clearly identifying which category a given result belongs to can help users ignore unwanted documents and focus on their genre of choice (Drori, 2002).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-09-9780123969811.jpg)
+
+Figure 2.9 The BBC labels each news story with a category, such as “Europe” or “Business.”
+
+### Sensemaking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
