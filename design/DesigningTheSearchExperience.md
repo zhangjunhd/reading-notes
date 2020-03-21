@@ -39,6 +39,8 @@
       - [The dynamic model](#the-dynamic-model)
       - [The information journey model](#the-information-journey-model)
     - [Information Foraging](#information-foraging)
+      - [A biological foundation](#a-biological-foundation)
+      - [Man the informavore](#man-the-informavore)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -277,22 +279,23 @@ Figure 2.5 The information journey model.
 These information encounters are what we commonly label serendipity. The information journey model, with its multiple entry points, acknowledges `serendipity` as part of the information seeking experience.
 
 ### Information Foraging
+`Information foraging`, an instinct closely related to that found in animals hunting for food, interacts with `sensemaking`, the cognitive process for deriving meaning from new information. Together, information foraging and sensemaking form a feedback loop (Pirolli & Card, 2005) that underpins the information seeking process.
 
+#### A biological foundation
+Biologists in the 1960s observed that animals often eat a particular type of food in one environment but ignore the same food in other places. Ecologists Robert MacArthur and Eric Pianka set out to discover how animals decide what to eat. Their research, and their accompanying `optimal foraging theory` (MacArthur & Pianka, 1966), provides a foundation for understanding our own behavior when searching for information.
 
+According to optimal foraging theory, animals live in environments consisting of many “patches,” each with a unique blend of potential food sources.
 
+This principle of diminishing returns is known in ecology as the `marginal value theorem` (Charnov, 1976). The theory asserts that animals perform a cost/benefit analysis on staying in the current patch versus traveling to a new one—considering both current and potential food supplies as well as the transit time between the two patches (Figure 2.6).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-06-9780123969811.jpg)
 
+Figure 2.6 Charnov’s marginal value theorem states that a forager should leave a given patch when the rate of gain within that patch drops below the rate of gain that could be achieved by traveling to a new patch.
 
+#### Man the informavore
+George Miller portrayed our species as `informavores`: creatures hungry for information (Miller, 1983). But just like the bear must be selective in its diet (digging all day for a few measly ants would hardly be worthwhile), so must informavores carefully navigate the glut of information in our modern environment. Herbert Simon spoke of this perilous balance in 1971:
 
-
-
-
-
-
-
-
-
-
+>What information consumes is rather obvious: it consumes the attention of its recipients. Hence a wealth of information creates a poverty of attention, and a need to allocate that attention efficiently among the over-abundance of information sources that might consume it. (p. 40)
 
 
 
