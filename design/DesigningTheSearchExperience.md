@@ -35,6 +35,10 @@
     - [Models of Information Seeking](#models-of-information-seeking)
       - [The classic model](#the-classic-model)
       - [The standard model](#the-standard-model)
+      - [The cognitive model](#the-cognitive-model)
+      - [The dynamic model](#the-dynamic-model)
+      - [The information journey model](#the-information-journey-model)
+    - [Information Foraging](#information-foraging)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -239,6 +243,62 @@ In contrast with the classic model, the standard model places greater emphasis o
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-02-9780123969811.jpg)
 
 Figure 2.2 The standard model of the search process.
+
+#### The cognitive model
+Like the standard model, Don Norman’s cognitive model of task performance (shown in Figure 2.3) also views search as a form of problem solving driven by an explicit user goal (Norman, 1988). But in this case, users apply a mental model—an internal representation of the problem situation and its context—to develop a plan of action to achieve that goal. These actions lead to changes in the external world that are evaluated to determine whether the goal has been achieved.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-03-9780123969811.jpg)
+
+Figure 2.3 Don Norman’s cognitive model of task performance.
+
+A key insight of Norman’s model over the previous two is that it recognizes the importance of domain knowledge (as discussed in Chapter 1): the greater the users’ knowledge, the more likely they are to articulate effective queries and accurately determine the relevance of results.
+
+#### The dynamic model
+Both the standard and cognitive models share an underlying assumption that the user’s information need remains unchanged throughout a given session. They view the process of information seeking as one of iteratively refining a given query until the ideal set of results is found. However, numerous studies have found that users’ information needs evolve as they interact with information and that they formulate new goals as they acquire domain knowledge. Far from being static, search is an interactive, iterative process in which the answer can change the question. As Peter Morville puts it, “what we find changes what we seek” (Morville, 2009).
+
+Consequently, we need a model that accounts for changes in users’ information needs as they learn and respond to the information they encounter. The dynamic model proposed by Marcia Bates (1989) accomplishes just that (Figure 2.4).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-04-9780123969811.jpg)
+
+Figure 2.4 Marcia Bates’ dynamic model.
+
+#### The information journey model
+Ann Blandford and Simon Attfield (2010) have further explored the unfolding journey of information seeking. Like the dynamic model, their information journey model (shown in Figure 2.5) has been derived from empirical studies of user behavior. The main activities in their framework are:
+
+1. Recognizing an information need
+2. Acquiring information
+3. Interpreting and validating the information
+4. Using the information
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-05-9780123969811.jpg)
+
+Figure 2.5 The information journey model.
+
+These information encounters are what we commonly label serendipity. The information journey model, with its multiple entry points, acknowledges `serendipity` as part of the information seeking experience.
+
+### Information Foraging
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
