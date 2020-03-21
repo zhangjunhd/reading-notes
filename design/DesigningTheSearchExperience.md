@@ -41,6 +41,8 @@
     - [Information Foraging](#information-foraging)
       - [A biological foundation](#a-biological-foundation)
       - [Man the informavore](#man-the-informavore)
+      - [Information foraging theory](#information-foraging-theory)
+      - [Designing with information scent](#designing-with-information-scent)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -297,15 +299,15 @@ George Miller portrayed our species as `informavores`: creatures hungry for info
 
 >What information consumes is rather obvious: it consumes the attention of its recipients. Hence a wealth of information creates a poverty of attention, and a need to allocate that attention efficiently among the over-abundance of information sources that might consume it. (p. 40)
 
+Although information is what we seek, our limited supply of attention forces us to make a tradeoff between comprehensiveness and timeliness. Simon coined the term satisficing—a combination of the words “satisfy” and “suffice”—to describe this pragmatic decision-making strategy that pervades human behavior (Simon, 1956).
 
+#### Information foraging theory
+Peter Pirolli and Stuart Card, researchers at the Palo Alto Research Center (PARC), began applying the principles of optimal foraging theory to information seeking in the early 1990s, establishing a new framework called `information foraging theory` (Pirolli & Card, 1999). Pirolli and Card drew a connection between users moving from one website to the next and animals traveling from patch to patch. They observed that users, in an effort to satisfice, heavily rely on certain cues known as `information scent` to guide them toward their destination.
 
+As users traverse the Web, they encounter information scent when `“trigger words”`—terms they perceive as meaningful to their task—are used in the text of a hyperlink, as words in a heading, or in a search result’s description. The more trigger words that are present, the stronger the information scent (Spool et al., 2004). When information scent grows stronger from page to page, users are confident that they’re headed in the right direction. But when it’s weak, they may be uncertain about what to do or even give up.
 
+In addition to information scent, Pirolli and Card’s research also helps explain `information snacking` (Nielsen, 2003). According to the marginal value theorem, the amount of time a user spends on a given website is proportional to the travel time between sites. As between-patch time decreases—thanks to Google and fast Internet connections—users spend less time on any one site. The result is that information seeking has become less of a sit-down banquet and more of an opportunistic buffet.
 
-
-
-
-
-
-
+#### Designing with information scent
 
 
