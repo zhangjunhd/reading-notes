@@ -62,8 +62,11 @@
         - [Monitoring](#monitoring)
   - [3.Context](#3context)
     - [A Framework for Context](#a-framework-for-context)
-      - [A Context-Based Model of Search](#a-context-based-model-of-search)
-        - [Four layers of context](#four-layers-of-context)
+    - [A Context-Based Model of Search](#a-context-based-model-of-search)
+      - [Four layers of context](#four-layers-of-context)
+        - [The information retrieval layer](#the-information-retrieval-layer)
+      - [The information seeking layer](#the-information-seeking-layer)
+      - [The work task layer](#the-work-task-layer)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -463,26 +466,27 @@ Frameworks such as this help us understand the role of context in search and for
 
 >A considerable portion of what we call…good design in human computer interaction actually amounts to being sensitive to the context in which the artifacts are used. Doing the “right thing” entails that it be right given the user’s current context. (p. 617)
 
-#### A Context-Based Model of Search
-##### Four layers of context
+### A Context-Based Model of Search
+#### Four layers of context
+Figure 3.1 presents an example of this influence based on the work of Jarvelin and Ingwersen (2004). This model represents the task context as a set of layers that start at the micro level (information retrieval) and extend outward to the macro level (culture).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-01-9780123969811.jpg)
 
+Figure 3.1 A context-based model of search.
 
+##### The information retrieval layer
+At the most granular level of the model is information retrieval. This layer is typified by simple, focused tasks such as finding a specific document related to a keyword query.
 
+These tasks are often referred to as `known item searches`. They may involve a number of iterations but are usually confined to a single session.
 
+The success of tasks at this level is commonly evaluated using system-oriented metrics such as precision and recall.
 
+#### The information seeking layer
+At the next level is information seeking. This layer is associated with broader, more complex tasks that attempt to satisfy an information need or problem (Marchionini, 1995).
 
+In this context, users need to exercise judgment regarding which strategies to adopt, such as where, how, and when to look for information (Wilson et al., 2010).
 
-
-
-
-
-
-
-
-
-
-
+#### The work task layer
 
 
 
