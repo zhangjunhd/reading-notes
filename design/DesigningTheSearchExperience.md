@@ -17,16 +17,16 @@
 - [1.A Framework for Search and Discovery](#1a-framework-for-search-and-discovery)
   - [1.The User](#1the-user)
     - [Novices and Experts](#novices-and-experts)
-    - [Domain expertise versus technical expertise](#domain-expertise-versus-technical-expertise)
-    - [Double novices orienteer](#double-novices-orienteer)
-    - [Double experts teleport](#double-experts-teleport)
-    - [The in-betweeners](#the-in-betweeners)
-    - [Serial and holistic thinkers](#serial-and-holistic-thinkers)
-    - [The rod-and-frame test](#the-rod-and-frame-test)
-    - [Serialists: brick-by-brick craftsmen](#serialists-brick-by-brick-craftsmen)
-    - [Holists: big-picture visionaries](#holists-big-picture-visionaries)
-    - [The performance gap](#the-performance-gap)
-    - [Designing for learnability](#designing-for-learnability)
+      - [Domain expertise versus technical expertise](#domain-expertise-versus-technical-expertise)
+      - [Double novices orienteer](#double-novices-orienteer)
+      - [Double experts teleport](#double-experts-teleport)
+      - [The in-betweeners](#the-in-betweeners)
+      - [Serial and holistic thinkers](#serial-and-holistic-thinkers)
+      - [The rod-and-frame test](#the-rod-and-frame-test)
+      - [Serialists: brick-by-brick craftsmen](#serialists-brick-by-brick-craftsmen)
+      - [Holists: big-picture visionaries](#holists-big-picture-visionaries)
+      - [The performance gap](#the-performance-gap)
+      - [Designing for learnability](#designing-for-learnability)
     - [Verbal and Visual Learners](#verbal-and-visual-learners)
 
 # 1.A Framework for Search and Discovery
@@ -47,7 +47,7 @@ Finally, based on our understanding of the users, their task and the wider conte
 ### Novices and Experts
 Expertise plays a significant role in how people seek information. Understanding the differences between novices and experts will enable us to design better search experiences for everyone. But first, it’s worth distinguishing between two dimensions of expertise.
 
-### Domain expertise versus technical expertise
+#### Domain expertise versus technical expertise
 `Domain expertise` defines one’s familiarity with a given subject matter; a professional photographer, for instance, has substantial domain expertise in the field of photography. `Technical expertise`, on the other hand, indicates one’s proficiency at using computers, the Internet, search engines, and the like.
 
 In combination, the domain and technical dimensions of expertise describe four types of users (Figure 1.1):
@@ -61,7 +61,7 @@ In combination, the domain and technical dimensions of expertise describe four t
 
 Figure 1.1 Two dimensions of expertise: domain and technical.
 
-### Double novices orienteer
+#### Double novices orienteer
 Double novices share three main characteristics (Hölscher and Strube, 2000):
 
 1. **Frequent query reformulation**. Novices perform more queries than experts but look at fewer pages. Although they frequently reformulate their query, double novices often make only small, inconsequential changes to their search phrase.
@@ -78,7 +78,7 @@ Figure 1.2 Foodily’s iPhone application places related searches at the bottom 
 
 Figure 1.3 The breadcrumbs on Zappos.com indicate which filters the user has applied and provide the means to remove them.
 
-### Double experts teleport
+#### Double experts teleport
 Double experts are characterized by three tendencies (Hölscher and Strube, 2000):
 
 1. **More pages examined**. Double experts click on more search results than do novices.
@@ -95,7 +95,7 @@ Figure 1.4 Wolfram Alpha is designed to return computed answers using advanced s
 
 Figure 1.5 Getty Image’s Moodstream lets users search for stock photos using slider controls.
 
-### The in-betweeners
+#### The in-betweeners
 Domain expert/technical novices, for instance, use their knowledge to enter effective queries and quickly evaluate pages, but they lack the technical confidence to explore unknown territory (Jenkins et al., 2003). Their traits include:
 
 1. **Advanced terminology**. Domain experts are able to rely on their extensive vocabulary to construct more topical queries than are domain novices.
@@ -108,10 +108,10 @@ Domain novice/technical experts, on the other hand, brim with confidence, but ha
 2. **Confident exploration**. Despite their lack of domain expertise, technical experts exude confidence and never worry about becoming disoriented.
 3. **Difficulty with evaluation**. Technical expertise doesn’t compensate for a lack of domain knowledge when it comes to evaluating the relevance of a page.
 
-### Serial and holistic thinkers
+#### Serial and holistic thinkers
 Psychologists call these `cognitive styles`—the stable attitudes, preferences, and habits that determine how an individual processes and represents information. We’ll begin by looking at the `serial-holistic style` of information processing.
 
-### The rod-and-frame test
+#### The rod-and-frame test
 Here it is: draw a vertical line inside the rectangle.
 
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-06-9780123969811.jpg)
@@ -122,26 +122,26 @@ Figure 1.6 Complete a simplified version of the rod-and-frame test by drawing a 
 
 Figure 1.7 Serialists complete the rod-and-frame test by drawing the line aligned with the edges of the rectangle (left). Holists, on the other hand, draw the line along the global north–south axis (right).
 
-### Serialists: brick-by-brick craftsmen
+#### Serialists: brick-by-brick craftsmen
 Like skilled craftsmen, serialists are highly attuned to the details. When learning, serialists tend to drill down to narrow subtopics and follow a logical progression from one to the next. Despite being skilled at analyzing the component parts (Figure 1.8), serialists have greater difficulty combining the parts into a whole (Kim, 2001).
 
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-08-9780123969811.jpg)
 
 Figure 1.8 Serialists concentrate on the individual parts rather than the whole.
 
-### Holists: big-picture visionaries
+#### Holists: big-picture visionaries
 Holists are visionaries with a bird’s-eye view (Figure 1.9). Operating with an intrinsic motivation that is independent of their surroundings, holists flourish in flexible environments where they are free to pursue their own interests at the pace of their choice. When approaching a topic, they immediately set out to comprehend the big picture, giving holists a more balanced view and helping them put situations into context. However, holists are also prone to oversimplification, sometimes glossing over important details (Ford et al., 2002).
 
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-09-9780123969811.jpg)
 
 Figure 1.9 Holists focus on the cohesive whole rather than on component parts.
 
-### The performance gap
+#### The performance gap
 Holists are more efficient at satisfying their information needs. Serialists, by comparison, find it more difficult to discern the relevance of information and consequently spend more time searching for the same answers.
 
 Although there is a wide gap in performance between serialists and holists who are `technical novices`, the gap all but disappears between the two cognitive styles when `technical expertise` is high. In other words, user interfaces can become more effective by helping serialist novices—or all novices, for that matter—increase their level of technical expertise.
 
-### Designing for learnability
+#### Designing for learnability
 `Learnability`—the ease with which users gain awareness of available software functions and comprehend how to act on them—can be accomplished using `contextual instructions`, `immersive overlays`, and `subtle visual design`.
 
 A simple contextual instruction, for example, can be achieved by adding descriptive placeholder text to the search box (Figure 1.10). The text can inform users about the type of query that the system expects—whether it’s the name of a restaurant, an area of a city, or a postal code.
@@ -167,9 +167,9 @@ A more nuanced method for enhancing learnability is to use subtle animation and 
 Figure 1.13 On the first use, Airbnb’s iPhone application reveals a star behind each search result before quickly sliding away, training users to use a left-to-right gesture to “favorite” a result.
 
 ### Verbal and Visual Learners
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-14-9780123969811.jpg)
 
-
-
+Figure 1.14 Two dimensions of cognitive style: serial–holistic and verbal–visual.
 
 
 
