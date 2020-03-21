@@ -69,6 +69,7 @@
         - [The work task layer](#the-work-task-layer)
         - [The cultural layer](#the-cultural-layer)
       - [Designing across layers](#designing-across-layers)
+    - [Physical Context](#physical-context)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -503,8 +504,25 @@ Unfortunately, tasks at this level are often poorly supported by online retailer
 
 Figure 3.2 Limited support for the work task level at Comet.
 
+But behind the tab labeled “Videos and Advice” lies a resource (pluggedin.co.uk) that is much more appropriate for this level of task. Instead of product categories, a query for “home entertainment” here returns content much better suited to the immediate goal (Figure 3.3). This content includes tutorials in the form of buyer’s guides and how-to guides alongside product reviews and user-generated content from specialist forums. In contrast to the product category listing seen previously, this material provides far greater support for activities associated with the work task level, such as exploration and learning. In addition, it supports discovery of latent needs through the provision of aspirational articles and expert reviews.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-03-9780123969811.jpg)
 
+Figure 3.3 Support for the work task level at pluggedin.co.uk.
+
+Amazon, for example, supports iterative information seeking via a personalized history panel that includes recent searches and recently viewed items (Figure 3.4). This information is augmented by a facility for users to create, organize, and share their own lists.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-04-9780123969811.jpg)
+
+Figure 3.4 Support for the information seeking level at Amazon.
+
+As the user gets a clearer idea of his or her needs and identifies suitable products, he or she may wish to verify the price and quality of these particular items on independent sites. In this context, the focus shifts from information seeking to a set of specific information retrieval subtasks. This is the level that traditionally has been best supported by online retailers. One notable example of design support for information retrieval can be found at Samsung.com (Figure 3.5), which provides a particularly immersive style of instant results and autocomplete.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-05-9780123969811.jpg)
+
+Figure 3.5 Support for the information retrieval level at Samsung.com.
+
+### Physical Context
 
 
 
