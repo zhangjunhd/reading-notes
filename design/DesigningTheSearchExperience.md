@@ -141,13 +141,13 @@ Holists are more efficient at satisfying their information needs. Serialists, by
 Although there is a wide gap in performance between serialists and holists who are `technical novices`, the gap all but disappears between the two cognitive styles when `technical expertise` is high. In other words, user interfaces can become more effective by helping serialist novices—or all novices, for that matter—increase their level of technical expertise.
 
 ### Designing for learnability
+`Learnability`—the ease with which users gain awareness of available software functions and comprehend how to act on them—can be accomplished using `contextual instructions`, `immersive overlays`, and `subtle visual design`.
 
+A simple contextual instruction, for example, can be achieved by adding descriptive placeholder text to the search box (Figure 1.10). The text can inform users about the type of query that the system expects—whether it’s the name of a restaurant, an area of a city, or a postal code.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-10-9780123969811.jpg)
 
-
-
-
-
+Figure 1.10 Toptable’s iPhone application combines the use of placeholder text and a three-option segmented control to clearly indicate the type of input that the application expects from the user.
 
 
 
