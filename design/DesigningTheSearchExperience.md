@@ -77,6 +77,7 @@
     - [The Information Landscape](#the-information-landscape)
       - [Content frameworks](#content-frameworks)
       - [Unstructured information](#unstructured-information)
+      - [Aggregate information](#aggregate-information)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -579,4 +580,45 @@ Cool and Belkin (2002) suggest an approach in which content is defined by three 
 - Quantity: one object, set of objects, database of objects
 
 #### Unstructured information
+At the simplest level, this experience means **making the unstructured content searchable alongside the product records they support and presenting the results in a coordinated manner**. By selecting the appropriate tab, the user can pivot to a “Reviews View” that shows those same products displayed in list view with their associated customer reviews and ratings (Figure 3.11).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-11-9780123969811.jpg)
+
+Figure 3.11 Moosejaw allows browsing of both product results and reviews.
+
+A search for “fridge freezers” on electronics retailer Comet, for instance, returns a set of 273 products with 79 associated reviews. But this time, **the user can filter the product results using the review metadata**. For example, he or she can choose to see just those products that received five-star reviews from 25- to 34-year-old males in a “small family” (Figure 3.12).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-12-9780123969811.jpg)
+
+Figure 3.12 Comet allows users to navigate products by review rating and reviewer profile.
+
+**Unstructured content can lend itself to a more visual treatment, ranging from simple keyword tag clouds to more sophisticated charts and graphs**. Newssift (now closed) extracted named entities such as people, places, and organizations (shown in the middle three columns in Figure 3.13) and used various text analysis techniques to measure sentiment of the content, which it rendered using the pie chart on the left.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-13-9780123969811.jpg)
+
+Figure 3.13 Newssift used natural language processing to identify named entities and sentiment.
+
+Another way to improve the experience of searching unstructured content is to **organize the results into thematic clusters**. For example, the query “genesis” on the Metasearch engine Yippy returns a number of clusters based around themes such as religion, music, cars, and so on (shown in the left-hand panel of Figure 3.14).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-14-9780123969811.jpg)
+
+Figure 3.14 Concept clusters for the query “genesis” on Yippy.
+
+#### Aggregate information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
