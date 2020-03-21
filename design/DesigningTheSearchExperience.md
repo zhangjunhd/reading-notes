@@ -70,6 +70,13 @@
         - [The cultural layer](#the-cultural-layer)
       - [Designing across layers](#designing-across-layers)
     - [Physical Context](#physical-context)
+      - [Here and now](#here-and-now)
+        - [Spatial context](#spatial-context)
+        - [Temporal filters](#temporal-filters)
+      - [Push versus pull](#push-versus-pull)
+    - [The Information Landscape](#the-information-landscape)
+      - [Content frameworks](#content-frameworks)
+      - [Unstructured information](#unstructured-information)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -523,15 +530,53 @@ As the user gets a clearer idea of his or her needs and identifies suitable prod
 Figure 3.5 Support for the information retrieval level at Samsung.com.
 
 ### Physical Context
+#### Here and now
+Mobile user needs are driven by the spatiotemporal context: they seek results that are not just relevant to their immediate information need (i.e., topically relevant) but also timely and relevant to their physical location (Goker et al., 2004). These influences, coupled with an increased emphasis on precision over recall, suggest an approach in which these factors are combined to deliver the most contextually relevant results (Figure 3.6).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-06-9780123969811.jpg)
 
+Figure 3.6 Topical, spatial, and temporal filters can be combined to increase the relevance of search results.
 
+##### Spatial context
+Spatial context can be modeled in a number of ways. One of the simplest approaches is to equate relevance with physical distance; that is, the closer the spatial footprint of a given item, the more relevant it is (Mountain and MacFarlane, 2007). This approach is offered by many directory services such as Yelp (Figure 3.7).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-07-9780123969811.jpg)
 
+Figure 3.7 Physical distance as a measure of relevance.
 
+Alternatively, spatial relevance could be based on physical accessibility, that is, the amount of time it takes to reach a particular location.
 
+Moreover, spatial context of mobile users is rarely static; often the user is in transit during the interaction itself. In this case, it may be more appropriate to consider the user’s current trajectory and determine relevance based on the user’s predicted location at any point in time.
 
+##### Temporal filters
+Temporal context can be also modeled in a number of ways. One of the most intuitive approaches is to equate relevance with “freshness”; This approach could be combined with the spatial footprint to provide a feed of breaking news specific to the user’s current locality (Figure 3.8).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-08-9780123969811.jpg)
 
+Figure 3.8 The Associated Press combines temporal relevance with spatial relevance.
 
+Some types of information have a predictable schedule associated with them, such as the timetables for public transport or the opening hours for shops and services. There is little value in finding restaurants that are currently closed or trains that are no longer running. In order to utilize this type of context, it is necessary to filter results according to the time when the user wishes to travel or partake of the particular service.
+
+#### Push versus pull
+Information doesn’t always have to be `pulled` by users in this way. Given knowledge of their preferences, it is possible to `push` information to users whenever it becomes relevant to their physical context. For example, Foursquare, a location-based social network for mobile users, provides real-time push notifications when friends “check in” at various locations (Figure 3.9).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-09-9780123969811.jpg)
+
+Figure 3.9 Foursquare provides push notification of location-based updates.
+
+Location-based advertising is the ultimate example: from a marketing perspective, it offers almost unlimited potential for presenting contextually relevant promotions to consumers based on their current location. However, this type of service will be tolerated only if the relevance and value of the information outweighs the cost of the intrusion and the associated lack of privacy (Figure 3.10).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-10-9780123969811.jpg)
+
+Figure 3.10 Location-based promotions employed by Groupon.
+
+### The Information Landscape
+#### Content frameworks
+Cool and Belkin (2002) suggest an approach in which content is defined by three dimensions:
+
+- Level: information, meta-information
+- Medium: image, written text, speech, and so on
+- Quantity: one object, set of objects, database of objects
+
+#### Unstructured information
 
