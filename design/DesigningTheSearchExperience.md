@@ -28,6 +28,8 @@
       - [The performance gap](#the-performance-gap)
       - [Designing for learnability](#designing-for-learnability)
     - [Verbal and Visual Learners](#verbal-and-visual-learners)
+      - [From five senses to three modalities](#from-five-senses-to-three-modalities)
+      - [Dual coding theory](#dual-coding-theory)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -171,13 +173,15 @@ Figure 1.13 On the first use, Airbnb’s iPhone application reveals a star behin
 
 Figure 1.14 Two dimensions of cognitive style: serial–holistic and verbal–visual.
 
+#### From five senses to three modalities
+We experience the world through five senses, distilled by psychologists into three “sensory modalities” relevant to learning: verbal, visual, and kinesthetic (Denig, 2004). Though everyone learns through all three modes, we each favor one over the others, resulting in three different styles of learning:
 
+1. `Verbal` learners absorb written and spoken information more readily than visual concepts. Because most learning is either text-based (reading a book, searching online) or auditory (a classroom lecture or personal conversation), verbal learners have ready access to content in their preferred medium.
+2. `Visual` learners, on the other hand, digest information from charts, diagrams, timelines, maps, and other concrete images more easily than from the written or spoken word. Visual learners have less access to appropriate content than their verbal counterparts.
+3. `Kinesthetic` learners enjoy hands-on activities involving movement, from dancing to woodwork. Although kinesthetic learning is minimally involved in desktop computing, it plays a much more significant role in gestural and touch-based interfaces.
 
-
-
-
-
-
+#### Dual coding theory
+In the 1970s, psychologist Allan Paivio made an important observation: people learn best when information is presented in two modalities at the same time, which is now known as the `Dual-Coding Theory`. 
 
 
 
