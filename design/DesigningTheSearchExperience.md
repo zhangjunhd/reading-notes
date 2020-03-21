@@ -65,8 +65,10 @@
     - [A Context-Based Model of Search](#a-context-based-model-of-search)
       - [Four layers of context](#four-layers-of-context)
         - [The information retrieval layer](#the-information-retrieval-layer)
-      - [The information seeking layer](#the-information-seeking-layer)
-      - [The work task layer](#the-work-task-layer)
+        - [The information seeking layer](#the-information-seeking-layer)
+        - [The work task layer](#the-work-task-layer)
+        - [The cultural layer](#the-cultural-layer)
+      - [Designing across layers](#designing-across-layers)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -481,25 +483,25 @@ These tasks are often referred to as `known item searches`. They may involve a n
 
 The success of tasks at this level is commonly evaluated using system-oriented metrics such as precision and recall.
 
-#### The information seeking layer
+##### The information seeking layer
 At the next level is information seeking. This layer is associated with broader, more complex tasks that attempt to satisfy an information need or problem (Marchionini, 1995).
 
 In this context, users need to exercise judgment regarding which strategies to adopt, such as where, how, and when to look for information (Wilson et al., 2010).
 
-#### The work task layer
+##### The work task layer
+The information need that precipitates information seeking is itself motivated by a further level: the `work task`. This layer is characterized by higher-level tasks that are created when the user recognizes an information need based on either an organizational need or a personal motive (Marchionini, 1995).
 
+Work tasks situated in an organizational setting are likely to reflect local resources, constraints, and working practices (Wilson et al., 2010). This list can include which resources are available to satisfy a given information need, such as reference materials, libraries, human experts, and others. Evaluation at this level focuses on assessing performance of the overall task.
 
+##### The cultural layer
+This level influences not only the overall task requirements but also the collective importance attached to meeting them.
 
+#### Designing across layers
+Unfortunately, tasks at this level are often poorly supported by online retailers, and a query for “home entertainment” returns an opaque list of product categories that relies on the user understanding the terminology and knowing which category to select (Figure 3.2).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000033f03-02-9780123969811.jpg)
 
-
-
-
-
-
-
-
-
+Figure 3.2 Limited support for the work task level at Comet.
 
 
 
