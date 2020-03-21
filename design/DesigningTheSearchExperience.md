@@ -23,6 +23,10 @@
     - [The in-betweeners](#the-in-betweeners)
     - [Serial and holistic thinkers](#serial-and-holistic-thinkers)
     - [The rod-and-frame test](#the-rod-and-frame-test)
+    - [Serialists: brick-by-brick craftsmen](#serialists-brick-by-brick-craftsmen)
+    - [Holists: big-picture visionaries](#holists-big-picture-visionaries)
+    - [The performance gap](#the-performance-gap)
+    - [Designing for learnability](#designing-for-learnability)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -116,6 +120,28 @@ Figure 1.6 Complete a simplified version of the rod-and-frame test by drawing a 
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-07-9780123969811.jpg)
 
 Figure 1.7 Serialists complete the rod-and-frame test by drawing the line aligned with the edges of the rectangle (left). Holists, on the other hand, draw the line along the global north–south axis (right).
+
+### Serialists: brick-by-brick craftsmen
+Like skilled craftsmen, serialists are highly attuned to the details. When learning, serialists tend to drill down to narrow subtopics and follow a logical progression from one to the next. Despite being skilled at analyzing the component parts (Figure 1.8), serialists have greater difficulty combining the parts into a whole (Kim, 2001).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-08-9780123969811.jpg)
+
+Figure 1.8 Serialists concentrate on the individual parts rather than the whole.
+
+### Holists: big-picture visionaries
+Holists are visionaries with a bird’s-eye view (Figure 1.9). Operating with an intrinsic motivation that is independent of their surroundings, holists flourish in flexible environments where they are free to pursue their own interests at the pace of their choice. When approaching a topic, they immediately set out to comprehend the big picture, giving holists a more balanced view and helping them put situations into context. However, holists are also prone to oversimplification, sometimes glossing over important details (Ford et al., 2002).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-09-9780123969811.jpg)
+
+Figure 1.9 Holists focus on the cohesive whole rather than on component parts.
+
+### The performance gap
+Holists are more efficient at satisfying their information needs. Serialists, by comparison, find it more difficult to discern the relevance of information and consequently spend more time searching for the same answers.
+
+Although there is a wide gap in performance between serialists and holists who are `technical novices`, the gap all but disappears between the two cognitive styles when `technical expertise` is high. In other words, user interfaces can become more effective by helping serialist novices—or all novices, for that matter—increase their level of technical expertise.
+
+### Designing for learnability
+
 
 
 
