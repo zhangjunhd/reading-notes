@@ -21,6 +21,8 @@
     - [Double novices orienteer](#double-novices-orienteer)
     - [Double experts teleport](#double-experts-teleport)
     - [The in-betweeners](#the-in-betweeners)
+    - [Serial and holistic thinkers](#serial-and-holistic-thinkers)
+    - [The rod-and-frame test](#the-rod-and-frame-test)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -89,7 +91,31 @@ Figure 1.4 Wolfram Alpha is designed to return computed answers using advanced s
 Figure 1.5 Getty Image’s Moodstream lets users search for stock photos using slider controls.
 
 ### The in-betweeners
+Domain expert/technical novices, for instance, use their knowledge to enter effective queries and quickly evaluate pages, but they lack the technical confidence to explore unknown territory (Jenkins et al., 2003). Their traits include:
 
+1. **Advanced terminology**. Domain experts are able to rely on their extensive vocabulary to construct more topical queries than are domain novices.
+2. **Effective evaluation**. Similarly, high domain knowledge makes the process of evaluating a page more meaningful and timely.
+3. **Going back**. A lack of technical expertise, however, contributes to a sense of disorientation, preventing users from venturing too far away from the search page.
+
+Domain novice/technical experts, on the other hand, brim with confidence, but have trouble discerning relevant content (Hölscher and Strube, 2000). They are characterized by:
+
+1. **Advanced formatting**. Technical experts are much more likely to use query formatting techniques—such as double quotes and Boolean operators—than are technical novices.
+2. **Confident exploration**. Despite their lack of domain expertise, technical experts exude confidence and never worry about becoming disoriented.
+3. **Difficulty with evaluation**. Technical expertise doesn’t compensate for a lack of domain knowledge when it comes to evaluating the relevance of a page.
+
+### Serial and holistic thinkers
+Psychologists call these `cognitive styles`—the stable attitudes, preferences, and habits that determine how an individual processes and represents information. We’ll begin by looking at the `serial-holistic style` of information processing.
+
+### The rod-and-frame test
+Here it is: draw a vertical line inside the rectangle.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-06-9780123969811.jpg)
+
+Figure 1.6 Complete a simplified version of the rod-and-frame test by drawing a vertical line in the rectangle.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-07-9780123969811.jpg)
+
+Figure 1.7 Serialists complete the rod-and-frame test by drawing the line aligned with the edges of the rectangle (left). Holists, on the other hand, draw the line along the global north–south axis (right).
 
 
 
