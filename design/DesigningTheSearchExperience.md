@@ -27,6 +27,7 @@
     - [Holists: big-picture visionaries](#holists-big-picture-visionaries)
     - [The performance gap](#the-performance-gap)
     - [Designing for learnability](#designing-for-learnability)
+    - [Verbal and Visual Learners](#verbal-and-visual-learners)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -148,6 +149,34 @@ A simple contextual instruction, for example, can be achieved by adding descript
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-10-9780123969811.jpg)
 
 Figure 1.10 Toptable’s iPhone application combines the use of placeholder text and a three-option segmented control to clearly indicate the type of input that the application expects from the user.
+
+`Contextual popovers`, like the ones used by Foodily in Figure 1.11, can augment a well-designed interface and reduce the guesswork required by the user. `Immersive, full-screen overlays` —such as the welcome screen to the TapTu iPad app shown in Figure 1.12—can serve a similar purpose. Caution is required in both situations, however; providing tips for new users must be balanced with concern for more experienced users (both Foodily and TapTu, for instance, show the “getting started” advice only on a user’s first visit).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-11-9780123969811.jpg)
+
+Figure 1.11 Foodily, a recipe search site, uses small popovers to introduce first-time users to a few of the features unique to Foodily’s website.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-12-9780123969811.jpg)
+
+Figure 1.12 TapTu, a news-reading application, uses an overlay to provide a tutorial for new users.
+
+A more nuanced method for enhancing learnability is to use subtle animation and tactile textures to suggest gestures, hint at off-screen content, and indicate which elements on the screen are interactive. When a user first views a list of search results using Airbnb’s iPhone application (shown in Figure 1.13), for instance, an animation reveals a star behind each result before quickly disappearing, hinting that a swipe from left to right will “favorite” that particular item. Such tactics are especially useful on mobile devices where screen space is scarce.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-13-9780123969811.jpg)
+
+Figure 1.13 On the first use, Airbnb’s iPhone application reveals a star behind each search result before quickly sliding away, training users to use a left-to-right gesture to “favorite” a result.
+
+### Verbal and Visual Learners
+
+
+
+
+
+
+
+
+
+
 
 
 
