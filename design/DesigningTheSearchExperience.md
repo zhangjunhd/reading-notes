@@ -47,6 +47,10 @@
         - [Hit highlighting](#hit-highlighting)
         - [Clear labeling](#clear-labeling)
     - [Sensemaking](#sensemaking)
+      - [Human memory](#human-memory)
+      - [Four stages of the sensemaking process](#four-stages-of-the-sensemaking-process)
+      - [From internal to external schemas](#from-internal-to-external-schemas)
+      - [Designing for sensemaking](#designing-for-sensemaking)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -337,26 +341,29 @@ When searching through online content, for instance, the user might be looking f
 Figure 2.9 The BBC labels each news story with a category, such as “Europe” or “Business.”
 
 ### Sensemaking
+`Sensemaking`—a concept developed in the information science field by Brenda Dervin (1983) and in human–computer interaction by PARC researchers Daniel Russell and colleagues—describes the process through which people assimilate new knowledge into their existing understanding (Russell et al., 1993). Just as the study of information foraging behavior has led to techniques for designing more fluid search experiences, so can an appreciation of how people make sense of information help us design tools that facilitate comprehension, analysis, and insight.
 
+#### Human memory
+Most relevant for our purpose, however, is long-term `semantic` memory, which is responsible for keeping track of our ever-growing conceptual knowledge (Tulving, 1985). Semantic memory organizes knowledge into a schema of interconnected nodes that our minds can manipulate and explore at will (Miller, 1987), a simplistic visualization of which can be represented by mind map diagrams such as the one in Figure 2.10.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000021f02-10-9780123969811.jpg)
 
+Figure 2.10 This mind map created on MindMeister.com visualizes one person’s understanding of western philosophy.
 
+This internal semantic schema is constantly in flux. New information may require our semantic memory to add new nodes to the existing schema, reorganize the links between nodes, or discard concepts that are no longer pertinent. This is the realm of **sensemaking: growing, rearranging, and pruning the semantic tree of knowledge**.
 
+#### Four stages of the sensemaking process
+1. Search
+2. Extract
+3. Encode
+4. Analyze
 
+#### From internal to external schemas
+Thus far, we’ve treated the semantic schema as the internal model of an individual’s knowledge. However, the finite capacity of the human mind ensures that one’s own understanding is only a subset of reality. In the same way that a map is a compact representation of a much larger landscape, so our internal semantic schema is a simplified sketch of a much broader body of knowledge.
 
+Sophisticated information tasks demand that one’s `internal` semantic model be disseminated into an `external` schema. External schemas can not only store a greater amount of information than an internal schema, but can also serve as a conduit for collaboration.
 
-
-
-
-
-
-
-
-
-
-
-
-
+#### Designing for sensemaking
 
 
 
