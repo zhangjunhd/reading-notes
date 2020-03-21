@@ -20,6 +20,7 @@
     - [Domain expertise versus technical expertise](#domain-expertise-versus-technical-expertise)
     - [Double novices orienteer](#double-novices-orienteer)
     - [Double experts teleport](#double-experts-teleport)
+    - [The in-betweeners](#the-in-betweeners)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -71,19 +72,23 @@ Figure 1.2 Foodily’s iPhone application places related searches at the bottom 
 Figure 1.3 The breadcrumbs on Zappos.com indicate which filters the user has applied and provide the means to remove them.
 
 ### Double experts teleport
+Double experts are characterized by three tendencies (Hölscher and Strube, 2000):
 
+1. **More pages examined**. Double experts click on more search results than do novices.
+2. **Going deeper**. Double novices tend to retreat from the pages they examine; double experts rarely go back. Instead, experts follow links from one page to the next, progressing deeper into the information space with each step.
+3. **Less time spent**. Double experts are time-efficient in their search tasks. Not only do they reformulate their queries less often, but they can also determine the relevancy of a given page more rapidly than novices.
 
+Expert-friendly search user interfaces should support advanced syntax and filtering to help users quickly narrow their search. Although the Boolean operators AND, OR, and NOT are certainly worth supporting, Wolfram Alpha (shown in Figure 1.4) goes a step further and allows users to input domain-specific terminology and retrieve computed answers. Similarly, a faceted search interface for filtering by format, selecting ranges, or excluding certain categories—such as Getty’s Moodstream, shown in Figure 1.5—can help users pinpoint content that’s relevant to their information needs.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-04-9780123969811.jpg)
 
+Figure 1.4 Wolfram Alpha is designed to return computed answers using advanced syntax and domain-specific terminology.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-05-9780123969811.jpg)
 
+Figure 1.5 Getty Image’s Moodstream lets users search for stock photos using slider controls.
 
-
-
-
-
-
-
+### The in-betweeners
 
 
 
