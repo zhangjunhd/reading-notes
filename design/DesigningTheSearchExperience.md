@@ -79,6 +79,7 @@
       - [Unstructured information](#unstructured-information)
       - [Aggregate information](#aggregate-information)
   - [4.Modes of Search and Discovery](#4modes-of-search-and-discovery)
+    - [Search Modes and Frameworks](#search-modes-and-frameworks)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -625,35 +626,49 @@ However, not all attributes are created equal: some are more suited to the displ
 Figure 3.18 The accuracy of quantitative perception for various preattentive attributes.
 
 ## 4.Modes of Search and Discovery
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-01-9780123969811.jpg)
 
+Figure 4.1 Search involves the activities of information retrieval, analysis, and sensemaking.
 
+### Search Modes and Frameworks
+One of the key insights of Marcia Bates’ dynamic model (introduced in Chapter 2) is that information seeking is essentially a nonlinear process in which information needs are not satisfied by a single, ideal set of documents but by an aggregation of learning and insight gathered along the way. In subsequent work, Bates extended this framework to accommodate a more sophisticated set of activities, which she referred to as moves, tactics, stratagems and strategies (Bates, 1990), defined as follows:
 
+- Move: an atomic thought or action, such as entering a particular keyword
+- Tactic: a collection of moves, such as broadening a search through the use of a more generic keyword
+- Stratagem: a composite of moves and/or tactics, such as identifying a promising information resource and scanning it for further relevant items
+- Strategy: a plan for an entire search, consisting of moves, tactics and/or stratagems
 
+O’Day and Jeffries, for example, examined the information seeking strategies employed by clients of information professionals, and identified three primary categories of search behavior (1993):
 
+1. Monitoring a known topic or set of variables over time
+2. Following a specific plan for information gathering
+3. Exploring a topic in an undirected fashion
 
+O’Day and Jeffries investigated search as a holistic process, integrating findability with analysis and sensemaking (as illustrated in Figure 4.1). As part of this research, they studied the analysis techniques employed by searchers in interpreting their results and identified six categories:
 
+1. Looking for trends or correlations
+2. Making comparisons
+3. Experimenting with different aggregations/scaling
+4. Identifying critical subsets
+5. Making assessments
+6. Interpreting data to find meaning
 
+A further influential framework is that proposed by Gary Marchionini (2006), who developed a model consisting of three major categories of search activity: Lookup, Learn, and Investigate (Figure 4.2).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-02-9780123969811.jpg)
 
+Figure 4.2 Marchionini’s taxonomy of search activities.
 
+Joe Lamantia, for example, analyzed the behaviors of subscribers to a complex financial information service, and identified four primary modes of interaction (Lamantia, 2006):
 
+- Seeking information: conventional keyword search, plus related activities such as faceted navigation
+- Visiting stable destinations: accessing persistent resources or locations within the information space
+- Monitoring notifications: maintaining awareness of events, activity, status, and so on
+- Receiving delivered assets: accepting content via various channels, such as email, RSS, and others
 
+Donna Spencer undertook a similar analysis (Spencer, 2006), inspired by the observation that the traditional information science framing of known item versus exploratory search did not adequately account for the behaviors she was witnessing in her work on designing intranets and complex websites. She observed that in many practical situations, “people didn’t necessarily know what they needed to know” and that much of the search behavior she was observing was actually concerned with trying to refind resources that had previously been discovered. From this observation, she proposed the following set of four search modes:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. Known item: in which users know what they want, how to articulate it, and where to look
 
 
 
