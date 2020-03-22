@@ -121,6 +121,11 @@
       - [Sorting and filtering](#sorting-and-filtering)
       - [Query clarification](#query-clarification)
       - [Comparing](#comparing)
+  - [7.Faceted Search](#7faceted-search)
+    - [Definitions](#definitions)
+      - [Facet semantics](#facet-semantics)
+      - [Facet states and behaviors](#facet-states-and-behaviors)
+    - [Layout](#layout)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1295,6 +1300,58 @@ A more conspicuous variant can be seen at electrical retailer Comet. As expected
 Figure 6.38 Prominent category selection at Amazon.
 
 #### Comparing
+A common approach is to provide access to what is popularly known as a comparison view. Computing equipment retailer Dabs, for example, provides a column of checkboxes next to each search result, which marks items for comparison (Figure 6.42).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-42-9780123969811.jpg)
+
+Figure 6.42 Selecting items for comparison at Dabs.
+
+Selecting a “Compare” button at the head of the column opens a separate view that shows the full detail of each item in a separate column, enabling easy comparison of the individual product attributes (Figure 6.43).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-43-9780123969811.jpg)
+
+Figure 6.43 Product comparison at Dabs.
+
+Online retailer Best Buy, for example, shows both the size limit and the current state of the comparison view using a dynamically updating preview (Figure 6.44).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-44-9780123969811.jpg)
+
+Figure 6.44 Selecting items for comparison at Best Buy.
+
+The goal of the comparison page is, of course, to support `analyzing` and `comparing` individual products. Best Buy offers further support for these search modes by organizing the attributes into logical groups and providing an option to automatically highlight the differences between products (Figure 6.45).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-45-9780123969811.jpg)
+
+Figure 6.45 Highlighting differences between products at Best Buy.
+
+## 7.Faceted Search
+### Definitions
+`Facets` are essentially independent properties or `dimensions` by which we can classify an object. For instance, a book might be classified using an Author facet, a Subject facet, and a Date facet. `Faceted navigation` enables users to explore information spaces by progressively refining their choices in each dimension. For example, we could explore a collection of books by selecting a specific author, subject, or date range. Selections are made by applying facet values, which determine the current results set. The set of selections active at any given time is known as the `navigational context`, which corresponds to the user’s current location in the information space. `Faceted search` is then the combination of faceted navigation with other forms of search (such as those discussed in Chapter 5).
+
+A key principle of faceted search is to minimize the likelihood of zero results by guiding users toward productive navigational choices.
+
+#### Facet semantics
+Facets can be either `single-select` or `multi-select`.
+
+Multi-select facets can either be `multi-select OR` or `multi-select AND`.
+
+#### Facet states and behaviors
+By convention, values applied `across` different facets are normally applied conjunctively (e.g., Author = Russell-Rose AND Subject = Search AND Date = 2012) whereas values applied `within` a given facet are normally applied disjunctively (e.g., Date = 2010 OR Date = 2011 OR Date = 2012).
+
+### Layout
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
