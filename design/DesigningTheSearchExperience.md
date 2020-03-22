@@ -131,6 +131,16 @@
       - [Hybrid layout](#hybrid-layout)
     - [Default State](#default-state)
       - [Closed by default](#closed-by-default)
+      - [Open by default](#open-by-default)
+      - [Open/closed hybrid](#openclosed-hybrid)
+    - [Display Formats](#display-formats)
+      - [Hyperlinks](#hyperlinks)
+      - [Checkboxes](#checkboxes)
+      - [Range sliders](#range-sliders)
+      - [Input boxes](#input-boxes)
+      - [Color pickers](#color-pickers)
+      - [Tag clouds](#tag-clouds)
+      - [Data visualizations](#data-visualizations)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1379,6 +1389,107 @@ Figure 7.5 Hybrid layout at TravelMatch.
 
 ### Default State
 #### Closed by default
+The first option is to display all facets as closed by default, which is the approach adopted by TravelMatch in the left-hand menu in Figure 7.5. The advantage is that it uses minimal screen space, and for sites with a large number of facets (such as this), the visibility of that breadth of choice is maximized. The disadvantage is that the information scent offered by each facet is weaker than if they were shown in their open state, with sample facet values clearly visible. As a result, adoption and usage of the facets may be compromised. To mitigate this, the invitation or control to open (and close) each of the facets should be clearly visible and unambiguous.
+
+#### Open by default
+The second option is to display all facets in their open state by default, which maximizes the information scent by exposing example values for each of the facets and helps encourage adoption and usage of the faceted menu. An example of this approach can be seen at the job site Monster (Figure 7.6).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-06-9780123969811.jpg)
+
+Figure 7.6 Facets open by default at Monster.
+
+#### Open/closed hybrid
+This option is becoming increasingly popular, as it makes efficient use of screen space and provides a stronger information scent for the first few facets (which should ideally be sorted by priority). An example of this can be seen below at NCSU Libraries (Figure 7.7).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-07-9780123969811.jpg)
+
+Figure 7.7 Open and closed facets at NCSU Libraries.
+
+For more complex search scenarios, a mixed initiative approach may be adopted. For example, a search on eBay using the query “golf” returns a `query clarification` dialogue (see Chapter 6), as shown in Figure 7.8.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-08-9780123969811.jpg)
+
+Figure 7.8 Facets open for query disambiguation at eBay.
+
+But once a selection has been made, a different approach is adopted. For example, if we select Category=“Cars, Motorcycles & Vehicles”, we are presented with a refined set of results and further facets, as shown in Figure 7.9.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-09-9780123969811.jpg)
+
+Figure 7.9 Facets now open and closed at eBay.
+
+### Display Formats
+#### Hyperlinks
+They represent textual values simply and directly and afford interaction through direct selection (e.g., a single mouse click). When combined with `record counts` (i.e., the number of items matching each facet value), they provide a simple but effective summary of the information space (Yee et al., 2003).
+
+The example from the Food Network shows a typical faceted navigation menu, with ten facets containing textual values that are displayed as hyperlinks (Figure 7.10).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-10-9780123969811.jpg)
+
+Figure 7.10 Hyperlink facets at the Food Network.
+
+We see such an example at NCSU libraries (Figure 7.11). In this example, the user can select `multiple` Subjects, Genres, Formats, and so on, and these are added to the navigational context each time.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-11-9780123969811.jpg)
+
+Figure 7.11 Hyperlink facets at NCSU Libraries.
+
+#### Checkboxes
+Checkboxes are an ideal format for the display of `multi-select facets`. An example of their use can be found at many sites, including eBay (Figure 7.12).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-12-9780123969811.jpg)
+
+Figure 7.12 Checkbox facets at eBay.
+
+#### Range sliders
+In the previous examples, the facet values are `categorical` in nature—qualitative data organized on a `nominal` or `ordinal` scale. But facets often need to display `quantitative` data, such as price ranges, product sizes, date ranges, and so on. In such cases, a range slider is often a more suitable display mechanism. An example can be found at Molecular’s Wine Store (Figure 7.13).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-13-9780123969811.jpg)
+
+Figure 7.13 Range sliders at Molecular.
+
+#### Input boxes
+An example of this can be seen at Glimpse.com, where specifying an exact price range for shoes is much easier using the input boxes than the slider (Figure 7.14).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-14-9780123969811.jpg)
+
+Figure 7.14 Input boxes at Glimpse.
+
+For example, quantitative data can be transformed into an `interval scale` by subdividing the range into a sequence of smaller ranges and giving each a label. This is the approach taken by Amazon in their treatment of price ranges (Figure 7.15).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-15-9780123969811.jpg)
+
+Figure 7.15 Interval scales at Amazon.
+
+#### Color pickers
+Littlewoods, for example, displays a color swatch with corresponding text labels and shows only values that are specific to the current result set (Figure 7.16).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-16-9780123969811.jpg)
+
+Figure 7.16 Color picker at Littlewoods.
+
+Artist Rising, by contrast, uses a generic color picker, offering a choice across the entire color spectrum (Figure 7.17).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-17-9780123969811.jpg)
+
+Figure 7.17 Color picker at Artist Rising.
+
+#### Tag clouds
+An example can be found at Artist Rising, which displays a tag cloud as an overlay within a horizontal faceted menu (Figure 7.18).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-18-9780123969811.jpg)
+
+Figure 7.18 Tag clouds at Artist Rising.
+
+A somewhat different treatment can be found at PC Authority, which uses tag clouds to present terms extracted from unstructured content (i.e., text documents). These are displayed in a separate container that is disconnected (conceptually and physically) from the left-hand faceted navigation menu. As tags are selected, they are added to the breadbox alongside other refinements (Figure 7.19).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-19-9780123969811.jpg)
+
+Figure 7.19 Tag clouds at PC Authority.
+
+#### Data visualizations
+
+
+
 
 
 
