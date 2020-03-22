@@ -112,6 +112,7 @@
       - [Search result previews](#search-result-previews)
       - [Answers and shortcuts](#answers-and-shortcuts)
     - [Search Results Pages](#search-results-pages)
+      - [Basic principles](#basic-principles-1)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1122,6 +1123,53 @@ Similarly, on iPad and iPhone, we can use Spotlight to search across all our dat
 Figure 6.13 Spotlight search provides actionable objects as results.
 
 ### Search Results Pages
+#### Basic principles
+Even Google, with its minimalist home page design, manages to pack more than a dozen separate features into its default search results page (Figure 6.14). These can be grouped according their function, such as input, informational, control, or personalization (Wilson, 2011):
+
+- Input features
+  - Search box including auto-suggest and instant results (on character input)
+- Informational features
+  - Number of results found
+  - Support for query reformulation (“did you mean” and autocorrect)
+  - Individual results consisting of:
+    - Hyperlinked titles with snippets and URLs
+    - Page preview (available on hover)
+    - Related metadata, such as previous visits, citations, related articles, and social data (such as page sharing by colleagues)
+  - Related searches
+  - Sponsored links (advertisements)
+- Control features
+  - Faceted navigation menu (for content type, date, etc.)
+  - Search tools menu (sites with images, visited pages, etc.)
+  - Pagination
+  - Options for advanced search and help
+- Personalization features (when logged in)
+  - Profile, settings, notifications, etc.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-14-9780123969811.jpg)
+
+Figure 6.14 Minimalist design belies feature-rich complexity in Google’s SERPs.
+
+As shown in Chapter 5, `query reformulation` is a critical step in many information journeys. In fact, this principle is so fundamental that we often take it for granted, and it becomes conspicuous only by its absence: faced with the response shown in Figure 6.15, can you work out what the query was or how best to reformulate it? In this instance, the user is forced to rely on recall rather than recognition, contrary to the principles outlined in Chapter 5.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-15-9780123969811.jpg)
+
+Figure 6.15 Smashing Magazine’s SERP lacks the context necessary for effective query reformulation.
+
+A second, related principle is to maintain the context of the current search by displaying the number of matching results. This deceptively simple measure plays a vital role in the information seeking dialogue, as it communicates the magnitude of the current information space and helps the user make more informed query reformulations.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-16-9780123969811.jpg)
+
+Figure 6.16 The iTunes app shows the number of matching results in context.
+
+
+
+
+
+
+
+
+
+
 
 
 
