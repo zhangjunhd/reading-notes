@@ -84,6 +84,7 @@
       - [Lookup: verify](#lookup-verify)
       - [Learn: explore](#learn-explore)
       - [Investigate: analyze](#investigate-analyze)
+    - [Mode Chains and Patterns](#mode-chains-and-patterns)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -754,19 +755,19 @@ Consider the library site shown in Figure 4.11. In this instance, they have adop
 Figure 4.11 Faceted search facilitates exploration.
 
 #### Investigate: analyze
+A simple example of support for this can be found at Google patents (Figures 4.12a and 4.12b). The alternate views (Grid View and List View) allow the user to switch between rapid exploration (scanning titles, browsing thumbnails, looking for information scent) and a more detailed analysis of each record and its metadata.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-12-9780123969811.jpg)
 
+Figure 4.12a, b Alternate views at Google Patents support mode switching between exploration and analysis.
 
+He now wishes to analyze some of the prior art associated with a particular technology and understand how it has been reported in the media. He may turn to a news aggregator site such as the now-defunct Newssift.com (which was in its time a unique resource—see Figure 4.13).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-13-9780123969811.jpg)
 
+Figure 4.13 Support for analysis at Newssift.com.
 
-
-
-
-
-
-
-
+### Mode Chains and Patterns
 
 
 
