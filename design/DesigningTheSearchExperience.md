@@ -126,6 +126,11 @@
       - [Facet semantics](#facet-semantics)
       - [Facet states and behaviors](#facet-states-and-behaviors)
     - [Layout](#layout)
+      - [Vertical layout](#vertical-layout)
+      - [Horizontal layout](#horizontal-layout)
+      - [Hybrid layout](#hybrid-layout)
+    - [Default State](#default-state)
+      - [Closed by default](#closed-by-default)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1339,6 +1344,41 @@ Multi-select facets can either be `multi-select OR` or `multi-select AND`.
 By convention, values applied `across` different facets are normally applied conjunctively (e.g., Author = Russell-Rose AND Subject = Search AND Date = 2012) whereas values applied `within` a given facet are normally applied disjunctively (e.g., Date = 2010 OR Date = 2011 OR Date = 2012).
 
 ### Layout
+#### Vertical layout
+An example of this configuration (from eBay) is shown in Figure 7.1.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-01-9780123969811.jpg)
+
+Figure 7.1 Vertical stack faceted navigation at eBay.
+
+However, a number of sites have chosen to locate the facets on the right, including Edinburgh University’s library catalogue (Figure 7.2), although the motivation for placing the facets on the right in this case may simply be to direct attention to the “concept browser” control on the left.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-02-9780123969811.jpg)
+
+Figure 7.2 Facets on the right at Edinburgh University Library.
+
+#### Horizontal layout
+An alternative to vertical layout is to arrange the facets horizontally, usually across the top of the page as shown at Yelp in Figure 7.3.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-03-9780123969811.jpg)
+
+Figure 7.3 Horizontal facets at Yelp.
+
+Figure 7.4 shows a search for “connectors” that returns 25 facets displayed in alphabetically ordered, scrollable containers (with the results pushed below the fold).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-04-9780123969811.jpg)
+
+Figure 7.4 Facets wrap across the page at Amphenol.
+
+#### Hybrid layout
+A few, however, adopt a hybrid approach, such as TravelMatch (Figure 7.5).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-05-9780123969811.jpg)
+
+Figure 7.5 Hybrid layout at TravelMatch.
+
+### Default State
+#### Closed by default
 
 
 
