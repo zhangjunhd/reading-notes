@@ -370,9 +370,10 @@
    4. [Search Patterns](design/SearchPatterns.md)
    5. [Designing Web Navigation](design/DesigningWebNavigation.md)
    6. [Designing the Search Experience](design/DesigningTheSearchExperience.md)
-   7. [About Face 3](design/AboutFace3.md)
-   8. [Designing Interfaces](design/DesigningInterfaces.md)
-   9. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
+   7. [Information Architecture](design/InformationArchitecture.md)
+   8. [About Face 3](design/AboutFace3.md)
+   9. [Designing Interfaces](design/DesigningInterfaces.md)
+   10. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
 
 # 软件技术
 1. 计算
