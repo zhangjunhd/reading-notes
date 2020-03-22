@@ -115,6 +115,11 @@
       - [Basic principles](#basic-principles-1)
       - [Page layouts](#page-layouts)
       - [Blended results](#blended-results)
+      - [Zero results pages](#zero-results-pages)
+    - [Manipulating Search Results](#manipulating-search-results)
+      - [Pagination](#pagination)
+      - [Sorting and filtering](#sorting-and-filtering)
+      - [Query clarification](#query-clarification)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1203,6 +1208,90 @@ Carrot2 takes the concept further still, offering a choice of visualizations (Fi
 Figure 6.22 Search results are clustered by topic at Carrot2.
 
 #### Blended results
+The Guardian newspaper, for example, shows results laid out in vertical list (Figure 6.23) but grouped according to category (editor’s picks, tags, most recent articles, etc.).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-23-9780123969811.jpg)
+
+Figure 6.23 Search results are grouped vertically by type at the Guardian.
+
+A query for “jets” on Google, for example, returns sports scores, news items, web pages and more. However, unlike the previous example, these are displayed in an undifferentiated vertical list (Figure 6.24).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-24-9780123969811.jpg)
+
+Figure 6.24 Blended search results and media types at Google.
+
+By contrast, business information provider Reuters groups search results according to medium (news, blogs, video, or pictures), which it displays in separate panels (Figure 6.25). News items take precedence as the default shown in the main panel, but this display can be replaced by another content type by selecting the appropriate tab.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-25-9780123969811.jpg)
+
+Figure 6.25 Search results are grouped by medium at Reuters.
+
+Apple’s iTunes store (Figure 6.26) takes the structured approach a step further, displaying a variety of content types on the SERP as actionable objects (see “Displaying Search Results” earlier in this chapter) in individual panels with custom controls (see “Manipulating Search Results” later in this chapter).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-26-9780123969811.jpg)
+
+Figure 6.26 Varied content types displayed in individual panels with custom controls at the iTunes Store.
+
+At the Food Network, for example, the primary content consists of recipes, but the SERP also promotes related content in the form of videos and products from the Food Network store, using a sidebar on the right-hand side (Figure 6.27).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-27-9780123969811.jpg)
+
+Figure 6.27 Promotion of related content and products at the Food Network.
+
+#### Zero results pages
+Apple Store, which provides basic advice but misses the opportunity to provide direct support (Figure 6.28).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-28-9780123969811.jpg)
+
+Figure 6.28 Limited support for query reformulation on the Apple Store zero results page.
+
+Classified ad site Carzone, by contrast, gives clear messaging and useful advice and also provides the means to address the issue by removing the nonmatching search criteria (Figure 6.29).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-29-9780123969811.jpg)
+
+Figure 6.29 Direct support for query reformulation on the Carzone zero results page.
+
+### Manipulating Search Results
+#### Pagination
+Pagination confers several benefits: it limits load time (by dividing the results into manageable ‘chunks’); it provides a measure of how far through the set the user has progressed; and it shows how much further they can go. Implementations vary considerably, with Google, Bing, and Yahoo all offering their own distinctive interpretations (Figure 6.30). 
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-30-9780123969811.jpg)
+
+Figure 6.30 Varying implementations of pagination at Google, Bing, and Yahoo (desktop).
+
+These implementations differ further when applied to the mobile context (Figure 6.31). Google, for example, maintains consistency with the desktop by using a control that differs little in behavior; loading a further ten results each time. Bing, by contrast, offers a link to “more results,” which returns a further page of results that load on demand. This design means that the user can simply scroll to the bottom and the next set of results will be appended, without reloading the page. A similar approach is seen at Yahoo, in which ten additional results are appended to the current set on each invocation of the “Show more web results …” button.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-31-9780123969811.jpg)
+
+Figure 6.31 Varying implementations of pagination at Google, Bing, and Yahoo (mobile).
+
+#### Sorting and filtering
+Sort options such as these are commonly implemented using a dropdown control, which allows the user to apply different sort keys (Figure 6.33).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-33-9780123969811.jpg)
+
+Figure 6.33a, b, and c Drop down controls for sorting at Walmart, Amazon, and Littlewoods.
+
+A kind of hybrid example of sorting and filtering (and pagination) can be seen at the iPhone App Store (Figure 6.36). Here, content is grouped into various default categories to facilitate browsing along various popular dimensions (such as Top Paid, Top Free, etc.).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-36-9780123969811.jpg)
+
+Figure 6.36 Button controls for sorting on the iPhone App Store.
+
+A more mainstream use of filtering is to allow users to refine their results by one or more independent dimensions or facets. This approach, known as `faceted search`, has become the dominant paradigm among online retail and many other commercial search applications.
+
+#### Query clarification
+There are a number of approaches to query clarification. One of the most common is to display the alternative interpretations in the form of matching categories and invite users to choose a more precise category for their information need.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-37-9780123969811.jpg)
+
+Figure 6.37 Query clarification by category selection at Amazon.
+
+
+
+
+
+
 
 
 
