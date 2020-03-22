@@ -105,6 +105,11 @@
       - [Autocorrect](#autocorrect)
       - [Partial matches](#partial-matches)
       - [Related searches](#related-searches)
+  - [6.Displaying and Manipulating Results](#6displaying-and-manipulating-results)
+    - [Displaying Search Results](#displaying-search-results)
+      - [Basic principles](#basic-principles)
+      - [The anatomy of a search result](#the-anatomy-of-a-search-result)
+      - [Search result previews](#search-result-previews)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1025,6 +1030,58 @@ Recommender systems such as Last.fm and Netflix rely heavily on attributes, rati
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-40-9780123969811.jpg)
 
 Figure 5.40 Genius playlist creates “more like this” from a single item.
+
+## 6.Displaying and Manipulating Results
+### Displaying Search Results
+#### Basic principles
+To illustrate, suppose you’re looking for a new job role, and you browse to the 40 or so open positions listed on UsabilityNews (Figure 6.1). The results are displayed in concise groups of ten, occupying minimal screen space. But can you tell which particular ones might be worth pursuing? The roles all sound quite similar (and job titles can be misleading anyway). Closing dates seem largely irrelevant, unless we already have a particular position in mind. The end result is a weak information scent (see Chapter 2) that forces us to continually jump back and forth between the individual results and the list to see the information we need. Some degree of movement like this may be inevitable with any design, but when it becomes chronic, it is referred to as `pogosticking` (Spool, 2005).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-01-9780123969811.jpg)
+
+Figure 6.1 Weak information scent in the job listings at UsabilityNews.
+
+What we need instead is information that allows us to make a more informed judgment regarding the suitability of each position: details such as location, remuneration, role description, and so on. A similar search on recruitment agency Reed offers all of these, along with associated tools and controls (Figure 6.2).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-02-9780123969811.jpg)
+
+Figure 6.2 More informative job listings at Reed.
+
+Of course, the corollary is that each item occupies more screen space, and thus fewer results can be shown `above the fold` (i.e., in the area that is visible without scrolling). This setup increases the likelihood that potentially valuable results will be overlooked, particularly if relevance appears to be weaker further down the list. An acute example can be found at electrical retailer Comet, where each individual result extends to over 300 pixels in height (Figure 6.3). Consequently, in many cases it is not possible to view more than two or three results at any one time. In practice, we need a balance that addresses the users’ characteristics (Chapter 1), their information seeking behavior (Chapter 2), and the broader search context (see Chapter 3).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-03-9780123969811.jpg)
+
+Figure 6.3 Highly detailed product listings at Comet.
+
+#### The anatomy of a search result
+The three major web search engines are remarkably consistent (Figure 6.4). By default, each displays the page title, the URL (in abbreviated form), and an informative summary of the content (known as a “snippet”).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-04-9780123969811.jpg)
+
+Figure 6.4 Commonality of design for the major web search engines.
+
+The order of the components is subtly different: Google displays the URL immediately below the title, perhaps reflecting its value to users in making trust and credibility judgments (Schwarz & Morris, 2011). But one feature they all share is the use of `query-oriented summaries`: snippets that show the query terms in context (Tombros & Sanderson, 1998). In addition, these summaries highlight the matching terms (using boldface), which has the effect of drawing attention to key fragments in the text and communicating how closely the query terms appear to one another (Marchionini, 1995). This is known to be a strong indicator of relevance (Muramatsu & Pratt, 2001).
+
+And for mobile, almost everything changes. First, it is important to keep the snippets short. But more important, we need results that reflect our spatial location (see Chapter 3). Here, maps become the natural medium for search results, placing each result in its geospatial context (Figure 6.5).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-05-9780123969811.jpg)
+
+Figure 6.5 Search results as map locations in the mobile context.
+
+But search results don’t have to be text at all. If our goal is to refind a previously known item, it may be quicker for us to view them as a set of thumbnails, flicking through them in sequence (Figure 6.6). When we know exactly what our target looks like, we can rely on recognition rather than recall to find it (see Chapter 5).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-06-9780123969811.jpg)
+
+Figure 6.6 Search results displayed as thumbnails on Google mobile web.
+
+By offering `deep links` to key pages within popular sites, the major web search engines invite us to skip home pages and navigate direct to content that would otherwise be buried deep within a site’s structure (Figure 6.7).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-07-9780123969811.jpg)
+
+Figure 6.7 Deep links in search results at Yahoo.
+
+#### Search result previews
+
+
 
 
 
