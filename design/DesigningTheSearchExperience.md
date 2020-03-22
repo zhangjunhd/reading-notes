@@ -86,6 +86,7 @@
       - [Investigate: analyze](#investigate-analyze)
     - [Mode Chains and Patterns](#mode-chains-and-patterns)
     - [Designing for Mode Chains](#designing-for-mode-chains)
+- [2.](#2)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -784,4 +785,30 @@ We can represent this grammar visually, as in Figure 4.14, which shows how the v
 Figure 4.14 A network of search modes.
 
 ### Designing for Mode Chains
+Our experience suggests both the existence of repeatable patterns in information seeking behavior and the potential to apply these patterns as a framework for the design of search experiences (Russell-Rose, Lamantia, & Burrell, 2011). The implications of such a grammar could be considered at three levels of abstraction:
+
+- A single functional element
+- A complete screen composed of multiple functional elements
+- An integrated application composed of multiple screens
+
+# 2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
