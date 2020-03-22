@@ -14,7 +14,30 @@
 
 ---
 
-
+- [I.Introducing Information Architecture](#iintroducing-information-architecture)
+  - [1.The Problems That Information Architecture Addresses](#1the-problems-that-information-architecture-addresses)
 
 # I.Introducing Information Architecture
+`Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
+
+## 1.The Problems That Information Architecture Addresses
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
