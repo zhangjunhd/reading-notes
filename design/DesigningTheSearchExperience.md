@@ -85,6 +85,7 @@
       - [Learn: explore](#learn-explore)
       - [Investigate: analyze](#investigate-analyze)
     - [Mode Chains and Patterns](#mode-chains-and-patterns)
+    - [Designing for Mode Chains](#designing-for-mode-chains)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -768,15 +769,19 @@ He now wishes to analyze some of the prior art associated with a particular tech
 Figure 4.13 Support for analysis at Newssift.com.
 
 ### Mode Chains and Patterns
+Five example mode chains from the domain of enterprise search are listed here, with an associated example scenario (Russell-Rose, Lamantia, & Burrell, 2011):
 
+1. Comparison-Driven Search (Analyze-Compare-Evaluate): “Replace a problematic part with an equivalent or better part without compromising quality and cost”
+2. Exploration-Driven Search (Explore-Analyze-Evaluate): “Identify opportunities to optimize use of tooling capacity for my commodity/parts”
+3. Strategic Insight (Analyze-Comprehend-Evaluate): “Understand a lead’s underlying positions so that I can assess the quality of the investment opportunity”
+4. Strategic Oversight (Monitor-Analyze-Evaluate): “Monitor and assess commodity status against strategy/target”
+5. Comparison-Driven Synthesis (Analyze-Compare-Synthesize): “Analyze and understand market trends to inform brand strategy and communications plan”
 
+We can represent this grammar visually, as in Figure 4.14, which shows how the various sequences combine to form a “mode network.”
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-14-9780123969811.jpg)
 
+Figure 4.14 A network of search modes.
 
-
-
-
-
-
-
+### Designing for Mode Chains
 
