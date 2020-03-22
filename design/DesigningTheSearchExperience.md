@@ -120,6 +120,7 @@
       - [Pagination](#pagination)
       - [Sorting and filtering](#sorting-and-filtering)
       - [Query clarification](#query-clarification)
+      - [Comparing](#comparing)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1281,14 +1282,19 @@ Figure 6.36 Button controls for sorting on the iPhone App Store.
 A more mainstream use of filtering is to allow users to refine their results by one or more independent dimensions or facets. This approach, known as `faceted search`, has become the dominant paradigm among online retail and many other commercial search applications.
 
 #### Query clarification
-There are a number of approaches to query clarification. One of the most common is to display the alternative interpretations in the form of matching categories and invite users to choose a more precise category for their information need.
+There are a number of approaches to query clarification. One of the most common is to display the alternative interpretations in the form of matching categories and invite users to choose a more precise category for their information need. Amazon, for example, does this is in a subtle manner. A query here for “mp3” returns several million results, including players, accessories, and content on the first page (along with best bets such as a promotion for the Amazon MP3 store and featured results for the Electronics Store). However, the primary navigation option in the left hand menu is a `category selector` (Figure 6.37). 
 
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-37-9780123969811.jpg)
 
 Figure 6.37 Query clarification by category selection at Amazon.
 
+A more conspicuous variant can be seen at electrical retailer Comet. As expected, an ambiguous query here such as “washer” returns a mixed set of results. However, this time the category selector is displayed much more prominently, directly above the search results (Figure 6.38).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-38-9780123969811.jpg)
 
+Figure 6.38 Prominent category selection at Amazon.
+
+#### Comparing
 
 
 
