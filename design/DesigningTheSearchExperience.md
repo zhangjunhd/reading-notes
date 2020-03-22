@@ -100,6 +100,8 @@
       - [Autocomplete](#autocomplete)
       - [Autosuggest](#autosuggest)
       - [Instant results](#instant-results)
+    - [Keeping on Track](#keeping-on-track)
+      - [Did you mean](#did-you-mean)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -930,5 +932,55 @@ A further technique to optimize the value of query suggestions is to display the
 Figure 5.24 Query suggestions are presented alongside recent searches in Safari on the iPad.
 
 #### Instant results
+Autocomplete and autosuggest are both valuable techniques to help us conceive and articulate more effective queries. They differ in approach but share the principle that as-you-type suggestions provide a shortcut from query to search results. But in some cases, it is possible to go even further by offering actual results rather than just query reformulations. For example, if we type the characters “ip” into the search box at Apple.com, six items appear (Figure 5.25). However, if we select one of these, it bypasses the search results page entirely and takes us directly to a product-specific landing page. Rather than suggesting alternative queries, the search box provides “instant results” in the form of a set of matching “best bets” for products and resources.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-25-9780123969811.jpg)
+
+Figure 5.25 Instant results at Apple.com.
+
+In Windows 7, for example, a keyword search invokes a panel of recommended results grouped into popular categories (Figure 5.26). We can either select one directly to open it, or choose the “See more results” option to open a regular search results page.
+
+Figure 5.26 Instant results in Windows 7 desktop search.
+
+Google provides its own type of “instant results,” which complement their autosuggest function to provide a highly responsive search experience. Instead of presenting a static page of results after each query, Google Instant updates the search results in real time as each character is entered. If we don’t see the results we want, we can just keep typing and watch the results update (Figure 5.27).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-27-9780123969811.jpg)
+
+Figure 5.27 Instant results when searching via Google.
+
+### Keeping on Track
+#### Did you mean
+One of the simplest is to use spell checking algorithms to compare queries against common spellings of each word. For example, Figure 5.28 shows the results on Google for the query “expolsion.” This isn’t necessarily a “failed” search (it does return results), but the more common spelling “explosion” would return a more productive result set.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-28-9780123969811.jpg)
+
+Figure 5.28 Potential spelling mistakes are addressed by a “Did you mean” suggestion at Google.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
