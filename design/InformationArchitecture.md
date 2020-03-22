@@ -16,44 +16,21 @@
 
 - [I.Introducing Information Architecture](#iintroducing-information-architecture)
   - [1.The Problems That Information Architecture Addresses](#1the-problems-that-information-architecture-addresses)
-    - [Hello, iTunes](#hello-itunes)
-    - [The Problems Information Architecture Addresses](#the-problems-information-architecture-addresses)
-      - [Enter Information Architecture](#enter-information-architecture)
+    - [Recap](#recap)
+  - [2.Defining Information Architecture](#2defining-information-architecture)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
 
 ## 1.The Problems That Information Architecture Addresses
-### Hello, iTunes
-![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0103.png)
+### Recap
+- Historically, information has shown a tendency to dematerialize, going from having a one-to-one relationship with its containers to being completely detached from its containers (as is the case with our digital information).
+- This has had two important effects in our time: information is more abundant than ever before, and we have more ways of interacting with it than ever before.
+- Information architecture is focused on making information findable and understandable. Because of this, it is uniquely well suited to address these issues.
+- It does this by asking the designer to think about problems through two important perspectives: that our products and services are perceived as places made of information, and that they function as ecosystems that can be designed for maximum effectiveness.
+- That said, information architecture doesn’t operate solely at the level of abstractions: for it to be effective, it needs to be defined at various levels.
 
-Figure 1-3. iTunes 1.0 browsing by Artist and Album (image: http://bit.ly/et_tu_itune)
-
-iTunes was not just where Mario listened to and organized his music anymore. Now it was where he went to:
-
-- Buy, rent, and watch movies
-- Buy, rent, and watch TV shows
-- Preview and buy music
-- Buy applications for his iPod
-- Search for and listen to podcasts
-- Browse and subscribe to “iTunes U” university courses
-- Listen to streaming radio stations
-- Listen to audiobooks
-- Browse and listen to music shared by others in his household
-
-Later, when Mario bought his first iPhone, he was surprised to discover that the functionality that he was used to having in iTunes on the Mac (music, movies, TV shows, podcasts, etc.) had now been “unbundled” into various apps, as shown in Figure 1-4.
-
-![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0104.png)
-
-Figure 1-4. iOS’s unbundled iTunes apps
-
-### The Problems Information Architecture Addresses
-Mario was experiencing two problems:
-
-- The tool he used to manage and navigate his simple library of 40 or so music albums had changed into one that dealt with hundreds of millions of different data objects of various types (songs, movies, TV shows, apps, podcasts, radio streams, university lectures, and more), each with different organization schemes, business rules (e.g., restrictions on which device he is allowed to play back his rented movie on within the next 24 hours), and ways of interacting with the information (e.g., viewing, subscribing, playing, transcoding, etc.).
-- The functions provided by this tool were no longer constrained to Mario’s computer; they are now available across multiple devices, including his iPhone, iPod, Apple TV, CarPlay, and Apple Watch. Each of these devices brings with it different constraints and possibilities that define what they can (and cannot) do with these information structures (e.g., “Siri, play ‘With a Little Help from My Friends’”), and Mario doesn’t experience them as a consistent, coherent interaction model.
-
-#### Enter Information Architecture
+## 2.Defining Information Architecture
 
 
 
