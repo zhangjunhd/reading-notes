@@ -86,7 +86,11 @@
       - [Investigate: analyze](#investigate-analyze)
     - [Mode Chains and Patterns](#mode-chains-and-patterns)
     - [Designing for Mode Chains](#designing-for-mode-chains)
-- [2.](#2)
+- [2.Design Solutions](#2design-solutions)
+  - [5.Formulating the Query](#5formulating-the-query)
+    - [Entering the Query](#entering-the-query)
+      - [The search box](#the-search-box)
+      - [Scoped search](#scoped-search)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -791,19 +795,38 @@ Our experience suggests both the existence of repeatable patterns in information
 - A complete screen composed of multiple functional elements
 - An integrated application composed of multiple screens
 
-# 2.
+# 2.Design Solutions
+## 5.Formulating the Query
+### Entering the Query
+#### The search box
+One of the fundamental concepts in human–computer interaction (HCI) is the notion of `affordance`: the idea that an object’s design should suggest the interactions that its `function` supports.
 
+Likewise, the design of the search box should follow its function. If its purpose is to allow the user to enter queries in the form of keywords, then it should look like it will accept textual input and have an associated button that clearly indicates its function, as in Figure 5.1. The examples in Figure 5.2, by contrast, are less functional. The search box should also be wide enough to avoid obscuring parts of the query: Jakob Nielsen suggests that a minimum of 27 characters is required to accommodate 90 percent of queries (Nielsen & Loranger 2006).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-01-9780123969811.jpg)
 
+Figure 5.1 A match between form and function at eBags.com.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-02-9780123969811.jpg)
 
+Figure 5.2 Less conventional search box designs.
 
+On the web, users can search for almost anything, with few constraints over topic or medium. By contrast, in site search (i.e., search of a specific website), the choices are usually much more restricted, which presents an opportunity to provide further support in the form of “placeholder” text and other prompts to help users construct meaningful queries.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-07-9780123969811.jpg)
 
+Figure 5.7 Pipl search box guides users toward meaningful queries.
 
+#### Scoped search
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-08-9780123969811.jpg)
 
+Figure 5.8 Search can be restricted to a specific category on eBay.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-09-9780123969811.jpg)
 
+Figure 5.9 Scoped search at classified advertisement site Craigslist.
+
+Users with high `domain expertise` (see Chapter 1) can therefore benefit greatly from scoped search, particularly if they are seeking known items.
 
 
 
