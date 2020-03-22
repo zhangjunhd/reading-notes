@@ -141,6 +141,7 @@
       - [Color pickers](#color-pickers)
       - [Tag clouds](#tag-clouds)
       - [Data visualizations](#data-visualizations)
+    - [Showing Additional Values](#showing-additional-values)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1487,19 +1488,19 @@ A somewhat different treatment can be found at PC Authority, which uses tag clou
 Figure 7.19 Tag clouds at PC Authority.
 
 #### Data visualizations
+Applications such as these are designed to `aggregate`, `organize`, and `summarize` data from numerous `quantitative` and `qualitative` sources by using data visualizations to communicate key metrics, patterns, and overall status. An example of such a visualization could be found at Newssift, in which pie charts were used to communicate the distribution of article sources and associated sentiment (Figure 7.20).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-20-9780123969811.jpg)
 
+Figure 7.20 Data visualizations at Newssift.
 
+Another use of data visualization in faceted search is to communicate patterns in geospatial data. An example of this can be found at WITS (the Worldwide Incidents Tracking System), which uses various forms of visualization to display terrorist incidents overlaid on a map of the world (Figure 7.21).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-21-9780123969811.jpg)
 
+Figure 7.21 Data visualization at WITS.
 
-
-
-
-
-
-
-
+### Showing Additional Values
 
 
 
