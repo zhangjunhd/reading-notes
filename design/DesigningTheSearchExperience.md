@@ -91,6 +91,12 @@
     - [Entering the Query](#entering-the-query)
       - [The search box](#the-search-box)
       - [Scoped search](#scoped-search)
+      - [Search within](#search-within)
+      - [Advanced search](#advanced-search)
+      - [Beyond keywords](#beyond-keywords)
+        - [Natural language](#natural-language)
+        - [Nontext queries](#nontext-queries)
+    - [Refining the Query](#refining-the-query)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -827,6 +833,68 @@ Figure 5.8 Search can be restricted to a specific category on eBay.
 Figure 5.9 Scoped search at classified advertisement site Craigslist.
 
 Users with high `domain expertise` (see Chapter 1) can therefore benefit greatly from scoped search, particularly if they are seeking known items.
+
+#### Search within
+By allowing users to search within an existing set of results, the query acts as a kind of refinement, narrowing down the results in a manner similar to that of faceted navigation (see Chapter 7).
+
+For this reason, search within is often presented as a dedicated search box within the faceted navigation menu (Figure 5.11).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-11-9780123969811.jpg)
+
+Figure 5.11 Search within is part of the faceted navigation menu at dabs.com.
+
+Alternatively, search within can be integrated with the standard search box, using a radio button or checkbox to toggle between the two different types of input (Figure 5.12).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-12-9780123969811.jpg)
+
+Figure 5.12 Search within is invoked using a checkbox at bulbs.com.
+
+#### Advanced search
+When `parametric` search was originally conceived, its interaction was based around the notion of selecting parameters on an extended form. In this context, it may have made sense to withhold some choices from the default view and present them instead as an advanced option (Figure 5.14).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-14-9780123969811.jpg)
+
+Figure 5.14 Advanced search form at WARC.
+
+#### Beyond keywords
+##### Natural language
+One of the most intuitive is to express the query as you would to another human being, that is, as a natural language question or request. This kind of interaction was popularized by search engines such as Ask (formerly Ask Jeeves), which uses a combination of text analytics and human moderation to produce a question-answering search experience (Figure 5.15).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-15-9780123969811.jpg)
+
+Figure 5.15 Natural language question answering at Ask.
+
+Wolfram Alpha uses NLP to answer factual queries by computing answers and relevant visualizations from a knowledge base of curated, structured data (Figure 5.16).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-16-9780123969811.jpg)
+
+Figure 5.16 Natural language question answering at Wolfram Alpha.
+
+##### Nontext queries
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-17-9780123969811.jpg)
+
+Figure 5.17 Search by example using images at Google.
+
+Each of these services represents a type of search known as `query by example`.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-18-9780123969811.jpg)
+
+Figure 5.18 Search by color at Etsy.
+
+### Refining the Query
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
