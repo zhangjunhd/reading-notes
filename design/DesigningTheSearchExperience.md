@@ -113,6 +113,8 @@
       - [Answers and shortcuts](#answers-and-shortcuts)
     - [Search Results Pages](#search-results-pages)
       - [Basic principles](#basic-principles-1)
+      - [Page layouts](#page-layouts)
+      - [Blended results](#blended-results)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1161,13 +1163,46 @@ A second, related principle is to maintain the context of the current search by 
 
 Figure 6.16 The iTunes app shows the number of matching results in context.
 
+Web search engine DuckDuckGo makes a virtue of this: a search for “apple,” for example, returns results for all the major senses in the first few results (Figure 6.17). Moreover, it also displays an explicit clarification panel, showing the alternative meanings and offering users the opportunity to clarify their intent. As we will see in Chapter 7, this is a pivotal point in the search experience, when users are invited to explore the subtleties of their information need, and engage in a dialogue that allows them to build their own mental map of the information landscape.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-17-9780123969811.jpg)
 
+Figure 6.17 Clarifying our information need at DuckDuckGo.
 
+Amazon uses this concept to good effect, presenting several alternative interpretations on the first page for an ambiguous query such as “washer” (Figure 6.18).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-18-9780123969811.jpg)
 
+Figure 6.18 Diversity of search results at Amazon.
 
+#### Page layouts
+In fact, in some environments, it makes more sense to allow users to browse products visually, laying out the results in a two-dimensional grid. This type of `“gallery”` layout is commonly seen in online retail, with each result displayed in a more concise, pictorial form facilitating rapid visual scanning (Figure 6.19). This type of view supports the search modes of exploring and locating that were discussed in Chapter 4.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-19-9780123969811.jpg)
+
+Figure 6.19 Gallery view at eBay.
+
+The ideal layout will depend on the particular result set: those items for which appearance is important (e.g., cars, clothing) are naturally suited to a visually oriented layout, whereas others (e.g., computers, electrical goods) may be better suited to a detail-oriented layout. For this reason, it is common to see a control allowing users to switch between views (see top left of Figure 6.19).
+
+Although list and gallery view are popular configurations, they are by no means the only options. Complex products such as electrical components may be more meaningfully viewed using a display that exposes the full detail of their specification, allowing rapid scanning and comparison of their individual attributes (Figure 6.20). This type of view supports key search modes such as analyzing and comparing (see Chapter 4).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-20-9780123969811.jpg)
+
+Figure 6.20 Parametric view at RS Components.
+
+In some search contexts, the results may have a geospatial element to them. In this case, the most natural layout is to present them as a two-dimensional map.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-21-9780123969811.jpg)
+
+Figure 6.21 Search results are shown in map view on Google mobile.
+
+Carrot2 takes the concept further still, offering a choice of visualizations (Figure 6.22). This approach allows users to gain an impression of the overall themes within the results and explore similar results together within a single group.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-22-9780123969811.jpg)
+
+Figure 6.22 Search results are clustered by topic at Carrot2.
+
+#### Blended results
 
 
 
