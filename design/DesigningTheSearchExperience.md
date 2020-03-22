@@ -97,6 +97,9 @@
         - [Natural language](#natural-language)
         - [Nontext queries](#nontext-queries)
     - [Refining the Query](#refining-the-query)
+      - [Autocomplete](#autocomplete)
+      - [Autosuggest](#autosuggest)
+      - [Instant results](#instant-results)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -882,24 +885,50 @@ Each of these services represents a type of search known as `query by example`.
 Figure 5.18 Search by color at Etsy.
 
 ### Refining the Query
+#### Autocomplete
+One of the key principles in human–computer interaction is `recognition over recall`: the notion that people are better at recognizing things they have previously experienced than they are at recalling them from memory. 
 
+Autocomplete transforms a recall problem into one of recognition.
 
+The UK’s National Rail website in Figure 5.19, for example, recalls the railway stations that match a handful of characters.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-19-9780123969811.jpg)
 
+Figure 5.19 Autocomplete at the UK National Rail Enquiries website.
 
+Autocomplete does its best to remain unobtrusive: we can still enter a query in full if we choose. But by selecting the completions, we save time and keystrokes. Moreover, they help us avoid spelling mistakes. On smartphones and tablets, autocomplete is applied to all manner of applications from text messaging to email (Figure 5.20).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-20-9780123969811.jpg)
 
+Figure 5.20 Autocomplete is used for SMS and email on the iPhone.
 
+Autocomplete makes the most sense when the choices are based on a `controlled vocabulary`—that is, a finite list of items, such as a directory of names, locations, organizations, and so on.
 
+#### Autosuggest
+The purpose of autocomplete is to search within a controlled vocabulary for entries matching a partial character string. By contrast, the purpose of autosuggest is to search within a virtually unbounded list for related keywords and phrases (which need not match the exact query string). Autocomplete helps us get an idea out of our head and into the search box; autosuggest actually throws new ideas into the mix. In this respect, autosuggest operates at a more conceptual level, offering choices where the relationship to the query may go beyond simple string matching. Both techniques save keystrokes and help us avoid spelling mistakes, but autosuggest can also help us construct a more useful query than we might otherwise have thought of on our own. eBay, for example, provides a variety of different suggestions related to the query “guitar,” highlighting the matching terms in blue (Figure 5.21).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-21-9780123969811.jpg)
 
+Figure 5.21 Autosuggest at eBay.
 
+Home Depot, for example, provides a particularly extensive autosuggest function, consisting of product categories, buying guides, project guides, and more (Figure 5.22). Not only do these suggestions facilitate known-item search, but they also support exploratory search behavior, encouraging the user to discover new product ideas and specialist content.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-22-9780123969811.jpg)
 
+Figure 5.22 Autosuggest supports known-item and exploratory search at Home Depot.
 
+In contrast to eBay, Yahoo emphasizes the ways in which the query may be extended by highlighting the `nonmatching terms` (Figure 5.23).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-23-9780123969811.jpg)
 
+Figure 5.23 Autosuggest offers query refinements and content suggestions at Yahoo.
 
+A further technique to optimize the value of query suggestions is to display them in the context of recent searches. One approach, which Safari utilizes, is to simply present two adjacent groups: one for query suggestions and another for the browser’s search history (Figure 5.24).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-24-9780123969811.jpg)
+
+Figure 5.24 Query suggestions are presented alongside recent searches in Safari on the iPad.
+
+#### Instant results
 
 
