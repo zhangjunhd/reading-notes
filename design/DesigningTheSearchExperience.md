@@ -102,6 +102,9 @@
       - [Instant results](#instant-results)
     - [Keeping on Track](#keeping-on-track)
       - [Did you mean](#did-you-mean)
+      - [Autocorrect](#autocorrect)
+      - [Partial matches](#partial-matches)
+      - [Related searches](#related-searches)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -956,11 +959,72 @@ One of the simplest is to use spell checking algorithms to compare queries again
 
 Figure 5.28 Potential spelling mistakes are addressed by a “Did you mean” suggestion at Google.
 
+Amazon and eBay both conservatively apply “did you mean” to queries such as “guitr,” faithfully passing on the results for this query but offering the alternative as a highlighted suggestion immediately above the search results (Figures 5.29 and 5.30). And in Amazon’s case, the results for the corrected spelling are appended immediately below those of the original query.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-29-9780123969811.jpg)
 
+Figure 5.29 “Did you mean” at Amazon.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-30-9780123969811.jpg)
 
+Figure 5.30 “Did you mean” at eBay.
 
+#### Autocorrect
+However, there are times when it is possible to be more certain that a spelling mistake has occurred.
+
+For example, consider a query for “expolson” on Google: this time, instead of applying a “did you mean,” it is autocorrected to “explosion” (Figure 5.31). As before, a message appears above the results (“Showing results for”), but this time the choice has been made for them.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-31-9780123969811.jpg)
+
+Figure 5.31 Autocorrect at Google.
+
+#### Partial matches
+Amazon provides a particularly effective implementation of this strategy. For example, a keyword search for “fender strat maple 1976 USA” finds no matching results. However, rather than returning a zero results page, Amazon returns a number of partial matches based on various keyword permutations (Figure 5.33). Moreover, by communicating the nonmatching elements of the query (using strikethrough text), it gently guides us along the path to more informed query reformulation.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-33-9780123969811.jpg)
+
+Figure 5.33 Partial matches at Amazon.
+
+A similar strategy can be seen at eBay, which also finds no results for the same query we tried on Amazon. Instead of a zero results page, we see a list of the partial matches with an invitation to select one of them (or to “try the search again with fewer keywords”). These are ordered using what’s known as quorum-level ranking (Salton, 1989), which sorts results according to the number of matching keywords (Figure 5.34). Thus products matching four keywords (such as “fender strat maple USA”) are ranked above those containing three or fewer (such as “fender strat USA”).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-34-9780123969811.jpg)
+
+Figure 5.34 Partial matches using quorum-level ranking at eBay.
+
+#### Related searches
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-35-9780123969811.jpg)
+
+Figure 5.35 Related searches at Bing.
+
+Google, by contrast, shows them on demand (via a link in the sidebar) as a panel above the main search results (Figure 5.36). 
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-36-9780123969811.jpg)
+
+Figure 5.36 Related searches at Google.
+
+Apart from providing inspiration, related searches can be used to help clarify an ambiguous query (see Chapter 7 for the significance of this within faceted search). For example, query on Bing for “apple” returns results associated mainly with the computer manufacturer, but the related searches clearly indicate a number of other interpretations (Figure 5.37).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-37-9780123969811.jpg)
+
+Figure 5.37 Query disambiguation via related searches at Bing.
+
+Related searches can also be used to articulate associated concepts in a taxonomy. At eBay, for example, a query for “acoustic guitar” returns a number of related searches at varying levels of specificity. These include subordinate (child) concepts, such as “yamaha acoustic guitar” and “fender acoustic guitar,” along with sibling concepts such as “electric guitar,” and superordinate (parent) concepts such as “guitar.” These taxonomic signposts offer a subtle form of guidance, helping us understand better the conceptual space in which our query belongs (Figure 5.38).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-38-9780123969811.jpg)
+
+Figure 5.38 Taxonomic signposting via related searches at eBay.
+
+Sometimes it is the results themselves that provide the stimulus. When we find a particularly good match for our information need, we try to find more of the same: a process that Peter Morville refers to as “pearl growing” (Morville, 2010). Google’s image search, for example, offers us the opportunity to find images similar to a particular result (Figure 5.39).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-39-9780123969811.jpg)
+
+Figure 5.39 Find similar images at Google.
+
+Recommender systems such as Last.fm and Netflix rely heavily on attributes, ratings, and collaborative filtering data to suggest content we’re likely to enjoy. And from just a single item in our music collection, iTunes Genius can recommend many more for us to listen to as part of a playlist (Figure 5.40).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-40-9780123969811.jpg)
+
+Figure 5.40 Genius playlist creates “more like this” from a single item.
 
 
 
