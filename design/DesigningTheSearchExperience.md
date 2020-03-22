@@ -80,6 +80,8 @@
       - [Aggregate information](#aggregate-information)
   - [4.Modes of Search and Discovery](#4modes-of-search-and-discovery)
     - [Search Modes and Frameworks](#search-modes-and-frameworks)
+    - [Designing for Search Modes](#designing-for-search-modes)
+      - [Lookup: verify](#lookup-verify)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -669,24 +671,36 @@ Joe Lamantia, for example, analyzed the behaviors of subscribers to a complex fi
 Donna Spencer undertook a similar analysis (Spencer, 2006), inspired by the observation that the traditional information science framing of known item versus exploratory search did not adequately account for the behaviors she was witnessing in her work on designing intranets and complex websites. She observed that in many practical situations, “people didn’t necessarily know what they needed to know” and that much of the search behavior she was observing was actually concerned with trying to refind resources that had previously been discovered. From this observation, she proposed the following set of four search modes:
 
 1. Known item: in which users know what they want, how to articulate it, and where to look
+2. Exploratory: in which users have some idea of what they want, but not necessarily how to articulate it or where to look
+3. Don’t know what you need to know: in which users may start with one particular goal in mind, but need to replace it with another if and when they discover some key insight
+4. Refinding: in which users know what they want when they see it, but not necessarily how to articulate it or where to look
 
+Item 3 suggests an intriguing possibility, encapsulating the activities and outcomes associated with the elusive quality we commonly refer to as `serendipity`.
 
+In particular, we have studied user scenarios gathered during the development of numerous search and business intelligence applications (Russell-Rose, Lamantia, and Burrell, 2011), and from this derived a set of nine search modes.
 
+These modes are shown in the following list, grouped according to the three top-level categories proposed by Marchionini (2006):
 
+- Lookup
+  - 1 Locate: To find a specific (possibly known) item
+  - 2 Verify: To confirm that an item meets some specific, objective criterion
+  - 3 Monitor: To maintain awareness of the status of an item for the purposes of management or control
+- Learn
+  - 4 Compare: To examine two or more items to identify similarities and differences
+  - 5 Comprehend: To generate independent insight by interpreting patterns within a data set
+  - 6 Explore: To investigate an item or data set for the purpose of knowledge discovery
+- Investigate
+  - 7 Analyze: To examine an item or data set to identify patterns and relationships
+  - 8 Evaluate: To use judgement to determine the value of an item with respect to a specific goal
+  - 9 Synthesize: To create a novel or composite artefact from diverse inputs
 
+### Designing for Search Modes
+#### Lookup: verify
+In this mode, the user is inspecting a particular item and wishing to confirm that it meets some specific criterion. Google’s image results page provides a good example of this mode (Figure 4.3).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-03-9780123969811.jpg)
 
-
-
-
-
-
-
-
-
-
-
-
+Figure 4.3 Google’s image results page supports verification of a specific item.
 
 
 
