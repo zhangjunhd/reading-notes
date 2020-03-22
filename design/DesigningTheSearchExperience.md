@@ -111,6 +111,7 @@
       - [The anatomy of a search result](#the-anatomy-of-a-search-result)
       - [Search result previews](#search-result-previews)
       - [Answers and shortcuts](#answers-and-shortcuts)
+    - [Search Results Pages](#search-results-pages)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1090,18 +1091,37 @@ Figure 6.8 Search result previews at Bing.
 In providing a convenient, lightweight method for verifying individual items, previews offer direct support for one of the key search modes discussed in Chapter 3.
 
 #### Answers and shortcuts
+Google, for example, allows us to ask direct questions in a variety of forms. When it recognizes the presence of certain trigger words, it responds with weather forecasts, stock quotes, maps, and sports scores (Figure 6.9). We can even track parcels, convert currencies and ask it to perform all manner of numeric calculations and conversions. In this context, the boundary between search and question answering becomes blurred, with the search box presenting a command-line style of interface to those who can exploit its power and flexibility (Morville, 2010).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-09-9780123969811.jpg)
 
+Figure 6.9 Direct answers for focused information needs at Google.
 
+Wolfram Alpha extends the concept further still. With graphs, charts, tables, and visualizations all within its repertoire, it chooses the right format for our specific information needs (Figure 6.10). This type of interaction extends the concept of search beyond findability and into a new territory of computational knowledge and inference.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-10-9780123969811.jpg)
 
+Figure 6.10 Beyond traditional search results at Wolfram Alpha.
 
+At Google, for example, we can recommend a particular result and share it with colleagues by using the “+1” button (Figure 6.11).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-11-9780123969811.jpg)
 
+Figure 6.11 Recommending a search result at Google.
 
+At the BBC, we can play video and audio clips with a single click (Figure 6.12).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-12-9780123969811.jpg)
 
+Figure 6.12 Content can be played directly from the results page at BBC.
 
+Similarly, on iPad and iPhone, we can use Spotlight to search across all our data (Figure 6.13). But the results are more than just placeholders for files: they are `actionable objects`, offering a direct invitation to play content, make phone calls, or launch applications. In this respect, actionable results provide a bridge to the broader task context of search, helping us progress from finding information to completing goals.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-13-9780123969811.jpg)
+
+Figure 6.13 Spotlight search provides actionable objects as results.
+
+### Search Results Pages
 
 
 
