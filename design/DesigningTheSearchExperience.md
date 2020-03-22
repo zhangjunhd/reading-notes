@@ -110,6 +110,7 @@
       - [Basic principles](#basic-principles)
       - [The anatomy of a search result](#the-anatomy-of-a-search-result)
       - [Search result previews](#search-result-previews)
+      - [Answers and shortcuts](#answers-and-shortcuts)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1080,15 +1081,15 @@ By offering `deep links` to key pages within popular sites, the major web search
 Figure 6.7 Deep links in search results at Yahoo.
 
 #### Search result previews
+`Previews` allow us to see the detail of an individual item within the context of the search results page.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-08-9780123969811.jpg)
 
+Figure 6.8 Search result previews at Bing.
 
+In providing a convenient, lightweight method for verifying individual items, previews offer direct support for one of the key search modes discussed in Chapter 3.
 
-
-
-
-
-
+#### Answers and shortcuts
 
 
 
