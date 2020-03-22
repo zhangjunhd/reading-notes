@@ -82,6 +82,8 @@
     - [Search Modes and Frameworks](#search-modes-and-frameworks)
     - [Designing for Search Modes](#designing-for-search-modes)
       - [Lookup: verify](#lookup-verify)
+      - [Learn: explore](#learn-explore)
+      - [Investigate: analyze](#investigate-analyze)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -702,14 +704,56 @@ In this mode, the user is inspecting a particular item and wishing to confirm th
 
 Figure 4.3 Google’s image results page supports verification of a specific item.
 
+On mouse hover, the image is zoomed in to show a magnified version along with key metadata, such as filename, image size, caption, and source, which allows the user to verify the suitability of a specific result and either retrieve it there and then or rapidly switch to alternatives.
 
+A similar example is provided by Netflix (Figure 4.4), which also supports a mouse rollover interaction on its result page. In this case, a dialog overlay is used to verify the film’s title and provide further key metadata in the form of a summary, credits, rating, and so on.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-04-9780123969811.jpg)
 
+Figure 4.4 Netflix’s results page supports verification of specific film choices.
 
+Alternatively, there may be cases in which the user needs to verify specific queries rather than search results. With its real-time feedback after every key press, Google Instant provides verification of the interpretation of the current query and the results that will be returned (Figure 4.5).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-05-9780123969811.jpg)
 
+Figure 4.5 Google Instant provides support for verification of queries and results.
 
+#### Learn: explore
+A key part of exploring is **being able to distinguish between where you are going and where you have already been**.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-06-9780123969811.jpg)
+
+Figure 4.6 Differentiating between visited and unvisited links aids exploration.
+
+Amazon takes support for exploration a step further, through the use of components specifically designed to provide information regarding the user’s current location and previous navigational history. These include a Recent History panel, which shows the items recently viewed by the user (Figure 4.7) and a Recent Searches panel, in which the user can view or invoke any the queries previously issued in the current session (Figure 4.8). Along with the wishlist functionality, these components provide support for the “refinding” behavior identified by Donna Spencer.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-07-9780123969811.jpg)
+
+Figure 4.7 Amazon supports exploration by showing recently viewed items.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-08-9780123969811.jpg)
+
+Figure 4.8 Amazon supports exploration by showing recent searches.
+
+Another simple technique for encouraging exploration is through the use of “see also” panels. An example of this usage can be seen at Food Network, where a query for “ice cream” returns featured videos and products from the Food Network store alongside the primary search results (Figure 4.9).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-09-9780123969811.jpg)
+
+Figure 4.9 “See Also” panels support serendipitous browsing and exploration.
+
+Beyond the page level, there is a further approach we can apply: changing the search paradigm itself. Consider the library site illustrated in Figure 4.10: it uses a `parametric` interface in which users are invited to enter values for each of the attributes in the dropdown menus, then click the search button.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-10-9780123969811.jpg)
+
+Figure 4.10 Parametric search inhibits exploration.
+
+Consider the library site shown in Figure 4.11. In this instance, they have adopted a `faceted` approach, in which the attributes are not hidden behind dropdown menus but displayed as links in a navigational menu. This approach enables users to intuitively explore by progressively refining their choices in each dimension.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-11-9780123969811.jpg)
+
+Figure 4.11 Faceted search facilitates exploration.
+
+#### Investigate: analyze
 
 
 
