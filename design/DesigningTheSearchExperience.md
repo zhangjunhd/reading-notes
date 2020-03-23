@@ -142,6 +142,8 @@
       - [Tag clouds](#tag-clouds)
       - [Data visualizations](#data-visualizations)
     - [Showing Additional Values](#showing-additional-values)
+      - [Displaying all values by default](#displaying-all-values-by-default)
+      - [Extensible containers](#extensible-containers)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1501,6 +1503,29 @@ Another use of data visualization in faceted search is to communicate patterns i
 Figure 7.21 Data visualization at WITS.
 
 ### Showing Additional Values
+#### Displaying all values by default
+One such example can be found at Carzone, which by default displays facets in a vertical configuration using `scrollable containers` for lists of facet values such as Makes & Models (Figure 7.22).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-22-9780123969811.jpg)
+
+Figure 7.22 Scrollable containers for lists of facet values at Carzone.
+
+A variation on this approach can be seen at Farnell, which displays facets in a horizontal configuration. This arrangement applies the scalability principle along both axes: the facets themselves are displayed within a `horizontal scrollable panel` and the values within each of the facets are displayed within `vertically scrollable containers` (Figure 7.23).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-23-9780123969811.jpg)
+
+Figure 7.23 Scrollable containers for lists of facet values at Farnell.
+
+#### Extensible containers
+One method is to present an option to expand the facet inline, that is, to extend its size to accommodate a larger set of values. An example of this approach can be found at the NCSU Libraries site, which displays the top 5 values by default, but extends this to the top 30 when the “Show More” link is selected (as illustrated by the Subject facet in Figure 7.24).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-24-9780123969811.jpg)
+
+Figure 7.24 Extensible containers for showing additional facet values at NCSU Libraries.
+
+One flaw in this particular execution is that there is no option to show `fewer` values once a facet is expanded except by closing it completely.
+
+
 
 
 
