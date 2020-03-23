@@ -19,6 +19,8 @@
     - [Recap](#recap)
   - [2.Defining Information Architecture](#2defining-information-architecture)
     - [Definitions](#definitions)
+    - [Toward a Damned Good Information Architecture](#toward-a-damned-good-information-architecture)
+  - [3.Design for Finding](#3design-for-finding)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -33,16 +35,19 @@
 
 ## 2.Defining Information Architecture
 ### Definitions
+Let’s start by clarifying what we mean by information architecture:
 
+1. The structural design of shared information environments
+2. The synthesis of organization, labeling, search, and navigation systems within digital, physical, and cross-channel ecosystems
+3. The art and science of shaping information products and experiences to support usability, findability, and understanding
+4. An emerging discipline and community of practice focused on bringing principles of design and architecture to the digital landscape
 
+### Toward a Damned Good Information Architecture
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0206.png)
 
+Figure 2-6. The infamous three circles of information architecture
 
-
-
-
-
-
-
+## 3.Design for Finding
 
 
 
