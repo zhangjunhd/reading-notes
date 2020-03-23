@@ -144,6 +144,9 @@
     - [Showing Additional Values](#showing-additional-values)
       - [Displaying all values by default](#displaying-all-values-by-default)
       - [Extensible containers](#extensible-containers)
+      - [Separate containers](#separate-containers)
+      - [Hybrid approaches](#hybrid-approaches)
+    - [Communicating the Navigational State](#communicating-the-navigational-state)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1525,16 +1528,51 @@ Figure 7.24 Extensible containers for showing additional facet values at NCSU Li
 
 One flaw in this particular execution is that there is no option to show `fewer` values once a facet is expanded except by closing it completely.
 
+A second variant can be seen at Hoovers, whose option to see more values results in a `vertical scroll bar` appearing within each facet (as illustrated by the Location and Employees facets in Figure 7.25).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-25-9780123969811.jpg)
 
+Figure 7.25 Extensible containers for showing additional facet values at Hoovers.
 
+#### Separate containers
+Perhaps the most lightweight variation on this approach is to use an overlay to display the full set of facet values adjacent to the original set. Artist Rising’s “More Choices” link, for instance, displays the remaining facet values as an extended list, preserving the original sort order (Figure 7.26).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-26-9780123969811.jpg)
 
+Figure 7.26 A separate container for showing additional facet values at Artist Rising.
 
+A variation on this approach can be seen at the Food Network, which shows a maximum of three values by default, with an option to view more. This approach uses also an overlay, but instead of displaying just the additional values, it displays the entire list sorted alphabetically (Figure 7.27).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-27-9780123969811.jpg)
 
+Figure 7.27 A separate container for showing additional facet values at the Food Network.
 
+A somewhat heavier approach is to use a modal overlay to display the full set of facet values. An example of this design can be seen at eBay, which uses the overlay to present the complete list of values for each facet in its own pane (Figure 7.28). 
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-28-9780123969811.jpg)
+
+Figure 7.28 A separate container for showing additional facet values at eBay.
+
+A more disruptive approach is to present the list of values on a separate page, which is the approach adopted by Amazon on certain sections of their site such as footwear. This shows the use of multi-select facets, with options to “See More” for both Brand and Seller (Figure 7.29).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-29-9780123969811.jpg)
+
+Figure 7.29 Options to see additional facet values at Amazon.
+
+Selecting “See More” for Brands loads a new page displaying the entire set of values for that facet (Figure 7.30).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-30-9780123969811.jpg)
+
+Figure 7.30 A separate page for showing additional facet values at Amazon.
+
+#### Hybrid approaches
+These approaches allow the user to `browse` a longer list of values to make further selections. However, there is an alternative approach that allows the user to `search` for specific values rather than browse. An example of this design can be seen at LinkedIn in Figure 7.31.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-31-9780123969811.jpg)
+
+Figure 7.31 Support for both search and browse of facet values at LinkedIn.
+
+### Communicating the Navigational State
 
 
 
