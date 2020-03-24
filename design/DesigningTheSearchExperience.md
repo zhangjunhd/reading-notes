@@ -147,6 +147,10 @@
       - [Separate containers](#separate-containers)
       - [Hybrid approaches](#hybrid-approaches)
     - [Communicating the Navigational State](#communicating-the-navigational-state)
+      - [Inline breadcrumbs](#inline-breadcrumbs)
+      - [Breadboxes](#breadboxes)
+    - [Interaction Patterns](#interaction-patterns)
+      - [Interaction models](#interaction-models)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1573,6 +1577,73 @@ These approaches allow the user to `browse` a longer list of values to make furt
 Figure 7.31 Support for both search and browse of facet values at LinkedIn.
 
 ### Communicating the Navigational State
+One of the simplest techniques by which navigational state is communicated is through the use of `breadcrumbs`.
+
+#### Inline breadcrumbs
+Perhaps the simplest example of such a mechanism is the use of multiple `inline breadcrumbs`, as shown on Amazon (Figure 7.32). Looking closely at the faceted navigation menus, we can see that each contains the current selection (e.g., Format = paperback, language = English) and the means by which the user may remove the current selection for any given facet (e.g., Any Format, Any Language). Note the use of boldface to indicate the currently selected facet value, the use of indentation to indicate hierarchy, and the use of chevrons to imply going “back” to a previous state.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-32-9780123969811.jpg)
+
+Figure 7.32 Inline breadcrumbs at Amazon.
+
+An extension to the above approach is to maintain the principle of displaying current facet selections inline (i.e., within the facet menu itself), but allow the facet values to be multi-selectable. An example of this can be seen at eBay (Figure 7.33). In this example, we can select multiple models (e.g., Golf OR Jetta) and multiple model years (2009 OR 2008 OR 2007) and these choices are displayed inline as selected `checkboxes`.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-33-9780123969811.jpg)
+
+Figure 7.33 Inline breadcrumbs at eBay.
+
+#### Breadboxes
+The fundamental principle of the previous examples is that they display the selected refinements within the facets themselves. An alternative, however, is to display all currently selected facet values in their own dedicated container. In the context of faceted search, this container is often referred to as a `breadbox`. An example of the breadbox can be seen in the box labeled “Your Selections” at the Food Network (Figure 7.34).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-34-9780123969811.jpg)
+
+Figure 7.34 Simple breadbox at the Food Network.
+
+In the example from University of Toronto Libraries, we see a similar navigational state laid out in a horizontal arrangement (Figure 7.36).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-36-9780123969811.jpg)
+
+Figure 7.36 Horizontal breadbox at University of Toronto Libraries.
+
+### Interaction Patterns
+#### Interaction models
+There are of course circumstances under which an empty result set can become unavoidable, such as the use of `search within` (see Chapter 5). However, one of the strengths of faceted search is the support for flexible query modification, which reduces the need for extensive keyword reformulation (English et al., 2002).
+
+In the example from computer manufacturer Dell (Figure 7.37), we can see that there are seven laptop products that match the specification Screen=“small” AND price=£400–800. At this point, users can widen their search to include other screen sizes, such as Standard, Large, or other price ranges, such as Up to £400. Like the earlier Monster.com example, this design uses smart dead ends to communicate values that would have been available had the initial selections not been made, that is, the other Processor options (shown here in pale gray).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-37-9780123969811.jpg)
+
+Figure 7.37 Faceted search at Dell.
+
+Another such example is the travel site Kayak, which combines traditional facet selection options in the form of categorical values (rendered using hyperlinks and check boxes) with quantitative values that are rendered using sliders (Figure 7.38).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-38-9780123969811.jpg)
+
+Figure 7.38 “Instant update” interaction model at Kayak.
+
+In Figure 7.39, computer equipment supplier CDW allows the users to cherry-pick multiple facet values in a single iteration and then submit them en masse via the View Results button.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-39-9780123969811.jpg)
+
+Figure 7.39 Two-stage facet selection at CDW.
+
+Indeed, it is possible to offer both approaches and let users decide which they prefer. Electronic component distributor Farnell does exactly this, offering a checkbox to “Auto Apply filters to update results dynamically,” which applies the instant update model to the facets, and a “Show Results” button to refresh the results pane with the currently selected values (Figure 7.41).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000070f07-41-9780123969811.jpg)
+
+Figure 7.41 User-selectable interaction model at Farnell.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
