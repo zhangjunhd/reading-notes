@@ -31,6 +31,7 @@
       - [From five senses to three modalities](#from-five-senses-to-three-modalities)
       - [Dual coding theory](#dual-coding-theory)
       - [Designing with overviews and previews](#designing-with-overviews-and-previews)
+    - [Summary](#summary)
   - [2.Information Seeking](#2information-seeking)
     - [Models of Information Seeking](#models-of-information-seeking)
       - [The classic model](#the-classic-model)
@@ -60,6 +61,7 @@
         - [Open-ended exploration](#open-ended-exploration)
         - [Information management](#information-management)
         - [Monitoring](#monitoring)
+    - [Summary](#summary-1)
   - [3.Context](#3context)
     - [A Framework for Context](#a-framework-for-context)
     - [A Context-Based Model of Search](#a-context-based-model-of-search)
@@ -78,6 +80,7 @@
       - [Content frameworks](#content-frameworks)
       - [Unstructured information](#unstructured-information)
       - [Aggregate information](#aggregate-information)
+    - [Summary](#summary-2)
   - [4.Modes of Search and Discovery](#4modes-of-search-and-discovery)
     - [Search Modes and Frameworks](#search-modes-and-frameworks)
     - [Designing for Search Modes](#designing-for-search-modes)
@@ -86,6 +89,7 @@
       - [Investigate: analyze](#investigate-analyze)
     - [Mode Chains and Patterns](#mode-chains-and-patterns)
     - [Designing for Mode Chains](#designing-for-mode-chains)
+    - [Summary](#summary-3)
 - [2.Design Solutions](#2design-solutions)
   - [5.Formulating the Query](#5formulating-the-query)
     - [Entering the Query](#entering-the-query)
@@ -105,6 +109,12 @@
       - [Autocorrect](#autocorrect)
       - [Partial matches](#partial-matches)
       - [Related searches](#related-searches)
+    - [Summary and Best Practices](#summary-and-best-practices)
+      - [The Search Box](#the-search-box-1)
+      - [Scoped Search](#scoped-search-1)
+      - [Search Within](#search-within-1)
+      - [Advanced Search](#advanced-search-1)
+      - [Beyond Keywords](#beyond-keywords-1)
   - [6.Displaying and Manipulating Results](#6displaying-and-manipulating-results)
     - [Displaying Search Results](#displaying-search-results)
       - [Basic principles](#basic-principles)
@@ -121,6 +131,15 @@
       - [Sorting and filtering](#sorting-and-filtering)
       - [Query clarification](#query-clarification)
       - [Comparing](#comparing)
+    - [Summary and Best Practices](#summary-and-best-practices-1)
+      - [Displaying search results](#displaying-search-results-1)
+      - [Search results pages](#search-results-pages-1)
+      - [Blended results](#blended-results-1)
+      - [Zero results pages](#zero-results-pages-1)
+      - [Pagination](#pagination-1)
+      - [Sorting and filtering](#sorting-and-filtering-1)
+      - [Query clarification](#query-clarification-1)
+      - [Comparing](#comparing-1)
   - [7.Faceted Search](#7faceted-search)
     - [Definitions](#definitions)
       - [Facet semantics](#facet-semantics)
@@ -151,6 +170,14 @@
       - [Breadboxes](#breadboxes)
     - [Interaction Patterns](#interaction-patterns)
       - [Interaction models](#interaction-models)
+    - [Summary and Best Practices](#summary-and-best-practices-2)
+      - [Definitions](#definitions-1)
+      - [Layout and State](#layout-and-state)
+      - [Display Formats](#display-formats-1)
+      - [Showing Additional Values](#showing-additional-values-1)
+      - [Communicating the Navigational State](#communicating-the-navigational-state-1)
+      - [Interaction Patterns](#interaction-patterns-1)
+  - [8.Mobile Search](#8mobile-search)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -330,6 +357,9 @@ Larger previews, rather than help the user quickly skim the results, gives the u
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F00001Xf01-18-9780123969811.jpg)
 
 Figure 1.18 Apple’s Spotlight search shows document previews as the user interacts with the search results.
+
+### Summary
+The domain and technical dimensions of expertise, combined with the serial–holistic and verbal–visual dimensions of cognitive style—though certainly not an exhaustive list of individual differences—do unequivocally demonstrate the true multiplicity of users, even at a purely psychological level. As designers, this rich cognitive diversity reminds us once again that we must go out of our way to identify our users, understand them, and design to meet their needs.
 
 ## 2.Information Seeking
 Mankind is an endless pursuer of knowledge.
@@ -536,6 +566,9 @@ Applications can facilitate monitoring in two ways: on demand or automatically. 
 
 Figure 2.19 eBay allows users to save searches and, by checking a box, to be notified by email when new items are added.
 
+### Summary
+Information seeking is, as we described it at the beginning of the chapter, the journey between the surfacing of an information need and its fulfillment. But it is also an iterative, dynamic activity in which what we find changes what we seek; it is a long-term process spread across distinct stages, each with unique tasks and corresponding emotions. Information foraging keeps the journey moving in the right direction; sensemaking helps us understand what we find along the way.
+
 ## 3.Context
 ### A Framework for Context
 Context can also be defined in terms of its constituent parts. Myrhaug and Goker (2003), for instance, propose a framework of five key components:
@@ -696,6 +729,13 @@ However, not all attributes are created equal: some are more suited to the displ
 
 Figure 3.18 The accuracy of quantitative perception for various preattentive attributes.
 
+### Summary
+Search is a conversation: a dialogue between user and system that can be every bit as rich as human conversation. And like human dialogue, search works best when the exchange is based on a shared understanding of the context.
+
+A key element of that is the task context: information retrieval, information seeking, work task, and culture. Each of these layers provides a unique lens through which to view the search process. Conversely, for mobile search, the physical context is the primary influence: users want information that is not just on topic but also timely and relevant to their location. We’ve also reviewed the environmental context thru the lens of the information landscape, exploring the challenges involved in dealing with unstructured content and aggregated data.
+
+Search engines may be capable of many things, but they cannot read minds. They cannot determine intent from a query alone. Instead, we must understand the context, for that is the basis of the information seeking dialogue and the foundation of the search experience.
+
 ## 4.Modes of Search and Discovery
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000045f04-01-9780123969811.jpg)
 
@@ -854,6 +894,13 @@ Our experience suggests both the existence of repeatable patterns in information
 - A single functional element
 - A complete screen composed of multiple functional elements
 - An integrated application composed of multiple screens
+
+### Summary
+Though it’s common practice, thinking of search exclusively as information retrieval is an arbitrarily narrow view that unnecessarily constrains our ability to recognize and understand broader patterns of information seeking behavior. Search, in the holistic sense, is a complex cognitive activity that integrates information retrieval with higher-level problem-solving activities such as analysis and sensemaking. Together, these activities form an iterative loop that underpins the information seeking process.
+
+Framing search as a holistic experience helps us understand and interpret broader patterns of behavior and more varied modes of interaction. In defining these modes, we have developed a lens through which we can recognize common types of information seeking behavior that are independent of any particular context or user. And by studying the behaviors associated with individual modes, we learn how to apply them in the design of more effective search experiences.
+
+We have also explored how modes occur in naturalistic settings, observing the formation of distinct patterns and chains. These patterns offer an expressive language for describing information seeking in which individual modes can be combined to form composite elements. This perspective provides a unique insight into information seeking behavior and a framework for the design of more holistic search experiences.
 
 # 2.Design Solutions
 ## 5.Formulating the Query
@@ -1071,6 +1118,69 @@ Recommender systems such as Last.fm and Netflix rely heavily on attributes, rati
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000057f05-40-9780123969811.jpg)
 
 Figure 5.40 Genius playlist creates “more like this” from a single item.
+
+### Summary and Best Practices
+We began this chapter where so many information journeys begin: in the expression of a query. Through search boxes, scoped search, advanced search and beyond, we’ve seen the many ways in which an information need can be articulated.
+
+But we’ve also seen how search tasks of any complexity require an iterative approach, involving the creation and reformulation of queries. In this context, as-you-type suggestions have become invaluable. Autocomplete is best suited to known-item search and simple information retrieval tasks; autosuggest works well for exploratory search and complex information seeking tasks; and instant results provide a direct channel from query to answers.
+
+But there are times when we need more explicit guidance, in the form of spell-checking strategies such as “did you mean” and autocorrect. Likewise, partial matching strategies can provide signposts to guide us toward more productive keyword combinations. And related searches can inspire us to consider new directions and grow our own pearls. Together, these techniques keep us on track throughout our information journey.
+
+#### The Search Box
+- Form should follow function; apply the principles of affordance to interactive design elements.
+- Reserve a consistent location for the search box, and make it wide enough to comfortably accommodate the majority of queries.
+- Place the cursor within the search box upon page load and allow the user to press the Enter or return key to submit the query.
+- Provide direction in the form of placeholder text and other prompts to help users construct meaningful queries (but remove these prompts as soon as the search box receives focus).
+- Display the query in the search box after submission.
+
+#### Scoped Search
+- Consider scoped search for applications where users have high domain expertise, but avoid forcing this function on users with low domain expertise. Ensure that it defaults to “all categories.”
+- Apply a fallback strategy that searches across all categories if searching within one category produces zero results.
+- Clearly display the scope of the search as part of the results.
+
+#### Search Within
+- If presented as part of a faceted menu, clearly indicate the function through the use of placeholder text and other textual labels. Ensure that keyword refinements appear as mementos in the breadbox.
+- If presented as an option to the global search box, ensure that the toggle control is sensitive to the application context. In addition, selecting the “search within” checkbox should remove the current query from the search box.
+
+#### Advanced Search
+- Review the rationale for advanced search, in particular whether it is better to customize the whole experience (i.e., content, navigation, transactional functionality, etc.) for a specialist audience, rather than assume that search alone deserves special treatment.
+
+#### Beyond Keywords
+Sometimes our information needs go beyond words. Choose input methods that match the medium.
+
+Use autocomplete to:
+
+- Facilitate accurate and efficient data entry.
+- Select from a finite list of names or symbols.
+
+Use autosuggest to:
+
+- Facilitate novel query reformulations.
+- Select from an open-ended list of terms or phrases.
+- Encourage exploratory search (with a degree of complexity and mental effort that is appropriate to the task). Where appropriate, complement search suggestions with recent searches.
+
+Use instant results to:
+
+- Promote specific items or products.
+
+Use “did you mean” when:
+
+- An alternative spelling of a short query would return a more productive result set.
+
+Use autocorrect when:
+
+- An alternative spelling of a short query would avoid a zero result set.
+
+Use partial matches to:
+
+- Find productive permutations of keywords within a longer keyword query.
+- Present a subset of those matches to reflect the diversity of the result set.
+
+Use related searches to:
+
+- Provide inspiration and new ideas for extending and refining a query.
+- Clarify an ambiguous or generic information need.
+- Present associated concepts in a taxonomy.
 
 ## 6.Displaying and Manipulating Results
 ### Displaying Search Results
@@ -1348,6 +1458,71 @@ The goal of the comparison page is, of course, to support `analyzing` and `compa
 ![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000069f06-45-9780123969811.jpg)
 
 Figure 6.45 Highlighting differences between products at Best Buy.
+
+### Summary and Best Practices
+Results pages play a crucial role in the search experience, conveying to users a response to their information needs and engaging them in a dialogue that guides them along their information journey. By drawing on a broad repertoire of layouts, views, and configurations, results pages can support a variety of search modes and contexts. And even when there are no results to return, these pages can still be used to facilitate productive exploration and discovery.
+
+Search results pages should also guide users in clarifying their query and broader information needs. Pagination, sorting, and filtering can then provide the means to explore the results and find promising directions. And in subsequent stages, comparison views can support the detailed analysis of individual items. In the next chapter, we’ll add a further layer of depth and refinement, exploring the types of dialogue that can be facilitated by faceted search.
+
+#### Displaying search results
+
+- Find a balance between richness and diversity: too detailed and screen space is wasted; too succinct and vital information may be omitted
+- Look out for pogosticking and other symptoms of weak information scent
+- Consider the users’ characteristics, their tasks and the broader context
+- Use query-oriented summaries that show the keywords in context; highlight matching terms
+- Adopt a consistent approach that clearly indicates the composition of each search result; Customize the presentation according to the search context
+- Use previews to provide access to further detail
+
+#### Search results pages
+
+- Consider search results not as competing alternatives, but as an aggregate response to an information need
+- Maintain context by displaying:
+  - The current query (and allow it to be edited in place)
+  - The state of any other navigational context such as current facet selections
+  - The number of matching results
+  - Present an appropriate level of diversity, particularly for vague or ambiguous queries
+- Apply a layout that matches the result set:
+  - Gallery view for items whose appearance is important
+  - List or detail view for complex or highly attributed items
+  - Map view for geospatial data
+  - Allow the user to switch between layouts
+
+#### Blended results
+
+- Use sidebars or complementary panels to promote related items
+- Distinguish featured results using layout and/or visual highlighting
+- Use best bets to provide effective matches for popular queries
+
+#### Zero results pages
+
+- Provide an explicit message when zero results are returned
+- Provide support in the form of advice and tools for query reformulation
+- Display other navigation options such as top searches, featured products, popular items, and so on
+
+#### Pagination
+
+- Display the page range using large target areas and a hover effect where appropriate
+- Identify the current page, and provide Previous and Next options
+- Consider an infinite scroll approach where contextually appropriate, such as in mobile contexts
+- For limited collections, provide options to navigate directly to the first and last pages
+- Allow users to change the default pagination setting (number of results)
+
+#### Sorting and filtering
+
+- Provide sort options that are specific to the category of results
+- Offer a tabular style where sorting is a key user need (e.g., for highly attributed data)
+- Be aware that sorting and filtering are often misunderstood by users
+
+#### Query clarification
+
+- Provide support to clarify vague or ambiguous queries, such as through an explicit category selector; Choose a location and configuration that is consistent with the users, their tasks and the broader search context
+- Consider a “best bets” approach for popular queries
+
+#### Comparing
+
+- Communicate the maximum size of the comparison view; Provide a dynamic preview where possible
+- Allow users to highlight the differences between individual results
+- Maintain independent comparison lists for different result categories
 
 ## 7.Faceted Search
 ### Definitions
@@ -1633,14 +1808,72 @@ Indeed, it is possible to offer both approaches and let users decide which they 
 
 Figure 7.41 User-selectable interaction model at Farnell.
 
+### Summary and Best Practices
+Faceted search offers a unique potential to transform the search experience. It provides a flexible framework by which users can satisfy a wide variety of information needs, ranging from simple lookup and fact retrieval to complex exploratory search and discovery. Summarized here are the key principles for designing effective faceted search experiences.
 
+#### Definitions
 
+- Facets are independent properties or `dimensions` by which we can classify an object.
+- Selections are made by applying facet values that determine the set of matching records returned. The set of selections active at any given time is known as the `navigational context`.
+- Faceted search should minimize the likelihood of zero results by displaying only currently available facet values.
+- Facets can be either `single-select` or `multi-select`. Single-select values are mutually exclusive.
+- Multi-select facets can either be multi-select OR or multi-select AND:
+  - Multi-select OR values are combined disjunctively.
+  - Multi-select AND values are combined conjunctively.
+- Values applied across different facets are normally applied conjunctively, whereas values applied within a given facet are normally applied disjunctively.
 
+#### Layout and State
 
+- There are three main choices of layout: vertical, horizontal, and hybrid:
+  - Vertical faceted menus are usually placed on the left, and scale well to variations in the number of facets displayed.
+  - Horizontal configurations can present a more visible invitation for interaction, but scale less well to variations in the number of facets.
+  - Hybrid configurations can use a combination of vertical and horizontal.
+- There are three main choices of default state: closed by default, open by default, or a combination of the two:
+  - Closed by default minimizes screen space and maximizes the visibility of the full range of facets.
+  - Open by default maximizes the information scent of the individual facet values.
+  - A combination of open and closed can be used to reflect users’ search strategies and mental models.
 
+#### Display Formats
 
+- The guiding principle should be to match the display format to the semantics of the facet values.
+- Hyperlinks provide a simple and direct mechanism for representing textual values.
+- Single select facets may be removed from display after being applied, but multi-select facets must remain visible for further selections to be made.
+- Checkboxes should be used to display multi-select facets.
+- Range sliders are usually the most appropriate format for quantitative data; they can be complemented with additional information to communicate the information landscape within each facet.
+- Input boxes allow the entry of precise quantitative values where range sliders would be inappropriate; quantitative data can be transformed into an interval scale by subdividing the range.
+- Color pickers can be configured to show only values that are specific to the current result set or to allow selection from a continuous color spectrum.
+- Tag clouds can be used to present terms extracted from unstructured content.
+- Visualizations are appropriate where the focus is on understanding patterns of distribution at an aggregate level.
 
+#### Showing Additional Values
 
+- Facets should offer an appropriate information scent—for example, be open by default and display a representative sample of facet values.
+- There are three main ways to accommodate long lists of values: display all by default, use an extensible container, or use a supplementary container:
+  - Display all by default assumes that the list is bounded in some way to a manageable size.
+  - Extensible containers present an option to expand the facet inline.
+  - Supplementary containers display the full set of facet values adjacent to the original set. The extended list can be ordered to facilitate visual scanning.
+  - A text entry box (e.g., one with autocomplete) can be used to locate specific facet values.
+
+#### Communicating the Navigational State
+
+- Because faceted search allows navigation along several independent dimensions, it is important to communicate the user’s current location and navigation options.
+- There are three main ways to communicate navigational state: inline breadcrumbs, multi-selectable facets, and breadboxes:
+  - Inline breadcrumbs are the simplest way to communicate navigational state, but they do not scale well to accommodate large numbers of facets or multi-select values.
+  - Multi-selectable facets use checkboxes to communicate navigational state but do not scale well to accommodate large numbers of facets.
+  - Breadboxes communicate navigational state by displaying currently selected facet values in a dedicated container that remains visible no matter how many facets are present.
+    - The breadbox should display facet names and values.
+    - Vertical breadbox layout makes the structural relationship between the facet:value pairs more apparent.
+
+#### Interaction Patterns
+
+- Smart dead ends can be used to communicate values that would have been available had the initial selections not been made.
+- There are two common interaction models: `instant update` and `two-stage`:
+  - In the instant update model, the result set and facet values are updated immediately following selection of a facet value.
+  - In the two-stage model, users can select multiple facet values and then submit them as a group.Inappropriate use of the two-stage model can give rise to inconsistent navigational states that return zero results. To mitigate this problem, the design should ensure that only one facet can be open at any given time.
+
+If the facet values are conjunctive (multi-select AND), then the instant update model should be applied.
+
+## 8.Mobile Search
 
 
 
