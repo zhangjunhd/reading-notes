@@ -178,6 +178,9 @@
       - [Communicating the Navigational State](#communicating-the-navigational-state-1)
       - [Interaction Patterns](#interaction-patterns-1)
   - [8.Mobile Search](#8mobile-search)
+    - [Mobile Information Seeking](#mobile-information-seeking)
+      - [Mobile users](#mobile-users)
+      - [Information needs](#information-needs)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1874,9 +1877,28 @@ Faceted search offers a unique potential to transform the search experience. It 
 If the facet values are conjunctive (multi-select AND), then the instant update model should be applied.
 
 ## 8.Mobile Search
+### Mobile Information Seeking
+#### Mobile users
+Table 8.1 The average length of Google queries performed on desktop computers, iPhones, and conventional mobile phones, as reported by Kamvar et al. (2009).
 
+~ | Desktop | iPhone | Feature Phone
+---|-------|-------|--------------
+Words | 2.93 | 2.93 | 2.44
+Characters | 18.72 | 18.25 | 15.89 
 
+Table 8.2 The average number of queries per Google search session (Kamvar et al., 2009).(A `session` being defined as a set of queries occurring with less than a five-minute gap between them.)
 
+Desktop | iPhone | Feature Phone
+--------|--------|--------------
+1.94 | 1.82 | 1.7
+
+#### Information needs
+Let us first identify two dimensions by which an information need (mobile or otherwise) may be classified: search motive and search type (Tate & Russell-Rose, 2012).
+
+The `search motive` dimension describes the sophistication of the information need, including the degree of thinking it involves, and the time commitment required to satisfy it (Figure 8.3). The `lookup`, `learn`, and `investigate` elements of motive are derived from Gary Marchionini’s work on exploratory search (2006); the `casual` element has been more recently studied by David Elsweiler and colleagues (2011):
+
+- Casual: Undirected activities with the goal of having fun or killing time rather than completing a task.
+- Lookup: Retrieving a simple fact. It is a short-term motive, with few queries and little time needed to resolve the information need.
 
 
 
