@@ -181,6 +181,7 @@
     - [Mobile Information Seeking](#mobile-information-seeking)
       - [Mobile users](#mobile-users)
       - [Information needs](#information-needs)
+      - [Context](#context)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1923,10 +1924,28 @@ Sohn and colleagues (2008) and Church and Smyth (2009) have each conducted diary
 
 Figure 8.5 A matrix of mobile information needs.
 
+- Informational
+  - Window shopping. “I don’t know what I want. Show me stuff.”
+  - Trivia. “What did Bob Marley die of, and when?”
+  - Information gathering. “How to tie correct knots in rope?”
+  - Research. “What is Keynesian economics and is it sustainable?”
+- Geographic
+  - Friend check-ins. “Where are Sam and Trevor?”
+  - Directions. “I need directions to Sammy’s Pizza.”
+  - Local points of interest. “Where is the nearest library or bookstore?”
+  - Travel planning. “I need flights, accommodations, and sights for my trip to Italy.”
+- Personal Information Management
+  - Checking notifications. “Email update for work.”
+  - Checking calendar. “Is there an open date on my family calendar?”
+  - Situation analysis. “What is my insurance coverage for CAT scans?”
+  - Lifestyle planning. “What should my New Year’s resolutions be this year?”
+- Transactional
+  - Act on notifications. Mark as read, delete, respond to, etc.
+  - Price comparison. “How much does the Pantech phone cost on AT&T.com?”
+  - Online shopping. “I want to buy a watch as a gift. But which one?”
+  - Product monitoring. “I know the make and model of used car I want. Alert me when new ones are listed.”
 
-
-
-
+#### Context
 
 
 
