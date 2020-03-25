@@ -1897,8 +1897,109 @@ Let us first identify two dimensions by which an information need (mobile or oth
 
 The `search motive` dimension describes the sophistication of the information need, including the degree of thinking it involves, and the time commitment required to satisfy it (Figure 8.3). The `lookup`, `learn`, and `investigate` elements of motive are derived from Gary Marchionini’s work on exploratory search (2006); the `casual` element has been more recently studied by David Elsweiler and colleagues (2011):
 
-- Casual: Undirected activities with the goal of having fun or killing time rather than completing a task.
-- Lookup: Retrieving a simple fact. It is a short-term motive, with few queries and little time needed to resolve the information need.
+- **Casual**: Undirected activities with the goal of having fun or killing time rather than completing a task.
+- **Lookup**: Retrieving a simple fact. It is a short-term motive, with few queries and little time needed to resolve the information need.
+- **Learn**: Information gathering to gain literacy on a given topic. It is medium term in nature, requiring a greater number of queries and a greater amount of time than the lookup motive.
+- **Investigate**: Long-term research and planning geared toward becoming a semi-expert in a given topic. It is a long-term commitment that demands a significant investment of time and effort.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-03-9780123969811.jpg)
+
+Figure 8.3 a, b, c, and d Examples of search motive. (A) The notification screen of Path (a social network) can facilitate the casual motive. (B) Textual search results on Wikibot—a Wikipedia app for iPhone—represent the lookup motive. (C) Product reviews on CNET help satisfy the learn motive. (D) Mendeley’s personalized library of academic papers represents the investigate motive.
+
+The search type dimension, on the other hand, is concerned with the genre of the information being sought (Figure 8.4). Broder (2002) is often cited for recognizing the informational and transactional nature of many needs;1 the geographic and personal information management goals have been identified by Church and Smyth (2009):
+
+- **Informational**: Textual information about a topic.
+- **Geographic**: Points of interest or directions between locations.
+- **Personal information management**: Private information not publicly available.
+- **Transactional**: Action-oriented rather than informational goals.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-04-9780123969811.jpg)
+
+Figure 8.4 Examples of search type. (A) Google excels at meeting informational type needs. (B) Yelp helps users satisfy their geographic type needs. (C) Greplin enables users to search their own personal information. (D) Groupon demonstrates transactional type needs.
+
+Sohn and colleagues (2008) and Church and Smyth (2009) have each conducted diary studies in which smartphone-equipped adults were instructed to record every information need that arose over a period of weeks. This research—along with the motive and type dimensions—enables us to populate a matrix of mobile information needs (Figure 8.5).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-05-9780123969811.jpg)
+
+Figure 8.5 A matrix of mobile information needs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
