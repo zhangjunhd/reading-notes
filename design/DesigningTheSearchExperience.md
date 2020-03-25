@@ -1947,9 +1947,10 @@ Figure 8.5 A matrix of mobile information needs.
 
 #### Context
 
-
-
-
+- **Task**:This argument still holds true for mobile users, but with a crucial twist; rather than being driven by an intrinsic task, mobile information needs are more likely to emerge from the context of the user’s present activity. Cooking, for instance, is likely to produce a need for recipes or measurement conversions, while repairing a bicycle might trigger a need for how-to information.
+- **Physical**:The two subcomponents of physical context—time and space—are central to the mobile experience. The available time, for instance, dictates whether an information need can be fulfilled immediately or whether it must be postponed. Though time is often a limitation, it can also provide opportunities: “in between” times, as brief as waiting at a crosswalk for the pedestrian signal to change, can prompt users to engage in micro sessions of casual information seeking such as checking notifications.
+- **Social**:Mobile devices are often used in the presence of other people. Though sometimes used inappropriately—checking messages at the dinner table, for instance—mobile devices are many times used as `conversation enhancers` (Cui & Roto, 2008). This usage often precipitates the “trivia” category of information need identified earlier. Although social situations can discourage the use of mobile devices, especially for substantial periods of time, they nevertheless commonly spark new information needs.
+- **Environmental**:“Dead zones” lacking connectivity such as elevators or metro trains disrupt users’ activities; slow connection speeds force a trade-off between inefficient task completion at present, or more efficient completion later; limited or pay-as-you-go bandwidth incentivizes users to respond only to vital information needs that can be accomplished with limited data transfer. In other words, connectivity is a factor that often prohibits information needs from being satisfied when they arise.
 
 
 
