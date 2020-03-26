@@ -182,6 +182,11 @@
       - [Mobile users](#mobile-users)
       - [Information needs](#information-needs)
       - [Context](#context)
+    - [Mobile Design Principles](#mobile-design-principles)
+      - [Content trumps controls](#content-trumps-controls)
+      - [Answers over results](#answers-over-results)
+      - [Cross-channel continuity](#cross-channel-continuity)
+    - [Mobile Design Solutions](#mobile-design-solutions)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1952,33 +1957,33 @@ Figure 8.5 A matrix of mobile information needs.
 - **Social**:Mobile devices are often used in the presence of other people. Though sometimes used inappropriately—checking messages at the dinner table, for instance—mobile devices are many times used as `conversation enhancers` (Cui & Roto, 2008). This usage often precipitates the “trivia” category of information need identified earlier. Although social situations can discourage the use of mobile devices, especially for substantial periods of time, they nevertheless commonly spark new information needs.
 - **Environmental**:“Dead zones” lacking connectivity such as elevators or metro trains disrupt users’ activities; slow connection speeds force a trade-off between inefficient task completion at present, or more efficient completion later; limited or pay-as-you-go bandwidth incentivizes users to respond only to vital information needs that can be accomplished with limited data transfer. In other words, connectivity is a factor that often prohibits information needs from being satisfied when they arise.
 
+### Mobile Design Principles
+#### Content trumps controls
+The primary search screen of a mobile application should be focused on the clarity of search results; bells and whistles must take a back seat (Figure 8.7). Mobile users, after all, often use their devices for short bursts of time, enter fewer queries per search session than do desktop users, and often seek answers to simple, lookup-based information needs. These realities suggest that navigation bars should be kept to a minimum, filtering and sorting displaced off-screen, and pagination controls omitted so that the search results receive as much screen space as possible.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-07-9780123969811.jpg)
 
+Figure 8.7 Kayak.com’s mobile website—with four rows of controls and a large advertisement—clearly fails to adequately prioritize its search results.
 
+#### Answers over results
+In addition to minimizing search controls and emphasizing content, focusing on `precision` over recall can make search more efficient for mobile users with lookup information needs.
 
+Providing direct answers to users’ lookup queries can make the mobile search experience more efficient still. Rather than force users to click on a search result to discover straightforward facts, such as “director of third man movie” (Figure 8.8), a more desirable approach is to provide a computed answer directly on the search page, eliminating the need for further action.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-08-9780123969811.jpg)
 
+Figure 8.8 Google sometimes provides direct answers to the user’s query.
 
+#### Cross-channel continuity
+Every business recognizes the value of `consistency` across channels: customers benefit from a coherent, holistic experience in which the learning from one channel can be applied to all the rest. A user familiar with Amazon on the desktop will instantly recognize the similarity of Amazon’s mobile application, for instance. But although consistency ensures the learnability of each channel, `continuity` makes it personal. Continuity is adding an item to the shopping cart via a desktop computer and having it appear in the shopping cart on your phone; it’s saving a search on your phone and returning to it later on your tablet. 
 
+Continuity between channels can enhance the figure-it-out-later approach often taken by users, as well as reduce the number of information needs that fall through the cracks. For starters, search history should be synchronized across devices so that inconclusive information seeking can be easily completed later. What’s more, facilitating saved searches that can be accessed from every channel enables users to organize and return to important, ongoing information needs (Figure 8.9).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-09-9780123969811.jpg)
 
+Figure 8.9 Zillow allows users to save searches but fails to synchronize them across devices.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Mobile Design Solutions
 
 
 
