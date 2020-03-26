@@ -189,6 +189,8 @@
     - [Mobile Design Solutions](#mobile-design-solutions)
       - [The search box](#the-search-box-2)
       - [Nontextual input methods](#nontextual-input-methods)
+      - [Viewing search results](#viewing-search-results)
+      - [Refining the query](#refining-the-query-1)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -2020,26 +2022,55 @@ Figure 8.13 Three types of as-you-type suggestions. (A) DB Navigator provides au
 Figure 8.14 Tablet applications, such as Thomson Reuter Marketplace app, often present as-you-type suggestions in a popover.
 
 #### Nontextual input methods
+`Location` is the most obvious form of nontextual input enabled by mobile devices.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-15-9780123969811.jpg)
 
+Figure 8.15 Example of location input at (A) Zillow, (B)Rightmove.co.uk, and (C) Yelp, which all provide a “Current Location” link within the as-you-type suggestions.
 
+Apple, Google, and Microsoft all provide mobile `voice-activated searching` in one form or another (Figure 8.16). In addition to spoken input, applications such as SoundHound can listen to music playing in the surrounding environment and retrieve information about the song.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-16-9780123969811.jpg)
 
+Figure 8.16 (A) Siri on the iPhone and (B) Voice Search on Android both allow users to speak their queries; (C) SoundHound retrieves song information on the music playing in the background.
 
+In addition to location and audio input, `connected cameras` mean that visual information can also be harnessed for searching (Figure 8.17).
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-17-9780123969811.jpg)
 
+Figure 8.17 (A) QRReader turns QR codes into URLs; (B) Amazon scans barcodes to pull up exact matches; and (C) Google turns images into textual queries.
 
+`Drawn shapes`, made possible by the advent of touchscreens, provide a final form of non-textual input. The most common use of finger-drawn figures is to add a bounding box around a region on a map, illustrated by Zillow in Figure 8.18. ChemDoodle, also shown in Figure 8.18, allows users to construct molecular diagrams that can then be used as a query, demonstrating the potential of shape input in scientific settings.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-18-9780123969811.jpg)
 
+Figure 8.18 (A) Zillow allows users to draw an area on the map in which to constrain their search, while (B) ChemDoodle enables users to visually compose molecular compounds that serve as the query.
 
+#### Viewing search results
+Regardless of how the query was originally constructed, the results for that query must be presented in one of several formats (Figure 8.19). The most common display methods are:
 
+- List. Lists provide the most space for titles, descriptions and metadata, but deemphasize the visual and geographical dimensions of the results. Lists are effective at helping users quickly peruse the textual information of numerous results.
+- Grid. Image grids provide a strong visual emphasis but lack the space to accommodate much textual information. They’re efficient when the content is predominantly visual.
+- Map. Maps are ideal when location is the most important characteristic of the search results, though they’re more difficult to systematically review than are lists or grids.
+- Augmented Reality. Still an immature medium, augmented reality (AR) uses the mobile device’s camera and screen to superimpose information onto a representation of the surrounding environment. AR is especially useful for providing directions.
+- Voice. The other four formats are visual, but it’s not always possible to look at a screen. Activities such as driving, as well as disabilities such as visual impairment, call for a purely verbal rendition of search results.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-19-9780123969811.jpg)
 
+Figure 8.19 Search results presented as (A) a list on Toptable, (B) thumbnails on Etsy, (C) map pinpoints on Yell, and (D) augmented reality on Yelp.
 
+As such, it’s often necessary to provide controls for toggling between display formats (Figure 8.20). Four common solutions to toggling the display format include:
 
+- A full-width segmented control in a toolbar. This approach allows for the greatest number of labels (three or four) but eats into space that could otherwise be used for content.
+- A compressed segmented control centered in the navigation bar. With room for two or three labels, this method avoids the need for an additional toolbar but demands that the search box be hidden off-screen.
+- A single button in the navigation bar. Though it can only toggle between two display formats, it’s the most concise control of the three.
+- Tabs. Though a ubiquitous pattern on the Web, traditional tabs are rarely seen in native mobile applications (excluding, of course, the bottom “tab bar” convention in iOS). However, it’s still a valid approach, especially for web-based apps that don’t attempt native resemblance.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-20-9780123969811.jpg)
 
+Figure 8.20 Common approaches to toggling between display methods: (A) a full-width segmented control in a toolbar, (B) a compressed segmented control centered in the navigation bar, and (C) a single button in the navigation bar.
 
+#### Refining the query
 
 
 
