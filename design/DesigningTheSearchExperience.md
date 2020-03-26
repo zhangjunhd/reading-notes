@@ -191,6 +191,7 @@
       - [Nontextual input methods](#nontextual-input-methods)
       - [Viewing search results](#viewing-search-results)
       - [Refining the query](#refining-the-query-1)
+  - [9.](#9)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -2071,7 +2072,51 @@ As such, it’s often necessary to provide controls for toggling between display
 Figure 8.20 Common approaches to toggling between display methods: (A) a full-width segmented control in a toolbar, (B) a compressed segmented control centered in the navigation bar, and (C) a single button in the navigation bar.
 
 #### Refining the query
+Foodily, as shown in Figure 8.21, actually provides two different types of query suggestions: first suggesting modifier terms to add to the existing query (words like “quick” and “gluten free”), followed by related searches that alter the query more drastically. This method lives up to the criteria of providing support without detracting from content.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-21-9780123969811.jpg)
+
+Figure 8.21 Foodily provides two forms of query suggestions below the list of search results: modifier terms and related searches.
+
+The first decision that must be made is whether `faceted navigation` or `sorting` should be provided on the primary search screen or whether they should have a dedicated view of their own. Adding them to the main screen would typically involve adding a toolbar containing either a segmented control (for either sorting or top-level categories) or horizontally scrollable capsules representing a facet (Figures 8.22 and 8.23).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-22-9780123969811.jpg)
+
+Figure 8.22 (A) A segmented control for sorting, (B) a segmented control for top-level categories, and (C) scrollable capsules representing a facet.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-23-9780123969811.jpg)
+
+Figure 8.23 (A) eBay uses a segmented control for choosing between top-level categories, and (B) REI uses scrollable capsules to display filters.
+
+A less crowded approach is to dedicate an entire screen to sorting and faceted navigation (Figure 8.24).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-24-9780123969811.jpg)
+
+Figure 8.24 A dedicated refinement screen for sorting and filtering.
+
+Reserving an entire screen for faceted navigation can accommodate numerous controls without compromising the search results screen. Such dedicated panels are usually activated by a button on the main screen containing the word “Filter,” “Refine,” or an equivalent icon (Figure 8.26), though gestures can also be used to reveal and hide the controls. TwigKit’s web-based search user interface shown in Figure 8.27, for example, reveals faceted controls in a side panel that can be opened and closed both by tapping a button, as well as through left/right swipe gestures.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-26-9780123969811.jpg)
+
+Figure 8.26 Filter/Refine buttons on (A) eBay, (B) Yelp, and (C) Airbnb.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-27-9780123969811.jpg)
+
+Figure 8.27 TwigKit’s faceted navigation sidebar can be accessed with either a button or through a swipe gesture.
+
+Although dedicated control panels are often ideal on smartphones, presenting a full screen of knobs and dials on much larger tablet devices would likely be overwhelming. Instead, tablets often take advantage of `popovers` (Figure 8.28) to display refinement options (in fact, the popover often contains the very same view presented on phone-sized devices).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-28-9780123969811.jpg)
+
+Figure 8.28 Toptable’s iPad app uses a popover present refinement options.
+
+Last of all, `breadcrumbs` help users keep track of their query and applied filters, as usual. Unlike on the desktop, however, mobile breadcrumbs need not be clickable; devoting finger-size touch targets to breadcrumbs could drown out the content. Instead, mobile breadcrumbs should be small, but legible (Figure 8.29). Users can always interact with the refinement panel to remove or alter any unwanted filters.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-29-9780123969811.jpg)
+
+Figure 8.29 Mobile breadcrumbs should be legible but don’t have to be clickable.
+
+## 9.
 
 
 
