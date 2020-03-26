@@ -187,6 +187,8 @@
       - [Answers over results](#answers-over-results)
       - [Cross-channel continuity](#cross-channel-continuity)
     - [Mobile Design Solutions](#mobile-design-solutions)
+      - [The search box](#the-search-box-2)
+      - [Nontextual input methods](#nontextual-input-methods)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -1984,26 +1986,40 @@ Continuity between channels can enhance the figure-it-out-later approach often t
 Figure 8.9 Zillow allows users to save searches but fails to synchronize them across devices.
 
 ### Mobile Design Solutions
+But before getting started, it’s helpful to agree on a vocabulary for describing the common layout components of a mobile application.2Figure 8.10 illustrates the following three regions:
 
+- **Status bar**. The thin top-most bar indicating signal, time, battery life, and other information.
+- **Navigation bar**. The dominant bar often containing a title and back button.
+- **Toolbar**. An optional bar for additional controls, located at either the top or bottom of the screen.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-10-9780123969811.jpg)
 
+Figure 8.10 Anatomy of a mobile layout.
 
+#### The search box
+There are at least three common approaches to displaying the search box, each with advantages and disadvantages (Figure 8.11):
 
+- Within the navigation bar. Maximizes space efficiency and places strong emphasis on search. Use when search is the dominant action of the application.
+- n a secondary toolbar. Retains emphasis on search, but leaves less room for content. Consider this approach when search is a dominant action and when placing the search box within the navigation bar is not an option.
+- Via a pull-to-reveal gesture. Because the search box is hidden by default, this approach maximizes the available screen space but makes search more difficult to discover. This method is a good choice when search isn’t the primary action.
 
+Even when the search box is in a secondary toolbar—as in the Pinterest iPhone app (Figure 8.12)—it’s common practice to hide other navigation bars once the user taps the search box. This both provides greater focus on the search task, and allows more space for presenting as-you-type suggestions.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-11-9780123969811.jpg)
 
+Figure 8.11 Three approaches to displaying the search box: (A) within the navigation bar, (B) in a secondary toolbar, or (C) via a pull-to-reveal gesture.
 
+Users have come to expect as-you-type suggestions as an integral part of the mobile search experience. Small mobile devices typically devote all of the screen space not consumed by the top bars and onscreen keyboard to presenting search suggestions (Figure 8.13), and tablet devices often use a popover for this same purpose (Figure 8.14). All three types of as-you-type suggestions outlined in Chapter 5—autocomplete, autosuggest, and instant results—apply equally well to the mobile environment.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-13-9780123969811.jpg)
 
+Figure 8.13 Three types of as-you-type suggestions. (A) DB Navigator provides autocomplete on train station names. (B) Google Search provides autosuggest. (C) Nutshell delivers instant results.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000082f08-14-9780123969811.jpg)
 
+Figure 8.14 Tablet applications, such as Thomson Reuter Marketplace app, often present as-you-type suggestions in a popover.
 
-
-
-
-
-
-
+#### Nontextual input methods
 
 
 
