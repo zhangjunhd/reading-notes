@@ -203,6 +203,15 @@
       - [Instant communication](#instant-communication)
       - [Persistence](#persistence)
     - [Designing for Social Circle Collaboration](#designing-for-social-circle-collaboration)
+      - [Direct communication](#direct-communication)
+      - [Social networks](#social-networks)
+- [3.Designing the Future](#3designing-the-future)
+  - [10.Cross-Channel Information Interaction](#10cross-channel-information-interaction)
+    - [The Postdesktop Era](#the-postdesktop-era)
+    - [Optimization](#optimization)
+    - [Consistency](#consistency)
+      - [The realm of consistency](#the-realm-of-consistency)
+      - [The nature of consistency](#the-nature-of-consistency)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -2174,6 +2183,14 @@ In addition to collaborating around social objects—the output of search—coll
 Often, inner circle collaborators participate at different times, asynchronously searching, communicating, and sharing objects. Collaborative search tools should support this common occurrence by `persisting` the shared workspace over time.
 
 ### Designing for Social Circle Collaboration
+#### Direct communication
+Identifying precisely the right person to contact leads us back to a classic search application: the staff directory (Figure 9.14).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000094f09-14-9780123969811.jpg)
+
+Figure 9.14 People search in Microsoft SharePoint.
+
+#### Social networks
 
 
 
@@ -2189,6 +2206,40 @@ Often, inner circle collaborators participate at different times, asynchronously
 
 
 
+
+# 3.Designing the Future
+## 10.Cross-Channel Information Interaction
+### The Postdesktop Era
+From searching the Web on his desktop to browsing a print catalog, and from asking for advice from a friend via his phone to trying on jackets in the Oxford Street store, Amir’s journey flowed coherently from one channel to the next. The channels were `optimized`, with each channel playing to its own strengths; they were `consistent`, following similar organization patterns; and they were `continuous`, propagating actions from one channel to all the rest (Morville, 2011).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000100f10-03-9780123969811.jpg)
+
+Figure 10.3 While probably a bit shy of the fictional 20-story
+
+### Optimization
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000100f10-04-9780123969811.jpg)
+
+Figure 10.4 The first iPod embodied a division of labor between the iPod, computer, and iTunes software.
+
+The division of labor between the iPod, iTunes, and the Mac enabled the three to collectively achieve more than they could have on their own. This is the principle of `optimization` at work. Each channel within the ecosystem should focus on what it does best.
+
+### Consistency
+The principle of optimization is focused on each component playing to its strengths; yet we must also ensure that the ecosystem as a whole provides the user with the best possible experience across its many parts. To accomplish this goal, local optimization must be paired with global `consistency`.
+
+#### The realm of consistency
+Let’s consider the EveryWare mobile phone application in Amir’s story. It could be evaluated `internally` (are the elements within the application consistent with one another?); `locally` (is the EveryWare application consistent with other applications built for the same mobile operating system?); and `externally` (is the mobile application consistent with the other channels within the EveryWare ecosystem, such as their catalog, website, and store?).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000100f10-05-9780123969811.jpg)
+
+Figure 10.5 The three realms of consistency are analogous to creature, habitat, and ecosystem.
+
+To summarize, the three realms of consistency we’ve looked at are:
+
+- **Internal consistency**. Do the constituent parts of the creature itself (a mobile application, for instance) work together harmoniously?
+- **Local consistency**. Does the creature live agreeably with its neighbors in the immediate habitat (such as other mobile applications built for the same platform)?
+- **External consistency**. Does the creature work harmoniously with its allies in the ecosystem (for example, other channels such as the website and store)?
+
+#### The nature of consistency
 
 
 
