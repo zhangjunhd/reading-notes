@@ -21,6 +21,10 @@
     - [Definitions](#definitions)
     - [Toward a Damned Good Information Architecture](#toward-a-damned-good-information-architecture)
   - [3.Design for Finding](#3design-for-finding)
+    - [The “Too-Simple” Information Model](#the-too-simple-information-model)
+    - [Information Needs](#information-needs)
+    - [Information-Seeking Behaviors](#information-seeking-behaviors)
+    - [Learning About Information Needs and Information-Seeking Behaviors](#learning-about-information-needs-and-information-seeking-behaviors)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -48,6 +52,135 @@ Let’s start by clarifying what we mean by information architecture:
 Figure 2-6. The infamous three circles of information architecture
 
 ## 3.Design for Finding
+### The “Too-Simple” Information Model
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0301.png)
+
+Figure 3-1. The “too-simple” model of information needs
+
+Or, expressed as a simple algorithm:		
+
+1. User asks a question.			
+2. Something happens (i.e., searching or browsing).			
+3. User receives the answer.			
+4. Fin.
+
+### Information Needs
+When you’re hoping to make the perfect catch, you usually know what you’re looking for, what to call it, and where you’ll find it—this is called `known-item` seeking. An example is when you search the staff directory to find a colleague’s phone number.
+
+When you’re hoping to find a few useful items in your traps, you’re doing something called `exploratory seeking`. In this case, you’re not exactly sure what you’re looking for. In fact, whether you realize it or not, you’re looking to learn something from the process of searching and browsing. For example, a user may go to his employer’s human resources site to learn something about retirement plans that the company offers.
+
+When you want everything, you’re performing `exhaustive research`. You’re looking for everything available on a particular topic, hoping to leave no stone unturned. In this case, the user often has many ways to express what she’s looking for, and may have the patience to construct her search using all those varied terms. For example, someone who is trying to learn more about a friend’s medical condition might execute multiple searches for “AIDS,” “HIV,” “acquired immuno-deficiency syndrome,” and so forth.
+
+Finally, our failing memories and busy schedules continually force us to engage in `refinding pieces` of useful information that we’ve happened upon before. For example, while you’re at work, you might surf for a few minutes and stumble on a great but long explanation of Django Reinhardt’s guitar technique. Naturally, you won’t read it now and risk losing your job. You’ll refind it later instead, or use a “read later” service such as Instapaper to return to it at a more convenient time.
+
+Figure 3-2 illustrates these four different types of information needs.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0302.png)
+
+Figure 3-2. Four common information needs
+
+### Information-Seeking Behaviors
+`Searching`, `browsing`, and `asking` are all methods for finding, and these are the basic building blocks of information-seeking behavior.
+
+There are two other major aspects to seeking behaviors: `integration` and `iteration`. We often integrate searching, browsing, and asking in the same finding session. Figure 3-3 shows how you might search your corporate intranet for guidelines on traveling abroad.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0303.png)
+
+Figure 3-3. Integrated browsing, searching, and asking over many iterations
+
+In this model (shown in Figure 3-4), users start with an information need, formulate an information request (a query), and then move iteratively through an information system along potentially complex paths, picking bits of information (“berries”) along the way. In the process, they modify their information requests as they learn more about what they need and what information is available from the system.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0304.png)
+
+Figure 3-4. The `“berry-picking”` model of how users move through an information system
+
+Another useful model is the `“pearl-growing”` approach. Users start with one or a few good documents that are exactly what they need. They want to get “more like this one.” 
+
+Corporate websites and intranets often utilize a `“two-step”` model. Confronted with a site consisting of links to perhaps hundreds of departmental subsites, users first need to know where to look for the information they need. They might search or browse through a directory until they find a good candidate or two, and then perform the second step: looking for information within those subsites.
+
+### Learning About Information Needs and Information-Seeking Behaviors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
