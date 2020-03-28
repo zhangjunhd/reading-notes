@@ -205,6 +205,10 @@
     - [Designing for Social Circle Collaboration](#designing-for-social-circle-collaboration)
       - [Direct communication](#direct-communication)
       - [Social networks](#social-networks)
+      - [Communities of practice](#communities-of-practice)
+    - [Designing for Outer Circle Collaboration](#designing-for-outer-circle-collaboration)
+      - [Transparency](#transparency)
+      - [Control](#control)
 - [3.Designing the Future](#3designing-the-future)
   - [10.Cross-Channel Information Interaction](#10cross-channel-information-interaction)
     - [The Postdesktop Era](#the-postdesktop-era)
@@ -212,6 +216,10 @@
     - [Consistency](#consistency)
       - [The realm of consistency](#the-realm-of-consistency)
       - [The nature of consistency](#the-nature-of-consistency)
+      - [Designing with consistency in mind](#designing-with-consistency-in-mind)
+    - [Continuity](#continuity)
+    - [The Cross-Channel Blueprint](#the-cross-channel-blueprint)
+    - [Experience Maps](#experience-maps)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -2191,21 +2199,45 @@ Identifying precisely the right person to contact leads us back to a classic sea
 Figure 9.14 People search in Microsoft SharePoint.
 
 #### Social networks
+Key to their success, however, is the ability to `thread`—that is, to facilitate multiple groups, each with its own timeline (Figure 9.15). Such threading allows users to efficiently allocate their attention by, for example, vigilantly following the groups most meaningful to them, yet not fretting if they miss a few posts from peripheral threads.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000094f09-15-9780123969811.jpg)
 
+Figure 9.15 A group thread in Yammer, an enterprise social networking tool.
 
+#### Communities of practice
+LinkedIn, the social networking site for professionals, allows its users to set up forum-like groups that others can join (Figure 9.16). Group members can post messages to the group and respond to other people’s posts. With no other constraints or incentives in place, some LinkedIn groups function primarily as venues for self-promotion.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000094f09-16-9780123969811.jpg)
 
+Figure 9.16 The Enterprise Search Engine Professionals Group on LinkedIn.
 
+To begin with, every user’s reputation score—a measure of community trust that increases with participation—is displayed next to his or her name alongside the number of badges he or she has collected (Figure 9.17). What’s more, users unlock a range of “privileges” when their reputation score hits certain thresholds, giving them increased authority in the meritocracy. These elements of `gamification`—a term that describes making nongame applications feel game-like—can help make communities of practice more engaging and objective while still providing a healthy incentive for participation.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000094f09-17-9780123969811.jpg)
 
+Figure 9.17 A user profile bursting with flare on UX StackExchange, a sister site of Stack Overflow.
 
+### Designing for Outer Circle Collaboration
+To succeed at outer circle collaboration, companies must earn the trust of users by observing two vital principles: be `transparent`, and give users `control`.
 
+#### Transparency
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000094f09-18-9780123969811.jpg)
 
+Figure 9.18 Bing inserts Facebook-influenced results under a clearly labeled heading.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000094f09-19-9780123969811.jpg)
 
+Figure 9.19 Social news site Digg displays numerous social indicators: votes, likes, tweets, and comments.
 
+#### Control
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000094f09-20-9780123969811.jpg)
 
+Figure 9.20 Google’s “search, plus your world” features add greater user control over personalized search results, but don’t go far enough.
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000094f09-21-9780123969811.jpg)
+
+Figure 9.21 Amazon allows users to fix inaccurate recommendations.
 
 # 3.Designing the Future
 ## 10.Cross-Channel Information Interaction
@@ -2240,14 +2272,57 @@ To summarize, the three realms of consistency we’ve looked at are:
 - **External consistency**. Does the creature work harmoniously with its allies in the ecosystem (for example, other channels such as the website and store)?
 
 #### The nature of consistency
+To recap, the four natures of consistency that we’ve considered are:
 
+- **Function**. The purpose of the object. (The function of a retailer’s Android mobile application, for instance, might be to enable users to shop when they’re away from their computers.)
+- **Behavior**. How it feels. (The retail app feels like a native Android app rather than a website or iPhone app.)
+- **Organization**. How it’s organized. (The mobile app’s information architecture.)
+- **Aesthetics**. How it looks. (The visual style of the application.)
 
+#### Designing with consistency in mind
+It’s a difficult challenge to be sure—the `internal`, `local`, and `external` realms are each in competition for a bigger slice of the functional, behavioral, organizational, and aesthetic pies. Yet coherent cross-channel experiences are contingent on finding the right balance. Although the ideal mix is unique to each situation, there are a few general guidelines:
 
+- The `function` of a channel should be optimized for its own comparative advantage; in other words, what it has the potential of doing better than any other channel in the ecosystem. In this way, its function need not be externally consistent, as much as it should be complimentary to the rest of the ecosystem.
+- There is a `behavioral` tension between the local habitat—be it website conventions or operating system patterns—and the process flows of the ecosystem. Great effort should be exerted to reconcile these differences. Where perfect integration isn’t possible, erring on the side of local consistency is often the more conciliatory approach.
+- `Organizational` consistency should almost always favor the external ecosystem over the local or internal. Using a consistent organizational scheme across all channels of the ecosystem is one of the most important factors in delivering a coherent cross-channel experience.
+- `Aesthetics` has major implications across all three realms. It should certainly maintain internal consistency. Yet there is again a tension between the local habitat and external ecosystem that must be carefully negotiated. Although the visual aspects that involve branding (such as color) should be consistent with the ecosystem, the overriding style of the user interface should match its local habitat.
 
+### Continuity
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000100f10-06-9780123969811.jpg)
 
+Figure 10.6 Amazon’s Kindle ecosystem—consisting of both their own devices, as well as software that runs on third-party devices—puts continuity into practice by delivering the user’s entire library to any device and even synchronizes their current page.
 
+### The Cross-Channel Blueprint
+Follow these four steps to create your own cross-channel blueprint:
 
+1. **Identify user actions**. What are the actions that users desire to perform throughout the ecosystem as a whole? The zoom level can vary: high-level user goals offer a succinct overview, and low-level tasks provide completeness.
+1. **List the channels**. What channels compose (or will compose) the ecosystem? Think both digital and physical.
+1. **Prioritize and describe each channel-action**. Once the user actions and channels have been identified and placed on the two axes of the blueprint, determine the priority that each action should receive for a given channel. At the same time as setting priorities, also briefly describe how each action would be achieved.
+1. **Identify shared components**. As a last step, think about the behind-the-scenes components that will be necessary to empower each user action. Stacking these shared components in the final row of the matrix will help tie the user experience vision to the reality of the underlying technology.
 
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000100f10-09-9780123969811.jpg)
 
+Figure 10.9 A cross-channel blueprint.
 
+The cross-channel blueprint provides several benefits once it has been developed:
 
+- A global view of important user actions
+- The possible channels through which users might attempt those actions
+- A set of action priorities for each channel
+- A set of channel priorities for each action
+- An overview of which components need to be shared across channels
+
+### Experience Maps
+`Experience maps` are the ideal companion to the cross-channel blueprint. The latter is a canonical representation of the system and its parts; the former provide experiential stories of how users interact with the system’s components to accomplish their goals.
+
+Sometimes called a `customer journey map`—a reflection of the tool’s origin in service design—the experience map helps us put ourselves in the user’s shoes, customer or otherwise. Experience maps visually represent not only a user’s interactions with the system but are also concerned with the emotional state of the user throughout the entire process (Figure 10.10).
+
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000100f10-10-9780123969811.jpg)
+
+Figure 10.10 An experience map.
+
+Follow these three steps to create a map of your own:
+
+1. Outline the user’s journey. Start by creating a list of all the occurrences that constitute the user’s experience—not just within the ecosystem, but throughout the entire journey from beginning to end. These occurrences can then be arranged horizontally to form a timeline.
+1. List the channel and goal for each step of the user’s journey. “Channel” refers to the medium through which the action is performed. “Goal” describes the underlying motivation for performing the action. These components should be consistent with the channel and actions dimensions of the cross-channel blueprint.
+1. Describe the user’s emotion and rate his or her satisfaction for every step of the process. In order to be useful, however, such reporting should be based on first-hand observation of the user.
