@@ -191,7 +191,18 @@
       - [Nontextual input methods](#nontextual-input-methods)
       - [Viewing search results](#viewing-search-results)
       - [Refining the query](#refining-the-query-1)
-  - [9.](#9)
+  - [9.Social Search](#9social-search)
+    - [Three Circles of Collaboration](#three-circles-of-collaboration)
+      - [The inner circle](#the-inner-circle)
+      - [The social circle](#the-social-circle)
+      - [The outer circle](#the-outer-circle)
+      - [Stepping back](#stepping-back)
+    - [Designing for Inner Circle Collaboration](#designing-for-inner-circle-collaboration)
+      - [Social objects](#social-objects)
+      - [Quick add](#quick-add)
+      - [Instant communication](#instant-communication)
+      - [Persistence](#persistence)
+    - [Designing for Social Circle Collaboration](#designing-for-social-circle-collaboration)
 
 # 1.A Framework for Search and Discovery
 The most fundamental step is to recognize that the opinions are themselves based on a set of **assumptions**—in particular, assumptions about **who** is doing the searching, **what** they are trying to achieve and under **what circumstances**, and **how** they are going about it. Each of these assumptions corresponds to a separate `dimension` by which we can define the search experience.
@@ -2116,7 +2127,76 @@ Last of all, `breadcrumbs` help users keep track of their query and applied filt
 
 Figure 8.29 Mobile breadcrumbs should be legible but don’t have to be clickable.
 
-## 9.
+## 9.Social Search
+### Three Circles of Collaboration
+![](https://learning.oreilly.com/library/view/designing-the-search/9780123969811/images/F000094f09-01-9780123969811.jpg)
+
+Figure 9.1 Three circles of collaborative search: the inner circle, the social circle, and the outer circle.
+
+#### The inner circle
+The `inner circle` forms the nucleus of collaboration. It is made up of one or more active participants with a shared work task—that is, a shared personal or organizational goal (Järvelin and Ingwersen, 2004). This shared goal provides the underlying motivation for inner circle collaboration: working together requires less effort from each participant than if he or she were approaching the task alone.
+
+The inner circle is characterized by a shared work task, but the information needs of each participant need not be identical. Collaborators may adopt a `divide-and-conquer` strategy in which each participant is assigned a subtask and must report his or her findings back to the group (Morris, 2008).
+
+Alternatively, some inner circles may take a `brute force` approach, with each participant doing his or her own, uncoordinated research and then comparing notes later (Morris, 2008).
+
+Last, collaborators may choose a `backseat driver` method when physically gathered around a single display (Morris, 2008).
+
+#### The social circle
+Each collaborator within the inner circle is likely also connected with a number of wider social groups. Often organized around a shared interest (e.g., scuba diving), job role (e.g., UX design), or place (e.g., the London office), these social circles can be pictured as layers surrounding the inner circle.
+
+#### The outer circle
+Both the inner and social circles reflect an `explicit`, intentional form of collaboration between individuals who share some degree of social connectedness. The outer circle, on the other hand, is the realm of `implicit`, unintentional collaboration, predominantly amongst strangers.
+
+One form of implicit collaboration involves using `clickthrough` data—the number of times a given search result has been clicked—to influence the ranking of search results, as Fane Tomescu experienced.
+
+Indeed, recommender systems also rely on behavioral cues. One technique they often employ is `collaborative filtering` (Goldberg et al., 1992), which most often works by grouping together similar users based on the content they’ve viewed, purchased, or rated and then providing a set of recommendations to all the users within that group.
+
+#### Stepping back
+In particular, we should compare this three-circle model with the dimensions of collaboration that have been enumerated by others, namely:
+
+1. Intent: explicit versus implicit (Morris & Teevan, 2008)
+2. Concurrency: synchronous versus asynchronous (Rodden, 1991)
+3. Location: co-located versus remote (Rodden, 1991)
+4. Means of interaction: human-centric versus document-centric (Hansen & Järvelin, 2005)
+
+### Designing for Inner Circle Collaboration
+#### Social objects
+A fundamental purpose of the `shared workspace` is to host collected items meaningful to the inner circle. Transforming these saved web pages, documents, photos, and videos into `social objects`—by facilitating such interactions as ratings and annotations, for instance—provides an important channel for inner circle collaboration.
+
+#### Quick add
+Of course, in order for a social object to appear in the inner circle’s shared workspace, someone must put it there. Saving an item to the workspace is the most critical action of collaborative search and the greatest barrier to entry. It must be as painless a process as possible, lest users decide it’s not worth their effort.
+
+#### Instant communication
+In addition to collaborating around social objects—the output of search—collaborators also strive to work together during the process of search. Because inner circle collaborators share a common work task, facilitating `real-time communication` is vital.
+
+#### Persistence
+Often, inner circle collaborators participate at different times, asynchronously searching, communicating, and sharing objects. Collaborative search tools should support this common occurrence by `persisting` the shared workspace over time.
+
+### Designing for Social Circle Collaboration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
