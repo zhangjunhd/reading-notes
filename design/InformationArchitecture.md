@@ -24,7 +24,8 @@
     - [The “Too-Simple” Information Model](#the-too-simple-information-model)
     - [Information Needs](#information-needs)
     - [Information-Seeking Behaviors](#information-seeking-behaviors)
-    - [Learning About Information Needs and Information-Seeking Behaviors](#learning-about-information-needs-and-information-seeking-behaviors)
+    - [Recap](#recap-1)
+  - [4.Design for Understanding](#4design-for-understanding)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -98,9 +99,16 @@ Another useful model is the `“pearl-growing”` approach. Users start with one
 
 Corporate websites and intranets often utilize a `“two-step”` model. Confronted with a site consisting of links to perhaps hundreds of departmental subsites, users first need to know where to look for the information they need. They might search or browse through a directory until they find a good candidate or two, and then perform the second step: looking for information within those subsites.
 
-### Learning About Information Needs and Information-Seeking Behaviors
+### Recap
 
+- IA starts with people and the reason they use your product or service: they have an information need.
+- There are different models of what happens when people look for information.
+- The most simple of these is problematic, because it doesn’t accurately represent what actually happens when people have an information need.
+- Information needs are like fishing: sometimes people know exactly what they’re looking for, but often they’re casting a wider net.
+- People act on these information needs through various information-seeking behaviors.
+- There are various research methods that allow us to learn about these behaviors.
 
+## 4.Design for Understanding
 
 
 
