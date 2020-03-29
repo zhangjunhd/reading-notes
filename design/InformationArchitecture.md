@@ -28,9 +28,20 @@
   - [4.Design for Understanding](#4design-for-understanding)
     - [A Sense of Place](#a-sense-of-place)
     - [Places Made of Information](#places-made-of-information)
-    - [Organizing Principles](#organizing-principles)
-    - [Structure and Order](#structure-and-order)
-    - [Typologies](#typologies)
+    - [Recap](#recap-2)
+- [II.Basic Principles of Information Architecture](#iibasic-principles-of-information-architecture)
+  - [5.The Anatomy of an Information Architecture](#5the-anatomy-of-an-information-architecture)
+    - [Visualizing Information Architecture](#visualizing-information-architecture)
+    - [Top-Down Information Architecture](#top-down-information-architecture)
+    - [Bottom-Up Information Architecture](#bottom-up-information-architecture)
+    - [Invisible Information Architecture](#invisible-information-architecture)
+    - [Information Architecture Components](#information-architecture-components)
+      - [Browsing Aids](#browsing-aids)
+      - [Search Aids](#search-aids)
+      - [Content and Tasks](#content-and-tasks)
+      - [“Invisible” Components](#invisible-components)
+    - [Recap](#recap-3)
+  - [6.Organization Systems](#6organization-systems)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -128,73 +139,118 @@ Figure 4-3. The content-centric “How to Cook Everything” iPad app feels more
 
 Building architecture aims to produce physical environments that can serve and communicate their `social functions` effectively, and information architecture aims to do the same for information environments. The main difference is that instead of defining compositions of forms, spaces, and objects such as walls, roofs, and furniture, information architecture defines compositions of semantic elements such as navigation labels, section headings, and keywords, and produces the design principles, goals, and guidelines that capture the intended feeling of the place (e.g., is this a serious, solitary place, or a fun, social space?).
 
-### Organizing Principles
-One important difference between information architecture and building architecture is that the products of the latter are exclusive instances of a particular design in space and time.
+### Recap
 
-Information environments, on the other hand, can be manifested in various different ways. For example, a website can look and feel very differently when accessed using a desktop browser with a mouse and a large screen than when it is accessed on the four-inch touchscreen of a mobile phone. However, navigation and structural elements such as section headers tend to use the same terminology in both cases.
+- The structure of information environments influences more than how we find stuff: it also changes how we understand it.
+- We experience information environments as places where we go to transact, learn, and connect with other people, among many other activities.
+- When designing information environments, we can learn from the design of physical environments.
+- Some organizing principles that carry over to information environments from physical environments include `structure` and `order`, `rhythm`, `typologies`, and `modularity` and `extensibility`.
 
-As a result, the semantic structures that information architecture produces are more abstract than the products of other design disciplines.
+# II.Basic Principles of Information Architecture
+## 5.The Anatomy of an Information Architecture
+### Visualizing Information Architecture
 
-### Structure and Order
-The semantic structures in an information architecture also have `hierarchies` that indicate the relative importance of individual components within the whole.
+- `Organization systems` present the site’s information to us in a variety of ways, such as content categories that pertain to the entire campus (e.g., the top bar and its “Academics” and “Admission” choices), or to specific audiences (the block on the middle left, with such choices as “Future Students” and “Staff”).
+- `Navigation systems` help users move through the content, such as with the custom organization of the individual drop-down menus in the main navigation bar.
+- `Search systems` allow users to search the content; when the user starts typing in the site’s search bar, a list of suggestions is shown with possible matches for the user’s search term.
+- `Labeling systems` describe categories, options, and links in language that (hopefully) is meaningful to users; you’ll see examples throughout the page (e.g., “Admission,” “Alumni,” “Events”).
 
-Another common ordering principle in buildings is `rhythm`, usually the result of patterns evident in the structural grid, skin ornamentation, or both.
+### Top-Down Information Architecture
+We refer to this as `top-down information` architecture (Figure 5-3), and the Gustavus main page addresses many common “top-down” questions that users have when they land on a site, including:
 
-Rhythms and patterns are also important ordering principles in information environments, which change the way we perceive information. For example, how search results are presented can suggest different “beats,” with some environments requiring denser patterns than others (Figure 4-6).
+- Where am I? (1)
+- I know what I’m looking for; how do I search for it? (2)
+- How do I get around this site? (3)
+- What’s important and unique about this organization? (4)
+- What’s available on this site? (5)
+- What’s happening there? (6)
+- How do I engage with them via various other popular digital channels? (7)
+- How can I contact a human? (8)
+- What’s their address? (9)
+- How can I access my account? (10)
 
-![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0406.png)
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0503.png)
 
-Figure 4-6. When you “choose a department to sort,” the rhythm of Amazon’s search results changes
+Figure 5-3. The Gustavus site’s main page is crammed with answers to users’ questions
 
-We also experience a strong sense of rhythm in information environments that show a constant feed or stream of similar information nuggets, such as Twitter and Flipboard (shown in Figure 4-7). 
+### Bottom-Up Information Architecture
+This is `bottom-up information architecture`; content structure, sequencing, and tagging help you answer such questions as:
 
-![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0407.png)
+- Where am I?
+- What’s here?
+- Where can I go from here?
 
-Figure 4-7. Flipboard users experience a clear sense of rhythm as they flip through stories with their finger, one at a time; in this example, we show the iPhone app, but this is true in the other systems in which Flipboard is available as well
+Figure 5-5 shows a slightly different example of a bottom-up information architecture: images stored in one of this book’s authors’ iCloud account, as displayed in the iOS Photos app.
 
-### Typologies
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0505.png)
 
+Figure 5-5. Image collections in the iOS Photos app
 
+It provides context for the content, and tells us what we can do while we’re here:
 
+- The information architecture tells us where we are (in the Photos app, looking at “Collections,” which are defined as ranges of dates in a particular geographic region).
+- It helps us move to other closely related views (e.g., by switching to “Albums,” collections of photos we’ve defined).
+- It helps us move through the information hierarchically (e.g., we can choose to view collections of images grouped by the year they were saved, instead of by more granular ranges of dates and locations) and contextually (e.g., by clicking on the city in which they were shot, we can see them arranged spatially over a map).
+- It allows us to search the content based on various criteria, such as different time periods and locations.
+- It allows us to share the content with others.
 
+### Invisible Information Architecture
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0506.png)
 
+Figure 5-6. BBC search results include three “Editor’s Choice” links
 
+What’s different is that the “Editor’s Choice” results are manually created: some people at the BBC decided that “ukraine” is an important term and that some of the BBC’s best content is not news stories, which normally come up at the top of most retrieval sets. So they applied some editorial expertise to identify three highly relevant pages and associated them with the term “ukraine,” thereby ensuring that these three items are displayed when someone searches for “ukraine.” Users might assume these search results are automatically generated, but humans are manually modifying the information architecture in the background; this is another example of `invisible information architecture`.
 
+### Information Architecture Components
 
+- `Organization systems`:How we categorize information (e.g., by subject or chronology); see Chapter 6
+- `Labeling systems`:How we represent information—for example, using scientific terminology (“Acer”) or lay terminology (“maple”); see Chapter 7
+- `Navigation systems`:How we browse or move through information (e.g., clicking through a hierarchy); see Chapter 8
+- `Searching systems`:How we search information (e.g., executing a search query against an index); see Chapter 9
 
+#### Browsing Aids
 
+- `Organization systems`:Also known as taxonomies and hierarchies, these are the main way of categorizing or grouping content (e.g., by topic, by task, by audiences, or by chronology); user-generated tags are also a form of organization system
+- `General navigation systems`:Primary navigation systems that help users understand where they are and where they can go within an information environment
+- `Local navigation systems`:Primary navigation systems that help users understand where they are and where they can go within a portion of an information environment (e.g., a subsite)
+- `Sitemaps/tables of contents`:Navigation systems that supplement primary navigation systems; provide a condensed overview of and links to major content areas within the environment, usually in outline form
+- `Indices`:Supplementary navigation systems that provide an alphabetized list of links to the contents of the environment
+- `Guides`:Supplementary navigation systems that provide specialized information on specific topics, as well as links to related subsets of content
+- `Walkthroughs and wizards`:Supplementary navigation systems that lead users through sequential sets of steps; may also link to related subsets of content
+- `Contextual navigation systems`:Consistently presented links to related content; often embedded in text and generally used to connect highly specialized content within an information environment
 
+#### Search Aids
 
+- `Search interface`:The means of entering and revising a search query, typically with information on how to improve your query, as well as other ways to configure your search (e.g., selecting from specific search zones)
+- `Query language`:The grammar of a search query; query languages might include Boolean operators (e.g., AND, OR, NOT), proximity operators (e.g., ADJACENT, NEAR), or ways of specifying which field to search (e.g., AUTHOR=“Shakespeare”)
+- `Query builders`:Ways of enhancing a query’s performance; common examples include spell checkers, stemming, concept searching, and drawing in synonyms from a thesaurus
+- `Retrieval algorithms`:The part of a search engine that determines which content matches a user’s query; Google’s PageRank is perhaps the best-known example
+- `Search zones`:Subsets of site content that have been separately indexed to support narrower searching (e.g., searching the tech support area within a software vendor’s site)
+- `Search results`:Presentation of content that matches the user’s search query; involves decisions about what types of content should make up each individual result, how many results to display, and how sets of results should be ranked, sorted, and clustered
 
+#### Content and Tasks
 
+- `Headings`:Labels for the content that follows them
+- `Embedded links`:Links within text; these label (i.e., represent) the content they link to
+- `Embedded metadata`:Information that can be used as metadata but must first be extracted (e.g., in a recipe, if an ingredient is mentioned, this information can be indexed to support searching by ingredient)
+- `Chunks`:Logical units of content; these can vary in granularity (e.g., sections and chapters are both chunks) and can be nested (e.g., a section is part of a book)
+- `Lists`:Groups of chunks or links to chunks; these are important because they’ve been grouped together (e.g., they share some trait in common) and have been presented in a particular order (e.g., chronologically)
+- `Sequential aids`:Clues that suggest where the user is in a process or task, and how far he has to go before completing it (e.g., “step 3 of 8”)
+- `Identifiers`:Clues that suggest where the user is in an information system (e.g., a logo specifying what site she is using, or a breadcrumb explaining where she is)
 
+#### “Invisible” Components
 
+- `Controlled vocabularies and thesauri`:Predetermined vocabularies of preferred terms that describe a specific domain (e.g., auto racing or orthopedic surgery); typically include variant terms (e.g., “brewski” is a variant term for “beer”). Thesauri are controlled vocabularies that generally include links to broader and narrower terms, related terms, and descriptions of preferred terms (aka “scope notes”). Search systems can enhance queries by extracting a query’s synonyms from a controlled vocabulary.
+- `Retrieval algorithms`:Used to rank search results by relevance; retrieval algorithms reflect their programmers’ judgments on how to determine relevance.
+- `Best bets`:Preferred search results that are manually coupled with a search query; editors and subject matter experts determine which queries should retrieve best bets and which documents merit best bet status.
 
+### Recap
 
+- You’ll probably need to explain information architecture to others, so it’s important that you help them visualize it.
+- You can visualize information architecture from the top down, or from the bottom up.
+- There are various ways of categorizing IA components, but here we’ll be looking at four categories: organization systems, labeling systems, navigation systems, and searching systems.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 6.Organization Systems
 
 
 
