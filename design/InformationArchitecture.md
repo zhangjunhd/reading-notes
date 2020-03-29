@@ -48,6 +48,15 @@
       - [Differences in Perspectives](#differences-in-perspectives)
       - [Internal Politics](#internal-politics)
     - [Organizing Information Environments](#organizing-information-environments)
+    - [Organization Schemes](#organization-schemes)
+      - [Exact Organization Schemes](#exact-organization-schemes)
+        - [Alphabetical schemes](#alphabetical-schemes)
+        - [Chronological schemes](#chronological-schemes)
+        - [Geographical schemes](#geographical-schemes)
+      - [Ambiguous Organization Schemes](#ambiguous-organization-schemes)
+        - [Topical organization schemes](#topical-organization-schemes)
+        - [Task-oriented schemes](#task-oriented-schemes)
+        - [Audience-specific schemes](#audience-specific-schemes)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -277,6 +286,90 @@ The fact is that labeling and organization systems are intensely affected by the
 As a designer, you must be sensitive to your organization’s political environment. In certain cases, you must remind your colleagues to focus on creating an architecture that works for the users. In others, you may need to make compromises to avoid serious political conflict. Politics raise the complexity and difficulty of creating usable information architectures.
 
 ### Organizing Information Environments
+Organization systems are composed of `organization schemes` and `organization structures`. 
+
+- An organization scheme defines the shared characteristics of content items and influences the logical grouping of those items. 
+- An organization structure defines the types of relationships between content items and groups. Both organization schemes and structures have an important impact on the ways information is found and understood.
+
+Organization is closely related to `navigation`, `labeling`, and `indexing`. 
+
+- The organization structures of information environments often play the part of the primary navigation system. 
+- The labels of categories play a significant role in defining the contents of those categories. 
+- Manual indexing or metadata tagging is ultimately a tool for organizing content items into groups at a very detailed level.
+
+### Organization Schemes
+#### Exact Organization Schemes
+For example, country names are usually listed in alphabetical order. If you know the name of the country you are looking for, navigating the scheme is easy. “Chile” is in the Cs, which are after the Bs but before the Ds. This is called `known-item searching`.
+
+##### Alphabetical schemes
+Most address book applications organize contacts alphabetically by last name, as shown in Figure 6-2.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0602.png)
+
+Figure 6-2. The OS X Contacts application (image: https://www.apple.com/osx/apps/#contacts)
+
+##### Chronological schemes
+Press release archives are obvious candidates for chronological organization schemes (see Figure 6-3). The date of announcement provides important context for the release. However, keep in mind that users may also want to browse the releases by title, product category, or geography, or to search by keyword. A complementary combination of organization schemes is often necessary.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0603.png)
+
+Figure 6-3. Press releases in reverse chronological order
+
+##### Geographical schemes
+Figure 6-4 shows an example of a geographical organization scheme from Craigslist. The user can select her nearest local directory. If her browser supports geolocation, the site navigates directly to it.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0604.png)
+
+Figure 6-4. A geographical organization scheme with geolocation
+
+#### Ambiguous Organization Schemes
+There’s a simple reason why people find ambiguous organization schemes so useful: **we don’t always know what we’re looking for**. As we mentioned in Chapter 3, information seeking is often `iterative` and `interactive`.
+
+##### Topical organization schemes
+While few information environments are organized solely by topic, most should provide some sort of topical access to content. In designing a topical organization scheme, **it is important to define the breadth of coverage**. 
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0605.png)
+
+Figure 6-5. A topical taxonomy showing categories and subcategories
+
+##### Task-oriented schemes
+Task-oriented schemes organize content and applications into collections of processes, functions, or tasks.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0606.png)
+
+Figure 6-6. Like many apps, Microsoft Word on iOS features a task-oriented organization scheme
+
+Task-oriented schemes are usually embedded within specific subsites or integrated into hybrid task/topic navigation systems, as we see in Figure 6-7.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0607.png)
+
+Figure 6-7. Task, topic, and audience coexist on the Smithsonian home page
+
+##### Audience-specific schemes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
