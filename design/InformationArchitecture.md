@@ -60,6 +60,13 @@
         - [Metaphor-driven schemes](#metaphor-driven-schemes)
         - [Hybrid schemes](#hybrid-schemes)
     - [Organization Structures](#organization-structures)
+      - [The Hierarchy: A Top-Down Approach](#the-hierarchy-a-top-down-approach)
+        - [Designing hierarchies](#designing-hierarchies)
+      - [The Database Model: A Bottom-Up Approach](#the-database-model-a-bottom-up-approach)
+      - [Hypertext](#hypertext)
+    - [Social Classification](#social-classification)
+    - [Recap](#recap-4)
+  - [7.](#7)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -370,6 +377,113 @@ In cases where multiple schemes must be presented on one page, you should commun
 Figure 6-11. Stanford provides multiple organization schemes
 
 ### Organization Structures
+#### The Hierarchy: A Top-Down Approach
+##### Designing hierarchies
+1. You should be aware of, but not bound by, the idea that hierarchical categories should be mutually exclusive.Within a single organization scheme, you will need to balance the tension between exclusivity and inclusivity. Hierarchies that allow cross-listing are known as `polyhierarchical`. Ambiguous organization schemes in particular make it challenging to divide content into mutually exclusive categories. 
+1. It is important to consider the balance between breadth and depth in your hierarchy. `Breadth` refers to the number of options at each level of the hierarchy. `Depth` refers to the number of levels in the hierarchy.
+
+#### The Database Model: A Bottom-Up Approach
+They consisted of rolls of physical cards, with each card representing an individual contact: a `record` in the system. Each record contains several `fields`, such as name, address, and telephone number. Each field may contain data specific to that contact. The collection of records is a `database`.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0615.png)
+
+Figure 6-15. The printed card Rolodex is a simple database
+
+Most of the heavy-duty databases we use are built upon the `relational database model`. In relational database structures, data is stored within a set of relations or `tables`. `Rows` in the tables represent `records`, and `columns` represent `fields`.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0616.png)
+
+Figure 6-16. A relational database schema (image: http://bit.ly/relational_model).
+
+So why are database structures important to information architects? In a word, `metadata`.
+
+For example, the `entity relationship diagram` (`ERD`) in Figure 6-17 illustrates a structured approach to defining a `metadata schema`. Each `entity` (e.g., Resource) has `attributes` (e.g., Name, URL). These entities and attributes become records and fields.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0617.png)
+
+Figure 6-17. An entity relationship diagram showing a structured approach to defining a metadata schema (courtesy of Peter Wyngaard of Interconnect of Ann Arbor)
+
+#### Hypertext
+A `hypertext` system involves two primary types of components: the items or `chunks` of information that will be linked, and the `links` between those chunks.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0618.png)
+
+Figure 6-18. A network of hypertextual connections
+
+### Social Classification
+`Free tagging`, also known as collaborative categorization, mob indexing, and ethnoclassification, is a simple yet powerful tool.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0619.png)
+
+Figure 6-19. The “Discover” and “Trending” features in Twitter, which allow you to discover new and potentially interesting content, are driven by user-generated tags
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0620.png)
+
+Figure 6-20. LinkedIn allows you to “endorse” your contacts as having certain professional skills, from a set of predefined tags
+
+### Recap
+
+- Our understanding of the world is informed by how we classify things.
+- Classifying things is not easy; we have to deal with ambiguity, heterogeneity, differences in perspective, and internal politics, among other challenges.
+- We can organize things using exact organization schemes or ambiguous organization schemes.
+- Exact organization schemes include alphabetical, chronological, and geographical groupings.
+- Ambiguous organization schemes include topical, task-based, audience-based, metaphorical, and hybrid groupings.
+- The structure of organization schemes also plays an important role in the design of information environments.
+- Social classification has emerged as an important tool for organizing information in shared digital environments.
+
+## 7.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
