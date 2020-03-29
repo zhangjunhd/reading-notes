@@ -42,6 +42,12 @@
       - [“Invisible” Components](#invisible-components)
     - [Recap](#recap-3)
   - [6.Organization Systems](#6organization-systems)
+    - [Challenges of Organizing Information](#challenges-of-organizing-information)
+      - [Ambiguity](#ambiguity)
+      - [Heterogeneity](#heterogeneity)
+      - [Differences in Perspectives](#differences-in-perspectives)
+      - [Internal Politics](#internal-politics)
+    - [Organizing Information Environments](#organizing-information-environments)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -251,6 +257,46 @@ What’s different is that the “Editor’s Choice” results are manually crea
 - There are various ways of categorizing IA components, but here we’ll be looking at four categories: organization systems, labeling systems, navigation systems, and searching systems.
 
 ## 6.Organization Systems
+### Challenges of Organizing Information
+#### Ambiguity
+Classification systems are made of language, and language is `ambiguous`: words are capable of being understood in more than one way.
+
+#### Heterogeneity
+`Heterogeneity` refers to an object or collection of objects composed of unrelated or unlike parts.
+
+An old-fashioned library `card catalog` is relatively homogeneous. It organizes and provides access to books. It does not provide access to chapters in books or collections of books. It may not provide access to magazines or videos. This homogeneity allows for a structured classification system. Each book has a record in the catalog. Each record contains the same fields: author, title, and subject.
+
+Most digital information environments, on the other hand, are highly heterogeneous in many respects. For example, websites often provide access to documents and their components at varying levels of `granularity`. A site might present articles and journals and journal databases side by side. Links might lead to pages, sections of pages, or other websites. And websites typically provide access to documents in multiple formats.
+
+**The heterogeneous nature of information environments makes it difficult to impose any single structured organization system on the content**.
+
+#### Differences in Perspectives
+The fact is that labeling and organization systems are intensely affected by their creators’ perspectives. We see this at the corporate level with websites organized according to internal divisions or org charts, with groupings such as marketing, sales, customer support, human resources, and information systems. How does a customer visiting this website know where to go for technical information about a product she just purchased? To design usable organization systems, **we need to escape from our own mental models of content labeling and organization.**
+
+#### Internal Politics
+As a designer, you must be sensitive to your organization’s political environment. In certain cases, you must remind your colleagues to focus on creating an architecture that works for the users. In others, you may need to make compromises to avoid serious political conflict. Politics raise the complexity and difficulty of creating usable information architectures.
+
+### Organizing Information Environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
