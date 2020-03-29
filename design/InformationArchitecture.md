@@ -26,6 +26,11 @@
     - [Information-Seeking Behaviors](#information-seeking-behaviors)
     - [Recap](#recap-1)
   - [4.Design for Understanding](#4design-for-understanding)
+    - [A Sense of Place](#a-sense-of-place)
+    - [Places Made of Information](#places-made-of-information)
+    - [Organizing Principles](#organizing-principles)
+    - [Structure and Order](#structure-and-order)
+    - [Typologies](#typologies)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -109,43 +114,45 @@ Corporate websites and intranets often utilize a `“two-step”` model. Confron
 - There are various research methods that allow us to learn about these behaviors.
 
 ## 4.Design for Understanding
+### A Sense of Place
+When we talk about digital media, we use metaphors that betray a sense of place: we “go” online, “visit” a website, “browse” Amazon.com. Increasingly, these environments are also taking over many of the functions we’ve traditionally associated with physical places: we meet with our friends in WhatsApp, pay our bills in our bank’s website, learn in Khan Academy. As with physical places, we experience them as contexts that differ from one another, supporting different needs.
 
+### Places Made of Information
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0402.png)
 
+Figure 4-2. Banks and hospitals serve different information needs; their website navigation structures highlight the differences between them, and you understand the information they present in the context of the roles and functions these organizations serve in society
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0403.png)
 
+Figure 4-3. The content-centric “How to Cook Everything” iPad app feels more like a recipe book than like a place
 
+Building architecture aims to produce physical environments that can serve and communicate their `social functions` effectively, and information architecture aims to do the same for information environments. The main difference is that instead of defining compositions of forms, spaces, and objects such as walls, roofs, and furniture, information architecture defines compositions of semantic elements such as navigation labels, section headings, and keywords, and produces the design principles, goals, and guidelines that capture the intended feeling of the place (e.g., is this a serious, solitary place, or a fun, social space?).
 
+### Organizing Principles
+One important difference between information architecture and building architecture is that the products of the latter are exclusive instances of a particular design in space and time.
 
+Information environments, on the other hand, can be manifested in various different ways. For example, a website can look and feel very differently when accessed using a desktop browser with a mouse and a large screen than when it is accessed on the four-inch touchscreen of a mobile phone. However, navigation and structural elements such as section headers tend to use the same terminology in both cases.
 
+As a result, the semantic structures that information architecture produces are more abstract than the products of other design disciplines.
 
+### Structure and Order
+The semantic structures in an information architecture also have `hierarchies` that indicate the relative importance of individual components within the whole.
 
+Another common ordering principle in buildings is `rhythm`, usually the result of patterns evident in the structural grid, skin ornamentation, or both.
 
+Rhythms and patterns are also important ordering principles in information environments, which change the way we perceive information. For example, how search results are presented can suggest different “beats,” with some environments requiring denser patterns than others (Figure 4-6).
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0406.png)
 
+Figure 4-6. When you “choose a department to sort,” the rhythm of Amazon’s search results changes
 
+We also experience a strong sense of rhythm in information environments that show a constant feed or stream of similar information nuggets, such as Twitter and Flipboard (shown in Figure 4-7). 
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0407.png)
 
+Figure 4-7. Flipboard users experience a clear sense of rhythm as they flip through stories with their finger, one at a time; in this example, we show the iPhone app, but this is true in the other systems in which Flipboard is available as well
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Typologies
 
 
 
