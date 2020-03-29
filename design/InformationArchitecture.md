@@ -57,6 +57,9 @@
         - [Topical organization schemes](#topical-organization-schemes)
         - [Task-oriented schemes](#task-oriented-schemes)
         - [Audience-specific schemes](#audience-specific-schemes)
+        - [Metaphor-driven schemes](#metaphor-driven-schemes)
+        - [Hybrid schemes](#hybrid-schemes)
+    - [Organization Structures](#organization-structures)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -346,27 +349,27 @@ Task-oriented schemes are usually embedded within specific subsites or integrate
 Figure 6-7. Task, topic, and audience coexist on the Smithsonian home page
 
 ##### Audience-specific schemes
+Audience-oriented schemes break a site into smaller, audience-specific mini-sites, thereby allowing for clutter-free pages that present only the options of interest to that particular audience. CERN, shown in Figure 6-8, presents an audience-oriented organization scheme that invites users to self-identify.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0608.png)
 
+Figure 6-8. CERN invites users to self-identify
 
+##### Metaphor-driven schemes
+You need not look further than your desktop computer with its folders, files, and trash can or recycle bin for an example. 
 
+##### Hybrid schemes
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0610.png)
 
+Figure 6-10. A hybrid organization scheme
 
+In cases where multiple schemes must be presented on one page, you should communicate to designers the importance of preserving the integrity of each scheme. As long as the schemes are presented separately on the page, they will retain the powerful ability to suggest a mental model for users. For example, a look at the main menu in the Stanford University website in Figure 6-11 reveals a topical scheme, an audience-oriented scheme, and a search function. By presenting them separately, Stanford provides flexibility without causing confusion.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0611.png)
 
+Figure 6-11. Stanford provides multiple organization schemes
 
-
-
-
-
-
-
-
-
-
-
-
-
+### Organization Structures
 
 
 
