@@ -66,7 +66,11 @@
       - [Hypertext](#hypertext)
     - [Social Classification](#social-classification)
     - [Recap](#recap-4)
-  - [7.](#7)
+  - [7.Labeling Systems](#7labeling-systems)
+    - [Varieties of Labels](#varieties-of-labels)
+      - [Labels as Contextual Links](#labels-as-contextual-links)
+    - [Labels as Headings](#labels-as-headings)
+      - [Labels Within Navigation Systems](#labels-within-navigation-systems)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -431,39 +435,45 @@ Figure 6-20. LinkedIn allows you to “endorse” your contacts as having certai
 - The structure of organization schemes also plays an important role in the design of information environments.
 - Social classification has emerged as an important tool for organizing information in shared digital environments.
 
-## 7.
+## 7.Labeling Systems
+### Varieties of Labels
 
+- `Contextual links`:Hyperlinks to chunks of information on other pages or to other locations on the same page
+- `Headings`:Labels that simply describe the content that follows them, just as print headings do
+- `Navigation system choices`:Labels representing the options in navigation systems
+- `Index terms`:Keywords, tags, and subject headings that represent content for searching or browsing
 
+#### Labels as Contextual Links
+Labels describe the hypertext links within the body of a document or chunk of information, and naturally occur within the descriptive context of their surrounding text. 
 
+Because GOV.UK (Figure 7-4) is a site dedicated to providing information to the entire population of the UK, contextual links need to be straightforward and meaningful. GOV.UK’s contextual link labels, such as “Benefits,” “Money and tax,” and “Disabled people,” are representational, and draw on surrounding text and headings to make it clear what type of help you’ll receive if you click through. These highly representational labels are made even clearer by their context: **explanatory text, clear headings, and a site that itself has a few straightforward uses**.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0704.png)
 
+Figure 7-4. The contextual links on the GOV.UK home page are straightforward and meaningful
 
+On the other hand, contextual links on a blog aren’t necessarily so clear. The author is among friends and can assume that her regular readers possess a certain level of background (or, really, contextual) knowledge.
 
+In Figure 7-5, the author expects us to know who “Dr. Drang” is—perhaps s/he’s been mentioned in this blog before. Or the author knows that we’ll recognize the label “Dr. Drang” as a person, and provides some mysterious context—“Your favorite snowman and mine”—to entice the user to click through. 
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0705.png)
 
+Figure 7-5. These contextual links aren’t very representational, but that’s acceptable when there is a high degree of trust in the author
 
+### Labels as Headings
+`Headings`, as shown in Figure 7-6, are often used to establish a hierarchy within content.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0706.png)
 
+Figure 7-6. Layout, typographic treatment, and whitespace help the reader distinguish labels and hierarchy in the Windows Store
 
+To successfully navigate a process, it’s typically necessary for users to complete each step along the way, so heading labels have to be obvious and must also convey sequence. Figure 7-8 shows a page in the process to sign up to become a Google Play Developer, which clearly describes the actions required in each step.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0708.png)
 
+Figure 7-8. Clear sequential labeling in the Google Play Developer signup process
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Labels Within Navigation Systems
 
 
 
