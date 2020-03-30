@@ -74,6 +74,10 @@
       - [Labels as Index Terms](#labels-as-index-terms)
       - [Iconic Labels](#iconic-labels)
     - [Designing Labels](#designing-labels)
+      - [General Guidelines](#general-guidelines)
+        - [Narrow the scope whenever possible](#narrow-the-scope-whenever-possible)
+        - [Develop consistent labeling systems, not labels](#develop-consistent-labeling-systems-not-labels)
+      - [Sources of Labeling Systems](#sources-of-labeling-systems)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -512,18 +516,23 @@ Figure 7-12. Icons from the Microsoft Band’s navigation system (image: https:/
 (They are, respectively: Mail, Run, Calendar, Exercise, Sleep, Messaging, and Finance.)
 
 ### Designing Labels
+#### General Guidelines
+What can we do to make sure our labels are less ambiguous and more representational? The following two guidelines may help.
 
+##### Narrow the scope whenever possible
+Labeling is easier if your content, users, and context are kept simple and focused.
 
+##### Develop consistent labeling systems, not labels
+Consistency is affected by many issues:
 
+- Style:Haphazard usage of punctuation and case is a common problem within labeling systems, and can be addressed, if not eliminated, by using style guides. Consider hiring a proofreader and purchasing a copy of Strunk & White.
+- Presentation:Similarly, consistent application of fonts, font sizes, colors, whitespace, and grouping can help visually reinforce the systematic nature of a group of labels.
+- Syntax:It’s not uncommon to find verb-based labels (e.g., “Grooming Your Dog”), noun-based labels (e.g., “Diets for Dogs”), and question-based labels (e.g., “How Do You Paper Train Your Dog?”) all mixed together. Within a specific labeling system, consider choosing a single syntactical approach and sticking with it.
+- Granularity:Within a labeling system, it can be helpful to present labels that are roughly equal in their specificity. Exceptions (such as site indexes) aside, it’s confusing to encounter a set of labels that cover differing levels of granularity—for example, “Chinese restaurants,” “Restaurants,” “Taquerias,” “Fast Food Franchises,” “Burger Kings.”
+- Comprehensiveness:People can be tripped up by noticeable gaps in a labeling system. For example, if a clothing retailer’s website lists “trousers,” “ties,” and “shoes,” while somehow omitting “shirts,” we may feel like something’s wrong. Do they really not carry shirts? Or did they make a mistake? Aside from improving consistency, a comprehensive scope also helps people do a better job of quickly scanning and inferring the environment’s content.
+- Audience:Mixing terms like “lymphoma” and “tummy ache” in a single labeling system can also throw people off, even if only temporarily. Consider the languages of your environment’s major audiences. If each audience uses a very different terminology, you may have to develop a separate labeling system for each audience, even if these systems are describing exactly the same content.
 
-
-
-
-
-
-
-
-
+#### Sources of Labeling Systems
 
 
 
