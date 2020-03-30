@@ -71,6 +71,9 @@
       - [Labels as Contextual Links](#labels-as-contextual-links)
     - [Labels as Headings](#labels-as-headings)
       - [Labels Within Navigation Systems](#labels-within-navigation-systems)
+      - [Labels as Index Terms](#labels-as-index-terms)
+      - [Iconic Labels](#iconic-labels)
+    - [Designing Labels](#designing-labels)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -474,33 +477,41 @@ To successfully navigate a process, it’s typically necessary for users to comp
 Figure 7-8. Clear sequential labeling in the Google Play Developer signup process
 
 #### Labels Within Navigation Systems
+There are no standards, but some common variants exist for many navigation system labels. You should consider selecting one from each of these categories and applying it consistently, as these labels are already familiar to most web users. Here is a nonexhaustive list:
 
+- Main, Main Page, Home
+- Search, Find, Browse, Search/Browse
+- Site Map, Contents, Table of Contents, Index
+- Contact, Contact Us
+- Help, FAQ, Frequently Asked Questions
+- News, News & Events, News & Announcements, Announcements
+- About, About Us, About \<company name\>, Who We Are
 
+#### Labels as Index Terms
+The index of the SFGate website shown in Figure 7-10 is generated from index term labels, which in turn are used to identify content from many different sections of the site.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0710.png)
 
+Figure 7-10. The SFGate site index
 
+For example, a furniture manufacturer’s website might list the following index terms in the \<meta\> tags of records for its upholstered items:
 
+```xml
+<meta name="keywords" CONTENT="upholstery, upholstered, sofa,  couch, loveseat, love seat, sectional, armchair, arm chair,   easy chair, chaise lounge">
+```
 
+A search on “sofa” would then retrieve the page with these index terms even if the term “sofa” doesn’t appear anywhere in the page’s text.
 
+#### Iconic Labels
+Even so, iconic labels are still a risky proposition in terms of whether or not they can represent meaning. Figure 7-12 shows navigation tiles on the Microsoft Band fitness tracker.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0712.png)
 
+Figure 7-12. Icons from the Microsoft Band’s navigation system (image: https://www.microsoft.com/microsoft-band/en-us)
 
+(They are, respectively: Mail, Run, Calendar, Exercise, Sleep, Messaging, and Finance.)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Designing Labels
 
 
 
