@@ -392,6 +392,7 @@
    3. [数据仓库](software/BuildingTheDataWarehouse.md)
 7. 领域建模
    1. [语义网基础教程](software/ASemanticWebPrimer.md)
+   2. [Semantic Modeling for Data](software/SemanticModeling4Data.md)
 8. DevOps
    1. [Mastering Jenkins](software/MasteringJenkins.md)
    2. [Pro Git (Second Edition)](software/ProGit.md)
