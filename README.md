@@ -390,14 +390,15 @@
    1. [Learning Scrapy](software/LearningScrapy.md)
    2. [SQL入门经典](software/BeginningSQL.md)
    3. [数据仓库](software/BuildingTheDataWarehouse.md)
-   4. [语义网基础教程](software/ASemanticWebPrimer.md)
-7. DevOps
+7. 领域建模
+   1. [语义网基础教程](software/ASemanticWebPrimer.md)
+8. DevOps
    1. [Mastering Jenkins](software/MasteringJenkins.md)
    2. [Pro Git (Second Edition)](software/ProGit.md)
    3. [Docker In Action](software/DockerInAction.md)
    4. [Getting Started with Kubernetes](software/GettingStartedWithKubernetes.md)
    5. [Kubernetes Up and Running,2nd Edition](software/KubernetesUpAndRunning.md)
-8. Web开发
+9. Web开发
    1. [Mastering Flask](software/MasteringFlask.md)
    2. [React设计思想](software/ReactBasic.md)
    3. [Learning React](software/LearningReact.md)
@@ -406,5 +407,5 @@
 1. 搜索引擎
    1. [Lucene in Action, Second Edition](ml/LuceneInAction.md)
    2. [搜索引擎-信息检索实践](ml/SearchEngines.md)
-1. 深度学习
+2. 深度学习
    1. [Fundamentals of Deep Learning](ml/FundamentalsOfDeepLearning.md)
