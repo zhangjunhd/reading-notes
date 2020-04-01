@@ -78,6 +78,11 @@
         - [Narrow the scope whenever possible](#narrow-the-scope-whenever-possible)
         - [Develop consistent labeling systems, not labels](#develop-consistent-labeling-systems-not-labels)
       - [Sources of Labeling Systems](#sources-of-labeling-systems)
+        - [Your current information environment](#your-current-information-environment)
+        - [Comparable and competitive environments](#comparable-and-competitive-environments)
+        - [Controlled vocabularies and thesauri](#controlled-vocabularies-and-thesauri)
+    - [Recap](#recap-5)
+  - [8.Navigation Systems](#8navigation-systems)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -533,6 +538,62 @@ Consistency is affected by many issues:
 - Audience:Mixing terms like “lymphoma” and “tummy ache” in a single labeling system can also throw people off, even if only temporarily. Consider the languages of your environment’s major audiences. If each audience uses a very different terminology, you may have to develop a separate labeling system for each audience, even if these systems are describing exactly the same content.
 
 #### Sources of Labeling Systems
+##### Your current information environment
+Arranging labels in a table provides a more condensed, complete, and accurate view of navigation labels as a `system`. 
+
+##### Comparable and competitive environments
+Figure 7-13 shows labeling systems from United, Delta, Virgin America, and American Airlines, all competing in the airline business. Just a glance shows how much variation there is in terms of the number of labels (from five to as many as nine). Some use the “My...” approach, and some use brand-specific labels (e.g., “AAdvantage”). Task-based labels (e.g., “Book a trip”) are less common than one would expect, as is the use of a “Home” or “Main” option.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0713.png)
+
+Figure 7-13. Labeling systems from United, Delta, Virgin America, and American Airlines
+
+##### Controlled vocabularies and thesauri
+A good example of a specific controlled vocabulary is the Educational Resources Information Center (ERIC) Thesaurus. This thesaurus was designed, as you’d guess, to describe the domain of education. An entry in the ERIC Thesaurus for “scholarship” is shown in Figure 7-14.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0714.png)
+
+Figure 7-14. Controlled vocabularies and thesauri are rich sources of labels
+
+Try these excellent resources as you hunt for sources of labels:
+
+- [Taxonomy Warehouse](http://taxonomywarehouse.com/)
+- [American Online Thesauri and Authority Files (American Society for Indexing)](http://bit.ly/online_thesauri)
+
+### Recap
+- We label things all the time.
+- Labeling is the most obvious way to show our organization schemes across multiple systems and contexts.
+- We must try to design labels that speak the same language as our environment’s users, while also reflecting its content.
+- Textual labels are the most common type we encounter in our work; they include contextual links, headings, navigation system options, and index terms.
+- Iconic labels are less common, but the widespread adoption of devices with less screen real estate means that they are an important component of many information environments.
+- Designing labels is one of the most difficult aspects of information architecture.
+- That said, there are various sources of inspiration—such as your existing information environment and search log analysis—that can help inform your labeling choices.
+
+## 8.Navigation Systems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
