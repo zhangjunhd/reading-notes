@@ -28,6 +28,13 @@
     - [Meaning inclusion and class subsumption](#meaning-inclusion-and-class-subsumption)
     - [Part-Whole relations](#part-whole-relations)
     - [Semantic Relatedness](#semantic-relatedness)
+    - [Mapping and Interlinking Relations](#mapping-and-interlinking-relations)
+    - [Documentation Elements](#documentation-elements)
+      - [Definitions and examples](#definitions-and-examples)
+      - [Scope and Usage](#scope-and-usage)
+      - [History and Provenance](#history-and-provenance)
+- [3.Semantic and Linguistic Phenomena](#3semantic-and-linguistic-phenomena)
+  - [Ambiguity](#ambiguity)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -149,22 +156,45 @@ When the meaning inclusion is applied to classes, then it is also called `“cla
 - `Place-Area`: This is the relation between areas and places or locations within them. For example, “Yosemite National Park is part of California”, “Manhattan is part of New York City”, etc.
 
 ### Semantic Relatedness
+If two modeling elements have semantically close meanings then their relation is characterized as “semantic relatedness”, “semantic similarity” or even “semantic distance”.
 
+### Mapping and Interlinking Relations
+OWL provides the relation “owl:sameAs” to denote that two individual entities between different models have the same meaning.
 
+Also, for interlinking between classes, OWL offers the relation “owl:equivalentClass” which however has a big difference from “owl:sameAs”: the equivalence it expresses is extensional, i.e., two classes are equivalent if they always have the same instances.
 
+SKOS, provides five different relations for the same purpose:
 
+- “skos:exactMatch”: Given two entities in different models, it indicates a high degree of confidence that the two entities can be used interchangeably across a wide range of applications.
+- “skos:closeMatch”: Given two entities in different models, indicates that the entities are sufficiently similar that they can be used interchangeably in some applications.
+- “skos:broadMatch”: Given two entities in different models, it states that one entity’s meaning is broader than the other’s
+- “skos:narrowMatch”: Given two entities in different models, it states that one entity’s meaning is narrower than the other’s.
+- “skos:relatedMatch”: Given two entities in different models, it states that the two entities are semantically related, though not in a narrower or broader way.
 
+### Documentation Elements
+#### Definitions and examples
+In general, natural language definitions come into four main flavours:
 
+- `Extensional definitions` formulate an element’s meaning by specifying its extension, that is, every object that falls under its definition. For example, an extensional definition of the class “European Country” might be given by listing all of the countries that are located in Europe, or by giving some other means of recognizing the members of the corresponding class.
+- `Intensional definition`s give the meaning of an element by specifying necessary and sufficient conditions for when the element should be used. For example, an intensional definition of the class “Bachelor” is “unmarried man”. This definition is valid because being an unmarried man is both a necessary condition and a sufficient condition for being a bachelor.
+- `Definitions by genus and difference` give the meaning of an element by first stating the broad category it belongs to and then distinguishing it by specific properties. As an example consider the definition of “miniskirt” as “a skirt with a hemline above the knee”.
+- `Ostensive definitions` give the meaning of an element by pointing out examples. This type of definition is often used where the term is difficult to define verbally, either because the words will not be understood (as with children and new speakers of a language) or because of the nature of the term (such as colors or sensations).
 
+In RDF(S) and OWL, definitions and examples are usually expressed via the “rdfs:comment” attribute, while in SKOS there are dedicated elements for this purpose (“skos:definition” and skos:example”).
 
+#### Scope and Usage
+Cases when this may be needed include:
 
+- The element may have other meanings which have been deliberately excluded from the model.
+- The element may not be applicable in a particular context. For example, the profession of “Licence Plate Obscurer” exists only in Iran, so it makes no sense to have it as an entity in a model applied in the United States.
+- The element (or even the whole model) may have been optimized for a particular task or application (e.g., for semantic search) that makes it less useful or even inappropriate for other tasks.
 
+#### History and Provenance
+Provenance elements are used to track the development of entities, relations and other modeling elements over time, by representing information about changes (who, when, what), versions, compatibility, etc.
 
-
-
-
-
-
+# 3.Semantic and Linguistic Phenomena
+## Ambiguity
+`Ambiguity` is the situation that arises when a piece of information can be interpreted in more than one plausible ways.
 
 
 
