@@ -83,6 +83,16 @@
         - [Controlled vocabularies and thesauri](#controlled-vocabularies-and-thesauri)
     - [Recap](#recap-5)
   - [8.Navigation Systems](#8navigation-systems)
+    - [Types of Navigation Systems](#types-of-navigation-systems)
+    - [Gray Matters](#gray-matters)
+    - [Browser Navigation Features](#browser-navigation-features)
+    - [Placemaking](#placemaking)
+    - [Improving Flexibility](#improving-flexibility)
+    - [Embedded Navigation Systems](#embedded-navigation-systems)
+      - [Global Navigation Systems](#global-navigation-systems)
+      - [Local Navigation Systems](#local-navigation-systems)
+      - [Contextual Navigation](#contextual-navigation)
+      - [Implementing Embedded Navigation](#implementing-embedded-navigation)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -570,6 +580,114 @@ Try these excellent resources as you hunt for sources of labels:
 - That said, there are various sources of inspiration—such as your existing information environment and search log analysis—that can help inform your labeling choices.
 
 ## 8.Navigation Systems
+### Types of Navigation Systems
+First, we have the `global`, `local`, and `contextual` navigation systems that are integrated within `site pages` or `app screens`.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0801.png)
+
+Figure 8-1. Global, local, and contextual embedded navigation systems
+
+Second, we have `supplemental navigation systems` such as `sitemaps`, `indexes`, and `guides` that exist outside the content-bearing pages. These are shown in Figure 8-2.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0802.png)
+
+Figure 8-2. Supplemental navigation systems
+
+### Gray Matters
+The design of navigation systems takes us deep into the gray area between `information architecture`, `interaction design`, `information design`, `visual design`, and `usability engineering`, all of which we might loosely classify under the umbrella of `user experience design`.
+
+### Browser Navigation Features
+For example, most Mac OS X applications feature a menu bar with a standard organization scheme that includes the application name as the first menu item, and “File” and “Edit” menus as the second and third items, respectively (Figure 8-3).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0803.png)
+
+Figure 8-3. Most applications in Mac OS X feature a menu bar with a standard organization scheme
+
+### Placemaking
+The navigation system should also present as much as possible of the structure of the information hierarchy in a clear and consistent manner, and indicate the user’s current location.
+
+If you have an existing website, we suggest running a few users through a navigation stress test.
+
+1. Ignore the home page and jump directly into the middle of the site.
+2. For each random page, can you figure out where you are in relation to the rest of the site? What major section are you in? What is the parent page?
+3. Can you tell where the page will lead you next? Are the links descriptive enough to give you a clue what each is about? Are the links different enough to help you choose one over another, depending on what you want to do?
+
+### Improving Flexibility
+In Gopherspace, you were forced to move up and down the tree structures of content hierarchies (see Figure 8-5). It was impractical to encourage or even allow jumps across branches (lateral navigation) or between multiple levels (vertical navigation) of a hierarchy.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0805.png)
+
+Figure 8-5. The pure hierarchy of Gopherspace
+
+If the system is so enabled, users can get to anywhere from anywhere. However, as you can see in Figure 8-6, things can get confusing pretty quickly. It begins to look like an architecture designed by M.C. Escher.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0806.png)
+
+Figure 8-6. A hypertextual web can completely bypass the hierarchy
+
+### Embedded Navigation Systems
+#### Global Navigation Systems
+Global navigation bars come in all shapes and sizes. Consider the examples shown in Figure 8-7.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0807.png)
+
+Figure 8-7. Global navigation bars from Dell, Apple, and Acer
+
+Most global navigation bars provide a link to the home page, usually represented as the organization’s logo.
+
+`Mega-menus` are like traditional drop-down menus: usually rendered at the top of a page, they provide access to second- and third-level elements when the user clicks on a first-level element. However, mega-menus are much richer than the simple lists of links of yesteryear; they often feature sophisticated typographic layouts, images, and other cues to give the user insight into the content and structure of the system (Figure 8-8).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0808.png)
+
+Figure 8-8. Adidas’s mega-menus give insights into the content and structure of the site
+
+`Fat footers` are abridged sitemaps rendered at the bottom of web pages. They provide direct access to the most important sections of the site (Figure 8-9).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0809.png)
+
+Figure 8-9. Microsoft.com is a large site, with multiple subsites and sub-brands; a fat footer on many of the site’s pages gives users a consistent way to get around
+
+#### Local Navigation Systems
+Some tightly controlled sites integrate global and local navigation into a consistent, unified system.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0810.png)
+
+Figure 8-10. Local navigation at usatoday.com
+
+In contrast, large sites like GE.com (Figure 8-11) often provide multiple local navigation systems that may have little in common with one another or with the global navigation system.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0811.png)
+
+Figure 8-11. Local navigation at GE.com
+
+#### Contextual Navigation
+Some relationships don’t fit neatly into the structured categories of global and local navigation. This demands the creation of `contextual` navigation links specific to a particular page, document, or object. In online stores, these “see also” links can point users to related products and services. On an educational site, they might point to similar articles or related topics.
+
+As you can see in Figure 8-13, Adorama includes contextual navigation links to related products—in this case based on user views—in the layout of each page.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0813.png)
+
+Figure 8-13. External contextual navigation links
+
+In practice, this usually involves representing words or phrases within sentences or paragraphs (i.e., prose) as embedded or “inline” hypertext links. A page from Stanford University’s site, shown in Figure 8-12, provides an example of carefully chosen `inline` contextual navigation links.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0812.png)
+
+Figure 8-12. Inline contextual navigation links
+
+#### Implementing Embedded Navigation
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
