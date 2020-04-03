@@ -93,6 +93,13 @@
       - [Local Navigation Systems](#local-navigation-systems)
       - [Contextual Navigation](#contextual-navigation)
       - [Implementing Embedded Navigation](#implementing-embedded-navigation)
+    - [Supplemental Navigation Systems](#supplemental-navigation-systems)
+      - [Sitemaps](#sitemaps)
+      - [Indexes](#indexes)
+      - [Guides](#guides)
+      - [Configurators](#configurators)
+    - [Advanced Navigation Approaches](#advanced-navigation-approaches)
+      - [Personalization and Customization](#personalization-and-customization)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -676,47 +683,84 @@ In practice, this usually involves representing words or phrases within sentence
 Figure 8-12. Inline contextual navigation links
 
 #### Implementing Embedded Navigation
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0814.png)
 
+Figure 8-14. Navigation can drown out the content
 
+### Supplemental Navigation Systems
+Supplemental navigation systems (shown back in Figure 8-2) include sitemaps, indexes, and guides. These are external to the basic hierarchy of a website and provide complementary ways of finding content and completing tasks.
 
+#### Sitemaps
+A typical sitemap (Figure 8-16) presents the top few levels of the information hierarchy. It provides a broad view of the content in the system and facilitates random access to segmented portions of that content via graphical or text-based links.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0816.png)
 
+Figure 8-16. Apple’s sitemap
 
+The design of a sitemap significantly affects its usability. When working with a graphic designer, make sure she understands the following rules of thumb:
 
+- Reinforce the information hierarchy so the user becomes increasingly familiar with how the content is organized.
+- Facilitate fast, direct access to the contents of the site for those users who know what they want.
+- Avoid overwhelming the user with too much information. The goal is to help, not scare, the user.
 
+#### Indexes
+In Figure 8-17, The United Nations website presents a comprehensive alphabetical index. Handcrafted links within the index lead directly to destination pages.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0817.png)
 
+Figure 8-17. The UN’s comprehensive alphabetical site index
 
+Comcast’s XFINITY website presents a simple site index alongside a sitemap that mirrors the site’s navigation structure (Figure 8-18).
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0818.png)
 
+Figure 8-18. Comcast’s XFINITY site index
 
+Another example is shown in Figure 8-19, where the Centers for Disease Control and Prevention two-step site index features term rotation and see/see-also references.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0819.png)
 
+Figure 8-19. The Center for Disease Control and Prevention’s site index
 
+Yet another interesting example is Michigan State University’s site index, shown in Figure 8-20, which takes hundreds of the site’s best bet results and renders them as an alphabetical list.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0820.png)
 
+Figure 8-20. Michigan State University’s site index
 
+A useful trick in designing an index involves `term rotation`, also known as permutation. A permuted index rotates the words in a phrase so that users can find the phrase in two places in the alphabetical sequence. For example, in the CDC index, users will find listings for both “Abuse, Elder” and “Elder Maltreatment.” This supports the varied ways in which people look for information.
 
+#### Guides
+The IRS Withholding Calculator, shown in Figure 8-21, provides an example: it consists of a highly editorialized selection of important links wrapped in helpful (and clearly structured) copy.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0821.png)
 
+Figure 8-21. The introduction to the IRS Withholding Calculator
 
+Rules of thumb for designing guides include:
 
+- The guide should be short.
+- At any point, the user should be able to exit the guide.
+- Navigation (Previous, Home, Next, swiping gestures) should be consistent so that users can easily step back and forth through the guide.
+- The guide should be designed to answer questions.
+- Screenshots should be crisp, clear, and optimized, with enlarged details of key features.
+- If the guide includes more than a few pages, it may need its own table of contents.
 
+#### Configurators
+Sophisticated configurators, like Motorola’s Moto Maker, shown in Figure 8-22, allow the user to easily traverse complicated decision-making processes.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0822.png)
 
+Figure 8-22. The Moto Maker configurator
 
+Often, users don’t have a clear understanding of the impact of the choices that affect the configuration process. It is desirable to provide them with contextual clues that help them make sense of the various options available. For example, the iOS Apple Store application (Figure 8-23) includes product images that show changes to the product based on the user’s selected color finish, and includes text that explains the impact of more technical options on the product.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0823.png)
 
+Figure 8-23. The iOS Apple Store application on the iPad
 
-
-
-
-
-
-
-
-
-
+### Advanced Navigation Approaches
+#### Personalization and Customization
 
 
 
