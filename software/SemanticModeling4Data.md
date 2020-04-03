@@ -35,6 +35,8 @@
       - [History and Provenance](#history-and-provenance)
 - [3.Semantic and Linguistic Phenomena](#3semantic-and-linguistic-phenomena)
   - [Ambiguity](#ambiguity)
+  - [Uncertainty](#uncertainty)
+  - [Vagueness](#vagueness)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -195,6 +197,312 @@ Provenance elements are used to track the development of entities, relations and
 # 3.Semantic and Linguistic Phenomena
 ## Ambiguity
 `Ambiguity` is the situation that arises when a piece of information can be interpreted in more than one plausible ways.
+
+In general, in human language and communication, we observe the following types of ambiguity:
+
+- `Phonological ambiguity`: This ambiguity arises when there is more than one way to compose a set of sounds into words. For example, “ice cream” and “I scream” sound more or less the same.
+- `Syntactic ambiguity`: This ambiguity arises when a sentence can have two or more different meanings because of its structure. For example, the sentence “John ate the cookies on the couch”, could mean either that there were some cookies on a couch and John ate them, or that John ate some cookies while sitting on a couch.
+- `Anaphoric ambiguity`: This ambiguity arises when a phrase or word refers to something previously mentioned, but there is more than one possibility. For example, in the sentence “Margaret invited Susan for a visit, and she gave her a good lunch”, the pronoun “she” may refer to Margaret or Susan.
+- `Term-level semantic ambiguity`: This ambiguity is also known as lexical ambiguity and arises when a term (single-word or compound) can have more than one meanings. For example, similarly to the aforementioned “Tripoli”, the term “Kashmir” may refer to the song by the band Led Zeppelin or to the geographical region in India and Pakistan.
+- `Sentence-level semantic ambiguity`: This ambiguity arises when even after the syntax and the meanings of the individual words in a sentence have been resolved, the sentence can still be interpreted in more than one ways. For example, the sentence “John and Jane are married” can mean either that John and Jane are married to each other or that they are both married but to different people.
+
+## Uncertainty
+In a semantic model, uncertainty can be manifested in two ways, an `explicit` one and an `implicit`. Explicit uncertainty we have when the statement contains keywords like “probably”, “might”, “perhaps”, “apparently” etc., that clearly communicate the lack of absolute certainty.
+
+The latter usually happens when we have legitimate reasons not to completely trust the source or the acquisition method of the statement.
+
+## Vagueness
+`Vagueness` is manifested through predicates that admit borderline cases [Hyde, 2008] [Shapiro, 2006], namely cases where **it is unclear whether or not the predicate applies**. For example, some people are borderline tall: not clearly tall and not clearly not tall. Alternatively, vagueness is related to **the absence of sharp boundaries**. For example, on a scale of heights, there appears to be no sharp boundary between the tall people and the rest. Therefore, two equivalent ways of drawing the distinction between vague and non-vague predicates are to say that (i) vague predicates can possibly have borderline cases while crisp predicates do not or that (ii) vague predicates lack sharp boundaries.
+
+Table 3-1. Vague and Crisp Adjectives
+
+Vague | Crisp
+------|------
+Abnormal: not normal, not typical or usual or regular or conforming to a norm. | Compound: composed of more than one part.
+Impenitent: impervious to moral persuasion | Biweekly: occurring every two weeks.
+Notorious: known widely and usually unfavorably. | Irregular: falling below the manufacturer’s standard.
+Aroused: emotionally aroused. | Outermost: situated at the farthest possible.
+Yellowish: of the color intermediate between green and orange in the color spectrum, of something resembling the color of an egg yolk. | Unfeathered: having no feathers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
