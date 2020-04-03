@@ -37,6 +37,7 @@
   - [Ambiguity](#ambiguity)
   - [Uncertainty](#uncertainty)
   - [Vagueness](#vagueness)
+  - [Generality and Specificity](#generality-and-specificity)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -224,19 +225,28 @@ Notorious: known widely and usually unfavorably. | Irregular: falling below the 
 Aroused: emotionally aroused. | Outermost: situated at the farthest possible.
 Yellowish: of the color intermediate between green and orange in the color spectrum, of something resembling the color of an egg yolk. | Unfeathered: having no feathers.
 
+In the relevant literature, two basic kinds of vagueness are identified: `degree-vagueness` (or quantitative) and `combinatory vagueness` (or qualitative) [Hyde, 2008]. A predicate has degree-vagueness if the existence of borderline cases stems from the lack (or at least the apparent lack) of precise boundaries between application and non-application of the predicate along some dimension. For example, “Bald” fails to draw any sharp boundaries along the dimension of hair quantity and “Tall” along the dimension of height. Of course it might be that a predicate has degree-vagueness in more than one dimensions (e.g., “Red” can be vague along the dimensions of brightness and saturation).
 
+On the other hand, a predicate has combinatory vagueness if there is a variety of conditions all of which have something to do with the application of the predicate, yet it is not possible to make any sharp discrimination between those combinations which are sufficient and/or necessary for application and those which are not. A classical example of this type is “Religion” as there are certain features that all religions share (e.g., beliefs in supernatural beings, ritual acts etc.), yet it is not clear which of these features are able to classify something as a religion.
 
+It is important that you don’t confuse `vagueness` with the phenomena of `inexactness`, `ambiguity` and `uncertainty`. 
+- For example, stating that someone is between 170 and 180 cm is an inexact statement but it is not vague as its limits of application are precise. 
+- Similarly, the truth of an uncertain statement, such as “Tomorrow the temperature might rise to 27 degrees”, cannot be determined due to lack of adequate information about it, not because the measurement of temperature lacks sharp boundaries. 
+- Finally, the truth of a statement might not be determinable due to the ambiguity of some term (e.g., in statement “Yesterday we went to the bank” the term bank is ambiguous), yet again this does not make the statement vague.
 
+Moreover, vagueness is `context dependent` as the interpretaton of a vague predicate may vary depending on the context it is being applied. For example, a person can be tall with respect to the average population height and not tall with respect to professional basketball players. Similarly, a person can be wealthy with respect to its local community but poor with respect to his/her boss.
 
+Table 3-2. Vague and Non-Vague Relations in CiTO
 
+Vague Relations | Crisp Relations
+----------------|---------------
+plagiarizes: A property indicating that the author of the citing entity plagiarizes the cited entity, by including textualor other elements from the cited entity without formal acknowledgement of their source | sharesAuthorInstitutionWith: he citing entity cites the cited entity as one that provides an authoritative description ordefinition of the subject under discussion.
+citesAsAuthority: The citing entity cites the citedentity as one that provides an authoritative description ordefinition of the subject under discussion. | providesDataFor: The cited entity presents data that are usedin work described in the citing entity.
+speculatesOn: The citing entity speculates onsomething within or related to the cited entity, without firmevidence. | retracts: The citing entity constitutes a formal retraction of the cited entity. 
+supports: The citing entity provides intellectual orfactual support for statements, ideas or conclusions presented inthe cited entity. | includesExcerptFrom: The citing entityincludes one or more excerpts from the cited entity.
+refutes: The citing entity refutes statements, ideasor conclusions presented in the cited entity. | citesAsSourceDocument: The citing entity cites the cited entity as being the entity from which the citing entity is derived, or about which the citing entity contains metadata.
 
-
-
-
-
-
-
-
+## Generality and Specificity
 
 
 
