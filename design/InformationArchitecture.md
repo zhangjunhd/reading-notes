@@ -100,6 +100,10 @@
       - [Configurators](#configurators)
     - [Advanced Navigation Approaches](#advanced-navigation-approaches)
       - [Personalization and Customization](#personalization-and-customization)
+      - [Visualization](#visualization)
+      - [Social Navigation](#social-navigation)
+    - [Recap](#recap-6)
+  - [9.Search Systems](#9search-systems)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -761,6 +765,159 @@ Figure 8-23. The iOS Apple Store application on the iPad
 
 ### Advanced Navigation Approaches
 #### Personalization and Customization
+`Personalization` involves serving up information to the user based upon a model of the behavior, needs, or preferences of that individual. In contrast, `customization` involves giving the user direct control over some combination of presentation, navigation, and content options. In short, with personalization, we guess what the user wants, and with customization, the user tells us what he wants.
+
+The reality is that personalization and customization:
+
+- Typically play important but limited roles
+- Require a solid foundation of structure and organization
+- Are really difficult to do well
+- Can make it more difficult to collect metrics and analyze user behavior
+
+It’s when Amazon starts trying to recommend products based on past purchases that the system breaks down (see Figure 8-24).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0824.png)
+
+Figure 8-24. Amazon’s personalized recommendations
+
+For example, Gmail allows the user to set the visibility and order of labels—a critical element in the structuring of the user’s mail in the system—by dragging and dropping them within a global navigation structure (Figure 8-25).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0825.png)
+
+Figure 8-25. Customization in Gmail
+
+#### Visualization
+Visualization has proven most useful when the user must select among a result set of elements that she knows by their looks, as in the case of shopping for physical goods (Figure 8-26).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0826.png)
+
+Figure 8-26. Google Shopping’s visual search results
+
+#### Social Navigation
+Reddit, a content aggregation and discovery service, employs such a voting system—in fact, it is its primary differentiator (Figure 8-27).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0827.png)
+
+Figure 8-27. The sequence in which stories are presented on Reddit’s home page is defined by the up- or down-votes of registered site users
+
+Other systems depend on much richer and more complex social algorithms. For example, many of Facebook’s navigation structures consist of dynamically generated lists of content items: from the sequence of posts that appear in the user’s main timeline to lists of suggested pages and other Facebook users you may know (Figure 8-28).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0828.png)
+
+Figure 8-28. Facebook presents the user with a variety of algorithmically generated lists of navigation links that are influenced by the social graph; the ad selection is also algorithmically determined based on the user’s profile (Facebook knows that Jorge is in the San Francisco Bay area, and that it is Valentine’s Day)
+
+### Recap
+
+- There are various types of navigation systems; three common ones are global, local, and contextual systems.
+  - Global navigation systems are intended to be present on every page or screen in the information environment.
+  - Local navigation systems complement global ones, and allow users to explore the immediate area where they are.
+  - Contextual navigation systems occur in context of the content being presented in the environment, and support associative learning by allowing users to explore the relationships between items.			
+- Building context—allowing users to locate their positions within the system—is a critical function of navigation systems.
+- There are also various supplemental navigation systems we can use, such as sitemaps, indexes, and guides.
+
+## 9.Search Systems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
