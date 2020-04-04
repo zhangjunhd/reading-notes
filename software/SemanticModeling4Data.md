@@ -45,6 +45,12 @@
   - [Semantic Accuracy](#semantic-accuracy)
   - [Completeness](#completeness)
   - [Consistency](#consistency)
+  - [Conciseness](#conciseness)
+  - [Timeliness](#timeliness)
+  - [Relevancy](#relevancy)
+  - [Understandability](#understandability)
+  - [Trustworthiness](#trustworthiness)
+  - [Availability, Versatility and Performance](#availability-versatility-and-performance)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -326,31 +332,34 @@ A silver standard is also a subset of the knowledge the model needs to contain b
 Apart from using standards, completeness can also be evaluated by employing `reasoning` or simple heuristics.
 
 ## Consistency
+Consistency means that a semantic model is free of logical or semantic contradictions.
 
+## Conciseness
+Conciseness in a semantic model is the degree to which the model does not contain redundant elements. 
 
+Now, there are several reasons why a model can be inconcise:
 
+- Uncoordinated modeling from multiple parties with inadequate governance
+- Optimizing for different applications at the same time
+- “Temporary” elements or hacks that haven’t been removed
+- Legacy elements not having been removed
 
+## Timeliness
+Timeliness in a semantic model can be defined as the degree to which the model contains elements that reflect the current version of the world.
 
+## Relevancy
+A semantic model is relevant when its structure and content are useful and important for a given task or application. Vice versa, a model has low relevancy if, no matter how accurate or complete it looks to be with respect to our domain, we still cannot easily or effectively use it for the particular task(s) we need it.
 
+## Understandability
+Understandability or comprehensibility of a semantic model is the ease with which human consumers can understand and utilize the model’s elements, without misunderstanding or doubting their meaning.
 
+## Trustworthiness
+Trustworthiness of a semantic model refers to the perception and confidence in the quality of the model by its users. This (inevitably subjective) perception is definitely related to other quality dimensions like correctness, completeness or relevancy, yet you can have a model that is in reality less accurate than another and still being regarded as more trustworthy. The reason is that trust is not merely a technical concept but has social and psychological dimensions that cannot be easily expressed by a mathematical formula.
 
+## Availability, Versatility and Performance
+Availability is the extent and to which the model (or part of it) is present, obtainable and ready for use, while versatility refers to the different ways and forms the model can be accessed. DBpedia, for example, is continuously available online in multiple ways, including a SPARQL endpoint and a Triple Pattern Fragments interface. Similarly, ESCO is is available both as via a web service API and downloadable RDF files.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Performance, in turn, has to do with the efficiency and scalability with which we can access and use the model in our application (querying, reasoning or other operations). 
 
 
 
