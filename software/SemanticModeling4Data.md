@@ -42,6 +42,9 @@
   - [Closed and Open World Assumptions](#closed-and-open-world-assumptions)
   - [Semantic Change](#semantic-change)
 - [4.Semantic Model Quality](#4semantic-model-quality)
+  - [Semantic Accuracy](#semantic-accuracy)
+  - [Completeness](#completeness)
+  - [Consistency](#consistency)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -284,16 +287,45 @@ Semantic change typically occurs due to linguistic, psychological and socio-cult
 - `Antiphrasis`: Semantic change based on a contrastive aspect of the concepts (e.g., “perfect lady” in the sense of “prostitute”).
 
 # 4.Semantic Model Quality
+## Semantic Accuracy
+Semantic accuracy is defined as the degree to which the semantic assertions of a model are accepted to be true. 
 
+Now, there are several reasons why a semantic model may contain wrong assertions:
 
+- Inaccuracy of automatic information extraction methods
+- Inaccuracy of the data source from which assertions are extracted
+- Misunderstanding of modeling elements’ semantics and intended usage
+- Lack of domain knowledge and expertise
+- Vagueness
 
+The typical way to measure your model’s accuracy is to give a sample of its statements to one or more human judges and ask them to decide if they are true or false.
 
+- The typical way to measure your model’s accuracy is to give a sample of its statements to one or more human judges and ask them to decide if they are true or false. 
+- To accelerate this purely manual approach to measuring accuracy, researchers have developed methods for automatically detecting potential accuracy errors in semantic models. One group of such methods involves using statistical techniques to detect outliers, namely elements that due to low frequency, low inter-connectivity, or other characteristics, are likely to be wrong [Bizer, 2009] [Feeney, 2014] [Paulheim, 2014].
+- A second group of methods uses reasoning to detect assertions that violate logical consinstency rules and axioms that we have already defined in the model [Nakashole, 2011] [Carlson, 2010] [Lehmann, 2010]. 
 
+## Completeness
+Completeness of a semantic model can be defined as the degree to which elements that should be contained in the model are indeed there.
 
+In the relevant literature, a distinction is usually made between `schema completeness` and `population completeness`. The first refers to the degree to which the model defines all the necessary classes, relations, attributes and axioms, while the second implies the completeness of individual entities (class instances), relation assertions and attribute values.
 
+Now, there are several reasons why a semantic model may be incomplete:
 
+- Size and Complexity
+- Inaccuracy of automatic information extraction methods
+- Lack of appropriate data sources to extract the model from
+- Vagueness
+- Domain volatility and dynamics
 
+To measure the completeness of a semantic model we practically need to compare the content it currently has with the content it should ideally have. In other words, we need a `gold standard` that can tell us at any given time how close we are at completing our model. In practice, gold standards are extremely hard to find (especially for population completeness), so instead we usually use `partial gold standards` or `silver standards`.
 
+A partial gold standard contains a subset of the knowledge the model needs to contain. For example, in [Färber, 2017] the authors created a partial gold standard with 41 classes and 22 relations for 5 domains (People, Media, Organizations, Geography, and Biology) in order to measure and compare the completeness of DBpedia, YAGO and other publicly available semantic models. Similarly, at Textkernel, we used ESCO as a partial golden standard to get an idea of the coverage of our Knowledge Graph. Obviously, such an approach cannot tell you whether your model is complete but it can reveal incompletenesses.
+
+A silver standard is also a subset of the knowledge the model needs to contain but, contrary to a gold standard, it’s (knowingly) not completely accurate. Instead, it is assumed to have a reasonable level of quality that can be useful for detecting incomplete aspects of the model. For example, in [Paulheim, 2013] the authors estimated that DBpedia misses at least 2.7 million entity typing statements, by comparing it to Yago, an also not fully accurate model.
+
+Apart from using standards, completeness can also be evaluated by employing `reasoning` or simple heuristics.
+
+## Consistency
 
 
 
