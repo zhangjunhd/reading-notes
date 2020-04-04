@@ -38,6 +38,10 @@
   - [Uncertainty](#uncertainty)
   - [Vagueness](#vagueness)
   - [Generality and Specificity](#generality-and-specificity)
+  - [Symmetry, Inversion and Transitivity](#symmetry-inversion-and-transitivity)
+  - [Closed and Open World Assumptions](#closed-and-open-world-assumptions)
+  - [Semantic Change](#semantic-change)
+- [4.Semantic Model Quality](#4semantic-model-quality)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -247,29 +251,39 @@ supports: The citing entity provides intellectual orfactual support for statemen
 refutes: The citing entity refutes statements, ideasor conclusions presented in the cited entity. | citesAsSourceDocument: The citing entity cites the cited entity as being the entity from which the citing entity is derived, or about which the citing entity contains metadata.
 
 ## Generality and Specificity
+`Generality` and `specificity` can be best understood when looking at a taxonomy of entities. For example, in the taxonomy of Figure 3-1, the concept of “Fruit” is more specific than the concept of “Food” but less specific than “Banana”. In other words, generality increases as we move up a taxonomy and decreases in the other direction, hence highly specific entities tend to be located in the low levels of a taxonomy. The inverse, however, is not always true; just because an entity is more general than another it doesn’t mean that it can be automatically be modeled as an ancestor of it in a taxonomy.
 
+![](https://learning.oreilly.com/library/view/semantic-modeling-for/9781492054269/assets/FoodTaxonomy.png)
 
+Figure 3-1. An example food taxonomy
 
+A common mistake is to call an entity `ambiguous` just because it is very general. For example, if I tell you that I am an engineer then you will most likely ask me what kind of an engineer I am (e.g., a civil engineer or a software engineer). But even if I don’t give you that information, you will still get to know that I am “a person who uses scientific knowledge to solve practical problems”, as Wordnet suggests. In other words, highly general terms are not necessarily ambiguous.
 
+## Symmetry, Inversion and Transitivity
+- When an entity A is related to entity B via a `symmetric` relation R, then we can infer that B is related to A via the same relation. For example, if “John is a cousin of Jane”, then “Jane is also a cousin of John”. 
+- When a relation R is `transitive` then if R links entity A to entity B, and entity B to entity C, then it also links A to C. For example, if “Paris is located in France” and “France is located in Europe”, then it’s also the case that “Paris is located in Europe”.
+- We say that a relation R1 is the `inverse` of a relation R2 if for every entity A related to entity B through R1 we can infer that B is related to A via R2. For example, if “John is the brother of Jane” then “Jane is the sister of John”.
 
+## Closed and Open World Assumptions
+The `closed-world assumption` (CWA) states that if for a given statement we don’t know whether it’s true or not in our model, then we can infer that it’s false.
 
+On the other hand, the `open-world assumption` (OWA) states that if for a given statement we don’t know whether it’s true or not in our model, then we simply cannot draw any conclusion about its validity.
 
+## Semantic Change
+Semantic change typically occurs due to linguistic, psychological and socio-cultural forces (see [Grzega, 2004] for a more detailed analysis) and, according to [Bloomfield, 1933] and [Blank, 1999], can take several forms:
 
+- `Specialization`: The new meaning is narrower than the original one. For example “skyline” used to skyline refer to any horizon, but now in the United States it mostly denotes a horizon decorated by skyscrapers.
+- `Generalization`: The new meaning is more general than the original one. A common example of that are are many specific brand names that end up being used for the general product or action, such as “hoover” for cleaning with a vacuum cleaner or “google” for searching in the web.
+- `Metaphor`: Change based on similarity. For example, “broadcast” originally meant “to cast seeds out” but with the advent of radio and television it was extended to indicate the transmission of audio and video signals.
+- `Metonymy`: Change based on contiguity between concepts (e.g., horn“animal horn” meaning “musical instrument”.
+- `Synecdoche`: Change based on whole-part relation. The convention of using capital cities to represent countries or their governments is an example of this.
+- `Hyperbole`: Change from weaker to stronger meaning (e.g., “torment” meaning “slaughter”)
+- `Meiosis`: Change from stronger to weaker meaning (e.g., “strike with thunder” meaning “surprise strongly”).
+- `Auto-antonymy`: Change of a word’s sense and concept to the complementary opposite (e.g., the word cleave can mean “to cut apart” or “to bind together”).
+- `Folk-etymology`: Semantic change based on the similarity of names, e.g., the French term “contredanse” originates from the English “country dance”.
+- `Antiphrasis`: Semantic change based on a contrastive aspect of the concepts (e.g., “perfect lady” in the sense of “prostitute”).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 4.Semantic Model Quality
 
 
 
