@@ -104,6 +104,10 @@
       - [Social Navigation](#social-navigation)
     - [Recap](#recap-6)
   - [9.Search Systems](#9search-systems)
+    - [Search System Anatomy](#search-system-anatomy)
+    - [Choosing What to Index](#choosing-what-to-index)
+      - [Determining Search Zones](#determining-search-zones)
+        - [Navigation versus destination](#navigation-versus-destination)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -816,21 +820,21 @@ Figure 8-28. Facebook presents the user with a variety of algorithmically genera
 - There are also various supplemental navigation systems we can use, such as sitemaps, indexes, and guides.
 
 ## 9.Search Systems
+### Search System Anatomy
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0901.png)
 
+Figure 9-1. The basic anatomy of a search system (image adapted from Search Patterns: Design for Discovery, by Peter Morville and Jeffery Callender)
 
+### Choosing What to Index
+#### Determining Search Zones
+In Windows 8.1, shown in Figure 9-2, users can select search zones based on the type of content they are looking for (Settings, Files) and—somewhat awkwardly—by its location (Web images, Web videos), with “Web” implying that the “Settings” and “Files” options refer to settings and files on your computer. (Note that “Everywhere” is the default selection.) 
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0902.png)
 
+Figure 9-2. Search zones in Windows 8.1
 
-
-
-
-
-
-
-
-
-
-
+##### Navigation versus destination
+`Destination` pages contain the actual information you want: sports scores, book reviews, software documentation, and so on. `Navigation` pages may include main pages, search pages, and pages that help you browse the environment. The primary purpose of navigation pages is to get you to the destination pages.
 
 
 
