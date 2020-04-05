@@ -122,6 +122,12 @@
         - [Sorting by chronology](#sorting-by-chronology)
         - [Ranking by relevance](#ranking-by-relevance)
         - [Ranking by popularity](#ranking-by-popularity)
+        - [Ranking by users’ or experts’ ratings](#ranking-by-users-or-experts-ratings)
+        - [Ranking by pay-for-placement](#ranking-by-pay-for-placement)
+    - [Grouping Results](#grouping-results)
+      - [Acting on Results](#acting-on-results)
+        - [Call to action](#call-to-action)
+        - [Select a subset of results](#select-a-subset-of-results)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -953,38 +959,37 @@ Relevance-ranking algorithms (there are many flavors) are typically based on one
 Figure 9-19. A search of the BBC’s site retrieves a set of manually tagged documents as well as automatic results; the recommendations are called “Editor’s Choice” rather than “best bets”
 
 ##### Ranking by popularity
+Google is successful in large part because it ranks results by which ones are the most popular. It does so by factoring in how many links there are to a retrieved document. Google also distinguishes the quality of these links: a link from a site that itself receives many links is worth more than a link from a little-known site. This algorithm, which is part of Google’s “secret sauce” for presenting search results, is known as `PageRank`.
 
+##### Ranking by users’ or experts’ ratings
+User ratings can be used as the basis of retrieval result ordering. In the case of Yelp (see Figure 9-20), these ratings—based on users’ reviews of businesses listed in the system—are integral to helping users judge the value of an item, and form the foundation of an entire information economy.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0920.png)
 
+Figure 9-20. User ratings fuel the ranking of these Yelp results
 
+##### Ranking by pay-for-placement
+Advertising has become the predominant business model for publishing online, so it is no surprise that `pay-for-placement` (`PFP`) has become commonplace in many search systems.
 
+### Grouping Results
+How can we cluster results? The obvious ways are, unfortunately, the least useful: we can use existing metadata, like document type (e.g., .doc, .pdf) and file creation/modification date, to allow us to divide search results into clusters. Much more useful are clusters derived from manually applied metadata, like topic, audience, language, and product family. Unfortunately, approaches based on manual effort can be prohibitively expensive.
 
+In Figure 9-21, Forrester contextualizes the query “user experience” with roles such as “Marketing Leadership” and specific date ranges.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0921.png)
 
+Figure 9-21. Forrester contextualizes search results for the query “user experience”
 
+#### Acting on Results
+##### Call to action
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0922.png)
 
+Figure 9-22. Search results in the iOS App Store include a “GET” button (which lists the app’s price when it is not free)
 
+##### Select a subset of results
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0923.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Figure 9-23. The San Francisco Public Library allows users to add search results to three “shelves”: “Completed,” “In Progress,” and “For Later”
 
 
 
