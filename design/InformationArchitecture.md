@@ -145,6 +145,10 @@
     - [Controlled Vocabularies](#controlled-vocabularies)
       - [Synonym Rings](#synonym-rings)
       - [Authority Files](#authority-files)
+      - [Classification Schemes](#classification-schemes)
+      - [Thesauri](#thesauri)
+    - [Technical Lingo](#technical-lingo)
+    - [A Thesaurus in Action](#a-thesaurus-in-action)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -1158,6 +1162,169 @@ As you might guess, synonym rings can dramatically improve `recall`. In one stud
 
 #### Authority Files
 Strictly defined, an `authority file` is a list of preferred terms or acceptable values.
+
+At Drugstore.com, only the brand names are included in the index (see Figure 10-7); equivalent terms like “tilenol” don’t show up. This keeps the index relatively short and uncluttered and, in this example, reinforces the brand names. However, a trade-off is involved. In cases where the equivalent terms begin with different letters (e.g., aspirin and Bayer), there is value in creating pointers:
+
+```
+Aspirin see Bayer
+```
+
+Otherwise, when users look in the index under A for aspirin, they won’t find Bayer. The use of pointers is called `term rotation`.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1007.png)
+
+Figure 10-7. Brand index at Drugstore.com
+
+In Figure 10-8, users looking for “Tylenol” on the US Federal Drug Administration website are guided to the generic term “acetaminophen.”
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1008.png)
+
+Figure 10-8. A site index with term rotation
+
+#### Classification Schemes
+We use `classification scheme` to mean an arrangement of preferred terms. These days, many people prefer to use `taxonomy` instead. Either way, it’s important to recognize that these arrangements can take different shapes and serve multiple purposes, including:
+
+- A frontend, browsable hierarchy that’s a visible, integral part of the user interface
+- A backend tool used by authors and indexers for organizing and tagging documents
+
+Consider, for example, the `Dewey Decimal Classification` (`DDC`). First published in 1876, the DDC is now “the most widely used classification scheme in the world. In its purest form, the DDC is a hierarchical listing that begins with 10 top-level categories and drills down into great detail within each:
+
+```
+000 Computers, information, & general reference
+100 Philosophy & psychology
+200 Religion
+300 Social sciences
+400 Language
+500 Science
+600 Technology
+700 Arts & recreation
+800 Literature
+900 History & geography
+```
+
+Classification schemes can also be used in the context of searching. You can see in Figure 10-10 that Walmart’s search results present “Departments” categories, which reinforces users’ familiarity with Walmart’s classification scheme.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1010.png)
+
+Figure 10-10. Category Matches at Walmart.com
+
+#### Thesauri
+The Oxford English Dictionary defines thesaurus as “a book that lists words in groups of synonyms and related concepts.”
+
+For the purposes of this book, a thesaurus is:
+
+>A controlled vocabulary in which equivalence, hierarchical, and associative relationships are identified for purposes of improved retrieval.
+
+As you can see from Figure 10-11, each preferred term becomes the center of its own semantic network. The `equivalence relationship` is focused on synonym management. The `hierarchical relationship` enables the classification of preferred terms into categories and subcategories. The `associative relationship` provides for meaningful connections that aren’t handled by the hierarchical or equivalence relationships.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1011.png)
+
+Figure 10-11. Semantic relationships in a thesaurus
+
+### Technical Lingo
+The core terminology includes the following:
+
+- `Preferred Term` (PT):Also known as the accepted term, acceptable value, subject heading, or descriptor. All relationships are defined with respect to the Preferred Term.
+- `Variant Term` (VT):Also known as entry terms or non-preferred terms, Variant Terms have been defined as equivalent to or loosely synonymous with the Preferred Term.
+- `Broader Term` (BT):The Broader Term is the parent of the Preferred Term. It’s one level higher in the hierarchy.
+- `Narrower Term` (NT):A Narrower Term is a child of the Preferred Term. It’s one level lower in the hierarchy.
+- `Related Term` (RT):The Related Term is connected to the Preferred Term through the associative relationship. The relationship is often articulated through use of See Also. For example, Tylenol See Also Headache.
+- `Use` (U):Traditional thesauri often employ the following syntax as a tool for indexers and users: Variant Term Use Preferred Term. For example, Tilenol Use Tylenol. Many people are more familiar with `See`, as in Tilenol See Tylenol.
+- `Used For` (UF):This indicates the reciprocal relationship of Preferred Term UF Variant Term(s). It’s used to show the full list of variants on the Preferred Term’s record. For example, Tylenol UF Tilenol.
+- `Scope Note` (SN):The Scope Note is essentially a specific type of definition of the Preferred Term, used to deliberately restrict the meaning of that term in order to rule out ambiguity as much as possible.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1012.png)
+
+Figure 10-12. Semantic relationships in a wine thesaurus
+
+### A Thesaurus in Action
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
