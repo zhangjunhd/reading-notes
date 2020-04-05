@@ -14,6 +14,14 @@
 
 ---
 
+- [1.The search relevance problem](#1the-search-relevance-problem)
+  - [1.1.Your goal: gaining the skills of a relevance engineer](#11your-goal-gaining-the-skills-of-a-relevance-engineer)
+  - [1.3.Gaining insight from relevance research](#13gaining-insight-from-relevance-research)
+    - [1.3.1.Information retrieval](#131information-retrieval)
+    - [1.3.2.Can we use information retrieval to solve relevance?](#132can-we-use-information-retrieval-to-solve-relevance)
+  - [1.4.How do you solve relevance?](#14how-do-you-solve-relevance)
+- [2.Search—under the hood](#2searchunder-the-hood)
+
 # 1.The search relevance problem
 ## 1.1.Your goal: gaining the skills of a relevance engineer
 A `relevance engineer` transforms the search engine into a seemingly smart system that understands the needs of users and the business. 
