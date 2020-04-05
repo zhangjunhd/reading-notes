@@ -108,6 +108,8 @@
     - [Choosing What to Index](#choosing-what-to-index)
       - [Determining Search Zones](#determining-search-zones)
         - [Navigation versus destination](#navigation-versus-destination)
+        - [Indexing for specific audiences](#indexing-for-specific-audiences)
+        - [Indexing by topic](#indexing-by-topic)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -836,18 +838,23 @@ Figure 9-2. Search zones in Windows 8.1
 ##### Navigation versus destination
 `Destination` pages contain the actual information you want: sports scores, book reviews, software documentation, and so on. `Navigation` pages may include main pages, search pages, and pages that help you browse the environment. The primary purpose of navigation pages is to get you to the destination pages.
 
+Of course, indexing similar content isn’t always easy, because “similar” is a highly relative term. It’s not always clear where to draw the line between navigation and destination pages—in some cases, a page can be considered both. That’s why it’s important to test out navigation/destination distinctions before actually applying them.
 
+##### Indexing for specific audiences
+The Library of Michigan has three primary audiences: members of the Michigan state legislature and their staffs, Michigan libraries and their librarians, and the citizens of Michigan. The information needed from this site is different for each of these audiences; for example, each has a very different circulation policy.
 
+So we created four indexes: one for each of the three audiences, and one unified index of the entire site in case the audience-specific indexes didn’t do the trick for a particular search. Table 9-1 shows the results from running a query on the word “circulation” against each of the four indexes.
 
+Table 9-1. Query results
 
+Index | Documents retrieved | Retrieval reduced by
+------|---------------------|-------------------
+Unified | 40 | — | 
+Legislature area | 18 | 55%
+Libraries area | 24 | 40%
+Citizens area | 9 | 78%
 
-
-
-
-
-
-
-
+##### Indexing by topic
 
 
 
