@@ -15,17 +15,16 @@
 ---
 
 # 1.The search relevance problem
+## 1.1.Your goal: gaining the skills of a relevance engineer
+A `relevance engineer` transforms the search engine into a seemingly smart system that understands the needs of users and the business. 
 
+These search-time ranking factors that measure what users care about are called `signals`.
 
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/01fig01_alt.jpg)
 
+Figure 1.1. The relevance engineer works with the search engine and back-end technologies to express business-ranking logic. They collaborate         on relevance closely with a cross-functional team and are informed heavily by user metrics.
 
-
-
-
-
-
-
-
+## 1.3.Gaining insight from relevance research
 
 
 
