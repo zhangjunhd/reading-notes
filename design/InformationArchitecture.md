@@ -141,6 +141,10 @@
       - [When Users Get Stuck](#when-users-get-stuck)
     - [Recap](#recap-7)
   - [10.Thesauri, Controlled Vocabularies, and Metadata](#10thesauri-controlled-vocabularies-and-metadata)
+    - [Metadata](#metadata)
+    - [Controlled Vocabularies](#controlled-vocabularies)
+      - [Synonym Rings](#synonym-rings)
+      - [Authority Files](#authority-files)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -1123,34 +1127,37 @@ At the other end of the spectrum, zero hits is a bit more frustrating for users 
 - All of these factors—what to search, what to retrieve, and how to present the results—come together in the search interface.
 
 ## 10.Thesauri, Controlled Vocabularies, and Metadata
+### Metadata
+`Metadata` tags are used to describe documents, pages, images, software, video and audio files, and other content objects for the purposes of improved navigation and retrieval. The `keywords` attribute of the HTML `<meta>` tag used by many websites provides a simple example. 
 
+```xml
+<meta name="keywords" content="information architecture, content management, knowledge management, user experience">
+```
 
+### Controlled Vocabularies
+At its simplest, a controlled vocabulary is a list of `equivalent terms` in the form of a synonym ring, or a `list of preferred terms` in the form of an authority file. Define relationships between terms (e.g., broader, narrower), and you’ve got a classification scheme. Model associative relationships between concepts (e.g., See Also, See Related), and you’re working on a thesaurus. Figure 10-1 illustrates the relationships between different types of controlled vocabularies.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1001.png)
 
+Figure 10-1. Types of controlled vocabularies
 
+#### Synonym Rings
+A synonym ring (see Figure 10-2) connects a set of words that are defined as equivalent for the purposes of retrieval. 
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1002.png)
 
+Figure 10-2. A synonym ring
 
+When a user enters a word into the search engine, that word is checked against the text file. If the word is found, then the query is “exploded” to include all of the equivalent words. For example, in Boolean logic:
 
+```c
+(kitchenaid) becomes (kitchenaid or "kitchen aid" or blender or "food processor" or cuisinart or cuizinart)
+```
 
+As you might guess, synonym rings can dramatically improve `recall`. In one study conducted at Bellcore in the 1980s, the use of synonym rings, or “unlimited aliasing,” within a small test database increased recall from 20% to 80%. However, synonym rings can also reduce `precision`.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Authority Files
+Strictly defined, an `authority file` is a list of preferred terms or acceptable values.
 
 
 
