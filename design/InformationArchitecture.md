@@ -110,6 +110,18 @@
         - [Navigation versus destination](#navigation-versus-destination)
         - [Indexing for specific audiences](#indexing-for-specific-audiences)
         - [Indexing by topic](#indexing-by-topic)
+        - [Indexing recent content](#indexing-recent-content)
+      - [Selecting Content Components to Index](#selecting-content-components-to-index)
+    - [Search Algorithms](#search-algorithms)
+    - [Query Builders](#query-builders)
+    - [Presenting Results](#presenting-results)
+      - [Which Content Components to Display](#which-content-components-to-display)
+      - [How Many Documents to Display](#how-many-documents-to-display)
+      - [Listing Results](#listing-results)
+        - [Sorting by alphabet](#sorting-by-alphabet)
+        - [Sorting by chronology](#sorting-by-chronology)
+        - [Ranking by relevance](#ranking-by-relevance)
+        - [Ranking by popularity](#ranking-by-popularity)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -855,29 +867,92 @@ Libraries area | 24 | 40%
 Citizens area | 9 | 78%
 
 ##### Indexing by topic
+For example, if you’re looking for a doctor to help with your rehabilitation, you might select the “Doctors & Medical Staff” search zone, as shown in Figure 9-3.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0903.png)
 
+Figure 9-3. Executing a search against the “Doctors & Medical Staff” search zone
 
+##### Indexing recent content
+The search interface of the New York Times provides a useful illustration of filtering by date range (Figure 9-4).
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0904.png)
 
+Figure 9-4. There are many ways to narrow your New York Times search by date
 
+#### Selecting Content Components to Index
+In the Yelp business listing shown in Figure 9-5, there are more content components than meet the eye. There is a business name, operating hours, images, a link to the business’s website, and some attributes that are invisible to users. There are also content components that we don’t want to search, such as the reviews and tips toward the bottom of the screen.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0905.png)
 
+Figure 9-5. Yelp’s business listings are jam-packed with various content components, some visible and some not
 
+There is another reason to exploit a document’s structure. Content components aren’t useful only for enabling more precise searches; they can also make the format of search results much more meaningful. In Figure 9-6, Yelp’s search results include category and listing titles (“Boulevard Burger,” “Burgers, Breakfast & Brunch”), snippets of reviews (“My wife & I came in last night for dinner...”), number of reviews, average ratings, and locations.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0906.png)
 
+Figure 9-6. Title, rating, and location are content components displayed for each result
 
+### Search Algorithms
+We bring up the topic because it’s important to realize that a `retrieval algorithm` is essentially a tool, and just like other tools, specific algorithms help solve specific problems. And as retrieval algorithms are at the heart of search engines, it’s important to note that there is absolutely no single search engine that will meet all of your users’ information needs.
 
+### Query Builders
+`Query builders` are tools that can soup up a query’s performance. They are often invisible to users, who may not understand their value or how to use them. Common examples include:
 
+- `Spell checkers`:These allow users to misspell terms and still retrieve the right results by automatically correcting search terms. For example, “accomodation” would be treated as “accommodation,” ensuring retrieval of results that contain the correct term.
+- `Phonetic tools`:Phonetic tools (the best-known of which is “Soundex”) are especially useful when searching for a name. They can expand a query on “Smith” to include results with the term “Smyth.”
+- `Stemming tools`:Stemming tools allow users to enter a term (e.g., “lodge”) and retrieve documents that contain variant terms with the same stem (e.g., “lodging,” “lodger”).
+- `Natural language processing tools`:These can examine the syntactic nature of a query—for example, is it a “how to” question or a “who is” question?—and use that knowledge to narrow retrieval.
+- `Controlled vocabularies and thesauri`:Covered in detail in Chapter 10, these tools leverage the semantic nature of a query by automatically including synonyms within the query.
 
+### Presenting Results
+#### Which Content Components to Display
+Display less information to users who know what they’re looking for, and more information to users who aren’t sure what they want.
 
+A variant on that simple approach is to show users who are clear on what they’re looking for only `representational` content components, such as a title or author, to help them quickly distinguish the result they’re seeking. Users who aren’t as certain of what they’re looking for will benefit from `descriptive` content components such as a summary, part of an abstract, or keywords to get a sense of what their search results are about.
 
+For example, the Yelp iPad app allows the user to view search results as listings, a location map, or images (Figure 9-11).
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0911.png)
 
+Figure 9-11. The Yelp iPad app allows users to select three different ways of viewing search results: as listings, as locations on a map, or as images
 
+#### How Many Documents to Display
+We suggest that you let users know the total number of retrieved documents so they have a sense of how many documents remain as they sift through search results. Also consider providing a results navigation system to help them move through the results. In Figure 9-15, Reuters provides such a navigation system, displaying the total number of results and enabling users to move through the result set 10 items at a time.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0915.png)
 
+Figure 9-15. Reuters allows you to jump ahead through screens of 10 results at a time
 
+#### Listing Results
+There are two common methods for listing retrieval results: `sorting` and `ranking`. Retrieval results can be sorted chronologically by date, or alphabetically by any number of content component types (e.g., by title, by author, or by department). They can also be ranked by a retrieval algorithm (e.g., by relevance or popularity).
+
+##### Sorting by alphabet
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0916.png)
+
+Figure 9-16. Baseball-Reference.com displays search results in alphabetical order
+
+##### Sorting by chronology
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0917.png)
+
+Figure 9-17. The Washington Post’s default list ordering is by reverse chronological order...
+
+##### Ranking by relevance
+Relevance-ranking algorithms (there are many flavors) are typically based on one or more of the following:
+
+- How many of the query’s terms occur in the retrieved document
+- How frequently those terms occur in that document
+- How close together those terms occur (e.g., are they adjacent, in the same sentence, or in the same paragraph?)
+- Where the terms occur (e.g., a document with the query term in its title may be more relevant than one with the query term in its body)
+- The popularity of the document where the query terms appear (e.g., is it linked to frequently, and are the sources of its links themselves popular?)
+
+`Indexing by humans` is another means of establishing relevance. Keyword and descriptor fields can be searched, leveraging the value judgments of human indexers. For example, manually selected recommendations—popularly known as “best bets”—can be returned as relevant results. In Figure 9-19, the first set of results was associated with the query “Ukraine” in advance.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0919.png)
+
+Figure 9-19. A search of the BBC’s site retrieves a set of manually tagged documents as well as automatic results; the recommendations are called “Editor’s Choice” rather than “best bets”
+
+##### Ranking by popularity
 
 
 
