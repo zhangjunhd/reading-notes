@@ -407,6 +407,7 @@
 # 机器学习
 1. 搜索引擎
    1. [Lucene in Action, Second Edition](ml/LuceneInAction.md)
-   2. [搜索引擎-信息检索实践](ml/SearchEngines.md)
+   2. [Relevant Search](ml/RelevantSearch.md)
+   3. [搜索引擎-信息检索实践](ml/SearchEngines.md)
 2. 深度学习
    1. [Fundamentals of Deep Learning](ml/FundamentalsOfDeepLearning.md)
