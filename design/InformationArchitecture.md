@@ -128,6 +128,15 @@
       - [Acting on Results](#acting-on-results)
         - [Call to action](#call-to-action)
         - [Select a subset of results](#select-a-subset-of-results)
+        - [Save a search](#save-a-search)
+    - [Designing the Search Interface](#designing-the-search-interface)
+      - [The Box](#the-box)
+      - [Autocomplete and Autosuggest](#autocomplete-and-autosuggest)
+      - [Advanced Search](#advanced-search)
+      - [Supporting Revision](#supporting-revision)
+        - [Repeat search in results page](#repeat-search-in-results-page)
+        - [Explain where results come from](#explain-where-results-come-from)
+        - [Explain what the user did](#explain-what-the-user-did)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -990,6 +999,120 @@ Figure 9-22. Search results in the iOS App Store include a “GET” button (whi
 ![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0923.png)
 
 Figure 9-23. The San Francisco Public Library allows users to add search results to three “shelves”: “Completed,” “In Progress,” and “For Later”
+
+##### Save a search
+Note that the example in Figure 9-23 includes a “Save Search” link in the upper-right corner of the search results display; the user can name saved search sets for later retrieval.
+
+### Designing the Search Interface
+#### The Box
+Your system is likely to have the ubiquitous search box, as shown in Figure 9-24.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0924.png)
+
+Figure 9-24. The ubiquitous search box (in this case, from Apple)
+
+Users make assumptions about how search interfaces work, and you may want to test for those as you design your own search system. Some common user assumptions include:
+
+- “I can just type terms that describe what I’m looking for and the search engine will do the rest.”
+- “I don’t have to type in those funny AND, OR, or NOT thingies.”			
+- “I don’t have to worry about synonyms for my term; if I’m looking for dogs, I just type ‘dogs,’ not ‘canine’ or ‘canines.’”
+- “Fielded searching? I don’t have time to learn which fields I can search.”
+- “My query will search the entire site.”
+
+You certainly could provide a “help” page that explains how to create more advanced, precise queries, but users may rarely visit this page. Instead, look for opportunities to **educate** users when they’re ready to learn.
+
+For example, if you search the eBay app for “watches” (see Figure 9-25), you’ll likely get a few more results than you’d like.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0925.png)
+
+Figure 9-25. The eBay app’s search results provide opportunities to revise your search...
+
+Perhaps this is too many? If that’s the case, consider revising your search using our souped-up ‘Refine’ interface, which allows you to narrow your search. Or, select from a list of categories to narrow your results further” (see Figure 9-26).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0926.png)
+
+Figure 9-26. ...including the ability to refine your search by specifying various category-specific facets
+
+Unless your system’s search functionality truly requires more than one field—as is the case with many travel-related services—it is best to keep search limited to a single box. (If more than one field is required, it’s important that they be clearly labeled, as illustrated in Figure 9-27.)
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0927.png)
+
+Figure 9-27. Kayak’s flight search form features clearly labeled fields
+
+#### Autocomplete and Autosuggest
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0928.png)
+
+Figure 9-28. Like many airlines, Lufthansa presents a list of airports that match the first few characters the user types into the origin and destination search boxes
+
+#### Advanced Search
+For example, the US Congress website allows knowledgeable users to configure extremely sophisticated searches using Boolean operators (Figure 9-29).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0929.png)
+
+Figure 9-29. Congress.gov allows advanced users to build complex searches using Boolean operators
+
+#### Supporting Revision
+##### Repeat search in results page
+Displaying the initial search within the search box (as in Figure 9-30) can be quite useful: it restates the search that was just executed, and allows the user to modify it without reentering it.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0930.png)
+
+Figure 9-30. In the Netflix Android app, the query is displayed on the results page and can be revised and reexecuted
+
+##### Explain where results come from
+It’s useful to make clear what content was searched, especially if your search system supports multiple search zones (see Figure 9-31).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0931.png)
+
+Figure 9-31. The iOS iTunes Store app search system shows you where you searched (i.e., “All”), and makes it easy to reach results from other search zones
+
+##### Explain what the user did
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
