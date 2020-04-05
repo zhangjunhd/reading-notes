@@ -137,6 +137,10 @@
         - [Repeat search in results page](#repeat-search-in-results-page)
         - [Explain where results come from](#explain-where-results-come-from)
         - [Explain what the user did](#explain-what-the-user-did)
+        - [Integrate searching with browsing](#integrate-searching-with-browsing)
+      - [When Users Get Stuck](#when-users-get-stuck)
+    - [Recap](#recap-7)
+  - [10.Thesauri, Controlled Vocabularies, and Metadata](#10thesauri-controlled-vocabularies-and-metadata)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -1067,43 +1071,58 @@ It’s useful to make clear what content was searched, especially if your search
 Figure 9-31. The iOS iTunes Store app search system shows you where you searched (i.e., “All”), and makes it easy to reach results from other search zones
 
 ##### Explain what the user did
+Explaining “what happened” can include the two guidelines just mentioned, as well as:
 
+- Restating the query
+- Describing what content was searched
+- Describing any filters that might be in place (e.g., date ranges)
+- Showing implicit Boolean or other operators, such as a default AND
+- Showing other current settings, such as the sort order
+- Mentioning the number of results retrieved
 
+In Figure 9-32, the New York Times site provides an excellent example of explaining to the user what just happened.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0932.png)
 
+Figure 9-32. All aspects of the search are restated as part of these search results
 
+##### Integrate searching with browsing
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0933.png)
 
+Figure 9-33. Searching leads to browsing: a search for “2001 a space odyssey” on the Barnes & Noble site retrieves categories as well as documents
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0934.png)
 
+Figure 9-34. And browsing leads to searching: navigate to the “Movies & TV” section, and you’ll find the search box set to search that zone
 
+#### When Users Get Stuck
+It is still useful to provide some instruction on how to narrow search results, as shown in Figure 9-35.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0935.png)
 
+Figure 9-35. Congress.gov provides advice on how to narrow down searches
 
+You can also help users narrow their results by allowing them to search within their current result sets. In Figure 9-36, the initial search for hotels in New York City retrieved over 600 results; we can “filter by hotel name” for particular brands to narrow our retrieval.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_0936.png)
 
+Figure 9-36. Priceline.com allows users to search within the result set
 
+At the other end of the spectrum, zero hits is a bit more frustrating for users and challenging for information architects. We suggest you adopt a “no dead ends” policy to address this problem. “No dead ends” simply means that users always have another option, even if they’ve retrieved zero results. The options might include:		
 
+- A means of revising the search
+- Search tips or other advice on how to improve the search
+- A means of browsing (e.g., including the site’s navigation system or sitemap)
+- A human contact if searching and browsing won’t work
 
+### Recap
 
+- Choosing what to index in your information environment is an important step when configuring your search system.
+- There are many different types of search algorithms.
+- There are also various different ways of presenting results back to the user.
+- All of these factors—what to search, what to retrieve, and how to present the results—come together in the search interface.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 10.Thesauri, Controlled Vocabularies, and Metadata
 
 
 
