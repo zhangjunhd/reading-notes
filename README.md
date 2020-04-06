@@ -364,16 +364,16 @@
    1. [平面排版基本的基本](design/graphic_design.md)
    2. [写给大家看的设计书（第3版）](design/TheNon-DesignersDesignBook.md)
    3. [破茧成蝶](design/UED-growth.md)
-   4. [Search Patterns](design/SearchPatterns.md)
-   5. [Designing Web Navigation](design/DesigningWebNavigation.md)
-   6. [Designing the Search Experience](design/DesigningTheSearchExperience.md)
-   7. [About Face 3](design/AboutFace3.md)
-   8. [Designing Interfaces](design/DesigningInterfaces.md)
-   9. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
+   4. [Designing Web Navigation](design/DesigningWebNavigation.md)
+   5. [About Face 3](design/AboutFace3.md)
+   6. [Designing Interfaces](design/DesigningInterfaces.md)
+   7. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
 5.  信息架构
     1. [Information Architecture](ia/InformationArchitecture.md)
-    2. [Web Content Management](ia/cms.md)
-    3. [Vox Media调研](ia/vox-media.md)
+    2. [Search Patterns](ia/SearchPatterns.md)
+    3. [Designing the Search Experience](ia/DesigningTheSearchExperience.md)
+    4. [Web Content Management](ia/cms.md)
+    5. [Vox Media调研](ia/vox-media.md)
 
 # 软件技术
 1. 计算
