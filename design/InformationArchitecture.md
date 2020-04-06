@@ -149,6 +149,21 @@
       - [Thesauri](#thesauri)
     - [Technical Lingo](#technical-lingo)
     - [A Thesaurus in Action](#a-thesaurus-in-action)
+    - [Types of Thesauri](#types-of-thesauri)
+      - [Classic Thesaurus](#classic-thesaurus)
+      - [Indexing Thesaurus](#indexing-thesaurus)
+      - [Searching Thesaurus](#searching-thesaurus)
+    - [Semantic Relationships](#semantic-relationships)
+      - [Equivalence](#equivalence)
+      - [Hierarchical](#hierarchical)
+      - [Associative](#associative)
+    - [Preferred Terms](#preferred-terms)
+      - [Term Form](#term-form)
+    - [Polyhierarchy](#polyhierarchy)
+    - [Faceted Classification](#faceted-classification)
+    - [Recap](#recap-8)
+- [III.Getting Information Architecture Done](#iiigetting-information-architecture-done)
+  - [11.Research](#11research)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -1238,30 +1253,167 @@ The core terminology includes the following:
 Figure 10-12. Semantic relationships in a wine thesaurus
 
 ### A Thesaurus in Action
+PubMed provides a simpler public interface with free access to citations, but without access to the full text of the journal articles.
 
+Let’s say we’re studying African sleeping sickness. We enter that phrase into the PubMed search engine and are rewarded with the first 20 results out of 5,758 total items found (Figure 10-13). 
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1013.png)
 
+Figure 10-13. Search results on PubMed
 
+In fact, we didn’t search the full-text articles at all. Instead, we searched the metadata records for these articles, which include a combination of abstracts and subject headings (Figure 10-14).
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1014.png)
 
+Figure 10-14. Sample record with abstract in PubMed
 
+When we select another item from our search results, we find a record with subject headings (“MeSH Terms”) but no abstract (Figure 10-15).
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1015.png)
 
+Figure 10-15. Sample record with index terms in PubMed
 
+Take a look at the MeSH Browser, an interface for navigating the structure and vocabulary of MeSH (Figure 10-16).
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1016.png)
 
+Figure 10-16. The MeSH Browser
 
+The MeSH Browser enables us to navigate by browsing the hierarchical classification schemes within the thesaurus or by searching. If we try a search on “African sleeping sickness,” we’ll see why the article “Wolbachia. A tale of sex and survival” was retrieved in our search. “African sleeping sickness” is actually an entry term for the preferred term or MeSH heading, “Trypanosomiasis, African” (see Figure 10-17). When we searched PubMed, our variant term was mapped to the preferred term behind the scenes.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1017.png)
 
+Figure 10-17. MeSH record for trypanosomiasis (top and bottom of page)
 
+It would be nice, for example, to turn all of those MeSH terms in our sample record into live links and provide enhanced searching and browsing capabilities, similar to those provided by Amazon, as shown in Figure 10-18.
 
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1018.png)
 
+Figure 10-18. Amazon’s use of structure and subject headings for enhanced navigation
 
+One of the advantages to using a thesaurus is that you have tremendous power and flexibility to shape and refine the user interface over time. You can’t take advantage of all the capabilities at once, but you can user-test different features, learning and adjusting as you go. 
 
+### Types of Thesauri
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1019.png)
 
+Figure 10-19. Types of thesauri
 
+#### Classic Thesaurus
+A `classic thesaurus` is used at the point of indexing and at the point of searching. Indexers use the thesaurus to map variant terms to preferred terms when performing document-level indexing. Searchers use the thesaurus for retrieval, whether or not they’re aware of the role it plays in their search experience. Query terms are matched against the rich vocabulary of the thesaurus, enabling synonym management, hierarchical browsing, and associative linking. This is the full-bodied, fully integrated thesaurus we’ve referred to for much of this chapter.
 
+#### Indexing Thesaurus
+However, building a classic thesaurus is not always necessary or possible. Consider a scenario in which you have the ability to develop a controlled vocabulary and index documents, but you’re not able to build the synonym-management capability into the search experience. Perhaps another department owns the search engine and won’t work with you, or perhaps the engine won’t support this functionality without major customization.
 
+Whatever the case, you’re able to perform controlled vocabulary indexing, but you’re not able to leverage that work at the point of searching and map users’ variant terms to preferred terms.
+
+An indexing thesaurus positions you nicely to take the next step up to a classic thesaurus.
+
+#### Searching Thesaurus
+A searching thesaurus leverages a controlled vocabulary at the point of searching but not at the point of indexing. For example, when a user enters a term into the search engine, a searching thesaurus can map that term onto the controlled vocabulary before executing the query against the full-text index. The thesaurus may simply perform equivalence term explosion, as we’ve seen in the case of synonym rings, or it may go beyond the equivalence relationship, exploding down the hierarchy to include all narrower terms (traditionally known as “posting down”). These methods will obviously enhance recall at the expense of precision.
+
+You also have the option of giving more power and control to the users—asking them whether they’d like to use any combination of preferred, variant, broader, narrower, or associative terms in their queries. When integrated carefully into the search interface and search result screens, this can effectively arm users with the ability to narrow, broaden, and adjust their searches as needed.
+
+### Semantic Relationships
+#### Equivalence
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1020.png)
+
+Figure 10-20. The equivalence relationship
+
+Our goal is to group terms defined as “equivalent for the purposes of retrieval.” This may include synonyms, near-synonyms, acronyms, abbreviations, lexical variants, and common misspellings. For example:
+
+```
+Preferred term
+  Apple Watch Sport
+
+Variant terms (equivalents)
+  Apple Watch, iWatch, Smart watch, Smartwatch, Wearable computer, Galaxy Gear, Moto 360
+```
+
+#### Hierarchical
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1021.png)
+
+Figure 10-21. The hierarchical relationship
+
+There are three subtypes of hierarchical relationship:
+
+- `Generic`:This is the traditional class–species relationship we draw from biological taxonomies. Species B is a member of Class A and inherits the characteristics of its parent. For example, Bird NT Magpie.
+- `Whole-part`:In this hierarchical relationship, B is a part of A. For example, Foot NT Big Toe.
+- `Instance`:In this case, B is an instance or example of A. This relationship often includes proper names. For example, Seas NT Mediterranean Sea.
+
+#### Associative
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1022.png)
+
+Figure 10-22. The associative relationship
+
+Table 10-1. Examples of relationship subtypes
+
+Relationship subtype | Example
+---------------------|--------
+Field of Study and Object of Study | Cardiology RT Heart | 
+Process and its Agent | Termite Control RT Pesticides |
+Concepts and their Properties | Poisons RT Toxicity |
+Action and Product of Action | Eating RT Indigestion |
+Concepts Linked by Causal Dependence | Celebration RT New Year’s Eve
+
+### Preferred Terms
+#### Term Form
+Table 10-2. Issues covered in the ANSI/NISO thesaurus standard
+
+Topic | Our interpretation and advice
+------|--------
+Grammatical form | The standard strongly encourages the use of nouns for preferred terms. This is a good default guideline, because users are better at understanding and remembering nouns than verbs or adjectives. However, in the real world, you’ll encounter lots of good reasons to use verbs (i.e., task-oriented words) and adjectives (e.g., price, size, variety, color) in your controlled vocabularies.
+Spelling | The standard notes that you can select a “defined authority,” such as a specific dictionary or glossary, or you can choose to use your own “house style.” You might also consider the most common spelling forms employed by your users. The most important thing here is that you make a decision and stick to it. Consistency will improve the lives of your indexers and users.
+Singular and plural form | The standard recommends using the plural form of “count nouns” (e.g., cars, roads, maps). Conceptual nouns (e.g., math, biology) should remain in singular form. Search technology has rendered this less important than in the past. Once again, consistency is the goal in this case.
+Abbreviations and acronyms | The guidelines suggest to default to popular use. For the most part, your preferred terms will be the full words. But in cases such as RADAR, IRS, 401K, MI, and TV, it may be better to use the acronym or abbreviation. You can always rely on your variant terms to guide users from one form to the other (e.g., Internal Revenue Service See IRS).
+
+### Polyhierarchy
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1023.png)
+
+Figure 10-23. Hierarchy and polyhierarchy
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1024.png)
+
+Figure 10-24. Polyhierarchy in MEDLINE
+
+At the footer of most articles in the Wikipedia website is a box with links to the higher levels in the hierarchy that list that particular article (Figure 10-25).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1025.png)
+
+Figure 10-25. Polyhierarchy in Wikipedia
+
+### Faceted Classification
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1026.png)
+
+Figure 10-26. Single hierarchy versus multiple (faceted) hierarchies
+
+The mega-menu shown in Figure 10-27 presents various ways to browse, providing multiple paths to the same information.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1027.png)
+
+Figure 10-27. Faceted classification at Wine.com
+
+The Advanced Wine Search, shown in Figure 10-28, provides the ability to combine facets into the rich type of query we usually express in natural language.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1028.png)
+
+Figure 10-28. Advanced Wine Search at Wine.com
+
+Note that not only are we able to leverage facets in the search, but we can also use the facets to sort results. Wine.com has added ratings from several magazines (RP = Robert Parker’s The Wine Advocate, WS = Wine Spectator) as yet another facet.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1029.png)
+
+Figure 10-29. Flexible search and results display
+
+### Recap
+
+- Thesauri, controlled vocabularies, and metadata operate on the backend of an information environment to enable a more seamless and satisfying experience on the frontend.
+- Metadata tags are used to describe documents, pages, images, software, video and audio files, and other content objects for the purposes of improved navigation and retrieval.
+- Controlled vocabularies are subsets of natural language; they include synonym rings, authority files, classification schemes, and thesauri.
+- These systems allow you to structure and map language so that people can more easily find information.
+- Faceted classification and polyhierarchy allow you to make information available in more than one way, allowing people to find their own routes to the stuff they’re looking for.
+
+# III.Getting Information Architecture Done
+## 11.Research
 
 
 
