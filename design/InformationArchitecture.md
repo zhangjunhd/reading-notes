@@ -164,6 +164,7 @@
     - [Recap](#recap-8)
 - [III.Getting Information Architecture Done](#iiigetting-information-architecture-done)
   - [11.Research](#11research)
+    - [A Research Framework](#a-research-framework)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -1414,14 +1415,17 @@ Figure 10-29. Flexible search and results display
 
 # III.Getting Information Architecture Done
 ## 11.Research
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1101.png)
 
+Figure 11-1. The process of information architecture development
 
+- The `research` phase begins with a review of existing background materials and meetings with the strategy team, aimed at gaining a high-level understanding of the goals and business context, the existing information architecture, the content, and the intended audiences. It then quickly moves into a series of studies, employing a variety of methods to explore the information ecology.
+- This research provides a contextual understanding that forms the foundation for development of an information architecture `strategy`. From a top-down perspective, this strategy defines the highest two or three levels of the information environment’s organization and navigation structures. From a bottom-up perspective, it suggests candidate document types and a rough metadata schema. This strategy provides a high-level framework for the information architecture, establishing a direction and scope that will guide the project through implementation.
+- Design is where you shape a high-level strategy into an information architecture, creating detailed sitemaps, wireframes, and metadata schema that will be used by graphic designers, programmers, content authors, and the production team. The `design` phase is obviously where most of the work of information architecture is done. That said, quantity cannot drive out quality. Poor design execution can ruin the best strategy.
+- `Implementation` is where your designs are put to the test as the system is built, tested, and launched. This phase involves organizing and tagging documents, testing and troubleshooting, and developing documentation and training programs to ensure that the information architecture can be maintained effectively over time.
+- And last but not least is `administration`, the continuous evaluation and improvement of the system’s information architecture. Administration includes the daily tasks of tagging new documents and weeding out old ones. It also requires monitoring usage and user feedback, identifying opportunities to improve through major or minor adjustments. Effective administration can make a good information environment great.
 
-
-
-
-
-
+### A Research Framework
 
 
 
