@@ -33,6 +33,10 @@
     - [2.3.1.Extracting content into documents](#231extracting-content-into-documents)
     - [2.3.2.Enriching documents to clean, augment, and merge data](#232enriching-documents-to-clean-augment-and-merge-data)
     - [2.3.3.Performing analysis](#233performing-analysis)
+      - [Tokens as search features](#tokens-as-search-features)
+      - [Components of analysis](#components-of-analysis)
+    - [2.3.4.Indexing](#234indexing)
+- [3.Debugging your first relevance problem](#3debugging-your-first-relevance-problem)
 
 # 1.The search relevance problem
 ## 1.1.Your goal: gaining the skills of a relevance engineer
@@ -191,6 +195,64 @@ Document enrichment comprises three main categories: cleaning data, augmenting e
 - Finally, new information can be merged into the documents from `external sources`. For instance, in e-commerce the products being sold often come from external vendors. Product data provided by the vendors can be sparse—for instance, missing important fields such as the product title. In this case, additional information can be joined into the documents. The existing product codes can be used to look up product titles, or missing descriptions can be written in by hand. 
 
 ### 2.3.3.Performing analysis
+`Tokens` are symbols that represent the content of a field in a document. 
+
+```
+The, Brown’s, fiftieth, wedding, anniversary, at, Café, Olé
+```
+
+Listing 2.4. Text tokenization example
+
+```
+brown, fiftieth, wedding, anniversary, cafe, ole
+```
+
+Listing 2.5. Text tokenization example with normalization and filtering
+
+Geographic locations(for instance, the location of the White House, 38.8977° N, 77.0366° W) can be tokenized using geohashing. In this case, reasonable tokens might be as follows.
+
+```
+dqcjqcpee, dqcjqcpe, dqcjqcp, dqcjqc, dqcjq, dqcj, dqc, dq, d
+```
+
+Listing 2.6. Geolocation tokenization using geohashing
+
+#### Tokens as search features
+The `tokens` that come from the analysis process serve as the `features` that describe the document.
+
+#### Components of analysis
+Analysis is composed of three steps: `character filtering`, `tokenization`, and `token filtering`.
+
+During the first step, `character filtering`, the characters of text fields can be adjusted or filtered in various ways.
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/02fig06.jpg)
+
+Figure 2.6. Analysis—character filtering
+
+The next step is `tokenization`, during this step raw text is converted into a stream of tokens.
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/02fig07.jpg)
+
+Figure 2.7. Analysis—tokenizing
+
+The final step is `token filtering`.
+
+In order to appropriately normalize the tokens from our sample sentence, a typical choice would be to lowercase the tokens, remove common words such as the and at (these common words are called `stop words`), and remove the possessive after Brown
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/02fig08.jpg)
+
+Figure 2.8. Analysis—token filtering
+
+One final note before we move on to indexing. During analysis, it’s common to store extra metadata with each token that the analysis process generates. The most common metadata are the `term positions` and `term offsets`, which are useful for phrase queries and highlighting, respectively. You can also create custom token filters that add arbitrary metadata to the tokens in values called `payloads`.
+
+### 2.3.4.Indexing
+Most importantly, you must decide which fields to index and/or store which fields to index and/or store, and which fields to both index and store.
+
+- `Indexing` refers to the process of updating the inverted index with the extracted tokens to enable search on that field. A field is searchable only if it’s indexed.
+- `Storing` refers to retaining the original, unaltered document content in the stored field’s data structure (see table 2.1) so that it can be retrieved and presented to the user in search results. 
+
+# 3.Debugging your first relevance problem
+
 
 
 
