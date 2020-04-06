@@ -165,6 +165,9 @@
 - [III.Getting Information Architecture Done](#iiigetting-information-architecture-done)
   - [11.Research](#11research)
     - [A Research Framework](#a-research-framework)
+    - [Context](#context)
+  - [12.Strategy](#12strategy)
+  - [13.Design and Documentation](#13design-and-documentation)
 
 # I.Introducing Information Architecture
 `Information architecture` (IA) is a design discipline that is focused on making information findable and understandable.
@@ -1426,6 +1429,41 @@ Figure 11-1. The process of information architecture development
 - And last but not least is `administration`, the continuous evaluation and improvement of the system’s information architecture. Administration includes the daily tasks of tagging new documents and weeding out old ones. It also requires monitoring usage and user feedback, identifying opportunities to improve through major or minor adjustments. Effective administration can make a good information environment great.
 
 ### A Research Framework
+Our faithful three-circle diagram (Figure 11-2), which we introduced in Chapter 2, has been invaluable in helping us shape a balanced approach to research.
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1102.png)
+
+Figure 11-2. A balanced approach to research
+
+We begin with an overview of tools and methods for research (see Figure 11-3).
+
+![](https://learning.oreilly.com/library/view/information-architecture-4th/9781491913529/assets/inar_1103.png)
+
+Figure 11-3. Tools and methods for research
+
+### Context
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 12.Strategy
 
 
 
@@ -1449,39 +1487,6 @@ Figure 11-1. The process of information architecture development
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 13.Design and Documentation
 
 
