@@ -331,9 +331,6 @@
        5. [迭代-新商业、新媒体与逆袭之路](bussiness/media/iteration.md) 
        6. [如何打造超级IP](bussiness/media/how-to-create-ip.md)
        7. [超级IP](bussiness/media/xtreme-ip.md)
-   4.  CMS
-       1. [Vox Media调研](bussiness/cms/vox-media.md)
-       2. [Web Content Management](bussiness/cms/cms.md)
 5.  营销
     1. [定位](bussiness/marketing/positioning.md)
 6.  广告
@@ -367,13 +364,16 @@
    1. [平面排版基本的基本](design/graphic_design.md)
    2. [写给大家看的设计书（第3版）](design/TheNon-DesignersDesignBook.md)
    3. [破茧成蝶](design/UED-growth.md)
-   4. [Information Architecture](design/InformationArchitecture.md)
-   5. [Search Patterns](design/SearchPatterns.md)
-   6. [Designing Web Navigation](design/DesigningWebNavigation.md)
-   7. [Designing the Search Experience](design/DesigningTheSearchExperience.md)
-   8. [About Face 3](design/AboutFace3.md)
-   9. [Designing Interfaces](design/DesigningInterfaces.md)
-   10. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
+   4. [Search Patterns](design/SearchPatterns.md)
+   5. [Designing Web Navigation](design/DesigningWebNavigation.md)
+   6. [Designing the Search Experience](design/DesigningTheSearchExperience.md)
+   7. [About Face 3](design/AboutFace3.md)
+   8. [Designing Interfaces](design/DesigningInterfaces.md)
+   9. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
+5.  信息架构
+    1. [Information Architecture](ia/InformationArchitecture.md)
+    2. [Web Content Management](ia/cms.md)
+    3. [Vox Media调研](ia/vox-media.md)
 
 # 软件技术
 1. 计算
