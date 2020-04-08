@@ -37,6 +37,11 @@
       - [Components of analysis](#components-of-analysis)
     - [2.3.4.Indexing](#234indexing)
 - [3.Debugging your first relevance problem](#3debugging-your-first-relevance-problem)
+  - [3.1.Applications to Solr and Elasticsearch: examples in Elasticsearch](#31applications-to-solr-and-elasticsearch-examples-in-elasticsearch)
+  - [3.2.Our most prominent data set: TMDB](#32our-most-prominent-data-set-tmdb)
+  - [3.3.Examples programmed in Python](#33examples-programmed-in-python)
+  - [3.4.Your first search application](#34your-first-search-application)
+    - [3.4.1.Your first searches of the TMDB Elasticsearch index](#341your-first-searches-of-the-tmdb-elasticsearch-index)
 
 # 1.The search relevance problem
 ## 1.1.Your goal: gaining the skills of a relevance engineer
@@ -252,52 +257,66 @@ Most importantly, you must decide which fields to index and/or store which field
 - `Storing` refers to retaining the original, unaltered document content in the stored field’s data structure (see table 2.1) so that it can be retrieved and presented to the user in search results. 
 
 # 3.Debugging your first relevance problem
+You’ll begin to use our search engine, Elasticsearch, to search over a real data set. As you encounter the common beginner’s problem, your focus will be on debugging two primary internal layers key to relevance: `matching` and `ranking`.
 
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/03fig01_alt.jpg)
 
+Figure 3.1. As a relevance engineer, you have several tools available for debugging relevance problems.
 
+## 3.1.Applications to Solr and Elasticsearch: examples in Elasticsearch
+It’s important to note that this book isn’t about Elasticsearch. We focus on features related to relevance, completely ignoring other features and concerns when using a search engine: analytics, ingesting your data, scaling, and performance.
 
+## 3.2.Our most prominent data set: TMDB
+We’re excited about [TMDB](http://themoviedb.org/)’s data, as its content contains several attributes that many search applications must work with. When searching movies, these attributes include:
 
+- Prose text (including overviews, synopsis, and user reviews)
+- Shorter text (such as director and actor names, and titles)
+- Numerical attributes (user ratings, movie revenue, number of awards)
+- Movie release dates and other attributes important in search
 
+In this book, you’ll primarily use a prepackaged version of TMDB data. Packaged with the book’s GitHub [repository](http://github.com/o19s/relevant-search-book) is a file containing a snapshot of TMDB movies used at the time of writing this book.
 
+## 3.3.Examples programmed in Python
+ This code imports requests (an HTTP client library) and Python’s JSON standard library:
 
+```py
+import requests # requests HTTP library
+import json # json parsing
+```
 
+## 3.4.Your first search application
+To index movies, first you need to read them in! To access tmdb.json with the movie dictionary, you’ll use a function called `extract`. In the following listing, you’ll pull back each movie by parsing the JSON file into a Python dictionary.
 
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/043fig01_alt.jpg)
 
+Listing 3.1. Extract movies from tmdb.json
 
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/044fig01_alt.jpg)
 
+Listing 3.2. Sample TMDB movie from tmdb.json
 
+You’ll predominantly use the `bulk index` API that allows you to efficiently index multiple documents in one HTTP request.
 
+That being said, let’s create a function, `reindex`, that you can refer to. The reindex function takes settings and the movieDict dictionary returned from extract, re-creates the Elasticsearch index, and indexes the data into Elasticsearch.
 
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/044fig02_alt.jpg)
 
+Listing 3.3. Indexing with Elasticsearch’s bulk API—reindex
 
+```py
+movieDict = extract()
+reindex(movieDict=movieDict)
+```
 
+Listing 3.4. Pulling data from TMDB into Elasticsearch
 
+You’ve built your first ETL (extract, transform, load) pipeline. Here you’ve done the following:
 
+- Extracted information from an external system
+- Transformed the data into a form amenable to the search engine
+- Indexed the data into Elasticsearch
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 3.4.1.Your first searches of the TMDB Elasticsearch index
 
 
 
