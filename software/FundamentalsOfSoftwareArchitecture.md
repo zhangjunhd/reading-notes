@@ -19,6 +19,8 @@
   - [Laws of Software Architecture](#laws-of-software-architecture)
 - [I.Foundations](#ifoundations)
 - [2.Architectural Thinking](#2architectural-thinking)
+  - [Architecture Versus Design](#architecture-versus-design)
+  - [Technical Breadth](#technical-breadth)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -63,37 +65,37 @@ Second Law of Software Architecture:
 
 # I.Foundations
 # 2.Architectural Thinking
+## Architecture Versus Design
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0202.png)
 
+Figure 2-2. Traditional view of architecture versus design
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0203.png)
 
+Figure 2-3. Making architecture work through collaboration
 
+## Technical Breadth
+A developer’s early career focuses on expanding the top of the pyramid, to build experience and expertise.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0204.png)
 
+Figure 2-4. The pyramid representing all knowledge
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0205.png)
 
+Figure 2-5. Developers must maintain expertise to retain it
 
+Unlike a developer, who must have a significant amount of `technical depth` to perform their job, a software architect must have a significant amount of `technical breadth` to think like an architect and see things with an architecture point of view.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0206.png)
 
+Figure 2-6. What someone knows is technical depth, and how much someone knows is technical breadth
 
+As an architect, breadth is more important than depth. Because architects must make decisions that match capabilities to technical constraints, a broad understanding of a wide variety of solutions is valuable. Thus, for an architect, **the wise course of action is to sacrifice some hard-won expertise and use that time to broaden their portfolio**, as shown in Figure 2-7. 
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0207.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Figure 2-7. Enhanced breadth and shrinking depth for the architect role
 
 
 
