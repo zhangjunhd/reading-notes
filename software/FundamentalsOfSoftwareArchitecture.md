@@ -22,7 +22,7 @@
   - [Architecture Versus Design](#architecture-versus-design)
   - [Technical Breadth](#technical-breadth)
   - [Analyzing Trade-Offs](#analyzing-trade-offs)
-- [3.](#3)
+- [3.Modularity](#3modularity)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -114,7 +114,7 @@ To quote Rich Hickey, the creator of the Clojure programming language:
 
 >Programmers know the benefits of everything and the trade-offs of nothing. Architects need to understand both.
 
-# 3.
+# 3.Modularity
 
 
 
