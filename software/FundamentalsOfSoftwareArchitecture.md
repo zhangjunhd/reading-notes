@@ -23,6 +23,10 @@
   - [Technical Breadth](#technical-breadth)
   - [Analyzing Trade-Offs](#analyzing-trade-offs)
 - [3.Modularity](#3modularity)
+  - [Definition](#definition)
+  - [Measuring Modularity](#measuring-modularity)
+    - [Cohesion](#cohesion)
+    - [Coupling](#coupling)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -115,25 +119,33 @@ To quote Rich Hickey, the creator of the Clojure programming language:
 >Programmers know the benefits of everything and the trade-offs of nothing. Architects need to understand both.
 
 # 3.Modularity
+## Definition
+We use `modularity` to describe a logical grouping of related code, which could be a group of classes in an object-oriented language or functions in a structured or functional language. 
 
+## Measuring Modularity
+### Cohesion
+`Cohesion` refers to what extent the parts of a module should be contained within the same module. In other words, it is a measure of how related the parts are to one another. Ideally, a cohesive module is one where all the parts should be packaged together, because breaking them into smaller pieces would require coupling the parts together via calls between modules to achieve useful results.
 
+>Attempting to divide a cohesive module would only result in increased coupling and decreased readability. -Larry Constantine
 
+Computer scientists have defined a range of cohesion measures, listed here from best to worst:
 
+- Functional cohesion
+  - Every part of the module is related to the other, and the module contains everything essential to function.
+- Sequential cohesion
+  - Two modules interact, where one outputs data that becomes the input for the other.
+- Communicational cohesion
+  - Two modules form a communication chain, where each operates on information and/or contributes to some output. For example, add a record to the database and generate an email based on that information.
+- Procedural cohesion
+  - Two modules must execute code in a particular order.
+- Temporal cohesion
+  - Modules are related based on timing dependencies. For example, many systems have a list of seemingly unrelated things that must be initialized at system startup; these different tasks are temporally cohesive.
+- Logical cohesion
+  - The data within modules is related logically but not functionally. For example, consider a module that converts information from text, serialized objects, or streams. Operations are related, but the functions are quite different. A common example of this type of cohesion exists in virtually every Java project in the form of the StringUtils package: a group of static methods that operate on String but are otherwise unrelated.
+- Coincidental cohesion
+  - Elements in a module are not related other than being in the same source file; this represents the most negative form of cohesion.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Coupling
 
 
 
