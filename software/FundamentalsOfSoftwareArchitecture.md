@@ -27,6 +27,9 @@
   - [Measuring Modularity](#measuring-modularity)
     - [Cohesion](#cohesion)
     - [Coupling](#coupling)
+    - [Abstractness, Instability, and Distance from the Main Sequence](#abstractness-instability-and-distance-from-the-main-sequence)
+    - [Connascence](#connascence)
+      - [Static connascence](#static-connascence)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -146,33 +149,33 @@ Computer scientists have defined a range of cohesion measures, listed here from 
   - Elements in a module are not related other than being in the same source file; this represents the most negative form of cohesion.
 
 ### Coupling
+`Afferent coupling` measures the number of incoming connections to a code artifact (component, class, function, and so on). `Efferent coupling` measures the outgoing connections to other code artifacts. 
 
+### Abstractness, Instability, and Distance from the Main Sequence
+`Abstractness` is the ratio of abstract artifacts (abstract classes, interfaces, and so on) to concrete artifacts (implementation). It represents a measure of abstractness versus implementation. 
 
+`Instability`, is defined as the ratio of efferent coupling to the sum of both efferent and afferent coupling. The instability metric determines the `volatility` of a code base.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0302.png)
 
+Figure 3-2. The main sequence defines the ideal relationship between abstractness and instability
 
+The `distance` metric imagines an ideal relationship between abstractness and instability; classes that fall near this idealized line exhibit a healthy mixture of these two competing concerns. 
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0303.png)
 
+Figure 3-3. Normalized distance from the main sequence for a particular class
 
+The closer to the line, the better balanced the class. Classes that fall too far into the upper-righthand corner enter into what architects call the `zone of uselessness`: code that is too abstract becomes difficult to use. Conversely, code that falls into the lower-lefthand corner enter the `zone of pain`: code with too much implementation and not enough abstraction becomes brittle and hard to maintain, illustrated in Figure 3-4.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0304.png)
 
+Figure 3-4. Zones of Uselessness and Pain
 
+### Connascence
+>Two components are connascent if a change in one would require the other to be modified in order to maintain the overall correctness of the system.-Meilir Page-Jones
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Static connascence
 
 
 
