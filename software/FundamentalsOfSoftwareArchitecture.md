@@ -21,6 +21,8 @@
 - [2.Architectural Thinking](#2architectural-thinking)
   - [Architecture Versus Design](#architecture-versus-design)
   - [Technical Breadth](#technical-breadth)
+  - [Analyzing Trade-Offs](#analyzing-trade-offs)
+- [3.](#3)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -97,19 +99,22 @@ As an architect, breadth is more important than depth. Because architects must m
 
 Figure 2-7. Enhanced breadth and shrinking depth for the architect role
 
+## Analyzing Trade-Offs
+To quote Mark (one of your authors):
 
+>Architecture is the stuff you can’t Google.
 
+**Everything in architecture is a trade-off**, which is why the famous answer to every architecture question in the universe is “it depends.” 
 
+To quote Neal (another one of your authors):
 
+>There are no right or wrong answers in architecture—only trade-offs.
 
+To quote Rich Hickey, the creator of the Clojure programming language:
 
+>Programmers know the benefits of everything and the trade-offs of nothing. Architects need to understand both.
 
-
-
-
-
-
-
+# 3.
 
 
 
