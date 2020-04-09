@@ -30,6 +30,8 @@
     - [Abstractness, Instability, and Distance from the Main Sequence](#abstractness-instability-and-distance-from-the-main-sequence)
     - [Connascence](#connascence)
       - [Static connascence](#static-connascence)
+      - [Dynamic connascence](#dynamic-connascence)
+      - [Connascence properties](#connascence-properties)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -176,26 +178,44 @@ Figure 3-4. Zones of Uselessness and Pain
 >Two components are connascent if a change in one would require the other to be modified in order to maintain the overall correctness of the system.-Meilir Page-Jones
 
 #### Static connascence
+Architects view the following types of static connascence as the degree to which something is coupled, either afferently or efferently:
 
+- Connascence of Name (CoN):Multiple components must agree on the name of an entity.
+  - Names of methods represents the most common way that code bases are coupled and the most desirable, especially in light of modern refactoring tools that make system-wide name changes trivial.
+- Connascence of Type (CoT):Multiple components must agree on the type of an entity.
+  - This type of connascence refers to the common facility in many statically typed languages to limit variables and parameters to specific types. However, this capability isn’t purely a language feature—some dynamically typed languages offer selective typing, notably Clojure and Clojure Spec.
+- Connascence of Meaning (CoM) or Connascence of Convention (CoC):Multiple components must agree on the meaning of particular values.
+  - The most common obvious case for this type of connascence in code bases is hard-coded numbers rather than constants. For example, it is common in some languages to consider defining somewhere int TRUE = 1; int FALSE = 0. Imagine the problems if someone flips those values.
+- Connascence of Position (CoP):Multiple entities must agree on the order of values.
+  - This is an issue with parameter values for method and function calls even in languages that feature static typing. For example, if a developer creates a method void updateSeat(String name, String seatLocation) and calls it with the values updateSeat("14D", "Ford, N"), the semantics aren’t correct even if the types are.
+- Connascence of Algorithm (CoA):Multiple components must agree on a particular algorithm.
+  - A common case for this type of connascence occurs when a developer defines a security hashing algorithm that must run on both the server and client and produce identical results to authenticate the user. Obviously, this represents a high form of coupling—if either algorithm changes any details, the handshake will no longer work.
 
+#### Dynamic connascence
+The following is a description of the different types of dynamic connascence:
 
+- Connascence of Execution (CoE):The order of execution of multiple components is important.
 
+Consider this code:
 
+```java
+email = new Email();
+email.setRecipient("foo@example.com");
+email.setSender("me@me.com");
+email.send();
+email.setSubject("whoops");
+```
 
+It won’t work correctly because certain properties must be set in order.
 
+- Connascence of Timing (CoT):The timing of the execution of multiple components is important.
+  - The common case for this type of connascence is a race condition caused by two threads executing at the same time, affecting the outcome of the joint operation.
+- Connascence of Values (CoV):Occurs when several values relate on one another and must change together.
+  - Consider the case where a developer has defined a rectangle as four points, representing the corners. To maintain the integrity of the data structure, the developer cannot randomly change one of points without considering the impact on the other points.
+- Connascence of Identity (CoI):Occurs when several values relate on one another and must change together.
+  - The common example of this type of connascence involves two independent components that must share and update a common data structure, such as a distributed queue.
 
-
-
-
-
-
-
-
-
-
-
-
-
+#### Connascence properties
 
 
 
