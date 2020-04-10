@@ -42,6 +42,11 @@
   - [3.3.Examples programmed in Python](#33examples-programmed-in-python)
   - [3.4.Your first search application](#34your-first-search-application)
     - [3.4.1.Your first searches of the TMDB Elasticsearch index](#341your-first-searches-of-the-tmdb-elasticsearch-index)
+  - [3.5.Debugging query matching](#35debugging-query-matching)
+    - [3.5.1.Examining the underlying query strategy](#351examining-the-underlying-query-strategy)
+    - [3.5.2.Taking apart query parsing](#352taking-apart-query-parsing)
+    - [3.5.3.Debugging analysis to solve matching issues](#353debugging-analysis-to-solve-matching-issues)
+    - [3.5.4.Comparing your query to the inverted index](#354comparing-your-query-to-the-inverted-index)
 
 # 1.The search relevance problem
 ## 1.1.Your goal: gaining the skills of a relevance engineer
@@ -317,6 +322,123 @@ You’ve built your first ETL (extract, transform, load) pipeline. Here you’ve
 - Indexed the data into Elasticsearch
 
 ### 3.4.1.Your first searches of the TMDB Elasticsearch index
+Let’s implement a `search` function that lets you search with passed-in Query DSL queries. search is a fairly straightforward function that passes a query and prints the search results in order of relevance, as shown in the following listing.
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/046fig01_alt.jpg)
+
+Listing 3.5. The search function
+
+In listing 3.6, you construct a Query DSL search using `multi_match`. You attempt to tell Elasticsearch that a title field is 10 times more important than the overview field when ranking . 
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/047fig01_alt.jpg)
+
+Listing 3.6. Your first search
+
+Output:
+
+```
+Num  Relevance Score     Movie Title
+1    0.8424165           Aliens
+2    0.5603433           The Basketball Diaries
+3    0.52651036          Cowboys & Aliens
+4    0.42120826          Aliens vs Predator: Requiem
+5    0.42120826          Aliens in the Attic
+6    0.42120826          Monsters vs Aliens
+7    0.262869            Dances with Wolves
+8    0.262869            Interview with the Vampire
+9    0.262869            From Russia with Love
+10   0.262869            Gone with the Wind
+11   0.262869            Fire with Fire
+```
+
+Unfortunately,most of the top movies listed seem to be about basketball or aliens, but not both. Other movies seem to be completely unrelated to basketball or aliens, and we’re completely missing the mark. Where’s Space Jam? If you request additional results from Elasticsearch, you finally see your result:
+
+```
+43   0.016977157            Space Jam
+```
+
+You need to answer two main questions:
+
+- Why did certain documents match query terms? Why did a movie such as Fire with Fire even match your query?
+- Why did less relevant documents rank as highly as they did? Why is The Basketball Diaries ranked higher than our target Space Jam?
+
+## 3.5.Debugging query matching
+First, we’ll remind you of what we mean by `matching`. This exacting matching behavior points to two areas to take apart:
+
+- `Query parsing` —How your Query DSL query translates into a matching strategy of specific terms to fields
+- `Analysis` —The process of creating tokens from the query and document text
+
+### 3.5.1.Examining the underlying query strategy
+The first thing you’ll do to inspect matching behavior is ask Elasticsearch to explain how the query was parsed.
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/049fig01_alt.jpg)
+
+Response:
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/049fig02_alt.jpg)
+
+Listing 3.7. Explaining the behavior of your query
+
+Your query is translated into a more precise syntax that gives deeper information about how Lucene will work with your Elasticsearch query:
+
+```
+((title:basketball title:with title:cartoon title:aliens)^10.0) | (overview:basketball overview:with overview:cartoon overview:aliens)
+```
+
+### 3.5.2.Taking apart query parsing
+Above the innermost matches, you see four `SHOULD` clauses scored together (grouped with parentheses):
+
+```
+(title:basketball title:with title:cartoon title:aliens)
+```
+
+Boosted by a factor of 10 (as we’ve requested when searching), you have the following:
+
+```
+(title:basketball title:with title:cartoon title:aliens)^10
+```
+
+Compared to another query, with a maximum score taken (| symbol), you have this:
+
+```
+((title:basketball title:with title:cartoon title:aliens)^10.0) |(overview:basketball overview:with overview:cartoon overview:aliens)
+```
+
+### 3.5.3.Debugging analysis to solve matching issues
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/051fig01_alt.jpg)
+
+The result (in prettier YAML) is as follows:
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/051fig02.jpg)
+
+Listing 3.8. Debugging analysis
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/052fig01.jpg)
+
+Listing 3.9. SimpleText index representation for the term fire
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/053fig01.jpg)
+
+Listing 3.10. View of title index with Fire with Fire terms highlighted
+
+### 3.5.4.Comparing your query to the inverted index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
