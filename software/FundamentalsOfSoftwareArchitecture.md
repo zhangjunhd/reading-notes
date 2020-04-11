@@ -53,6 +53,10 @@
     - [Governing Architecture Characteristics](#governing-architecture-characteristics)
     - [Fitness Functions](#fitness-functions)
 - [7.Scope of Architecture Characteristics](#7scope-of-architecture-characteristics)
+  - [Coupling and Connascence](#coupling-and-connascence)
+  - [Architectural Quanta and Granularity](#architectural-quanta-and-granularity)
+- [8.Component-Based Thinking](#8component-based-thinking)
+  - [Component Scope](#component-scope)
 - [II.Architecture Styles](#iiarchitecture-styles)
 
 # 1.Introduction
@@ -436,24 +440,26 @@ Fortunately, increasingly sophisticated solutions exist to relieve this problem 
 Figure 6-2. The mechanisms of fitness functions
 
 # 7.Scope of Architecture Characteristics
+## Coupling and Connascence
+Many of the code-level coupling metrics, such as afferent and efferent coupling (described in “Structural Measures”), reveal details at a too fine-grained level for architectural analysis. In 1996, Meilir Page-Jones published a book titled What Every Programmer Should Know About Object Oriented Design (Dorset House) that included several new measures of coupling he named connascence, which is defined as follows:
 
+- Connascence
+  - Two components are connascent if a change in one would require the other to be modified in order to maintain the overall correctness of the system
 
+He defined two types of connascence: `static`, discoverable via static code analysis, and `dynamic`, concerning runtime behavior.
 
+For dynamic connascence, we define two types: `synchronous` and `asynchronous`. Synchronous calls between two distributed services have the caller wait for the response from the callee. On the other hand, asynchronous calls allow fire-and-forget semantics in event-driven architectures, allowing two different services to differ in operational architecture
 
+## Architectural Quanta and Granularity
+- Architecture quantum
+  - An independently deployable artifact with high functional cohesion and synchronous connascence
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0701.png)
 
+Figure 7-1. Adding quantum connascence to the unified diagram
 
-
-
-
-
-
-
-
-
-
-
-
+# 8.Component-Based Thinking
+## Component Scope
 
 
 
