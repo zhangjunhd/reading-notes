@@ -37,6 +37,8 @@
   - [Architectural Characteristics (Partially) Listed](#architectural-characteristics-partially-listed)
     - [Operational Architecture Characteristics](#operational-architecture-characteristics)
     - [Structural Architecture Characteristics](#structural-architecture-characteristics)
+    - [Cross-Cutting Architecture Characteristics](#cross-cutting-architecture-characteristics)
+- [5.Identifying Architectural Characteristics](#5identifying-architectural-characteristics)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -276,32 +278,34 @@ Scalability | Ability for the system to perform and operate as the number of use
 Operational architecture characteristics heavily overlap with operations and DevOps concerns, forming the intersection of those concerns in many software projects.
 
 ### Structural Architecture Characteristics
+Table 4-2. Structural architecture characteristics
 
+Term | Definition
+---|---
+Configurability | Ability for the end users to easily change aspects of the software’s configuration (through usable interfaces).
+Extensibility | How important it is to plug new pieces of functionality in.
+Installability | Ease of system installation on all necessary platforms.
+Leverageability/reuse | Ability to leverage common components across multiple products.
+Localization | Support for multiple languages on entry/query screens in data fields; on reports, multibyte character requirements and units of measure or currencies.
+Maintainability | How easy it is to apply changes and enhance the system?
+Portability | Does the system need to run on more than one platform? (For example, does the frontend need to run against Oracle as well as SAP DB?
+Supportability | What level of technical support is needed by the application? What level of logging and other facilities are required to debug errors in the system?
+Upgradeability | Ability to easily/quickly upgrade from a previous version of this application/solution to a newer version on servers and clients.
 
+### Cross-Cutting Architecture Characteristics
+Table 4-3. Cross-cutting architecture characteristics
 
+Term | Definition
+---|---
+Accessibility | Access to all your users, including those with disabilities like colorblindness or hearing loss.
+Archivability | Will the data need to be archived or deleted after a period of time? (For example, customer accounts are to be deleted after three months or marked as obsolete and archived to a secondary database for future access.)
+Authentication | Security requirements to ensure users are who they say they are.
+Authorization | Security requirements to ensure users can access only certain functions within the application (by use case, subsystem, webpage, business rule, field level, etc.).
+Legal | What legislative constraints is the system operating in (data protection, Sarbanes Oxley, GDPR, etc.)? What reservation rights does the company require? Any regulations regarding the way the application is to be built or deployed?
+Privacy | Ability to hide transactions from internal company employees (encrypted transactions so even DBAs and network architects cannot see them).
+Security | Does the data need to be encrypted in the database? Encrypted for network communication between internal systems? What type of authentication needs to be in place for remote user access?
+Supportability | What level of technical support is needed by the application? What level of logging and other facilities are required to debug errors in the system?
+Usability/achievability | Level of training required for users to achieve their goals with the application/solution. Usability requirements need to be treated as seriously as any other architectural issue.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 5.Identifying Architectural Characteristics
 
