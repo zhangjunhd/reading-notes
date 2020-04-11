@@ -12,6 +12,7 @@
     - [1.1.1 Miss Grant’s Controller](#111-miss-grants-controller)
   - [1.2 The State Machine Model](#12-the-state-machine-model)
   - [1.3 Programming Miss Grant’s Controller](#13-programming-miss-grants-controller)
+  - [1.4 Languages and Semantic Model](#14-languages-and-semantic-model)
 
 # I.Narratives
 # 1. An Introductory Example
@@ -81,19 +82,19 @@ This language is a domain-specific language that shares many of the characterist
 
 It’s a bit noisier than the custom language earlier, but still pretty clear. Readers whose language likings are similar to mine will probably recognize it as Ruby. 
 
+An `external DSL` is a domain-specific language represented in a separate language to the main programming language it’s working with. This language may use a custom syntax, or it may follow the syntax of another representation such as XML. An `internal DSL` is a DSL represented within the syntax of a general-purpose language. It’s a stylized use of that language for a domain-specific purpose.
 
+You may also hear the term `embedded DSL` as a synonym for internal DSL.
 
+Now think again about the original Java configuration code. Is this a DSL? I would argue that it isn’t. Does this mean you can’t do an internal DSL in Java? How about this:
 
+![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/p0015_01.jpg)
 
+It’s formatted oddly, and uses some unusual programming conventions, but it is valid Java. This I would call a DSL; although it’s more messy than the Ruby DSL, it still has that declarative flow that a DSL needs.
 
+Another term you may come across for an internal DSL is a `fluent interface`. This term emphasizes the fact that an internal DSL is really just a particular kind of API, designed with this elusive quality of fluency. Given this distinction, it’s useful to have a name for a nonfluent API—I’ll use the `term command-query API`.
 
-
-
-
-
-
-
-
+## 1.4 Languages and Semantic Model
 
 
 
