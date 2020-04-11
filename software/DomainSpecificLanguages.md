@@ -13,6 +13,8 @@
   - [1.2 The State Machine Model](#12-the-state-machine-model)
   - [1.3 Programming Miss Grant’s Controller](#13-programming-miss-grants-controller)
   - [1.4 Languages and Semantic Model](#14-languages-and-semantic-model)
+  - [1.5 Using Code Generation](#15-using-code-generation)
+- [2.Using Domain-Specific Languages](#2using-domain-specific-languages)
 
 # I.Narratives
 # 1. An Introductory Example
@@ -101,22 +103,22 @@ If you’re used to using Domain Models [Fowler PoEAA], for the moment you can t
 
 Figure 1.4 Parsing a DSL populates a Semantic Model.
 
+One opinion I’ve formed is that the Semantic Model is a vital part of a well-designed DSL. In the wild you’ll find some DSLs use a Semantic Model and some do not, but I’m very much of the opinion that you should almost always use a Semantic Model.
 
+## 1.5 Using Code Generation
+In my discussion so far, I process the DSL to populate the Semantic Model and then execute the Semantic Model to provide the behavior that I want from the controller. This approach is what’s known in language circles as `interpretation`. When we interpret some text, we parse it and immediately produce the result that we want from the program.
 
+In the language world, the alternative to interpretation is `compilation`. With compilation, we parse some program text and produce an intermediate output, which is then separately processed to provide the behavior we desire. In the context of DSLs, the compilation approach is usually referred to as `code generation`.
 
+![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/intro_interpreted.jpg)
 
+Figure 1.5 An interpreter parses the text and produces its result in a single process.
 
+![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/intro_compiled.jpg)
 
+Figure 1.6 A compiler parses the text and produces some intermediate code which is then packaged into another process for execution.
 
-
-
-
-
-
-
-
-
-
+# 2.Using Domain-Specific Languages
 
 
 
