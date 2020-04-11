@@ -32,6 +32,11 @@
       - [Static connascence](#static-connascence)
       - [Dynamic connascence](#dynamic-connascence)
       - [Connascence properties](#connascence-properties)
+    - [Unifying Coupling and Connascence Metrics](#unifying-coupling-and-connascence-metrics)
+- [4.Architecture Characteristics Defined](#4architecture-characteristics-defined)
+  - [Architectural Characteristics (Partially) Listed](#architectural-characteristics-partially-listed)
+    - [Operational Architecture Characteristics](#operational-architecture-characteristics)
+    - [Structural Architecture Characteristics](#structural-architecture-characteristics)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -216,6 +221,61 @@ It won’t work correctly because certain properties must be set in order.
   - The common example of this type of connascence involves two independent components that must share and update a common data structure, such as a distributed queue.
 
 #### Connascence properties
+- Strength
+  - Architects determine the strength of connascence by the ease with which a developer can refactor that type of coupling; different types of connascence are demonstrably more desirable, as shown in Figure 3-5. 
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0305.png)
+
+Figure 3-5. The strength on connascence provides a good refactoring guide
+
+- Locality
+  - The locality of connascence measures how proximal the modules are to each other in the code base. Proximal code (in the same module) typically has more and higher forms of connascence than more separated code (in separate modules or code bases). In other words, forms of connascence that indicate poor coupling when far apart are fine when closer together.
+- Degree
+  - The degree of connascence relates to the size of its impact—does it impact a few classes or many? Lesser degrees of connascence damage code bases less.
+
+### Unifying Coupling and Connascence Metrics
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0306.png)
+
+Figure 3-6. Unifying coupling and connascence
+
+# 4.Architecture Characteristics Defined
+The architect must consider many other factors in designing a software solution, as illustrated in Figure 4-1.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0107.png)
+
+Figure 4-1. A software solution consists of both domain requirements and architectural characteristics
+
+Architects may collaborate on defining the domain or business requirements, but one key responsibility entails defining, discovering, and otherwise analyzing all the things the software must do that isn’t directly related to the domain functionality: `architectural characteristics`.
+
+An architecture characteristic meets three criteria:
+
+- Specifies a nondomain design consideration
+- Influences some structural aspect of the design
+- Is critical or important to application success
+
+These interlocking parts of our definition are illustrated in Figure 4-2.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0402.png)
+
+Figure 4-2. The differentiating features of architecture characteristics
+
+## Architectural Characteristics (Partially) Listed
+### Operational Architecture Characteristics
+Table 4-1. Common operational architecture characteristics
+
+Term | Definition
+---|---
+Availability | How long the system will need to be available (if 24/7, steps need to be in place to allow the system to be up and running quickly in case of any failure).
+Continuity | Disaster recovery capability.
+Performance | Includes stress testing, peak analysis, analysis of the frequency of functions used, capacity required, and response times. Performance acceptance sometimes requires an exercise of its own, taking months to complete.
+Recoverability | Business continuity requirements (e.g., in case of a disaster, how quickly is the system required to be on-line again?). This will affect the backup strategy and requirements for duplicated hardware.
+Reliability/safety | Assess if the system needs to be fail-safe, or if it is mission critical in a way that affects lives. If it fails, will it cost the company large sums of money?
+Robustness | Ability to handle error and boundary conditions while running if the internet connection goes down or if there’s a power outage or hardware failure.
+Scalability | Ability for the system to perform and operate as the number of users or requests increases.
+
+Operational architecture characteristics heavily overlap with operations and DevOps concerns, forming the intersection of those concerns in many software projects.
+
+### Structural Architecture Characteristics
 
 
 
