@@ -39,6 +39,12 @@
     - [Structural Architecture Characteristics](#structural-architecture-characteristics)
     - [Cross-Cutting Architecture Characteristics](#cross-cutting-architecture-characteristics)
 - [5.Identifying Architectural Characteristics](#5identifying-architectural-characteristics)
+  - [Extracting Architecture Characteristics from Domain Concerns](#extracting-architecture-characteristics-from-domain-concerns)
+  - [Extracting Architecture Characteristics from Requirements](#extracting-architecture-characteristics-from-requirements)
+  - [Case Study: Silicon Sandwiches](#case-study-silicon-sandwiches)
+    - [Explicit Characteristics](#explicit-characteristics)
+    - [Implicit Characteristics](#implicit-characteristics)
+- [6.Measuring and Governing Architecture Characteristics](#6measuring-and-governing-architecture-characteristics)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -308,4 +314,225 @@ Supportability | What level of technical support is needed by the application? W
 Usability/achievability | Level of training required for users to achieve their goals with the application/solution. Usability requirements need to be treated as seriously as any other architectural issue.
 
 # 5.Identifying Architectural Characteristics
+## Extracting Architecture Characteristics from Domain Concerns
+A common anti-pattern in architecture entails trying to design a `generic architecture`, one that supports all the architecture characteristics.
+
+Table 5-1. Translation of domain concerns to architecture characteristics
+
+Domain concern | Architecture characteristics
+---|---
+Mergers and acquisitions| Interoperability, scalability, adaptability, extensibility
+Time to market | Agility, testability, deployability
+User satisfaction | Performance, availability, fault tolerance, testability, deployability, agility, security
+Competitive advantage | Agility, testability, deployability, scalability, availability, fault tolerance
+Time and budget | Simplicity, feasibility
+
+## Extracting Architecture Characteristics from Requirements
+Some architecture characteristics come from explicit statements in requirements documents. Others come from inherent domain knowledge by architects, one of the many reasons that domain knowledge is always beneficial for architects.
+
+A few years ago, Ted Neward, a well-known architect, devised architecture `kata`s, a clever method to allow nascent architects a way to practice deriving architecture characteristics from domain-targeted descriptions. 
+
+Each kata has predefined sections:
+
+- Description
+  - The overall domain problem the system is trying to solve
+- Users
+  - The expected number and/or types of users of the system
+- Requirements
+  - Domain/domain-level requirements, as an architect might expect from domain users/domain experts
+- Additional context
+  - Many of the considerations an architect must make aren’t explicitly expressed in requirements but rather by implicit knowledge of the problem domain
+
+## Case Study: Silicon Sandwiches
+To show how architects derive architecture characteristics from requirements, we introduce the Silicon Sandwiches kata.
+
+- Description
+  - A national sandwich shop wants to enable online ordering (in addition to its current call-in service).
+- Users
+  - Thousands, perhaps one day millions
+- Requirements
+  - Users will place their order, then be given a time to pick up their sandwich and directions to the shop (which must integrate with several external mapping services that include traffic information)
+  - If the shop offers a delivery service, dispatch the driver with the sandwich to the user
+  - Mobile-device accessibility
+  - Offer national daily promotions/specials
+  - Offer local daily promotions/specials
+  - Accept payment online, in person, or upon delivery
+- Additional context
+  - Sandwich shops are franchised, each with a different owner
+  - Parent company has near-future plans to expand overseas
+  - Corporate goal is to hire inexpensive labor to maximize profit
+
+First, separate the candidate architecture characteristics into explicit and implicit characteristics.
+
+### Explicit Characteristics
+One of the first details that should catch an architect’s eye is the number of users: currently thousands, perhaps one day millions (this is a very ambitious sandwich shop!). Thus, `scalability`—the ability to handle a large number of concurrent users without serious performance degradation—is one of the top architecture characteristics.
+
+However, we also probably need `elasticity`—the ability to handle bursts of requests. 
+
+Scalability looks like the graph shown in Figure 5-1.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0501.png)
+
+Figure 5-1. Scalability measures the performance of concurrent users
+
+Elasticity, on the other hand, measures bursts of traffic, as shown in Figure 5-2.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0502.png)
+
+Figure 5-2. Elastic systems must withstand bursts of users
+
+The requirement for elasticity did not appear in the Silicon Sandwiches requirements, yet the architect should identify this as an important consideration. **Requirements sometimes state architecture characteristics outright, but some lurk inside the problem domain**.
+
+An architect should consider each of these business requirements in turn to see if architecture characteristics exist:
+
+1. Users will place their order, then be given a time to pick up their sandwich and directions to the shop (which must provide the option to integrate with external mapping services that include traffic information).
+2. If the shop offers a delivery service, dispatch the driver with the sandwich to the user.(No special architecture characteristics seem necessary to support this requirement.)
+3. Mobile-device accessibility.(This requirement will primarily affect the design of the application, pointing toward building either a portable web application or several native web applications. Given the budget constraints and simplicity of the application, an architect would likely deem it overkill to build multiple applications, so the design points toward a mobile-optimized web application. Thus, the architect may want to define some specific performance architecture characteristics for page load time and other mobile-sensitive characteristics. Notice that the architect shouldn’t act alone in situations like this, but should instead collaborate with user experience designers, domain stakeholders, and other interested parties to vet decisions like this.)
+4. Offer national daily promotions/specials.
+5. Offer local daily promotions/specials.(Both of these requirements specify customizability across both promotions and specials. Notice that requirement 1 also implies customized traffic information based on address. Based on all three of these requirements, the architect may consider customizability as an architecture characteristic. For example, an architecture style such as microkernel architecture supports customized behavior extremely well by defining a plug-in architecture. In this case, the default behavior appears in the core, and developers write the optional customized parts, based on location, via plug-ins. However, a traditional design can also accommodate this requirement via design patterns (such as Template Method). This conundrum is common in architecture and requires architects to constantly weight trade-offs between competing options. )
+6. Accept payment online, in person, or upon delivery.(Online payments imply security, but nothing in this requirement suggests a particularly heightened level of security beyond what’s implicit.)
+7. Sandwich shops are franchised, each with a different owner.(This requirement may impose cost restrictions on the architecture—the architect should check the feasibility (applying constraints like cost, time, and staff skill set) to see if a simple or sacrificial architecture is warranted.)
+8. Parent company has near-future plans to expand overseas.(This requirement implies internationalization, or i18n.)
+9. Corporate goal is to hire inexpensive labor to maximize profit.(This requirement suggests that usability will be important, but again is more concerned with design than architecture characteristics.)
+
+### Implicit Characteristics
+One implicit architecture characteristic the system might want to support is `availability`: making sure users can access the sandwich site. Closely related to availability is `reliability`: making sure the site stays up during interactions—no one wants to purchase from a site that continues dropping connections, forcing them to log in again.
+
+`Security` appears as an implicit characteristic in every system: no one wants to create insecure software. However, it may be prioritized depending on criticality, which illustrates the interlocking nature of our definition. 
+
+The last major architecture characteristic that Silicon Sandwiches needs to support encompasses several details from the requirements: `customizability`.
+
+# 6.Measuring and Governing Architecture Characteristics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
