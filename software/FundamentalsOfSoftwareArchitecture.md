@@ -45,6 +45,7 @@
     - [Explicit Characteristics](#explicit-characteristics)
     - [Implicit Characteristics](#implicit-characteristics)
 - [6.Measuring and Governing Architecture Characteristics](#6measuring-and-governing-architecture-characteristics)
+- [II.Architecture Styles](#iiarchitecture-styles)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -496,8 +497,8 @@ The last major architecture characteristic that Silicon Sandwiches needs to supp
 
 
 
-
-
+# II.Architecture Styles
+We define an `architecture style` as the overarching structure of how the user interface and backend source code are organized (such as within layers of a monolithic deployment or separately deployed services) and how that source code interacts with a datastore. `Architecture patterns`, on the other hand, are lower-level design structures that help form specific solutions within an architecture style (such as how to achieve high scalability or high performance within a set of operations or between sets of services).
 
 
 
