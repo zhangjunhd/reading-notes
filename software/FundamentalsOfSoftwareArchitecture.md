@@ -45,6 +45,14 @@
     - [Explicit Characteristics](#explicit-characteristics)
     - [Implicit Characteristics](#implicit-characteristics)
 - [6.Measuring and Governing Architecture Characteristics](#6measuring-and-governing-architecture-characteristics)
+  - [Measuring Architecture Characteristics](#measuring-architecture-characteristics)
+    - [Operational Measures](#operational-measures)
+    - [Structural Measures](#structural-measures)
+    - [Process Measures](#process-measures)
+  - [Governance and Fitness Functions](#governance-and-fitness-functions)
+    - [Governing Architecture Characteristics](#governing-architecture-characteristics)
+    - [Fitness Functions](#fitness-functions)
+- [7.Scope of Architecture Characteristics](#7scope-of-architecture-characteristics)
 - [II.Architecture Styles](#iiarchitecture-styles)
 
 # 1.Introduction
@@ -404,30 +412,30 @@ One implicit architecture characteristic the system might want to support is `av
 The last major architecture characteristic that Silicon Sandwiches needs to support encompasses several details from the requirements: `customizability`.
 
 # 6.Measuring and Governing Architecture Characteristics
+## Measuring Architecture Characteristics
+### Operational Measures
+Many architecture characteristics have obvious direct measurements, such as performance or scalability.
 
+### Structural Measures
+What about internal structural characteristics, such as well-defined modularity? Unfortunately, comprehensive metrics for internal code quality don’t yet exist.
 
+### Process Measures
+Some architecture characteristics intersect with software development processes. For example, `agility` often appears as a desirable feature. However, it is a composite architecture characteristic that architects may decompose into features such as `testability`, and `deployability`.
 
+## Governance and Fitness Functions
+### Governing Architecture Characteristics
+Governance, derived from the Greek word kubernan (to steer) is an important responsibility of the architect role. As the name implies, the scope of architecture governance covers any aspect of the software development process that architects (including roles like enterprise architects) want to exert an influence upon.
 
+Fortunately, increasingly sophisticated solutions exist to relieve this problem from architects, a good example of the incremental growth in capabilities within the software development ecosystem. The drive toward automation on software projects spawned by `Extreme Programming` created continuous integration, which led to further automation into operations, which we now call `DevOps`, continuing through to architectural governance. 
 
+### Fitness Functions
+`Architecture fitness function`:Any mechanism that provides an objective integrity assessment of some architecture characteristic or combination of architecture characteristics.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0602.png)
 
+Figure 6-2. The mechanisms of fitness functions
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 7.Scope of Architecture Characteristics
 
 
 
