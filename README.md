@@ -381,9 +381,9 @@
 2. 算法与数据结构
    1. [算法概论](software/Algorithms.md)
 3. 架构设计
-   1. [Head First设计模式](software/HeadFirstDesignPattern.md)
-   2. [Microservice Patterns](software/MicroservicePatterns.md)
-   3. [Fundamentals of Software Architecture](software/FundamentalsOfSoftwareArchitecture.md)
+   1. [Fundamentals of Software Architecture](software/FundamentalsOfSoftwareArchitecture.md)
+   2. [Head First设计模式](software/HeadFirstDesignPattern.md)
+   3. [Microservice Patterns](software/MicroservicePatterns.md)
 4. 操作系统
    1. [Modern Operating Systems](software/ModernOperatingSystems.md)
 5. 计算机网络
