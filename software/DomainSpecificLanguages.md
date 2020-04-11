@@ -20,6 +20,8 @@
   - [2.2 Why Use a DSL?](#22-why-use-a-dsl)
     - [2.2.1 Improving Development Productivity](#221-improving-development-productivity)
     - [2.2.2 Communication with Domain Experts](#222-communication-with-domain-experts)
+    - [2.2.3 Change in Execution Context](#223-change-in-execution-context)
+    - [2.2.4 Alternative Computational Model](#224-alternative-computational-model)
 
 # I.Narratives
 # 1. An Introductory Example
@@ -145,16 +147,16 @@ The heart of the appeal of a DSL is that it provides a means to more clearly com
 The model alone provides a considerable improvement in productivity. It avoids duplication by gathering together common code; above all, it provides an abstraction to think about the problem that makes it easier to specify what’s going on in an understandable way. A DSL enhances this by providing a more expressive form to read and manipulate that abstraction. A DSL can help people learn how to use an API since it shifts focus to how different API methods should be combined together.
 
 ### 2.2.2 Communication with Domain Experts
+When people talk about DSLs in this context, it’s often along the lines of “Now we can get rid of programmers and have business people specify the rules themselves.” I call this argument the `COBOL fallacy`—since that was the expectation with COBOL.
 
+Despite the COBOL fallacy, I do think DSLs can improve communication. It’s not that domain experts will write the DSLs themselves; but they can read them and thus understand what the system thinks it’s doing. By being able to read DSL code, domain experts can spot mistakes. They can also talk more effectively to the programmers who do write the rules, perhaps by writing some rough drafts that can be refined into proper DSL rules.
 
+### 2.2.3 Change in Execution Context
+Using a DSL like this can often make up for limitations in a host language, allowing us to express things in a comfortable DSL and then generate code for the actual execution environment to use.
 
+A model can facilitate this kind of shift. Once you have a model, it’s easy to either execute it directly or generate code from it. Models can be also be populated from a forms-style interface as well as a DSL. A DSL has a couple of advantages over using forms. DSLs are often better than forms at representing complicated logic.
 
-
-
-
-
-
-
+### 2.2.4 Alternative Computational Model
 
 
 
