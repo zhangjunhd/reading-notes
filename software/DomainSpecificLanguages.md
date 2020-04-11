@@ -15,6 +15,11 @@
   - [1.4 Languages and Semantic Model](#14-languages-and-semantic-model)
   - [1.5 Using Code Generation](#15-using-code-generation)
 - [2.Using Domain-Specific Languages](#2using-domain-specific-languages)
+  - [2.1 Defining Domain-Specific Languages](#21-defining-domain-specific-languages)
+    - [2.1.1 Boundaries of DSLs](#211-boundaries-of-dsls)
+  - [2.2 Why Use a DSL?](#22-why-use-a-dsl)
+    - [2.2.1 Improving Development Productivity](#221-improving-development-productivity)
+    - [2.2.2 Communication with Domain Experts](#222-communication-with-domain-experts)
 
 # I.Narratives
 # 1. An Introductory Example
@@ -119,27 +124,27 @@ Figure 1.5 An interpreter parses the text and produces its result in a single pr
 Figure 1.6 A compiler parses the text and produces some intermediate code which is then packaged into another process for execution.
 
 # 2.Using Domain-Specific Languages
+## 2.1 Defining Domain-Specific Languages
+`Domain-specific language` (noun): a computer programming language of limited expressiveness focused on a particular domain.
 
+### 2.1.1 Boundaries of DSLs
+I’ll start with internal DSLs.Mike Roberts suggested to me that a command-query API defines the vocabulary of the abstraction, whereas an internal DSL adds a grammar.
 
+A common way of documenting a class with a command-query API is to list all the methods it has. The methods of an internal DSL often only make sense in the context of a larger expression in the DSL.
 
+As a result, an internal DSL should have the feel of putting together whole sentences, rather than a sequence of disconnected commands. This is the basis for calling these kinds of APIs fluent interfaces.
 
+With external DSLs, the boundary is with general-purpose programming languages. Languages can have a domain focus but still be general-purpose languages.
 
+A more obvious DSL is regular expressions. Here, the domain focus (matching text) is coupled with limited features—just enough to make text matching easy. One common indicator of a DSL is that it isn’t `Turing-complete`.
 
+## 2.2 Why Use a DSL?
+### 2.2.1 Improving Development Productivity
+The heart of the appeal of a DSL is that it provides a means to more clearly communicate the intent of a part of a system.
 
+The model alone provides a considerable improvement in productivity. It avoids duplication by gathering together common code; above all, it provides an abstraction to think about the problem that makes it easier to specify what’s going on in an understandable way. A DSL enhances this by providing a more expressive form to read and manipulate that abstraction. A DSL can help people learn how to use an API since it shifts focus to how different API methods should be combined together.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 2.2.2 Communication with Domain Experts
 
 
 
