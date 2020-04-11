@@ -95,11 +95,11 @@ It’s formatted oddly, and uses some unusual programming conventions, but it is
 Another term you may come across for an internal DSL is a `fluent interface`. This term emphasizes the fact that an internal DSL is really just a particular kind of API, designed with this elusive quality of fluency. Given this distinction, it’s useful to have a name for a nonfluent API—I’ll use the `term command-query API`.
 
 ## 1.4 Languages and Semantic Model
+If you’re used to using Domain Models [Fowler PoEAA], for the moment you can think of a Semantic Model as very close to the same thing.
 
+![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/semanticmodel_sketch.jpg)
 
-
-
-
+Figure 1.4 Parsing a DSL populates a Semantic Model.
 
 
 
