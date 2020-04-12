@@ -156,6 +156,15 @@
   - [Reuse…and Coupling](#reuseand-coupling)
   - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-6)
 - [17.Microservices Architecture](#17microservices-architecture)
+  - [Topology](#topology-6)
+  - [Distributed](#distributed)
+  - [Bounded Context](#bounded-context)
+    - [Granularity](#granularity)
+    - [Data Isolation](#data-isolation)
+  - [API Layer](#api-layer)
+  - [Operational Reuse](#operational-reuse)
+  - [Frontends](#frontends)
+  - [Communication](#communication)
 - [18.Choosing the Appropriate Architecture Style](#18choosing-the-appropriate-architecture-style)
 - [III.Techniques and Soft Skills](#iiitechniques-and-soft-skills)
 - [19.Architecture Decisions](#19architecture-decisions)
@@ -1294,37 +1303,65 @@ A major goal of this architecture is reuse at the service level—the ability to
 Figure 16-5. Ratings for service-oriented architecture
 
 # 17.Microservices Architecture
+## Topology
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1701.png)
 
+Figure 17-1. The topology of the microservices architecture style
 
+## Distributed
+Microservices form a distributed architecture: each service runs in its own process, which originally implied a physical computer but quickly evolved to virtual machines and containers.
 
+## Bounded Context
+The driving philosophy of microservices is the notion of bounded context: each service models a domain or workflow. Thus, each service includes everything necessary to operate within the application, including classes, other subcomponents, and database schemas. 
 
+Microservices take the concept of a domain-partitioned architecture to the extreme. Each service is meant to represent a domain or subdomain; in many ways, microservices is the physical embodiment of the logical concepts in domain-driven design.
 
+### Granularity
+Architects struggle to find the correct granularity for services in microservices, and often make the mistake of making their services too small, which requires them to build communication links back between the services to do useful work.
 
+### Data Isolation
+Another requirement of microservices, driven by the bounded context concept, is data isolation. Many other architecture styles use a single database for persistence. However, microservices tries to avoid all kinds of coupling, including shared schemas and databases used as integration points.
 
+## API Layer
+While an API layer may be used for variety of things, it should not be used as a mediator or orchestration tool if the architect wants to stay true to the underlying philosophy of this architecture: all interesting logic in this architecture should occur inside a bounded context, and putting orchestration or other logic in a mediator violates that rule. This also illustrates the difference between technical and domain partitioning in architecture: **architects typically use mediators in technically partitioned architectures, whereas microservices is firmly domain partitioned**.
 
+## Operational Reuse
+One of the philosophies in the traditional service-oriented architecture was to reuse as much functionality as possible, domain and operational alike. In microservices, architects try to split these two concerns.
 
+Once a team has built several microservices, they realize that each has common elements that benefit from similarity. For example, if an organization allows each service team to implement monitoring themselves, how can they ensure that each team does so? And how do they handle concerns like upgrades? Does it become the responsibility of each team to handle upgrading to the new version of the monitoring tool, and how long will that take?
 
+The `sidecar` pattern offers a solution to this problem, illustrated in Figure 17-2.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1702.png)
 
+Figure 17-2. The sidecar pattern in microservices
 
+Once teams know that each service includes a common sidecar, they can build a `service mesh`, allowing unified control across the architecture for concerns like logging and monitoring. The common sidecar components connect to form a consistent operational interface across all microservices, as shown in Figure 17-3.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1703.png)
 
+Figure 17-3. The service plane connects the sidecars in a service mesh
 
+The service mesh itself forms a console that allows developers holistic access to services, which is shown in Figure 17-4.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1704.png)
 
+Figure 17-4. The service mesh forms a holistic view of the operational aspect of microservices
 
+Architects use `service discovery` as a way to build elasticity into microservices architectures. Rather than invoke a single service, a request goes through a service discovery tool, which can monitor the number and frequency of requests, as well as spin up new instances of services to handle scale or elasticity concerns. Architects often include service discovery in the service mesh, making it part of every microservice. The `API layer` is often used to host service discovery, allowing a single place for user interfaces or other calling systems to find and create services in an elastic, consistent way.
 
+## Frontends
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1705.png)
 
+Figure 17-5. Microservices architecture with a monolithic user interface
 
+The second option for user interfaces uses microfrontends, shown in Figure 17-6.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1706.png)
 
+Figure 17-6. Microfrontend pattern in microservices
 
-
-
-
-
-
-
+## Communication
 
 
 
