@@ -61,7 +61,19 @@
     - [Architecture Partitioning](#architecture-partitioning)
   - [Developer Role](#developer-role)
   - [Component Identification Flow](#component-identification-flow)
+    - [Identifying Initial Components](#identifying-initial-components)
+    - [Assign Requirements to Components](#assign-requirements-to-components)
+    - [Analyze Roles and Responsibilities](#analyze-roles-and-responsibilities)
+    - [Analyze Architecture Characteristics](#analyze-architecture-characteristics)
+    - [Restructure Components](#restructure-components)
+  - [Component Granularity](#component-granularity)
+  - [Component Design](#component-design)
+    - [Discovering Components](#discovering-components)
+    - [Actor/Actions approach](#actoractions-approach)
+    - [Event storming](#event-storming)
+    - [Workflow approach](#workflow-approach)
 - [II.Architecture Styles](#iiarchitecture-styles)
+- [9.Foundations](#9foundations)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -514,14 +526,47 @@ Developers typically take components, jointly designed with the architect role, 
 
 Figure 8-8. Component identification cycle
 
+### Identifying Initial Components
+Before any code exists for a software project, the architect must somehow determine what top-level components to begin with, based on what type of top-level partitioning they choose. Outside that, an architect has the freedom to make up whatever components they want, then map domain functionality to them to see where behavior should reside.
 
+### Assign Requirements to Components
+Once an architect has identified initial components, the next step aligns requirements (or user stories) to those components to see how well they fit. This may entail creating new components, consolidating existing ones, or breaking components apart because they have too much responsibility.
 
+### Analyze Roles and Responsibilities
+When assigning stories to components, the architect also looks at the roles and responsibilities elucidated during the requirements to make sure that the granularity matches. Thinking about both the roles and behaviors the application must support allows the architect to align the component and domain granularity.
 
+### Analyze Architecture Characteristics
+When assigning requirements to components, the architect should also look at the architecture characteristics discovered earlier in order to think about how they might impact component division and granularity.
+
+### Restructure Components
+Feedback is critical in software design. Thus, architects must continually iterate on their component design with developers.
+
+## Component Granularity
+Finding the proper granularity for components is one of an architect’s most difficult tasks. Too fine-grained a component design leads to too much communication between components to achieve results. Too coarse-grained components encourage high internal coupling, which leads to difficulties in deployability and testability, as well as modularity-related negative side effects.
+
+## Component Design
+### Discovering Components
+While there is no one true way to ascertain components, a common anti-pattern lurks: the `entity trap`. Say that an architect is working on designing components for our kata Going, Going, Gone and ends up with a design resembling Figure 8-9.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0809.png)
+
+Figure 8-9. Building an architecture as an object-relational mapping
+
+In Figure 8-9, the architect has basically taken each entity identified in the requirements and made a Manager component based on that entity. This isn’t an architecture; it’s a component-relational mapping of a framework to a database. In other words, if a system only needs simple database CRUD operations (create, read, update, delete), then the architect can download a framework to create user interfaces directly from the database.
+
+### Actor/Actions approach
+The actor/actions approach is a popular way that architects use to map requirements to components. In this approach, originally defined by the Rational Unified Process, architects identify actors who perform activities with the application and the actions those actors may perform.
+
+### Event storming
+Event storming as a component discovery technique comes from domain-driven design (DDD) and shares popularity with microservices, also heavily influenced by DDD. In event storming, the architect assumes the project will use messages and/or events to communicate between the various components. To that end, the team tries to determine which events occur in the system based on requirements and identified roles, and build components around those event and message handlers.
+
+### Workflow approach
+The workflow approach models the components around workflows, much like event storming, but without the explicit constraints of building a message-based system. A workflow approach identifies the key roles, determines the kinds of workflows these roles engage in, and builds components around the identified activities.
 
 # II.Architecture Styles
 We define an `architecture style` as the overarching structure of how the user interface and backend source code are organized (such as within layers of a monolithic deployment or separately deployed services) and how that source code interacts with a datastore. `Architecture patterns`, on the other hand, are lower-level design structures that help form specific solutions within an architecture style (such as how to achieve high scalability or high performance within a set of operations or between sets of services).
 
-
+# 9.Foundations
 
 
 
