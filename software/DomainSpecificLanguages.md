@@ -33,6 +33,8 @@
   - [3.3 Grammars, Syntax, and Semantics](#33-grammars-syntax-and-semantics)
   - [3.4 Parsing Data](#34-parsing-data)
 - [4.Implementing an Internal DSL](#4implementing-an-internal-dsl)
+  - [4.1 Fluent and Command-Query APIs](#41-fluent-and-command-query-apis)
+  - [4.2 The Need for a Parsing Layer](#42-the-need-for-a-parsing-layer)
 
 # I.Narratives
 # 1. An Introductory Example
@@ -243,22 +245,50 @@ In order to do this, we use a `Symbol Table`, which is essentially a dictionary 
 Figure 3.3 Parsing creates both a parse tree and a symbol table.
 
 # 4.Implementing an Internal DSL
+## 4.1 Fluent and Command-Query APIs
+For many people, the central pattern of a fluent interface is that of `Method Chaining`. A normal API might have code like this:
 
+```java
+Processor p = new Processor(2, 2500, Processor.Type.i386);
+Disk d1 = new Disk(150, Disk.UNKNOWN_SPEED, null);
+Disk d2 = new Disk(75, 7200, Disk.Interface.SATA);
+return new Computer(p, d1, d2);
+```
 
+With Method Chaining, we can express the same thing with:
 
+```
+computer()
+    .processor()
+        .core(2)
+        .speed(2500)
+        .i386()
+    .disk()
+        .size(150)
+    .disk()
+        .size(75)
+        .speed(7200)
+        .sata()
+    .end()
+```
 
+Here is the same thing using a sequence of method call statements, which I call a `Function Sequence`:
 
+```java
+computer();
+    processor();
+        core(2);
+        speed(2500);
+        i386();
+    disk();
+        size(150);
+    disk();
+        size(75);
+        speed(7200);
+        sata();
+```
 
-
-
-
-
-
-
-
-
-
-
+## 4.2 The Need for a Parsing Layer
 
 
 
