@@ -30,6 +30,9 @@
 - [3.Implementing DSLs](#3implementing-dsls)
   - [3.1 Architecture of DSL Processing](#31-architecture-of-dsl-processing)
   - [3.2 The Workings of a Parser](#32-the-workings-of-a-parser)
+  - [3.3 Grammars, Syntax, and Semantics](#33-grammars-syntax-and-semantics)
+  - [3.4 Parsing Data](#34-parsing-data)
+- [4.Implementing an Internal DSL](#4implementing-an-internal-dsl)
 
 # I.Narratives
 # 1. An Introductory Example
@@ -191,49 +194,55 @@ With a blinkered abstraction, you spend more effort on fitting the world into yo
 Figure 3.1 The overall architecture of DSL processing that I usually prefer
 
 ## 3.2 The Workings of a Parser
+So the differences between internal and external DSLs lie entirely in parsing, and indeed there are many differences in detail between the two. 
 
+In the external syntax, it looked something like this:
 
+```
+events
+    doorClosed D1CL
+    drawerOpened D2OP
+end
+```
 
+We can take a similar view in the Ruby internal DSL.
 
+```ruby
+event :doorClosed "D1CL"
+event :drawerOpened "D2OP"
+```
 
+Whenever you look at a script like this, you can imagine that script as a hierarchy; such a hierarchy is called a `syntax tree` (or parse tree).
 
+![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/implementingdsl_astvssemanticmodel.jpg)
 
+Figure 3.2 A syntax tree and a semantic model are usually different representations of a DSL script.
 
+## 3.3 Grammars, Syntax, and Semantics
+A `grammar` is a set of rules which describe how a stream of text is turned into a `syntax tree`.
 
+## 3.4 Parsing Data
+Let’s take a fragment of a state machine example:
 
+```
+commands
+    unlockDoor D1CL
+end
 
+state idle
+    actions {unlockDoor}
+end
+```
 
+Here we see a common situation: A command is defined in one part of the language and referred to somewhere else. When the command is referred to as part of the state’s actions, we’re on a different branch of the syntax tree from where the command was defined. If the only representation of the syntax tree is on the call stack, then the command definition has disappeared by now. As a result, we need to store the command object for later use so we can resolve the reference in the action clause.
 
+In order to do this, we use a `Symbol Table`, which is essentially a dictionary whose key is the identifier unlockDoor and whose value is an object that represents the command in our parse. When we process the text unlockDoor D1UL, we create an object to hold that data and stash it in the Symbol Table under the key unlockDoor. The object we stash may be the semantic model object for a command, or it could be an intermediate object that’s local to the syntax tree. Later, when we process actions {unlockDoor}, we look up that object using the Symbol Table to capture the relationship between the state and its actions. **A Symbol Table is thus a crucial tool for making the cross-references**. 
 
+![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/implementingdsl_symboltable.jpg)
 
+Figure 3.3 Parsing creates both a parse tree and a symbol table.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 4.Implementing an Internal DSL
 
 
 
