@@ -92,6 +92,13 @@
       - [Distributed transactions](#distributed-transactions)
       - [Contract maintenance and versioning](#contract-maintenance-and-versioning)
 - [10.Layered Architecture Style](#10layered-architecture-style)
+  - [Topology](#topology)
+  - [Layers of Isolation](#layers-of-isolation)
+  - [Adding Layers](#adding-layers)
+  - [Other Considerations](#other-considerations)
+  - [Why Use This Architecture Style](#why-use-this-architecture-style)
+  - [Architecture Characteristics Ratings](#architecture-characteristics-ratings)
+- [11.Pipeline Architecture Style](#11pipeline-architecture-style)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -686,58 +693,59 @@ Standard commits and rollbacks executed from persistence frameworks leverage `AC
 A `contract` is behavior and data that is agreed upon by both the client and the service. Contract maintenance is particularly difficult in distributed architectures, primarily due to decoupled services and systems owned by different teams and departments. 
 
 # 10.Layered Architecture Style
+## Topology
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1001.png)
 
+Figure 10-1. Standard logical layers within the layered architecture style
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1002.png)
 
+Figure 10-2. Physical topology (deployment) variants
 
+This `separation of concerns` concept within the layered architecture style makes it easy to build effective roles and responsibility models within the architecture. **Components within a specific layer are limited in scope, dealing only with the logic that pertains to that layer**. For example, components in the presentation layer only handle presentation logic, whereas components residing in the business layer only handle business logic. This allows developers to leverage their particular technical expertise to focus on the technical aspects of the domain (such as presentation logic or persistence logic). **The trade-off of this benefit, however, is a lack of overall agility (the ability to respond quickly to change)**.
 
+The layered architecture is a `technically partitioned` architecture (as opposed to a `domain-partitioned` architecture). Groups of components, rather than being grouped by domain (such as customer), are grouped by their technical role in the architecture (such as presentation or business). As a result, any particular business domain is spread throughout all of the layers of the architecture.
 
+## Layers of Isolation
+A `closed` layer means that as a request moves top-down from layer to layer, the request cannot skip any layers, but rather must go through the layer immediately below it to get to the next layer (see Figure 10-3).
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1003.png)
 
+Figure 10-3. Closed layers within the layered architecture
 
+Notice that in Figure 10-3 it would be much faster and easier for the presentation layer to access the database directly for simple retrieval requests, bypassing any unnecessary layers (what used to be known in the early 2000s as the `fast-lane reader pattern`). For this to happen, the business and persistence layers would have to be `open`, allowing requests to bypass other layers.
 
+The `layers of isolation` concept means that changes made in one layer of the architecture generally don’t impact or affect components in other layers, providing the contracts between those layers remain unchanged. Each layer is independent of the other layers, thereby having little or no knowledge of the inner workings of other layers in the architecture.
 
+If the presentation layer can directly access the persistence layer, then changes made to the persistence layer would impact both the business layer and the presentation layer, producing a very tightly coupled application with layer interdependencies between components. This type of architecture then becomes very brittle, as well as difficult and expensive to change.
 
+## Adding Layers
+While closed layers facilitate layers of isolation and therefore help isolate change within the architecture, there are times when it makes sense for certain layers to be open. For example, suppose there are shared objects within the business layer that contain common functionality for business components (such as date and string utility classes, auditing classes, logging classes, and so on). Suppose there is an architecture decision stating that the presentation layer is restricted from using these shared business objects. This constraint is illustrated in Figure 10-4, with the dotted line going from a presentation component to a shared business object in the business layer. This scenario is difficult to govern and control because architecturally the presentation layer has access to the business layer, and hence has access to the shared objects within that layer.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1004.png)
 
+Figure 10-4. Shared objects within the business layer
 
+One way to architecturally mandate this restriction is to add to the architecture a new services layer containing all of the shared business objects. Adding this new layer now architecturally restricts the presentation layer from accessing the shared business objects because the business layer is closed (see Figure 10-5). However, the new services layer must be marked as open; otherwise the business layer would be forced to go through the services layer to access the persistence layer. Marking the services layer as open allows the business layer to either access that layer (as indicated by the solid arrow), or bypass the layer and go to the next one down (as indicated by the dotted arrow in Figure 10-5).
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1005.png)
 
+Figure 10-5. Adding a new services layer to the architecture
 
+## Other Considerations
+One thing to watch out for with the layered architecture is the architecture `sinkhole` anti-pattern. This anti-pattern occurs when requests move from layer to layer as simple pass-through processing with no business logic performed within each layer.
 
+The 80-20 rule is usually a good practice to follow. For example, it is acceptable if only 20 percent of the requests are sinkholes. However, if 80 percent of the requests are sinkholes, it a good indicator that the layered architecture is not the correct architecture style for the problem domain.
 
+## Why Use This Architecture Style
+The layered architecture style is a good choice for small, simple applications or websites.
 
+As applications using the layered architecture style grow, characteristics like maintainability, agility, testability, and deployability are adversely affected. For this reason, large applications and systems using the layered architecture might be better suited for other, more modular architecture styles.
 
+## Architecture Characteristics Ratings
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1006.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 11.Pipeline Architecture Style
 
 
 
