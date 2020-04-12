@@ -22,6 +22,14 @@
     - [2.2.2 Communication with Domain Experts](#222-communication-with-domain-experts)
     - [2.2.3 Change in Execution Context](#223-change-in-execution-context)
     - [2.2.4 Alternative Computational Model](#224-alternative-computational-model)
+  - [2.3 Problems with DSLs](#23-problems-with-dsls)
+    - [2.3.1 Language Cacophony](#231-language-cacophony)
+    - [2.3.2 Cost of Building](#232-cost-of-building)
+    - [2.3.3 Ghetto Language](#233-ghetto-language)
+    - [2.3.4 Blinkered Abstraction](#234-blinkered-abstraction)
+- [3.Implementing DSLs](#3implementing-dsls)
+  - [3.1 Architecture of DSL Processing](#31-architecture-of-dsl-processing)
+  - [3.2 The Workings of a Parser](#32-the-workings-of-a-parser)
 
 # I.Narratives
 # 1. An Introductory Example
@@ -157,32 +165,32 @@ Using a DSL like this can often make up for limitations in a host language, allo
 A model can facilitate this kind of shift. Once you have a model, it’s easy to either execute it directly or generate code from it. Models can be also be populated from a forms-style interface as well as a DSL. A DSL has a couple of advantages over using forms. DSLs are often better than forms at representing complicated logic.
 
 ### 2.2.4 Alternative Computational Model
+Mainstream programming is pretty much all done using an `imperative` model of computation. Imperative computation has become popular because it’s relatively easy to understand and easy to apply to lots of problems. However, it isn’t always the best choice.
 
+You often hear such `nonimperative` approaches referred to as `declarative programming`. The notion is that these styles allow you to declare `what` should happen, rather than work through the imperative statements that describe `how` the behavior works.
 
+## 2.3 Problems with DSLs
+### 2.3.1 Language Cacophony
+The most common objection I hear to DSLs is what I call the `language cacophony problem`: the concern that languages are hard to learn, so using many languages will be much more complicated than using a single one.
 
+### 2.3.2 Cost of Building
+Even if a DSL might help, sometimes it would just be too much effort to build and maintain for the marginal benefit.
 
+### 2.3.3 Ghetto Language
+The ghetto language problem is a contrast to the language cacophony problem. Here, we have a company that’s built a lot of its systems on an in-house language which is not used anywhere else. This makes it difficult for them to find new staff and to keep up with technological changes.
 
+### 2.3.4 Blinkered Abstraction
+The usefulness of a DSL is that it provides an abstraction that you can use to think about a subject area. Such an abstraction is really valuable; it allows you to express the behavior of a domain much more easily than if you think in terms of lower-level constructs.
 
+With a blinkered abstraction, you spend more effort on fitting the world into your abstraction than the other way around. You see this when you come across something that doesn’t fit in with the abstraction—and you burn time trying to make it fit, instead of changing the abstraction to easily absorb the new behavior.
 
+# 3.Implementing DSLs
+## 3.1 Architecture of DSL Processing
+![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/implementingdsl_overview.jpg)
 
+Figure 3.1 The overall architecture of DSL processing that I usually prefer
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 3.2 The Workings of a Parser
 
 
 
