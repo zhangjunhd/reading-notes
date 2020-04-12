@@ -74,6 +74,12 @@
     - [Workflow approach](#workflow-approach)
 - [II.Architecture Styles](#iiarchitecture-styles)
 - [9.Foundations](#9foundations)
+  - [Fundamental Patterns](#fundamental-patterns)
+    - [Big Ball of Mud](#big-ball-of-mud)
+    - [Unitary Architecture](#unitary-architecture)
+    - [Client/Server](#clientserver)
+  - [Monolithic Versus Distributed Architectures](#monolithic-versus-distributed-architectures)
+    - [Fallacy #1: The Network Is Reliable](#fallacy-1-the-network-is-reliable)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -567,34 +573,45 @@ The workflow approach models the components around workflows, much like event st
 We define an `architecture style` as the overarching structure of how the user interface and backend source code are organized (such as within layers of a monolithic deployment or separately deployed services) and how that source code interacts with a datastore. `Architecture patterns`, on the other hand, are lower-level design structures that help form specific solutions within an architecture style (such as how to achieve high scalability or high performance within a set of operations or between sets of services).
 
 # 9.Foundations
+## Fundamental Patterns
+### Big Ball of Mud
+In modern terms, a `big ball of mud` might describe a simple scripting application with event handlers wired directly to database calls, with no real internal structure. Many trivial applications start like this then become unwieldy as they continue to grow.
 
+In general, architects want to avoid this type of architecture at all costs.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0901.png)
 
+Figure 9-1. A Big Ball of Mud architecture visualized from a real code base
 
+### Unitary Architecture
+When personal computers first appeared, much of the commercial development focused on single machines. As networking PCs became common, distributed systems (such as client/server) appeared.
 
+### Client/Server
+A fundamental style in architecture separates technical functionality between frontend and backend, called a `two-tier`, or `client/server`, architecture.
 
+- Desktop + database server
+- Browser + web server
+- Three-tier
+  - An architecture that became quite popular during the late 1990s was a three-tier architecture, which provided even more layers of separation. As tools like application servers became popular in Java and .NET, companies started building even more layers in their topology: a database tier using an industrial-strength database server, an application tier managed by an application server, frontend coded in generated HTML, and increasingly, JavaScript, as its capabilities expanded.
+  - The three-tier architecture corresponded with network-level protocols such as Common Object Request Broker Architecture (CORBA) and Distributed Component Object Model (DCOM) that facilitated building distributed architectures.
 
+## Monolithic Versus Distributed Architectures
+In this book we will describe in detail the following architecture styles:
 
+- Monolithic
+  - Layered architecture (Chapter 10)
+  - Pipeline architecture (Chapter 11)
+  - Microkernel architecture (Chapter 12)
+- Distributed
+  - Service-based architecture (Chapter 13)
+  - Event-driven architecture (Chapter 14)
+  - Space-based architecture (Chapter 15)
+  - Service-oriented architecture (Chapter 16)
+  - Microservices architecture (Chapter 17)
 
+The first group of issues facing all distributed architectures are described in [the fallacies of distributed computing](https://oreil.ly/fVAEY), first coined by L. Peter Deutsch and other colleagues from Sun Microsystems in 1994. A `fallacy` is something that is believed or assumed to be true but is not.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Fallacy #1: The Network Is Reliable
 
 
 
