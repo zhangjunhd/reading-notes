@@ -115,6 +115,8 @@
   - [Topology Variants](#topology-variants)
   - [Service Design and Granularity](#service-design-and-granularity)
   - [Database Partitioning](#database-partitioning)
+- [III.Techniques and Soft Skills](#iiitechniques-and-soft-skills)
+- [19.Architecture Decisions](#19architecture-decisions)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -936,6 +938,160 @@ In the `microservices` architecture style, this would likely involve the orchest
 Because domain services are coarse-grained, regular `ACID` (atomicity, consistency, isolation, durability) database transactions involving database commits and rollbacks are used to ensure database integrity within a single domain service. Highly distributed architectures like microservices, on the other hand, usually have fine-grained services and use a distributed transaction technique known as `BASE` transactions (basic availability, soft state, eventual consistency) transactions that rely on eventual consistency and hence do not support the same level of database integrity as ACID transactions in a service-based architecture.
 
 ## Database Partitioning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# III.Techniques and Soft Skills
+# 19.Architecture Decisions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
