@@ -115,6 +115,20 @@
   - [Topology Variants](#topology-variants)
   - [Service Design and Granularity](#service-design-and-granularity)
   - [Database Partitioning](#database-partitioning)
+  - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-3)
+  - [When to Use This Architecture Style](#when-to-use-this-architecture-style)
+- [14.Event-Driven Architecture Style](#14event-driven-architecture-style)
+  - [Topology](#topology-4)
+  - [Broker Topology](#broker-topology)
+  - [Mediator Topology](#mediator-topology)
+  - [Asynchronous Capabilities](#asynchronous-capabilities)
+  - [Error Handling](#error-handling)
+  - [Preventing Data Loss](#preventing-data-loss)
+  - [Broadcast Capabilities](#broadcast-capabilities)
+  - [Request-Reply](#request-reply)
+  - [Choosing Between Request-Based and Event-Based](#choosing-between-request-based-and-event-based)
+  - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-4)
+- [15.Space-Based Architecture Style](#15space-based-architecture-style)
 - [III.Techniques and Soft Skills](#iiitechniques-and-soft-skills)
 - [19.Architecture Decisions](#19architecture-decisions)
 
@@ -938,31 +952,151 @@ In the `microservices` architecture style, this would likely involve the orchest
 Because domain services are coarse-grained, regular `ACID` (atomicity, consistency, isolation, durability) database transactions involving database commits and rollbacks are used to ensure database integrity within a single domain service. Highly distributed architectures like microservices, on the other hand, usually have fine-grained services and use a distributed transaction technique known as `BASE` transactions (basic availability, soft state, eventual consistency) transactions that rely on eventual consistency and hence do not support the same level of database integrity as ACID transactions in a service-based architecture.
 
 ## Database Partitioning
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1306.png)
 
+Figure 13-6. Using a single shared library for database entity objects
 
+One way to mitigate the impact and risk of database changes is to logically partition the database and manifest the logical partitioning through federated shared libraries. Notice in Figure 13-7 that the database is logically partitioned into five separate domains (common, customer, invoicing, order, and tracking). Also notice that there are five corresponding shared libraries used by the domain services matching the logical partitions in the database.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1307.png)
 
+Figure 13-7. Using multiple shared libraries for database entity objects
 
+## Architecture Characteristics Ratings
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1309.png)
 
+Figure 13-9. Service-based architecture characteristics ratings
 
+In the electronics recycling example, the system contains two quanta, as illustrated in Figure 13-10: one for the customer-facing portion of the application containing a separate customer user interface, database, and set of services (Quoting and Item Status); and one for the internal operations of receiving, assessing, and recycling the electronic device.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1310.png)
 
+Figure 13-10. Separate quanta in a service-based architecture
 
+## When to Use This Architecture Style
+Service-based architecture is also a natural fit when doing domain-driven design. Because services are coarse-grained and domain-scoped, each domain fits nicely into a separately deployed domain service.
 
+Maintaining and coordinating database transactions is always an issue with distributed architectures in that they typically rely on eventual consistency rather than traditional ACID (atomicity, consistency, isolation, and durability) transactions. However, service-based architecture preserves ACID transactions better than any other distributed architecture due to the coarse-grained nature of the domain services.
 
+# 14.Event-Driven Architecture Style
+Most applications follow what is called a `request-based` model (illustrated in Figure 14-1). In this model, requests made to the system to perform some sort of action are send to a `request orchestrator`. The request orchestrator is typically a user interface, but it can also be implemented through an API layer or enterprise service bus. The role of the request orchestrator is to deterministically and synchronously direct the request to various `request processors`. The request processors handle the request, either retrieving or updating information in a database.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1401.png)
 
+Figure 14-1. Request-based model
 
+## Topology
+There are two primary topologies within event-driven architecture: the `mediator topology` and the `broker topology`.
 
+The mediator topology is commonly used when you require control over the workflow of an event process, whereas the broker topology is used when you require a high degree of responsiveness and dynamic control over the processing of an event.
 
+## Broker Topology
+The broker topology differs from the mediator topology in that there is no central event mediator. Rather, the message flow is distributed across the event processor components in a chain-like broadcasting fashion through a lightweight message broker (such as RabbitMQ, ActiveMQ, HornetQ, and so on). 
 
+The `initiating event` is the initial event that starts the entire event flow, whether it be a simple event like placing a bid in an online auction or more complex events in a health benefits system like changing a job or getting married. The initiating event is sent to an event channel in the `event broker` for processing. Since there is no mediator component in the broker topology managing and controlling the event, a single `event processor` accepts the initiating event from the event broker and begins the processing of that event. The event processor that accepted the initiating event performs a specific task associated with the processing of that event, then asynchronously advertises what it did to the rest of the system by creating what is called a `processing event`. This processing event is then asynchronously sent to the event broker for further processing, if needed. Other event processors listen to the processing event, react to that event by doing something, then advertise through a new processing event what they did. This process continues until no one is interested in what a final event processor did. Figure 14-2 illustrates this event processing flow.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1402.png)
 
+Figure 14-2. Broker topology
 
+It is always a good practice within the broker topology for each event processor to advertise what it did to the rest of the system, regardless of whether or not any other event processor cares about what that action was. This practice provides architectural extensibility if additional functionality is required for the processing of that event. For example, suppose as part of a complex event process, as illustrated in Figure 14-3, an email is generated and sent to a customer notifying them of a particular action taken. The Notification event processor would generate and send the email, then advertise that action to the rest of the system through a new processing event sent to a topic. However, in this case, no other event processors are listening for events on that topic, and as such the message simply goes away.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1403.png)
 
+Figure 14-3. Notification event is sent but ignored
 
+This is a good example of `architectural extensibility`. While it may seem like a waste of resources sending messages that are ignored, it is not. Suppose a new requirement comes along to analyze emails that have been sent to customers. This new event processor can be added to the overall system with minimal effort because the email information is available via the email topic to the new analyzer without having to add any additional infrastructure or apply any changes to other event processors.
 
+Table 14-1. Trade-offs of the broker topology
+
+Advantages | Disadvantages
+-----------|--------------
+Highly decoupled event processors | Workflow control
+High scalability | Error handling
+High responsiveness | Recoverability
+High performance | Restart capabilities
+High fault tolerance | Data inconsistency
+
+## Mediator Topology
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1405.png)
+
+Figure 14-5. Mediator topology
+
+Table 14-2. Trade-offs of the mediator topology
+
+Advantages | Disadvantages
+-----------|--------------
+Workflow control | More coupling of event processors
+Error handling | Lower scalability
+Recoverability | Lower performance
+Restart capabilities | Lower fault tolerance
+Better data consistency | Modeling complex workflows
+
+## Asynchronous Capabilities
+The event-driven architecture style offers a unique characteristic over other architecture styles in that it relies solely on asynchronous communication for both fire-and-forget processing (no response required) as well as request/reply processing (response required from the event consumer). Asynchronous communication can be a powerful technique for increasing the overall responsiveness of a system.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1413.png)
+
+Figure 14-13. Synchronous versus asynchronous communication
+
+## Error Handling
+The workflow event pattern of reactive architecture is one way of addressing the issues associated with error handling in an asynchronous workflow. This pattern is a reactive architecture pattern that addresses both resiliency and responsiveness. In other words, the system can be resilient in terms of error handling without an impact to responsiveness.
+
+The workflow event pattern leverages delegation, containment, and repair through the use of a `workflow delegate`, as illustrated in Figure 14-14.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1414.png)
+
+Figure 14-14. Workflow event pattern of reactive architecture
+
+## Preventing Data Loss
+Data loss is always a primary concern when dealing with asynchronous communications. Unfortunately, there are many places for data loss to occur within an event-driven architecture. By data loss we mean a message getting dropped or never making it to its final destination. Fortunately, there are basic out-of-the-box techniques that can be leveraged to prevent data loss when using asynchronous messaging.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1416.png)
+
+Figure 14-16. Where data loss can happen within an event-driven architecture
+
+- Issue 1 (the message never makes it to the queue) is easily solved by leveraging persisted message queues, along with something called `synchronous send`. Persisted message queues support what is known as guaranteed delivery. 
+- Issue 2 (Event Processor B de-queues the next available message and crashes before it can process the event) can also be solved using a basic technique of messaging called `client acknowledge mode`. By default, when a message is de-queued, it is immediately removed from the queue (something called auto acknowledge mode). Client acknowledge mode keeps the message in the queue and attaches the client ID to the message so that no other consumers can read the message. 
+- Issue 3 (Event Processor B is unable to persist the message to the database due to some data error) is addressed through leveraging ACID (atomicity, consistency, isolation, durability) transactions via a database commit. Once the database commit happens, the data is guaranteed to be persisted in the database. Leveraging something called `last participant support` (LPS) removes the message from the persisted queue by acknowledging that processing has been completed and that the message has been persisted. 
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1417.png)
+
+Figure 14-17. Preventing data loss within an event-driven architecture
+
+## Broadcast Capabilities
+One of the other unique characteristics of event-driven architecture is the capability to broadcast events without knowledge of who (if anyone) is receiving the message and what they do with it. This technique, which is illustrated in Figure 14-18, shows that when a producer publishes a message, that same message is received by multiple subscribers.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1418.png)
+
+Figure 14-18. Broadcasting events to other event processors
+
+## Request-Reply
+In event-driven architecture, synchronous communication is accomplished through `request-reply` messaging (sometimes referred to as pseudosynchronous communications). Each event channel within request-reply messaging consists of two queues: a request queue and a reply queue. 
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1419.png)
+
+Figure 14-19. Request-reply message processing
+
+## Choosing Between Request-Based and Event-Based
+We recommend choosing the request-based model for well-structured, data-driven requests (such as retrieving customer profile data) when certainty and control over the workflow is needed. We recommend choosing the event-based model for flexible, action-based events that require high levels of responsiveness and scale, with complex and dynamic user processing.
+
+Table 14-3. Trade-offs of the event-driven model
+
+Advantages over request-based |  Trade-offs
+---|---
+Better response to dynamic user content | Only supports eventual consistency
+Better scalability and elasticity | Less control over processing flow
+Better agility and change management| Less certainty over outcome of event flow
+Better adaptability and extensibility | Difficult to test and debug
+Better responsiveness and performanceBetter real-time decision making | -
+Better reaction to situational awareness | -
+
+## Architecture Characteristics Ratings
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1422.png)
+
+Figure 14-22. Event-driven architecture characteristics ratings
+
+# 15.Space-Based Architecture Style
 
 
 
