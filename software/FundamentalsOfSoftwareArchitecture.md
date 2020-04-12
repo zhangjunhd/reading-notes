@@ -165,6 +165,8 @@
   - [Operational Reuse](#operational-reuse)
   - [Frontends](#frontends)
   - [Communication](#communication)
+    - [Choreography and Orchestration](#choreography-and-orchestration)
+    - [Transactions and Sagas](#transactions-and-sagas)
   - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-7)
 - [18.Choosing the Appropriate Architecture Style](#18choosing-the-appropriate-architecture-style)
 - [III.Techniques and Soft Skills](#iiitechniques-and-soft-skills)
@@ -1363,18 +1365,60 @@ The second option for user interfaces uses microfrontends, shown in Figure 17-6
 Figure 17-6. Microfrontend pattern in microservices
 
 ## Communication
+Microservices architectures typically utilize `protocol-aware heterogeneous interoperability`. We’ll break down that term for you:
 
+- Protocol-aware
+  - Because microservices usually don’t include a centralized integration hub to avoid operational coupling, each service should know how to call other services. Thus, architects commonly standardize on how particular services call each other: a certain level of REST, message queues, and so on. That means that services must know (or discover) which protocol to use to call other services.
+- Heterogeneous
+  - Because microservices is a distributed architecture, each service may be written in a different technology stack. Heterogeneous suggests that microservices fully supports polyglot environments, where different services use different platforms.
+- Interoperability
+  - While architects in microservices try to discourage transactional method calls, services commonly call other services via the network to collaborate and send/receive information.
 
+### Choreography and Orchestration
+`Choreography` utilizes the same communication style as a broker event-driven architecture. In other words, no central coordinator exists in this architecture, respecting the bounded context philosophy. Thus, architects find it natural to implement decoupled events between services.
 
+`Domain/architecture isomorphism` is one key characteristic that architects should look for when assessing how appropriate an architecture style is for a particular problem.
 
+In choreography, each service calls other services as needed, without a central mediator. For example, consider the  scenario shown in Figure 17-7.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1707.png)
 
+Figure 17-7. Using choreography in microservices to manage coordination
 
+Because microservices architectures don’t include a global mediator like other service-oriented architectures, if an architect needs to coordinate across several services, they can create their own localized mediator, as shown in Figure 17-8.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1708.png)
 
+Figure 17-8. Using orchestration in microservices
 
+Consider an example with a more complex workflow, shown in Figure 17-9.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1709.png)
 
+Figure 17-9. Using choreography for a complex business process
+
+In Figure 17-9, the first service called must coordinate across a wide variety of other services, basically acting as a mediator in addition to its other domain responsibilities. This pattern is called the `front controller` pattern, where a nominally choreographed service becomes a more complex mediator for some problem.
+
+Alternatively, an architect may choose to use `orchestration` for complex business processes, illustrated in Figure 17-10.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1710.png)
+
+Figure 17-10. Using orchestration for a complex business process
+
+### Transactions and Sagas
+A popular distributed transactional pattern in microservices is the `saga pattern`, illustrated in Figure 17-11.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1711.png)
+
+Figure 17-11. The saga pattern in microservices architecture
+
+In an error condition, the mediator must ensure that no part of the transaction succeeds if one part fails. Consider the situation shown in Figure 17-12.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1712.png)
+
+Figure 17-12. Saga pattern compensating transactions for error conditions
+
+This style of transactional coordination is called a `compensating transaction framework`. Developers implement this pattern by usually having each request from the mediator enter a `pending` state until the mediator indicates overall success. 
 
 ## Architecture Characteristics Ratings
 ![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1713.png)
