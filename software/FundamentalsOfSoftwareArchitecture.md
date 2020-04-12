@@ -57,6 +57,10 @@
   - [Architectural Quanta and Granularity](#architectural-quanta-and-granularity)
 - [8.Component-Based Thinking](#8component-based-thinking)
   - [Component Scope](#component-scope)
+  - [Architect Role](#architect-role)
+    - [Architecture Partitioning](#architecture-partitioning)
+  - [Developer Role](#developer-role)
+  - [Component Identification Flow](#component-identification-flow)
 - [II.Architecture Styles](#iiarchitecture-styles)
 
 # 1.Introduction
@@ -460,52 +464,55 @@ Figure 7-1. Adding quantum connascence to the unified diagram
 
 # 8.Component-Based Thinking
 ## Component Scope
+Components offer a language-specific mechanism to group artifacts together, often nesting them to create stratification.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0801.png)
 
+Figure 8-1. Different varieties of components
 
+Components also appear as `subsystems` or `layers` in architecture, as the deployable unit of work for many event processors. Another type of component, a `service`, tends to run in its own address space and communicates via low-level networking protocols like TCP/IP or higher-level formats like REST or message queues, forming stand-alone, deployable units in architectures like microservices.
 
+## Architect Role
+Generally the component is the lowest level of the software system an architect interacts directly with, with the exception of many of the code quality metrics discussed in Chapter 6 that affect code bases holistically.
 
+### Architecture Partitioning
+Here we discuss an important aspect of styles, the `top-level partitioning` in an architecture.
 
+Consider the two types of architecture styles shown in Figure 8-3.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0803.png)
 
+Figure 8-3. Two types of top-level architecture partitioning: layered and modular
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0804.png)
 
+Figure 8-4. Two types of top-level partitioning in architecture
 
+In Figure 8-4, the architect has partitioned the functionality of the system into `technical` capabilities: presentation, business rules, services, persistence, and so on. This way of organizing a code base certainly makes sense. All the persistence code resides in one layer in the architecture, making it easy for developers to find persistence-related code. Even though the basic concept of layered architecture predates it by decades, the Model-View-Controller design pattern matches with this architectural pattern, making it easy for developers to understand.
 
+When using a layered architecture, it makes some sense to have all the backend developers sit together in one department, the DBAs in another, the presentation team in another, and so on. Because of `Conway’s law`, this makes some sense in those organizations.
 
+The other architectural variation in Figure 8-4 represents domain partitioning, inspired by the Eric Evan book `Domain-Driven Design`, which is a modeling technique for decomposing complex software systems. In DDD, the architect identifies domains or workflows independent and decoupled from each other. The `microservices architecture` style (discussed in Chapter 17) is based on this philosophy.
 
+One of the fundamental distinctions between different architecture patterns is **what type of top-level partitioning each supports, which we cover for each individual pattern**.
 
+Architects using technical partitioning organize the components of the system by technical capabilities: presentation, business rules, persistence, and so on. Thus, one of the organizing principles of this architecture is `separation of technical concerns`. This in turn creates useful levels of decoupling: if the service layer is only connected to the persistence layer below and business rules layer above, then changes in persistence will only potentially affect those layers. This style of partitioning provides a decoupling technique, reducing rippling side effects on dependent components.
 
+However, most realistic software systems require workflows that cut across technical capabilities. Consider the common business workflow of CatalogCheckout. The code to handle CatalogCheckout in the technically layered architecture appears in all the layers, as shown in Figure 8-5.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0805.png)
 
+Figure 8-5. Where domains/workflows appear in technical- and domain-partitioned architectures
 
+Neither of these styles is more correct than the other—refer to the First Law of Software Architecture.
 
+## Developer Role
+Developers typically take components, jointly designed with the architect role, and further subdivide them into classes, functions, or subcomponents.
 
+## Component Identification Flow
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0808.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Figure 8-8. Component identification cycle
 
 
 
