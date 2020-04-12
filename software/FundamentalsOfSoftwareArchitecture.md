@@ -165,6 +165,7 @@
   - [Operational Reuse](#operational-reuse)
   - [Frontends](#frontends)
   - [Communication](#communication)
+  - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-7)
 - [18.Choosing the Appropriate Architecture Style](#18choosing-the-appropriate-architecture-style)
 - [III.Techniques and Soft Skills](#iiitechniques-and-soft-skills)
 - [19.Architecture Decisions](#19architecture-decisions)
@@ -1375,8 +1376,10 @@ Figure 17-6. Microfrontend pattern in microservices
 
 
 
+## Architecture Characteristics Ratings
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1713.png)
 
-
+Figure 17-13. Ratings for microservices
 
 # 18.Choosing the Appropriate Architecture Style
 
