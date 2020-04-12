@@ -145,6 +145,16 @@
   - [Near-Cache Considerations](#near-cache-considerations)
   - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-5)
 - [16.Orchestration-Driven Service-Oriented Architecture](#16orchestration-driven-service-oriented-architecture)
+  - [Topology](#topology-5)
+  - [Taxonomy](#taxonomy)
+    - [Business Services](#business-services)
+    - [Enterprise Services](#enterprise-services)
+    - [Application Services](#application-services)
+    - [Infrastructure Services](#infrastructure-services)
+    - [Orchestration Engine](#orchestration-engine)
+    - [Message Flow](#message-flow)
+  - [Reuse…and Coupling](#reuseand-coupling)
+  - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-6)
 - [17.Microservices Architecture](#17microservices-architecture)
 - [18.Choosing the Appropriate Architecture Style](#18choosing-the-appropriate-architecture-style)
 - [III.Techniques and Soft Skills](#iiitechniques-and-soft-skills)
@@ -1241,14 +1251,94 @@ Figure 15-14. Near-cache topology
 Figure 15-15. Space-based architecture characteristics ratings
 
 # 16.Orchestration-Driven Service-Oriented Architecture
+## Topology
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1601.png)
 
+Figure 16-1. Topology of orchestration-driven service-oriented architecture
 
+## Taxonomy
+### Business Services
+Business services sit at the top of this architecture and provide the entry point. 
 
+These service definitions contained no code—just input, output, and sometimes schema information. They were usually defined by business users, hence the name business services.
 
+### Enterprise Services
+The enterprise services contain fine-grained, shared implementations. Typically, a team of developers is tasked with building atomic behavior around particular business domains: CreateCustomer, CalculateQuote, and so on. These services are the building blocks that make up the coarse-grained business services, tied together via the orchestration engine.
 
+This separation of responsibility flows from the reuse goal in this architecture.
 
+### Application Services
+Not all services in the architecture require the same level of granularity or reuse as the enterprise services. Application services are one-off, single-implementation services.
+
+### Infrastructure Services
+Infrastructure services supply the operational concerns, such as monitoring, logging, authentication, and authorization. These services tend to be concrete implementations, owned by a shared infrastructure team that works closely with operations.
+
+### Orchestration Engine
+The orchestration engine forms the heart of this distributed architecture, stitching together the business service implementations using orchestration, including features like transactional coordination and message transformation.
+
+The orchestration engine defines the relationship between the business and enterprise services, how they map together, and where transaction boundaries lie. It also acts as an integration hub, allowing architects to integrate custom code with package and legacy software systems.
+
+### Message Flow
+All requests go through the orchestration engine—it is the location within this architecture where logic resides. Thus, message flow goes through the engine even for internal calls, as shown in Figure 16-2.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1602.png)
+
+Figure 16-2. Message flow with service-oriented architecture
+
+## Reuse…and Coupling
+A major goal of this architecture is reuse at the service level—the ability to gradually build business behavior that can be incrementally reused over time. Architects in this architecture were instructed to find reuse opportunities as aggressively as possible. 
+
+## Architecture Characteristics Ratings
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1605.png)
+
+Figure 16-5. Ratings for service-oriented architecture
 
 # 17.Microservices Architecture
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # 18.Choosing the Appropriate Architecture Style
