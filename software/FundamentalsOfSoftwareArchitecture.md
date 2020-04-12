@@ -99,6 +99,11 @@
   - [Why Use This Architecture Style](#why-use-this-architecture-style)
   - [Architecture Characteristics Ratings](#architecture-characteristics-ratings)
 - [11.Pipeline Architecture Style](#11pipeline-architecture-style)
+  - [Topology](#topology-1)
+    - [Pipes](#pipes)
+    - [Filters](#filters)
+  - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-1)
+- [12.Microkernel Architecture Style](#12microkernel-architecture-style)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -746,6 +751,146 @@ As applications using the layered architecture style grow, characteristics like 
 ![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1006.png)
 
 # 11.Pipeline Architecture Style
+## Topology
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1101.png)
+
+Figure 11-1. Basic topology for pipeline architecture
+
+### Pipes
+`Pipes` in this architecture form the communication channel between filters. Each pipe is typically unidirectional and point-to-point (rather than broadcast) for performance reasons, accepting input from one source and always directing output to another.  The payload carried on the pipes may be any data format, but architects favor smaller amounts of data to enable high performance.
+
+### Filters
+`Filters` are self-contained, independent from other filters, and generally `stateless`.
+
+Four types of filters exist within this architecture style:
+
+- Producer
+  - The starting point of a process, outbound only, sometimes called the source.
+- Transformer
+  - Accepts input, optionally performs a transformation on some or all of the data, then forwards it to the outbound pipe. Functional advocates will recognize this feature as `map`.
+- Tester
+  - Accepts input, tests one or more criteria, then optionally produces output, based on the test. Functional programmers will recognize this as similar to `reduce`.
+- Consumer
+  - The termination point for the pipeline flow. Consumers sometimes persist the final result of the pipeline process to a database, or they may display the final results on a user interface screen.
+
+## Architecture Characteristics Ratings
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1103.png)
+
+Figure 11-3. Pipeline architecture characteristics ratings
+
+# 12.Microkernel Architecture Style
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
