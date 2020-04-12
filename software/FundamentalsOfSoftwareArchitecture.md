@@ -80,6 +80,18 @@
     - [Client/Server](#clientserver)
   - [Monolithic Versus Distributed Architectures](#monolithic-versus-distributed-architectures)
     - [Fallacy #1: The Network Is Reliable](#fallacy-1-the-network-is-reliable)
+    - [Fallacy #2: Latency Is Zero](#fallacy-2-latency-is-zero)
+    - [Fallacy #3: Bandwidth Is Infinite](#fallacy-3-bandwidth-is-infinite)
+    - [Fallacy #4: The Network Is Secure](#fallacy-4-the-network-is-secure)
+    - [Fallacy #5: The Topology Never Changes](#fallacy-5-the-topology-never-changes)
+    - [Fallacy #6: There Is Only One Administrator](#fallacy-6-there-is-only-one-administrator)
+    - [Fallacy #7: Transport Cost Is Zero](#fallacy-7-transport-cost-is-zero)
+    - [Fallacy #8: The Network Is Homogeneous](#fallacy-8-the-network-is-homogeneous)
+    - [Other Distributed Considerations](#other-distributed-considerations)
+      - [Distributed logging](#distributed-logging)
+      - [Distributed transactions](#distributed-transactions)
+      - [Contract maintenance and versioning](#contract-maintenance-and-versioning)
+- [10.Layered Architecture Style](#10layered-architecture-style)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -612,6 +624,124 @@ In this book we will describe in detail the following architecture styles:
 The first group of issues facing all distributed architectures are described in [the fallacies of distributed computing](https://oreil.ly/fVAEY), first coined by L. Peter Deutsch and other colleagues from Sun Microsystems in 1994. A `fallacy` is something that is believed or assumed to be true but is not.
 
 ### Fallacy #1: The Network Is Reliable
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0902.png)
+
+Figure 9-2. The network is not reliable
+
+### Fallacy #2: Latency Is Zero
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0903.png)
+
+Figure 9-3. Latency is not zero
+
+### Fallacy #3: Bandwidth Is Infinite
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0904.png)
+
+Figure 9-4. Bandwidth is not infinite
+
+`Stamp coupling` can be resolved in the following ways:
+
+- Create private RESTful API endpoints
+- Use field selectors in the contract
+- Use GraphQL to decouple contracts
+- Use value-driven contracts with consumer-driven contracts (CDCs)
+- Use internal messaging endpoints
+
+### Fallacy #4: The Network Is Secure
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0905.png)
+
+Figure 9-5. The network is not secure
+
+### Fallacy #5: The Topology Never Changes
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0906.png)
+
+Figure 9-6. The network topology always changes
+
+### Fallacy #6: There Is Only One Administrator
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0907.png)
+
+Figure 9-7. There are many network administrators, not just one
+
+### Fallacy #7: Transport Cost Is Zero
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0908.png)
+
+Figure 9-8. Remote access costs money
+
+Distributed architectures cost significantly more than monolithic architectures, primarily due to increased needs for additional hardware, servers, gateways, firewalls, new subnets, proxies, and so on.
+
+### Fallacy #8: The Network Is Homogeneous
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_0909.png)
+
+Figure 9-9. The network is not homogeneous
+
+### Other Distributed Considerations
+#### Distributed logging
+`Logging consolidation` tools such as Splunk help to consolidate information from various sources and systems together into one consolidated log and console, but these tools only scratch the surface of the complexities involved with distributed logging.
+
+#### Distributed transactions
+Standard commits and rollbacks executed from persistence frameworks leverage `ACID` (atomicity, consistency, isolation, durability) transactions to guarantee that the data is updated in a correct way to ensure high data consistency and integrity.
+
+`BASE` transactions are used. BASE stands for (B)asic availability, (S)oft state, and (E)ventual consistency. BASE transactions are not a piece of software, but rather a technique. 
+
+#### Contract maintenance and versioning
+A `contract` is behavior and data that is agreed upon by both the client and the service. Contract maintenance is particularly difficult in distributed architectures, primarily due to decoupled services and systems owned by different teams and departments. 
+
+# 10.Layered Architecture Style
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
