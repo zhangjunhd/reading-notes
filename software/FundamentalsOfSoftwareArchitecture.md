@@ -168,7 +168,6 @@
     - [Choreography and Orchestration](#choreography-and-orchestration)
     - [Transactions and Sagas](#transactions-and-sagas)
   - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-7)
-- [18.Choosing the Appropriate Architecture Style](#18choosing-the-appropriate-architecture-style)
 - [III.Techniques and Soft Skills](#iiitechniques-and-soft-skills)
 - [19.Architecture Decisions](#19architecture-decisions)
 
@@ -1424,8 +1423,6 @@ This style of transactional coordination is called a `compensating transaction f
 ![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1713.png)
 
 Figure 17-13. Ratings for microservices
-
-# 18.Choosing the Appropriate Architecture Style
 
 # III.Techniques and Soft Skills
 # 19.Architecture Decisions
