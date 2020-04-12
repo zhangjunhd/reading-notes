@@ -111,6 +111,10 @@
   - [Contracts](#contracts)
   - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-2)
 - [13.Service-Based Architecture Style](#13service-based-architecture-style)
+  - [Topology](#topology-3)
+  - [Topology Variants](#topology-variants)
+  - [Service Design and Granularity](#service-design-and-granularity)
+  - [Database Partitioning](#database-partitioning)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -892,46 +896,46 @@ Plug-in contracts can be implemented in XML, JSON, or even objects passed back a
 Figure 12-8. Microkernel architecture characteristics ratings
 
 # 13.Service-Based Architecture Style
+## Topology
+The basic topology of service-based architecture follows a distributed macro layered structure consisting of a separately deployed user interface, separately deployed remote coarse-grained services, and a monolithic database. This basic topology is illustrated in Figure 13-1.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1301.png)
 
+Figure 13-1. Basic topology of the service-based architecture style
 
+Services within this architecture style are typically coarse-grained “portions of an application” (usually called `domain services`) that are independent and separately deployed.
 
+While REST is typically used to access services from the user interface, messaging, remote procedure call (RPC), or even SOAP could be used as well.
 
+## Topology Variants
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1302.png)
 
+Figure 13-2. User interface variants
 
+Similarly, opportunities may exist to break apart a single monolithic database into separate databases, even going as far as domain-scoped databases matching each domain service (similar to microservices).
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1303.png)
 
+Figure 13-3. Database variants
 
+Finally, it is also possible to add an `API layer` consisting of a reverse proxy or gateway between the user interface and services, as shown in Figure 13-4. This is a good practice when exposing domain service functionality to external systems or when consolidating shared cross-cutting concerns and moving them outside of the user interface (such as metrics, security, auditing requirements, and service discovery).
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1304.png)
 
+Figure 13-4. Adding an API layer between the user interface and domain services
 
+## Service Design and Granularity
+Because domain services in a service-based architecture are generally coarse-grained, each domain service is typically designed using a layered architecture style consisting of an API facade layer, a business layer, and a persistence layer. Another popular design approach is to domain partition each domain service using sub-domains similar to the modular monolith architecture style. Each of these design approaches is illustrated in Figure 13-5.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1305.png)
 
+Figure 13-5. Domain service design variants
 
+In the `microservices` architecture style, this would likely involve the orchestration of many separately deployed remote single-purpose services to complete the request. This difference between internal class-level orchestration and external service orchestration points to one of the many significant differences between service-based architecture and microservices in terms of granularity.
 
+Because domain services are coarse-grained, regular `ACID` (atomicity, consistency, isolation, durability) database transactions involving database commits and rollbacks are used to ensure database integrity within a single domain service. Highly distributed architectures like microservices, on the other hand, usually have fine-grained services and use a distributed transaction technique known as `BASE` transactions (basic availability, soft state, eventual consistency) transactions that rely on eventual consistency and hence do not support the same level of database integrity as ACID transactions in a service-based architecture.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Database Partitioning
 
 
 
