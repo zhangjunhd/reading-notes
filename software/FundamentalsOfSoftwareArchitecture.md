@@ -104,6 +104,13 @@
     - [Filters](#filters)
   - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-1)
 - [12.Microkernel Architecture Style](#12microkernel-architecture-style)
+  - [Topology](#topology-2)
+    - [Core System](#core-system)
+    - [Plug-In Components](#plug-in-components)
+  - [Registry](#registry)
+  - [Contracts](#contracts)
+  - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-2)
+- [13.Service-Based Architecture Style](#13service-based-architecture-style)
 
 # 1.Introduction
 ## Defining Software Architecture
@@ -779,82 +786,112 @@ Four types of filters exist within this architecture style:
 Figure 11-3. Pipeline architecture characteristics ratings
 
 # 12.Microkernel Architecture Style
+## Topology
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1201.png)
 
+Figure 12-1. Basic components of the microkernel architecture style
 
+### Core System
+The `core system` is formally defined as the minimal functionality required to run the system. 
 
+Removing the cyclomatic complexity of the core system and placing it into separate plug-in components allows for better extensibility and maintainability, as well as increased testability. For example, suppose an electronic device recycling application must perform specific custom assessment rules for each electronic device received. The Java code for this sort of processing might look as follows:
 
+```java
+public void assessDevice(String deviceID) {
+    if (deviceID.equals("iPhone6s")) {      
+        assessiPhone6s();   
+    } else if (deviceID.equals("iPad1"))
+        assessiPad1();   
+    } else if (deviceID.equals("Galaxy5"))              
+        assessGalaxy5();   
+    } else ...      
+        ...   
+    }
+}
+```
 
+With the microkernel architecture style, assessing an electronic device only requires the core system to locate and invoke the corresponding device plug-ins as illustrated in this revised source code:
 
+```java
+public void assessDevice(String deviceID) {	
+    String plugin = pluginRegistry.get(deviceID);	
+    Class<?> theClass = Class.forName(plugin);	
+    Constructor<?> constructor = theClass.getConstructor();DevicePlugin devicePlugin = (DevicePlugin)constructor.newInstance();
+    DevicePlugin.assess();
+}
+```
 
+Depending on the size and complexity, the core system can be implemented as a layered architecture or a modular monolith (as illustrated in Figure 12-2).
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1202.png)
 
+Figure 12-2. Variations of the microkernel architecture core system
 
+As a matter of fact, a separate user interface can also be implemented as a microkernel architecture style. Figure 12-3 illustrates these presentation layer variants in relation to the core system.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1203.png)
 
+Figure 12-3. User interface variants
 
+### Plug-In Components
+Plug-in components are `standalone`, `independent`  components that contain specialized processing, additional features, and custom code meant to enhance or extend the core system. Additionally, they can be used to isolate highly volatile code, creating better maintainability and testability within the application. Ideally, plug-in components should be independent of each other and have no dependencies between them.
 
+The communication between the plug-in components and the core system is generally point-to-point, meaning the “pipe” that connects the plug-in to the core system is usually a method invocation or function call to the `entry-point` class of the plug-in component. In addition, the plug-in component can be either `compile-based` or `runtime-based`.
 
+Point-to-point plug-in components can be implemented as shared libraries (such as a JAR, DLL, or Gem), package names in Java, or namespaces in C#.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1204.png)
 
+Figure 12-4. Shared library plug-in implementation
 
+Alternatively, an easier approach shown in Figure 12-5 is to implement each plug-in component as a separate namespace or package name within the same code base or IDE project.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1205.png)
 
+Figure 12-5. Package or namespace plug-in implementation
 
+Plug-in components do not always have to be point-to-point communication with the core system. Other alternatives exist, including using REST or messaging as a means to invoke plug-in functionality, with each plug-in being a standalone service (or maybe even a microservice implemented using a container). Although this may sound like a good way to increase overall scalability, note that this topology (illustrated in Figure 12-6) is still only a single architecture quantum due to the monolithic core system.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1206.png)
 
+Figure 12-6. Remote plug-in access using RES
 
+It is not a common practice for plug-in components to connect directly to a centrally shared database. Rather, the core system takes on this responsibility, passing whatever data is needed into each plug-in. The primary reason for this practice is `decoupling`.
 
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1207.png)
 
+Figure 12-7. Plug-in components can own their own data store
 
+## Registry
+The core system needs to know about which plug-in modules are available and how to get to them. One common way of implementing this is through a plug-in registry. This registry contains information about each plug-in module, including things like its name, data contract, and remote access protocol details (depending on how the plug-in is connected to the core system).
 
+Using the electronics recycling example, the following Java code implements a simple registry within the core system, showing a point-to-point entry, a messaging entry, and a RESTful entry example for assessing an iPhone 6S device:
 
+```java
+Map<String, String> registry = new HashMap<String, String>();
+static {  
+    //point-to-point access example  
+    registry.put("iPhone6s", "Iphone6sPlugin");  
+    
+    //messaging example  
+    registry.put("iPhone6s", "iphone6s.queue");  
+    
+    //restful example  
+    registry.put("iPhone6s", "https://atlas:443/assess/iphone6s");
+}
+```
 
+## Contracts
+The contracts between the plug-in components and the core system are usually standard across a domain of plug-in components and include behavior, input data, and output data returned from the plug-in component.
 
+Plug-in contracts can be implemented in XML, JSON, or even objects passed back and forth between the plug-in and the core system.
 
+## Architecture Characteristics Ratings
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1208.png)
 
+Figure 12-8. Microkernel architecture characteristics ratings
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 13.Service-Based Architecture Style
 
 
 
