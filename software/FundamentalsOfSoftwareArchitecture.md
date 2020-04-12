@@ -129,6 +129,24 @@
   - [Choosing Between Request-Based and Event-Based](#choosing-between-request-based-and-event-based)
   - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-4)
 - [15.Space-Based Architecture Style](#15space-based-architecture-style)
+  - [General Topology](#general-topology)
+    - [Processing Unit](#processing-unit)
+    - [Virtualized Middleware](#virtualized-middleware)
+      - [Messaging grid](#messaging-grid)
+      - [Data grid](#data-grid)
+      - [Processing grid](#processing-grid)
+      - [Deployment manager](#deployment-manager)
+      - [Data Pumps](#data-pumps)
+      - [Data Writers](#data-writers)
+      - [Data Readers](#data-readers)
+  - [Data Collisions](#data-collisions)
+  - [Cloud Versus On-Premises Implementations](#cloud-versus-on-premises-implementations)
+  - [Replicated Versus Distributed Caching](#replicated-versus-distributed-caching)
+  - [Near-Cache Considerations](#near-cache-considerations)
+  - [Architecture Characteristics Ratings](#architecture-characteristics-ratings-5)
+- [16.Orchestration-Driven Service-Oriented Architecture](#16orchestration-driven-service-oriented-architecture)
+- [17.Microservices Architecture](#17microservices-architecture)
+- [18.Choosing the Appropriate Architecture Style](#18choosing-the-appropriate-architecture-style)
 - [III.Techniques and Soft Skills](#iiitechniques-and-soft-skills)
 - [19.Architecture Decisions](#19architecture-decisions)
 
@@ -1097,6 +1115,132 @@ Better reaction to situational awareness | -
 Figure 14-22. Event-driven architecture characteristics ratings
 
 # 15.Space-Based Architecture Style
+Most web-based business applications follow the same general request flow: a request from a browser hits the web server, then an application server, then finally the database server. While this pattern works great for a small set of users, bottlenecks start appearing as the user load increases, first at the web-server layer, then at the application-server layer, and finally at the database-server layer. The usual response to bottlenecks based on an increase in user load is to scale out the web servers. This is relatively easy and inexpensive, and it sometimes works to address the bottleneck issues. However, in most cases of high user load, scaling out the web-server layer just moves the bottleneck down to the application server. Scaling application servers can be more complex and expensive than web servers and usually just moves the bottleneck down to the database server, which is even more difficult and expensive to scale. Even if you can scale the database, what you eventually end up with is a triangle-shaped topology, with the widest part of the triangle being the web servers (easiest to scale) and the smallest part being the database (hardest to scale), as illustrated in Figure 15-1.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1501.png)
+
+Figure 15-1. Scalability limits within a traditional web-based topology
+
+## General Topology
+Space-based architecture gets its name from the concept of `tuple space`, the technique of using multiple parallel processors communicating through shared memory. High scalability, high elasticity, and high performance are achieved by removing the central database as a synchronous constraint in the system and instead leveraging replicated in-memory data grids. Application data is kept in-memory and replicated among all the active processing units. When a processing unit updates data, it asynchronously sends that data to the database, usually via messaging with persistent queues. Processing units start up and shut down dynamically as user load increases and decreases, thereby addressing variable scalability.
+
+There are several architecture components that make up a space-based architecture: a `processing unit` containing the application code, `virtualized middleware` used to manage and coordinate the processing units, `data pumps` to asynchronously send updated data to the database, `data writers` that perform the updates from the data pumps, and `data readers` that read database data and deliver it to processing units upon startup.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1502.png)
+
+Figure 15-2. Space-based architecture basic topology
+
+### Processing Unit
+The processing unit (illustrated in Figure 15-3) contains the application logic (or portions of the application logic). This usually includes web-based components as well as backend business logic.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1503.png)
+
+Figure 15-3. Processing unit
+
+### Virtualized Middleware
+The virtualized middleware handles the infrastructure concerns within the architecture that control various aspects of data synchronization and request handling. The components that make up the virtualized middleware include a `messaging grid`, `data grid`, `processing grid`, and `deployment manager`.
+
+#### Messaging grid
+The messaging grid, shown in Figure 15-4, manages input request and session state. When a request comes into the virtualized middleware, the messaging grid component determines which active processing components are available to receive the request and forwards the request to one of those processing units. The complexity of the messaging grid can range from a simple round-robin algorithm to a more complex next-available algorithm that keeps track of which request is being processed by which processing unit. This component is usually implemented using a typical web server with load-balancing capabilities (such as HA Proxy and Nginx).
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1504.png)
+
+Figure 15-4. Messaging grid
+
+#### Data grid
+The data grid component is perhaps the most important and crucial component in this architecture style. In most modern implementations the data grid is implemented solely within the processing units as a replicated cache. However, for those replicated caching implementations that require an external controller, or when using a distributed cache, this functionality would reside in both the processing units as well as in the data grid component within the virtualized middleware. Since the messaging grid can forward a request to any of the processing units available, it is essential that each processing unit contains exactly the same data in its in-memory data grid. Although Figure 15-5 shows a synchronous data replication between processing units, in reality this is done asynchronously and very quickly, usually completing the data synchronization in less than 100 milliseconds.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1505.png)
+
+Figure 15-5. Data grid
+
+Data replication within the processing units also allows service instances to come up and down without having to read data from the database, providing there is at least one instance containing the named replicated cache.
+
+#### Processing grid
+The processing grid, illustrated in Figure 15-6, is an optional component within the virtualized middleware that manages orchestrated request processing when there are multiple processing units involved in a single business request. If a request comes in that requires coordination between processing unit types (e.g., an order processing unit and a payment processing unit), it is the processing grid that mediates and orchestrates the request between those two processing units.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1506.png)
+
+Figure 15-6. Processing grid
+
+#### Deployment manager
+The deployment manager component manages the dynamic startup and shutdown of processing unit instances based on load conditions. This component continually monitors response times and user loads, starts up new processing units when load increases, and shuts down processing units when the load decreases. It is a critical component to achieving variable scalability (elasticity) needs within an application.
+
+#### Data Pumps
+A data pump is a way of sending data to another processor which then updates data in a database.
+
+Data pumps are usually implemented using messaging, as shown in Figure 15-7. 
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1507.png)
+
+Figure 15-7. Data pump used to send data to a database
+
+#### Data Writers
+The data writer component accepts messages from a data pump and updates the database with the information contained in the message of the data pump (see Figure 15-7). Data writers can be implemented as services, applications, or data hubs (such as Ab Initio). The granularity of the data writers can vary based on the scope of the data pumps and processing units.
+
+A domain-based data writer contains all of the necessary database logic to handle all the updates within a particular domain (such as customer), regardless of the number of data pumps it is accepting.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1508.png)
+
+Figure 15-8. Domain-based data writer
+
+Alternatively, each class of processing unit can have its own dedicated data writer component, as illustrated in Figure 15-9. In this model the data writer is dedicated to each corresponding data pump and contains only the database processing logic for that particular processing unit (such as Wallet).
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1509.png)
+
+Figure 15-9. Dedicated data writers for each data pump
+
+#### Data Readers
+Whereas data writers take on the responsibility for updating the database, data readers take on the responsibility for reading data from the database and sending it to the processing units via a reverse data pump. In space-based architecture, data readers are only invoked under one of three situations: a crash of all processing unit instances of the same named cache, a redeployment of all processing units within the same named cache, or retrieving archive data not contained in the replicated cache.
+
+In the event where all instances come down (due to a system-wide crash or redeployment of all instances), data must be read from the database (something that is generally avoided in space-based architecture). 
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1510.png)
+
+Figure 15-10. Data reader with reverse data pump
+
+## Data Collisions
+When using replicated caching in an active/active state where updates can occur to any service instance containing the same named cache, there is the possibility of a `data collision` due to replication latency. 
+
+## Cloud Versus On-Premises Implementations
+A powerful feature of this architecture style (as illustrated in Figure 15-11) is to deploy applications via processing units and virtualized middleware in managed cloud-based environments while keeping the physical databases and corresponding data on-prem.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1511.png)
+
+Figure 15-11. Hybrid cloud-based and on-prem topology
+
+## Replicated Versus Distributed Caching
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1512.png)
+
+Figure 15-12. Replicated caching between processing units
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1513.png)
+
+Figure 15-13. Distributed caching between processing units
+
+Table 15-1. Distributed versus replicated caching
+
+Decision criteria | Replicated cache | Distributed cache
+------------------|------------------|------------------
+Optimization | Performance | Consistency
+Cache size | Small (<100 MB) | Large (>500 MB)
+Type of data | Relatively static | Highly dynamic
+Update frequency | Relatively low | High update rate
+Fault tolerance | High | Low
+
+## Near-Cache Considerations
+A near-cache is a type of caching hybrid model bridging in-memory data grids with a distributed cache. In this model (illustrated in Figure 15-14) the distributed cache is referred to as the full backing cache, and each in-memory data grid contained within each processing unit is referred to as the front cache. The front cache always contains a smaller subset of the full backing cache, and it leverages an eviction policy to remove older items so that newer ones can be added. The front cache can be what is known as a most recently used (MRU) cache containing the most recently used items or a most frequently used (MFU) cache containing the most frequently used items. Alternatively, a random replacement eviction policy can be used in the front cache so that items are removed in a random manner when space is needed to add a new item. Random replacement (RR) is a good eviction policy when there is no clear analysis of the data with regard to keeping either the latest used versus the most frequently used.
+
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1514.png)
+
+Figure 15-14. Near-cache topology
+
+## Architecture Characteristics Ratings
+![](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/assets/fosa_1515.png)
+
+Figure 15-15. Space-based architecture characteristics ratings
+
+# 16.Orchestration-Driven Service-Oriented Architecture
 
 
 
@@ -1104,27 +1248,10 @@ Figure 14-22. Event-driven architecture characteristics ratings
 
 
 
+# 17.Microservices Architecture
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 18.Choosing the Appropriate Architecture Style
 
 # III.Techniques and Soft Skills
 # 19.Architecture Decisions
