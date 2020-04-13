@@ -141,7 +141,7 @@ Consider the set of documents shown in the following listing.
 
 Listing 2.1. Documents
 
-The term dictionary and postings list for this simple set of documents are presented in the following two listings, respectively.
+The `term dictionary` and `postings list` for this simple set of documents are presented in the following two listings, respectively.
 
 ```
 best  → 0
