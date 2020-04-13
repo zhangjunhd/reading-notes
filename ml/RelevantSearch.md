@@ -47,6 +47,9 @@
     - [3.5.2.Taking apart query parsing](#352taking-apart-query-parsing)
     - [3.5.3.Debugging analysis to solve matching issues](#353debugging-analysis-to-solve-matching-issues)
     - [3.5.4.Comparing your query to the inverted index](#354comparing-your-query-to-the-inverted-index)
+    - [3.5.5.Fixing our matching by changing analyzers](#355fixing-our-matching-by-changing-analyzers)
+  - [3.6.Debugging ranking](#36debugging-ranking)
+    - [3.6.1.Decomposing the relevance score with Lucene’s explain feature](#361decomposing-the-relevance-score-with-lucenes-explain-feature)
 
 # 1.The search relevance problem
 ## 1.1.Your goal: gaining the skills of a relevance engineer
@@ -422,6 +425,206 @@ Listing 3.9. SimpleText index representation for the term fire
 Listing 3.10. View of title index with Fire with Fire terms highlighted
 
 ### 3.5.4.Comparing your query to the inverted index
+You’re now prepared to compare your parsed query with the context of the inverted index. If you compare the parsed query
+
+```
+((title:basketball title:with title:cartoon title:aliens)^10.0) |(overview:basketball overview:with overview:cartoon overview:aliens)
+```
+
+against the inverted index snippet from the token stream for _Fire with Fire_, you see exactly where the match occurs:
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/053fig02.jpg)
+
+The clause _title:with_ pulls in doc 0, _Fire with Fire_, from the inverted index.
+
+### 3.5.5.Fixing our matching by changing analyzers
+Elasticsearch has an analyzer that handles English text fairly well. It strings together character filters, a `tokenizer`, and token filters to normalize English to standard word forms. It can stem English terms to root forms (running -> run), and remove noise terms such as the, known as `stop words`. Lucky for us, with is one such stop word.
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/054fig01_alt.jpg)
+
+Listing 3.11. Reindexing with the English analyzer
+
+Let’s reanalyze Fire with Fire to see the results:
+
+```py
+resp = requests.get('http://localhost:9200/tmdb/_analyze?field=title&format=yaml', data="Fire with Fire")
+```
+
+Response:
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/055fig01.jpg)
+
+Rerunning the query validation also shows a removal of with from the query:
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/055fig02_alt.jpg)
+
+Further, because of more sophisticated analysis, stemming, and token normalization, you’re picking up other matches of alien that were missing.
+
+```
+Num  Relevance Score    Movie Title
+1    1.0643067          Alien
+2    1.0643067          Aliens
+3    1.0643067          Alien3
+4    1.0254613          The Basketball Diaries
+5    0.66519165         Cowboys & Aliens
+6    0.66519165         Aliens in the Attic
+7    0.66519165         Alien: Resurrection
+8    0.53215337         Aliens vs Predator: Requiem
+9    0.53215337         AVP: Alien vs. Predator
+10   0.53215337         Monsters vs Aliens
+11   0.08334568         Space Jam
+```
+
+## 3.6.Debugging ranking
+After resolving your matching issue, you’re still left wondering why movies like Alien, Aliens, and Basketball Diaries rank above Space Jam. None of these movies have basketball-playing aliens.
+
+What you’ll see is that debugging ranking means understanding the following:
+
+- The calculation of individual match scores
+- How these match scores factor into the document’s overall relevance score
+
+### 3.6.1.Decomposing the relevance score with Lucene’s explain feature
+Lucene’s `explain` feature lets you decompose the calculation behind the relevance score.
+
+![](https://learning.oreilly.com/library/view/relevant-search-with/9781617292774/058fig01_alt.jpg)
+
+Listing 3.12. Requesting a relevancy scoring explanation
+
+Without further ado, here’s a snippet of the JSON explain for _Alien_:
+
+```json
+{
+"description": "max of:", 
+"value": 1.0643067, 
+"details": [
+  {
+  "description": "product of:",   
+  "value": 1.0643067,   
+  "details": [
+    {
+    "description": "sum of:",
+    "value": 3.19292,
+    "details": [
+      {
+      "description": "weight(title:alien in 223)[PerFieldSimilarity], result of:",
+      "value": 3.19292,
+      "details": [
+        {
+          "description": "score(doc=223,freq=1.0 = termFreq=1.0\n),product of:",
+          "value": 3.19292,
+          "details": [
+            {
+              "description": "queryWeight, product of:",
+              "value": 0.4793294,
+              "details": [
+              {
+                "description": "idf(docFreq=9, maxDocs=2875)",
+                "value": 6.661223
+              }
+<omitted>
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
