@@ -58,11 +58,50 @@ Figure 1.2 Class diagram of the state machine framework
 
 I keep them as separate classes (with a superclass) as they play different roles in the controller code.
 
-![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/p0006_01.jpg)
+```java
+Class AbstractEvent{
+    private String name, code;
+
+    public AbstractEvent(String name, String code) {
+        this.name = name;
+        this.code =code;
+    }
+    public String getCode() {return code;}
+    public String getName() {return name;}
+}
+
+public Class Command extends AbstractEvent;
+public Class Event extends AbstractEvent;
+```
 
 The state class keeps track of the commands that it will send and its outbound transitions.
 
-![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/p0006_02.jpg)
+```java
+class State...
+    private String name;
+    private List<Command> actions = new ArrayList<Command>();
+    private Map<String, Transition> transitions = new HashMap<String, Transition>();
+
+class State...
+    public void addTransition(Event event, State targetState) {
+        assert null != targetState;
+        transition.put(event.getCode(), new Transition(this, event, targetState));
+    }
+
+class Transition...
+    private final State source, target;
+    private final Event trigger;
+
+    public Transition(State source, Event trigger, State target) {
+        this.source = source;
+        this.target = target;
+        this.trigger = trigger;
+    }
+    public State getSource() {return source;}
+    public State getTarget() {return target;}
+    public Event getTrigger() {return trigger;}
+    public String getEventCode() {return trigger.getCode();}
+```
 
 The state machine holds on to its start state.
 
