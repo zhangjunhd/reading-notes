@@ -38,6 +38,8 @@
 - [4.Implementing an Internal DSL](#4implementing-an-internal-dsl)
   - [4.1 Fluent and Command-Query APIs](#41-fluent-and-command-query-apis)
   - [4.2 The Need for a Parsing Layer](#42-the-need-for-a-parsing-layer)
+  - [4.3 Using Functions](#43-using-functions)
+  - [4.4 Literal Collections](#44-literal-collections)
 
 # I.Narratives
 # 1. An Introductory Example
@@ -258,7 +260,7 @@ Disk d2 = new Disk(75, 7200, Disk.Interface.SATA);
 return new Computer(p, d1, d2);
 ```
 
-With Method Chaining, we can express the same thing with:
+With `Method Chaining`, we can express the same thing with:
 
 ```
 computer()
@@ -292,24 +294,67 @@ computer();
 ```
 
 ## 4.2 The Need for a Parsing Layer
+The fact that a fluent interface is a different kind of interface to a command-query one can lead to complications. If you mix both styles of interface on the same class, it’s confusing. I therefore advocate keeping the language-handling elements of a DSL separate from regular command-query objects by building a layer of `Expression Builders` over regular objects. Expression Builders are objects whose sole task is to build up a model of normal objects using a fluent interface—effectively translating fluent sentences into a sequence of command-query API calls.
 
+## 4.3 Using Functions
+There are a number of patterns for combining functions to make a DSL. First, Method Chaining:
 
+```
+computer()
+    .processor()
+        .core(2)
+        .speed(2500)
+        .i386()
+    .disk()
+        .size(150)
+    .disk()
+        .size(75)
+        .speed(7200)
+        .sata()
+    .end()
+```
 
+Then, `Function Sequence`:
 
+```java
+computer();
+    processor();
+        core(2);
+        speed(2500);
+        i386();
+    disk();
+        size(150);
+    disk();
+        size(75);
+        speed(7200);
+        sata();
+```
 
+Both Function Sequence and Method Chaining require you to use `Context Variables` in order to keep track of the parse. Nested Function is a third function combination technique that can often avoid Context Variables. Using `Nested Function`, the computer configuration example looks like this:
 
+```
+computer(
+    .processor(
+        .core(2),
+        .speed(2500),
+        .i386
+    ),
+    .disk(
+        .size(150)
+    ),
+    .disk(
+        .size(75),
+        .speed(7200),
+        .
+    )
+);
+```
 
+- A `Function Sequence` works well for defining each element of a list. It keeps each computer definition well separated into statements.
+- The `Nested Function` for each computer eliminates the need for a Context Variable for the current computer, as the arguments are all evaluated before the computer function is called. In general, Nested Function makes it safer to use global functions, as it’s easier to arrange things so the global function just returns an object and doesn’t alter any parsing state.
+- If each processor and disk have multiple optional arguments, then that works well with `Method Chaining`. 
 
-
-
-
-
-
-
-
-
-
-
+## 4.4 Literal Collections
 
 
 
