@@ -251,7 +251,8 @@ The response should look like the following:
                     "type" : "text",          
                     "fields" : {            
                         "keyword" : {              
-                            "type" : "keyword",              "ignore_above" : 256            
+                            "type" : "keyword",              
+                            "ignore_above" : 256            
                             }          
                         }        
                     },        
@@ -259,7 +260,8 @@ The response should look like the following:
                         "type" : "text",          
                         "fields" : {            
                             "keyword" : {              
-                                "type" : "keyword",              "ignore_above" : 256          
+                                "type" : "keyword",              
+                                "ignore_above" : 256          
                             }          
                         }        
                     },        
