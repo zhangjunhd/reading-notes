@@ -116,7 +116,29 @@ class StateMachine...
 
 Then, any other states in the machine are those reachable from this state.
 
-![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/p0007_02.jpg)
+```java
+class StateMachine...
+  public Collection<State> getStates() {
+      List<State> result = new ArrayList<State>();
+      collectStates(result, start);
+      return result;
+  }
+
+  private void collectStates(Collection<State> result, State s) {
+      if (result.contains(s)) return;
+      result.add(s);
+      for (State next: s.getAllTargets())
+        collectStates(result, next);
+  }
+
+class State...
+  Collection<State> getAllTargets() {
+      List<State> result = new ArrayList<State>();
+      for (Transition t : transitions.values())
+        result.add(t.getTarget());
+      return result;
+  }
+```
 
 To handle reset events, I keep a list of them on the state machine.
 
