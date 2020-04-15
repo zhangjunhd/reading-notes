@@ -1,15 +1,11 @@
-![cover](https://img3.doubanio.com/view/subject/s/public/s28854701.jpg)
+![cover](https://img1.doubanio.com/view/subject/s/public/s33618999.jpg)
 
-    作者: Doug Turnbull / John Berryman
-    出版社: Manning Publications
-    副标题: With applications for Solr and Elasticsearch
-    出版年: 2016-7-31
-    页数: 360
-    定价: USD 44.99
-    装帧: Paperback
-    ISBN: 9781617292774
+    作者: Pranav Shukla / Sharath Kumar M N
+    副标题: A beginner's guide to storing, managing, and analyzing data with the updated features of Elastic 7.0
+    出版年: 2019-5
+    ISBN: 9781789954395
 
-- [豆瓣](https://book.douban.com/subject/26827294/)
+- [豆瓣](https://book.douban.com/subject/35030562/)
 - [oreilly](https://learning.oreilly.com/library/view/learning-elastic-stack/9781789954395/)
 
 ---
@@ -32,6 +28,8 @@
     - [Nodes](#nodes)
     - [Clusters](#clusters)
     - [Shards and replicas](#shards-and-replicas)
+    - [Mappings and datatypes](#mappings-and-datatypes)
+      - [Datatypes](#datatypes)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -151,25 +149,25 @@ A `cluster` is formed by one or more nodes. If you start multiple nodes on the s
 A cluster consists of multiple nodes, where each node takes responsibility for storing and managing its share of data. One cluster can host one or more indexes. An index is a logical grouping of related types of documents.
 
 ### Shards and replicas
+The process of dividing the data among shards is called `sharding`.
 
+By default, every index is configured to have five shards in Elasticsearch. The following diagram illustrates how five shards of one index may be distributed on a three-node cluster:
 
+![](https://learning.oreilly.com/library/view/learning-elastic-stack/9781789954395/assets/0f837399-4293-4596-8c95-3120fe5590a6.png)
 
+Figure 2.4: Organization of shards across the nodes of a cluster
 
+Distributed systems such as Elasticsearch are expected to run in spite of hardware failure. This issue is addressed by `replica shards` or `replicas`. Each shard in an index can be configured to have zero or more replica shards. Replica shards are extra copies of the original or primary shard and provide a high availability of data.
 
+For example, with one replica of each shard, we will have one extra copy of each replica. In the following diagram, we have five primary shards, with one replica of each shard:
 
+![](https://learning.oreilly.com/library/view/learning-elastic-stack/9781789954395/assets/2315dca5-e7ba-40d9-a8aa-68d88bd02d46.png)
 
+Figure 2.6: Organization of shards with replicas on cluster nodes
 
-
-
-
-
-
-
-
-
-
-
-
+### Mappings and datatypes
+#### Datatypes
+In a document, each field has a datatype associated with it.
 
 
 
