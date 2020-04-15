@@ -142,11 +142,24 @@ class State...
 
 To handle reset events, I keep a list of them on the state machine.
 
-![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/p0008_01.jpg)
+```java
+class StateMachine...
+  private List<Event> resetEvents = new ArrayList<Event>();
+
+  public void addResetEvents(Event... events) {
+      for (Event e : events) resetEvents.add(e);
+  }
+```
 
 I don’t need to have a separate structure for reset events like this. I could handle this by simply declaring extra transitions on the state machine like this:
 
-![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/p0008_02.jpg)
+```java
+class StateMachine...
+  private void addResetEvent_byAddingTransitions(Event e) {
+      for (State s : getStates())
+        if (!s.hasTransition(e.getCode())) s.addTransition(e, start);
+  }
+```
 
 The controller has a handle method that takes the event code it receives from the device.
 
