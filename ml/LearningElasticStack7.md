@@ -31,7 +31,7 @@
     - [Mappings and datatypes](#mappings-and-datatypes)
       - [Datatypes](#datatypes)
       - [Mappings](#mappings)
-  - [CRUD operations](#crud-operations)
+  - [CRUD operations](#crud-operations)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -321,7 +321,7 @@ The response should look like the following:
 
 The `text` datatype enables full-text search on a field. Additionally, the same field is also stored as a `multi-field`, and it is also stored as a `keyword` type. This effectively enables full-text search and analytics (such as sorting, aggregations, and filtering) on the same field. 
 
-## CRUD operations
+## CRUD operations
 
 
 
