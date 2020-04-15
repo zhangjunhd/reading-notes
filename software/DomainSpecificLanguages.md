@@ -105,7 +105,14 @@ class Transition...
 
 The state machine holds on to its start state.
 
-![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/p0007_01.jpg)
+```java
+class StateMachine...
+  private State start;
+
+  public StateMachine(State start) {
+    This.start = start;
+  }
+```
 
 Then, any other states in the machine are those reachable from this state.
 
