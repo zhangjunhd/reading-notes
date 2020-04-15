@@ -216,7 +216,7 @@ PUT /catalog/_doc/2
 }
 ```
 
-As you can see, the product has many different fields, as it is of a completely different category. Yet, there are some fields that are common in all products. The common fields are the reason why all of these documents are called `products`. 
+As you can see, the product has many different fields, as it is of a completely different category. Yet, there are some fields that are common in all products.
 
 When the first document about the product type was indexed in the index catalog, the following tasks were performed by Elasticsearch:
 
