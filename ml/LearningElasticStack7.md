@@ -37,6 +37,15 @@
       - [Indexing a document without providing an ID](#indexing-a-document-without-providing-an-id)
     - [Get API](#get-api)
     - [Update API](#update-api)
+    - [Delete API](#delete-api)
+  - [Creating indexes and taking control of mapping](#creating-indexes-and-taking-control-of-mapping)
+    - [Creating an index](#creating-an-index)
+    - [Creating type mapping in an existing index](#creating-type-mapping-in-an-existing-index)
+    - [Updating a mapping](#updating-a-mapping)
+- [Section 2: Analytics and Visualizing Data](#section-2-analytics-and-visualizing-data)
+  - [Searching - What is Relevant](#searching---what-is-relevant)
+    - [The basics of text analysis](#the-basics-of-text-analysis)
+      - [Understanding Elasticsearch analyzers](#understanding-elasticsearch-analyzers)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -405,94 +414,255 @@ The response would be as expected:
 ```
 
 ### Update API
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The format of an update request is `POST <index>/<type>/<id>/_update`, with a JSON request as the body:
+
+```json
+POST /catalog/_update/1
+{  
+    "doc": {    
+        "price": "28.99"  
+    }
+}
+```
+
+The response of the update request is as follows:
+
+```json
+{  
+    "_index": "catalog",  
+    "_type": "_doc", 
+    "_id": "1",  
+    "_version": 2,  
+    "result": "updated",  
+    "_shards": {    
+        "total": 2,    
+        "successful": 1,    
+        "failed": 0  
+    }
+}
+```
+
+The term `upsert` loosely means update or insert, that is, update the document if it exists, otherwise, insert the new document.
+
+The `doc_as_upsert` parameter checks whether the document with the given ID already exists and merges the provided doc with the existing document. If the document with the given ID doesn't exist, it inserts a new document with the given document contents.
+
+```json
+POST /catalog/_update/3
+{  
+    "doc": {    
+        "author": "Albert Paro",    
+        "title": "Elasticsearch 5.0 Cookbook",    
+        "description": "Elasticsearch 5.0 Cookbook Third Edition",    
+        "price": "54.99"  
+    },  
+    "doc_as_upsert": true
+}
+```
+
+The following update uses an inline script to increase the price by two for a specific product:
+
+```json
+POST /catalog/_update/1ZFMpmoBa_wgE5i2FfWV
+{  
+    "script": {    
+        "source": "ctx._source.price += params.increment",    
+        "lang": "painless",    
+        "params": {      
+            "increment": 2    
+        }  
+    }
+}
+```
+
+### Delete API
+The delete API lets you delete a document by ID:
+
+```
+DELETE /catalog/_doc/1ZFMpmoBa_wgE5i2FfWV
+```
+
+The response of the delete operation is as follows:
+
+```json
+{  
+    "_index" : "catalog",  
+    "_type" : "_doc",  
+    "_id" : "1ZFMpmoBa_wgE5i2FfWV",  
+    "_version" : 4,  
+    "result" : "deleted",  
+    "_shards" : {    
+        "total" : 2,    
+        "successful" : 1,    
+        "failed" : 0  
+    },  
+    "_seq_no" : 9,  
+    "_primary_term" : 1
+}
+```
+
+## Creating indexes and taking control of mapping
+### Creating an index
+You can create an index and specify the number of shards and replicas to create:
+
+```json
+PUT /catalog
+{  
+    "settings": {    
+        "index": {      
+            "number_of_shards": 5,      
+            "number_of_replicas": 2    
+        }  
+    }
+}
+```
+
+It is possible to specify a mapping for a type at the time of index creation. The following command will create an index called `catalog`, with five shards and two replicas. Additionally, it also defines a type called `my_type` with two fields, one of the `text` type and another of the `keyword` type:
+
+```json
+PUT /catalog1
+{  
+    "settings": {    
+        "index": {      
+            "number_of_shards": 5,      
+            "number_of_replicas": 2    
+        }  
+    },  
+    "mappings": {    
+        "properties": {      
+            "f1": {        
+                "type": "text"      
+            },      
+            "f2": {        
+                "type": "keyword"      
+            }    
+        }  
+    }
+}
+```
+
+### Creating type mapping in an existing index
+The mappings for the type can be specified as follows:
+
+```json
+PUT /catalog/_mapping{  
+    "properties": {    
+        "name": {      
+            "type": "text"    
+        }  
+    }
+}
+```
+
+This command creates a type called `_doc`, with one field of the `text` type in the existing index catalog. Let's add a couple of documents after creating the new type:
+
+```json
+POST /catalog/_doc
+{  
+    "name": "books"
+}
+
+POST /catalog/_doc
+{  
+    "name": "phones"
+}
+```
+
+After a few documents are indexed, you realize that you need to add fields in order to store the description of the category. Elasticsearch will assign a type `automatically` based on the value that you insert for the new field.
+
+```json
+POST /catalog/_doc
+{ 
+    "name": "music", 
+    "description": "On-demand streaming music"
+}
+```
+
+Let's look at the mapping after this document is indexed:
+
+```json
+{  
+    "catalog" : {    
+        "mappings" : {      
+            "properties" : {        
+                "description" : {          
+                    "type" : "text",          
+                    "fields" : {            
+                        "keyword" : {              
+                            "type" : "keyword",              
+                            "ignore_above" : 256            
+                        }          
+                    }        
+                },        
+                "name" : {          
+                    "type" : "text"        
+                }      
+            }    
+        }  
+    }
+}
+```
+
+The field `description` has been assigned the `text` datatype, with a field with the name `keyword`, which is of the `keyword` type. What this means is that, logically, there are two fields, `description` and `description.keyword`. The `description` field is analyzed at the time of indexing, whereas the `description.keyword` field is not analyzed and is stored as is without any analysis. By default, fields that are indexed with double quotes for the first time are stored as both `text` and `keyword` types.
+
+### Updating a mapping
+Let's add a `code` field, which is of the `keyword` type, but with no analysis:
+
+```json
+PUT /catalog/_mapping
+{  
+    "properties": {    
+        "code": {      
+            "type": "keyword"    
+        }  
+    }
+}
+```
+
+The mapping looks like the following after it is merged:
+
+```json
+{  
+    "catalog" : {    
+        "mappings" : {      
+            "properties" : {
+                "code" : {          
+                    "type" : "keyword"        
+                },        
+                "description" : {          
+                    "type" : "text",          
+                    "fields" : {            
+                        "keyword" : {              
+                            "type" : "keyword",              
+                            "ignore_above" : 256            
+                        }          
+                    }        
+                },        
+                "name" : {          
+                    "type" : "text"        
+                }      
+            }    
+        }  
+    }
+}
+```
+
+Any subsequent documents that are indexed with the `code` field are assigned the right datatype:
+
+```json
+POST /catalog/_doc
+{  
+    "name": "sports",  
+    "code": "C004",  
+    "description": "Sports equipment"
+}
+```
+
+# Section 2: Analytics and Visualizing Data
+## Searching - What is Relevant
+### The basics of text analysis
+All fields that are of the text type are analyzed by what is known as an `analyzer`.
+
+#### Understanding Elasticsearch analyzers
 
 
 
