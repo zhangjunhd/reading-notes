@@ -163,7 +163,57 @@ class StateMachine...
 
 The controller has a handle method that takes the event code it receives from the device.
 
-![](https://learning.oreilly.com/library/view/domain-specific-languages/9780132107549/graphics/p0008_03.jpg)
+```java
+class Controller {
+  private State currentState;
+  private StateMachine machine;
+  private CommandChannel commandChannel;
+
+  public CommandChannel getCommandChannel() {
+      return this.commandChannel;
+  }
+
+  public void handle(String eventCode) {
+      if (currentState.hasTransition(eventCode)) {
+          transitionTo(currentState.targetState(eventCode));
+      } else if (machine.isResetEvent(eventCode)) {
+          transitionTo(machine.getStart());
+          // ignore unknown events
+      }
+  }
+
+  private void transitionTo(State target) {
+      currentState = target;
+      currentState.executeActions(commandsChannel);
+  }
+}
+
+class State {
+    public boolean hasTransition(String eventCode) {
+        return transitions.containsKey(eventCode);
+    }
+
+    public State targetState(String eventCode) {
+        return transitions.get(eventCode).getTarget();
+    }
+
+    public void executeActions(CommandChannel commandsChannel) {
+        for (Command c : actions) commandsChannel.send(c.getCode());
+    }
+}
+
+class StateMachine {
+    public boolean isResetEvent(String eventCode) {
+        return resetEventCodes().contains(eventCode);
+    }
+
+    private List<String> resetEventCodes() {
+        List<String> result = new ArrayList<String>();
+        for (event e : resetEvents) result.add(e.getCode());
+        return result;
+    }
+}
+```
 
 ## 1.3 Programming Miss Grant’s Controller
 Now that I’ve implemented the state machine model, I can program Miss Grant’s controller like this:
