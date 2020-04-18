@@ -43,9 +43,13 @@
     - [Creating type mapping in an existing index](#creating-type-mapping-in-an-existing-index)
     - [Updating a mapping](#updating-a-mapping)
 - [Section 2: Analytics and Visualizing Data](#section-2-analytics-and-visualizing-data)
-  - [Searching - What is Relevant](#searching---what-is-relevant)
-    - [The basics of text analysis](#the-basics-of-text-analysis)
-      - [Understanding Elasticsearch analyzers](#understanding-elasticsearch-analyzers)
+- [Searching - What is Relevant](#searching---what-is-relevant)
+  - [The basics of text analysis](#the-basics-of-text-analysis)
+    - [Understanding Elasticsearch analyzers](#understanding-elasticsearch-analyzers)
+      - [Character filters](#character-filters)
+      - [Tokenizer](#tokenizer)
+      - [Token filters](#token-filters)
+    - [Using built-in analyzers](#using-built-in-analyzers)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -658,22 +662,105 @@ POST /catalog/_doc
 ```
 
 # Section 2: Analytics and Visualizing Data
-## Searching - What is Relevant
-### The basics of text analysis
+# Searching - What is Relevant
+## The basics of text analysis
 All fields that are of the text type are analyzed by what is known as an `analyzer`.
 
-#### Understanding Elasticsearch analyzers
+### Understanding Elasticsearch analyzers
+The core task of the `analyzer` is to parse the document fields and build the actual index.
 
+Elasticsearch uses analyzers to analyze `text` data. An analyzer has the following components:
 
+- Character filters: Zero or more
+- Tokenizer: Exactly one
+- Token filters: Zero or more
 
+The following diagram depicts the components of an analyzer:
 
+![](https://learning.oreilly.com/library/view/learning-elastic-stack/9781789954395/assets/b0fc34ff-6250-48c0-97a2-60350c773f8e.png)
 
+Figure 3.1: Anatomy of an analyzer
 
+#### Character filters
+A `character filter` works on a stream of characters from the input field; each character filter can add, remove, or change the characters in the input field.
 
+For example, you may want to transform emoticons into some text that represents those emoticons:
 
+- `:)` should be translated to `_smile_`
+- `:(` should be translated to `_sad_`
+- `:D` should be translated to `_laugh_`
 
+#### Tokenizer
+An analyzer has exactly one tokenizer. The responsibility of a `tokenizer` is to receive a stream of characters and generate a stream of tokens.
 
+The following example shows how the standard tokenizer breaks a character stream into tokens:
 
+```json
+POST _analyze
+{  
+    "tokenizer": "standard",  
+    "text": "Tokenizer breaks characters into tokens!"
+}
+```
+
+The preceding command produces the following output; notice the `start_offset`, `end_offset`, and `positions` in the output:
+
+```json
+{  
+    "tokens": [    
+        {      
+            "token": "Tokenizer",      
+            "start_offset": 0,      
+            "end_offset": 9,      
+            "type": "<ALPHANUM>",      
+            "position": 0    
+        },    
+        {      
+            "token": "breaks",      
+            "start_offset": 10,      
+            "end_offset": 16,      
+            "type": "<ALPHANUM>",      
+            "position": 1    
+        },    
+        {      
+            "token": "characters",      
+            "start_offset": 17,      
+            "end_offset": 27,      
+            "type": "<ALPHANUM>",      
+            "position": 2    
+        },    
+        {      
+            "token": "into",      
+            "start_offset": 28,      
+            "end_offset": 32,      
+            "type": "<ALPHANUM>",      
+            "position": 3    
+        },    
+        {      
+            "token": "tokens",      
+            "start_offset": 33,      
+            "end_offset": 39,      
+            "type": "<ALPHANUM>",      
+            "position": 4    
+        }  
+    ]
+}
+```
+
+#### Token filters
+There can be zero or more token filters in an analyzer. Every token filter can add, remove, or change tokens in the input token stream that it receives.
+
+Some examples of built-in token filters are the following:
+
+- Lowercase token filter: Replaces all tokens in the input with their lowercase versions.
+- Stop token filter: Removes stopwords, that is, words that do not add more meaning to the context. For example, in English sentences, words like is, a, an, and the, do not add extra meaning to a sentence. For many text search problems, it makes sense to remove such words, as they don't add any extra meaning or context to the content.
+
+### Using built-in analyzers
+Some popular analyzers are the following:
+
+- Standard analyzer: This is the default analyzer in Elasticsearch. If not overridden by any other field-level, type-level, or index-level analyzer, all fields are analyzed using this analyzer.
+- Language analyzers: Different languages have different grammatical rules. There are differences between some languages as to how a stream of characters is tokenized into words or tokens. Additionally, each language has its own set of stopwords, which can be configured while configuring language analyzers.
+- Whitespace analyzer: The whitespace analyzer breaks down input into tokens wherever it finds a whitespace token such as a space, a tab, a new line, or a carriage return. 
 
 
 
