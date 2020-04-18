@@ -50,6 +50,9 @@
       - [Tokenizer](#tokenizer)
       - [Token filters](#token-filters)
     - [Using built-in analyzers](#using-built-in-analyzers)
+    - [Implementing autocomplete with a custom analyzer](#implementing-autocomplete-with-a-custom-analyzer)
+  - [Searching from structured data](#searching-from-structured-data)
+    - [Range query](#range-query)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -761,6 +764,277 @@ Some popular analyzers are the following:
 - Standard analyzer: This is the default analyzer in Elasticsearch. If not overridden by any other field-level, type-level, or index-level analyzer, all fields are analyzed using this analyzer.
 - Language analyzers: Different languages have different grammatical rules. There are differences between some languages as to how a stream of characters is tokenized into words or tokens. Additionally, each language has its own set of stopwords, which can be configured while configuring language analyzers.
 - Whitespace analyzer: The whitespace analyzer breaks down input into tokens wherever it finds a whitespace token such as a space, a tab, a new line, or a carriage return. 
+
+`Standard analyzer` comprises of the following components:
+
+- Tokenizer:
+  - Standard tokenizer: A tokenizer that splits tokens at whitespace characters
+- Token filters:
+  - Standard token filter: Standard token filter is used as a placeholder token filter within the Standard Analyzer. It does not change any of the input tokens but may be used in future to perform some tasks.
+  - Lowercase token filter: Makes all tokens in the input lowercase.
+  - Stop token filter: Removes specified stopwords. The default setting has a stopword list set to `_none_`, which doesn't remove any stopwords by default.
+
+### Implementing autocomplete with a custom analyzer
+If we were to use Standard Analyzer at indexing time, the following terms would be generated for the field with the `Learning Elastic Stack 7` value:
+
+```json
+GET /_analyze
+{  
+    "text": "Learning Elastic Stack 7",  
+    "analyzer": "standard"
+}
+```
+
+The response of this request would contain the terms `Learning`, `Elastic`, `Stack`, and `7`. These are the terms that Elasticsearch would create and store in the index if Standard Analyzer was used. Now, what we want to support is that when the user starts typing a few characters, we should be able to match possible matching products. For example, if the user has typed elas, it should still recommend `Learning Elastic Stack 7` as a product. Let's compose an analyzer that can generate terms such as el, ela, elas, elast, elasti, elastic, le, lea, and so on:
+
+```json
+PUT /custom_analyzer_index
+{  
+    "settings": {    
+        "index": {      
+            "analysis": {        
+                "analyzer": {          
+                    "custom_analyzer": {            
+                        "type": "custom",            
+                        "tokenizer": "standard",            
+                        "filter": [              "lowercase",              "custom_edge_ngram"            
+                        ]          
+                    }        
+                },        
+                "filter": {          
+                    "custom_edge_ngram": {            
+                        "type": "edge_ngram",            
+                        "min_gram": 2,            
+                        "max_gram": 10          
+                    }        
+                }      
+            }    
+        }  
+    },  
+    "mappings": {
+        "properties": {      
+            "product": {        
+                "type": "text",        
+                "analyzer": "custom_analyzer",        "search_analyzer": "standard"      
+            }    
+        }  
+    }
+}
+```
+
+This index definition creates a custom analyzer that uses `Standard Tokenizer` to create the tokens and uses two token filters – a `lowercase` token filter and the `edge_ngram` token filter. The `edge_ngram` token filter breaks down each token into lengths of 2 characters, 3 characters, and 4 characters, up to 10 characters. One incoming token, such as elastic, will generate tokens such as el, ela, and so on, from one token. This will enable autocompletion searches.
+
+## Searching from structured data
+Most structured queries do not need relevance-based scoring, and the answer is a simple yes/no for any item to be included or excluded from the result. These structured search queries are also referred to as `term-level queries`.
+
+![](https://learning.oreilly.com/library/view/learning-elastic-stack/9781789954395/assets/2bab4996-2496-4409-991d-037c9850db77.png)
+
+Figure 3.2: Term-level query flow
+
+### Range query
+`Range queries` can be applied to fields with datatypes that have natural ordering. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
