@@ -53,6 +53,12 @@
     - [Implementing autocomplete with a custom analyzer](#implementing-autocomplete-with-a-custom-analyzer)
   - [Searching from structured data](#searching-from-structured-data)
     - [Range query](#range-query)
+      - [Range query on numeric types](#range-query-on-numeric-types)
+      - [Range query with score boosting](#range-query-with-score-boosting)
+      - [Range query on dates](#range-query-on-dates)
+    - [Exists query](#exists-query)
+    - [Term query](#term-query)
+  - [Searching from the full text](#searching-from-the-full-text)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -834,59 +840,199 @@ Figure 3.2: Term-level query flow
 ### Range query
 `Range queries` can be applied to fields with datatypes that have natural ordering. 
 
+#### Range query on numeric types
+The following is the query to get products in the range of $10 to $20:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "range": {      
+            "price": {        
+                "gte": 10,        
+                "lte": 20      
+            }    
+        }
+    }
+}
+```
 
+The response of this query looks like the following:
 
+```json
+{  
+    "took": 1,  
+    "timed_out": false,  
+    "_shards": {    
+        "total": 1,    
+        "successful": 1,    
+        "failed": 0  
+    },  
+    "hits": {    
+        "total" : {      
+            "value" : 201, // 1
+            "relation" : "eq"    
+        },                                         
+        "max_score": 1.0,// 2    
+        "hits": [      
+            {        
+                "_index": "amazon_products",        
+                "_type": "_doc",        
+                "_id": "AV5lK4WiaMctupbz_61a",        
+                "_score": 1, // 3        
+                "_source": {          
+                    "price": "19.99", // 4          
+                    "description": "reel deal casino championship edition (win 98 me nt 2000 xp)",          
+                    "id": "b00070ouja",          
+                    "title": "reel deal casino championship edition",          
+                    "manufacturer": "phantom efx",          
+                    "tags": []        
+                }      
+            },
+```
 
+- The `hits.total.value` field in the response shows how many search hits were found. Here, there were `201` search hits.
+- The `hits.max_score` field shows the score of the best matching document for the query. Since a range query is a structured query without any importance or relevance, it is executed as a `filter`. It doesn't do the scoring. All documents have a score of one.
+- The `hits.hits` array lists all the actual hits. Elasticsearch doesn't return all `201` hits in a single pass by default. It just returns the first `10` records.
+- The price field in all search hits would be within the requested range, that is, `10 <= price <= 20`.
 
+#### Range query with score boosting
+The `range` query allows you to provide a `boost` parameter to enhance its score relative to other query/queries that it is combined with:
 
+```json
+GET /amazon_products/_search
+{  
+    "from": 0,  
+    "size": 10,  
+    "query": {    
+        "range": {      
+            "price": {        
+                "gte": 10,        
+                "lte": 20,        
+                "boost": 2.2      
+            }    
+        }  
+    }
+}
+```
 
+All documents that pass the filter will have a score of `2.2` instead of `1` in this query.
 
+What is a `Filter Context`? When the query is just about filtering our documents, that is, deciding whether to include the document in the result or not, it is sufficient to skip the scoring process. Elasticsearch can skip the scoring process for certain types of queries and assign a uniform score of 1 to each document, which passes the filter criteria. This not only speeds up the query (as the scoring process is skipped) but also allows Elasticsearch to cache the results of filters. Elasticsearch caches the results of filters by maintaining arrays of zeros and ones.
 
+#### Range query on dates
+You can specify the date format while querying a date range:
 
+```json
+GET /orders/_search
+{    
+    "query": {        
+        "range" : {            
+            "orderDate" : {                
+                "gte": "01/09/2017",                
+                "lte": "30/09/2017",                
+                "format": "dd/MM/yyyy"            
+            }        
+        }    
+    }
+}
+```
 
+The following query queries data from the last 7 days up until now, that is, data from exactly 24 x 7 hours ago till now with a precision of milliseconds:
 
+```json
+GET /orders/_search
+{    
+    "query": {        
+        "range" : {            
+            "orderDate" : {                
+                "gte": "now-7d",                
+                "lte": "now"            
+            }        
+        }    
+    }
+}
+```
 
+Elasticsearch supports many date-math operations.
 
+- supports the special keyword `now`
+- supports single character shorthands such as `y` (year), `M` (month), `w` (week), `d` (day), `h`or `H` (hours), `m` (minutes), and `s` (seconds)
 
+### Exists query
+Sometimes it is useful to obtain only records that have non-null and non-empty values in a certain field. For example, getting all products that have description fields defined:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "exists": {      
+            "field": "description"    
+        }  
+    }
+}
+```
 
+### Term query
+For example, when we search for victory multimedia, we don't want any results that have a `manufacturer` that contains just `victory` or just `multimedia`. You can use a `term query` to achieve that.
 
+When we defined the `manufacturer` field, we stored it as both `text` and `keyword` fields. When doing an exact match, we have to use the field with the `keyword` type:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "term": {      
+            "manufacturer.raw": "victory multimedia"    
+        }  
+    }
+}
+```
 
+The `term query` is a low-level query in the sense that it doesn't perform any analysis on the term.
 
+The response looks like the following (only the partial response is included):
 
+```json
+{  
+    // ...  
+    "hits": {    
+        "total" : {      
+            "value" : 3,      
+            "relation" : "eq"    
+        },    
+        "max_score": 5.965414,    
+        "hits": [      
+            {        
+                "_index": "amazon_products",        
+                "_type": "products",        
+                "_id": "AV5rBfPNNI_2eZGciIHC",        
+                "_score": 5.965414,   
+                // ...
+            }
+        ]
+    }
+}
+```
 
+As we can see, each document is scored by default. To run the `term query` in the filter context without scoring, it needs to be wrapped inside a `constant_score` filter:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "constant_score": {      
+            "filter": {        
+                "term": {          
+                    "manufacturer.raw": "victory multimedia"        
+                }      
+            }    
+        }  
+    }
+}
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Searching from the full text
 
 
 
