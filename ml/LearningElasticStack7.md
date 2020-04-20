@@ -59,6 +59,9 @@
     - [Exists query](#exists-query)
     - [Term query](#term-query)
   - [Searching from the full text](#searching-from-the-full-text)
+    - [Match query](#match-query)
+      - [Operator](#operator)
+      - [Minimum should match](#minimum-should-match)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -1033,37 +1036,79 @@ GET /amazon_products/_search
 ```
 
 ## Searching from the full text
+Full-text queries are thus aware of the analysis process on the underlying field and apply the right analysis process before forming actual search queries. These analysis-aware queries are also called `high-level queries`.
 
+![](https://learning.oreilly.com/library/view/learning-elastic-stack/9781789954395/assets/fbd44a7e-804e-4461-88c2-d5e8ecf737ea.png)
 
+Figure 3.3: High-level query flow
 
+### Match query
+When you use the `match` query on a `keyword` field, it knows that the underlying field is a `keyword` field, and hence, the search terms are not analyzed at the time of querying:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "match": {      
+            "manufacturer.raw": "victory multimedia"    
+        }  
+    }
+}
+```
 
+In fact, in this particular case, the match query gets converted into a `term` query, such as the following:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "term": {      
+            "manufacturer.raw": "victory multimedia"    
+        }  
+    }
+}
+```
 
+If you execute a match query against a text field, which is a real use case for a full-text query:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "match": {      
+            "manufacturer": "victory multimedia"    
+        }  
+    }
+}
+```
 
+When we execute the `match` query, we expect it to do the following things:
 
+- Search for the terms `victory` and `multimedia` across all documents within the `manufacturer` field.
+- Find the best matching documents sorted by score in descending order.
+- If both terms appear in the same order, right next to each other in a document, the document should get a higher score than other documents that have both terms but not in the same order, or not next to each other.
+- Include documents that have either `victory` or `multimedia` in the results, but give them a lower score.
 
+#### Operator
+As we saw in the preceding example, the default behavior of the `match` query is to combine the results using the or operator, that is, one of the terms has to be present in the document's field.
 
+This can be changed to use the `and` operator using the following query:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "match": {      
+            "manufacturer": {        
+                "query": "victory multimedia",        
+                "operator": "and"      
+            }    
+        }  
+    }
+}
+``` 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Minimum should match
 
 
 
