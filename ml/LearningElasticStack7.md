@@ -68,6 +68,12 @@
       - [Querying multiple fields with defaults](#querying-multiple-fields-with-defaults)
       - [Boosting one or more fields](#boosting-one-or-more-fields)
   - [Writing compound queries](#writing-compound-queries)
+    - [Constant score query](#constant-score-query)
+    - [Bool query](#bool-query)
+      - [Combining OR conditions](#combining-or-conditions)
+      - [Combining AND and OR conditions](#combining-and-and-or-conditions)
+      - [Adding NOT conditions](#adding-not-conditions)
+  - [Modeling relationships](#modeling-relationships)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -1241,52 +1247,242 @@ GET /amazon_products/_search
 ```
 
 ## Writing compound queries
+### Constant score query
+Elasticsearch supports querying both structured data and full text. While `full-text queries` need scoring mechanisms to find the best matching documents, `structured searches` don't need scoring. The `constant score query` allows us to convert a scoring query that normally runs in a query context to a non-scoring filter context.
 
+For example, a `term` query is normally run in a query context. This means that when Elasticsearch executes a term query, it not only filters documents but also scores all of them:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "term": {      
+            "manufacturer.raw": "victory multimedia"    
+        }  
+    }
+}
+```
 
+The response contains the score for every document. Please see the following partial response:
 
+```json
+{  
+    // ...,  
+    "hits": {    
+        "total": 3,    
+        "max_score": 5.966147,    
+        "hits": [      
+            {        
+                "_index": "amazon_products",        
+                "_type": "products",        
+                "_id": "AV5rBfasNI_2eZGciIbg",        
+                "_score": 5.966147,        
+                "_source": {          
+                    "price": "19.95",   
+                    //...
+                }
+            }
+        ]
+    }
+}
+```
 
+The original query can be converted to run in a filter context using the following `constant_score` query:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "constant_score": {      
+            "filter": {        
+                "term": {          
+                    "manufacturer.raw": "victory multimedia"        
+                }      
+            }    
+        }  
+    }
+}
+```
 
+It assigns a neutral score of 1 to each document by default.
 
+```json
+{  
+    // ...,  
+    "hits": {    
+        "total": 3,    
+        "max_score": 1,    
+        "hits": [      
+            {        
+                "_index": "amazon_products",        
+                "_type": "products",        
+                "_id": "AV5rBfasNI_2eZGciIbg",        
+                "_score": 1,        
+                "_source": {          
+                    "price": "19.95",          
+                    "description": "..."      
+                }   
+            // ...
+            }
+        ]
+    }
+}
+```
 
+It is possible to specify a `boost` parameter, which will assign that score instead of the neutral score of 1:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "constant_score": {      
+            "filter": {        
+                "term": {          
+                    "manufacturer.raw": "victory multimedia"                  
+                }      
+            },      
+            "boost": 1.2    
+        }  
+    }
+}
+```
 
+### Bool query
+A `bool` query has the following sections:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "bool": {      
+            "must": [...],    // scoring queries executed in query context      
+            "should": [...],  // scoring queries executed in query context     
+            "filter": {},     // non-scoring queries executed in filter context      
+            "must_not": [...] // non-scoring queries executed in filter context    
+        }  
+    }
+}
+```
 
+#### Combining OR conditions
+To find all of the products in the price range `10` to `13`, `OR` manufactured by `valuesoft`:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "constant_score": {      
+            "filter": {        
+                "bool": {          
+                    "should": [
+                        {              
+                            "range": {                
+                                "price": {                  
+                                    "gte": 10,                  
+                                    "lte": 13                
+                                }              
+                            }            
+                        },            
+                        {              
+                            "term": {                
+                                "manufacturer.raw": {                  
+                                    "value": "valuesoft"                
+                                }              
+                            }            
+                        }          
+                    ]        
+                }      
+            }    
+        }  
+    }
+}
+```
 
+#### Combining AND and OR conditions
+Find all products in the price range `10` to `13`, `AND` manufactured by `valuesoft` or `pinnacle`:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "constant_score": {      
+            "filter": {        
+                "bool": {          
+                    "must": [            
+                        {              
+                            "range": {                
+                                "price": {                  
+                                    "gte": 10,                  
+                                    "lte": 30                
+                                }              
+                            }            
+                        }          
+                    ],          
+                    "should": [            
+                        {              
+                            "term": {                
+                                "manufacturer.raw": {                  
+                                    "value": "valuesoft"                
+                                }              
+                            }            
+                        },            
+                        {              
+                            "term": {                
+                                "manufacturer.raw": {                  
+                                    "value": "pinnacle"                
+                                }              
+                            }            
+                        }          
+                    ]        
+                }      
+            }    
+        }  
+    }
+}
+```
 
+#### Adding NOT conditions
+Find all of the products in the price range `10` to `20`, but they must not be manufactured by `encore`:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "constant_score": {      
+            "filter": {        
+                "bool": {          
+                    "must": [            
+                        {              
+                            "range": {                
+                                "price": {                  
+                                    "gte": 10,                  
+                                    "lte": 20                
+                                }              
+                            }            
+                        }          
+                    ],          
+                    "must_not": [            
+                        {              
+                            "term": {                
+                                "manufacturer.raw": "encore"              
+                            }            
+                        }          
+                    ]        
+                }      
+            }    
+        }  
+    }
+}
+```
 
+This concludes our understanding of the different types of compound queries. There are more compound queries supported by Elasticsearch. They include the following:
 
+- Dis Max query
+- Function Score query
+- Boosting query
+- Indices query
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Modeling relationships
 
 
 
