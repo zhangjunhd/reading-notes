@@ -62,6 +62,8 @@
     - [Match query](#match-query)
       - [Operator](#operator)
       - [Minimum should match](#minimum-should-match)
+      - [Fuzziness](#fuzziness)
+    - [Match phrase query](#match-phrase-query)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -1109,38 +1111,71 @@ GET /amazon_products/_search
 ``` 
 
 #### Minimum should match
+Instead of applying the `and` operator, we can keep the `or` operator and specify at least how many terms should match in a given document for it to be included in the result. This allows for finer-grained control:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "match": {
+            "manufacturer": {
+                "query": "victory multimedia",        "minimum_should_match": 2      
+            }    
+        }  
+    }
+}
+```
 
+The preceding query behaves in a similar way to the `and` operator, as there are two terms in the query and we have specified that, as the minimum, two terms should match. 
 
+#### Fuzziness
+This `fuzziness` is based on the `Levenshtein edit distance`, to turn one term into another by making a number of edits to the original text. The fuzziness parameter can take one of the following values: `0`, `1`, `2`, or `AUTO`.
 
+For example, the following query has a misspelled word, `victor` instead of `victory`. Since we are using a fuzziness of `1`, it will still be able to find all victory multimedia records:
 
+```json
+GET /amazon_products/_search
+{  
+    "query": {    
+        "match": {      
+            "manufacturer": {        
+                "query": "victor multimedia",        
+                "fuzziness": 1      
+            }    
+        }  
+    }
+}
+```
 
+Fuzziness comes at its own cost because Elasticsearch has to generate extra terms to match against. To control the number of terms, it supports the following additional parameters:
 
+- `max_expansions`: The maximum number of terms after expanding.
+- `prefix_length`: A number, such as 0, 1, 2, and so on. The edits for introducing `fuzziness` will not be done on the prefix characters as defined by the `prefix_length` parameter.
 
+### Match phrase query
+When you want to match a sequence of words, as opposed to separate terms in a document, the `match_phrase` query can be useful.
 
+For example, the following text is present as part of the description for one of the products:
 
+```
+real video saltware aquarium on your desktop!
+```
 
+The `match` query can include all those documents that have any of the terms, even when they are out of order within the document:
 
+```json
+GET /amazon_products/_search{  
+    "query": {    
+        "match_phrase": {      
+            "description": {        
+                "query": "real video saltware aquarium"      
+            }    
+        }  
+    }
+}
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The response will look like the following:
 
 
 
