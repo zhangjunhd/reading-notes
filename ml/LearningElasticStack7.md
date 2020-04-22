@@ -1177,9 +1177,31 @@ GET /amazon_products/_search{
 
 The response will look like the following:
 
+```json
+{  
+    // ...,  
+    "hits": {    
+        "total": 1,    
+        "max_score": 22.338196,    
+        "hits": [      
+            {        
+                "_index": "amazon_products",        
+                "_type": "products",        
+                "_id": "AV5rBfasNI_2eZGciIbg",        "_score": 22.338196,        
+                "_source": {          
+                    "price": "19.95",          "description": "real video saltware aquarium on your desktop!product information see real fish swimming on your desktop in full-motion video! you'll find exotic saltwater fish such as sharks angelfish and more! enjoy the beauty and serenity of a real aquarium at yourdeskt",          
+                    "id": "b00004t2un",          
+                    "title": "sales skills 2.0 ages 10+",          
+                    "manufacturer": "victory multimedia",          
+                    "tags": []        
+                }      
+            }    
+        ]  
+    }
+}
+```
 
-
-
+The `match_phrase` query also supports the `slop` parameter, which allows you to specify an integer: 0, 1, 2, 3, and so on. `slop` relaxes the number of words/terms that can be skipped at the time of querying.
 
 
 
