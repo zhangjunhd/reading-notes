@@ -818,8 +818,7 @@ PUT /custom_analyzer_index
                     "custom_analyzer": {            
                         "type": "custom",            
                         "tokenizer": "standard",            
-                        "filter": [              "lowercase",              "custom_edge_ngram"            
-                        ]          
+                        "filter": ["lowercase", "custom_edge_ngram"]          
                     }        
                 },        
                 "filter": {          
