@@ -835,7 +835,8 @@ PUT /custom_analyzer_index
         "properties": {      
             "product": {        
                 "type": "text",        
-                "analyzer": "custom_analyzer",        "search_analyzer": "standard"      
+                "analyzer": "custom_analyzer",
+                "search_analyzer": "standard"      
             }    
         }  
     }
