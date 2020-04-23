@@ -74,6 +74,9 @@
       - [Combining AND and OR conditions](#combining-and-and-or-conditions)
       - [Adding NOT conditions](#adding-not-conditions)
   - [Modeling relationships](#modeling-relationships)
+    - [has_child query](#haschild-query)
+    - [has_parent query](#hasparent-query)
+    - [parent_id query](#parentid-query)
 
 # Section 1: Introduction to Elastic Stack and Elasticsearch
 # Introducing Elastic Stack
@@ -1483,28 +1486,272 @@ This concludes our understanding of the different types of compound queries. The
 - Indices query
 
 ## Modeling relationships
+For example, for products that fall into the **Laptops** category, we would have features such as screen size, processor type, and processor clock speed. At the same time, products in the **Automobile GPS Systems** category may have features such as screen size, whether GPS can speak street names, or whether it has free lifetime map updates available.
+
+Because we may have tens of thousands of products in hundreds of product categories, we may have tens of thousands of features. One solution might be to create one field for each feature. The resulting data would look very sparse if we tried to show it in tabular format:
+
+Title | Category | Screen Size | Processor Type | Clock Speed | Speaks Street Names | Map Updates
+------|----------|-------------|---------------|-------------|---------------------|----------
+ThinkPad X1| Laptops | 14 inches | core i5 | 2.3 GHz
+Acer Predator| Laptops| 15.6 inches| core i7| 2.6 GHz
+Trucker 600 | GPS Navigation Systems| 6 inches | - | - | Yes | Yes
+RV Tablet 70 | GPS Navigation Systems| 7 inches | - | - | Yes | Yes
 
 
+Instead, we could model this relationship between a product and its features as a one-to-many relationship as we would in a relational database. When we model a similar type of relationship in Elasticsearch, we can use the `join` datatype (https://www.elastic.co/guide/en/elasticsearch/reference/7.x/parent-join.html) to model relationships.
 
+The `join` datatype mapping that establishes the relationship is defined as follows:
 
+```json
+PUT /amazon_products_with_features
+{  
+    // ...  
+    "mappings": {    
+        "doc": {      
+            "properties": {        
+                //...        
+                "product_or_feature": {          
+                    "type": "join",          
+                    "relations": {            
+                        "product": "feature"          
+                    }        
+                },        
+                // ...       
+            }     
+        }   
+    }
+}
+```
 
+When indexing product records, we use the following syntax:
 
+```json
+PUT /amazon_products_with_features/doc/c0001
+{  
+    "description": "The Lenovo ThinkPad X1 Carbon 20K4002UUS has a 14 inch IPS Full HD LED display which makes each image and video appear sharp and crisp. The Thinkpad has an Intel Core i5 6200U 2.3 GHz Dual-core processor with Intel HD 520 graphics and 8 GB LPDDR3 SDRAM that gives lag free experience. It has a 180 GB SSD which makes all essential data and entertainment files handy. It supports 802.11ac and Bluetooth 4.1 and runs on Windows 7 Pro 64-bit downgrade from Windows 10 Pro 64-bit operating system. The ThinkPad X1 Carbon has two USB 3.1 Gen 1 ports which enables 10 times faster file transfer and has Gigabit ethernet for network communication. This notebook comes with 3 cell Lithium ion battery which gives upto 15.5 hours of battery life.",  
+    "price": "699.99",  
+    "id": "c0001",  
+    "title": "Lenovo ThinkPad X1 Carbon 20K4002UUS",  
+    "product_or_feature": "product",  
+    "manufacturer": "Lenovo"
+}
+```
 
+The value of `product_or_feature`, which is set to `produc`t suggests that this document is referring to a product.
 
+A `feature` record is indexed as follows:
 
+```json
+PUT amazon_products_with_features/doc/c0001_screen_size?routing=c0001
+{  
+    "product_or_feature": {    
+        "name": "feature",    
+        "parent": "c0001"  
+    },  
+    "feature_key": "screen_size",  
+    "feature_value": "14 inches",  
+    "feature": "Screen Size"
+}
+```
 
+Notice that, while indexing a `feature`, we need to set which is the parent of the document within `product_or_feature`. We also need to set a routing parameter that is equal to the document ID of the parent so that the child document gets indexed in the same shard as the parent.
 
+### has_child query
+If you want to get products based on some condition on the features, you can use `has_child` queries.
 
+```json
+GET <index>/_search
+{  
+    "query": {    
+        "has_child": {      
+            "type": <the child type against which to run the following query>,      
+            "query": {        
+                <any elasticsearch query like term, bool, query_string to be run against the child type>      
+            }    
+        }  
+    }
+}
+```
 
+We want to get all of the products where processor_series is Core i7 from the example dataset that we loaded:
 
+```json
+GET amazon_products_with_features/_search
+{  
+    "query": {    
+        "has_child": {      
+            "type": "feature",
+            "query": {        
+                "bool": {
+                    "must": [
+                        {
+                            "term": {
+                                "feature_key": {
+                                    "value": "processor_series"
+                                }              
+                            }            
+                        },            
+                        {              
+                            "term": {
+                                "feature_value": {
+                                    "value": "Core i7"
+                                }              
+                            }            
+                        }          
+                    ]        
+                }      
+            }    
+        }  
+    }
+}
+```
 
+The result of this has_child query is that we get back all the products that satisfy the query mentioned under the has_child element executed against all the features. The response should look like the following:
 
+```json
+{  
+    "took" : 1,  
+    "timed_out" : false,  
+    "_shards" : {
+        "total" : 1,    
+        "successful" : 1,    
+        "skipped" : 0,    
+        "failed" : 0  
+    },  
+    "hits" : {
+        "total" : {
+            "value" : 1,      
+            "relation" : "eq"    
+        },    
+        "max_score" : 1.0,    
+        "hits" : [
+            {
+                "_index" : "amazon_products_with_features",        
+                "_type" : "doc",        
+                "_id" : "c0002",        
+                "_score" : 1.0,        
+                "_source" : {
+                    "description" : "The Acer G9-593-77WF Predator 15 Notebook comes with a 15.6 inch IPS display that makes each image and video appear sharp and crisp. The laptop has Intel Core i7-6700HQ 2.60 GHz processor with NVIDIA Geforce GTX 1070 graphics and 16 GB DDR4 SDRAM that gives lag free experience. The laptop comes with 1 TB HDD along with 256 GB SSD which makes all essential data and entertainment files handy.",          
+                    "price" : "1899.99",          
+                    "id" : "c0002",          
+                    "title" : "Acer Predator 15 G9-593-77WF Notebook",          
+                    "product_or_feature" : "product",          
+                    "manufacturer" : "Acer"        
+                }
+            }
+        ]
+    }
+}
+```
 
+### has_parent query
+We want to get all the features of a specific product that has the product id `= c0003`. We can use a `has_parent` query as follows:
 
+```json
+GET amazon_products_with_features/_search
+{  
+    "query": {    
+        "has_parent": {      
+            "parent_type": "product",
+            "query": {
+                "ids": {
+                    "values": ["c0001"]
+                }      
+            }    
+        }  
+    }
+}
+```
 
+The result is all the features of that product:
 
+```json
+{  
+    "took" : 0,  
+    "timed_out" : false,  
+    "_shards" : {    
+        "total" : 1,    
+        "successful" : 1,    
+        "skipped" : 0,    
+        "failed" : 0  
+    },  
+    "hits" : {    
+        "total" : {      
+            "value" : 3,      
+            "relation" : "eq"    
+        },    
+        "max_score" : 1.0,    
+        "hits" : [      
+            {        
+                "_index" : "amazon_products_with_features",        
+                "_type" : "doc",        
+                "_id" : "c0001_screen_size",        
+                "_score" : 1.0,        
+                "_routing" : "c0001",        
+                "_source" : {          
+                    "product_or_feature" : {            
+                        "name" : "feature",            
+                        "parent" : "c0001"          
+                    },          
+                    "feature_key" : "screen_size",          
+                    "parent_id" : "c0001",          
+                    "feature_value" : "14 inches",          
+                    "feature" : "Screen Size"        
+                }      
+            },      
+            {        
+                "_index" : "amazon_products_with_features",        
+                "_type" : "doc",        
+                "_id" : "c0001_processor_series",        
+                "_score" : 1.0,        
+                "_routing" : "c0001",        
+                "_source" : {          
+                    "product_or_feature" : {            
+                        "name" : "feature",            
+                        "parent" : "c0001"          
+                    },          
+                    "feature_key" : "processor_series",          
+                    "parent_id" : "c0001",          
+                    "feature_value" : "Core i5",          
+                    "feature" : "Processor Series"        
+                }      
+            },      
+            {        
+                "_index" : "amazon_products_with_features",        
+                "_type" : "doc",        
+                "_id" : "c0001_clock_speed",        
+                "_score" : 1.0,        
+                "_routing" : "c0001",        
+                "_source" : {          
+                    "product_or_feature" : {            
+                        "name" : "feature",            
+                        "parent" : "c0001"          
+                    },          
+                    "feature_key" : "clock_speed",          
+                    "parent_id" : "c0001",          
+                    "feature_value" : "2.30 GHz",          
+                    "feature" : "Clock Speed"        
+                }      
+            }    
+        ]  
+    }
+}
+```
 
+### parent_id query
+It is the parent_id query, where we obtain all children using the parent's ID:
 
+```json
+GET /amazon_products_with_features/_search
+{  
+    "query": {    
+        "parent_id": {      
+            "type": "feature",      
+            "id": "c0001"    
+        }  
+    }
+}
+```
 
 
 
