@@ -1219,7 +1219,7 @@ The response will look like the following:
 The `match_phrase` query also supports the `slop` parameter, which allows you to specify an integer: 0, 1, 2, 3, and so on. `slop` relaxes the number of words/terms that can be skipped at the time of querying.
 
 ### Multi match query
-The `multi_matc`h query is an extension of the match query. The multi_match query allows us to run the match query across multiple fields, and also allows many options to calculate the overall score of the documents.
+The `multi_match` query is an extension of the match query. The multi_match query allows us to run the match query across multiple fields, and also allows many options to calculate the overall score of the documents.
 
 #### Querying multiple fields with defaults
 The following query will find all of the documents that have the terms `monitor` or `aquarium` in the `title` or the `description` fields:
