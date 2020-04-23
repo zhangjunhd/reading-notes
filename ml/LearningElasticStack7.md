@@ -1200,9 +1200,11 @@ The response will look like the following:
             {        
                 "_index": "amazon_products",        
                 "_type": "products",        
-                "_id": "AV5rBfasNI_2eZGciIbg",        "_score": 22.338196,        
+                "_id": "AV5rBfasNI_2eZGciIbg",        
+                "_score": 22.338196,        
                 "_source": {          
-                    "price": "19.95",          "description": "real video saltware aquarium on your desktop!product information see real fish swimming on your desktop in full-motion video! you'll find exotic saltwater fish such as sharks angelfish and more! enjoy the beauty and serenity of a real aquarium at yourdeskt",          
+                    "price": "19.95",          
+                    "description": "real video saltware aquarium on your desktop!product information see real fish swimming on your desktop in full-motion video! you'll find exotic saltwater fish such as sharks angelfish and more! enjoy the beauty and serenity of a real aquarium at yourdeskt",          
                     "id": "b00004t2un",          
                     "title": "sales skills 2.0 ages 10+",          
                     "manufacturer": "victory multimedia",          
