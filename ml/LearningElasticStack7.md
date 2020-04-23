@@ -298,70 +298,70 @@ The response should look like the following:
                         "keyword" : {              
                             "type" : "keyword",              
                             "ignore_above" : 256            
-                            }          
-                        }        
-                    },        
-                    "author" : {          
-                        "type" : "text",          
-                        "fields" : {            
-                            "keyword" : {              
-                                "type" : "keyword",              
-                                "ignore_above" : 256          
-                            }          
-                        }        
-                    },        
-                    "description" : {          
-                        "type" : "text",          
-                        "fields" : {            
-                            "keyword" : {              
-                                "type" : "keyword",              
-                                "ignore_above" : 256           
-                            }          
-                        }        
-                    },        
-                    "os" : {          
-                        "type" : "text",          
-                        "fields" : {            
-                            "keyword" : {              
-                                "type" : "keyword",              
-                                "ignore_above" : 256           
-                            }          
-                        }        
-                    },        
-                    "price" : {          
-                        "type" : "float"        
-                    },        
-                    "resolution" : {          
-                        "type" : "text",          
-                        "fields" : {            
-                            "keyword" : {              
-                                "type" : "keyword",              
-                                "ignore_above" : 256           
-                            }          
-                        }        
-                    },        
-                    "sku" : {          
-                        "type" : "text",          
-                        "fields" : {            
-                            "keyword" : {              
-                                "type" : "keyword",              
-                                "ignore_above" : 256            
-                            }          
-                        }        
-                    },        
-                    "title" : {          
-                        "type" : "text",          
-                        "fields" : {            
-                            "keyword" : {              
-                                "type" : "keyword",              
-                                "ignore_above" : 256            
-                            }          
-                        }        
-                    }      
-                }    
-            }  
-        }
+                        }          
+                    }        
+                },        
+                "author" : {          
+                    "type" : "text",          
+                    "fields" : {            
+                        "keyword" : {              
+                            "type" : "keyword",              
+                            "ignore_above" : 256          
+                        }          
+                    }        
+                },        
+                "description" : {          
+                    "type" : "text",          
+                    "fields" : {            
+                        "keyword" : {              
+                            "type" : "keyword",              
+                            "ignore_above" : 256           
+                        }          
+                    }        
+                },        
+                "os" : {          
+                    "type" : "text",          
+                    "fields" : {            
+                        "keyword" : {              
+                            "type" : "keyword",              
+                            "ignore_above" : 256           
+                        }          
+                    }        
+                },        
+                "price" : {          
+                    "type" : "float"        
+                },        
+                "resolution" : {          
+                    "type" : "text",          
+                    "fields" : {            
+                        "keyword" : {              
+                            "type" : "keyword",              
+                            "ignore_above" : 256           
+                        }          
+                    }        
+                },        
+                "sku" : {          
+                    "type" : "text",          
+                    "fields" : {            
+                        "keyword" : {              
+                            "type" : "keyword",              
+                            "ignore_above" : 256            
+                        }          
+                    }        
+                },        
+                "title" : {          
+                    "type" : "text",          
+                    "fields" : {            
+                        "keyword" : {              
+                            "type" : "keyword",              
+                            "ignore_above" : 256            
+                        }          
+                    }        
+                }      
+            }    
+        }  
     }
+}
 ```
 
 The `text` datatype enables full-text search on a field. Additionally, the same field is also stored as a `multi-field`, and it is also stored as a `keyword` type. This effectively enables full-text search and analytics (such as sorting, aggregations, and filtering) on the same field. 
