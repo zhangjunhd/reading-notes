@@ -7,8 +7,14 @@ https://github.com/fxsjy/jieba
     - [2.1 载入词典](#21-%e8%bd%bd%e5%85%a5%e8%af%8d%e5%85%b8)
     - [2.2 调整词典](#22-%e8%b0%83%e6%95%b4%e8%af%8d%e5%85%b8)
   - [3. 关键词提取](#3-%e5%85%b3%e9%94%ae%e8%af%8d%e6%8f%90%e5%8f%96)
-    - [3.1 基于 TF-IDF 算法的关键词抽取¶](#31-%e5%9f%ba%e4%ba%8e-tf-idf-%e7%ae%97%e6%b3%95%e7%9a%84%e5%85%b3%e9%94%ae%e8%af%8d%e6%8a%bd%e5%8f%96%c2%b6)
+    - [3.1 基于 TF-IDF 算法的关键词抽取](#31-%e5%9f%ba%e4%ba%8e-tf-idf-%e7%ae%97%e6%b3%95%e7%9a%84%e5%85%b3%e9%94%ae%e8%af%8d%e6%8a%bd%e5%8f%96)
       - [代码示例 （关键词提取）](#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b-%e5%85%b3%e9%94%ae%e8%af%8d%e6%8f%90%e5%8f%96)
+      - [关键词提取所使用逆向文件频率（IDF）文本语料库可以切换成自定义语料库的路径](#%e5%85%b3%e9%94%ae%e8%af%8d%e6%8f%90%e5%8f%96%e6%89%80%e4%bd%bf%e7%94%a8%e9%80%86%e5%90%91%e6%96%87%e4%bb%b6%e9%a2%91%e7%8e%87idf%e6%96%87%e6%9c%ac%e8%af%ad%e6%96%99%e5%ba%93%e5%8f%af%e4%bb%a5%e5%88%87%e6%8d%a2%e6%88%90%e8%87%aa%e5%ae%9a%e4%b9%89%e8%af%ad%e6%96%99%e5%ba%93%e7%9a%84%e8%b7%af%e5%be%84)
+      - [关键词提取所使用停止词（Stop Words）文本语料库可以切换成自定义语料库的路径](#%e5%85%b3%e9%94%ae%e8%af%8d%e6%8f%90%e5%8f%96%e6%89%80%e4%bd%bf%e7%94%a8%e5%81%9c%e6%ad%a2%e8%af%8dstop-words%e6%96%87%e6%9c%ac%e8%af%ad%e6%96%99%e5%ba%93%e5%8f%af%e4%bb%a5%e5%88%87%e6%8d%a2%e6%88%90%e8%87%aa%e5%ae%9a%e4%b9%89%e8%af%ad%e6%96%99%e5%ba%93%e7%9a%84%e8%b7%af%e5%be%84)
+      - [关键词一并返回关键词权重值示例](#%e5%85%b3%e9%94%ae%e8%af%8d%e4%b8%80%e5%b9%b6%e8%bf%94%e5%9b%9e%e5%85%b3%e9%94%ae%e8%af%8d%e6%9d%83%e9%87%8d%e5%80%bc%e7%a4%ba%e4%be%8b)
+    - [3.2 基于 TextRank 算法的关键词抽取](#32-%e5%9f%ba%e4%ba%8e-textrank-%e7%ae%97%e6%b3%95%e7%9a%84%e5%85%b3%e9%94%ae%e8%af%8d%e6%8a%bd%e5%8f%96)
+  - [4.词性标注](#4%e8%af%8d%e6%80%a7%e6%a0%87%e6%b3%a8)
+  - [5.Tokenize：返回词语在原文的起止位置](#5tokenize%e8%bf%94%e5%9b%9e%e8%af%8d%e8%af%ad%e5%9c%a8%e5%8e%9f%e6%96%87%e7%9a%84%e8%b5%b7%e6%ad%a2%e4%bd%8d%e7%bd%ae)
 
 ## 1.分词
 1. `jieba.cut`方法接受三个输入参数: 需要分词的字符串；`cut_all`参数用来控制是否采用全模式；`HMM`参数用来控制是否使用 HMM 模型
@@ -175,7 +181,7 @@ print('/'.join(jieba.cut('「台中」正确应该不会被切开', HMM=False)))
 ```
 
 ## 3. 关键词提取
-### 3.1 基于 TF-IDF 算法的关键词抽取¶
+### 3.1 基于 TF-IDF 算法的关键词抽取
 ```py
 jieba.analyse.extract_tags(sentence, topK=20, withWeight=False, allowPOS=())
 ```
@@ -195,13 +201,165 @@ print(sentences)
 ```
 
 #### 代码示例 （关键词提取）
+```py
+import jieba.analyse
+
+tags = jieba.analyse.extract_tags(sentences, topK=10)
+print('/'.join(tags))
+
+图灵/麦席森/1948/艾伦/奠基者/人工智能/逻辑/成绩/计算机/计算机领域
+```
+
+#### 关键词提取所使用逆向文件频率（IDF）文本语料库可以切换成自定义语料库的路径
+```bsh
+!head idf.txt.big
+
+劳动防护13.900677652
+劳动防护13.900677652
+生化学13.900677652
+生化学13.900677652
+奥萨贝尔13.900677652
+奥萨贝尔13.900677652
+考察队员13.900677652
+考察队员13.900677652
+岗上11.5027823792
+岗上11.5027823792
+```
+
+```py
+jieba.analyse.set_idf_path("idf.txt.big")
+tags = jieba.analyse.extract_tags(sentences, topK=10)
+print('/'.join(tags))
+
+图灵/奠基者/麦席森/1948/成绩/重要/计算机/人工智能/艾伦/逻辑
+```
+
+#### 关键词提取所使用停止词（Stop Words）文本语料库可以切换成自定义语料库的路径
+```
+!head stop_words.txt
+
+the
+of
+is
+and
+to
+in
+that
+we
+for
+an
+```
+
+```py
+jieba.analyse.set_stop_words("stop_words.txt")
+jieba.analyse.set_idf_path("idf.txt.big")
+tags = jieba.analyse.extract_tags(sentences, topK=10)
+print('/'.join(tags))
+
+图灵/奠基者/麦席森/1948/成绩/重要/计算机/人工智能/艾伦/逻辑
+```
+
+#### 关键词一并返回关键词权重值示例
+```py
+tags = jieba.analyse.extract_tags(sentences, topK=10, withWeight=True)
+for tag in tags:
+    print("tag: %s\t\t weight: %f" % (tag[0], tag[1]))
 
 
+tag: 图灵		 weight: 0.484653
+tag: 奠基者		 weight: 0.323102
+tag: 麦席森		 weight: 0.323102
+tag: 1948		 weight: 0.323102
+tag: 成绩		 weight: 0.323102
+tag: 重要		 weight: 0.323102
+tag: 计算机		 weight: 0.323102
+tag: 人工智能	  weight: 0.323102
+tag: 艾伦		 weight: 0.323102
+tag: 逻辑		 weight: 0.323102
+```
 
+### 3.2 基于 TextRank 算法的关键词抽取
+- `jieba.analyse.textrank(sentence, topK=20, withWeight=False, allowPOS=('ns', 'n', 'vn', 'v'))`直接使用，接口相同，注意默认过滤词性。
+- `jieba.analyse.TextRank()`新建自定义 TextRank 实例
+- 算法论文：[TextRank: Bringing Order into Texts](http://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf)
+- 基本思想:
+  - 将待抽取关键词的文本进行分词
+  - 以固定窗口大小(默认为5，通过span属性调整)，词之间的共现关系，构建图
+  - 计算图中节点的PageRank，注意是无向带权图
 
+```py
+s = "林欧亚置业主要经营范围为房地产开发及百货零售等业务。目前在建吉林欧亚城市商业综合体项目。2013年，实现营业收入0万元，实现净利润-139.13万元。"
 
+# TF-IDF
+for x, w in jieba.analyse.extract_tags(s, topK=10, withWeight=True):
+    print('%s %s' % (x, w))
 
+欧亚 1.01742702152
+吉林 1.01742702152
+万元 0.763070266143
+置业 0.763070266143
+增资 0.508713510762
+亿元 0.508713510762
+实现 0.508713510762
+在建 0.254356755381
+房地产 0.254356755381
+目前 0.254356755381
 
+# TextRank
+for x, w in jieba.analyse.textrank(s, topK=10, withWeight=True):
+    print('%s %s' % (x, w))
 
+吉林 1.0
+欧亚 0.996689335418
+置业 0.643436031309
+实现 0.589860669286
+收入 0.43677859948
+增资 0.409990053128
+子公司 0.356782959477
+城市 0.349713836674
+商业 0.34817220716
+业务 0.309223099262
+```
 
+## 4.词性标注
+- `jieba.posseg.POSTokenizer(tokenizer=None)`新建自定义分词器，tokenizer 参数可指定内部使用的 jieba.Tokenizer 分词器。jieba.posseg.dt 为默认词性标注分词器。
+- 标注句子分词后每个词的词性，采用和 ictclas 兼容的标记法。
 
+```py
+import jieba.posseg as pseg
+words = pseg.cut("我爱北京天安门")
+for word, flag in words:
+    print('%s %s' % (word, flag))
+
+我 r
+爱 v
+北京 ns
+天安门 ns
+```
+
+## 5.Tokenize：返回词语在原文的起止位置
+注意，输入参数只接受 unicode
+
+```py
+# 默认模式
+result = jieba.tokenize(u'永和服装饰品有限公司')
+for tk in result:
+    print("word %s\t\t start: %d \t\t end:%d" % (tk[0],tk[1],tk[2]))
+
+word 永和		 start: 0 		 end:2
+word 服装		 start: 2 		 end:4
+word 饰品		 start: 4 		 end:6
+word 有限公司	  start: 6 		  end:10
+
+# 搜索模式
+result = jieba.tokenize(u'永和服装饰品有限公司', mode='search')
+for tk in result:
+    print("word %s\t\t start: %d \t\t end:%d" % (tk[0],tk[1],tk[2]))
+
+word 永和		 start: 0 		 end:2
+word 服装		 start: 2 		 end:4
+word 饰品		 start: 4 		 end:6
+word 有限		 start: 6 		 end:8
+word 公司		 start: 8 		 end:10
+word 有限公司	  start: 6 		 end:10
+```
