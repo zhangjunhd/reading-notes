@@ -21,6 +21,11 @@
     - [频率分布](#%e9%a2%91%e7%8e%87%e5%88%86%e5%b8%83)
     - [词语搭配和双连词](#%e8%af%8d%e8%af%ad%e6%90%ad%e9%85%8d%e5%92%8c%e5%8f%8c%e8%bf%9e%e8%af%8d)
     - [计算其他东西](#%e8%ae%a1%e7%ae%97%e5%85%b6%e4%bb%96%e4%b8%9c%e8%a5%bf)
+- [获取文本语料库](#%e8%8e%b7%e5%8f%96%e6%96%87%e6%9c%ac%e8%af%ad%e6%96%99%e5%ba%93)
+  - [古腾堡语料库](#%e5%8f%a4%e8%85%be%e5%a0%a1%e8%af%ad%e6%96%99%e5%ba%93)
+  - [网络和聊天文本](#%e7%bd%91%e7%bb%9c%e5%92%8c%e8%81%8a%e5%a4%a9%e6%96%87%e6%9c%ac)
+  - [布朗语料库](#%e5%b8%83%e6%9c%97%e8%af%ad%e6%96%99%e5%ba%93)
+  - [路透社语料库](#%e8%b7%af%e9%80%8f%e7%a4%be%e8%af%ad%e6%96%99%e5%ba%93)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -394,61 +399,217 @@ Table 1-2. Functions defined for NLTK’s frequency distributions
  | fdist.plot(cumulative=True) | Cumulative plot of the frequency distribution  |
  | fdist1 < fdist2 | Test if samples in fdist1 occur less frequently than in fdist2 |
 
+# 获取文本语料库
+## 古腾堡语料库
+代表既定的文学。这个语料库中的文件标识符。
 
+```py
+%matplotlib inline
+import nltk
+from nltk.corpus import gutenberg
+gutenberg.fileids()
 
+[u'austen-emma.txt',
+ u'austen-persuasion.txt',
+ u'austen-sense.txt',
+ u'bible-kjv.txt',
+ u'blake-poems.txt',
+ u'bryant-stories.txt',
+ u'burgess-busterbrown.txt',
+ u'carroll-alice.txt',
+ u'chesterton-ball.txt',
+ u'chesterton-brown.txt',
+ u'chesterton-thursday.txt',
+ u'edgeworth-parents.txt',
+ u'melville-moby_dick.txt',
+ u'milton-paradise.txt',
+ u'shakespeare-caesar.txt',
+ u'shakespeare-hamlet.txt',
+ u'shakespeare-macbeth.txt',
+ u'whitman-leaves.txt']
+```
 
+找出emma包含多少个词。
 
+```py
+emma = gutenberg.words('austen-emma.txt')
+len(emma)
+192427
+```
 
+统计每个文本的3个统计量：平均词长、平均句子长度和文本中每个词出现的平均次数（词汇多样性得分）。
 
+```py
+for fileid in gutenberg.fileids():
+    num_chars = len(gutenberg.raw(fileid))
+    num_words = len(gutenberg.words(fileid))
+    num_sents = len(gutenberg.sents(fileid))
+    num_vocab = len(set([w.lower() for w in gutenberg.words(fileid)]))
+    print int(num_chars/num_words), int(num_words/num_sents), int(num_words/num_vocab), fileid
+4 24 26 austen-emma.txt
+4 26 16 austen-persuasion.txt
+4 28 22 austen-sense.txt
+4 33 79 bible-kjv.txt
+4 19 5 blake-poems.txt
+4 19 14 bryant-stories.txt
+4 17 12 burgess-busterbrown.txt
+4 20 12 carroll-alice.txt
+4 20 11 chesterton-ball.txt
+4 22 11 chesterton-brown.txt
+4 18 10 chesterton-thursday.txt
+4 20 24 edgeworth-parents.txt
+4 25 15 melville-moby_dick.txt
+4 52 10 milton-paradise.txt
+4 11 8 shakespeare-caesar.txt
+4 12 7 shakespeare-hamlet.txt
+4 12 6 shakespeare-macbeth.txt
+4 36 12 whitman-leaves.txt
+```
 
+sents()函数把文本划分成句子，其中每一个句子是一个词链表。
 
+```py
+macbeth_sentences = gutenberg.sents('shakespeare-macbeth.txt')
+macbeth_sentences
+[[u'[', u'The', u'Tragedie', u'of', u'Macbeth', u'by', u'William', u'Shakespeare', u'1603', u']'], [u'Actus', u'Primus', u'.'], ...]
 
+macbeth_sentences[1037]
+[u'Good',
+ u'night',
+ u',',
+ u'and',
+ u'better',
+ u'health',
+ u'Attend',
+ u'his',
+ u'Maiesty']
 
+longest_len = max([len(s) for s in macbeth_sentences])
+longest_len
+158
 
+[s for s in macbeth_sentences if len(s) == longest_len][0][:10]
+[u'Doubtfull',
+ u'it',
+ u'stood',
+ u',',
+ u'As',
+ u'two',
+ u'spent',
+ u'Swimmers',
+ u',',
+ u'that']
+```
 
+## 网络和聊天文本
+非正式的语言。
 
+```py
+from nltk.corpus import webtext
+for fileid in webtext.fileids():
+    print fileid, webtext.raw(fileid)[:65], '...'
+firefox.txt Cookie Manager: "Don't allow sites that set removed cookies to se ...
+grail.txt SCENE 1: [wind] [clop clop clop] 
+KING ARTHUR: Whoa there!  [clop ...
+overheard.txt White guy: So, do you have any plans for this evening?
+Asian girl ...
+pirates.txt PIRATES OF THE CARRIBEAN: DEAD MAN'S CHEST, by Ted Elliott & Terr ...
+singles.txt 25 SEXY MALE, seeks attrac older single lady, for discreet encoun ...
+wine.txt Lovely delicate, fragrant Rhone wine. Polished leather and strawb ...
+```
 
+即时消息聊天会话语料库：
 
+```py
+from nltk.corpus import nps_chat
+chatroom = nps_chat.posts('10-19-20s_706posts.xml')
+chatroom[123]
+[u'i',
+ u'do',
+ u"n't",
+ u'want',
+ u'hot',
+ u'pics',
+ u'of',
+ u'a',
+ u'female',
+ u',',
+ u'I',
+ u'can',
+ u'look',
+ u'in',
+ u'a',
+ u'mirror',
+ u'.']
+```
 
+## 布朗语料库
+包含500个不同来源的文本，按照文体分类，如新闻、社论等。
 
+```py
+from nltk.corpus import brown
+brown.categories()
+[u'adventure',
+ u'belles_lettres',
+ u'editorial',
+ u'fiction',
+ u'government',
+ u'hobbies',
+ u'humor',
+ u'learned',
+ u'lore',
+ u'mystery',
+ u'news',
+ u'religion',
+ u'reviews',
+ u'romance',
+ u'science_fiction']
 
+brown.words(categories='news')
+[u'The', u'Fulton', u'County', u'Grand', u'Jury', ...]
 
+brown.words(fileids=['cg22'])
+[u'Does', u'our', u'society', u'have', u'a', ...]
 
+brown.sents(categories=['news', 'editorial', 'reviews'])
+[[u'The', u'Fulton', u'County', u'Grand', u'Jury', u'said', u'Friday', u'an', u'investigation', u'of', u"Atlanta's", u'recent', u'primary', u'election', u'produced', u'``', u'no', u'evidence', u"''", u'that', u'any', u'irregularities', u'took', u'place', u'.'], [u'The', u'jury', u'further', u'said', u'in', u'term-end', u'presentments', u'that', u'the', u'City', u'Executive', u'Committee', u',', u'which', u'had', u'over-all', u'charge', u'of', u'the', u'election', u',', u'``', u'deserves', u'the', u'praise', u'and', u'thanks', u'of', u'the', u'City', u'of', u'Atlanta', u"''", u'for', u'the', u'manner', u'in', u'which', u'the', u'election', u'was', u'conducted', u'.'], ...]
+```
 
+布朗语料库是一个研究文体之间的系统性差异（又叫做stylistics文体学的语言学研究）的资源。第一步：对特定文体进行计数。
 
+```py
+from nltk.corpus import brown
+news_text = brown.words(categories='news')
+fdist = nltk.FreqDist([w.lower() for w in news_text])
+modals = ['can', 'could', 'may', 'might', 'must', 'will']
+for m in modals:
+    print m + ':', fdist[m],
+can: 94 could: 87 may: 93 might: 38 must: 53 will: 389
+```
 
+统计每一个感兴趣的文体。
 
+```py
+cfd = nltk.ConditionalFreqDist(
+    (genre, word)
+    for genre in brown.categories()
+    for word in brown.words(categories=genre))
+genres = ['news', 'religion', 'hobbies', 'science_fiction', 'romance', 'humor']
+modals = ['can', 'could', 'may', 'might', 'must', 'will']
+cfd.tabulate(conditions=genres, samples=modals)
 
+                  can could   may might  must  will 
+           news    93    86    66    38    50   389 
+       religion    82    59    78    12    54    71 
+        hobbies   268    58   131    22    83   264 
+science_fiction    16    49     4    12     8    16 
+        romance    74   193    11    51    45    43 
+          humor    16    30     8     8     9    13 
+```
 
+观察发现新闻文体中最常见的情态动词是will，而言情文体中最常见的情态动词是could。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 路透社语料库
 
 
 
