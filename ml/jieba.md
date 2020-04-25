@@ -6,6 +6,9 @@ https://github.com/fxsjy/jieba
   - [2.添加自定义词典](#2%e6%b7%bb%e5%8a%a0%e8%87%aa%e5%ae%9a%e4%b9%89%e8%af%8d%e5%85%b8)
     - [2.1 载入词典](#21-%e8%bd%bd%e5%85%a5%e8%af%8d%e5%85%b8)
     - [2.2 调整词典](#22-%e8%b0%83%e6%95%b4%e8%af%8d%e5%85%b8)
+  - [3. 关键词提取](#3-%e5%85%b3%e9%94%ae%e8%af%8d%e6%8f%90%e5%8f%96)
+    - [3.1 基于 TF-IDF 算法的关键词抽取¶](#31-%e5%9f%ba%e4%ba%8e-tf-idf-%e7%ae%97%e6%b3%95%e7%9a%84%e5%85%b3%e9%94%ae%e8%af%8d%e6%8a%bd%e5%8f%96%c2%b6)
+      - [代码示例 （关键词提取）](#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b-%e5%85%b3%e9%94%ae%e8%af%8d%e6%8f%90%e5%8f%96)
 
 ## 1.分词
 1. `jieba.cut`方法接受三个输入参数: 需要分词的字符串；`cut_all`参数用来控制是否采用全模式；`HMM`参数用来控制是否使用 HMM 模型
@@ -161,7 +164,42 @@ jieba.suggest_freq(('中', '将'), True)
 print('/'.join(jieba.cut('如果放到post中将出错。', HMM=False)))
 如果/放到/post/中/将/出错/。
 
+print('/'.join(jieba.cut('「台中」正确应该不会被切开', HMM=False)))
+「/台中/」/正确/应该/不会/被/切开
+
+jieba.suggest_freq('台中', True)
+70
+
+print('/'.join(jieba.cut('「台中」正确应该不会被切开', HMM=False)))
+「/台中/」/正确/应该/不会/被/切开
 ```
+
+## 3. 关键词提取
+### 3.1 基于 TF-IDF 算法的关键词抽取¶
+```py
+jieba.analyse.extract_tags(sentence, topK=20, withWeight=False, allowPOS=())
+```
+
+- `sentence`为待提取的文本
+- `topK`为返回几个 TF/IDF 权重最大的关键词，默认值为 20
+- `withWeight`为是否一并返回关键词权重值，默认值为 False
+- `allowPOS`仅包括指定词性的词，默认值为空，即不筛选
+- `jieba.analyse.TFIDF(idf_path=None)`新建 TFIDF 实例，idf_path 为 IDF 频率文件
+
+```py
+with open('turing.txt', 'r') as f:
+    sentences = f.read()
+print(sentences)
+
+艾伦·麦席森·图灵，1912年生于英国伦敦，1954年死于英国的曼彻斯特，他是计算机逻辑的奠基者，许多人工智能的重要方法也源自于这位伟大的科学家，被誉为计算机科学之父、人工智能之父。计算机逻辑的奠基者，提出了“图灵机”和“图灵测试”等重要概念。人们为纪念其在计算机领域的卓越贡献而专门设立了“图灵奖”。艾伦·麦席森·图灵是一名男同性恋者，同时还是一位世界级的长跑运动员。他的马拉松最好成绩是2小时46分3秒，比1948年奥林匹克运动会金牌成绩慢11分钟。1948年的一次跨国赛跑比赛中，他跑赢了同年奥运会银牌得主汤姆·理查兹（Tom Richards）。
+```
+
+#### 代码示例 （关键词提取）
+
+
+
+
+
 
 
 
