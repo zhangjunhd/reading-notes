@@ -12,6 +12,9 @@
 
 [豆瓣链接](https://book.douban.com/subject/25916599/)
 
+- [NLTK入门](#nltk%e5%85%a5%e9%97%a8)
+  - [搜索文本](#%e6%90%9c%e7%b4%a2%e6%96%87%e6%9c%ac)
+
 # NLTK入门
 从NLTK的book模块中加载所有的条目
 
@@ -35,7 +38,26 @@ text9: The Man Who Was Thursday by G . K . Chesterton 1908
 ```
 
 ## 搜索文本
+显示指定单词的出现情况，同时显示一些上下文。
 
+```py
+text1.concordance("monstrous")
+
+Displaying 11 of 11 matches:
+ong the former , one was of a most monstrous size . ... This came towards us , 
+ON OF THE PSALMS . " Touching that monstrous bulk of the whale or ork we have r
+ll over with a heathenish array of monstrous clubs and spears . Some were thick
+d as you gazed , and wondered what monstrous cannibal and savage could ever hav
+that has survived the flood ; most monstrous and most mountainous ! That Himmal
+they might scout at Moby Dick as a monstrous fable , or still worse and more de
+th of Radney .'" CHAPTER 55 Of the Monstrous Pictures of Whales . I shall ere l
+ing Scenes . In connexion with the monstrous pictures of whales , I am strongly
+ere to enter upon those still more monstrous stories of them which are to be fo
+ght have been rummaged out of this monstrous cabinet there is no telling . But 
+of Whale - Bones ; for Whales of a monstrous size are oftentimes cast up dead u
+```
+
+还有哪些词出现在相似的上下文中？
 
 
 
