@@ -26,6 +26,8 @@
   - [网络和聊天文本](#%e7%bd%91%e7%bb%9c%e5%92%8c%e8%81%8a%e5%a4%a9%e6%96%87%e6%9c%ac)
   - [布朗语料库](#%e5%b8%83%e6%9c%97%e8%af%ad%e6%96%99%e5%ba%93)
   - [路透社语料库](#%e8%b7%af%e9%80%8f%e7%a4%be%e8%af%ad%e6%96%99%e5%ba%93)
+  - [就职演说语料库](#%e5%b0%b1%e8%81%8c%e6%bc%94%e8%af%b4%e8%af%ad%e6%96%99%e5%ba%93)
+  - [其他语言的语料库](#%e5%85%b6%e4%bb%96%e8%af%ad%e8%a8%80%e7%9a%84%e8%af%ad%e6%96%99%e5%ba%93)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -610,6 +612,732 @@ science_fiction    16    49     4    12     8    16
 观察发现新闻文体中最常见的情态动词是will，而言情文体中最常见的情态动词是could。
 
 ## 路透社语料库
+路透社语料库包含10788个新闻文档，共计130万字。这些文档分成90个主题，按照“训练”和“测试”分为两组。
+
+```py
+from nltk.corpus import reuters
+reuters.fileids()[:10]
+['test/14826',
+ 'test/14828',
+ 'test/14829',
+ 'test/14832',
+ 'test/14833',
+ 'test/14839',
+ 'test/14840',
+ 'test/14841',
+ 'test/14842',
+ 'test/14843']
+
+reuters.categories()
+[u'acq',
+ u'alum',
+ u'barley',
+ u'bop',
+ u'carcass',
+ u'castor-oil',
+ u'cocoa',
+ u'coconut',
+ u'coconut-oil',
+ u'coffee',
+ u'copper',
+ u'copra-cake',
+ u'corn',
+ u'cotton',
+ u'cotton-oil',
+ u'cpi',
+ u'cpu',
+ u'crude',
+ u'dfl',
+ u'dlr',
+ u'dmk',
+ u'earn',
+ u'fuel',
+ u'gas',
+ u'gnp',
+ u'gold',
+ u'grain',
+ u'groundnut',
+ u'groundnut-oil',
+ u'heat',
+ u'hog',
+ u'housing',
+ u'income',
+ u'instal-debt',
+ u'interest',
+ u'ipi',
+ u'iron-steel',
+ u'jet',
+ u'jobs',
+ u'l-cattle',
+ u'lead',
+ u'lei',
+ u'lin-oil',
+ u'livestock',
+ u'lumber',
+ u'meal-feed',
+ u'money-fx',
+ u'money-supply',
+ u'naphtha',
+ u'nat-gas',
+ u'nickel',
+ u'nkr',
+ u'nzdlr',
+ u'oat',
+ u'oilseed',
+ u'orange',
+ u'palladium',
+ u'palm-oil',
+ u'palmkernel',
+ u'pet-chem',
+ u'platinum',
+ u'potato',
+ u'propane',
+ u'rand',
+ u'rape-oil',
+ u'rapeseed',
+ u'reserves',
+ u'retail',
+ u'rice',
+ u'rubber',
+ u'rye',
+ u'ship',
+ u'silver',
+ u'sorghum',
+ u'soy-meal',
+ u'soy-oil',
+ u'soybean',
+ u'strategic-metal',
+ u'sugar',
+ u'sun-meal',
+ u'sun-oil',
+ u'sunseed',
+ u'tea',
+ u'tin',
+ u'trade',
+ u'veg-oil',
+ u'wheat',
+ u'wpi',
+ u'yen',
+ u'zinc']
+```
+
+与布朗语料库不同，路透社语料库的类别时候互相重叠的，因为新闻报道往往涉及多个主题。
+
+```py
+reuters.categories('training/9865')
+[u'barley', u'corn', u'grain', u'wheat']
+
+reuters.categories(['training/9865', 'training/9880'])
+[u'barley', u'corn', u'grain', u'money-fx', u'wheat']
+
+reuters.fileids('barley')
+[u'test/15618',
+ u'test/15649',
+ u'test/15676',
+ u'test/15728',
+ u'test/15871',
+ u'test/15875',
+ u'test/15952',
+ u'test/17767',
+ u'test/17769',
+ u'test/18024',
+ u'test/18263',
+ u'test/18908',
+ u'test/19275',
+ u'test/19668',
+ u'training/10175',
+ u'training/1067',
+ u'training/11208',
+ u'training/11316',
+ u'training/11885',
+ u'training/12428',
+ u'training/13099',
+ u'training/13744',
+ u'training/13795',
+ u'training/13852',
+ u'training/13856',
+ u'training/1652',
+ u'training/1970',
+ u'training/2044',
+ u'training/2171',
+ u'training/2172',
+ u'training/2191',
+ u'training/2217',
+ u'training/2232',
+ u'training/3132',
+ u'training/3324',
+ u'training/395',
+ u'training/4280',
+ u'training/4296',
+ u'training/5',
+ u'training/501',
+ u'training/5467',
+ u'training/5610',
+ u'training/5640',
+ u'training/6626',
+ u'training/7205',
+ u'training/7579',
+ u'training/8213',
+ u'training/8257',
+ u'training/8759',
+ u'training/9865',
+ u'training/9958']
+
+reuters.fileids(['barley', 'corn'])[:10]
+[u'test/14832',
+ u'test/14858',
+ u'test/15033',
+ u'test/15043',
+ u'test/15106',
+ u'test/15287',
+ u'test/15341',
+ u'test/15618',
+ u'test/15648',
+ u'test/15649']
+
+reuters.words('training/9865')[:14]
+[u'FRENCH',
+ u'FREE',
+ u'MARKET',
+ u'CEREAL',
+ u'EXPORT',
+ u'BIDS',
+ u'DETAILED',
+ u'French',
+ u'operators',
+ u'have',
+ u'requested',
+ u'licences',
+ u'to',
+ u'export']
+
+reuters.words(['training/9865', 'training/9880'])
+[u'FRENCH', u'FREE', u'MARKET', u'CEREAL', u'EXPORT', ...]
+
+reuters.words(categories='barley')
+[u'FRENCH', u'FREE', u'MARKET', u'CEREAL', u'EXPORT', ...]
+
+reuters.words(categories=['barley', 'corn'])
+[u'THAI', u'TRADE', u'DEFICIT', u'WIDENS', u'IN', ...]
+```
+
+## 就职演说语料库
+语料库实际上是55个文本的集合，每个文本都是一个总统的演说。这个集合的一个显著特性是时间维度。
+
+```py
+from nltk.corpus import inaugural
+inaugural.fileids()
+[u'1789-Washington.txt',
+ u'1793-Washington.txt',
+ u'1797-Adams.txt',
+ u'1801-Jefferson.txt',
+ u'1805-Jefferson.txt',
+ u'1809-Madison.txt',
+ u'1813-Madison.txt',
+ u'1817-Monroe.txt',
+ u'1821-Monroe.txt',
+ u'1825-Adams.txt',
+ u'1829-Jackson.txt',
+ u'1833-Jackson.txt',
+ u'1837-VanBuren.txt',
+ u'1841-Harrison.txt',
+ u'1845-Polk.txt',
+ u'1849-Taylor.txt',
+ u'1853-Pierce.txt',
+ u'1857-Buchanan.txt',
+ u'1861-Lincoln.txt',
+ u'1865-Lincoln.txt',
+ u'1869-Grant.txt',
+ u'1873-Grant.txt',
+ u'1877-Hayes.txt',
+ u'1881-Garfield.txt',
+ u'1885-Cleveland.txt',
+ u'1889-Harrison.txt',
+ u'1893-Cleveland.txt',
+ u'1897-McKinley.txt',
+ u'1901-McKinley.txt',
+ u'1905-Roosevelt.txt',
+ u'1909-Taft.txt',
+ u'1913-Wilson.txt',
+ u'1917-Wilson.txt',
+ u'1921-Harding.txt',
+ u'1925-Coolidge.txt',
+ u'1929-Hoover.txt',
+ u'1933-Roosevelt.txt',
+ u'1937-Roosevelt.txt',
+ u'1941-Roosevelt.txt',
+ u'1945-Roosevelt.txt',
+ u'1949-Truman.txt',
+ u'1953-Eisenhower.txt',
+ u'1957-Eisenhower.txt',
+ u'1961-Kennedy.txt',
+ u'1965-Johnson.txt',
+ u'1969-Nixon.txt',
+ u'1973-Nixon.txt',
+ u'1977-Carter.txt',
+ u'1981-Reagan.txt',
+ u'1985-Reagan.txt',
+ u'1989-Bush.txt',
+ u'1993-Clinton.txt',
+ u'1997-Clinton.txt',
+ u'2001-Bush.txt',
+ u'2005-Bush.txt',
+ u'2009-Obama.txt']
+
+[fileid[:4] for fileid in inaugural.fileids()]
+[u'1789',
+ u'1793',
+ u'1797',
+ u'1801',
+ u'1805',
+ u'1809',
+ u'1813',
+ u'1817',
+ u'1821',
+ u'1825',
+ u'1829',
+ u'1833',
+ u'1837',
+ u'1841',
+ u'1845',
+ u'1849',
+ u'1853',
+ u'1857',
+ u'1861',
+ u'1865',
+ u'1869',
+ u'1873',
+ u'1877',
+ u'1881',
+ u'1885',
+ u'1889',
+ u'1893',
+ u'1897',
+ u'1901',
+ u'1905',
+ u'1909',
+ u'1913',
+ u'1917',
+ u'1921',
+ u'1925',
+ u'1929',
+ u'1933',
+ u'1937',
+ u'1941',
+ u'1945',
+ u'1949',
+ u'1953',
+ u'1957',
+ u'1961',
+ u'1965',
+ u'1969',
+ u'1973',
+ u'1977',
+ u'1981',
+ u'1985',
+ u'1989',
+ u'1993',
+ u'1997',
+ u'2001',
+ u'2005',
+ u'2009']
+
+cfd = nltk.ConditionalFreqDist(
+    (target, fileid[:4])
+    for fileid in inaugural.fileids()
+    for w in inaugural.words(fileid)
+    for target in ['america', 'citizen'] if w.lower().startswith(target))
+cfd.plot()
+```
+
+![](pythonNLP4.png)
+
+Figure 2-1. Plot of a conditional frequency distribution: All words in the Inaugural Address Corpus that begin with america or citizen are counted; separate counts are kept for each address; these are plotted so that trends in usage over time can be observed; counts are not normalized for document length.
+
+## 其他语言的语料库
+多国语言的语料库。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
