@@ -28,6 +28,9 @@
   - [路透社语料库](#%e8%b7%af%e9%80%8f%e7%a4%be%e8%af%ad%e6%96%99%e5%ba%93)
   - [就职演说语料库](#%e5%b0%b1%e8%81%8c%e6%bc%94%e8%af%b4%e8%af%ad%e6%96%99%e5%ba%93)
   - [其他语言的语料库](#%e5%85%b6%e4%bb%96%e8%af%ad%e8%a8%80%e7%9a%84%e8%af%ad%e6%96%99%e5%ba%93)
+  - [文本语料库的结构](#%e6%96%87%e6%9c%ac%e8%af%ad%e6%96%99%e5%ba%93%e7%9a%84%e7%bb%93%e6%9e%84)
+  - [载入你自己的语料库](#%e8%bd%bd%e5%85%a5%e4%bd%a0%e8%87%aa%e5%b7%b1%e7%9a%84%e8%af%ad%e6%96%99%e5%ba%93)
+- [条件频率分布](#%e6%9d%a1%e4%bb%b6%e9%a2%91%e7%8e%87%e5%88%86%e5%b8%83)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -957,34 +960,113 @@ Figure 2-1. Plot of a conditional frequency distribution: All words in the Inaug
 ## 其他语言的语料库
 多国语言的语料库。
 
+```py
+nltk.corpus.cess_esp.words()
+[u'El', u'grupo', u'estatal', ...]
 
+nltk.corpus.floresta.words()
+[u'Um', u'revivalismo', u'refrescante', u'O', ...]
 
+nltk.corpus.indian.words('hindi.pos')
+[u'\u092a\u0942\u0930\u094d\u0923', u'\u092a\u094d\u0930\u0924\u093f\u092c\u0902\u0927', ...]
 
+nltk.corpus.udhr.fileids()[:10]
+[u'Abkhaz-Cyrillic+Abkh',
+ u'Abkhaz-UTF8',
+ u'Achehnese-Latin1',
+ u'Achuar-Shiwiar-Latin1',
+ u'Adja-UTF8',
+ u'Afaan_Oromo_Oromiffa-Latin1',
+ u'Afrikaans-Latin1',
+ u'Aguaruna-Latin1',
+ u'Akuapem_Twi-UTF8',
+ u'Albanian_Shqip-Latin1']
 
+nltk.corpus.udhr.words('Javanese-Latin1')[11:]
+[u'Saben', u'umat', u'manungsa', u'lair', u'kanthi', ...]
+```
 
+udhr包含有超过300种语言的世界人权宣言。利用条件频率分布研究udhr语料库中不同语言版本中之长的差异。
 
+```py
+from nltk.corpus import udhr
+languages = ['Chickasaw', 'English', 'German_Deutsch',
+             'Greenlandic_Inuktikut', 'Hungarian_Magyar', 'Ibibio_Efik']
+cfd = nltk.ConditionalFreqDist(
+    (lang, len(word))
+    for lang in languages
+    for word in udhr.words(lang + '-Latin1'))
+cfd.plot(cumulative=True)
+```
 
+![](pythonNLP5.png)
 
+Figure 2-2. Cumulative word length distributions: Six translations of the Universal Declaration of Human Rights are processed; this graph shows that words having five or fewer letters account for about 80% of Ibibio text, 60% of German text, and 25% of Inuktitut text.
 
+## 文本语料库的结构
+![](pythonNLP6.png)
 
+Figure 2-3. Common structures for text corpora: The simplest kind of corpus is a collection of isolated texts with no particular organization; some corpora are structured into categories, such as genre (Brown Corpus); some categorizations overlap, such as topic categories (Reuters Corpus); other corpora represent language use over time (Inaugural Address Corpus).
 
+Table 2-3. Basic corpus functionality defined in NLTK: More documentation can be found using help(nltk.corpus.reader) and by reading the online Corpus HOWTO at http://www.nltk.org/howto.
 
+| Example | Description |
+|------- | ----------- |
+|fileids() | The files of the corpus |
+|fileids([categories]) | The files of the corpus corresponding to these categories |
+|categories() | The categories of the corpus |
+|categories([fileids]) | The categories of the corpus corresponding to these files |
+|raw() | The raw content of the corpus |
+|raw(fileids=[f1,f2,f3]) | The raw content of the specified files |
+|raw(categories=[c1,c2]) | The raw content of the specified categories |
+|words() | The words of the whole corpus |
+|words(fileids=[f1,f2,f3]) | The words of the specified fileids |
+|words(categories=[c1,c2]) | The words of the specified categories |
+|sents() | The sentences of the specified categories |
+|sents(fileids=[f1,f2,f3]) | The sentences of the specified fileids |
+|sents(categories=[c1,c2]) | The sentences of the specified categories |
+|abspath(fileid) | The location of the given file on disk |
+|encoding(fileid) | The encoding of the file (if known) |
+|open(fileid) | Open a stream for reading the given corpus file |
+|root() | The path to the root of locally installed corpus |
+|readme() | The contents of the README file of the corpus |
 
+## 载入你自己的语料库
+txt文件载入。
 
+```py
+from nltk.corpus import PlaintextCorpusReader
+corpus_root = '/usr/share/dict'
+wordlists = PlaintextCorpusReader(corpus_root, '.*')
+wordlists.fileids()
+['README', 'connectives', 'propernames', 'web2', 'web2a', 'words']
 
+wordlists.words('connectives')
+[u'the', u'of', u'and', u'to', u'a', u'in', u'that', ...]
+```
 
+载入宾州树库的副本。
 
+```py
+from nltk.corpus import BracketParseCorpusReader
+corpus_root = r"C:\corpora\penntreebank\parsed\mrg\wsj"
+file_pattern = r".*/wsj_.*\.mrg"
+ptb = BracketParseCorpusReader(corpus_root, file_pattern)
+ptb.fileids()
+['00/wsj_0001.mrg', '00/wsj_0002.mrg', '00/wsj_0003.mrg', '00/wsj_0004.mrg', ...]
 
+len(ptb.sents())
+49208
 
+ptb.sents(fileids='20/wsj_2013.mrg')[19]
+['The', '55-year-old', 'Mr.', 'Noriega', 'is', "n't", 'as', 'smooth', 'as', 'the',
+'shah', 'of', 'Iran', ',', 'as', 'well-born', 'as', 'Nicaragua', "'s", 'Anastasio',
+'Somoza', ',', 'as', 'imperial', 'as', 'Ferdinand', 'Marcos', 'of', 'the', 'Philippines',
+'or', 'as', 'bloody', 'as', 'Haiti', "'s", 'Baby', Doc', 'Duvalier', '.']
+```
 
-
-
-
-
-
-
-
-
+# 条件频率分布
+conditional frequency distribution 是频率分布的集合，每个频率分布有一个不同的“条件”。这个条件通常是文本的类别。
 
 
 
