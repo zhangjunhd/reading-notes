@@ -412,5 +412,7 @@
    1. [Lucene in Action, Second Edition](ml/LuceneInAction.md)
    2. [Learning Elastic Stack 7.0 - Second Edition](ml/LearningElasticStack7.md)
    3. [搜索引擎-信息检索实践](ml/SearchEngines.md)
-2. 深度学习
+2. 自然语言处理
+   1. [结巴分词](ml/jieba.md)
+3. 深度学习
    1. [Fundamentals of Deep Learning](ml/FundamentalsOfDeepLearning.md)
