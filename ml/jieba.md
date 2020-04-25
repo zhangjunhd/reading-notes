@@ -349,7 +349,7 @@ for tk in result:
 word 永和		 start: 0 		 end:2
 word 服装		 start: 2 		 end:4
 word 饰品		 start: 4 		 end:6
-word 有限公司	  start: 6 		  end:10
+word 有限公司	    start: 6 		  end:10
 
 # 搜索模式
 result = jieba.tokenize(u'永和服装饰品有限公司', mode='search')
@@ -361,5 +361,5 @@ word 服装		 start: 2 		 end:4
 word 饰品		 start: 4 		 end:6
 word 有限		 start: 6 		 end:8
 word 公司		 start: 8 		 end:10
-word 有限公司	  start: 6 		 end:10
+word 有限公司	    start: 6 		 end:10
 ```
