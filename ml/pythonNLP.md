@@ -42,9 +42,12 @@
   - [词汇工具：Toolbox](#%e8%af%8d%e6%b1%87%e5%b7%a5%e5%85%b7toolbox)
   - [WordNet](#wordnet)
     - [意义与同义词](#%e6%84%8f%e4%b9%89%e4%b8%8e%e5%90%8c%e4%b9%89%e8%af%8d)
-    - [WordNet的层次结构¶](#wordnet%e7%9a%84%e5%b1%82%e6%ac%a1%e7%bb%93%e6%9e%84%c2%b6)
+    - [WordNet的层次结构](#wordnet%e7%9a%84%e5%b1%82%e6%ac%a1%e7%bb%93%e6%9e%84)
     - [更多的词汇关系](#%e6%9b%b4%e5%a4%9a%e7%9a%84%e8%af%8d%e6%b1%87%e5%85%b3%e7%b3%bb)
     - [语义相似度](#%e8%af%ad%e4%b9%89%e7%9b%b8%e4%bc%bc%e5%ba%a6)
+- [处理原始文本](#%e5%a4%84%e7%90%86%e5%8e%9f%e5%a7%8b%e6%96%87%e6%9c%ac)
+  - [从网络和硬盘访问文本](#%e4%bb%8e%e7%bd%91%e7%bb%9c%e5%92%8c%e7%a1%ac%e7%9b%98%e8%ae%bf%e9%97%ae%e6%96%87%e6%9c%ac)
+    - [电子书](#%e7%94%b5%e5%ad%90%e4%b9%a6)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -1844,7 +1847,7 @@ wn.lemmas('car')
  Lemma('cable_car.n.01.car')]
 ```
 
-### WordNet的层次结构¶
+### WordNet的层次结构
 一些概念综合性很强，如实体、状态、事件：这些被称为unique beginners。
 
 ![](pythonNLP11.png)
@@ -2093,9 +2096,9 @@ right.path_similarity(novel)
 0.043478260869565216
 ```
 
-
-
-
+# 处理原始文本
+## 从网络和硬盘访问文本
+### 电子书
 
 
 
