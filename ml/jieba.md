@@ -153,8 +153,14 @@ print('/'.join(words))
 
 ```py
 print('/'.join(jieba.cut('如果放到post中将出错。', HMM=False)))
-
 如果/放到/post/中将/出错/。
+
+jieba.suggest_freq(('中', '将'), True)
+494
+
+print('/'.join(jieba.cut('如果放到post中将出错。', HMM=False)))
+如果/放到/post/中/将/出错/。
+
 ```
 
 
