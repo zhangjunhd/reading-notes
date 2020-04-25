@@ -14,6 +14,7 @@
 
 - [NLTK入门](#nltk%e5%85%a5%e9%97%a8)
   - [搜索文本](#%e6%90%9c%e7%b4%a2%e6%96%87%e6%9c%ac)
+  - [计数词汇](#%e8%ae%a1%e6%95%b0%e8%af%8d%e6%b1%87)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -59,17 +60,33 @@ of Whale - Bones ; for Whales of a monstrous size are oftentimes cast up dead u
 
 还有哪些词出现在相似的上下文中？
 
+```py
+text1.similar("monstrous")
 
+imperial subtly impalpable pitiable curious abundant perilous
+trustworthy untoward singular lamentable few determined maddens
+horrible tyrannical lazy mystifying christian exasperate
+```
 
+研究共用两个或两个以上词汇的上下文。
 
+```py
+text2.common_contexts(["monstrous", "very"])
 
+a_pretty is_pretty a_lucky am_glad be_glad
+```
 
+判断词在文本中的位置：dispersion plot。每一列代表一个单词，每一行代表整个文本。
 
+```py
+text4.dispersion_plot(["citizens", "democracy", "freedom", "duties", "America"])
+```
 
+![](pythonNLP1.png)
 
+Figure 1-2. Lexical dispersion plot for words in U.S. Presidential Inaugural Addresses: This can be used to investigate changes in language use over time.
 
-
-
+## 计数词汇
 
 
 
