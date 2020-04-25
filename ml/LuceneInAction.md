@@ -12,37 +12,37 @@
 [豆瓣链接](https://book.douban.com/subject/3726306/)
 
 - [Meet Lucene](#meet-lucene)
-  - [WHAT IS LUCENE?](#what-is-lucene)
-  - [LUCENE AND THE COMPONENTS OF A SEARCH APPLICATION](#lucene-and-the-components-of-a-search-application)
+  - [What is lucene](#what-is-lucene)
+  - [Lucene and the components of a search application](#lucene-and-the-components-of-a-search-application)
     - [Components for indexing](#components-for-indexing)
     - [Components for searching](#components-for-searching)
     - [The rest of the search application](#the-rest-of-the-search-application)
-  - [LUCENE IN ACTION: A SAMPLE APPLICATION](#lucene-in-action-a-sample-application)
+  - [Lucene In Action: A Sample Application](#lucene-in-action-a-sample-application)
     - [Creating an index](#creating-an-index)
     - [Searching an index](#searching-an-index)
-  - [UNDERSTANDING THE CORE INDEXING CLASSES](#understanding-the-core-indexing-classes)
+  - [Understanding the core indexing classes](#understanding-the-core-indexing-classes)
     - [IndexWriter](#indexwriter)
     - [Directory](#directory)
     - [Analyzer](#analyzer)
     - [Document](#document)
     - [Field](#field)
-  - [UNDERSTANDING THE CORE SEARCHING CLASSES](#understanding-the-core-searching-classes)
+  - [Understanding the core searching classes](#understanding-the-core-searching-classes)
     - [IndexSearcher](#indexsearcher)
     - [Term](#term)
     - [Query](#query)
     - [TermQuery](#termquery)
     - [TopDocs](#topdocs)
 - [Building a search index](#building-a-search-index)
-  - [HOW LUCENE MODELS CONTENT](#how-lucene-models-content)
+  - [How lucene models content](#how-lucene-models-content)
     - [Documents and fields](#documents-and-fields)
     - [Flexible schema](#flexible-schema)
     - [Denormalization](#denormalization)
-  - [UNDERSTANDING THE INDEXING PROCESS](#understanding-the-indexing-process)
-  - [BASIC INDEX OPERATIONS](#basic-index-operations)
+  - [Understanding the indexing process](#understanding-the-indexing-process)
+  - [Basic index operations](#basic-index-operations)
     - [Adding documents to an index](#adding-documents-to-an-index)
     - [Deleting documents from an index](#deleting-documents-from-an-index)
     - [Updating documents in the index](#updating-documents-in-the-index)
-  - [FIELD OPTIONS](#field-options)
+  - [Field options](#field-options)
     - [Field options for indexing](#field-options-for-indexing)
     - [Field options for storing fields](#field-options-for-storing-fields)
     - [Field options for term vectors](#field-options-for-term-vectors)
@@ -50,18 +50,18 @@
     - [Field option combinations](#field-option-combinations)
     - [Field options for sorting](#field-options-for-sorting)
     - [Multivalued fields](#multivalued-fields)
-  - [BOOSTING DOCUMENTS AND FIELDS](#boosting-documents-and-fields)
+  - [Boosting documents and fields](#boosting-documents-and-fields)
     - [Boosting documents](#boosting-documents)
     - [Boosting fields](#boosting-fields)
     - [Norms](#norms)
-  - [INDEXING NUMBERS, DATES, AND TIMES](#indexing-numbers-dates-and-times)
+  - [Indexing numbers dates and times](#indexing-numbers-dates-and-times)
     - [Indexing numbers](#indexing-numbers)
     - [Indexing dates and times](#indexing-dates-and-times)
-  - [FIELD TRUNCATION](#field-truncation)
-  - [NEAR-REAL-TIME SEARCH](#near-real-time-search)
-  - [OPTIMIZING AN INDEX](#optimizing-an-index)
-  - [OTHER DIRECTORY IMPLEMENTATIONS](#other-directory-implementations)
-  - [CONCURRENCY, THREAD SAFETY, AND LOCKING ISSUES](#concurrency-thread-safety-and-locking-issues)
+  - [Field truncation](#field-truncation)
+  - [Near real time search](#near-real-time-search)
+  - [Optimizing an index](#optimizing-an-index)
+  - [Other directory implementations](#other-directory-implementations)
+  - [Concurrency thread safety and locking issues](#concurrency-thread-safety-and-locking-issues)
     - [Thread and multi-JVM safety](#thread-and-multi-jvm-safety)
     - [Accessing an index over a remote file system](#accessing-an-index-over-a-remote-file-system)
     - [Index locking](#index-locking)
@@ -73,19 +73,19 @@
   - [Overview](#overview)
   - [File Naming](#file-naming)
 - [Adding search to your application](#adding-search-to-your-application)
-  - [IMPLEMENTING A SIMPLE SEARCH FEATURE](#implementing-a-simple-search-feature)
+  - [Implementing a simple search feature](#implementing-a-simple-search-feature)
     - [Searching for a specific term](#searching-for-a-specific-term)
     - [Parsing a user-entered query expression: QueryParser](#parsing-a-user-entered-query-expression-queryparser)
-  - [USING INDEXSEARCHER](#using-indexsearcher)
+  - [Using indexsearcher](#using-indexsearcher)
     - [Creating an IndexSearcher](#creating-an-indexsearcher)
     - [Performing searches](#performing-searches)
     - [Working with TopDocs](#working-with-topdocs)
     - [Paging through results](#paging-through-results)
-    - [Near-real-time search](#near-real-time-search)
-  - [UNDERSTANDING LUCENE SCORING](#understanding-lucene-scoring)
+    - [Near-real-time search](#near-real-time-search-1)
+  - [Understanding lucene scoring](#understanding-lucene-scoring)
     - [How Lucene scores](#how-lucene-scores)
     - [Using explain() to understand hit scoring](#using-explain-to-understand-hit-scoring)
-  - [LUCENE’S DIVERSE QUERIES](#lucenes-diverse-queries)
+  - [Lucene's diverse queries](#lucenes-diverse-queries)
     - [Searching by term: TermQuery](#searching-by-term-termquery)
     - [Searching within a term range: TermRangeQuery](#searching-within-a-term-range-termrangequery)
     - [Searching within a numeric range: NumericRangeQuery](#searching-within-a-numeric-range-numericrangequery)
@@ -95,7 +95,7 @@
     - [Searching by wildcard: WildcardQuery](#searching-by-wildcard-wildcardquery)
     - [Searching for similar terms: FuzzyQuery](#searching-for-similar-terms-fuzzyquery)
     - [Matching all documents: MatchAllDocsQuery](#matching-all-documents-matchalldocsquery)
-  - [PARSING QUERY EXPRESSIONS: QUERYPARSER](#parsing-query-expressions-queryparser)
+  - [Parsing query expressions queryparser](#parsing-query-expressions-queryparser)
     - [Query.toString](#querytostring)
     - [TermQuery](#termquery-1)
     - [Term range searches](#term-range-searches)
@@ -108,28 +108,28 @@
     - [Grouping](#grouping)
     - [Setting the boost for a subquery](#setting-the-boost-for-a-subquery)
 - [Lucene’s analysis process](#lucenes-analysis-process)
-  - [USING ANALYZERS](#using-analyzers)
+  - [Using analyzers](#using-analyzers)
     - [Indexing analysis](#indexing-analysis)
     - [QueryParser analysis](#queryparser-analysis)
     - [Parsing vs. analysis: when an analyzer isn’t appropriate](#parsing-vs-analysis-when-an-analyzer-isnt-appropriate)
-  - [WHAT’S INSIDE AN ANALYZER?](#whats-inside-an-analyzer)
+  - [What's inside an analyzer](#whats-inside-an-analyzer)
     - [What’s in a token?](#whats-in-a-token)
     - [TokenStream uncensored](#tokenstream-uncensored)
     - [Visualizing analyzers](#visualizing-analyzers)
-  - [USING THE BUILT-IN ANALYZERS](#using-the-built-in-analyzers)
-  - [SOUNDS-LIKE QUERYING](#sounds-like-querying)
-  - [SYNONYMS, ALIASES, AND WORDS THAT MEAN THE SAME](#synonyms-aliases-and-words-that-mean-the-same)
+  - [Using the built-in analyzers](#using-the-built-in-analyzers)
+  - [Sounds-like querying](#sounds-like-querying)
+  - [Synonyms,aliases and words that mean the same](#synonymsaliases-and-words-that-mean-the-same)
     - [Creating SynonymAnalyzer](#creating-synonymanalyzer)
     - [Visualizing token positions](#visualizing-token-positions)
-  - [STEMMING ANALYSIS](#stemming-analysis)
+  - [Stemming analysis](#stemming-analysis)
     - [StopFilter leaves holes](#stopfilter-leaves-holes)
     - [Combining stemming and stop-word removal](#combining-stemming-and-stop-word-removal)
 
 # Meet Lucene
-##  WHAT IS LUCENE?
+## What is lucene
 Lucene is a high-performance, scalable `information retrieval` (`IR`) library. `IR` refers to the process of searching for documents, information within documents, or metadata about documents.
 
-## LUCENE AND THE COMPONENTS OF A SEARCH APPLICATION
+## Lucene and the components of a search application
 Figure 1.4. Typical components of search application; the shaded components show which parts Lucene handles.
 
 ![1.4](https://www.safaribooksonline.com/library/view/lucene-in-action/9781933988177/01fig03a.jpg)
@@ -163,7 +163,7 @@ Figure 1.4. Typical components of search application; the shaded components show
   - The breakdown of Lucene’s search time
 - `Scaling`:There are two dimensions to scaling: **net amount of content**, and **net query throughput**.
 
-## LUCENE IN ACTION: A SAMPLE APPLICATION
+## Lucene In Action: A Sample Application
 ### Creating an index
 Listing 1.1 shows the Indexer command-line program, originally written for Erik’s introductory Lucene article on java.net. It takes two arguments:
 
@@ -256,7 +256,7 @@ BUILD SUCCESSFUL
 Total time: 4 seconds
 ```
 
-## UNDERSTANDING THE CORE INDEXING CLASSES
+## Understanding the core indexing classes
 As you saw in our Indexer class, you need the following classes to perform the simplest indexing procedure:
 
 - IndexWriter
@@ -288,7 +288,7 @@ The `Document` class represents a collection of fields. Think of it as a virtual
 ### Field
 Each document in an index contains one or more named `fields`, embodied in a class called Field. Each field has a name and corresponding value, and a bunch of options, described in section 2.4, that control precisely how Lucene will index the field’s value.
 
-## UNDERSTANDING THE CORE SEARCHING CLASSES
+## Understanding the core searching classes
 The basic search interface that Lucene provides is as straightforward as the one for indexing. Only a few classes are needed to perform the basic search operation:
 
 - IndexSearcher
@@ -328,7 +328,7 @@ Lucene comes with a number of concrete `Query` subclasses. So far in this chapte
 The `TopDocs` class is a simple container of pointers to the top N ranked search results—documents that match a given query. For each of the top N results, TopDocs records the int docID (which you can use to retrieve the document) as well as the float score.
 
 # Building a search index
-## HOW LUCENE MODELS CONTENT
+## How lucene models content
 ### Documents and fields
 At a high level, there are three things Lucene can do with each field:
 
@@ -344,7 +344,7 @@ The second major difference between Lucene and databases is that Lucene requires
 ### Denormalization
 Lucene documents are flat. Such recursion and joins must be denormalized when creating your documents.
 
-## UNDERSTANDING THE INDEXING PROCESS
+## Understanding the indexing process
 Figure 2.1. Indexing with Lucene breaks down into three main operations: extracting text from source documents, analyzing it, and saving it to the index.
 
 ![2.1](https://www.safaribooksonline.com/library/view/lucene-in-action/9781933988177/02fig01.jpg)
@@ -357,7 +357,7 @@ Figure 2.2. Segmented structure of a Lucene inverted index
 
 ![2.2](https://www.safaribooksonline.com/library/view/lucene-in-action/9781933988177/02fig02.jpg)
 
-## BASIC INDEX OPERATIONS
+## Basic index operations
 ### Adding documents to an index
 There are two methods for adding documents:
 
@@ -410,7 +410,7 @@ Listing 2.3. Updating indexed Documents
 
 ![l2.3](https://www.safaribooksonline.com/library/view/lucene-in-action/9781933988177/043fig01_alt.jpg)
 
-## FIELD OPTIONS
+## Field options
 ### Field options for indexing
 The options for indexing (Field.Index.*) control how the text in the field will be made searchable via the inverted index. Here are the choices:
 
@@ -473,7 +473,7 @@ new Field("author", "Arthur C. Clark", Field.Store.YES,
 ### Multivalued fields
 This is perfectly acceptable and encouraged, as it’s a natural way to represent a field that legitimately has multiple values.
 
-## BOOSTING DOCUMENTS AND FIELDS
+## Boosting documents and fields
 ### Boosting documents
 By changing a document’s boost factor, you can instruct Lucene to consider it more or less important with respect to other documents in the index when computing relevance.
 
@@ -496,7 +496,7 @@ subjectField.setBoost(1.2F);
 ### Norms
 During searching, norms for any field being searched are loaded into memory, decoded back into a floating-point number, and used when computing the relevance score.
 
-## INDEXING NUMBERS, DATES, AND TIMES
+## Indexing numbers dates and times
 ### Indexing numbers
 ```java
 doc.add(new NumericField("price").setDoubleValue(19.99));
@@ -513,17 +513,17 @@ cal.setTime(date);
 doc.add(new NumericField("dayOfMonth").setIntValue(cal.get(Calendar.DAY_OF_MONTH)));
 ```
 
-## FIELD TRUNCATION
+## Field truncation
 `IndexWriter` allows you to truncate per-Field indexing so that only the first N terms are indexed for an analyzed field. When you instantiate IndexWriter, you must pass in a `MaxFieldLength` instance expressing this limit. MaxFieldLength provides two convenient default instances: `MaxFieldLength.UNLIMITED`, which means no truncation will take place, and `MaxFieldLength.LIMITED`, which means fields are truncated at 10,000 terms. You can also instantiate MaxFieldLength with your own limit.
 
-## NEAR-REAL-TIME SEARCH
+## Near real time search
 ```java
 IndexReader getReader()
 ```
 
 This method immediately flushes any buffered added or deleted documents, and then creates a new read-only IndexReader that includes those documents.
 
-## OPTIMIZING AN INDEX
+## Optimizing an index
 Optimizing only improves searching speed, not indexing speed.
 
 IndexWriter exposes four methods to optimize:
@@ -533,7 +533,7 @@ IndexWriter exposes four methods to optimize:
 - optimize(boolean doWait) is just like optimize, except if doWait is false then the call returns immediately while the necessary merges take place in the background. Note that doWait=false only works for a merge scheduler that runs merges in background threads, such as the default ConcurrentMergeScheduler.
 - optimize(int maxNumSegments, boolean doWait) is a partial optimize that runs in the background if doWait is false.
 
-## OTHER DIRECTORY IMPLEMENTATIONS
+## Other directory implementations
 Table 2.2. Lucene’s several core Directory implementations
 
 | Directory | Description |
@@ -544,7 +544,7 @@ Table 2.2. Lucene’s several core Directory implementations
 | RAMDirectory | A Directory that stores all files in RAM.|
 | FileSwitchDirectory	| A Directory that takes two directories in, and switches between these directories based on file extension.|
 
-## CONCURRENCY, THREAD SAFETY, AND LOCKING ISSUES
+## Concurrency thread safety and locking issues
 ### Thread and multi-JVM safety
 Figure 2.3. A single IndexWriter can be shared by multiple threads.
 
@@ -632,7 +632,7 @@ Table 3.1. Lucene’s primary searching API
 | TopDocs | Holds the top scoring documents, returned by IndexSearcher.search.|
 | ScoreDoc | Provides access to each search result in TopDocs.|
 
-## IMPLEMENTING A SIMPLE SEARCH FEATURE
+## Implementing a simple search feature
 ### Searching for a specific term
 Listing 3.1. Simple searching with TermQuery
 
@@ -666,7 +666,7 @@ Table 3.2. Expression examples that QueryParser handles
 | java~ | Contain terms that are close to the word java, such as lava|
 | lastmodified: [1/1/09 TO 12/31/09] | Have lastmodified field values between the dates January 1, 2009 and December 31, 2009|
 
-## USING INDEXSEARCHER
+## Using indexsearcher
 ### Creating an IndexSearcher
 Figure 3.2. The relationship between the common classes used for searching
 
@@ -704,7 +704,7 @@ Listing 3.3. Near-real-time search
 ![l3.3](https://www.safaribooksonline.com/library/view/lucene-in-action/9781933988177/ch03ex03-0.jpg)
 ![l3.3-1](https://www.safaribooksonline.com/library/view/lucene-in-action/9781933988177/ch03ex03-1.jpg)
 
-## UNDERSTANDING LUCENE SCORING
+## Understanding lucene scoring
 ### How Lucene scores
 Figure 3.3. Lucene uses this formula to determine a document score based on a query.
 
@@ -728,7 +728,7 @@ Listing 3.4. The explain() method
 
 ![l3.4-1](https://www.safaribooksonline.com/library/view/lucene-in-action/9781933988177/089fig01.jpg)
 
-## LUCENE’S DIVERSE QUERIES
+## Lucene's diverse queries
 ### Searching by term: TermQuery
 ```java
 public void testKeyword() throws Exception {
@@ -866,7 +866,7 @@ public void testFuzzy() throws Exception {
 Query query = new MatchAllDocsQuery(field);
 ```
 
-## PARSING QUERY EXPRESSIONS: QUERYPARSER
+## Parsing query expressions queryparser
 ### Query.toString
 ```java
 public void testToString() throws Exception {
@@ -1018,7 +1018,7 @@ Figure 3.7. A Query can have an arbitrary nested structure, easily expressed wit
 A caret (^) followed by a floating-point number sets the boost factor for the preceding query. For example, the query expression junit^2.0 testing sets the junit TermQuery to a boost of 2.0 and leaves the testing TermQuery at the default boost of 1.0. 
 
 # Lucene’s analysis process
-## USING ANALYZERS
+## Using analyzers
 ```
 Analyzing "The quick brown fox jumped over the lazy dog"
   WhitespaceAnalyzer:
@@ -1070,7 +1070,7 @@ Query query = parser.parse(expression);
 - Analyzers are used to analyze a specific field at a time and break things into tokens only within that field.
 - Analyzers don’t help in field separation because their scope is to deal with a single field at a time. Instead, parsing these documents prior to analysis is required.
 
-## WHAT’S INSIDE AN ANALYZER?
+## What's inside an analyzer
 ```java
 public final class SimpleAnalyzer extends Analyzer {
   @Override
@@ -1179,7 +1179,7 @@ Analyzing the phrase “I’ll email you at xyz@example.com” with `StandardAna
 5: [xyz@example.com:18->33:<EMAIL>]
 ```
 
-## USING THE BUILT-IN ANALYZERS
+## Using the built-in analyzers
 Table 4.3. Primary analyzers available in Lucene
 
 | Analyzer | Steps taken |
@@ -1190,7 +1190,7 @@ Table 4.3. Primary analyzers available in Lucene
 | KeywordAnalyzer | Treats entire text as a single token.|
 | StandardAnalyzer | Tokenizes based on a sophisticated grammar that recognizes email addresses, acronyms, Chinese-Japanese-Korean characters, alphanumerics, and more. It also lowercases and removes stop words.|
 
-## SOUNDS-LIKE QUERYING
+## Sounds-like querying
 We chose the `Metaphone` algorithm as an example, but other algorithms are available, such as `Soundex`.
 
 Listing 4.4. Searching for words that sound like one another
@@ -1234,7 +1234,7 @@ We get a sample of the metaphone encoder, shown here:
 [0] [KK] [BRN] [FKS] [JMPT] [OFR] [0] [LS] [TKS]
 ```
 
-## SYNONYMS, ALIASES, AND WORDS THAT MEAN THE SAME
+## Synonyms,aliases and words that mean the same
 Listing 4.6. Testing the synonym analyzer
 
 ![l4.6](https://www.safaribooksonline.com/library/view/lucene-in-action/9781933988177/131fig01_alt.jpg)
@@ -1366,7 +1366,7 @@ And we can now visualize the synonyms placed in the same positions as the origin
 9: [dog] [pooch] [canine]
 ```
 
-## STEMMING ANALYSIS
+## Stemming analysis
 ### StopFilter leaves holes
 This is illustrated from the output of AnalyzerUtils.displayTokensWithPositions:
 
@@ -1404,23 +1404,3 @@ public class PositionalPorterStopAnalyzer extends Analyzer {
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
