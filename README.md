@@ -414,5 +414,6 @@
    3. [搜索引擎-信息检索实践](ml/SearchEngines.md)
 2. 自然语言处理
    1. [结巴分词](ml/jieba.md)
+   2. [Python自然语言处理](ml/pythonNLP.md)
 3. 深度学习
    1. [Fundamentals of Deep Learning](ml/FundamentalsOfDeepLearning.md)
