@@ -31,6 +31,10 @@
   - [文本语料库的结构](#%e6%96%87%e6%9c%ac%e8%af%ad%e6%96%99%e5%ba%93%e7%9a%84%e7%bb%93%e6%9e%84)
   - [载入你自己的语料库](#%e8%bd%bd%e5%85%a5%e4%bd%a0%e8%87%aa%e5%b7%b1%e7%9a%84%e8%af%ad%e6%96%99%e5%ba%93)
 - [条件频率分布](#%e6%9d%a1%e4%bb%b6%e9%a2%91%e7%8e%87%e5%88%86%e5%b8%83)
+  - [条件与事件](#%e6%9d%a1%e4%bb%b6%e4%b8%8e%e4%ba%8b%e4%bb%b6)
+  - [按文体计数词汇](#%e6%8c%89%e6%96%87%e4%bd%93%e8%ae%a1%e6%95%b0%e8%af%8d%e6%b1%87)
+  - [绘制分布图和分布表](#%e7%bb%98%e5%88%b6%e5%88%86%e5%b8%83%e5%9b%be%e5%92%8c%e5%88%86%e5%b8%83%e8%a1%a8)
+  - [使用Bigrams生成随机文本](#%e4%bd%bf%e7%94%a8bigrams%e7%94%9f%e6%88%90%e9%9a%8f%e6%9c%ba%e6%96%87%e6%9c%ac)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -1068,41 +1072,132 @@ ptb.sents(fileids='20/wsj_2013.mrg')[19]
 # 条件频率分布
 conditional frequency distribution 是频率分布的集合，每个频率分布有一个不同的“条件”。这个条件通常是文本的类别。
 
+![](pythonNLP7.png)
 
+Figure 2-4. Counting words appearing in a text collection (a conditional frequency distribution).
 
+## 条件与事件
+条件频率分布需要给每个事件关联一个条件。每对的形式是：（条件，事件）。如果我们按文体处理整个布朗语料库，将有15个条件（一个文体一个条件）和1161192个事件（一个词一个事件）。
 
+## 按文体计数词汇
+只看两个文体：新闻和言情。对于每个文体，遍历文体中的每个词以产生与词的配对。
 
+```py
+%matplotlib inline
+from nltk.corpus import brown
 
+genre_word = [(genre, word)
+              for genre in ['news', 'romance']
+              for word in brown.words(categories=genre)]
+len(genre_word)
+170576
 
+import nltk
 
+cfd = nltk.ConditionalFreqDist(genre_word)
+len(cfd)
+2
 
+cfd.conditions()
+['romance', 'news']
+```
 
+访问这两个条件，它们每一个都只有一个频率分布。
 
+```py
+list(cfd['romance'])[:10]
+[u'raining',
+ u'belligerence',
+ u'yellow',
+ u'factory',
+ u'four',
+ u'Does',
+ u'railing',
+ u'ringlets',
+ u'self-pity',
+ u'attracted']
 
+cfd['romance']['could']
+193
+```
 
+## 绘制分布图和分布表
+在plot()和tabulate()方法中，可以使用conditions=参数来指定显示哪些条件。如果忽略，所有条件都会显示出来。同样，可以使用sample=参数来限制要显示的样本。
 
+例如为两种语言和长度少于10个字符的词汇绘制累计频率数据表。
 
+```py
+from nltk.corpus import udhr
+languages = ['Chickasaw', 'English', 'German_Deutsch',
+             'Greenlandic_Inuktikut', 'Hungarian_Magyar', 'Ibibio_Efik']
+cfd = nltk.ConditionalFreqDist(
+    (lang, len(word))
+    for lang in languages
+    for word in udhr.words(lang + '-Latin1'))
+cfd.tabulate(conditions=['English', 'German_Deutsch'],
+             samples=range(10), cumulative=True)
 
+                  0    1    2    3    4    5    6    7    8    9 
+       English    0  185  525  883  997 1166 1283 1440 1558 1638 
+German_Deutsch    0  171  263  614  717  894 1013 1110 1213 1275 
+```
 
+## 使用Bigrams生成随机文本
+bigrams()函数能接受一个词汇链表，并建立起一个连续的词对链表。
 
+```py
+sent = ['In', 'the', 'beginning', 'God', 'created', 'the', 'heaven',
+        'and', 'the', 'earth', '.']
+for pair in nltk.bigrams(sent):
+    print pair
+('In', 'the')
+('the', 'beginning')
+('beginning', 'God')
+('God', 'created')
+('created', 'the')
+('the', 'heaven')
+('heaven', 'and')
+('and', 'the')
+('the', 'earth')
+('earth', '.')
+```
 
+产生随机文本：此程序获得了《创世纪》文本中所有的双连词，然后构造一个条件频率分布来记录哪些词汇最有可能会跟在给定词的后面。例如：living后面最可能的词是creature。generate_model()函数使用这些数据和种子词来产生随机文本。
 
+```py
+def generate_model(cfdist, word, num=15):
+    for i in range(num):
+        print word,
+        word = cfdist[word].max()
 
+text = nltk.corpus.genesis.words('english-kjv.txt')
+bigrams = nltk.bigrams(text)
+cfd = nltk.ConditionalFreqDist(bigrams)
+cfd['living']
+FreqDist({u',': 1,
+          u'.': 1,
+          u'creature': 7,
+          u'soul': 1,
+          u'substance': 2,
+          u'thing': 4})
 
+generate_model(cfd, 'living')
+living creature that he said , and the land of the land of the land
+```
 
+Table 2-4. NLTK’s conditional frequency distributions: Commonly used methods and idioms for defining, accessing, and visualizing a conditional frequency distribution of counters
 
-
-
-
-
-
-
-
-
-
-
-
-
+| Example | Description |
+| ------- | ----------- |
+| cfdist = ConditionalFreqDist(pairs) | Create a conditional frequency distribution from a list of pairs |
+| cfdist.conditions() | Alphabetically sorted list of conditions |
+| cfdist[condition] | The frequency distribution for this condition |
+| cfdist[condition][sample] | Frequency for the given sample for this condition |
+| cfdist.tabulate() | Tabulate the conditional frequency distribution |
+| cfdist.tabulate(samples, conditions) | Tabulation limited to the specified samples and conditions |
+| cfdist.plot() | Graphical plot of the conditional frequency distribution |
+| cfdist.plot(samples, conditions) | Graphical plot limited to the specified samples and conditions |
+| cfdist1 < cfdist2 | Test if samples in cfdist1 occur less frequently than in cfdist2 |\n"
 
 
 
