@@ -48,6 +48,18 @@
 - [处理原始文本](#%e5%a4%84%e7%90%86%e5%8e%9f%e5%a7%8b%e6%96%87%e6%9c%ac)
   - [从网络和硬盘访问文本](#%e4%bb%8e%e7%bd%91%e7%bb%9c%e5%92%8c%e7%a1%ac%e7%9b%98%e8%ae%bf%e9%97%ae%e6%96%87%e6%9c%ac)
     - [电子书](#%e7%94%b5%e5%ad%90%e4%b9%a6)
+    - [处理HTML](#%e5%a4%84%e7%90%86html)
+    - [处理RSS订阅](#%e5%a4%84%e7%90%86rss%e8%ae%a2%e9%98%85)
+    - [读取本地文件](#%e8%af%bb%e5%8f%96%e6%9c%ac%e5%9c%b0%e6%96%87%e4%bb%b6)
+    - [NLP流程](#nlp%e6%b5%81%e7%a8%8b)
+  - [使用正则表达式](#%e4%bd%bf%e7%94%a8%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f)
+    - [提取字符块](#%e6%8f%90%e5%8f%96%e5%ad%97%e7%ac%a6%e5%9d%97)
+    - [查找词干](#%e6%9f%a5%e6%89%be%e8%af%8d%e5%b9%b2)
+    - [搜索已分词文本](#%e6%90%9c%e7%b4%a2%e5%b7%b2%e5%88%86%e8%af%8d%e6%96%87%e6%9c%ac)
+  - [规范化(Normalizing)文本](#%e8%a7%84%e8%8c%83%e5%8c%96normalizing%e6%96%87%e6%9c%ac)
+    - [词干提取器(Stemmers)](#%e8%af%8d%e5%b9%b2%e6%8f%90%e5%8f%96%e5%99%a8stemmers)
+    - [词形归并(Lemmatization)](#%e8%af%8d%e5%bd%a2%e5%bd%92%e5%b9%b6lemmatization)
+    - [分割(Segmentation)](#%e5%88%86%e5%89%b2segmentation)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -2099,143 +2111,915 @@ right.path_similarity(novel)
 # 处理原始文本
 ## 从网络和硬盘访问文本
 ### 电子书
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+在http://www.gutenberg.org/catalog/ 上浏览25000本免费在线书籍的目录，获得ASCII码文本文件的URL。
+
+编号2554的文本是《罪与罚》的英文翻译，按照如下方式访问。
+
+```py
+from urllib import urlopen
+url = "http://www.gutenberg.org/files/2554/2554-0.txt"
+raw = urlopen(url).read().decode('utf-8')
+type(raw)
+unicode
+
+len(raw)
+1176965
+
+raw[:75]
+u'\ufeffThe Project Gutenberg EBook of Crime and Punishment, by Fyodor Dostoevsky\r'
+```
+
+`分词(tokenization)`：用于产生词汇和标点符号的链表。
+
+```py
+import nltk
+
+tokens = nltk.word_tokenize(raw)
+type(tokens)
+list
+
+len(tokens)
+244759
+
+tokens[:10]
+[u'\ufeffThe',
+ u'Project',
+ u'Gutenberg',
+ u'EBook',
+ u'of',
+ u'Crime',
+ u'and',
+ u'Punishment',
+ u',',
+ u'by']
+```
+
+slicing和collocation。
+
+```py
+text = nltk.Text(tokens)
+type(text)
+nltk.text.Text
+
+text[1020:1060]
+[u'in',
+ u'S.',
+ u'Place',
+ u'and',
+ u'walked',
+ u'slowly',
+ u',',
+ u'as',
+ u'though',
+ u'in',
+ u'hesitation',
+ u',',
+ u'towards',
+ u'K.',
+ u'bridge',
+ u'.',
+ u'He',
+ u'had',
+ u'successfully',
+ u'avoided',
+ u'meeting',
+ u'his',
+ u'landlady',
+ u'on',
+ u'the',
+ u'staircase',
+ u'.',
+ u'His',
+ u'garret',
+ u'was',
+ u'under',
+ u'the',
+ u'roof',
+ u'of',
+ u'a',
+ u'high',
+ u',',
+ u'five-storied',
+ u'house',
+ u'and']
+
+text.collocations()
+Katerina Ivanovna; Pyotr Petrovitch; Pulcheria Alexandrovna; Avdotya
+Romanovna; Rodion Romanovitch; Marfa Petrovna; Sofya Semyonovna;
+Project Gutenberg-tm; old woman; Porfiry Petrovitch; great deal;
+Amalia Ivanovna; don’t know; Nikodim Fomitch; young man; Andrey
+Semyonovitch; Hay Market; Dmitri Prokofitch; Ilya Petrovitch; Katerina
+Ivanovna’s
+```
+
+### 处理HTML
+NLTK提供辅助函数nltk.clean_html()将HTML字符串作为参数，返回原始文本。然后可以对原始文本进行分词。
+
+```py
+url = "http://news.bbc.co.uk/2/hi/health/2284783.stm"
+html = urlopen(url).read()
+html[:60]
+'<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN'
+
+from bs4 import BeautifulSoup
+
+raw = BeautifulSoup(html, "lxml")
+tokens = nltk.word_tokenize(raw.get_text())
+tokens[:30]
+[u'BBC',
+ u'NEWS',
+ u'|',
+ u'Health',
+ u'|',
+ u'Blondes',
+ u"'to",
+ u'die',
+ u'out',
+ u'in',
+ u'200',
+ u"years'",
+ u'NEWS',
+ u'SPORT',
+ u'WEATHER',
+ u'WORLD',
+ u'SERVICE',
+ u'A-Z',
+ u'INDEX',
+ u'SEARCH',
+ u'You',
+ u'are',
+ u'in',
+ u':',
+ u'Health',
+ u'News',
+ u'Front',
+ u'Page',
+ u'Africa',
+ u'Americas']
+
+tokens = tokens[96:399]
+text = nltk.Text(tokens)
+text.concordance('gene')
+Displaying 5 of 5 matches:
+hey say too few people now carry the gene for blondes to last beyond the next 
+blonde hair is caused by a recessive gene . In order for a child to have blond
+ have blonde hair , it must have the gene on both sides of the family in the g
+ere is a disadvantage of having that gene or by chance . They do n't disappear
+des would disappear is if having the gene was a disadvantage and I do not thin
+```
+
+### 处理RSS订阅
+```py
+# pip install feedparser
+import feedparser
+llog = feedparser.parse("http://languagelog.ldc.upenn.edu/nll/?feed=atom")
+llog['feed']['title']
+u'Language Log'
+
+len(llog.entries)
+13
+
+post = llog.entries[2]
+post.title
+u'Is there a practical limit to how much can fit in Unicode?'
+
+content = post.content[0].value
+content[:70]
+u'<p>A lengthy, important article by Michael Erard recently appeared in '
+
+nltk.word_tokenize(BeautifulSoup(content, "lxml").get_text())[:30]
+[u'A',
+ u'lengthy',
+ u',',
+ u'important',
+ u'article',
+ u'by',
+ u'Michael',
+ u'Erard',
+ u'recently',
+ u'appeared',
+ u'in',
+ u'the',
+ u'New',
+ u'York',
+ u'Times',
+ u'Magazine',
+ u':',
+ u"''",
+ u'How',
+ u'the',
+ u'Appetite',
+ u'for',
+ u'Emojis',
+ u'Complicates',
+ u'the',
+ u'Effort',
+ u'to',
+ u'Standardize',
+ u'the',
+ u'World\u2019s']
+
+nltk.word_tokenize(BeautifulSoup(llog.entries[2].content[0].value, "lxml").get_text())[:30]
+[u'A',
+ u'lengthy',
+ u',',
+ u'important',
+ u'article',
+ u'by',
+ u'Michael',
+ u'Erard',
+ u'recently',
+ u'appeared',
+ u'in',
+ u'the',
+ u'New',
+ u'York',
+ u'Times',
+ u'Magazine',
+ u':',
+ u"''",
+ u'How',
+ u'the',
+ u'Appetite',
+ u'for',
+ u'Emojis',
+ u'Complicates',
+ u'the',
+ u'Effort',
+ u'to',
+ u'Standardize',
+ u'the',
+ u'World\u2019s']
+```
+
+### 读取本地文件
+```py
+f = open('document.txt')
+raw = f.read()
+```
+
+使用for循环一次读文件中的一行。
+
+```py
+f = open('document.txt', 'rU')
+for line in f:
+  print line.strip()
+Time flies like an arrow.
+Fruit flies like a banana.
+```
+
+### NLP流程
+![](pythonNLP12.png)
+
+Figure 3-1. The processing pipeline: We open a URL and read its HTML content, remove the markup and select a slice of characters; this is then tokenized and optionally converted into an nltk.Text object; we can also lowercase all the words and extract the vocabulary.
+
+## 使用正则表达式
+“+”和“*”符号有时被称为Kleene closures，或者closures。
+
+Table 3-3. Basic regular expression metacharacters, including wildcards, ranges, and closures
+
+| Operator | Behavior |
+| -------- | -------- |
+| . | Wildcard, matches any character |
+| ^abc | Matches some pattern abc at the start of a string |
+| abc$ | Matches some pattern abc at the end of a string |
+| [abc] | Matches one of a set of characters |
+| [A-Z0-9] | Matches one of a range of characters |
+| `ed\\|ing\\|s` | Matches one of the specified strings (disjunction) |
+| * | Zero or more of previous item, e.g., a*, [a-z]* (also known as `Kleene Closure`) |
+| + | One or more of previous item, e.g., a+, [a-z]+ |
+| ? | Zero or one of the previous item (i.e., optional), e.g., a?, [a-z]? |
+| {n} | Exactly n repeats where n is a non-negative integer |
+| {n,} | At least n repeats |
+| {,n} | No more than n repeats |
+| {m,n} | At least m and no more than n repeats |
+| `a(b\\|c)+` | Parentheses that indicate the scope of the operators |
+
+### 提取字符块
+通过re。findall()方法找出所有（无重叠的）匹配的指定正则表达式。找出一个词中的所有元音并计数。
+
+```py
+import re
+
+word = 'supercalifragilisticexpialidocious'
+re.findall(r'[aeiou]', word)
+['u',
+ 'e',
+ 'a',
+ 'i',
+ 'a',
+ 'i',
+ 'i',
+ 'i',
+ 'e',
+ 'i',
+ 'a',
+ 'i',
+ 'o',
+ 'i',
+ 'o',
+ 'u']
+
+len(re.findall(r'[aeiou]', word))
+16
+```
+
+找出文本中两个或两个以上的元音序列，并确定它们的相对频率。
+
+```py
+wsj = sorted(set(nltk.corpus.treebank.words()))
+fd = nltk.FreqDist(vs for word in wsj
+                   for vs in re.findall(r'[aeiou]{2,}', word)
+fd.items()
+[(u'aa', 3),
+ (u'eo', 39),
+ (u'ei', 86),
+ (u'ee', 217),
+ (u'ea', 476),
+ (u'oui', 6),
+ (u'ao', 6),
+ (u'eu', 18),
+ (u'au', 106),
+ (u'io', 549),
+ (u'ia', 253),
+ (u'ae', 11),
+ (u'ie', 331),
+ (u'iao', 1),
+ (u'iai', 1),
+ (u'uou', 5),
+ (u'ieu', 3),
+ (u'ai', 261),
+ (u'aii', 1),
+ (u'uee', 4),
+ (u'aiia', 1),
+ (u'eea', 1),
+ (u'ueui', 1),
+ (u'uie', 3),
+ (u'iu', 14),
+ (u'iou', 27),
+ (u'ooi', 1),
+ (u'eei', 2),
+ (u'oei', 1),
+ (u'eau', 10),
+ (u'ioa', 1),
+ (u'oo', 174),
+ (u'oi', 65),
+ (u'uu', 1),
+ (u'aia', 1),
+ (u'oe', 15),
+ (u'oa', 59),
+ (u'uo', 8),
+ (u'ui', 95),
+ (u'eou', 5),
+ (u'ue', 105),
+ (u'ou', 329),
+ (u'ua', 109)]
+```
+
+匹配词首元音序列，词尾元音序列和所有的辅音；其他的被忽略。
+
+```py
+regexp = r'^[AEIOUaeiou]+|[AEIOUaeiou]+$|[^AEIOUaeiou]'
+def compress(word):
+    pieces = re.findall(regexp, word)
+    return ''.join(pieces)
+
+english_udhr = nltk.corpus.udhr.words('English-Latin1')
+print nltk.tokenwrap(compress(w) for w in english_udhr[:75])
+Unvrsl Dclrtn of Hmn Rghts Prmble Whrs rcgntn of the inhrnt dgnty and
+of the eql and inlnble rghts of all mmbrs of the hmn fmly is the fndtn
+of frdm , jstce and pce in the wrld , Whrs dsrgrd and cntmpt fr hmn
+rghts hve rsltd in brbrs acts whch hve outrgd the cnscnce of mnknd ,
+and the advnt of a wrld in whch hmn bngs shll enjy frdm of spch and
+```
+
+从罗托卡特语词汇中提取所有辅音-元音序列，如ka和si。因为每部分都是成对的，它可以用来初始化条件频率分布。
+
+```py
+rotokas_words = nltk.corpus.toolbox.words('rotokas.dic')
+cvs = [cv for w in rotokas_words for cv in re.findall(r'[ptksvr][aeiou]', w)]
+cfd = nltk.ConditionalFreqDist(cvs)
+cfd.tabulate()
+    a   e   i   o   u 
+k 418 148  94 420 173 
+p  83  31 105  34  51 
+r 187  63  84  89  79 
+s   0   0 100   2   1 
+t  47   8   0 148  37 
+v  93  27 105  48  49
+```
+
+考查s和t行，发现它们是部分“互补分布”的，这个证据表明它们不是这种语言中的不同因素。
+
+找到包含给定辅音-元音对应的单词列表。例如：cv_index['su']的词汇。
+
+```py
+cv_word_pairs = [(cv, w) for w in rotokas_words
+                 for cv in re.findall(r'[ptksvr][aeiou]', w)]
+cv_index = nltk.Index(cv_word_pairs)
+cv_index['su']
+[u'kasuari']
+
+cv_index['po']
+[u'kaapo',
+ u'kaapopato',
+ u'kaipori',
+ u'kaiporipie',
+ u'kaiporivira',
+ u'kapo',
+ u'kapoa',
+ u'kapokao',
+ u'kapokapo',
+ u'kapokapo',
+ u'kapokapoa',
+ u'kapokapoa',
+ u'kapokapora',
+ u'kapokapora',
+ u'kapokaporo',
+ u'kapokaporo',
+ u'kapokari',
+ u'kapokarito',
+ u'kapokoa',
+ u'kapoo',
+ u'kapooto',
+ u'kapoovira',
+ u'kapopaa',
+ u'kaporo',
+ u'kaporo',
+ u'kaporopa',
+ u'kaporoto',
+ u'kapoto',
+ u'karokaropo',
+ u'karopo',
+ u'kepo',
+ u'kepoi',
+ u'keposi',
+ u'kepoto']
+```
+
+### 查找词干
+定义一个函数来获取词干(`stems`)。
+
+```py
+def stem(word):
+    regexp = r'^(.*?)(ing|ly|ed|ious|ies|ive|es|s|ment)?$'
+    stem, suffix = re.findall(regexp, word)[0]
+    return stem
+
+raw = """DENNIS: Listen, strange women lying in ponds distributing swords
+... is no basis for a system of government.  Supreme executive power derives from
+... a mandate from the masses, not from some farcical aquatic ceremony."""
+
+tokens = nltk.word_tokenize(raw)
+[stem(t) for t in tokens]
+['DENNIS',
+ ':',
+ 'Listen',
+ ',',
+ 'strange',
+ 'women',
+ 'ly',
+ 'in',
+ 'pond',
+ 'distribut',
+ 'sword',
+ '...',
+ 'i',
+ 'no',
+ 'basi',
+ 'for',
+ 'a',
+ 'system',
+ 'of',
+ 'govern',
+ '.',
+ 'Supreme',
+ 'execut',
+ 'power',
+ 'deriv',
+ 'from',
+ '...',
+ 'a',
+ 'mandate',
+ 'from',
+ 'the',
+ 'mass',
+ ',',
+ 'not',
+ 'from',
+ 'some',
+ 'farcical',
+ 'aquatic',
+ 'ceremony',
+ '.']
+```
+
+### 搜索已分词文本
+可以使用一种特殊的正则表达式搜索一个文本中多个词（这里的文本是一个tokens列表）。例如：`“<a> <man>”`找出文本中所有“a man”的实例。尖括号用于标记tokens的边界，尖括号之间的空格可以忽略（这只对NLTK中的findall()方法处理文本有效）。
+
+```py
+from nltk.corpus import gutenberg, nps_chat
+
+moby = nltk.Text(gutenberg.words('melville-moby_dick.txt'))
+moby.findall(r"<a> (<.*>) <man>")
+monied; nervous; dangerous; white; white; white; pious; queer; good;
+mature; white; Cape; great; wise; wise; butterless; white; fiendish;
+pale; furious; better; certain; complete; dismasted; younger; brave;
+brave; brave; brave
+
+chat = nltk.Text(nps_chat.words())
+chat.findall(r"<.*> <.*> <bro>")
+you rule bro; telling you bro; u twizted bro
+
+chat.findall(r"<l.*>{3,}")
+lol lol lol; lmao lol lol; lol lol lol; la la la la la; la la la; la
+la la; lovely lol lol love; lol lol lol.; la la la; la la la
+```
+
+在大型文本语料库中搜索“x and other ys”形式的表达式时发现hypernyms：
+
+```py
+from nltk.corpus import brown
+hobbies_learned = nltk.Text(brown.words(categories=['hobbies', 'learned']))
+hobbies_learned.findall(r"<\w*> <and> <other> <\w*s>")
+speed and other activities; water and other liquids; tomb and other
+landmarks; Statues and other monuments; pearls and other jewels;
+charts and other items; roads and other features; figures and other
+objects; military and other areas; demands and other factors;
+abstracts and other compilations; iron and other metals
+```
+
+## 规范化(Normalizing)文本
+```py
+raw = """DENNIS: Listen, strange women lying in ponds distributing swords
+... is no basis for a system of government.  Supreme executive power derives from
+... a mandate from the masses, not from some farcical aquatic ceremony."""
+tokens = nltk.word_tokenize(raw)
+tokens
+['DENNIS',
+ ':',
+ 'Listen',
+ ',',
+ 'strange',
+ 'women',
+ 'lying',
+ 'in',
+ 'ponds',
+ 'distributing',
+ 'swords',
+ 'is',
+ 'no',
+ 'basis',
+ 'for',
+ 'a',
+ 'system',
+ 'of',
+ 'government',
+ '.',
+ 'Supreme',
+ 'executive',
+ 'power',
+ 'derives',
+ 'from',
+ 'a',
+ 'mandate',
+ 'from',
+ 'the',
+ 'masses',
+ ',',
+ 'not',
+ 'from',
+ 'some',
+ 'farcical',
+ 'aquatic',
+ 'ceremony',
+ '.']
+```
+
+### 词干提取器(Stemmers)
+下面的例子表明Porter词干提取器正确处理了词lying（将它映射为lie），但Lancaster提取器并没有处理好。
+
+```py
+porter = nltk.PorterStemmer()
+lancaster = nltk.LancasterStemmer()
+[porter.stem(t) for t in tokens]
+[u'DENNI',
+ u':',
+ u'Listen',
+ u',',
+ u'strang',
+ u'women',
+ u'lie',
+ u'in',
+ u'pond',
+ u'distribut',
+ u'sword',
+ u'is',
+ u'no',
+ u'basi',
+ u'for',
+ u'a',
+ u'system',
+ u'of',
+ u'govern',
+ u'.',
+ u'Suprem',
+ u'execut',
+ u'power',
+ u'deriv',
+ u'from',
+ u'a',
+ u'mandat',
+ u'from',
+ u'the',
+ u'mass',
+ u',',
+ u'not',
+ u'from',
+ u'some',
+ u'farcic',
+ u'aquat',
+ u'ceremoni',
+ u'.']
+
+[lancaster.stem(t) for t in tokens]
+['den',
+ ':',
+ 'list',
+ ',',
+ 'strange',
+ 'wom',
+ 'lying',
+ 'in',
+ 'pond',
+ 'distribut',
+ 'sword',
+ 'is',
+ 'no',
+ 'bas',
+ 'for',
+ 'a',
+ 'system',
+ 'of',
+ 'govern',
+ '.',
+ 'suprem',
+ 'execut',
+ 'pow',
+ 'der',
+ 'from',
+ 'a',
+ 'mand',
+ 'from',
+ 'the',
+ 'mass',
+ ',',
+ 'not',
+ 'from',
+ 'som',
+ 'farc',
+ 'aqu',
+ 'ceremony',
+ '.']
+```
+
+使用词干提取器索引文本。
+
+```py
+class IndexedText(object):
+
+    def __init__(self, stemmer, text):
+        self._text = text
+        self._stemmer = stemmer
+        self._index = nltk.Index((self._stem(word), i)
+                                 for (i, word) in enumerate(text))
+
+    def concordance(self, word, width=40):
+        key = self._stem(word)
+        wc = width/4                # words of context
+        for i in self._index[key]:
+            lcontext = ' '.join(self._text[i-wc:i])
+            rcontext = ' '.join(self._text[i:i+wc])
+            ldisplay = '%*s'  % (width, lcontext[-width:])
+            rdisplay = '%-*s' % (width, rcontext[:width])
+            print ldisplay, rdisplay
+
+    def _stem(self, word):
+        return self._stemmer.stem(word).lower()
+
+porter = nltk.PorterStemmer()
+grail = nltk.corpus.webtext.words('grail.txt')
+text = IndexedText(porter, grail)
+text.concordance('lie')
+r king ! DENNIS : Listen , strange women lying in ponds distributing swords is no
+ beat a very brave retreat . ROBIN : All lies ! MINSTREL : [ singing ] Bravest of
+       Nay . Nay . Come . Come . You may lie here . Oh , but you are wounded !   
+doctors immediately ! No , no , please ! Lie down . [ clap clap ] PIGLET : Well  
+ere is much danger , for beyond the cave lies the Gorge of Eternal Peril , which 
+   you . Oh ... TIM : To the north there lies a cave -- the cave of Caerbannog --
+h it and lived ! Bones of full fifty men lie strewn about its lair . So , brave k
+not stop our fight ' til each one of you lies dead , and the Holy Grail returns t
+```
+
+### 词形归并(Lemmatization)
+WordNet词形归并器删除词缀产生的词，都是它的字典中的词。
+
+```py
+wnl = nltk.WordNetLemmatizer()
+[wnl.lemmatize(t) for t in tokens]
+['DENNIS',
+ ':',
+ 'Listen',
+ ',',
+ 'strange',
+ u'woman',
+ 'lying',
+ 'in',
+ u'pond',
+ 'distributing',
+ u'sword',
+ 'is',
+ 'no',
+ 'basis',
+ 'for',
+ 'a',
+ 'system',
+ 'of',
+ 'government',
+ '.',
+ 'Supreme',
+ 'executive',
+ 'power',
+ 'derives',
+ 'from',
+ 'a',
+ 'mandate',
+ 'from',
+ 'the',
+ u'mass',
+ ',',
+ 'not',
+ 'from',
+ 'some',
+ 'farcical',
+ 'aquatic',
+ 'ceremony',
+ '.']
+```
+
+### 分割(Segmentation)
+`Tokenizatio`n is an instance of a more general problem of `segmentation`.
+
+找到一种方法来分开文本内容与分词标志。可以给每个字符标注一个布尔值来指示这个字符后面是否有一个分词标志。
+
+考虑下面例子，单词的边界已被去除。
+
+```py
+text = "doyouseethekittyseethedoggydoyoulikethekittylikethedoggy"
+seg1 = "0000000000000001000000000010000000000000000100000000000"
+seg2 = "0100100100100001001001000010100100010010000100010010000"
+```
+
+从分词表示字符串seg1和seg2中重建文本分词。seg1和seg2表示假设的一些儿童讲话的初始和最终分词。函数segment()可以使用它们重现分词的文本。
+
+```py
+def segment(text, segs):
+    words = []
+    last = 0
+    for i in range(len(segs)):
+        if segs[i] == '1':
+            words.append(text[last:i+1])
+            last = i+1
+    words.append(text[last:])
+    return words
+
+segment(text, seg1)
+['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+
+segment(text, seg2)
+['do',
+ 'you',
+ 'see',
+ 'the',
+ 'kitty',
+ 'see',
+ 'the',
+ 'doggy',
+ 'do',
+ 'you',
+ 'like',
+ 'the',
+ 'kitty',
+ 'like',
+ 'the',
+ 'doggy']
+```
+
+现在分词的任务变成了一个搜索问题：找到将文本字符串正确分割成词汇的字位串。假定学习者接收词，并将它们存储在一个内部词典中。给定一个合适的词典是能够由词典中词的序列来重构源文本的。
+
+![](pythonNLP13.png)
+
+Figure 3-6. Calculation of objective function: Given a hypothetical segmentation of the source text (on the left), derive a lexicon and a derivation table that permit the source text to be reconstructed, then total up the number of characters used by each lexical item (including a boundary marker) and each derivation, to serve as a score of the quality of the segmentation; smaller values of the score indicate a better segmentation.
+
+计算存储词典和重构源文本的成本
+
+```py
+def evaluate(text, segs):
+    words = segment(text, segs)
+    text_size = len(words)
+    lexicon_size = len(' '.join(list(set(words))))
+    return text_size + lexicon_size
+
+text = "doyouseethekittyseethedoggydoyoulikethekittylikethedoggy"
+seg1 = "0000000000000001000000000010000000000000000100000000000"
+seg2 = "0100100100100001001001000010100100010010000100010010000"
+seg3 = "0000100100000011001000000110000100010000001100010000001"
+segment(text, seg3)
+['doyou',
+ 'see',
+ 'thekitt',
+ 'y',
+ 'see',
+ 'thedogg',
+ 'y',
+ 'doyou',
+ 'like',
+ 'thekitt',
+ 'y',
+ 'like',
+ 'thedogg',
+ 'y']
+
+evaluate(text, seg3)
+46
+
+evaluate(text, seg2)
+47
+
+evaluate(text, seg1)
+63
+```
+
+使用模拟退火算法
+
+```py
+from random import randint
+
+def flip(segs, pos):
+    return segs[:pos] + str(1-int(segs[pos])) + segs[pos+1:]
+
+def flip_n(segs, n):
+    for i in range(n):
+        segs = flip(segs, randint(0,len(segs)-1))
+    return segs
+
+def anneal(text, segs, iterations, cooling_rate):
+    temperature = float(len(segs))
+    while temperature > 0.5:
+        best_segs, best = segs, evaluate(text, segs)
+        for i in range(iterations):
+            guess = flip_n(segs, int(round(temperature)))
+            score = evaluate(text, guess)
+            if score < best:
+                best, best_segs = score, guess
+        score, segs = best, best_segs
+        temperature = temperature / cooling_rate
+        print evaluate(text, segs), segment(text, segs)
+    print
+    return segs
+
+text = "doyouseethekittyseethedoggydoyoulikethekittylikethedoggy"
+seg1 = "0000000000000001000000000010000000000000000100000000000"
+anneal(text, seg1, 5000, 1.2)
+63 ['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+63 ['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+63 ['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+63 ['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+63 ['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+63 ['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+63 ['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+63 ['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+63 ['doyouseethekitty', 'seethedoggy', 'doyoulikethekitty', 'likethedoggy']
+59 ['d', 'oyou', 'see', 'thekitty', 'see', 'thedoggy', 'do', 'y', 'o', 'ulike', 'thekitty', 'like', 'thedoggy']
+57 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyo', 'ul', 'i', 'ke', 'thekitty', 'like', 'thedoggy']
+56 ['do', 'you', 'see', 'thekitty', 'see', 'thedoggy', 'do', 'youl', 'i', 'ke', 'thekitty', 'like', 'thedoggy']
+55 ['do', 'you', 'see', 'thekitty', 'see', 'thedoggy', 'do', 'youl', 'i', 'ke', 'thekitty', 'l', 'i', 'ke', 'thedoggy']
+54 ['do', 'you', 'see', 'thekitty', 'see', 'thedoggy', 'do', 'you', 'like', 'thekitty', 'l', 'i', 'ke', 'thedoggy']
+52 ['do', 'yousee', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+42 ['doyou', 'see', 'thekitty', 'see', 'thedoggy', 'doyou', 'like', 'thekitty', 'like', 'thedoggy']
+
+'0000100100000001001000000010000100010000000100010000000'
+```
 
 
 
