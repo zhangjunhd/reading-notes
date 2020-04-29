@@ -91,6 +91,48 @@
     - [词性标注集中的形态学(Morphology in Part-of-Speech Tagsets)](#%e8%af%8d%e6%80%a7%e6%a0%87%e6%b3%a8%e9%9b%86%e4%b8%ad%e7%9a%84%e5%bd%a2%e6%80%81%e5%ad%a6morphology-in-part-of-speech-tagsets)
 - [分类文本性别鉴定](#%e5%88%86%e7%b1%bb%e6%96%87%e6%9c%ac%e6%80%a7%e5%88%ab%e9%89%b4%e5%ae%9a)
 - [分类文本电影评论正负面评价](#%e5%88%86%e7%b1%bb%e6%96%87%e6%9c%ac%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba%e6%ad%a3%e8%b4%9f%e9%9d%a2%e8%af%84%e4%bb%b7)
+- [分类文本词性标](#%e5%88%86%e7%b1%bb%e6%96%87%e6%9c%ac%e8%af%8d%e6%80%a7%e6%a0%87)
+  - [探索上下文语境](#%e6%8e%a2%e7%b4%a2%e4%b8%8a%e4%b8%8b%e6%96%87%e8%af%ad%e5%a2%83)
+  - [序列分类](#%e5%ba%8f%e5%88%97%e5%88%86%e7%b1%bb)
+  - [其他序列分类方法](#%e5%85%b6%e4%bb%96%e5%ba%8f%e5%88%97%e5%88%86%e7%b1%bb%e6%96%b9%e6%b3%95)
+- [分类文本句子分割](#%e5%88%86%e7%b1%bb%e6%96%87%e6%9c%ac%e5%8f%a5%e5%ad%90%e5%88%86%e5%89%b2)
+- [识别对话行为类型](#%e8%af%86%e5%88%ab%e5%af%b9%e8%af%9d%e8%a1%8c%e4%b8%ba%e7%b1%bb%e5%9e%8b)
+- [识别文字蕴含](#%e8%af%86%e5%88%ab%e6%96%87%e5%ad%97%e8%95%b4%e5%90%ab)
+- [决策树](#%e5%86%b3%e7%ad%96%e6%a0%91)
+  - [熵(Entropy)和信息增益(Information Gain)](#%e7%86%b5entropy%e5%92%8c%e4%bf%a1%e6%81%af%e5%a2%9e%e7%9b%8ainformation-gain)
+- [朴素贝叶斯分类器](#%e6%9c%b4%e7%b4%a0%e8%b4%9d%e5%8f%b6%e6%96%af%e5%88%86%e7%b1%bb%e5%99%a8)
+  - [潜在概率模型](#%e6%bd%9c%e5%9c%a8%e6%a6%82%e7%8e%87%e6%a8%a1%e5%9e%8b)
+  - [零计数和平滑](#%e9%9b%b6%e8%ae%a1%e6%95%b0%e5%92%8c%e5%b9%b3%e6%bb%91)
+  - [非二元特征](#%e9%9d%9e%e4%ba%8c%e5%85%83%e7%89%b9%e5%be%81)
+  - [双重计数的原因](#%e5%8f%8c%e9%87%8d%e8%ae%a1%e6%95%b0%e7%9a%84%e5%8e%9f%e5%9b%a0)
+- [最大熵分类器](#%e6%9c%80%e5%a4%a7%e7%86%b5%e5%88%86%e7%b1%bb%e5%99%a8)
+  - [最大熵模型](#%e6%9c%80%e5%a4%a7%e7%86%b5%e6%a8%a1%e5%9e%8b)
+  - [熵的最大化](#%e7%86%b5%e7%9a%84%e6%9c%80%e5%a4%a7%e5%8c%96)
+- [从文本提取信息](#%e4%bb%8e%e6%96%87%e6%9c%ac%e6%8f%90%e5%8f%96%e4%bf%a1%e6%81%af)
+  - [信息提取](#%e4%bf%a1%e6%81%af%e6%8f%90%e5%8f%96)
+    - [信息提取结构](#%e4%bf%a1%e6%81%af%e6%8f%90%e5%8f%96%e7%bb%93%e6%9e%84)
+  - [分块(Chunking)](#%e5%88%86%e5%9d%97chunking)
+    - [名词短语分块](#%e5%90%8d%e8%af%8d%e7%9f%ad%e8%af%ad%e5%88%86%e5%9d%97)
+    - [用正则表达式分块](#%e7%94%a8%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e5%88%86%e5%9d%97)
+    - [探索文本语料库](#%e6%8e%a2%e7%b4%a2%e6%96%87%e6%9c%ac%e8%af%ad%e6%96%99%e5%ba%93)
+    - [缝隙(Chinking)](#%e7%bc%9d%e9%9a%99chinking)
+    - [分块的表示：标记与树状图](#%e5%88%86%e5%9d%97%e7%9a%84%e8%a1%a8%e7%a4%ba%e6%a0%87%e8%ae%b0%e4%b8%8e%e6%a0%91%e7%8a%b6%e5%9b%be)
+  - [开发和评估分块器](#%e5%bc%80%e5%8f%91%e5%92%8c%e8%af%84%e4%bc%b0%e5%88%86%e5%9d%97%e5%99%a8)
+    - [读取IOB格式与CoNLL2000分块语料库](#%e8%af%bb%e5%8f%96iob%e6%a0%bc%e5%bc%8f%e4%b8%8econll2000%e5%88%86%e5%9d%97%e8%af%ad%e6%96%99%e5%ba%93)
+    - [简单评估和基准](#%e7%ae%80%e5%8d%95%e8%af%84%e4%bc%b0%e5%92%8c%e5%9f%ba%e5%87%86)
+    - [训练基于分类器的分块器](#%e8%ae%ad%e7%bb%83%e5%9f%ba%e4%ba%8e%e5%88%86%e7%b1%bb%e5%99%a8%e7%9a%84%e5%88%86%e5%9d%97%e5%99%a8)
+  - [语言结构中的递归](#%e8%af%ad%e8%a8%80%e7%bb%93%e6%9e%84%e4%b8%ad%e7%9a%84%e9%80%92%e5%bd%92)
+    - [用级联分块器构建嵌套结构](#%e7%94%a8%e7%ba%a7%e8%81%94%e5%88%86%e5%9d%97%e5%99%a8%e6%9e%84%e5%bb%ba%e5%b5%8c%e5%a5%97%e7%bb%93%e6%9e%84)
+    - [树状图](#%e6%a0%91%e7%8a%b6%e5%9b%be)
+  - [命名实体识别(Named Entity Recognition)](#%e5%91%bd%e5%90%8d%e5%ae%9e%e4%bd%93%e8%af%86%e5%88%abnamed-entity-recognition)
+  - [关系抽取(Relation Extraction)](#%e5%85%b3%e7%b3%bb%e6%8a%bd%e5%8f%96relation-extraction)
+- [分析句子结构](#%e5%88%86%e6%9e%90%e5%8f%a5%e5%ad%90%e7%bb%93%e6%9e%84)
+  - [文法(Syntax)的用途](#%e6%96%87%e6%b3%95syntax%e7%9a%84%e7%94%a8%e9%80%94)
+  - [上下文无关文法](#%e4%b8%8a%e4%b8%8b%e6%96%87%e6%97%a0%e5%85%b3%e6%96%87%e6%b3%95)
+  - [上下文无关文法分析(Parsing with Context-Free Grammar)](#%e4%b8%8a%e4%b8%8b%e6%96%87%e6%97%a0%e5%85%b3%e6%96%87%e6%b3%95%e5%88%86%e6%9e%90parsing-with-context-free-grammar)
+    - [递归下降解析器(Recursive Descent Parsing)](#%e9%80%92%e5%bd%92%e4%b8%8b%e9%99%8d%e8%a7%a3%e6%9e%90%e5%99%a8recursive-descent-parsing)
+    - [移进-规约分析(Shift-Reduce Parsing)](#%e7%a7%bb%e8%bf%9b-%e8%a7%84%e7%ba%a6%e5%88%86%e6%9e%90shift-reduce-parsing)
+    - [依存关系(Dependencies)和依存文法(Dependency Grammar)](#%e4%be%9d%e5%ad%98%e5%85%b3%e7%b3%bbdependencies%e5%92%8c%e4%be%9d%e5%ad%98%e6%96%87%e6%b3%95dependency-grammar)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -3973,7 +4015,7 @@ tagger = load(input)
 input.close()
 
 text = """The board's action shows what free enterprise
-...     is up against in our complex maze of regulatory laws ."""
+ is up against in our complex maze of regulatory laws ."""
 tokens = text.split()
 tagger.tag(tokens)
 [('The', 'AT'), ("board's", 'NN$'), ('action', 'NN'), ('shows', 'NNS'),
@@ -4484,5 +4526,1210 @@ Most Informative Features
 
 提到ugh的评论中负面大约是正面的9倍，提到wires的评论中正面是负面6倍。
 
+# 分类文本词性标
+词性标注(Part-of-Speech Tagging):训练一个分类器来算出哪个后缀最有信息量。首先，让我们找出最常见的后缀。
 
+```py
+import nltk
+from nltk.corpus import brown
 
+suffix_fdist = nltk.FreqDist()
+for word in brown.words():
+    word = word.lower()
+    suffix_fdist[word[-1:]] += 1
+    suffix_fdist[word[-2:]] += 1
+    suffix_fdist[word[-3:]] += 1
+
+common_suffixes = suffix_fdist.keys()[:100]
+common_suffixes
+[u'vre',
+ u'g/l',
+ u'mny',
+ u'.32',
+ u"k's",
+ u'cwt',
+ u'cth',
+ u'*yt',
+ u'ajk',
+ u'pce',
+ u"y'n",
+ u'sch',
+ u'.e.',
+ u'cm.',
+ u'xts',
+ u'aud',
+ u'rek',
+ u'aui',
+ u'/3%',
+ u'oeb',
+ u'pth',
+ u'aum',
+ u'aul',
+ u'xty',
+ u'aun',
+ u'sce',
+ u'aus',
+ u'aur',
+ u'aut',
+ u'343',
+ u'-ho',
+ u'aux',
+ u'$40',
+ u'348',
+ u'yms',
+ u'$45',
+ u'xth',
+ u'mns',
+ u'sca',
+ u'hce',
+ u'.k.',
+ u'*yr',
+ u'606',
+ u'fur',
+ u'nw.',
+ u'ala',
+ u'lbs',
+ u'aix',
+ u'upi',
+ u'29%',
+ u'fha',
+ u'upa',
+ u'nmr',
+ u'298',
+ u'upy',
+ u'297',
+ u'upt',
+ u'ups',
+ u'290',
+ u'bl',
+ u'27%',
+ u'*yp',
+ u'ab/',
+ u'270',
+ u'271',
+ u'ucy',
+ u'273',
+ u'274',
+ u'275',
+ u'276',
+ u'3a',
+ u'7th',
+ u'air',
+ u'ptu',
+ u'nen',
+ u'ghn',
+ u'nel',
+ u'zur',
+ u'nek',
+ u'oze',
+ u'nei',
+ u'ned',
+ u'nee',
+ u'kus',
+ u'nec',
+ u'kup',
+ u'jac',
+ u'ain',
+ u'nez',
+ u'ak.',
+ u'nex',
+ u'ney',
+ u'new',
+ u'net',
+ u'neu',
+ u'ner',
+ u'nes',
+ u'mee',
+ u'med',
+ u'meg']
+```
+
+定义一个特征提取函数，检查给定单词的后缀。
+
+```py
+def pos_features(word):
+    features = {}
+    for suffix in common_suffixes:
+        features['endswith(%s)' % suffix] = word.lower().endswith(suffix)
+    return features
+```
+
+定义特征提取器，用它来训练新的“[决策树](https://www.safaribooksonline.com/library/view/natural-language-processing/9780596803346/ch06s04.html)”的分类器。
+
+```py
+tagged_words = brown.tagged_words(categories='news')
+featuresets = [(pos_features(n), g) for (n,g) in tagged_words]
+size = int(len(featuresets) * 0.1)
+train_set, test_set = featuresets[size:], featuresets[:size]
+classifier = nltk.DecisionTreeClassifier.train(train_set)
+nltk.classify.accuracy(classifier, test_set)
+0.14639482844356042
+
+classifier.classify(pos_features('cats'))
+u'NN'
+```
+
+决策树模型的优点是容易解释。可以指示NLTK将它们以伪代码形式输出。
+
+```py
+print classifier.pseudocode(depth=4)
+if endswith(,) == True: return ','
+if endswith(,) == False:
+  if endswith(the) == True: return 'AT'
+  if endswith(the) == False:
+    if endswith(s) == True:
+      if endswith(is) == True: return 'BEZ'
+      if endswith(is) == False: return 'VBZ'
+    if endswith(s) == False:
+      if endswith(.) == True: return '.'
+      if endswith(.) == False: return 'NN'
+```
+
+## 探索上下文语境
+语境特征往往提供关于正确标记的强大线索——例如：标注词fly时，如果知道它前面的词是“a”，能够确定它是名词，而不是动词。
+
+```py
+def pos_features(sentence, i):
+    features = {"suffix(1)": sentence[i][-1:],
+                "suffix(2)": sentence[i][-2:],
+                "suffix(3)": sentence[i][-3:]}
+    if i == 0:
+        features["prev-word"] = "<START>"
+    else:
+        features["prev-word"] = sentence[i-1]
+    return features
+
+pos_features(brown.sents()[0], 8)
+{'prev-word': u'an',
+ 'suffix(1)': u'n',
+ 'suffix(2)': u'on',
+ 'suffix(3)': u'ion'}
+
+tagged_sents = brown.tagged_sents(categories='news')
+featuresets = []
+for tagged_sent in tagged_sents:
+    untagged_sent = nltk.tag.untag(tagged_sent)
+    for i, (word, tag) in enumerate(tagged_sent):
+        featuresets.append((pos_features(untagged_sent, i), tag))
+
+size = int(len(featuresets) * 0.1)
+train_set, test_set = featuresets[size:], featuresets[:size]
+classifier = nltk.NaiveBayesClassifier.train(train_set)
+nltk.classify.accuracy(classifier, test_set)
+0.7891596220785678
+```
+
+## 序列分类
+为了获取相关分类任务之间的依赖关系，我们可以使用joint classifier模型，为一些相关的输入选择适当的标签。在词性标注的例子中，可以使用各种不同的sequence classifier模型为给定的句子中的所有词选择词性标签。
+
+一种称为consecutive classification或greedy sequence classification的序列分类器策略，为第一个输入找到最有可能的类标签，然后在此基础上找到下一个输入的最佳的标签。这个过程可以不断重复直到所有的输入都被贴上标签。
+
+使用连续分类器进行词性标注。
+
+```py
+def pos_features(sentence, i, history):
+    features = {"suffix(1)": sentence[i][-1:],
+                "suffix(2)": sentence[i][-2:],
+                "suffix(3)": sentence[i][-3:]}
+    if i == 0:
+        features["prev-word"] = "<START>"
+        features["prev-tag"] = "<START>"
+    else:
+        features["prev-word"] = sentence[i-1]
+        features["prev-tag"] = history[i-1]
+    return features
+
+class ConsecutivePosTagger(nltk.TaggerI):
+    def __init__(self, train_sents):
+        train_set = []
+        for tagged_sent in train_sents:
+            untagged_sent = nltk.tag.untag(tagged_sent)
+            history = []
+            for i, (word, tag) in enumerate(tagged_sent):
+                featureset = pos_features(untagged_sent, i, history)
+                train_set.append( (featureset, tag) )
+                history.append(tag)
+        self.classifier = nltk.NaiveBayesClassifier.train(train_set)
+    def tag(self, sentence):
+        history = []
+        for i, word in enumerate(sentence):
+            featureset = pos_features(sentence, i, history)
+            tag = self.classifier.classify(featureset)
+            history.append(tag)
+        return zip(sentence, history)
+
+tagged_sents = brown.tagged_sents(categories='news')
+size = int(len(tagged_sents) * 0.1)
+train_sents, test_sents = tagged_sents[size:], tagged_sents[:size]
+tagger = ConsecutivePosTagger(train_sents)
+tagger.evaluate(test_sents)
+0.7980528511821975
+```
+
+## 其他序列分类方法
+这种方法的缺点是一旦做出决定便无法更改。例如：如果决定将一个词标注为名词，但后来发现应该是动词，那也没有办法修复我们的错误了。解决这个问题的方法是采取转型策略(transformational strategy)。转型联合分类(Transformational joint classifiers)的工作原理是为输入的标签创建一个初始值，然后反复提炼该值，尝试修复相关输入之间的不一致。Brill标注器，是使用这种策略的。
+
+另一种方案是为词性标记所有可能的序列打分，选择总得得分最高的序列。隐马尔可夫模型(Hidden Markov Models)采取了这种方法。隐马尔可夫模型类似于连续分类器，不光考虑输入也考虑已预测标记的历史。然而，不是简单地找出一个给定词的单个最好标签，而是为标记产生一个概率分布。然后将这些概率结合起来计算标记序列的概率得分，最后选择最高概率的标记序列。不过，可能的标签序列数量相当大。给定拥有30个标签的标记集，大约有600万亿(30^10)种方式来标记一个10个词的句子。为了避免单独考虑所有这些可能的序列，隐马尔可夫模型要求特征提取器只考虑最近的标记来有效地找出最有可能的标记序列。特别是，对每个连续的词索引i，当前的及以前的每个可能的标记都将计算得分。这种基础的方法被两个更先进的模型所采用，它们被称为最大熵隐马尔可夫模型(Maximum Entropy Markov Models)和线性链条件随机场模型(Linear-Chain Conditional Random Field Models)。
+
+# 分类文本句子分割
+获得一些已被分割成句子的数据，将它转换成一种适合提取特征的形式。
+
+```py
+import nltk
+
+sents = nltk.corpus.treebank_raw.sents()
+tokens = []
+boundaries = set()
+offset = 0
+for sent in nltk.corpus.treebank_raw.sents():
+    tokens.extend(sent)
+    offset += len(sent)
+    boundaries.add(offset-1)
+```
+
+tokens是单独句子标识符的合并链表，boundaries是一个包含所有句子-边界标识符索引的集合。下一步，需要指定用于决定标点是否表示句子边界的数据特征。
+
+```py
+def punct_features(tokens, i):
+    return {'next-word-capitalized': tokens[i+1][0].isupper(),
+            'prevword': tokens[i-1].lower(),
+            'punct': tokens[i],
+            'prev-word-is-one-char': len(tokens[i-1]) == 1}
+```
+
+基于这个特征提取器，可以通过选择所有的标点符号创建一个加标签的特征集链表，然后标注它们是否是边界标识符。
+
+```py
+featuresets = [(punct_features(tokens, i), (i in boundaries))
+               for i in range(1, len(tokens)-1)
+               if tokens[i] in '.?!']
+
+len(featuresets)
+5948
+
+featuresets[:10]
+[({'next-word-capitalized': False,
+   'prev-word-is-one-char': False,
+   'prevword': u'nov',
+   'punct': u'.'},
+  False),
+ ({'next-word-capitalized': True,
+   'prev-word-is-one-char': False,
+   'prevword': u'29',
+   'punct': u'.'},
+  True),
+ ({'next-word-capitalized': True,
+   'prev-word-is-one-char': False,
+   'prevword': u'mr',
+   'punct': u'.'},
+  False),
+ ({'next-word-capitalized': True,
+   'prev-word-is-one-char': True,
+   'prevword': u'n',
+   'punct': u'.'},
+  False),
+ ({'next-word-capitalized': False,
+   'prev-word-is-one-char': False,
+   'prevword': u'group',
+   'punct': u'.'},
+  True),
+ ({'next-word-capitalized': True,
+   'prev-word-is-one-char': True,
+   'prevword': u'.',
+   'punct': u'.'},
+  False),
+ ({'next-word-capitalized': False,
+   'prev-word-is-one-char': False,
+   'prevword': u'conglomerate',
+   'punct': u'.'},
+  True),
+({'next-word-capitalized': True,
+   'prev-word-is-one-char': True,
+   'prevword': u'.',
+   'punct': u'.'},
+  False),
+ ({'next-word-capitalized': True,
+   'prev-word-is-one-char': False,
+   'prevword': u'reported',
+   'punct': u'.'},
+  True),
+ ({'next-word-capitalized': True,
+   'prev-word-is-one-char': False,
+   'prevword': u'said',
+   'punct': u'.'},
+  True)]
+```
+
+训练和评估一个标点符号分类器。
+
+```py
+size = int(len(featuresets) * 0.1)
+train_set, test_set = featuresets[size:], featuresets[:size]
+classifier = nltk.NaiveBayesClassifier.train(train_set)
+nltk.classify.accuracy(classifier, test_set)
+0.936026936026936
+```
+
+使用分类器断句。
+
+```py
+def segment_sentences(words):
+    start = 0
+    sents = []
+    for i, word in enumerate(words):
+        if word in '.?!' and classifier.classify(punct_features(words, i)) == True:
+            sents.append(words[start:i+1])
+            start = i+1
+    if start < len(words):
+        sents.append(words[start:])
+    return sents
+```
+
+# 识别对话行为类型
+NPS聊天语料库，提取基本的消息数据。
+
+```py
+import nltk
+posts = nltk.corpus.nps_chat.xml_posts()[:10000]
+```
+
+定义一个简单的特征提取器，用于检查帖子包含什么词。
+
+```py
+def dialogue_act_features(post):
+    features = {}
+    for word in nltk.word_tokenize(post):
+        features['contains(%s)' % word.lower()] = True
+    return features
+```
+
+通过把特征提取器应用到每个帖子中（使用post.get('class')获取该帖子的对话行为类型）以构造训练和测试数据，并创建一个新的分类器。
+
+```py
+featuresets = [(dialogue_act_features(post.text), post.get('class'))
+               for post in posts]
+len(featuresets)
+10000
+
+featuresets[:10]
+[({'contains(gay)': True,
+   'contains(im)': True,
+   'contains(left)': True,
+   'contains(name)': True,
+   'contains(now)': True,
+   'contains(this)': True,
+   'contains(with)': True},
+  'Statement'),
+ ({'contains(:)': True, 'contains(p)': True}, 'Emotion'),
+ ({'contains(part)': True}, 'System'),
+ ({'contains(everyone)': True, 'contains(hey)': True}, 'Greet'),
+ ({'contains(ah)': True, 'contains(well)': True}, 'Statement'),
+ ({'contains(:10-19-20suser7)': True, 'contains(nick)': True}, 'System'),
+ ({'contains(.)': True,
+   'contains(10-19-20suser7)': True,
+   'contains(a)': True,
+   'contains(gay)': True,
+   'contains(is)': True,
+   'contains(name)': True},
+  'Accept'),
+ ({'contains(.)': True,
+   'contains(.action)': True,
+   'contains(10-19-20suser121)': True,
+   'contains(a)': True,
+   'contains(clap)': True,
+   'contains(gives)': True,
+   'contains(golf)': True},
+  'System'),
+ ({'contains())': True, 'contains(:)': True}, 'Emotion'),
+ ({'contains(join)': True}, 'System')]
+
+size = int(len(featuresets) * 0.1)
+train_set, test_set = featuresets[size:], featuresets[:size]
+classifier = nltk.NaiveBayesClassifier.train(train_set)
+nltk.classify.accuracy(classifier, test_set)
+0.668
+```
+
+# 识别文字蕴含
+识别文字蕴含（`Recognizing textual entailment`,`RTE`）是判断文本T内的一个给定片段是否继承着另一个叫做“假设”的文本，下面是挑战赛3开发数据集中的文本/假设对的两个例子。标签True表示保留蕴含，False表示没保留蕴含。
+
+```
+Challenge 3, Pair 34 (True)
+
+T: Parviz Davudi was representing Iran at a meeting of the Shanghai Co-operation Organisation (SCO), the fledgling association that binds Russia, China and four former Soviet republics of central Asia together to fight terrorism.
+
+H: China is a member of SCO.
+
+Challenge 3, Pair 81 (False)
+
+T: According to NC Articles of Organization, the members of LLC company are H. Nelson Beavers, III, H. Chester Beavers and Jennie Beavers Stewart.
+
+H: Jennie Beavers Stewart is a share-holder of Carolina Analytical Laboratory.
+```
+
+文字和假设之间的关系并不一定是逻辑蕴涵，而是人们是否会得出结论：文本提供的合理证明假设是真实的。
+
+在下面RTE特征探测器中，我们让词（即词类型）作为信息的代理，计数词重叠的程度和假设中有而文本中没有的词的程度（由hyp_extra()方法获取）。不是所有的词都是同样重要的——提到的命名实体，如人、组织和地点的名词，可能会更为重要，这促使我们分别为words和nes（命名实体）提取不同的信息。此外，一些高频虚词作为“停用词”被过滤掉。
+
+“认识文字蕴含”的特征提取器。RTEFeatureExtractor类建立了一个在文本和假设中都有的并已经除去了一些停用词后的词汇包，然后计算重叠性和差异性。
+
+```py
+def rte_features(rtepair):
+    extractor = nltk.RTEFeatureExtractor(rtepair)
+    features = {}
+    features['word_overlap'] = len(extractor.overlap('word'))
+    features['word_hyp_extra'] = len(extractor.hyp_extra('word'))
+    features['ne_overlap'] = len(extractor.overlap('ne'))
+    features['ne_hyp_extra'] = len(extractor.hyp_extra('ne'))
+    return features
+```
+
+检查前面显示的文本/假设对34的一些属性。
+
+```py
+rtepair = nltk.corpus.rte.pairs(['rte3_dev.xml'])[33]
+extractor = nltk.RTEFeatureExtractor(rtepair)
+print extractor.text_words
+set(['Russia', 'Organisation', 'Shanghai', 'Asia', 'four', 'at',
+'operation', 'SCO', ...])
+print extractor.hyp_words
+set(['member', 'SCO', 'China'])
+print extractor.overlap('word')
+set([])
+print extractor.overlap('ne')
+set(['SCO', 'China'])
+print extractor.hyp_extra('word')
+set(['member'])
+```
+
+# 决策树
+![](pythonNLP16.png)
+
+Figure 6-4. Decision Tree model for the name gender task. Note that tree diagrams are conventionally drawn “upside down,” with the root at the top, and the leaves at the bottom.
+
+## 熵(Entropy)和信息增益(Information Gain)
+当利用给定的特征分割输入值时，信息增益能衡量输入值的有序程度。要衡量原始输入值集合如何无序，要计算它们的标签的熵，如果输入值的标签非常不同，熵就高；如果输入值的标签都相同，熵就低。特别地，熵被定义为每个标签的概率乘以该标签的log概率的总和。
+
+$H=\sum_{l \in labels} P(l) \times log_2P(l)$
+
+![](pythonNLP17.png)
+
+Figure 6-5. The entropy of labels in the name gender prediction task, as a function of the percentage of names in a given set that are male.
+
+计算标签链表的熵
+
+```py
+import math
+def entropy(labels):
+    freqdist = nltk.FreqDist(labels)
+    probs = [freqdist.freq(l) for l in nltk.FreqDist(labels)]
+    return -1 * sum([p * math.log(p,2) for p in probs])
+
+entropy(['male', 'male', 'male', 'male'])
+-0.0
+
+entropy(['male', 'female', 'male', 'male'])
+0.8112781244591328
+
+entropy(['female', 'male', 'female', 'male'])
+1.0
+
+entropy(['female', 'female', 'male', 'female'])
+0.8112781244591328
+
+entropy(['female', 'female', 'female', 'female'])
+-0.0
+```
+
+信息增益等于原来的熵减去新减少的熵。信息增益越高，将输入值分为相关组的决策树桩性能越好，于是可以通过选择具有最高信息增益的决策树桩来建立决策树。
+
+# 朴素贝叶斯分类器
+![](pythonNLP18.png)
+
+Figure 6-6. An abstract illustration of the procedure used by the naive Bayes classifier to choose the topic for a document. In the training corpus, most documents are automotive, so the classifier starts out at a point closer to the “automotive” label. But it then considers the effect of each feature. In this example, the input document contains the word dark, which is a weak indicator for murder mysteries, but it also contains the word football, which is a strong indicator for sports documents. After every feature has made its contribution, the classifier checks which label it is closest to, and assigns that label to the input.
+
+![](pythonNLP19.png)
+
+Figure 6-7. Calculating label likelihoods with naive Bayes. Naive Bayes begins by calculating the prior probability of each label, based on how frequently each label occurs in the training data. Every feature then contributes to the likelihood estimate for each label, by multiplying it by the probability that input values with that label will have that feature. The resulting likelihood score can be thought of as an estimate of the probability that a randomly selected value from the training set would have both the given label and the set of features, assuming that the feature probabilities are all independent.
+
+![](pythonNLP20.png)
+
+Figure 6-8. A Bayesian Network Graph illustrating the generative process that is assumed by the naive Bayes classifier. To generate a labeled input, the model first chooses a label for the input, and then it generates each of the input’s features based on that label. Every feature is assumed to be entirely independent of every other feature, given the label.
+
+## 潜在概率模型
+它为输入选择最有可能的标签，基于下面的假设：每个输入值是通过首先为该输入值选择类标签，然后产生每个特征的方式产生的，每个特征与其他特征完全独立。
+
+基于这个假设，我们可以计算表达式P(label|features)，即一个具有特定标签（假定具有特定的特征集）的输入概率。要为新输入选择标签，可以简单地选择能使P（l|features)最大的标签l。
+
+首先，注意到P(label|features)等于具有特定标签和特定特征集的输入的概率除以具有特定特征集的输入的概率。
+
+$(2) P(label|features)=\frac{P(features,label)}{P(features)}$
+
+接下来，注意到P(features)对每个标签都是相同的。因此，如果我们只是对寻找最有可能的标签感兴趣，只需计算P(features,label)就够了，我们称之为似然(likelihood)标签。
+
+如果我们想生成每个标签的概率估计，而不是只选择最有可能的标签，那么计算P(features)的最简单的方法是仅仅计算P(features,label)在所有标签上的总和。
+
+$(3) P(features)=\sum_{label \in labels}P(features,label)$
+
+似然标签可以展开为标签的概率乘以给定标签特征的概率。
+
+$(4) P(features,label)=P(label) \times P(features|label)$
+
+由于特征都是独立的（给定标签），可以分离每个独立特征的概率。
+
+$(5) P(features,label)=P(label) \times \prod_{f \in features}P(f|label)$
+
+P(label)是一个给定标签的先验概率，每个P(f|label)是单个特征对标签可能性的贡献。
+
+## 零计数和平滑
+计算P(f|label)最简单的方法，特征f对标签label的标签似然性的贡献，是取得具有给定特征和给定标签的训练实例百分比。
+
+$(6) P(f|label)=\frac{count(f,label)}{count(label)}$
+
+当count(f)变小时这个估计变得不可靠。因此，建立朴素贝叶斯模型时，采用平滑(smoothing)技术，用于计算P(f|label)，在给定标签的特征的概率的基础上。例如：给定标签的特征概率的期望似然估计(Expected Likelihood Estimation)基本上会给每个count(f,label)值增加0.5，Heldout估计(Heldout Estimation)使用heldout语料库计算特征频率与特征概率之间的关系。nltk.probability模块提供了多种平滑模块技术支持。
+
+## 非二元特征
+标签值特征（例如颜色）可以转化为二元（红色、非红色）。数字特征可以通过装箱(binning)转换为二元特征。
+
+另一种方法是通过回归方法来模拟数字特征的概率。
+
+## 双重计数的原因
+双重计数问题出现的原因是在训练过程中特征的贡献被分开计算，但当使用分类器为新输入选择标签时，这些特征的贡献被组合在一起了。因此，解决方案是考虑在训练中特征的贡献之间可能的相互作用。
+
+我们可以重写用于计算标签似然性的方程，分离出每个功能（或标签）所作出的贡献。
+
+$(7) P(features, label)=w[label] \times \prod_{f \in features}w[f,label]$
+
+这里，w[label]是一个给定标签的“初始分数”，w[f,label]是给定特征对一个标签的似然性所作的贡献。我们称这些值w[label]和w[f,label]为模型的参数(parameters)或权重(weights)。使用朴素贝叶斯算法，我们单独设置这些参数。
+
+$(8) w[label]=P(label)$
+
+$(9) w[f,label]=P(f|label)$
+
+# 最大熵分类器
+没有使用概率设置模型的参数，而是使用搜索技术找出一组能最大限度地提高分类器性能的参数。特别的，它查出能使训练语料的整体似然性(total likelihood)最大的参数组。其定义如下
+
+$(10) P(features)=\sum_{x \in corpus}P(label(x)|features(x))$
+
+其中P(label|features)，即特征为features的输入且类标签为label的概率，被定义为：
+
+$(11) P(label|features)=\frac{P(label, features)}{\sum_{label}P(label, features)}$
+
+最大熵分类器采用迭代优化(iterative optimization)技术选择模型参数，该技术利用随机值初始化模型的参数，然后反复优化这些参数，使它们更接近最优解。
+
+## 最大熵模型
+每个接收它自身参数的标签和特征的组合被称为联合特征(joint-feature)。联合特征是加标签值的属性，而（简单）特征是未加标签值的属性。
+
+每个标签定义的联合特征对应于w[label]，每个（简单）特征和标签组合定义的联合特征对应于w[f,label]。给定一个最大熵模型的联合特征，分配到给定输入标签的得分仅仅是适用于该输入和标签的联合特征与参数之间的简单乘积。
+
+$(12) P(input, label)=\prod_{joint-features(input,label)}w[joint-feature]$
+
+## 熵的最大化
+假设从10个可能词意列表（标签从A-J）中为一个给定的词找出正确词意。首先，我们没有被告知其他任何关于词或词意的信息。我们可以为10种词意选择的概率分布很多，例如：
+
+| - | A |  B | C | D | E | F | G | H | I | J |
+| - | - |  - | - | - | - | - | - | - | - | - |
+| (i) | 10% | 10% | 10% | 10% | 10% | 10% | 10% | 10% | 10% | 10% |
+| (ii) | 5% | 15% | 0% | 30% | 0% | 8% | 12% | 0% | 6% | 24% |
+| (iii) | 0% | 100% | 0% | 0% | 0% | 0% | 0% | 0% | 0% | 0% |
+
+虽然这些分布都有可能是正确的，但我们最可能会选择的是分布（i），因为没有任何更多的信息，也没有理由相信任何词的词意比其他的更有可能。
+
+如果是一个单独的标签则熵较低，但如果标签的分布比较均匀则熵较高。`最大熵原理(Maximum Entropy principle)`是指在已知的分布下，我们会选择熵最高的分布。
+
+接下来，假设被告知词意A出现的次数占55%。还有许多分布适合于这条信息，例如：
+
+| - | A |  B | C | D | E | F | G | H | I | J |
+| - | - |  - | - | - | - | - | - | - | - | - |
+| (iv) | 55% | 45% | 0% | 0% | 0% | 0% | 0% | 0% | 0% | 0% |
+| (v) | 55% | 5% | 5% | 5% | 5% | 5% | 5% | 5% | 5% | 5% |
+| (vi) | 55% | 3% | 1% | 2% | 9% | 5% | 0% | 25% | 0% | 0% |
+
+最后，假设被告知词up出现在附近上下文中的次数占10%，当它出现在这个上下文中时有80%的可能使用词意A或C。
+
+| - | - | A |  B | C | D | E | F | G | H | I | J |
+| - | - | - |  - | - | - | - | - | - | - | - | - |
+| (vii) | +up | 5.1% | 0.25% | 2.9% | 0.25% | 0.25% | 0.25% | 0.25% | 0.25% | 0.25% | 0.25% |
+| - | -up | 49.9% | 4.46% | 4.46% | 4.46% | 4.46% | 4.46% | 4.46% | 4.46% | 4.46% | 4.46% |
+
+特别地，这个分布与我们所知道的一致：如果我们将A列的概率加起来，是55%，如果我们将第1行的概率加起来，是10%；如果我们将+up行词意A和C的概率加起来，是8%（或+up情况的80%）。此外，其余的概率好像是“均匀分布”的。
+
+我们将自己限制在已知的分布上。其中，我们选择最高熵的分布。特别地，对于每个联合特征，最大熵模型计算该特征的“经验频率”——即它出现在训练集中的频率。然后，搜索能使熵最大的分布，同时预测每个联合特征正确的概率。
+
+# 从文本提取信息
+## 信息提取
+### 信息提取结构
+![](pythonNLP21.png)
+
+Figure 7-1. Simple pipeline architecture for an information extraction system. This system takes the raw text of a document as its input, and generates a list of (entity, relation, entity) tuples as its output. For example, given a document that indicates that the company Georgia-Pacific is located in Atlanta, it might generate the tuple ([ORG: 'Georgia-Pacific'] 'in' [LOC: 'Atlanta']).
+
+要执行前面3个任务，需要定义一个函数，简单地连接NLTK中默认的句子分割器，分词器和词性标注器。
+
+```py
+def ie_preprocess(document):
+  sentences = nltk.sent_tokenize(document)
+  sentences = [nltk.word_tokenize(sent) for sent in sentences]
+  sentences = [nltk.pos_tag(sent) for sent in sentences]
+```
+
+## 分块(Chunking)
+用于实体识别的基本技术是`分块(chunking)`，分割和标注如图7-2所示的多标识符序列。小框显示词级标识符和词性标注，同时，大框显示较高级别的程序分块。较大的框叫做组`块(chunk)`。
+
+![](pythonNLP22.png)
+
+Figure 7-2. Segmentation and labeling at both the Token and Chunk levels.
+
+### 名词短语分块
+名词短语分块(noun phrase chunking)或NP-分块(NP-chunking)，寻找单独名词短语对应的块。下面文本，其中的NP-分块用方括号标记。
+
+```
+[ The/DT market/NN ] for/IN [ system-management/NN software/NN ] for/IN [ Digital/NNP ] [ ’s/POS hardware/NN ] is/VBZ fragmented/JJ enough/RB that/IN [ a/DT giant/NN ] such/JJ as/IN [ Computer/NNP Associates/NNPS ] should/MD do/VB well/RB there/RB ./.
+```
+
+NP-分块信息最有用的来源之一是词性标注。
+
+```py
+sentence = [("the", "DT"), ("little", "JJ"), ("yellow", "JJ"), # 已经标注词性的例句
+... ("dog", "NN"), ("barked", "VBD"), ("at", "IN"),  ("the", "DT"), ("cat", "NN")]
+
+grammar = "NP: {<DT>?<JJ>*<NN>}" # 正则表达式定义一个语法：NP-分块由可选的且后面跟着任意数目形容词(JJ)的限定词(DJ)和名词(NN)组成
+
+cp = nltk.RegexpParser(grammar) # 使用此语法创建组块分析器
+result = cp.parse(sentence) # 测试例句
+print result # 输出
+(S
+  (NP the/DT little/JJ yellow/JJ dog/NN)
+  barked/VBD
+  at/IN
+  (NP the/DT cat/NN))
+result.draw()
+```
+
+![](pythonNLP23.png)
+
+### 用正则表达式分块
+下例由2个规则组成的简单的分块语法。
+
+```py
+grammar = r"""
+  NP: {<DT|PP\$>?<JJ>*<NN>}   # chunk determiner/possessive, adjectives and nouns
+      {<NNP>+}                # chunk sequences of proper nouns
+"""
+
+cp = nltk.RegexpParser(grammar)
+sentence = [("Rapunzel", "NNP"), ("let", "VBD"), ("down", "RP"), 1
+                 ("her", "PP$"), ("long", "JJ"), ("golden", "JJ"), ("hair", "NN")]
+
+print cp.parse(sentence) 1
+(S
+  (NP Rapunzel/NNP)
+  let/VBD
+  down/RP
+  (NP her/PP$ long/JJ golden/JJ hair/NN))
+```
+
+### 探索文本语料库
+使用分块器可以更轻松地完成这项工作：
+
+```py
+cp = nltk.RegexpParser('CHUNK: {<V.*> <TO> <V.*>}')
+brown = nltk.corpus.brown
+for sent in brown.tagged_sents():
+    tree = cp.parse(sent)
+    for subtree in tree.subtrees():
+        if subtree.node == 'CHUNK': print subtree
+
+(CHUNK combined/VBN to/TO achieve/VB)
+(CHUNK continue/VB to/TO place/VB)
+(CHUNK serve/VB to/TO protect/VB)
+(CHUNK wanted/VBD to/TO wait/VB)
+(CHUNK allowed/VBN to/TO place/VB)
+(CHUNK expected/VBN to/TO become/VB)
+...
+(CHUNK seems/VBZ to/TO overtake/VB)
+(CHUNK want/VB to/TO buy/VB)
+```
+
+### 缝隙(Chinking)
+有时可以定义我们想从块中排除什么。可以为不包括在大块中的标识符序列定义一个缝隙(Chinking)。在下面的例子中，barker/VBD at/IN是一个缝隙。
+
+```
+[ the/DT little/JJ yellow/JJ dog/NN ] barked/VBD at/IN [ the/DT cat/NN ]
+```
+
+简单的加缝器：
+
+```py
+grammar = r"""
+  NP:
+    {<.*>+}          # Chunk everything
+    }<VBD|IN>+{      # Chink sequences of VBD and IN
+  """
+sentence = [("the", "DT"), ("little", "JJ"), ("yellow", "JJ"),
+       ("dog", "NN"), ("barked", "VBD"), ("at", "IN"),  ("the", "DT"), ("cat", "NN")]
+
+cp = nltk.RegexpParser(grammar)
+print cp.parse(sentence)
+
+(S
+  (NP the/DT little/JJ yellow/JJ dog/NN)
+  barked/VBD
+  at/IN
+  (NP the/DT cat/NN))
+```
+
+### 分块的表示：标记与树状图
+作为标注和分析之间的中间状态，块结构可以使用标记或树状图来表示。使用最广泛的表示是IOB标记。每个标识符被用3个特殊的块标签之一标注，I(inside),O(outside)或B(begin)。
+
+![](pythonNLP24.png)
+
+Figure 7-3. Tag representation of chunk structures.
+
+![](pythonNLP25.png)
+
+Figure 7-4. Tree representation of chunk structures.
+
+## 开发和评估分块器
+### 读取IOB格式与CoNLL2000分块语料库
+```py
+text = '''
+... he PRP B-NP
+... accepted VBD B-VP
+... the DT B-NP
+... position NN I-NP
+... of IN B-PP
+... vice NN B-NP
+... chairman NN I-NP
+... of IN B-PP
+... Carlyle NNP B-NP
+... Group NNP I-NP
+... , , O
+... a DT B-NP
+... merchant NN I-NP
+... banking NN I-NP
+... concern NN I-NP
+... . . O
+... '''
+nltk.chunk.conllstr2tree(text, chunk_types=['NP']).draw()
+```
+
+![](pythonNLP26.png)
+
+读取语料库“训练”部分的100个句子的例子。
+
+```py
+from nltk.corpus import conll2000
+print conll2000.chunked_sents('train.txt')[99]
+(S
+  (PP Over/IN)
+  (NP a/DT cup/NN)
+  (PP of/IN)
+  (NP coffee/NN)
+  ,/,
+  (NP Mr./NNP Stone/NNP)
+  (VP told/VBD)
+  (NP his/PRP$ story/NN)
+  ./.)
+```
+
+语料库包含3种分块类型：NP分块，VP分块(has already delivered)和PP分块(because of)。选择NP分块：
+
+```py
+print conll2000.chunked_sents('train.txt', chunk_types=['NP'])[99]
+(S
+  Over/IN
+  (NP a/DT cup/NN)
+  of/IN
+  (NP coffee/NN)
+  ,/,
+  (NP Mr./NNP Stone/NNP)
+  told/VBD
+  (NP his/PRP$ story/NN)
+  ./.)
+```
+
+### 简单评估和基准
+以不创建任何块的块分析器cp建立一个baseline。
+
+```py
+from nltk.corpus import conll2000
+cp = nltk.RegexpParser("")
+test_sents = conll2000.chunked_sents('test.txt', chunk_types=['NP'])
+
+print cp.evaluate(test_sents)
+ChunkParse score:
+    IOB Accuracy:  43.4%
+    Precision:      0.0%
+    Recall:         0.0%
+    F-Measure:      0.0%
+```
+
+查找以名词短语标记的特征字母（如CD、DT和JJ）开头的标记。
+
+```py
+grammar = r"NP: {<[CDJNP].*>+}"
+cp = nltk.RegexpParser(grammar)
+print cp.evaluate(test_sents)
+ChunkParse score:
+    IOB Accuracy:  87.7%
+    Precision:     70.6%
+    Recall:        67.8%
+    F-Measure:     69.2%
+```
+
+使用unigram标注器对名词短语分块。
+
+```py
+class UnigramChunker(nltk.ChunkParserI):
+    def __init__(self, train_sents):
+        train_data = [[(t,c) for w,t,c in nltk.chunk.tree2conlltags(sent)]
+                      for sent in train_sents]
+        self.tagger = nltk.UnigramTagger(train_data)
+
+    def parse(self, sentence):
+        pos_tags = [pos for (word,pos) in sentence]
+        tagged_pos_tags = self.tagger.tag(pos_tags)
+        chunktags = [chunktag for (pos, chunktag) in tagged_pos_tags]
+        conlltags = [(word, pos, chunktag) for ((word,pos),chunktag)
+                     in zip(sentence, chunktags)]
+        return nltk.chunk.conlltags2tree(conlltags)
+
+test_sents = conll2000.chunked_sents('test.txt', chunk_types=['NP'])
+train_sents = conll2000.chunked_sents('train.txt', chunk_types=['NP'])
+unigram_chunker = UnigramChunker(train_sents)
+print unigram_chunker.evaluate(test_sents)
+ChunkParse score:
+    IOB Accuracy:  92.9%
+    Precision:     79.9%
+    Recall:        86.8%
+    F-Measure:     83.2%
+
+postags = sorted(set(pos for sent in train_sents
+...                      for (word,pos) in sent.leaves()))
+print unigram_chunker.tagger.tag(postags)
+[('#', 'B-NP'), ('$', 'B-NP'), ("''", 'O'), ('(', 'O'), (')', 'O'),
+ (',', 'O'), ('.', 'O'), (':', 'O'), ('CC', 'O'), ('CD', 'I-NP'),
+ ('DT', 'B-NP'), ('EX', 'B-NP'), ('FW', 'I-NP'), ('IN', 'O'),
+ ('JJ', 'I-NP'), ('JJR', 'B-NP'), ('JJS', 'I-NP'), ('MD', 'O'),
+ ('NN', 'I-NP'), ('NNP', 'I-NP'), ('NNPS', 'I-NP'), ('NNS', 'I-NP'),
+ ('PDT', 'B-NP'), ('POS', 'B-NP'), ('PRP', 'B-NP'), ('PRP$', 'B-NP'),
+ ('RB', 'O'), ('RBR', 'O'), ('RBS', 'B-NP'), ('RP', 'O'), ('SYM', 'O'),
+ ('TO', 'O'), ('UH', 'O'), ('VB', 'O'), ('VBD', 'O'), ('VBG', 'O'),
+ ('VBN', 'O'), ('VBP', 'O'), ('VBZ', 'O'), ('WDT', 'B-NP'),
+ ('WP', 'B-NP'), ('WP$', 'B-NP'), ('WRB', 'O'), ('``', 'O')]
+```
+
+unigram分块器建立完成后，可以很容易建立bigram分块器：
+
+```py
+bigram_chunker = BigramChunker(train_sents)
+print bigram_chunker.evaluate(test_sents)
+ChunkParse score:
+    IOB Accuracy:  93.3%
+    Precision:     82.3%
+    Recall:        86.8%
+    F-Measure:     84.5%
+```
+
+### 训练基于分类器的分块器
+```py
+class ConsecutiveNPChunkTagger(nltk.TaggerI):
+
+    def __init__(self, train_sents):
+        train_set = []
+        for tagged_sent in train_sents:
+            untagged_sent = nltk.tag.untag(tagged_sent)
+            history = []
+            for i, (word, tag) in enumerate(tagged_sent):
+                featureset = npchunk_features(untagged_sent, i, history)
+                train_set.append( (featureset, tag) )
+                history.append(tag)
+        self.classifier = nltk.MaxentClassifier.train(
+            train_set, algorithm='megam', trace=0)
+
+    def tag(self, sentence):
+        history = []
+        for i, word in enumerate(sentence):
+            featureset = npchunk_features(sentence, i, history)
+            tag = self.classifier.classify(featureset)
+            history.append(tag)
+        return zip(sentence, history)
+
+class ConsecutiveNPChunker(nltk.ChunkParserI):
+    def __init__(self, train_sents):
+        tagged_sents = [[((w,t),c) for (w,t,c) in
+                         nltk.chunk.tree2conlltags(sent)]
+                        for sent in train_sents]
+        self.tagger = ConsecutiveNPChunkTagger(tagged_sents)
+
+    def parse(self, sentence):
+        tagged_sents = self.tagger.tag(sentence)
+        conlltags = [(w,t,c) for ((w,t),c) in tagged_sents]
+        return nltk.chunk.conlltags2tree(conlltags)
+
+def npchunk_features(sentence, i, history):
+    word, pos = sentence[i]
+    return {"pos": pos}
+
+chunker = ConsecutiveNPChunker(train_sents)
+print chunker.evaluate(test_sents)
+ChunkParse score:
+    IOB Accuracy:  92.9%
+    Precision:     79.9%
+    Recall:        86.7%
+    F-Measure:     83.2%
+```
+
+添加特征：前面词的词性标记。添加此特征允许分类器模拟相邻标记之间的相互作用。
+
+```py
+def npchunk_features(sentence, i, history):
+    word, pos = sentence[i]
+    if i == 0:
+        prevword, prevpos = "<START>", "<START>"
+    else:
+        prevword, prevpos = sentence[i-1]
+    return {"pos": pos, "prevpos": prevpos}
+
+chunker = ConsecutiveNPChunker(train_sents)
+print chunker.evaluate(test_sents)
+ChunkParse score:
+    IOB Accuracy:  93.6%
+    Precision:     81.9%
+    Recall:        87.1%
+    F-Measure:     84.4%
+```
+
+为当前词增加特征：
+
+```py
+def npchunk_features(sentence, i, history):
+    word, pos = sentence[i]
+    if i == 0:
+        prevword, prevpos = "<START>", "<START>"
+    else:
+        prevword, prevpos = sentence[i-1]
+    return {"pos": pos, "word": word, "prevpos": prevpos}
+chunker = ConsecutiveNPChunker(train_sents)
+print chunker.evaluate(test_sents)
+ChunkParse score:
+    IOB Accuracy:  94.2%
+    Precision:     83.4%
+    Recall:        88.6%
+    F-Measure:     85.9%
+```
+
+增加更多特征：预取特征、配对功能和复杂的语境特征、tags-since-dt用其创建一个字符串，描述自最近限定词以来遇到的所有词性标记。
+
+```py
+def npchunk_features(sentence, i, history):
+    word, pos = sentence[i]
+    if i == 0:
+        prevword, prevpos = "<START>", "<START>"
+    else:
+        prevword, prevpos = sentence[i-1]
+    if i == len(sentence)-1:
+        nextword, nextpos = "<END>", "<END>"
+    else:
+        nextword, nextpos = sentence[i+1]
+    return {"pos": pos,
+            "word": word,
+            "prevpos": prevpos,
+            "nextpos": nextpos, # 预取特征
+            "prevpos+pos": "%s+%s" % (prevpos, pos),  # 配对功能
+            "pos+nextpos": "%s+%s" % (pos, nextpos),
+            "tags-since-dt": tags_since_dt(sentence, i)}  # 语境特征
+
+def tags_since_dt(sentence, i):
+    tags = set()
+    for word, pos in sentence[:i]:
+        if pos == 'DT':
+            tags = set()
+        else:
+            tags.add(pos)
+    return '+'.join(sorted(tags))
+
+chunker = ConsecutiveNPChunker(train_sents)
+print chunker.evaluate(test_sents)
+ChunkParse score:
+    IOB Accuracy:  95.9%
+    Precision:     88.3%
+    Recall:        90.7%
+    F-Measure:     89.5%
+```
+
+## 语言结构中的递归
+### 用级联分块器构建嵌套结构
+创建一个包含递归规则的多级的分块语法，就可以建立任意深度的分块结构。下例展示了名词短语、介词短语、动词短语和句子的模式。这是一个四级分块语法器，可以用来创建深度最多为4的结构。
+
+```py
+grammar = r"""
+  NP: {<DT|JJ|NN.*>+}          # Chunk sequences of DT, JJ, NN
+  PP: {<IN><NP>}               # Chunk prepositions followed by NP
+  VP: {<VB.*><NP|PP|CLAUSE>+$} # Chunk verbs and their arguments
+  CLAUSE: {<NP><VP>}           # Chunk NP, VP
+  """
+cp = nltk.RegexpParser(grammar)
+sentence = [("Mary", "NN"), ("saw", "VBD"), ("the", "DT"), ("cat", "NN"),
+    ("sit", "VB"), ("on", "IN"), ("the", "DT"), ("mat", "NN")]
+
+print cp.parse(sentence)
+(S
+  (NP Mary/NN)
+  saw/VBD
+  (CLAUSE
+    (NP the/DT cat/NN)
+    (VP sit/VB (PP on/IN (NP the/DT mat/NN)))))
+```
+
+### 树状图
+![](pythonNLP27.png)
+
+## 命名实体识别(Named Entity Recognition)
+Table 7-3. Commonly used types of named entity
+
+|NE type | Examples |
+|------- | -------- |
+|ORGANIZATION | Georgia-Pacific Corp., WHO |
+|PERSON | Eddy Bonte, President Obama |
+|LOCATION | Murray River, Mount Everest |
+|DATE | June, 2008-06-29 |
+|TIME | two fifty a m, 1:30 p.m. |
+|MONEY | 175 million Canadian Dollars, GBP 10.40 |
+|PERCENT | twenty pct, 18.75 % |
+|FACILITY | Washington Monument, Stonehenge |
+|GPE | South East Asia, Midlothian |
+
+命名实体识别(named entity recognition, `NER`)系统的目标是识别所有文字提及的命名实体。这可以分解成两个子任务：确定NE的边界和确定其类型。
+
+![](pythonNLP28.png)
+
+Figure 7-5. Location detection by simple lookup for a news story: Looking up every word in a gazetteer is error-prone; case distinctions may help, but these are not always present.
+
+NLTK提供了一个已经训练好的可以识别命名实体的分类器（如果设置参数binary=True，那个命名实体只被标注为NE；否则，分类器会添加类型标签，如PERSON、ORGANIZATION和GPE）：
+
+```py
+sent = nltk.corpus.treebank.tagged_sents()[22]
+print nltk.ne_chunk(sent, binary=True)
+(S
+  The/DT
+  (NE U.S./NNP)
+  is/VBZ
+  one/CD
+  ...
+  according/VBG
+  to/TO
+  (NE Brooke/NNP T./NNP Mossman/NNP)
+  ...)
+
+print nltk.ne_chunk(sent)
+(S
+  The/DT
+  (GPE U.S./NNP)
+  is/VBZ
+  one/CD
+  ...
+  according/VBG
+  to/TO
+  (PERSON Brooke/NNP T./NNP Mossman/NNP)
+  ...)
+```
+
+## 关系抽取(Relation Extraction)
+通常会寻找指定类型的命名实体之间的关系。方法之一是首选寻找所有（X，a，Y）形式三元组，其中X和Y是指定类型的命名实体，a表示X和Y之间关系的字符串。然后使用正则表达式从a的实体中抽出正在查找的关系。
+
+```py
+IN = re.compile(r'.*\bin\b(?!\b.+ing)')
+for doc in nltk.corpus.ieer.parsed_docs('NYT_19980315'):
+    for rel in nltk.sem.extract_rels('ORG', 'LOC', doc,
+                                     corpus='ieer', pattern = IN):
+        print nltk.sem.show_raw_rtuple(rel)
+
+[ORG: 'WHYY'] 'in' [LOC: 'Philadelphia']
+[ORG: 'McGlashan &AMP; Sarrail'] 'firm in' [LOC: 'San Mateo']
+[ORG: 'Freedom Forum'] 'in' [LOC: 'Arlington']
+[ORG: 'Brookings Institution'] ', the research group in' [LOC: 'Washington']
+[ORG: 'Idealab'] ', a self-described business incubator based in' [LOC: 'Los Angeles']
+[ORG: 'Open Text'] ', based in' [LOC: 'Waterloo']
+[ORG: 'WGBH'] 'in' [LOC: 'Boston']
+[ORG: 'Bastille Opera'] 'in' [LOC: 'Paris']
+[ORG: 'Omnicom'] 'in' [LOC: 'New York']
+[ORG: 'DDB Needham'] 'in' [LOC: 'New York']
+[ORG: 'Kaplan Thaler Group'] 'in' [LOC: 'New York']
+[ORG: 'BBDO South'] 'in' [LOC: 'Atlanta']
+[ORG: 'Georgia-Pacific'] 'in' [LOC: 'Atlanta']
+```
+
+false positives : [ORG: House Transportation Committee] , secured the most money in the [LOC: New York]
+
+# 分析句子结构
+## 文法(Syntax)的用途
+![](pythonNLP29.png)
+
+Figure 8-1. Substitution of word sequences: Working from the top row, we can replace particular sequences of words (e.g., the brook) with individual words (e.g., it); repeating this process, we arrive at a grammatical two-word sentence.
+
+![](pythonNLP30.png)
+
+Figure 8-2. Substitution of word sequences plus grammatical categories: This diagram reproduces Figure 8-1 along with grammatical categories corresponding to noun phrases (NP), verb phrases (VP), prepositional phrases (PP), and nominals (Nom).
+
+如果现在将最上面的词汇分离，增加一个S节点，再把图翻转，最终我们得到一个标准的短语结构树，如下所示。
+
+![](pythonNLP31.png)
+
+## 上下文无关文法
+一个简单的上下文无关文法(context-free grammar,`CFG`)的例子
+
+```py
+grammar1 = nltk.parse_cfg("""
+  S -> NP VP
+  VP -> V NP | V NP PP
+  PP -> P NP
+  V -> "saw" | "ate" | "walked"
+  NP -> "John" | "Mary" | "Bob" | Det N | Det N PP
+  Det -> "a" | "an" | "the" | "my"
+  N -> "man" | "dog" | "cat" | "telescope" | "park"
+  P -> "in" | "on" | "by" | "with"
+  """)
+sent = "Mary saw Bob".split()
+rd_parser = nltk.RecursiveDescentParser(grammar1)
+for tree in rd_parser.nbest_parse(sent):
+    print tree
+(S (NP Mary) (VP (V saw) (NP Bob)))
+```
+
+Table 8-1. Syntactic categories
+
+| Symbol | Meaning | Example |
+| ------ | ------- | ------- |
+| S  | sentence | the man walked |
+| NP | noun phrase | a dog |
+| VP | verb phrase | saw a park |
+| PP | prepositional phrase | with a telescope |
+| Det | determner | the |
+| N | noun | dog |
+| V | verb | walked |
+| P | preposition | in |
+
+The dog saw a man in the park 得到两棵树。
+
+![](pythonNLP32.png)
+
+## 上下文无关文法分析(Parsing with Context-Free Grammar)
+### 递归下降解析器(Recursive Descent Parsing)
+![](pythonNLP33.png)
+
+Figure 8-4. Six stages of a recursive descent parser: The parser begins with a tree consisting of the node S; at each stage it consults the grammar to find a production that can be used to enlarge the tree; when a lexical production is encountered, its word is compared against the input; after a complete parse has been found, the parser backtracks to look for more parses.
+
+### 移进-规约分析(Shift-Reduce Parsing)
+![](pythonNLP34.png)
+
+Figure 8-5. Six stages of a shift-reduce parser: The parser begins by shifting the first input word onto its stack; once the top items on the stack match the righthand side of a grammar production, they can be replaced with the lefthand side of that production; the parser succeeds once all input is consumed and one S item remains on the stack.
+
+### 依存关系(Dependencies)和依存文法(Dependency Grammar)
+短语结构文法是关于词和词序列如何结合形成句子成分的。一种独特且互补的方式，依存文法(dependency grammar)，集中关注的是词与其他词之间的关系。依存关系是一个中心词(head)与其从属(dependents)之间的二元非对称关系。一个句子的中心词通常是动词，所有其他词要么依赖于中心词，要么通过依赖路径与它相关联。
+
+依存关系图是一个投影(projective)，若所有的词都按线性顺序书写，则用边连接这些词且保证边不交叉。
+
+![](pythonNLP35.png)
+
+Figure 8-8. Dependency structure: Arrows point from heads to their dependents; labels indicate the grammatical function of the dependent as subject, object, or modifier.
