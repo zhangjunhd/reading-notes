@@ -90,6 +90,7 @@
     - [新词](#%e6%96%b0%e8%af%8d)
     - [词性标注集中的形态学(Morphology in Part-of-Speech Tagsets)](#%e8%af%8d%e6%80%a7%e6%a0%87%e6%b3%a8%e9%9b%86%e4%b8%ad%e7%9a%84%e5%bd%a2%e6%80%81%e5%ad%a6morphology-in-part-of-speech-tagsets)
 - [分类文本性别鉴定](#%e5%88%86%e7%b1%bb%e6%96%87%e6%9c%ac%e6%80%a7%e5%88%ab%e9%89%b4%e5%ae%9a)
+- [分类文本电影评论正负面评价](#%e5%88%86%e7%b1%bb%e6%96%87%e6%9c%ac%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba%e6%ad%a3%e8%b4%9f%e9%9d%a2%e8%af%84%e4%bb%b7)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -4390,25 +4391,98 @@ nltk.classify.accuracy(classifier, devtest_set)
 0.798
 ```
 
+# 分类文本电影评论正负面评价
+下面的例子，选择电影评论语料库，将每个评论归类为正面或负面。
 
+```py
+from nltk.corpus import movie_reviews
+import random
 
+documents = [(list(movie_reviews.words(fileid)), category)
+             for category in movie_reviews.categories()
+             for fileid in movie_reviews.fileids(category)]
+random.shuffle(documents)
+```
 
+构建整个语料库中前2000个最频繁词的链表。然后，定义一个特征提取器，检查这些词是否在一个给定的文档中。
 
+```py
+import nltk
 
+all_words = nltk.FreqDist(w.lower() for w in movie_reviews.words())
+word_features = all_words.keys()[:2000]
 
+def document_features(document):
+    document_words = set(document)
+    features = {}
+    for word in word_features:
+        features['contains(%s)' % word] = (word in document_words)
+    return features
 
+document_features(movie_reviews.words('pos/cv957_8737.txt'))
+{'contains(waste)': False, 'contains(lot)': False, ...}
+```
 
+训练和测试分类器以进行文档分类。同时，可以使用show_most_informative_features()来找出哪些特征是分类器发现的并且是最有信息量的。
 
+```py
+featuresets = [(document_features(d), c) for (d,c) in documents]
+len(featuresets)
+2000
 
+featuresets[0][1]
+u'pos'
 
+featuresets[0][0].keys()[:30]  # Value is True or False
+[u'contains(corporate)',
+ u'contains(barred)',
+ u'contains(batmans)',
+ u'contains(menacing)',
+ u'contains(rags)',
+ u'contains(inquires)',
+ u'contains(nosebleeding)',
+ u'contains(playhouse)',
+ u'contains(peculiarities)',
+ u'contains(kilgore)',
+ u'contains(tarnish)',
+ u'contains(sand)',
+ u'contains(busting)',
+ u'contains(wedge)',
+ u'contains(smelling)',
+ u'contains(tulip)',
+ u'contains(singled)',
+ u'contains(wahlberg)',
+ u'contains(needed)',
+ u'contains(lydia)',
+ u'contains(rick)',
+ u'contains(cambodia)',
+ u'contains(outfielders)',
+ u'contains(jovivich)',
+ u'contains(pinon)',
+ u'contains(fix)',
+ u'contains(marla)',
+ u'contains(resources)',
+ u'contains(nomi)',
+ u'contains(irs)']
 
+featuresets[1][1]
+u'neg'
 
+train_set, test_set = featuresets[100:], featuresets[:100]
+classifier = nltk.NaiveBayesClassifier.train(train_set)
+nltk.classify.accuracy(classifier, test_set)
+0.65
 
+classifier.show_most_informative_features(5)
+Most Informative Features
+           contains(ugh) = True              neg : pos    =      9.7 : 1.0
+    contains(mediocrity) = True              neg : pos    =      7.7 : 1.0
+          contains(sans) = True              neg : pos    =      7.7 : 1.0
+     contains(dismissed) = True              pos : neg    =      7.0 : 1.0
+         contains(wires) = True              neg : pos    =      6.4 : 1.0
+```
 
-
-
-
-
+提到ugh的评论中负面大约是正面的9倍，提到wires的评论中正面是负面6倍。
 
 
 
