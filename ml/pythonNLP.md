@@ -60,6 +60,8 @@
     - [词干提取器(Stemmers)](#%e8%af%8d%e5%b9%b2%e6%8f%90%e5%8f%96%e5%99%a8stemmers)
     - [词形归并(Lemmatization)](#%e8%af%8d%e5%bd%a2%e5%bd%92%e5%b9%b6lemmatization)
     - [分割(Segmentation)](#%e5%88%86%e5%89%b2segmentation)
+- [分类和标注词汇](#%e5%88%86%e7%b1%bb%e5%92%8c%e6%a0%87%e6%b3%a8%e8%af%8d%e6%b1%87)
+  - [使用词性标注器](#%e4%bd%bf%e7%94%a8%e8%af%8d%e6%80%a7%e6%a0%87%e6%b3%a8%e5%99%a8)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -3020,6 +3022,33 @@ anneal(text, seg1, 5000, 1.2)
 
 '0000100100000001001000000010000100010000000100010000000'
 ```
+
+# 分类和标注词汇
+## 使用词性标注器
+词性标注器(part-of-speech tagger 或 `POS` tagger)处理一个词序列，为每个词附加一个词性标记。
+
+```py
+import nltk
+
+text = nltk.word_tokenize("And now for something completely different")
+nltk.pos_tag(text)
+
+[('And', 'CC'),
+ ('now', 'RB'),
+ ('for', 'IN'),
+ ('something', 'NN'),
+ ('completely', 'RB'),
+ ('different', 'JJ')]
+```
+
+text.similar()方法为词w找出所有上下文$w_1ww_2$，然后找出所有出现在相同上下文中的词w'，即$w_1w'w_2$。
+
+
+
+
+
+
+
 
 
 
