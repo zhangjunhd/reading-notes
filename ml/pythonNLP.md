@@ -89,6 +89,7 @@
     - [语义(Semantic)线索](#%e8%af%ad%e4%b9%89semantic%e7%ba%bf%e7%b4%a2)
     - [新词](#%e6%96%b0%e8%af%8d)
     - [词性标注集中的形态学(Morphology in Part-of-Speech Tagsets)](#%e8%af%8d%e6%80%a7%e6%a0%87%e6%b3%a8%e9%9b%86%e4%b8%ad%e7%9a%84%e5%bd%a2%e6%80%81%e5%ad%a6morphology-in-part-of-speech-tagsets)
+- [分类文本性别鉴定](#%e5%88%86%e7%b1%bb%e6%96%87%e6%9c%ac%e6%80%a7%e5%88%ab%e9%89%b4%e5%ae%9a)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -4113,6 +4114,298 @@ Tagging the test data
 
 ### 词性标注集中的形态学(Morphology in Part-of-Speech Tagsets)
 普通标记集经常会“捕捉”一些构词(morphosyntactic)信息，即一种词借助句法角色获得的形态标记信息。
+
+# 分类文本性别鉴定
+使用naive Bayes classifier：
+
+```py
+def gender_features(word):
+    return {'last_letter': word[-1]}
+
+gender_features('Shrek')
+{'last_letter': 'k'}
+
+import nltk
+from nltk.corpus import names
+import random
+names = ([(name, 'male') for name in names.words('male.txt')] +
+         [(name, 'female') for name in names.words('female.txt')])
+random.shuffle(names)
+featuresets = [(gender_features(n), g) for (n,g) in names]
+len(featuresets)
+7944
+
+featuresets[0]
+({'last_letter': u'e'}, 'female')
+
+train_set, test_set = featuresets[500:], featuresets[:500]
+classifier = nltk.NaiveBayesClassifier.train(train_set)
+classifier.classify(gender_features('Neo'))
+'male'
+
+classifier.classify(gender_features('Trinity'))
+'female'
+
+nltk.classify.accuracy(classifier, test_set)
+0.784
+
+classifier.show_most_informative_features(5)
+Most Informative Features
+             last_letter = u'a'           female : male   =     35.8 : 1.0
+             last_letter = u'k'             male : female =     31.2 : 1.0
+             last_letter = u'f'             male : female =     14.6 : 1.0
+             last_letter = u'v'             male : female =     11.2 : 1.0
+             last_letter = u'p'             male : female =     11.2 : 1.0
+```
+
+此列表显示训练集以a结尾的名字中女性是男性的38倍，而以k结尾的名字中男性是女性的31倍。这些比率是`似然比(likelihood ratios)`。
+
+在处理大型语料库时，构建包含所有实例特征的单独链表会占用大量的内存。在这种情况下，使用函数nltk.classify.apply_features，返回一个像链表但不会在内存存储所有特征集的对象。
+
+```py
+from nltk.classify import apply_features
+train_set = apply_features(gender_features, names[500:])
+test_set = apply_features(gender_features, names[:500])
+```
+
+特征提取器过拟合性别特征。这个特征提取器返回的特征集中包括大量的指定特征，从而导致相对较小的名字语料库产生了过拟合。
+
+```py
+def gender_features2(name):
+    features = {}
+    features["firstletter"] = name[0].lower()
+    features["lastletter"] = name[-1].lower()
+    for letter in 'abcdefghijklmnopqrstuvwxyz':
+        features["count(%s)" % letter] = name.lower().count(letter)
+        features["has(%s)" % letter] = (letter in name.lower())
+    return features
+
+gender_features2('John')
+{'count(a)': 0,
+ 'count(b)': 0,
+ 'count(c)': 0,
+ 'count(d)': 0,
+ 'count(e)': 0,
+ 'count(f)': 0,
+ 'count(g)': 0,
+ 'count(h)': 1,
+ 'count(i)': 0,
+ 'count(j)': 1,
+ 'count(k)': 0,
+ 'count(l)': 0,
+ 'count(m)': 0,
+ 'count(n)': 1,
+ 'count(o)': 1,
+ 'count(p)': 0,
+ 'count(q)': 0,
+ 'count(r)': 0,
+ 'count(s)': 0,
+ 'count(t)': 0,
+ 'count(u)': 0,
+ 'count(v)': 0,
+ 'count(w)': 0,
+ 'count(x)': 0,
+ 'count(y)': 0,
+ 'count(z)': 0,
+ 'firstletter': 'j',
+ 'has(a)': False,
+ 'has(b)': False,
+ 'has(c)': False,
+ 'has(d)': False,
+ 'has(e)': False,
+ 'has(f)': False,
+ 'has(g)': False,
+ 'has(h)': True,
+ 'has(i)': False,
+ 'has(j)': True,
+ 'has(k)': False,
+ 'has(l)': False,
+ 'has(m)': False,
+ 'has(n)': True,
+ 'has(o)': True,
+ 'has(p)': False,
+ 'has(q)': False,
+ 'has(r)': False,
+ 'has(s)': False,
+ 'has(t)': False,
+ 'has(u)': False,
+ 'has(v)': False,
+ 'has(w)': False,
+ 'has(x)': False,
+ 'has(y)': False,
+ 'has(z)': False,
+ 'lastletter': 'n'}
+
+featuresets = [(gender_features2(n), g) for (n,g) in names]
+train_set, test_set = featuresets[500:], featuresets[:500]
+classifier = nltk.NaiveBayesClassifier.train(train_set)
+nltk.classify.accuracy(classifier, test_set)
+0.792
+```
+
+![](pythonNLP15.png)
+
+```py
+train_names = names[1500:]
+devtest_names = names[500:1500]
+test_names = names[:500]
+
+train_set = [(gender_features(n), g) for (n,g) in train_names]
+devtest_set = [(gender_features(n), g) for (n,g) in devtest_names]
+test_set = [(gender_features(n), g) for (n,g) in test_names]
+classifier = nltk.NaiveBayesClassifier.train(train_set)
+nltk.classify.accuracy(classifier, devtest_set)
+0.774
+
+errors = []
+for (name, tag) in devtest_names:
+    guess = classifier.classify(gender_features(name))
+    if guess != tag:
+        errors.append((tag, guess, name))
+len(errors)
+226
+```
+
+下例中已建立的名字分类器在开发测试语料上产生约100个错误。
+
+```py
+for (tag, guess, name) in sorted(errors[:100]): # doctest: +ELLIPSIS +NORMALIZE_WHITESPACE
+    print 'correct=%-8s guess=%-8s name=%-30s' % (tag, guess, name)
+correct=female   guess=male     name=Ailyn                         
+correct=female   guess=male     name=Beatriz                       
+correct=female   guess=male     name=Bess                          
+correct=female   guess=male     name=Blair                         
+correct=female   guess=male     name=Brynn                         
+correct=female   guess=male     name=Cat                           
+correct=female   guess=male     name=Chad                          
+correct=female   guess=male     name=Charmain                      
+correct=female   guess=male     name=Christen                      
+correct=female   guess=male     name=Darb                          
+correct=female   guess=male     name=Diahann                       
+correct=female   guess=male     name=Dorian                        
+correct=female   guess=male     name=Dorit                         
+correct=female   guess=male     name=Elyn                          
+correct=female   guess=male     name=Emlyn                         
+correct=female   guess=male     name=Eran                          
+correct=female   guess=male     name=Ethelind                      
+correct=female   guess=male     name=Farrand                       
+correct=female   guess=male     name=Fleur                         
+correct=female   guess=male     name=Flo                           
+correct=female   guess=male     name=Flor                          
+correct=female   guess=male     name=Fred                          
+correct=female   guess=male     name=Gwendolyn                     
+correct=female   guess=male     name=Hannis                        
+correct=female   guess=male     name=Imojean                       
+correct=female   guess=male     name=Janeen                        
+correct=female   guess=male     name=Joellyn                       
+correct=female   guess=male     name=Jourdan                       
+correct=female   guess=male     name=Kerstin                       
+correct=female   guess=male     name=Kipp                          
+correct=female   guess=male     name=Kirstin  
+correct=female   guess=male     name=Lilian                        
+correct=female   guess=male     name=Linet                         
+correct=female   guess=male     name=Lois                          
+correct=female   guess=male     name=Madlin                        
+correct=female   guess=male     name=Rosario                       
+correct=female   guess=male     name=Roslyn                        
+correct=female   guess=male     name=Roz                           
+correct=female   guess=male     name=Sheilakathryn                 
+correct=female   guess=male     name=Stoddard                      
+correct=female   guess=male     name=Tiff                          
+correct=female   guess=male     name=Winifred                      
+correct=female   guess=male     name=Yehudit                       
+correct=male     guess=female   name=Ajai                          
+correct=male     guess=female   name=Al                            
+correct=male     guess=female   name=Alaa                          
+correct=male     guess=female   name=Ansell                        
+correct=male     guess=female   name=Antone                        
+correct=male     guess=female   name=Archy                         
+correct=male     guess=female   name=Bjorne                        
+correct=male     guess=female   name=Brinkley                      
+correct=male     guess=female   name=Butch                         
+correct=male     guess=female   name=Carleigh                      
+correct=male     guess=female   name=Chrissy                       
+correct=male     guess=female   name=Claude                        
+correct=male     guess=female   name=Dana                          
+correct=male     guess=female   name=Danny                         
+correct=male     guess=female   name=Darrell                       
+correct=male     guess=female   name=Ely                           
+correct=male     guess=female   name=Emile                         
+correct=male     guess=female   name=Felipe                        
+correct=male     guess=female   name=Gerome                        
+correct=male     guess=female   name=Gregory   
+correct=male     guess=female   name=Hartley                       
+correct=male     guess=female   name=Jean-Pierre                   
+correct=male     guess=female   name=Jeramie                       
+correct=male     guess=female   name=Jerrome                       
+correct=male     guess=female   name=Karel                         
+correct=male     guess=female   name=Kendal                        
+correct=male     guess=female   name=Kirby                         
+correct=male     guess=female   name=Lawerence                     
+correct=male     guess=female   name=Lee                           
+correct=male     guess=female   name=Louie                         
+correct=male     guess=female   name=Micky                         
+correct=male     guess=female   name=Moishe                        
+correct=male     guess=female   name=Moshe                         
+correct=male     guess=female   name=Murdoch                       
+correct=male     guess=female   name=Nate                          
+correct=male     guess=female   name=Nikki                         
+correct=male     guess=female   name=Pascal                        
+correct=male     guess=female   name=Quill                         
+correct=male     guess=female   name=Rodolph                       
+correct=male     guess=female   name=Royal                         
+correct=male     guess=female   name=Shelby                        
+correct=male     guess=female   name=Simone                        
+correct=male     guess=female   name=Skippie                       
+correct=male     guess=female   name=Terrel                        
+correct=male     guess=female   name=Thorny                        
+correct=male     guess=female   name=Timmie                        
+correct=male     guess=female   name=Timothee                      
+correct=male     guess=female   name=Tony                          
+correct=male     guess=female   name=Torry                         
+correct=male     guess=female   name=Troy    
+correct=male     guess=female   name=Tull                          
+correct=male     guess=female   name=Uriah                         
+correct=male     guess=female   name=Valentine                     
+correct=male     guess=female   name=Vinnie                        
+correct=male     guess=female   name=Walsh                         
+correct=male     guess=female   name=Yancy                         
+correct=male     guess=female   name=Yardley 
+```
+
+浏览这个错误列表，它明确指出某些多字母后缀也可以指示名字性别。例如：以yn结尾的名字大多以女性为主，尽管事实上，以n结尾的名字往往是男性；以ch结尾的名字通常是男性，尽管以h结尾的名字倾向于是女性。因此，调整特征提取器使其包含两个字母后缀的特征。
+
+```py
+def gender_features(word):
+    return {'suffix1': word[-1:], 'suffix2': word[-2:]}
+```
+
+使用新的特征提取器重建分类器，看到测试集上的性能提高3个百分点。
+
+```py
+train_set = [(gender_features(n), g) for (n,g) in train_names]
+devtest_set = [(gender_features(n), g) for (n,g) in devtest_names]
+classifier = nltk.NaiveBayesClassifier.train(train_set)
+nltk.classify.accuracy(classifier, devtest_set)
+0.798
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
