@@ -62,6 +62,33 @@
     - [分割(Segmentation)](#%e5%88%86%e5%89%b2segmentation)
 - [分类和标注词汇](#%e5%88%86%e7%b1%bb%e5%92%8c%e6%a0%87%e6%b3%a8%e8%af%8d%e6%b1%87)
   - [使用词性标注器](#%e4%bd%bf%e7%94%a8%e8%af%8d%e6%80%a7%e6%a0%87%e6%b3%a8%e5%99%a8)
+  - [标注语料库](#%e6%a0%87%e6%b3%a8%e8%af%ad%e6%96%99%e5%ba%93)
+    - [读取已标注的语料库](#%e8%af%bb%e5%8f%96%e5%b7%b2%e6%a0%87%e6%b3%a8%e7%9a%84%e8%af%ad%e6%96%99%e5%ba%93)
+    - [简化的词性标记集](#%e7%ae%80%e5%8c%96%e7%9a%84%e8%af%8d%e6%80%a7%e6%a0%87%e8%ae%b0%e9%9b%86)
+    - [名词](#%e5%90%8d%e8%af%8d)
+    - [动词](#%e5%8a%a8%e8%af%8d)
+    - [未简化的标记](#%e6%9c%aa%e7%ae%80%e5%8c%96%e7%9a%84%e6%a0%87%e8%ae%b0)
+    - [探索已标注的语料库](#%e6%8e%a2%e7%b4%a2%e5%b7%b2%e6%a0%87%e6%b3%a8%e7%9a%84%e8%af%ad%e6%96%99%e5%ba%93)
+  - [自动标注](#%e8%87%aa%e5%8a%a8%e6%a0%87%e6%b3%a8)
+    - [默认标注器](#%e9%bb%98%e8%ae%a4%e6%a0%87%e6%b3%a8%e5%99%a8)
+    - [正则表达式标注器](#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e6%a0%87%e6%b3%a8%e5%99%a8)
+    - [查询标注器](#%e6%9f%a5%e8%af%a2%e6%a0%87%e6%b3%a8%e5%99%a8)
+  - [N-gram标注](#n-gram%e6%a0%87%e6%b3%a8)
+    - [一元标注器(Unigram Tagging)](#%e4%b8%80%e5%85%83%e6%a0%87%e6%b3%a8%e5%99%a8unigram-tagging)
+    - [分离训练和测试数据](#%e5%88%86%e7%a6%bb%e8%ae%ad%e7%bb%83%e5%92%8c%e6%b5%8b%e8%af%95%e6%95%b0%e6%8d%ae)
+    - [一般的N-gram的标注](#%e4%b8%80%e8%88%ac%e7%9a%84n-gram%e7%9a%84%e6%a0%87%e6%b3%a8)
+    - [组合标注器](#%e7%bb%84%e5%90%88%e6%a0%87%e6%b3%a8%e5%99%a8)
+    - [标注生词](#%e6%a0%87%e6%b3%a8%e7%94%9f%e8%af%8d)
+    - [存储标注器](#%e5%ad%98%e5%82%a8%e6%a0%87%e6%b3%a8%e5%99%a8)
+    - [性能限制](#%e6%80%a7%e8%83%bd%e9%99%90%e5%88%b6)
+    - [跨句子边界标注](#%e8%b7%a8%e5%8f%a5%e5%ad%90%e8%be%b9%e7%95%8c%e6%a0%87%e6%b3%a8)
+  - [基于转换的标注(Transformation-Based Tagging)](#%e5%9f%ba%e4%ba%8e%e8%bd%ac%e6%8d%a2%e7%9a%84%e6%a0%87%e6%b3%a8transformation-based-tagging)
+  - [如何确定一个词的分类](#%e5%a6%82%e4%bd%95%e7%a1%ae%e5%ae%9a%e4%b8%80%e4%b8%aa%e8%af%8d%e7%9a%84%e5%88%86%e7%b1%bb)
+    - [形态学(Morphological)线索](#%e5%bd%a2%e6%80%81%e5%ad%a6morphological%e7%ba%bf%e7%b4%a2)
+    - [句法(Syntactic)线索](#%e5%8f%a5%e6%b3%95syntactic%e7%ba%bf%e7%b4%a2)
+    - [语义(Semantic)线索](#%e8%af%ad%e4%b9%89semantic%e7%ba%bf%e7%b4%a2)
+    - [新词](#%e6%96%b0%e8%af%8d)
+    - [词性标注集中的形态学(Morphology in Part-of-Speech Tagsets)](#%e8%af%8d%e6%80%a7%e6%a0%87%e6%b3%a8%e9%9b%86%e4%b8%ad%e7%9a%84%e5%bd%a2%e6%80%81%e5%ad%a6morphology-in-part-of-speech-tagsets)
 
 # NLTK入门
 从NLTK的book模块中加载所有的条目
@@ -3043,13 +3070,1049 @@ nltk.pos_tag(text)
 
 text.similar()方法为词w找出所有上下文$w_1ww_2$，然后找出所有出现在相同上下文中的词w'，即$w_1w'w_2$。
 
+```py
+text = nltk.Text(word.lower() for word in nltk.corpus.brown.words())
+text.similar('woman')
+man time day year car moment world family house country child boy
+state job way war girl place word work
 
+text.similar('bought')
+made said put done seen had found left given heard brought got been
+was set told took in felt that
 
+text.similar('over')
+in on to of and for with from at by that into as up out down through
+is all about
 
+text.similar('the')
+a his this their its her an that our any all one these my in your no
+some other and
+```
 
+## 标注语料库
+按照NLTK的约定，已标注的标识符使用一个由标识符和标记组成的元组来表示。
 
+```py
+tagged_token = nltk.tag.str2tuple('fly/NN')
+tagged_token
+('fly', 'NN')
 
+tagged_token[0]
+'fly'
 
+tagged_token[1]
+'NN'
+```
+
+从一个字符串构造一个已标注的标识符的链表。
+
+```py
+sent = '''
+... The/AT grand/JJ jury/NN commented/VBD on/IN a/AT number/NN of/IN
+... other/AP topics/NNS ,/, AMONG/IN them/PPO the/AT Atlanta/NP and/CC
+... Fulton/NP-tl County/NN-tl purchasing/VBG departments/NNS which/WDT it/PPS
+... said/VBD ``/`` ARE/BER well/QL operated/VBN and/CC follow/VB generally/RB
+... accepted/VBN practices/NNS which/WDT inure/VB to/IN the/AT best/JJT
+... interest/NN of/IN both/ABX governments/NNS ''/'' ./.
+... '''
+
+[nltk.tag.str2tuple(t) for t in sent.split()]
+[('The', 'AT'),
+ ('grand', 'JJ'),
+ ('jury', 'NN'),
+ ('commented', 'VBD'),
+ ('on', 'IN'),
+ ('a', 'AT'),
+ ('number', 'NN'),
+ ('of', 'IN'),
+ ('other', 'AP'),
+ ('topics', 'NNS'),
+ (',', ','),
+ ('AMONG', 'IN'),
+ ('them', 'PPO'),
+ ('the', 'AT'),
+ ('Atlanta', 'NP'),
+ ('and', 'CC'),
+ ('Fulton', 'NP-TL'),
+ ('County', 'NN-TL'),
+ ('purchasing', 'VBG'),
+ ('departments', 'NNS'),
+ ('which', 'WDT'),
+ ('it', 'PPS'),
+ ('said', 'VBD'),
+ ('``', '``'),
+ ('ARE', 'BER'),
+ ('well', 'QL'),
+ ('operated', 'VBN'),
+ ('and', 'CC'),
+ ('follow', 'VB'),
+ ('generally', 'RB'),
+ ('accepted', 'VBN'),
+ ('practices', 'NNS'),
+ ('which', 'WDT'),
+ ('inure', 'VB'),
+ ('to', 'IN'),
+ ('the', 'AT'),
+ ('best', 'JJT'),
+ ('interest', 'NN'),
+ ('of', 'IN'),
+ ('both', 'ABX'),
+ ('governments', 'NNS'),
+ ("''", "''"),
+ ('.', '.')]
+```
+
+### 读取已标注的语料库
+只要语料库包含已标注的文本，NLTK的语料库接口都将有一个tagged_words()方法。
+
+```py
+nltk.corpus.nps_chat.tagged_words()
+[(u'now', 'RB'), (u'im', 'PRP'), (u'left', 'VBD'), ...]
+
+nltk.corpus.conll2000.tagged_words()
+[(u'Confidence', u'NN'), (u'in', u'IN'), ...]
+
+nltk.corpus.treebank.tagged_words()
+[(u'Pierre', u'NNP'), (u'Vinken', u'NNP'), ...]
+```
+
+使用内置映射到简化的标记集。
+
+```py
+nltk.corpus.brown.tagged_words(tagset='universal')
+[(u'The', u'DET'), (u'Fulton', u'NOUN'), ...]
+
+nltk.corpus.treebank.tagged_words(tagset='universal')
+[(u'Pierre', u'NOUN'), (u'Vinken', u'NOUN'), ...]
+```
+
+中文、印地语、葡萄牙语、西班牙语、荷兰语等这些通常含有非ASCII文本，当输出较大的结构如列表时，Python总是以十六进制显示。
+
+```py
+nltk.corpus.sinica_treebank.tagged_words()
+[(u'\u4e00', u'Neu'), (u'\u53cb\u60c5', u'Nad'), ...]
+
+nltk.corpus.indian.tagged_words()
+[(u'\u09ae\u09b9\u09bf\u09b7\u09c7\u09b0', u'NN'), (u'\u09b8\u09a8\u09cd\u09a4\u09be\u09a8', u'NN'), ...]
+
+nltk.corpus.mac_morpho.tagged_words()
+[(u'Jersei', u'N'), (u'atinge', u'V'), ...]
+
+nltk.corpus.conll2002.tagged_words()
+[(u'Sao', u'NC'), (u'Paulo', u'VMI'), (u'(', u'Fpa'), ...]
+
+nltk.corpus.cess_cat.tagged_words()
+[(u'El', u'da0ms0'), (u'Tribunal_Suprem', u'np0000o'), ...]
+```
+
+### 简化的词性标记集
+Table 5-1. Simplified part-of-speech tagset
+
+| Tag | Meaning | Examples |
+| --- | ------- | -------- |
+| ADJ | adjective | new, good, high, special, big, local|
+| ADP | adposition | on, of, at, with, by, into, under|
+| ADV | adverb | really, already, still, early, now|
+| CONJ | conjunction | and, or, but, if, while, although|
+| DET | determiner, article | the, a, some, most, every, no, which|
+| NOUN | noun | year, home, costs, time, Africa|
+| NUM | numeral | twenty-four, fourth, 1991, 14:24|
+| PRT | particle | at, on, out, over per, that, up, with|
+| PRON | pronoun | he, their, her, its, my, I, us|
+| VERB | verb | is, say, told, given, playing, would|
+| . | punctuation | marks\t. , ; !|
+| X | other | ersatz, esprit, dunno, gr8, univeristy|
+
+### 名词
+检查一些已标注的文本，看看哪些词类出现在名词前，频率最高的在最前面。
+
+```py
+from nltk.corpus import brown
+
+brown_news_tagged = nltk.corpus.brown.tagged_words(categories='news', tagset='universal')
+
+word_tag_pairs = nltk.bigrams(brown_news_tagged)
+list(nltk.FreqDist(a[1] for (a, b) in word_tag_pairs if b[1] == 'NOUN'))
+[u'ADV',
+ u'NOUN',
+ u'ADP',
+ u'PRON',
+ u'DET',
+ u'.',
+ u'PRT',
+ u'VERB',
+ u'X',
+ u'NUM',
+ u'CONJ',
+ u'ADJ']
+```
+
+名词出现在限定词和形容词之后。
+
+### 动词
+新闻中最常见的动词是什么。
+
+```py
+wsj = nltk.corpus.treebank.tagged_words()
+word_tag_fd = nltk.FreqDist(wsj)
+[word + "/" + tag for (word, tag) in word_tag_fd if tag.startswith('V')][:30]
+[u'attributes/VBZ',
+ u'negotiated/VBN',
+ u'failed/VBD',
+ u'printed/VBN',
+ u'sticking/VBG',
+ u'close/VB',
+ u'filed/VBN',
+ u'teaches/VBZ',
+ u'chooses/VBZ',
+ u'suffer/VBP',
+ u'agree/VBP',
+ u'buy/VBP',
+ u'called/VBN',
+ u'underline/VB',
+ u'controlling/VBG',
+ u'exhausted/VBN',
+ u'declaring/VBG',
+ u'staid/VBN',
+ u'stretching/VBG',
+ u'packaging/VBG',
+ u'study/VBP',
+ u'mount/VB',
+ u'sparing/VBG',
+ u'guaranteed/VBN',
+ u'confined/VBN',
+ u'gives/VBZ',
+ u'provoke/VB',
+ u'frustrating/VBG',
+ u'oversee/VB',
+ u'suing/VBG']
+```
+
+由于词汇和标记是成对的，我们可以把词作为条件，标记作为事件，使用条件-事件对的链表初始化一个条件频率分布。这样我们可以看到一个给定词的标记的频率顺序表。
+
+```py
+cfd1 = nltk.ConditionalFreqDist(wsj)
+cfd1['yield'].keys()
+[u'VB', u'NN']
+
+cfd1['cut'].keys()
+[u'VB', u'VBN', u'NN', u'VBD']
+```
+
+颠倒配对顺序。
+
+```py
+cfd2 = nltk.ConditionalFreqDist((tag, word) for (word, tag) in wsj)
+cfd2['VBN'].keys()[:30]
+[u'limited',
+ u'reorganized',
+ u'managed',
+ u'switched',
+ u'caused',
+ u'founded',
+ u'assembled',
+ u'concerned',
+ u'contained',
+ u'Rekindled',
+ u'automated',
+ u'bribed',
+ u'voted',
+ u'issued',
+ u'cluttered',
+ u'disapproved',
+ u'sent',
+ u'returned',
+ u'synchronized',
+ u'puzzled',
+ u'desired',
+ u'engineered',
+ u'headlined',
+ u'centralized',
+ u'advised',
+ u'stabbed',
+ u'continued',
+ u'perceived',
+ u'presented',
+ u'prolonged']
+```
+
+要弄清VBD(过去式)和VBN(过去分词)之间的区别，让我们找到可以同是VBD和VBN的词汇，看看它们周围的文字的情况。
+
+```py
+[w for w in cfd1.conditions() if 'VBD' in cfd1[w] and 'VBN' in cfd1[w]][:30]
+[u'contributed',
+ u'reported',
+ u'brought',
+ u'plunged',
+ u'welcomed',
+ u'assured',
+ u'threatened',
+ u'needed',
+ u'nominated',
+ u'rolled',
+ u'asked',
+ u'worked',
+ u'climbed',
+ u'damaged',
+ u'had',
+ u'imposed',
+ u'raised',
+ u'resulted',
+ u'invested',
+ u'bribed',
+ u'solved',
+ u'studied',
+ u'opposed',
+ u'believed',
+ u'allowed',
+ u'fueled',
+ u'matched',
+ u'surged',
+ u'turned',
+ u'printed']
+
+idx1 = wsj.index(('kicked', 'VBD'))
+wsj[idx1-4:idx1+1]
+[(u'While', u'IN'),
+ (u'program', u'NN'),
+ (u'trades', u'NNS'),
+ (u'swiftly', u'RB'),
+ (u'kicked', u'VBD')]
+
+idx2 = wsj.index(('kicked', 'VBN'))
+wsj[idx2-4:idx2+1]
+[(u'head', u'NN'),
+ (u'of', u'IN'),
+ (u'state', u'NN'),
+ (u'has', u'VBZ'),
+ (u'kicked', u'VBN')]
+```
+
+### 未简化的标记
+找出最频繁的名词标记的程序
+
+```py
+def findtags(tag_prefix, tagged_text):
+    cfd = nltk.ConditionalFreqDist((tag, word) for (word, tag) in tagged_text
+                                  if tag.startswith(tag_prefix))
+    return dict((tag, cfd[tag].keys()[:5]) for tag in cfd.conditions())
+
+tagdict = findtags('NN', nltk.corpus.brown.tagged_words(categories='news'))
+
+or tag in sorted(tagdict):
+    print tag, tagdict[tag]
+NN [u'inning', u'pardon', u'sunbonnet', u'temperament', u'hitch']
+NN$ [u"junior's", u"player's", u"wife's", u"layman's", u"coach's"]
+NN$-HL [u"Golf's", u"Navy's"]
+NN$-TL [u"House's", u"Art's", u"University's", u"U.'s", u"Department's"]
+NN-HL [u'son', u'help', u'show', u'lack', u'rest']
+NN-NC [u'eva', u'ova', u'aya']
+NN-TL [u'Communisn', u'Communism', u'Secretary-General', u'Monthly', u'Self']
+NN-TL-HL [u'City', u'Commissioner', u'Grove', u'House', u'Oak']
+NNS [u'wetlands', u'hats', u'facilities', u'woods', u'$12.50']
+NNS$ [u"steelmakers'", u"taxpayers'", u"teammates'", u"bishops'", u"owners'"]
+NNS$-HL [u"Dealers'", u"Idols'"]
+NNS$-TL [u"Officers'", u"States'", u"Bombers'", u"Falcons'", u"Princes'"]
+NNS-HL [u'years', u'idols', u'Creations', u'thanks', u'centers']
+NNS-TL [u'Gables', u'Broncos', u'Hills', u'Workers', u'Ministers']
+```
+
+### 探索已标注的语料库
+观察跟在often后面的词汇。
+
+```py
+brown_learned_text = brown.words(categories='learned')
+sorted(set(b for (a, b) in nltk.bigrams(brown_learned_text) if a == 'often'))
+[u',',
+ u'.',
+ u'accomplished',
+ u'analytically',
+ u'appear',
+ u'apt',
+ u'associated',
+ u'assuming',
+ u'became',
+ u'become',
+ u'been',
+ u'began',
+ u'call',
+ u'called',
+ u'carefully',
+ u'chose',
+ u'classified',
+ u'colorful',
+ u'composed',
+ u'contain',
+ u'differed',
+ u'difficult',
+ u'encountered',
+ u'enough',
+ u'equate',
+ u'extremely',
+ u'found',
+ u'happens',
+ u'have',
+ u'ignored',
+u'in',
+ u'involved',
+ u'more',
+ u'needed',
+ u'nightly',
+ u'observed',
+ u'of',
+ u'on',
+ u'out',
+ u'quite',
+ u'represent',
+ u'responsible',
+ u'revamped',
+ u'seclude',
+ u'set',
+ u'shortened',
+ u'sing',
+ u'sounded',
+ u'stated',
+ u'still',
+ u'sung',
+ u'supported',
+ u'than',
+ u'to',
+ u'when',
+ u'work']
+```
+
+查看跟随词的词性标记。
+
+```py
+brown_lrnd_tagged = brown.tagged_words(categories='learned')
+tags = [b[1] for (a, b) in nltk.bigrams(brown_lrnd_tagged) if a[0] == 'often']
+fd = nltk.FreqDist(tags)
+fd.tabulate()
+
+VBN  VB VBD  JJ  IN  RB   ,  CS  QL WRB  TO VBG BEN  HV QLP  AP  RP   . VBZ 
+ 15  10   8   5   4   3   3   3   3   1   1   1   1   1   1   1   1   1   1 
+```
+
+often后面最高频率的词性是动词。名词从来没有在这个位置出现（在特定的语料中）。
+
+使用POS标记寻找三词短语。
+
+```py
+from nltk.corpus import brown
+def process(sentence):
+    for (w1,t1), (w2,t2), (w3,t3) in nltk.trigrams(sentence):
+        if (t1.startswith('V') and t2 == 'TO' and t3.startswith('V')):
+            print w1, w2, w3
+
+for tagged_sent in brown.tagged_sents()[:300]:
+    process(tagged_sent)
+combined to achieve
+continue to place
+serve to protect
+wanted to wait
+allowed to place
+expected to become
+expected to approve
+expected to make
+intends to make
+seek to set
+like to see
+designed to provide
+get to hear
+expects to tell
+expected to give
+prefer to pay
+required to obtain
+permitted to teach
+designed to reduce
+Asked to elaborate
+got to go
+raised to pay
+scheduled to go
+cut to meet
+needed to meet
+```
+
+各自的上下文可以帮助我们弄清楚标记之间的区别。
+
+```py
+brown_news_tagged = brown.tagged_words(categories='news')
+data = nltk.ConditionalFreqDist((word.lower(), tag)
+                                for (word, tag) in brown_news_tagged)
+for word in data.conditions():
+    if len(data[word]) > 3:
+        tags = data[word].keys()
+        print word, ' '.join(tags)
+second OD-TL OD RB NN QL
+place NP VB NN-TL NN
+fair JJ-HL JJ-TL NN-TL NN JJ
+best VB JJT NP-TL RBT JJT-HL
+right RB JJ NN QL
+for CS IN-TL IN-HL RB IN
+ballet FW-NN NN-TL NN FW-NN-TL
+red NP NN-TL JJ-TL JJ
+open VB NN NN-TL RB JJ
+act NN-HL VB NN-TL NN
+as CS CS-HL QL IN
+to TO-TL IN-TL TO IN-HL TO-HL IN NPS
+past AP JJ NN IN
+more AP RBR AP-HL QL
+major NP NN-TL NN JJ
+plan NN-HL VB NN-TL NN
+gold NN-TL JJ-TL NN JJ
+set VB VBN-HL VBN NN VBD
+read NP VB VBN VBD
+by IN-HL IN-TL RB IN
+high JJ-HL RB JJ-TL NN JJ
+lay NP VB JJ VBD
+green NP JJ-TL NN JJ
+post NP VB NN-TL NN
+brown NP NN JJ NP-TL
+cost NN-HL VB NN VBD
+congolese NP JJ-TL NPS JJ
+last AP VB AP-HL NN AP-TL
+increase NN-HL VB VB-HL NN
+that CS DT WPO QL WPS
+only AP JJ RB QL
+3 CD-HL CD OD OD-TL CD-TL
+a FW-IN AT-HL AT NN AT-TL
+help NN-HL VB VB-HL NN
+held VBN-HL VBD-HL VBN VBD
+issue NN-HL VB VB-HL NN
+st. NP NP-HL NN-TL NP-TL
+close VB RB JJ NN
+grant NP VB VB-HL NN
+march NP NP-HL NN-TL VB NN
+police NNS-HL NNS NN NNS-TL
+home NN NN-HL NN-TL NP NR NR-HL
+force VB NN-TL NN FW-NN-TL
+even VB JJ QL RB
+met NP NP-HL VBN VBD
+better JJR-TL VB QL RBR JJR
+near RB-HL QL JJ RB IN
+in IN-TL IN-HL RP IN
+left NR VBN JJ VBD
+down RP NP-TL RP-HL IN
+round VB NN-TL JJ NN
+french NP JJ-HL JJ-TL NPS JJ
+first RB-HL OD-TL OD RB OD-HL
+little NP AP JJ-TL QL JJ
+reading NN-HL NP VBG NN
+field NP VB NN-TL NN
+good JJ-HL RB JJ-TL NN JJ
+house VB NN NN-HL NN-TL NP-TL-HL NP NN-TL-HL
+most AP RBT QL QL-TL
+fine RB JJ-TL JJ NN
+point NN-HL VB NN-TL NN
+cut NN-HL VB VBN NN VBD
+back RB-HL VB RB-TL NN RB
+chief NN-TL JJS NN JJS-TL
+beat VB NN-TL-HL NN VBD
+swim NP VB NP-HL NN
+general NN-TL JJ-TL NN JJ
+like CS VB VB-HL JJ IN
+works VBZ NNS-HL NNS NNS-TL
+must MD MD-HL NN MD-TL
+end NN-HL VB NN-TL NN
+report NN-TL VB VB-HL NN
+mother NN-HL VB NN-TL NN
+no AT-HL AT RB AT-TL
+cook NP VB NN NP-TL
+white NP NN-TL JJ-TL NN JJ
+case NP NN-HL NP-TL NN
+on IN-TL RP IN-HL IN
+hill NN-HL NP NN-TL NN
+hit NN-HL VB VBN NN VBD
+out PP$ RP RP-HL IN
+present VB NN RB JJ
+half NN RB ABN QL
+```
+
+## 自动标注
+```py
+from nltk.corpus import brown
+brown_tagged_sents = brown.tagged_sents(categories='news')
+brown_sents = brown.sents(categories='news')
+```
+
+### 默认标注器
+用最有可能的标记标注每个词。
+
+```py
+tags = [tag for (word, tag) in brown.tagged_words(categories='news')]
+nltk.FreqDist(tags).max()
+u'NN'
+
+raw = 'I do not like green eggs and ham, I do not like them Sam I am!'
+tokens = nltk.word_tokenize(raw)
+default_tagger = nltk.DefaultTagger('NN')
+default_tagger.tag(tokens)
+[('I', 'NN'),
+ ('do', 'NN'),
+ ('not', 'NN'),
+ ('like', 'NN'),
+ ('green', 'NN'),
+ ('eggs', 'NN'),
+ ('and', 'NN'),
+ ('ham', 'NN'),
+ (',', 'NN'),
+ ('I', 'NN'),
+ ('do', 'NN'),
+ ('not', 'NN'),
+ ('like', 'NN'),
+ ('them', 'NN'),
+ ('Sam', 'NN'),
+ ('I', 'NN'),
+ ('am', 'NN'),
+ ('!', 'NN')]
+```
+
+正确率只有八分之一。
+
+```py
+default_tagger.evaluate(brown_tagged_sents)
+0.13089484257215028
+```
+
+### 正则表达式标注器
+```py
+patterns = [
+    (r'.*ing$', 'VBG'),               # gerunds
+    (r'.*ed$', 'VBD'),                # simple past
+    (r'.*es$', 'VBZ'),                # 3rd singular present
+    (r'.*ould$', 'MD'),               # modals
+    (r'.*\'s$', 'NN$'),               # possessive nouns
+    (r'.*s$', 'NNS'),                 # plural nouns
+    (r'^-?[0-9]+(.[0-9]+)?$', 'CD'),  # cardinal numbers
+    (r'.*', 'NN')                     # nouns (default)
+]
+```
+
+约五分之一的正确率。
+
+```py
+regexp_tagger = nltk.RegexpTagger(patterns)
+regexp_tagger.tag(brown_sents[3])
+[(u'``', 'NN'),
+ (u'Only', 'NN'),
+ (u'a', 'NN'),
+ (u'relative', 'NN'),
+ (u'handful', 'NN'),
+ (u'of', 'NN'),
+ (u'such', 'NN'),
+ (u'reports', 'NNS'),
+ (u'was', 'NNS'),
+ (u'received', 'VBD'),
+ (u"''", 'NN'),
+ (u',', 'NN'),
+ (u'the', 'NN'),
+ (u'jury', 'NN'),
+ (u'said', 'NN'),
+ (u',', 'NN'),
+ (u'``', 'NN'),
+ (u'considering', 'VBG'),
+ (u'the', 'NN'),
+ (u'widespread', 'NN'),
+ (u'interest', 'NN'),
+ (u'in', 'NN'),
+ (u'the', 'NN'),
+ (u'election', 'NN'),
+ (u',', 'NN'),
+ (u'the', 'NN'),
+ (u'number', 'NN'),
+ (u'of', 'NN'),
+ (u'voters', 'NNS'),
+ (u'and', 'NN'),
+ (u'the', 'NN'),
+ (u'size', 'NN'),
+ (u'of', 'NN'),
+ (u'this', 'NNS'),
+ (u'city', 'NN'),
+ (u"''", 'NN'),
+ (u'.', 'NN')]
+
+regexp_tagger.evaluate(brown_tagged_sents)
+0.20326391789486245
+```
+
+### 查询标注器
+找出100个最频繁的词，存储它们最有可能的标记。然后使用这个信息作为“查找标注器”(NLTK UnigramTagger)的模型。
+
+```py
+fd = nltk.FreqDist(brown.words(categories='news'))
+cfd = nltk.ConditionalFreqDist(brown.tagged_words(categories='news'))
+most_freq_words = fd.keys()[:100]
+likely_tags = dict((word, cfd[word].max()) for word in most_freq_words)
+baseline_tagger = nltk.UnigramTagger(model=likely_tags)
+baseline_tagger.evaluate(brown_tagged_sents)
+0.005171350717027666
+```
+
+正确率近一半。看看它在一些未标注文本上如何运行。
+
+```py
+sent = brown.sents(categories='news')[3]
+baseline_tagger.tag(sent)
+[(u'``', None),
+ (u'Only', None),
+ (u'a', None),
+ (u'relative', None),
+ (u'handful', None),
+ (u'of', None),
+ (u'such', None),
+ (u'reports', u'NNS'),
+ (u'was', None),
+ (u'received', None),
+ (u"''", None),
+ (u',', None),
+ (u'the', None),
+ (u'jury', None),
+ (u'said', None),
+ (u',', None),
+ (u'``', None),
+ (u'considering', None),
+ (u'the', None),
+ (u'widespread', None),
+ (u'interest', None),
+ (u'in', None),
+ (u'the', None),
+ (u'election', None),
+ (u',', None),
+ (u'the', None),
+ (u'number', None),
+ (u'of', None),
+ (u'voters', None),
+ (u'and', None),
+ (u'the', None),
+ (u'size', None),
+ (u'of', None),
+ (u'this', None),
+ (u'city', None),
+ (u"''", None),
+ (u'.', None)]
+```
+
+许多词被分配了None标签，因为它们不在100个最频繁的词之中。在这些情况下分配默认标记NN。换句话说，我们要先使用查找表，如果不能指定标记就使用默认标注器，这个过程叫做`backoff`。
+
+```py
+baseline_tagger = nltk.UnigramTagger(model=likely_tags,
+                                     backoff=nltk.DefaultTagger('NN'))
+```
+
+查找标注器的性能，使用不同大小的模型。
+
+```py
+def performance(cfd, wordlist):
+    lt = dict((word, cfd[word].max()) for word in wordlist)
+    baseline_tagger = nltk.UnigramTagger(model=lt, backoff=nltk.DefaultTagger('NN'))
+    return baseline_tagger.evaluate(brown.tagged_sents(categories='news'))
+
+def display():
+    import pylab
+    words_by_freq = list(nltk.FreqDist(brown.words(categories='news')))
+    cfd = nltk.ConditionalFreqDist(brown.tagged_words(categories='news'))
+    sizes = 2 ** pylab.arange(15)
+    perfs = [performance(cfd, words_by_freq[:size]) for size in sizes]
+    pylab.plot(sizes, perfs, '-bo')
+    pylab.title('Lookup Tagger Performance with Varying Model Size')
+    pylab.xlabel('Model Size')
+    pylab.ylabel('Performance')
+    pylab.show()
+
+display()
+```
+
+![](pythonNLP14.png)
+
+Figure 5-4. Lookup tagger
+
+## N-gram标注
+### 一元标注器(Unigram Tagging)
+一元标注器利用一种简单的统计算法，对每个标识符分配最有可能的标记。建议一元标注器，称为训练(training)。下面例子中，“训练”一个一元标注器，用它来标注一个句子，然后进行评估。
+
+```py
+from nltk.corpus import brown
+brown_tagged_sents = brown.tagged_sents(categories='news')
+brown_sents = brown.sents(categories='news')
+unigram_tagger = nltk.UnigramTagger(brown_tagged_sents)
+unigram_tagger.tag(brown_sents[2007])
+[(u'Various', u'JJ'),
+ (u'of', u'IN'),
+ (u'the', u'AT'),
+ (u'apartments', u'NNS'),
+ (u'are', u'BER'),
+ (u'of', u'IN'),
+ (u'the', u'AT'),
+ (u'terrace', u'NN'),
+ (u'type', u'NN'),
+ (u',', u','),
+ (u'being', u'BEG'),
+ (u'on', u'IN'),
+ (u'the', u'AT'),
+ (u'ground', u'NN'),
+ (u'floor', u'NN'),
+ (u'so', u'QL'),
+ (u'that', u'CS'),
+ (u'entrance', u'NN'),
+ (u'is', u'BEZ'),
+ (u'direct', u'JJ'),
+ (u'.', u'.')]
+
+unigram_tagger.evaluate(brown_tagged_sents)
+0.9349006503968017
+```
+
+### 分离训练和测试数据
+```py
+size = int(len(brown_tagged_sents) * 0.9)
+size
+4160
+
+train_sents = brown_tagged_sents[:size]
+test_sents = brown_tagged_sents[size:]
+unigram_tagger = nltk.UnigramTagger(train_sents)
+unigram_tagger.evaluate(test_sents)
+0.8120203329014253
+```
+
+### 一般的N-gram的标注
+A 1-gram tagger is another term for a unigram tagger: i.e., the context used to tag a token is just the text of the token itself. 2-gram taggers are also called bigram taggers, and 3-gram taggers are called trigram taggers.
+
+bigram标注器，首先训练它，然后用它来标注未标注的句子。
+
+```py
+bigram_tagger = nltk.BigramTagger(train_sents)
+bigram_tagger.tag(brown_sents[2007])
+[(u'Various', u'JJ'),
+ (u'of', u'IN'),
+ (u'the', u'AT'),
+ (u'apartments', u'NNS'),
+ (u'are', u'BER'),
+ (u'of', u'IN'),
+ (u'the', u'AT'),
+ (u'terrace', u'NN'),
+ (u'type', u'NN'),
+ (u',', u','),
+ (u'being', u'BEG'),
+ (u'on', u'IN'),
+ (u'the', u'AT'),
+ (u'ground', u'NN'),
+ (u'floor', u'NN'),
+ (u'so', u'CS'),
+ (u'that', u'CS'),
+ (u'entrance', u'NN'),
+ (u'is', u'BEZ'),
+ (u'direct', u'JJ'),
+ (u'.', u'.')]
+
+unseen_sent = brown_sents[4203]
+bigram_tagger.tag(unseen_sent)
+[(u'The', u'AT'),
+ (u'population', u'NN'),
+ (u'of', u'IN'),
+ (u'the', u'AT'),
+ (u'Congo', u'NP'),
+ (u'is', u'BEZ'),
+ (u'13.5', None),
+ (u'million', None),
+ (u',', None),
+ (u'divided', None),
+ (u'into', None),
+ (u'at', None),
+ (u'least', None),
+ (u'seven', None),
+ (u'major', None),
+ (u'``', None),
+ (u'culture', None),
+ (u'clusters', None),
+ (u"''", None),
+ (u'and', None),
+ (u'innumerable', None),
+ (u'tribes', None),
+ (u'speaking', None),
+ (u'400', None),
+ (u'separate', None),
+ (u'dialects', None),
+ (u'.', None)]
+
+bigram_tagger.evaluate(test_sents)
+0.10276088906608193
+```
+
+它的准确度非常低。
+
+### 组合标注器
+
+- 尝试使用bigram标注器标注标识符。
+- 如果bigram标注器无法找到标记，尝试unigram标注器。
+- 如果unigram标注器也无法找到标记，使用默认标注器。
+
+```py
+t0 = nltk.DefaultTagger('NN')
+t1 = nltk.UnigramTagger(train_sents, backoff=t0)
+t2 = nltk.BigramTagger(train_sents, backoff=t1)
+t2.evaluate(test_sents)
+0.844911791089405
+```
+
+### 标注生词
+标注生词的方法是回退(backoff)到正则表达式标注器或默认标注器。
+
+### 存储标注器
+```py
+from cPickle import dump
+output = open('t2.pkl', 'wb')
+dump(t2, output, -1)
+output.close()
+
+from cPickle import load
+input = open('t2.pkl', 'rb')
+tagger = load(input)
+input.close()
+
+text = """The board's action shows what free enterprise
+...     is up against in our complex maze of regulatory laws ."""
+tokens = text.split()
+tagger.tag(tokens)
+[('The', 'AT'), ("board's", 'NN$'), ('action', 'NN'), ('shows', 'NNS'),
+('what', 'WDT'), ('free', 'JJ'), ('enterprise', 'NN'), ('is', 'BEZ'),
+('up', 'RP'), ('against', 'IN'), ('in', 'IN'), ('our', 'PP$'), ('complex', 'JJ'),
+('maze', 'NN'), ('of', 'IN'), ('regulatory', 'NN'), ('laws', 'NNS'), ('.', '.')]
+```
+
+### 性能限制
+参考trigram标注器。它遇到多少词性歧义的情况？
+
+```py
+from __future__ import division
+
+cfd = nltk.ConditionalFreqDist(
+    ((x[1], y[1], z[0]), z[1])
+    for sent in brown_tagged_sents
+    for x, y, z in nltk.trigrams(sent))
+ambiguous_contexts = [c for c in cfd.conditions() if len(cfd[c]) > 1]
+sum(cfd[c].N() for c in ambiguous_contexts) / cfd.N()
+0.049297702068029296
+```
+
+1/20的trigrams是歧义的。给定当前单词及其前两个标记，根据训练数据，在5%的情况中，可能有一个以上的标记合理地分配给当前词。
+
+一种便捷查看标注错误的方法是`混淆矩阵(confusion matrix)`，它利用图表表示期望的标记(黄金标准)与实际由标注器产生的标记。
+
+```py
+test_tags = [tag for sent in brown.sents(categories='editorial')
+             for (word, tag) in t2.tag(sent)]
+gold_tags = [tag for (word, tag) in brown.tagged_words(categories='editorial')]
+# print nltk.ConfusionMatrix(gold_tags, test_tags)
+```
+
+### 跨句子边界标注
+使用已标注句子的链表来训练、运行和评估标注器。
+
+句子层面的N-gram标注。
+
+```py
+brown_tagged_sents = brown.tagged_sents(categories='news')
+brown_sents = brown.sents(categories='news')
+
+size = int(len(brown_tagged_sents) * 0.9)
+train_sents = brown_tagged_sents[:size]
+test_sents = brown_tagged_sents[size:]
+
+t0 = nltk.DefaultTagger('NN')
+t1 = nltk.UnigramTagger(train_sents, backoff=t0)
+t2 = nltk.BigramTagger(train_sents, backoff=t1)
+t2.evaluate(test_sents)
+0.844911791089405
+```
+
+## 基于转换的标注(Transformation-Based Tagging)
+Brill标注是一种基于转换的学习。一般的想法是：猜测每个词的标记，然后返回和修复错误的。在这种方式中，Brill标注器陆续将一个不良标注的文本转换成一个好的。与n-gram标注一样，需要监督整个过程。
+
+Brill标注器的另一个特性：规则是语言学可解释的。
+
+Brill标注器演示：标注器有一个“X->Y如果前面的词是Z”的形式的模板集合。这些模板中的变量是创建“规则”的特定词和标记的实例。得分规则是纠正错误例子的数目减去误报的数目。
+
+```py
+from nltk.tbl import demo as brill_tagger
+brill_tagger.demo()
+Loading tagged data from treebank... 
+Read testing data (200 sents/5251 wds)
+Read training data (800 sents/19933 wds)
+Read baseline data (800 sents/19933 wds) [reused the training set]
+Trained baseline tagger
+    Accuracy on test set: 0.8345
+Training tbl tagger...
+TBL train (fast) (seqs: 800; tokens: 19933; tpls: 24; min score: 3; min acc: None)
+Finding initial useful rules...
+    Found 12960 useful rules.
+
+           B      |
+   S   F   r   O  |        Score = Fixed - Broken
+   c   i   o   t  |  R     Fixed = num tags changed incorrect -> correct
+   o   x   k   h  |  u     Broken = num tags changed correct -> incorrect
+   r   e   e   e  |  l     Other = num tags changed incorrect -> incorrect
+   e   d   n   r  |  e
+------------------+-------------------------------------------------------
+  23  23   0   0  | POS->VBZ if Pos:PRP@[-2,-1]
+  16  17   1   0  | NN->VB if Pos:-NONE-@[-2] & Pos:TO@[-1]
+  15  16   1   0  | VBN->VBD if Pos:PRP@[-1]
+  12  12   0   0  | VBP->VB if Pos:MD@[-2,-1]
+  10  10   0   0  | VB->VBP if Pos:PRP@[-1]
+   9   9   0   1  | VB->NN if Pos:DT@[-1]
+   9   9   0   0  | VBD->VBN if Pos:VBD@[-1]
+   9  15   6   0  | IN->WDT if Pos:NNS@[-1] & Pos:-NONE-@[1]
+   7   7   0   1  | VB->VBP if Pos:NNS@[-1]
+   7   7   0   0  | VBP->VB if Pos:TO@[-1]
+   7   8   1   0  | IN->RB if Word:as@[2]
+   6   6   0   0  | NN->VB if Pos:MD@[-1]
+   6   7   1   0  | VBD->VBN if Pos:VBZ@[-1]
+   6   6   0   0  | WDT->IN if Pos:VBG@[2]
+   6   6   0   0  | IN->WDT if Pos:-NONE-@[1] & Pos:VBZ@[2]
+   5   5   0   0  | POS->VBZ if Pos:-NONE-@[-1]
+   5   7   2   3  | RP->RB if Pos:CD@[1,2]
+   5   5   0   1  | IN->WDT if Pos:-NONE-@[1] & Pos:VBD@[2]
+   4   5   1   3  | VB->NN if Pos:NN@[-1]
+   4   4   0   0  | POS->VBZ if Pos:``@[-2]
+   4   4   0   0  | VBD->VBN if Pos:VBP@[-2,-1]
+   4   4   0   0  | VBP->VB if Pos:VBD@[-2,-1]
+   4   4   0   0  | NN->VBP if Pos:NNS@[-2] & Pos:RB@[-1]
+   4   5   1   0  | VBN->VBD if Pos:NNP@[-2] & Pos:NNP@[-1]
+   4   4   0   0  | IN->WDT if Pos:-NONE-@[1] & Pos:MD@[2]
+   4   4   0   0  | JJS->RBS if Word:most@[0] & Word:the@[-1] & Pos:DT@[-1]
+   3   3   0   1  | VB->NN if Pos:JJ@[-1]
+   3   3   0   0  | VB->NN if Pos:POS@[-1]
+   3   3   0   0  | VBD->VBN if Pos:VBN@[-1]
+   3   4   1   0  | VBN->VB if Pos:TO@[-1]
+   3   4   1   1  | IN->RB if Pos:.@[1]
+   3   3   0   0  | PRP$->PRP if Pos:TO@[1]
+   3   3   0   0  | RP->RB if Pos:DT@[-2,-1]
+   3   3   0   1  | VBD->VBN if Pos:VB@[-2,-1]
+   3   3   0   0  | NN->VBP if Pos:NNS@[-1] & Pos:DT@[1]
+   3   3   0   0  | RB->JJ if Pos:DT@[-1] & Pos:NN@[1]
+   3   3   0   0  | VBP->VB if Word:n't@[-2,-1]
+Trained tbl tagger in 7.09 seconds
+    Accuracy on test set: 0.8551
+Tagging the test data
+```
+
+## 如何确定一个词的分类
+### 形态学(Morphological)线索
+一个词的内部结构有助于为这个词分类。举例来说：-ness是一个后缀，与形容词结合产生名词，如happy->happiness,ill->illness。所以，如果遇到一个以-ness结尾的词，很可能是一个名词。同样的，-ment是与一些动词结合产生名词的后缀，如govern->government和establish->establishment。
+
+英语动词也可以是形态复杂的。例如：一个动词的现在分词以-ing结尾，表示正在进行的还没有结束的行动（如：falling、eating）。-ing后缀也出现在从动词派生的名词中，如：the falling of the leaves（这被称为动名词）。
+
+### 句法(Syntactic)线索
+另一个线索是一个词可能出现的典型的上下文语境。例如：假设已经确定了名词类，那么，英语形容词的句法标准是它可以出现在一个名词前，或紧跟在词be或very后。
+
+### 语义(Semantic)线索
+最后一个线索是词的意思。例如：名词众所周知的一个定义是根据语义的：“一个人、地方或事物的名称。”
+
+### 新词
+名词被称为开放类(open class)。介词被认为是封闭类(closed class)。
+
+### 词性标注集中的形态学(Morphology in Part-of-Speech Tagsets)
+普通标记集经常会“捕捉”一些构词(morphosyntactic)信息，即一种词借助句法角色获得的形态标记信息。
 
 
 
