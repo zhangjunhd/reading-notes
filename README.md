@@ -103,7 +103,7 @@
    1. [苏菲的世界](western_philosophy/SophieWorld.md)
    2. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
 2. 古希腊
-   1. [生命安宁](western_philosophy/A-guide-to-the-good-life.md)
+   1. [生命安宁-斯多葛哲学的生活艺术](western_philosophy/A-guide-to-the-good-life.md)
    2. [论幸福生活](western_philosophy/De-vita-beata.md)
 3. 叔本华
    1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
