@@ -105,6 +105,7 @@
 2. 古希腊
    1. [生命安宁-斯多葛哲学的生活艺术](western_philosophy/A-guide-to-the-good-life.md)
    2. [哲学的指引-斯多葛哲学的生活之道](western_philosophy/How-to-Be-a-Stoic.md)
+   3. [哲学谈话录-爱比克泰德](western_philosophy/Epictetus.md)
 3. 叔本华
    1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
    2. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
