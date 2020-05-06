@@ -367,6 +367,7 @@
    1. [平面排版基本的基本](design/graphic_design.md)
    2. [写给大家看的设计书（第3版）](design/TheNon-DesignersDesignBook.md)
    3. [破茧成蝶](design/UED-growth.md)
+      1. [产品设计流程](design/UED-growth-note.md)
    4. [Designing Web Navigation](design/DesigningWebNavigation.md)
    5. [About Face 3](design/AboutFace3.md)
    6. [Designing Interfaces](design/DesigningInterfaces.md)
