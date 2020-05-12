@@ -51,6 +51,10 @@
   - [Understandability](#understandability)
   - [Trustworthiness](#trustworthiness)
   - [Availability, Versatility and Performance](#availability-versatility-and-performance)
+- [5.Semantic Model Development](#5semantic-model-development)
+  - [Development activities](#development-activities)
+    - [Setting up the stage](#setting-up-the-stage)
+    - [Deciding what to build](#deciding-what-to-build)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -361,43 +365,49 @@ Availability is the extent and to which the model (or part of it) is present, ob
 
 Performance, in turn, has to do with the efficiency and scalability with which we can access and use the model in our application (querying, reasoning or other operations). 
 
+# 5.Semantic Model Development
+## Development activities
+I now approach every semantic model development project as an iteration of six activities: Setting up the stage, deciding what to build, building it, ensuring its good, making it useful, and making it last. Let’s see what each of these entails.
 
+### Setting up the stage
+This is practically translated into asking (and getting as much as possible clear and satisfactory answers to) five key questions:
 
+- Q1: What are we building?
+- Q2: Why are we building it?
+- Q3: How are we building it?
+- Q4: Who is building it?
+- Q5: Who cares?
 
+Which of the following (quite different) definitions do you think he has in mind?
 
+>A knowledge graph acquires and integrates information into an ontology and applies a reasoner to derive new knowledge.——Ehrlinger2016
 
+>Knowledge graphs are database-like structures that facilitate the retrieval of related information.——Bloomberg
 
+>A knowledge graph (i) mainly describes real world entities and their interrelations, organized in a graph, (ii) defines possible classes and relations of entities in a schema, (iii) allows for potentially interrelating arbitrary entities with each other and (iv) covers various topical domains.——Paulheim2016
 
+>Knowledge graphs could be envisaged as a network of all kind things which are relevant to a specific domain or to an organization. They are not limited to abstract concepts and relations but can also contain instances of things like documents and datasets.”——Semantic Web Company
 
+>We define a Knowledge Graph as an RDF graph. An RDF graph consists of a set of RDF triples where each RDF triple …——Färber2017
 
+>Knowledge graphs are large networks of entities, their semantic types, properties, and relationships between entities——Journal of Web Semantics
 
+Now, the “what” is tightly coupled with the “why”, namely the technical and or business goals is the model trying to achieve.
 
+For example, it might be that you simply want a taxonomy of product categories that the users of an e-commerce website can use to navigate within it. Then your main challenge is to define these categories in a way that is intuitive for all users and actually enhances the findability of products. But it might also be that you want a semantic model to provide some important domain knowledge to a chatbot and enhance the latter’s natural language interaction capabilities; in such a case your model will have to deal with the nuances of ambiguity, vagueness and other phenomena that we saw in Chapter 3, and enable the chatbot to interpret user requests and generate answers for them in a more effective way. **In all cases, the more concrete and clear are the model’s goals, the greater are its odds of success**.
 
+After the “what” and “why” comes the “how”, we defined three main principles that would guide its development:
 
+1. The scope, structure and content of the graph would be driven by the actual data that our software products needed to analyse and process, as well as the way these products (could) use the graph to become more effective. In other words, every entity, attribute or relation defined in the ontology would need not only be related to the domain(s) of the data, but also serve some concrete role in the products’ functionality.
+2. The graph’s elements would be generated (and regularly updated) by mining a variety of structured and unstructured data sources. This approach was deemed necessary as the expected size (several thousands of entities and statements) and volatility of the recruitment domain made a top-down, expert-driven approach infeasible in terms of cost and scalability.
+3. The automatic mining approach would be complemented with a human-in-the loop approach to for quality assurance and continuous improvement. Even the best automatic semantics mining algorithms are prone to some level of inaccuracy which, depending on the concrete sub-task, can be significant (see upcoming sections). That’s why, to ensure the highest quality possible for Textkernel’s knowledge graph, we would incorporate in the mining process human judgments so as to deal with cases where the algorithms were not confident or reliable enough with respect to their own judgments.
 
+In all cases, the answers you will get on the “how” will determine to a great extent the “who”, namely the people who will be involved in the model’s development. If, for example, your strategy involves a great degree of expert human input, then you will need to start recruiting domain experts. If your goal is to exploit large amounts of unstructured data to mine your semantics from, then you will need experts in Natural Language Processing and Machine Learning. And if you expect your model to be heavily axiomatized so as to enable automated reasoning, then you will need people who can work with formal logic.
 
+Finally, the “who cares” question is nothing else than the famous “stakeholder analysis” that every project management framework teaches, namely the identification of all people (or teams) who the semantic model will involve or affect, and their grouping according to their levels of participation, interest, and influence in the project.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Deciding what to build
+Once the stage has been set up, it’s time to dive into the details of what exactly you want (and can) develop, by **specifying the model’s requirements**.
 
 
 
