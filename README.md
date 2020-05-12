@@ -43,6 +43,7 @@
    8. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
    9. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
    10. [离散数学及其应用（原书第7版）](discrete_math)
+   11. [数理逻辑](math/MathematicalLogic.md)
 5. 人工智能
    1. [人有人的用处](ai/TheHumanUseOfHumanBeings.md)
    2. [人工智能的未来](ai/OnIntelligence.md)

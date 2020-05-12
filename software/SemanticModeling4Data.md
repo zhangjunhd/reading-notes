@@ -51,6 +51,13 @@
   - [Understandability](#understandability)
   - [Trustworthiness](#trustworthiness)
   - [Availability, Versatility and Performance](#availability-versatility-and-performance)
+- [5.Semantic Model Development](#5semantic-model-development)
+  - [Vocabularies, Patterns and Exemplary Models](#vocabularies-patterns-and-exemplary-models)
+    - [Upper Ontologies](#upper-ontologies)
+    - [Design Patterns](#design-patterns)
+    - [Standard and Reference Models](#standard-and-reference-models)
+    - [Public Models and Datasets](#public-models-and-datasets)
+  - [Semantic Model Mining](#semantic-model-mining)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -361,109 +368,64 @@ Availability is the extent and to which the model (or part of it) is present, ob
 
 Performance, in turn, has to do with the efficiency and scalability with which we can access and use the model in our application (querying, reasoning or other operations). 
 
+# 5.Semantic Model Development
+## Vocabularies, Patterns and Exemplary Models
+**Semantic modeling is about shareability and common understanding**, so not reinventing the wheel and reusing, where possible, existing semantic resources can potentially accelerate the development process and increase the chances of semantic interoperability.
 
+### Upper Ontologies
+`Upper ontologies` (also known as top-level or foundational ontologies) describe very general concepts and relations that are independent of any particular problem or domain and which are meant to be used as high-level, domain-neutral categories of more domain-specific modeling elements.
 
+In Figure 5-1 and Figure 5-2 you can see the basic categories defined in two different foundational ontologies, namely DOLCE (Descriptive Ontology for Linguistic and Cognitive Engineering) and BFO (Basic Formal Ontology).
 
+![](https://learning.oreilly.com/library/view/semantic-modeling-for/9781492054269/assets/TaxonomyOfBasicCategoriesInDOLCE.png)
 
+Figure 5-1. Taxonomy of Basic Categories in DOLCE
 
+![](https://learning.oreilly.com/library/view/semantic-modeling-for/9781492054269/assets/BFO-top-level-ontology-its-levels-and-categories.png)
 
+Figure 5-2. Taxonomy of Basic Categories in BFO
 
+Upper ontologies are generally hard to develop as the concepts they define are more abstract and often epistemological in nature.
 
+### Design Patterns
+For example, let’s say you are developing an OWL ontology and you want to represent the fact that “John married Jane in California”. This will be problematic as a known limitation of OWL is its inability to define ternary or higher degree relations, and the relation “married” here relates three entities. To overcome this limitation, you can use a modeling pattern that has been [proposed by W3C](https://www.w3.org/TR/swbp-n-aryRelations/#pattern1), and which suggests to represent the relation “married” relation as a class (e.g. “Wedding”) and the particular wedding between John and Jane as an instance of this class that can be then linked to “California” via a binary relation.
 
+![](https://learning.oreilly.com/library/view/semantic-modeling-for/9781492054269/assets/NaryRelationPatternExample.png)
 
+Figure 5-3. Example of the n-ary relation pattern
 
+Semantic modeling patterns are characterized by:
 
+- The kind of problems or situations they are designed for: There are, for example, patterns designed to solve problems where the representation language does not directly support certain constructs (like the n-ary relation pattern we just saw). These are independent from a specific domain of interest but depend on the expressivity of the logical formalism that is used for representation. There are also “good practice” patterns whose goal is to obtain more robust, cleaner and easier to maintain models.
+- Their domain and applicability range: There are, for example, patterns that are applicable in specific domains [Silverston, 2001b], and universal patterns that span across industries and domains [Silverston, 2009].
+- The modeling language they are expressed or applicable in: For example, if you work mostly with E-R and relational database models, then the patterns described in [Hay, 2013] or [Silverston, 2001a] can be useful. If, on the other hand, OWL is your cup of tea, then several patterns can be found in [the W3C Semantic Web Best Practices and Deployment Working Group](http://www.w3.org/2001/sw/BestPractices), [the University of Manchester](http://www.gong.manchester.ac.uk/odp/html) and [the OntologyDesignPatterns.org portal](http://ontologydesignpatterns.org/). However, nothing prevents you from applying relational patterns in OWL models and vice versa, as long as they contain compatible elements.
 
+### Standard and Reference Models
+Table 5-1. Sample standard and reference models
 
+Model | Governing Body | Description
+------|---------------|------------
+SNOMED Clinical | Terms SNOMED International | A systematically organized collection of medical terms providing codes, terms, synonyms and definitions used in clinical documentation and reporting.
+Schema.org | Schema.org Community Group | A common set of metadata schemas for structured data markup on web pages.
+International Standard Classification of Occupations (ISCO) | International Labour Organization | An International Labour Organization classification structure for organizing information on labour and jobs.
+Financial Industry Business Ontology (FIBO) | EDM Council | A formal model of the legal structures, rights and obligations contained in the contracts and agreements that form the foundation of the financial industry.
+HL7 Reference Information Model (RIM) | Health Level Seven International (HL7) | Expresses the data content needed in a specific clinical or administrative context and provides an explicit representation of the semantic and lexical connections that exist between the information carried in the fields of HL7 messages.
 
+### Public Models and Datasets
+Table 5-2. Datasets available as open linked data
 
+Dataset | Description
+--------|-----------
+DBpedia | A dataset containing extracted data from Wikipedia
+GeoNames | Information about over 7 million places and geographic features worldwide.
+Diseasome | A dataset of 4,300 disorders and disease genes linked by known disorder-gene associations
+CrunchBase | A dataset describing people, companies, and products.
+Eurostat Countries and Regions | Statistical information about European countries and regions
+MusicBrainz | Data about artists and their albums
 
+A similar, though smaller in scale, set of public semantic models is [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov) [Vandenbussche, 2017].
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Semantic Model Mining
 
 
 
