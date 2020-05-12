@@ -52,9 +52,12 @@
   - [Trustworthiness](#trustworthiness)
   - [Availability, Versatility and Performance](#availability-versatility-and-performance)
 - [5.Semantic Model Development](#5semantic-model-development)
-  - [Development activities](#development-activities)
-    - [Setting up the stage](#setting-up-the-stage)
-    - [Deciding what to build](#deciding-what-to-build)
+  - [Vocabularies, Patterns and Exemplary Models](#vocabularies-patterns-and-exemplary-models)
+    - [Upper Ontologies](#upper-ontologies)
+    - [Design Patterns](#design-patterns)
+    - [Standard and Reference Models](#standard-and-reference-models)
+    - [Public Models and Datasets](#public-models-and-datasets)
+  - [Semantic Model Mining](#semantic-model-mining)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -366,114 +369,63 @@ Availability is the extent and to which the model (or part of it) is present, ob
 Performance, in turn, has to do with the efficiency and scalability with which we can access and use the model in our application (querying, reasoning or other operations). 
 
 # 5.Semantic Model Development
-## Development activities
-I now approach every semantic model development project as an iteration of six activities: Setting up the stage, deciding what to build, building it, ensuring its good, making it useful, and making it last. Let’s see what each of these entails.
+## Vocabularies, Patterns and Exemplary Models
+**Semantic modeling is about shareability and common understanding**, so not reinventing the wheel and reusing, where possible, existing semantic resources can potentially accelerate the development process and increase the chances of semantic interoperability.
 
-### Setting up the stage
-This is practically translated into asking (and getting as much as possible clear and satisfactory answers to) five key questions:
+### Upper Ontologies
+`Upper ontologies` (also known as top-level or foundational ontologies) describe very general concepts and relations that are independent of any particular problem or domain and which are meant to be used as high-level, domain-neutral categories of more domain-specific modeling elements.
 
-- Q1: What are we building?
-- Q2: Why are we building it?
-- Q3: How are we building it?
-- Q4: Who is building it?
-- Q5: Who cares?
+In Figure 5-1 and Figure 5-2 you can see the basic categories defined in two different foundational ontologies, namely DOLCE (Descriptive Ontology for Linguistic and Cognitive Engineering) and BFO (Basic Formal Ontology).
 
-Which of the following (quite different) definitions do you think he has in mind?
+![](https://learning.oreilly.com/library/view/semantic-modeling-for/9781492054269/assets/TaxonomyOfBasicCategoriesInDOLCE.png)
 
->A knowledge graph acquires and integrates information into an ontology and applies a reasoner to derive new knowledge.——Ehrlinger2016
+Figure 5-1. Taxonomy of Basic Categories in DOLCE
 
->Knowledge graphs are database-like structures that facilitate the retrieval of related information.——Bloomberg
+![](https://learning.oreilly.com/library/view/semantic-modeling-for/9781492054269/assets/BFO-top-level-ontology-its-levels-and-categories.png)
 
->A knowledge graph (i) mainly describes real world entities and their interrelations, organized in a graph, (ii) defines possible classes and relations of entities in a schema, (iii) allows for potentially interrelating arbitrary entities with each other and (iv) covers various topical domains.——Paulheim2016
+Figure 5-2. Taxonomy of Basic Categories in BFO
 
->Knowledge graphs could be envisaged as a network of all kind things which are relevant to a specific domain or to an organization. They are not limited to abstract concepts and relations but can also contain instances of things like documents and datasets.”——Semantic Web Company
+Upper ontologies are generally hard to develop as the concepts they define are more abstract and often epistemological in nature.
 
->We define a Knowledge Graph as an RDF graph. An RDF graph consists of a set of RDF triples where each RDF triple …——Färber2017
+### Design Patterns
+For example, let’s say you are developing an OWL ontology and you want to represent the fact that “John married Jane in California”. This will be problematic as a known limitation of OWL is its inability to define ternary or higher degree relations, and the relation “married” here relates three entities. To overcome this limitation, you can use a modeling pattern that has been [proposed by W3C](https://www.w3.org/TR/swbp-n-aryRelations/#pattern1), and which suggests to represent the relation “married” relation as a class (e.g. “Wedding”) and the particular wedding between John and Jane as an instance of this class that can be then linked to “California” via a binary relation.
 
->Knowledge graphs are large networks of entities, their semantic types, properties, and relationships between entities——Journal of Web Semantics
+![](https://learning.oreilly.com/library/view/semantic-modeling-for/9781492054269/assets/NaryRelationPatternExample.png)
 
-Now, the “what” is tightly coupled with the “why”, namely the technical and or business goals is the model trying to achieve.
+Figure 5-3. Example of the n-ary relation pattern
 
-For example, it might be that you simply want a taxonomy of product categories that the users of an e-commerce website can use to navigate within it. Then your main challenge is to define these categories in a way that is intuitive for all users and actually enhances the findability of products. But it might also be that you want a semantic model to provide some important domain knowledge to a chatbot and enhance the latter’s natural language interaction capabilities; in such a case your model will have to deal with the nuances of ambiguity, vagueness and other phenomena that we saw in Chapter 3, and enable the chatbot to interpret user requests and generate answers for them in a more effective way. **In all cases, the more concrete and clear are the model’s goals, the greater are its odds of success**.
+Semantic modeling patterns are characterized by:
 
-After the “what” and “why” comes the “how”, we defined three main principles that would guide its development:
+- The kind of problems or situations they are designed for: There are, for example, patterns designed to solve problems where the representation language does not directly support certain constructs (like the n-ary relation pattern we just saw). These are independent from a specific domain of interest but depend on the expressivity of the logical formalism that is used for representation. There are also “good practice” patterns whose goal is to obtain more robust, cleaner and easier to maintain models.
+- Their domain and applicability range: There are, for example, patterns that are applicable in specific domains [Silverston, 2001b], and universal patterns that span across industries and domains [Silverston, 2009].
+- The modeling language they are expressed or applicable in: For example, if you work mostly with E-R and relational database models, then the patterns described in [Hay, 2013] or [Silverston, 2001a] can be useful. If, on the other hand, OWL is your cup of tea, then several patterns can be found in [the W3C Semantic Web Best Practices and Deployment Working Group](http://www.w3.org/2001/sw/BestPractices), [the University of Manchester](http://www.gong.manchester.ac.uk/odp/html) and [the OntologyDesignPatterns.org portal](http://ontologydesignpatterns.org/). However, nothing prevents you from applying relational patterns in OWL models and vice versa, as long as they contain compatible elements.
 
-1. The scope, structure and content of the graph would be driven by the actual data that our software products needed to analyse and process, as well as the way these products (could) use the graph to become more effective. In other words, every entity, attribute or relation defined in the ontology would need not only be related to the domain(s) of the data, but also serve some concrete role in the products’ functionality.
-2. The graph’s elements would be generated (and regularly updated) by mining a variety of structured and unstructured data sources. This approach was deemed necessary as the expected size (several thousands of entities and statements) and volatility of the recruitment domain made a top-down, expert-driven approach infeasible in terms of cost and scalability.
-3. The automatic mining approach would be complemented with a human-in-the loop approach to for quality assurance and continuous improvement. Even the best automatic semantics mining algorithms are prone to some level of inaccuracy which, depending on the concrete sub-task, can be significant (see upcoming sections). That’s why, to ensure the highest quality possible for Textkernel’s knowledge graph, we would incorporate in the mining process human judgments so as to deal with cases where the algorithms were not confident or reliable enough with respect to their own judgments.
+### Standard and Reference Models
+Table 5-1. Sample standard and reference models
 
-In all cases, the answers you will get on the “how” will determine to a great extent the “who”, namely the people who will be involved in the model’s development. If, for example, your strategy involves a great degree of expert human input, then you will need to start recruiting domain experts. If your goal is to exploit large amounts of unstructured data to mine your semantics from, then you will need experts in Natural Language Processing and Machine Learning. And if you expect your model to be heavily axiomatized so as to enable automated reasoning, then you will need people who can work with formal logic.
+Model | Governing Body | Description
+------|---------------|------------
+SNOMED Clinical | Terms SNOMED International | A systematically organized collection of medical terms providing codes, terms, synonyms and definitions used in clinical documentation and reporting.
+Schema.org | Schema.org Community Group | A common set of metadata schemas for structured data markup on web pages.
+International Standard Classification of Occupations (ISCO) | International Labour Organization | An International Labour Organization classification structure for organizing information on labour and jobs.
+Financial Industry Business Ontology (FIBO) | EDM Council | A formal model of the legal structures, rights and obligations contained in the contracts and agreements that form the foundation of the financial industry.
+HL7 Reference Information Model (RIM) | Health Level Seven International (HL7) | Expresses the data content needed in a specific clinical or administrative context and provides an explicit representation of the semantic and lexical connections that exist between the information carried in the fields of HL7 messages.
 
-Finally, the “who cares” question is nothing else than the famous “stakeholder analysis” that every project management framework teaches, namely the identification of all people (or teams) who the semantic model will involve or affect, and their grouping according to their levels of participation, interest, and influence in the project.
+### Public Models and Datasets
+Table 5-2. Datasets available as open linked data
 
-### Deciding what to build
-Once the stage has been set up, it’s time to dive into the details of what exactly you want (and can) develop, by **specifying the model’s requirements**.
+Dataset | Description
+--------|-----------
+DBpedia | A dataset containing extracted data from Wikipedia
+GeoNames | Information about over 7 million places and geographic features worldwide.
+Diseasome | A dataset of 4,300 disorders and disease genes linked by known disorder-gene associations
+CrunchBase | A dataset describing people, companies, and products.
+Eurostat Countries and Regions | Statistical information about European countries and regions
+MusicBrainz | Data about artists and their albums
 
+A similar, though smaller in scale, set of public semantic models is [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov) [Vandenbussche, 2017].
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Semantic Model Mining
 
 
 
