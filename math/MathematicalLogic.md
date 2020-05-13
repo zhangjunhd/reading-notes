@@ -47,6 +47,18 @@
   - [4.语义后承](#4%e8%af%ad%e4%b9%89%e5%90%8e%e6%89%bf)
   - [5. 可满足性 有效性 语义等值](#5-%e5%8f%af%e6%bb%a1%e8%b6%b3%e6%80%a7-%e6%9c%89%e6%95%88%e6%80%a7-%e8%af%ad%e4%b9%89%e7%ad%89%e5%80%bc)
   - [6.代入引理](#6%e4%bb%a3%e5%85%a5%e5%bc%95%e7%90%86)
+- [第5章 自然推演系统](#%e7%ac%ac5%e7%ab%a0-%e8%87%aa%e7%84%b6%e6%8e%a8%e6%bc%94%e7%b3%bb%e7%bb%9f)
+  - [2.联结词规则](#2%e8%81%94%e7%bb%93%e8%af%8d%e8%a7%84%e5%88%99)
+    - [2.1 规则的说明](#21-%e8%a7%84%e5%88%99%e7%9a%84%e8%af%b4%e6%98%8e)
+  - [3.命题推演 语形后承](#3%e5%91%bd%e9%a2%98%e6%8e%a8%e6%bc%94-%e8%af%ad%e5%bd%a2%e5%90%8e%e6%89%bf)
+    - [3.1 极小命题逻辑](#31-%e6%9e%81%e5%b0%8f%e5%91%bd%e9%a2%98%e9%80%bb%e8%be%91)
+    - [3.2 直觉主义命题逻辑](#32-%e7%9b%b4%e8%a7%89%e4%b8%bb%e4%b9%89%e5%91%bd%e9%a2%98%e9%80%bb%e8%be%91)
+    - [3.3 经典命题逻辑](#33-%e7%bb%8f%e5%85%b8%e5%91%bd%e9%a2%98%e9%80%bb%e8%be%91)
+  - [4.量词和等词规则](#4%e9%87%8f%e8%af%8d%e5%92%8c%e7%ad%89%e8%af%8d%e8%a7%84%e5%88%99)
+    - [4.1 量词规则](#41-%e9%87%8f%e8%af%8d%e8%a7%84%e5%88%99)
+    - [4.2 等词规则](#42-%e7%ad%89%e8%af%8d%e8%a7%84%e5%88%99)
+  - [5.一阶推演](#5%e4%b8%80%e9%98%b6%e6%8e%a8%e6%bc%94)
+  - [6.经典与直觉主义逻辑的关系](#6%e7%bb%8f%e5%85%b8%e4%b8%8e%e7%9b%b4%e8%a7%89%e4%b8%bb%e4%b9%89%e9%80%bb%e8%be%91%e7%9a%84%e5%85%b3%e7%b3%bb)
 
 # 第1章 绪论：从直观到形式
 ## 1.从“矛盾”说起
@@ -573,7 +585,7 @@ s是t的子项，当且仅当s出现在t的分解树上。
 $$
 s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\left\{
 \begin{matrix}
- t_1,& if\ x_i=y,\ for\ some\ i(1 \le i \le n) > 0 \\
+ t_1,& if\ x_i=y,\ for\ some\ i(1 \le i \le n) > 0 \
  y, & elsewise.
 \end{matrix}
 \right.
@@ -591,7 +603,7 @@ $$
 5. 若$\varphi$为$\diamond y \psi,\diamond \in \{\forall,\exists\}$，则
 $$
 \psi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\left\{\begin{matrix}
- \diamond y \psi(\cdots,t_{i-1}/x_{i-1},t_{i+1}/x_{i+1},\cdots),& if\ x_i=y,for\ some\ i(1 \le i \le n) > 0 \\ 
+ \diamond y \psi(\cdots,t_{i-1}/x_{i-1},t_{i+1}/x_{i+1},\cdots),& if\ x_i=y,for\ some\ i(1 \le i \le n) > 0 \ 
  \diamond y \psi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n), & elsewise.
 \end{matrix}\right.
 $$
@@ -722,35 +734,35 @@ $\mathcal L^p$-公式：
 **3.1 定义**：设$\mathcal L$是一阶语言，$\sigma=<\mathcal A,\rho>$是一个$\mathcal L$-解释。对任意$\mathcal L$-公式$\varphi$，$\sigma$满足$\varphi$，记为$\sigma(\varphi)=T$；$\sigma$不满足$\varphi$，记为$\sigma(\varphi)=F$。$\sigma(\varphi)$是以下递归定义的唯一的函数的值：
 
 1. 若$\varphi$是原子公式$Pt_1\cdots t_n$，其中P是$\mathcal L$的n元谓词，$t_1,\cdots,t_n$是n个$\mathcal L$-项，则$\sigma(\varphi)=\left\{\begin{matrix}
- T,& if\ P^{\mathcal A}(\sigma(t_1),\cdots,\sigma(t_n))\  establish(or\ <\sigma(t_1),\cdots,\sigma(t_n)> \in P^{\mathcal A}) \\ 
+ T,& if\ P^{\mathcal A}(\sigma(t_1),\cdots,\sigma(t_n))\  establish(or\ <\sigma(t_1),\cdots,\sigma(t_n)> \in P^{\mathcal A}) \ 
  F, & elsewise.
 \end{matrix}\right.$
 2. 若$\varphi$是等式$t \equiv s$，其中t和s是$\mathcal L$-项，则$\sigma(\varphi)=\left\{\begin{matrix}
- T,& if\ \sigma(t)=\sigma(s) \\ 
+ T,& if\ \sigma(t)=\sigma(s) \ 
  F, & elsewise.
 \end{matrix}\right.$
 3. 若$\varphi$为$\lnot \psi$，则$\sigma(\varphi)=\lnot\sigma(\psi)$，即$\sigma(\varphi)=\left\{\begin{matrix}
- T,& if\ \sigma(\psi)=F \\ 
+ T,& if\ \sigma(\psi)=F \ 
  F, & elsewise.
 \end{matrix}\right.$
 4. 若$\varphi$为$\psi_1 \land \psi_2$，则$\sigma(\varphi)=\sigma(\psi_1) \land \sigma(\psi_2)$，即$\sigma(\varphi)=\left\{\begin{matrix}
- T,& if\ \sigma(\psi_1)=\sigma(\psi_2)=T \\ 
+ T,& if\ \sigma(\psi_1)=\sigma(\psi_2)=T \ 
  F, & elsewise.
 \end{matrix}\right.$
 5. $\varphi$为$\psi_1 \lor \psi_2$，则$\sigma(\varphi)=\sigma(\psi_1) \lor \sigma(\psi_2)$，即$\sigma(\varphi)=\left\{\begin{matrix}
- F,& if\ \sigma(\psi_1)=\sigma(\psi_2)=F \\ 
+ F,& if\ \sigma(\psi_1)=\sigma(\psi_2)=F \ 
  T, & elsewise.
 \end{matrix}\right.$
 6. $\varphi$为$\psi_1 \to \psi_2$，则$\sigma(\varphi)=\sigma(\psi_1) \to \sigma(\psi_2)$，即$\sigma(\varphi)=\left\{\begin{matrix}
- F,& if\ \sigma(\psi_1)=T\ and\ \sigma(\psi_2)=F \\ 
+ F,& if\ \sigma(\psi_1)=T\ and\ \sigma(\psi_2)=F \ 
  T, & elsewise(\sigma(\psi_1)=F\ or\ \sigma(\psi_2)=T).
 \end{matrix}\right.$
 7. 若$\varphi$为$\forall x \psi$，其中x为个体变项，则$\sigma(\varphi)=\left\{\begin{matrix}
- T,& if\ for\ every\ a \in A,\sigma(a/x)(\psi)=T \\ 
+ T,& if\ for\ every\ a \in A,\sigma(a/x)(\psi)=T \ 
  F, & elsewise.
 \end{matrix}\right.$
 8. 若$\varphi$为$\exists x \psi$，其中x为个体变项，则$\sigma(\varphi)=\left\{\begin{matrix}
- T,& if\ for\ exists\ a \in A,\sigma(a/x)(\psi)=T \\ 
+ T,& if\ for\ exists\ a \in A,\sigma(a/x)(\psi)=T \ 
  F, & elsewise.
 \end{matrix}\right.$
 
@@ -831,7 +843,579 @@ $\varphi$和$\psi$语义等值也可以表达成：$\varphi\models\psi$并且$\p
 
 **6.6 系理**：如果s、t是项，$\varphi$是公式，那么，$\models t \equiv s \to (\varphi(t/x) \leftrightarrow \varphi(s/x))$。"
 
+# 第5章 自然推演系统
+## 2.联结词规则
+### 2.1 规则的说明
+1） $\land$-引入（$\land I$）
 
+$$\varphi\ \ \ \psi$$
+
+---
+
+$$\varphi \land \psi$$
+
+2）$\land$-消去（$\land E$）
+
+$$\varphi \land \psi$$
+
+---
+
+$$\varphi$$
+
+和
+
+$$\varphi \land \psi$$
+
+---
+
+$$\psi$$
+
+3）$\lor$-引入（$\lor I$）
+
+$$\varphi$$
+
+---
+
+$$\varphi \lor \psi$$
+
+和
+
+$$\psi$$
+
+---
+
+$$\varphi \lor \psi$$
+
+4）$\to$-消去（$\to E$）
+
+$$\varphi\ \ \ \varphi \to \psi$$
+
+---
+
+$$\psi$$
+
+5）$\to$-引入（$\to I$）
+
+$$[\varphi]$$
+$$\vdots$$
+$$\psi$$
+
+---
+
+$$\varphi \to \psi$$
+
+把$\varphi$用方括号表示出来，表明它是$\psi$的前提，但在使用这个规则时被消除。联结$\varphi$和$\psi$的竖虚线表示$\psi$依赖于前提$\varphi$。
+
+6）$\lor$-消去($\lor E$)
+
+如果你有前提“$\varphi$或者$\psi$”，又分别从$\varphi$和$\psi$都推出了$\theta$，那么结论$\theta$就是不可避免的。但是，从$\varphi$推出$\theta$和从$\psi$推出$\theta$在这里都是辅助性的子推理，一旦完成，其前提$\varphi$和$\psi$就可以消除。最终结论$\theta$只依赖于“$\varphi$或者$\psi$”和其他未消除的前提。这提示出以下规则：
+
+$$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [\varphi]\ \ \ [\psi]$$
+$$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \vdots\ \ \ \vdots$$
+$$\varphi \lor \psi\ \ \ \ \ \theta\ \ \ \theta$$
+
+---
+
+$$\theta$$
+
+7）$\lnot$-引入（$\lnot I$）
+
+归谬法可以表为如下的$\lnot$-引入规则：
+
+$$[\varphi]$$
+$$\vdots$$
+$$\psi \land \lnot\psi$$
+
+---
+
+$$\lnot\varphi$$
+
+8）直觉主义规则（IN）
+
+对于$\lnot$还有更强的解释，牵涉到另一个古老而著名的规则：矛盾推出一切（ex falso sequitur quodlibet）。这个规则表现了直觉主义逻辑的特征，所以我们又称它为直觉主义规则：
+
+$$\varphi \land \lnot\varphi$$
+
+---
+
+$$\psi$$
+
+$\lnot\varphi$即意味着$\varphi$推出一切。我们把推出一切的称为`荒谬的`，因此，$\lnot\varphi$即意味着$\varphi$是荒谬的。
+
+9）反证法（CL）
+
+反证法是RAA的另一种形式，它规定，如果从$\lnot\varphi$推出了矛盾，就要得到$\varphi$。注意它跟归谬法的区别：归谬法是反驳的方法，为论证的缘故，先假设$\varphi$，再借矛盾来否定它，因此结论是否定式$\lnot\varphi$；而反证法是证明的方法，也是为论证的缘故，先假设否定$\lnot\varphi$，结论却是$\varphi$。跟归谬法一样，反证法的假设，只在推出矛盾的过程中起作用，得到最后的结论，它便消除了。
+
+反证法在形式上表现为一种$\land$-消去规则：
+
+$$[\lnot\varphi]$$
+$$\vdots$$
+$$\psi \land \lnot\psi$$
+
+---
+
+$$\varphi$$
+
+## 3.命题推演 语形后承
+首先约定几种元语言记法，其中我们统一用D表示推演（derivation）。
+
+第一，我们用
+
+$$D$$
+$$\varphi$$
+
+表示其结论为$\varphi$的一个推演D。如果需要标示D的某个前提$\psi$，则可以进一步把D表示为
+
+$$\psi$$
+$$D$$
+$$\varphi$$
+
+注意：$\psi$和$\varphi$都是D的一部分。
+
+第二，如果
+
+$$D\ \ \ D^{\prime}$$
+$$\varphi\ ,\ \varphi^{\prime}$$
+
+是推演，那么
+
+$$D\ \ \ \ \ \ D\ \ \ D^{\prime}$$
+$$\varphi\ ,\ \varphi\ \ \ \varphi^{\prime}$$
+
+---
+
+$$\psi\ \ \ \ \ \ \psi^{\prime}$$
+
+第三，我们如下表示前提和消除。如果
+
+$$\psi$$
+$$D$$
+$$\varphi$$
+
+是一个推演，则
+
+$$[\psi]$$
+$$D$$
+$$\varphi$$
+
+---
+
+$$\theta$$
+
+表示应用某规则于推演D，得到一个新的推演，其结论为$\theta$，同时按这个规则地要求，消除了D的前提$\psi$。
+
+现在归纳定义命题逻辑推演和与其相关的语形后承概念。这牵涉到从小到大几种逻辑，包括极小逻辑、直觉逻辑和经典逻辑。
+
+### 3.1 极小命题逻辑
+**3.1.1 定义**：设$\mathcal L$为一阶语言，$\varphi,\psi,\theta$为$\mathcal L$-公式。$\mathcal L$中的极小命题推演定义为：
+
+1）基始条件：任何单点树$\varphi$是$\mathcal L$-极小命题推演。
+
+2）归纳条件为以下7条规则：
+
+2.1）（$\land I$）如果
+
+$$D_1\ \ \ D_2$$
+$$\varphi\ ,\ \psi$$
+
+是$\mathcal L$-极小命题推演，那么
+
+$$D_1\ \ \ D_2$$
+$$\varphi\ ,\ \psi$$
+
+---
+
+$$\varphi \land \psi$$
+
+也是。
+
+2.2）（$\land E$）如果
+
+$$D$$
+$$\varphi \land \psi$$
+
+是$\mathcal L$-极小命题推演，那么
+
+$$D\ \ \ \ \ \ \ \ \ D$$
+$$\varphi \land \psi\ \ \ \varphi \land \psi$$
+
+---
+
+$$\varphi\ \ \ \ \ \ \ \ \ \psi$$
+
+也是。
+
+2.3）（$\lor I$）如果
+
+$$D$$
+$$\varphi$$
+
+是$\mathcal L$-极小命题推演，那么
+
+$$D\ \ \ \ \ \ \ \ \ D$$
+$$\varphi\ \ \ \ \ \ \ \ \ \varphi$$
+
+---
+
+$$\varphi \land \psi\ \ \ \psi \land \varphi$$
+
+也是。
+
+2.4）（$\lor E$）如果
+
+$$\ \ \ \ \ \ \ \ \  \  \ \varphi\ \ \ \psi$$
+$$D_1\ \ \ \ \ \ \ \ \ D_2\ \ \ D_3$$
+$$\varphi \land \psi\ \ \ ,\ \ \theta,\ \ \ \theta$$
+
+是$\mathcal L$-极小命题推演，那么
+
+$$\ \ \ \ \ \ \ \ \  \  \ [\varphi]\ \ \ [\psi]$$
+$$D_1\ \ \ \ \ \ \ \ \ D_2\ \ \ D_3$$
+$$\varphi \land \psi\ \ \ ,\ \ \theta,\ \ \ \theta$$
+
+---
+
+$$\theta$$
+
+也是。
+
+2.5）（$\to I$）如果
+
+$$\varphi$$
+$$D$$
+$$\psi$$
+
+是$\mathcal L$-极小命题推演，那么
+
+$$[\varphi]$$
+$$D$$
+$$\psi$$
+
+---
+
+$$\varphi \to \psi$$
+
+也是。
+
+2.6）（$\to E$）如果
+
+$$D_1\ \ \ \ \ \ \ \ \ D_2$$
+$$\varphi\ \ \ \ \ \ \ \ \ \varphi\to\psi$$
+
+是$\mathcal L$-极小命题推演，那么
+
+$$D_1\ \ \ \ \ \ \ \ \ D_2$$
+$$\varphi\ \ \ \ \ \ \ \ \ \varphi\to\psi$$
+
+---
+
+$$\psi$$
+
+也是。
+
+2.7）（$\lnot I$）如果
+
+$$\varphi$$
+$$D$$
+$$\psi\land\lnot\psi$$
+
+是$\mathcal L$-极小命题推演，那么
+
+$$[\varphi]$$
+$$D$$
+$$\psi\land\lnot\psi$$
+
+---
+
+$$\lnot\varphi$$
+
+也是。
+
+3）封闭条件：只有以上的是是$\mathcal L$-极小命题推演。
+
+对一个推演D，称其叶上未被消除的公式为D的`前提`，根上的公式为D的`结论`。上述定义的归纳条件中涉及的规则，称为初始的`极小命题规则`。
+
+**3.1.6 定义**：设$\Phi$是一个$\mathcal L$-公式集，$\varphi$是一个$\mathcal L$-公式。如果存在一个极小命题推演D，使得D的前提集是$\Phi$的子集，且D的结论为$\varphi$，则称$\varphi$为$\Phi$的极小命题`语形后承`（或在极小命题逻辑里，从$\Phi$`可推演`$\varphi$），记为$\Phi \vdash_m\varphi$。
+
+当$\Phi$为空集时，记$\Phi \vdash_m\varphi$为$\vdash_m\varphi$。此时$\varphi$为极小命题`逻辑定理`。
+
+**3.1.13 引理**：
+1. 如果$\varphi \in \Phi$，则$\Phi \vdash\varphi$。
+2. 如果$\Phi \vdash\varphi$，且$\Phi \subseteq\Psi$，则$\Psi \vdash\varphi$。
+
+**3.1.14 引理**：如果$\Phi \vdash \varphi$，则存在$\Phi$的有穷子集$\Psi$，使得$\Psi \vdash\varphi$。
+
+**3.1.15 引理**：如果$\Phi \vdash\Psi$且$\Psi \vdash\varphi$，则$\Phi\vdash\varphi$。
+
+**3.1.16 引理**：$\Phi,\varphi\vdash\psi$当且仅当$\Psi\vdash\varphi\to\psi$。
+
+**3.1.18 引理**：$\vdash\varphi\leftrightarrow\psi$，当且仅当$\varphi\vdash\psi$且$\psi\vdash\varphi$。
+
+### 3.2 直觉主义命题逻辑
+**3.2.1 定义**：设$\mathcal L$为一阶语言，$\varphi,\psi$为$\mathcal L$-公式。$\mathcal L$中的直觉主义命题推演定义为：
+
+1） 基始条件：任何点单树$\varphi$都是$\mathcal L$-直觉主义命题推演。
+
+2）归纳条件：前7条规则照搬定义3.1.1中归纳条件（把其中的“极小”字样全部改为“直觉主义”），再加上：
+
+2.8）（IN）如果
+
+$$D$$
+$$\varphi \land \lnot\varphi$$
+
+是$\mathcal L$-直觉主义命题推演，那么
+
+$$D$$
+$$\varphi \land \lnot\varphi$$
+
+---
+
+$$\psi$$
+
+也是。
+
+3）只有以上是$\mathcal L$-直觉主义命题推演。
+
+相应地，直觉主义的语形后承$\vdash_i$是$\vdash_m$的扩充：
+
+**3.2.2 定义**：设$\Phi$是一个$\mathcal L$-公式集，$\varphi$是一个$\mathcal L$-公式。如果存在一个直觉主义命题推演D，使得D的前提集是$\Phi$的子集，且D的结论为$\varphi$，则称$\varphi$为$\Phi$的直觉主义命题`语形后承`（或在直觉主义命题逻辑里，从$\Phi$可推演$\varphi$），记为$\Phi\vdash_i\varphi$。
+
+如果$\vdash_i\varphi$，则称为`直觉主义命题逻辑定理`。
+
+**3.2.3 定理**：对任何公式集$\Phi$和公式$\theta$，
+1. 如果$\Phi\vdash_m\theta$，则$\Phi\vdash_i\theta$；
+2. $\Phi\vdash_i\theta$，当且仅当$\Phi \cup \{such\ as\ \varphi\land\lnot\varphi\to\psi\ formula\}\vdash_m\theta$。
+
+### 3.3 经典命题逻辑
+**3.3.1 定义**：设$\mathcal L$为一阶语言，$\varphi,\psi$为$\mathcal L$-公式。$\mathcal L$中的经典命题推演定义为：
+
+1）基始条件：任何单点树$\varphi$都是$\mathcal L$-经典命题推演。
+
+2）归纳条件：前8条规则照搬定义3.2.1中归纳条件（把其中的“直觉主义”字样全部改为“经典”），再加上：
+
+2.9）（CL）如果
+
+$$\lnot\varphi$$
+$$D$$
+$$\psi\land\lnot\psi$$
+
+是$\mathcal L$-经典命题推演，那么
+
+$$[\lnot\varphi]$$
+$$D$$
+$$\psi\land\lnot\psi$$
+
+---
+
+$$\varphi$$
+
+也是。
+
+3）只有以上是$\mathcal L$-经典命题推演。
+
+经典语形后承$\vdash_c$是$\vdash_i$的扩充：
+
+**3.3.2 定义**：设$\Phi$是一个$\mathcal L$-公式集，$\varphi$是一个$\mathcal L$-公式。如果存在一个经典命题推演D，使得D的前提集是$\Phi$的子集，且D的结论为$\varphi$，则称$\varphi$为$\Phi$的经典命题`语形后承`（或在经典命题逻辑里，从$\Phi$可推演$\varphi$），记为$\Phi\vdash_c\varphi$。
+
+如果$\vdash_c\varphi$，则称为`经典命题逻辑定理`。
+
+**3.3.3 定理**：对任何公式集$\Phi$和公式$\theta$，
+1. 如果$\Phi\vdash_i\theta$，则$\Phi\vdash_c\theta$；
+2. $\Phi\vdash_c\theta$，当且仅当$\Phi + ( \lnot\varphi\to\psi\land\lnot\psi)\to\varphi\vdash_i\theta$。
+
+**3.3.6 引理**：
+1. $\Phi\vdash_c\varphi\lor\lnot\varphi$（排中律规则）；
+2. 如果$\Phi\vdash_c\lnot\lnot\varphi$，那么$\Phi\vdash_c\varphi$（双重否定消去规则）；
+3. 如果$\Phi,\varphi\vdash_m\psi$，且$\Psi,\lnot\varphi\vdash_m\psi$，则$\Phi\cup\Psi\vdash_m\psi$（二难推理规则）。"
+
+## 4.量词和等词规则
+### 4.1 量词规则
+1）$\forall$-消去（$\forall E$）
+
+$$\forall x\varphi$$
+
+---
+
+$$\varphi(t/x)$$
+
+其中项t对$\varphi$中的x可代入，而$\varphi(t/x)$是代入结果——以后我们只要写出$\varphi(t/x)$，都假设t对$\varphi$中的x可代入。
+
+2）$\exists$-引入（$\exists I$）
+
+$$\varphi(t/x)$$
+
+---
+
+$$\exists x\varphi$$
+
+3）$\forall$-引入（$\forall I$）
+
+$$\vdots$$
+$$\varphi(y/x)$$
+
+---
+
+$$\forall x\varphi$$
+
+其中y不在$\varphi(y/x)$所依赖的任何（未消除的）前提及$\forall x\varphi$中自由。这两个条件，前者保证了y的“任意性”，后者保证$\forall y\varphi(y/x)$与$\forall x\varphi$互为（经易字得到的）变式，因此表达同样的命题。
+
+4）$\exists$-消去（$\exists E$）
+
+$$\ \ \ \ \ \ [\varphi(y/x)]$$
+$$\ \ \ \ \ \ \vdots$$
+$$\exists x\varphi\ \psi$$
+
+---
+
+$$\psi$$
+
+其中的变项y，满足如下条件：
+
+1. y不在上面那个$\psi$所依赖的前提——除$\varphi(y/x)$外——中自由。
+2. y不在$\exists x\varphi$中自由。
+3. y不在$\psi$中自由。
+
+### 4.2 等词规则
+1）$\equiv$-引入（$\equiv I$）
+
+---
+
+$$t\equiv t$$
+
+这个无前提的规则说的是：对任何项t，$t\equiv t$无条件成立。这在语形上表达了关于“同一”的第一个原则：任何个体都是自身同一的。
+
+2）$\equiv$-消去（$\equiv E$）
+
+$$t\equiv s\ \ \ \varphi(t/x)$$
+
+---
+
+$$\varphi(s/x)$$
+
+这是“同一者不可分辨”原则的表达：同一的东西有相同的性质，所以，若项t和s代表相同的东西，那么对t所说的，对s同样成立。"
+
+## 5.一阶推演
+**5.1 定义**：取极小、直觉主义、经典命题推演之一，把其归纳定义（定义3.1.1、3.2.1或3.3.1）中的“（极小、直觉主义或经典）命题推演”字样改成“$\Im-$推演”；增加1条基始条件：
+
+1）（$\equiv I$）对于任何项t，
+
+---
+
+$$t \equiv t$$
+
+是$\Im-$推演。
+
+再增加以下5条归纳条件：
+
+1）（$\forall I$）如果
+
+$$D$$
+$$\varphi(y/x)$$
+
+是$\Im-$推演，且y不在D的任何前提及$\forall x \varphi$中自由，那么
+
+$$D$$
+$$\varphi(y/x)$$
+
+---
+
+$$\forall x\varphi$$
+
+也是$\Im-$推演。
+
+2）（$\forall E$）如果
+
+$$D$$
+$$\forall x\varphi$$
+
+是$\Im-$推演，那么
+
+$$D$$
+$$\forall x\varphi$$
+
+---
+
+$$\varphi(t/x)$$
+
+也是。
+
+3）（$\exists I$）如果
+
+$$D$$
+$$\varphi(t/x)$$
+
+是$\Im-$推演，那么
+
+$$D$$
+$$\varphi(t/x)$$
+
+---
+
+$$\exists x\varphi$$
+
+也是。
+
+4）（$\exists E$）如果
+
+$$\ \ \ \ \ \ \ \ \ \ \ \ \varphi(y/x)$$
+$$D_1\ \ \ \ \ \ \ \ \ D_2$$
+$$\exists x\varphi\ \ \ ,\ \ \ \psi$$
+
+都是$\Im-$推演，且y不在$\exists x\varphi,\psi$及$D_2$的除$\varphi(y/x)$外的前提中自由，那么，
+
+$$\ \ \ \ \ \ \ \ \ \ \ \ [\varphi(y/x)]$$
+$$D_1\ \ \ \ \ \ \ \ \ D_2$$
+$$\exists x\varphi\ \ \ ,\ \ \ \psi$$
+
+---
+
+$$\psi$$
+
+也是$\Im-$推演。
+
+5）（$\equiv$ E）如果
+
+$$D_1\ \ \ \ \ \ D_2$$
+$$t\equiv s\ \ \ ,\ \ \ \varphi(t/x)$$
+
+是$\Im-$推演，那么，
+
+$$D_1\ \ \ \ \ \ D_2$$
+$$t\equiv s\ \ \ ,\ \ \ \varphi(t/x)$$
+
+---
+
+$$\varphi(s/x)$$
+
+也是。
+
+这样定义的$\Im-$推演，称为相应的（极小、直觉主义或经典）逻辑的`一阶推演`。
+
+**5.2 定义**：设$\Phi$是一个$\mathcal L$-公式集，$\varphi$是一个$\mathcal L$-公式。如果存在一个极小、直觉主义或经典一阶推演D，使得D的前提集是$\Phi$的子集，且D的结论为$\varphi$，则称$\varphi$为$\Phi$的极小、直觉主义或经典一阶`语形后承`（或在极小、直觉主义或经典逻辑里，从$\Phi$可推演$\varphi$），仍分别记为$\Phi\vdash_m\varphi,\Phi\vdash_i\varphi,\Phi\vdash_c\varphi$。
+
+令$\vdash$是$\vdash_m$，$\vdash_i$或$\vdash_c$。如果$\vdash\varphi$，则分别称$\varphi$为极小、直觉主义或经典`逻辑定理`。
+
+**5.3 定理**：对任何公式集$\Phi$和公式$\varphi$，
+
+1. $\Phi\vdash_m\Rightarrow\Psi\vdash_i\varphi\Rightarrow\vdash_c\varphi$。
+2. 前面引理3.1.13-3.1.16所描述的命题语形后承的性质（单调性、前提有穷性、传递性、演绎引理等），对一阶语形后承同样成立。"
+
+## 6.经典与直觉主义逻辑的关系
+6.1 定义：一阶语言中的公式$\varphi$称为`否定化的`，如果$\varphi$中的原子公式的出现，都直接处于否定词之后，且$\varphi$中不含$\lor$或$\exists$。
+
+**6.4 定义**：从公式集到公式集中的函数g由以下条件归纳定义：
+
+1. $\varphi^g=\lnot\lnot\varphi$，如果$\varphi$为原子公式。
+2. $(\lnot\varphi)^g=\lnot\varphi^g$。
+3. $(\varphi\land\psi)^g=\varphi^g\land\psi^g$
+4. $(\varphi\lor\psi)^g=\lnot(\lnot\varphi^g\land\lnot\psi^g)$
+5. $(\varphi\to\psi)^g=\varphi^g\to\psi^g$
+6. $(\forall x\varphi)^g=\forall x\varphi^g$
+7. $(\exists x \varphi)^g=\lnot\forall x\lnot\varphi^g$
+
+**6.5 定理**：任给公式集$\Phi$和公式$\varphi$，$\Phi \vdash_c\varphi$当且仅当$\Phi^g\vdash_i\varphi^g$。
+
+**6.7 系理**：对于否定化的$\varphi$，$\vdash_c\varphi$当且仅当$\vdash_i\varphi$。"
 
 
 
