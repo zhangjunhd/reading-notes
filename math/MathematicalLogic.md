@@ -563,7 +563,7 @@ s是t的子项，当且仅当s出现在t的分解树上。
 $$
 s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\left\{
 \begin{matrix}
- t_1,& if\ x_i=y, (1 \le i \le n) > 0 \\\\
+ t_1,& if\ x_i=y,\ for\ some\ i(1 \le i \le n) > 0 \\\\
  y, & elsewise.
 \end{matrix}
 \right.
