@@ -579,7 +579,7 @@ $$
 3. 若$\varphi$为$\lnot \psi$，则$\varphi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\lnot \psi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)$；
 4. 若$\varphi$为$\psi_1 \Box \psi_2,\Box \in \{\land,\lor,\lnot,\to\}$，则$\varphi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\psi_1(t_1/x_1,t_2/x_2,\cdots,t_n/x_n) \Box \psi_2(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)$；
 5. 若$\varphi$为$\diamond y \psi,\diamond \in \{\forall,\exists\}$，则$\psi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\left\{\begin{matrix}
- \diamond y \psi(\cdots,t_{i-1}/x_{i-1},t_{i+1}/x_{i+1},\cdots),& if\ x_i=y,for\ some\ i(1 \le i \le n) > 0 \ 
+ \diamond y \psi(\cdots,t_{i-1}/x_{i-1},t_{i+1}/x_{i+1},\cdots),& if\ x_i=y,for\ some\ i(1 \le i \le n) > 0 \\\\ 
  \diamond y \psi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n), & elsewise.
 \end{matrix}\right.$
 
