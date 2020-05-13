@@ -560,7 +560,7 @@ s是t的子项，当且仅当s出现在t的分解树上。
 
 1. 若s为个体常项，则$s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=s$；
 2. 若s为个体变项y，则$s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\left\{\begin{matrix}
- t_1,& if\ x_i=y,for\ some\ i(1 \le i \le n) > 0 \\ 
+ t_1,& if\ x_i=y,for\ some\ i(1 \le i \le n) > 0 \ 
  y, & elsewise.
 \end{matrix}\right.$
 3. 若s为$fs_1\cdots s_n$，则$s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=fs_1(t_1/x_1,t_2/x_2,\cdots,t_n/x_n) \cdots s_n(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)$。
@@ -574,7 +574,7 @@ s是t的子项，当且仅当s出现在t的分解树上。
 3. 若$\varphi$为$\lnot \psi$，则$\varphi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\lnot \psi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)$；
 4. 若$\varphi$为$\psi_1 \Box \psi_2,\Box \in \{\land,\lor,\lnot,\to\}$，则$\varphi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\psi_1(t_1/x_1,t_2/x_2,\cdots,t_n/x_n) \Box \psi_2(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)$；
 5. 若$\varphi$为$\diamond y \psi,\diamond \in \{\forall,\exists\}$，则$\psi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\left\{\begin{matrix}
- \diamond y \psi(\cdots,t_{i-1}/x_{i-1},t_{i+1}/x_{i+1},\cdots),& if\ x_i=y,for\ some\ i(1 \le i \le n) > 0 \\ 
+ \diamond y \psi(\cdots,t_{i-1}/x_{i-1},t_{i+1}/x_{i+1},\cdots),& if\ x_i=y,for\ some\ i(1 \le i \le n) > 0 \ 
  \diamond y \psi(t_1/x_1,t_2/x_2,\cdots,t_n/x_n), & elsewise.
 \end{matrix}\right.$
 
