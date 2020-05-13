@@ -559,10 +559,11 @@ s是t的子项，当且仅当s出现在t的分解树上。
 **6.5 定义**：设$\mathcal L$是一个一阶语言，$s(x_1,x_2,\cdots,x_n)$是一个$\mathcal L$-项对任意$\mathcal L$-项。$t_1,t_2,\cdots,t_n$，我们如下递归定义$t_1,t_2,\cdots,t_n$在s中对$x_1,x_2,\cdots,x_n$的`代入`，代入结果记为$s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)$:
 
 1. 若s为个体常项，则$s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=s$；
-2. 若s为个体变项y，则$s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\left\{\begin{matrix}
+2. 若s为个体变项y，则
+$$s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=\left\{\begin{matrix}
  t_1,& if\ x_i=y,for\ some\ i(1 \le i \le n) > 0 \\ 
  y, & elsewise.
-\end{matrix}\right.$
+\end{matrix}\right.$$
 3. 若s为$fs_1\cdots s_n$，则$s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)=fs_1(t_1/x_1,t_2/x_2,\cdots,t_n/x_n) \cdots s_n(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)$。
 
 容易归纳证明$s(t_1/x_1,t_2/x_2,\cdots,t_n/x_n)$仍然是$\mathcal L$-项。
