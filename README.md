@@ -43,7 +43,6 @@
    8. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
    9. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
    10. [离散数学及其应用（原书第7版）](discrete_math)
-   11. [数理逻辑](math/MathematicalLogic.md)
 5. 人工智能
    1. [人有人的用处](ai/TheHumanUseOfHumanBeings.md)
    2. [人工智能的未来](ai/OnIntelligence.md)
@@ -382,7 +381,8 @@
 
 # 软件技术
 1. 计算
-   1. [Understanding Computation](software/UnderstandingComputation.md), Tom Stuart, Jun 2013
+   1. [数理逻辑](software/MathematicalLogic.md)
+   2. [Understanding Computation](software/UnderstandingComputation.md)
 2. 算法与数据结构
    1. [算法概论](software/Algorithms.md)
 3. 架构设计
@@ -407,10 +407,10 @@
    3. [Docker In Action](software/DockerInAction.md)
    4. [Getting Started with Kubernetes](software/GettingStartedWithKubernetes.md)
    5. [Kubernetes Up and Running,2nd Edition](software/KubernetesUpAndRunning.md)
-9. Web开发
-   1. [Mastering Flask](software/MasteringFlask.md)
-   2. [React设计思想](software/ReactBasic.md)
-   3. [Learning React](software/LearningReact.md)
+9.  Web开发
+   6. [Mastering Flask](software/MasteringFlask.md)
+   7. [React设计思想](software/ReactBasic.md)
+   8. [Learning React](software/LearningReact.md)
 
 # 机器学习
 1. 搜索引擎
