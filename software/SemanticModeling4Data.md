@@ -58,6 +58,7 @@
     - [Standard and Reference Models](#standard-and-reference-models)
     - [Public Models and Datasets](#public-models-and-datasets)
   - [Semantic Model Mining](#semantic-model-mining)
+    - [Mining tasks](#mining-tasks)
 
 # 2.Semantic Modeling Elements
 ## General Elements
@@ -426,19 +427,13 @@ MusicBrainz | Data about artists and their albums
 A similar, though smaller in scale, set of public semantic models is [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov) [Vandenbussche, 2017].
 
 ## Semantic Model Mining
+### Mining tasks
+There are four main information extraction tasks that can help us automate aspects of the semantic model development process:
 
-
-
-
-
-
-
-
-
-
-
-
-
+- Terminology extraction: This is the task of automatically extracting from a given data source (usually a corpus) terms that are relevant and important for our model’s domain(s), and which can potentially signify entities, relations or other elements. It’s a task we typically perform when we build our model in a bottom-up fashion and don’t really know what kind of elements it needs to have.
+- Entity extraction: This is the task of automatically extracting from a given data source terms that denote entities of some particular entity type, such as persons, organizations, locations, or other. It’s a task also known as Entity Recognition, and we typically perform it when we already know the entity types we need in our model and we are looking to instantiate them.
+- Relation extraction: This is the task of automatically extracting from a given data source relations that hold between different entities and/or other elements, such as synonymy, meaning inclusion, semantic relatedness or any other relation that we want in our model.
+- Rule and axiom extraction: This is the task of automatically extracting from a given data source complex axioms and rules that can be used for reasoning purposes.
 
 
 
