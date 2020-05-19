@@ -407,10 +407,10 @@
    3. [Docker In Action](software/DockerInAction.md)
    4. [Getting Started with Kubernetes](software/GettingStartedWithKubernetes.md)
    5. [Kubernetes Up and Running,2nd Edition](software/KubernetesUpAndRunning.md)
-9.  Web开发
-   6. [Mastering Flask](software/MasteringFlask.md)
-   7. [React设计思想](software/ReactBasic.md)
-   8. [Learning React](software/LearningReact.md)
+9. Web开发
+   1. [Mastering Flask](software/MasteringFlask.md)
+   2. [React设计思想](software/ReactBasic.md)
+   3. [Learning React](software/LearningReact.md)
 
 # 机器学习
 1. 搜索引擎
