@@ -33,16 +33,15 @@
    3. [程序是怎样跑起来的](info/program.md)
    4. [网络是怎样连接的](info/network.md)
 4. 数学
-   1. [黑天鹅](math/TheBlackSwan.md)
-   2. [简单统计学](math/StandardDeviations.md)
-   3. [统计与真理](math/StatisticsAndTruth.md)
-   4. [机会的数学](math/OpportunisticMath.md)
-   5. [赤裸裸的统计学](math/NakedStatistics.md)
-   6. [数学之美](math/MathBeauty.md)
-   7. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
-   8. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
-   9. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
-   10. [离散数学及其应用（原书第7版）](discrete_math)
+   1. [简单统计学](math/StandardDeviations.md)
+   2. [统计与真理](math/StatisticsAndTruth.md)
+   3. [机会的数学](math/OpportunisticMath.md)
+   4. [赤裸裸的统计学](math/NakedStatistics.md)
+   5. [数学之美](math/MathBeauty.md)
+   6. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
+   7. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
+   8. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
+   9.  [离散数学及其应用（原书第7版）](discrete_math)
 5. 人工智能
    1. [人有人的用处](ai/TheHumanUseOfHumanBeings.md)
    2. [人工智能的未来](ai/OnIntelligence.md)
@@ -309,10 +308,12 @@
    6. 凯文·凯利
       1. [必然](bussiness/model/kk-The-Inevitable.md)
       2. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-   7. [隐形VISA](bussiness/model/visa.md)
-   8. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
-   9. [智能商业](bussiness/model/IntelligentBusiness.md)
-   10. [指数型组织](bussiness/model/ExponentialOrganizations.md)
+   7. “不确定性”
+      1. [黑天鹅](bussiness/model/TheBlackSwan.md)
+   8. [隐形VISA](bussiness/model/visa.md)
+   9.  [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
+   10. [智能商业](bussiness/model/IntelligentBusiness.md)
+   11. [指数型组织](bussiness/model/ExponentialOrganizations.md)
 4. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
