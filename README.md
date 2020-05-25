@@ -310,6 +310,7 @@
       2. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
    7. “不确定性”
       1. [黑天鹅](bussiness/model/TheBlackSwan.md)
+      2. [反脆弱](bussiness/model/Antifragile.md)
    8. [隐形VISA](bussiness/model/visa.md)
    9.  [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
    10. [智能商业](bussiness/model/IntelligentBusiness.md)
