@@ -312,6 +312,7 @@
    7. [隐形VISA](bussiness/model/visa.md)
    8. [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
    9. [智能商业](bussiness/model/IntelligentBusiness.md)
+   10. [指数型组织](bussiness/model/ExponentialOrganizations.md)
 4. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
