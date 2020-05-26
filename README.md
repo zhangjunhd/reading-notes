@@ -282,18 +282,22 @@
    2. [一本书读懂中国税](bussiness/finance/OneBookLearnChinaTax.md)
    3. [一本书看透股权架构](bussiness/finance/OneBookLearnShareholdingStructure.md)
 2. 管理
-   1. 企业管理
+   1. 系统动力学
       1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
-      2. [重新定义公司](bussiness/management/HowGoogleWorks.md)
-      3. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
-      4. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
-      5. [重来ReWork](bussiness/management/rework.md)
-      6. [刷新](bussiness/management/hit-refresh.md)
-      7. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
-      8. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
-      9. [关键对话](bussiness/management/CrucialConversations.md)
-      10. [OKR工作法](bussiness/management/okr.md)
-   2. 创业
+      2. [系统之美](bussiness/management/ThinkingInSystems.md)
+   2. 企业文化
+      1. [重新定义公司](bussiness/management/HowGoogleWorks.md)
+      2. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
+      3. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
+      4. [重来ReWork](bussiness/management/rework.md)
+      5. [刷新](bussiness/management/hit-refresh.md)
+   3. 企业管理
+      1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
+      2.  [领导梯队](bussiness/management/TheLeadershipPipeline.md)
+      3.  [关键对话](bussiness/management/CrucialConversations.md)
+   4. 绩效
+      1.  [OKR工作法](bussiness/management/okr.md)
+   5. 创业
       1. [从0到1](bussiness/startup/zero_to_one.md)
       2. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
       3. [精益创业](bussiness/startup/TheLeanStartup.md)
