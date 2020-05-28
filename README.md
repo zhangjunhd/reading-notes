@@ -317,8 +317,9 @@
       2. [反脆弱](bussiness/model/Antifragile.md)
    8. [隐形VISA](bussiness/model/visa.md)
    9.  [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
-   10. [智能商业](bussiness/model/IntelligentBusiness.md)
-   11. [指数型组织](bussiness/model/ExponentialOrganizations.md)
+   10. 智能商业
+       1.  [智能商业](bussiness/model/IntelligentBusiness.md)
+       2.  [指数型组织](bussiness/model/ExponentialOrganizations.md)
 4. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
