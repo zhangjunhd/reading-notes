@@ -235,9 +235,9 @@ HighScore House始于一个简单的应用程序：家长能通过它罗列出�
 - **产品类型**：你在收钱之外提供了什么价值？
 - **送达模式**：你如何将你的产品送至客户手中。
 
-![](http://ou8qjsj0m.bkt.clouddn.com//18-2-7/1968490.jpg)
+![](LeanAnalytics8.png)
 
-![](http://ou8qjsj0m.bkt.clouddn.com//18-2-7/10202708.jpg)
+![](LeanAnalytics9.png)
 
 ### 第 8 章 商业模式一：电子商务
 - 转化率
