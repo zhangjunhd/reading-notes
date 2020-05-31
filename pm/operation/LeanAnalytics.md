@@ -202,11 +202,11 @@ HighScore House始于一个简单的应用程序：家长能通过它罗列出�
     - 机器上的两个调节旋钮是客户终生价值（CLV）和客户获取成本（CAC）。
     - 一种衡量方法是看客户盈亏平衡时间，也就是你收回获取一位客户的成本所需的时间。
 #### 肖恩·埃利斯的创业增长金字塔
-![](http://ou8qjsj0m.bkt.clouddn.com//18-2-7/20317234.jpg)
+![](LeanAnalytics6.png)
 
 长漏斗：图5-3显示了由Google Analytics提供的社交访客流程分析。
 
-![](http://ou8qjsj0m.bkt.clouddn.com//18-2-7/93665313.jpg)
+![](LeanAnalytics7.png)
 
 ### 第 6 章 第一关键指标的约束力
 **OMTM**（One Metric That Matters，**第一关键指标**）。第一关键指标，就是一个在当前阶段高于一切、需要你集中全部注意力的数字。
