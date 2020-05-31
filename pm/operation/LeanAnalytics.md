@@ -448,6 +448,6 @@ HighScore House始于一个简单的应用程序：家长能通过它罗列出�
 ### 第20章 模式+阶段决定你跟踪的指标
 精益数据分析的核心思想是：得知自己的商业模式和创业阶段后，即可跟踪并优化当前的创业第一关键指标。
 
-![](http://ou8qjsj0m.bkt.clouddn.com//18-2-9/16444772.jpg)
+![](LeanAnalytics11.png)
 
-![](http://ou8qjsj0m.bkt.clouddn.com//18-2-9/11525838.jpg)
+![](LeanAnalytics12.png)
