@@ -184,9 +184,7 @@ HighScore House始于一个简单的应用程序：家长能通过它罗列出�
 #### 戴夫·麦克卢尔的海盗指标说
 **“海盗指标”** 这一术语由风险投资人戴夫·麦克卢尔创造，得名于五个成功创业关键元素的首字母缩写。麦克卢尔将创业公司最需要关注的指标分为五大类：获取用户（Acquisition）、提高活跃度（Activation）、提高留存率（Retention）、获取营收（Revenue）和自传播（Referral），简称**AARRR**。
 
-![](http://ou8qjsj0m.bkt.clouddn.com//18-2-7/47137298.jpg)
-
-表5-1：海盗指标与你应该跟踪的数据
+![](LeanAnalytics4.png)
 
 ![](http://ou8qjsj0m.bkt.clouddn.com//18-2-7/64286532.jpg)
 
