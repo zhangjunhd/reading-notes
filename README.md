@@ -267,14 +267,16 @@
 7. [货币强权](politics/CurrencyPower.md)
 8. [百年中国经济史笔记](politics/china-economic-modern-history.md)
 9. [亚洲大趋势](politics/aisa-big-trend.md)
-10. [解读中国经济](politics/china-economics.md)
-11. [未来30年](politics/next30years.md)
-12. [未来30年2](politics/next30years2.md)
-13. [不确定的未来](politics/UncertainFuture.md)
-14. [城市化转型与土地陷阱](politics/urbanization.md)
-15. [大国大城](politics/great-nation-needs-bigger-city.md)
-16. [中国当代社会阶层分析](politics/china-society-level.md)
-17. [王剑每日财经观察](politics/wangjian.md)
+10. 林毅夫
+    1.  [解读中国经济](politics/china-economics.md)
+11. 郑永年
+    1.  [未来30年](politics/next30years.md)
+    2.  [未来30年2](politics/next30years2.md)
+    3.  [不确定的未来](politics/UncertainFuture.md)
+12. [城市化转型与土地陷阱](politics/urbanization.md)
+13. [大国大城](politics/great-nation-needs-bigger-city.md)
+14. [中国当代社会阶层分析](politics/china-society-level.md)
+15. [王剑每日财经观察](politics/wangjian.md)
 
 # 商业
 1. 财务
