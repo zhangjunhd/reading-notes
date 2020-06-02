@@ -54,10 +54,6 @@
    9. [人类的终极命运](ai/InOurOwnImage.md)
    10. [暗知识](ai/DarkKnowledge.md)
    11. [生命3.0](ai/Life3.md)
-6.  经济学
-    1. [经济学通识课](economics/a-little-history-of-economics.md)
-    2. [经济学的思维方式](economics/BasicEconomics.md)
-    3. [写给企业家的经济学](economics/economics4entrepreneur.md)
 
 # 东方哲学
 1. 儒
@@ -276,7 +272,10 @@
 12. [城市化转型与土地陷阱](politics/urbanization.md)
 13. [大国大城](politics/great-nation-needs-bigger-city.md)
 14. [中国当代社会阶层分析](politics/china-society-level.md)
-15. [王剑每日财经观察](politics/wangjian.md)
+15. 经济学
+    1. [经济学通识课](economics/a-little-history-of-economics.md)
+    2. [经济学的思维方式](economics/BasicEconomics.md)
+    3. [写给企业家的经济学](economics/economics4entrepreneur.md)
 
 # 商业
 1. 财务
