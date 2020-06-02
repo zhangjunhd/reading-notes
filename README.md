@@ -253,7 +253,7 @@
    2. [毛泽东传](history/Mao.md)
    3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
-# 政治经济
+# 政治与经济
 1. [常识](politics/CommonSense.md)
 2. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
 3. [世界秩序](politics/WorldOrder.md)
