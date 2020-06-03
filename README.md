@@ -292,6 +292,7 @@
       3. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
       4. [重来ReWork](bussiness/management/rework.md)
       5. [刷新](bussiness/management/hit-refresh.md)
+      6. [奈飞文化手册](bussiness/management/Powerful.md)
    3. 企业管理
       1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
       2.  [领导梯队](bussiness/management/TheLeadershipPipeline.md)
