@@ -287,7 +287,7 @@
       1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
       2. [系统之美](bussiness/management/ThinkingInSystems.md)
    2. 企业文化
-      1. [重新定义公司](bussiness/management/HowGoogleWorks.md)
+      1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
       2. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
       3. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
       4. [重来ReWork](bussiness/management/rework.md)
