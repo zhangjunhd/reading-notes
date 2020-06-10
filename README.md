@@ -312,7 +312,8 @@
    2. 社群
       1. [链接](bussiness/model/linked.md)
       2. [隐形VISA](bussiness/model/visa.md)
-   3. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
+   3. 技术与创新
+      1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
    5. 凯文·凯利
       1. [必然](bussiness/model/kk-The-Inevitable.md)
