@@ -317,7 +317,7 @@
    4. 凯文·凯利
       1. [必然](bussiness/model/kk-The-Inevitable.md)
       2. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-   5. “不确定性”
+   5. 信息与“不确定性”
       1. [黑天鹅](bussiness/model/TheBlackSwan.md)
       2. [反脆弱](bussiness/model/Antifragile.md)
       3. [重塑-信息经济的结构](bussiness/model/reshaping.md)
