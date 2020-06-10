@@ -254,7 +254,7 @@
    3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 # 政治与经济
-1. 民主
+1. 公民与政府
    1. [常识](politics/CommonSense.md)
 2. 资本与阶级
    1. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
