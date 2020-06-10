@@ -306,20 +306,22 @@
       4. [创业时，不可不知的细节](bussiness/startup/details.md)
       5. [重新理解创业](bussiness/startup/rethink-startup.md)
 3. 商业模式
-   1. [维基经济学](bussiness/model/wikinomics.md)
-   2. [长尾理论2.0](bussiness/model/long_tail.md)
+   1. 长尾与2.0
+      1. [维基经济学](bussiness/model/wikinomics.md)
+      2. [长尾理论2.0](bussiness/model/long_tail.md)
+   2. 社群
+      1. [链接](bussiness/model/linked.md)
+      2. [隐形VISA](bussiness/model/visa.md)
    3. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
-   4. [链接](bussiness/model/linked.md)
-   5. [重塑-信息经济的结构](bussiness/model/reshaping.md)
-   6. 凯文·凯利
+   4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
+   5. 凯文·凯利
       1. [必然](bussiness/model/kk-The-Inevitable.md)
       2. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-   7. “不确定性”
+   6. “不确定性”
       1. [黑天鹅](bussiness/model/TheBlackSwan.md)
       2. [反脆弱](bussiness/model/Antifragile.md)
-   8. [隐形VISA](bussiness/model/visa.md)
-   9.  [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
-   10. 智能商业
+   7.  [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
+   8.  智能商业
        1.  [智能商业](bussiness/model/IntelligentBusiness.md)
        2.  [指数型组织](bussiness/model/ExponentialOrganizations.md)
        3.  [创业无畏](bussiness/model/BOLD.md)
