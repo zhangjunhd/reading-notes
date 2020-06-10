@@ -254,25 +254,32 @@
    3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
 
 # 政治与经济
-1. [常识](politics/CommonSense.md)
-2. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
-3. [世界秩序](politics/WorldOrder.md)
-4. [看世界](politics/see-the-world.md)
-5. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
-6. [金融的本质](politics/TheFederalReserveAndTheFinancialCrisis.md)
-7. [货币强权](politics/CurrencyPower.md)
-8. [百年中国经济史笔记](politics/china-economic-modern-history.md)
-9. [亚洲大趋势](politics/aisa-big-trend.md)
-10. 林毅夫
-    1.  [解读中国经济](politics/china-economics.md)
-11. 郑永年
-    1.  [未来30年](politics/next30years.md)
-    2.  [未来30年2](politics/next30years2.md)
-    3.  [不确定的未来](politics/UncertainFuture.md)
-12. [城市化转型与土地陷阱](politics/urbanization.md)
-13. [大国大城](politics/great-nation-needs-bigger-city.md)
-14. [中国当代社会阶层分析](politics/china-society-level.md)
-15. 经济学
+1. 民主
+   1. [常识](politics/CommonSense.md)
+2. 资本与阶级
+   1. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
+   2. [贫穷的本质](politics/PoorEconomics.md)
+3. 国际金融
+   1. [货币强权](politics/CurrencyPower.md)
+4. 国际政治
+   1. [世界秩序](politics/WorldOrder.md)
+   2. [看世界](politics/see-the-world.md)
+5. 欧美经济
+   1. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
+   2. [金融的本质](politics/TheFederalReserveAndTheFinancialCrisis.md)
+6. 中国经济
+   1. [百年中国经济史笔记](politics/china-economic-modern-history.md)
+   2.  [亚洲大趋势](politics/aisa-big-trend.md)
+   3.  [城市化转型与土地陷阱](politics/urbanization.md)
+   4.  [大国大城](politics/great-nation-needs-bigger-city.md)
+   5.  [中国当代社会阶层分析](politics/china-society-level.md)
+   6.  林毅夫
+        1.  [解读中国经济](politics/china-economics.md)
+   7.  郑永年
+        1.  [未来30年](politics/next30years.md)
+        2.  [未来30年2](politics/next30years2.md)
+        3.  [不确定的未来](politics/UncertainFuture.md)
+7.  经济学
     1. [经济学通识课](economics/a-little-history-of-economics.md)
     2. [经济学的思维方式](economics/BasicEconomics.md)
     3. [写给企业家的经济学](economics/economics4entrepreneur.md)
