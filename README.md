@@ -320,8 +320,7 @@
    6. “不确定性”
       1. [黑天鹅](bussiness/model/TheBlackSwan.md)
       2. [反脆弱](bussiness/model/Antifragile.md)
-   7.  [为什么你做的产品会很容易死掉？--关于商业模式的探讨](bussiness/model/business_model.md)
-   8.  智能商业
+   7.  智能商业
        1.  [智能商业](bussiness/model/IntelligentBusiness.md)
        2.  [指数型组织](bussiness/model/ExponentialOrganizations.md)
        3.  [创业无畏](bussiness/model/BOLD.md)
