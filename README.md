@@ -314,14 +314,14 @@
       2. [隐形VISA](bussiness/model/visa.md)
    3. 技术与创新
       1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
-   4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
-   5. 凯文·凯利
+   4. 凯文·凯利
       1. [必然](bussiness/model/kk-The-Inevitable.md)
       2. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-   6. “不确定性”
+   5. “不确定性”
       1. [黑天鹅](bussiness/model/TheBlackSwan.md)
       2. [反脆弱](bussiness/model/Antifragile.md)
-   7.  智能商业
+      3. [重塑-信息经济的结构](bussiness/model/reshaping.md)
+   6.  智能商业
        1.  [智能商业](bussiness/model/IntelligentBusiness.md)
        2.  [指数型组织](bussiness/model/ExponentialOrganizations.md)
        3.  [创业无畏](bussiness/model/BOLD.md)
