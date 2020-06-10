@@ -305,7 +305,7 @@
       3. [精益创业](bussiness/startup/TheLeanStartup.md)
       4. [创业时，不可不知的细节](bussiness/startup/details.md)
       5. [重新理解创业](bussiness/startup/rethink-startup.md)
-3. 商业模式
+3. 理论与趋势
    1. 长尾与2.0
       1. [维基经济学](bussiness/model/wikinomics.md)
       2. [长尾理论2.0](bussiness/model/long_tail.md)
