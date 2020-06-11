@@ -120,6 +120,7 @@
 7. 辩证法
    1. [大众哲学](western_philosophy/PublicPhilosophy.md)
    2. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
+   3. [毛泽东选集](western_philosophy/mao.md)
 8. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
 9.  [康德三大批判合集](western_philosophy/kant.md)
 10. [身份的焦虑](western_philosophy/status-anxiety.md)
