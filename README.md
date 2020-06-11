@@ -33,15 +33,14 @@
    3. [程序是怎样跑起来的](info/program.md)
    4. [网络是怎样连接的](info/network.md)
 4. 数学
-   1. [简单统计学](math/StandardDeviations.md)
-   2. [统计与真理](math/StatisticsAndTruth.md)
-   3. [机会的数学](math/OpportunisticMath.md)
-   4. [赤裸裸的统计学](math/NakedStatistics.md)
-   5. [数学之美](math/MathBeauty.md)
-   6. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
-   7. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
-   8. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
-   9.  [离散数学及其应用（原书第7版）](discrete_math)
+   1. [统计与真理](math/StatisticsAndTruth.md)
+   2. [机会的数学](math/OpportunisticMath.md)
+   3. [赤裸裸的统计学](math/NakedStatistics.md)
+   4. [数学之美](math/MathBeauty.md)
+   5. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
+   6. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
+   7. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
+   8.  [离散数学及其应用（原书第7版）](discrete_math)
 5. 人工智能
    1. [人有人的用处](ai/TheHumanUseOfHumanBeings.md)
    2. [人工智能的未来](ai/OnIntelligence.md)
@@ -327,7 +326,8 @@
    5. 信息与“不确定性”
       1. [黑天鹅](bussiness/model/TheBlackSwan.md)
       2. [反脆弱](bussiness/model/Antifragile.md)
-      3. [重塑-信息经济的结构](bussiness/model/reshaping.md)
+      3. [简单统计学](math/StandardDeviations.md)
+      4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
    6.  智能商业
        1.  [智能商业](bussiness/model/IntelligentBusiness.md)
        2.  [指数型组织](bussiness/model/ExponentialOrganizations.md)
