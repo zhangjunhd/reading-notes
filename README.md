@@ -48,11 +48,10 @@
    4. [智能时代](ai/IntelligenceEra.md)
    5. [科学的极致：漫谈人工智能](ai/talk-ai.md)
    6. [人工智能狂潮](ai/ai-torrent.md)
-   7. [知识的边界](ai/knowledge-boundary.md)
-   8. [终极算法](ai/TheMasterAlgorithm.md)
-   9. [人类的终极命运](ai/InOurOwnImage.md)
-   10. [暗知识](ai/DarkKnowledge.md)
-   11. [生命3.0](ai/Life3.md)
+   7. [终极算法](ai/TheMasterAlgorithm.md)
+   8. [人类的终极命运](ai/InOurOwnImage.md)
+   9.  [暗知识](ai/DarkKnowledge.md)
+   10. [生命3.0](ai/Life3.md)
 
 # 东方哲学
 1. 儒
@@ -315,9 +314,10 @@
    1. 长尾与2.0
       1. [维基经济学](bussiness/model/wikinomics.md)
       2. [长尾理论2.0](bussiness/model/long_tail.md)
-   2. 社群
+   2. 社群与去中心化
       1. [链接](bussiness/model/linked.md)
-      2. [隐形VISA](bussiness/model/visa.md)
+      2. [知识的边界](ai/knowledge-boundary.md)
+      3. [隐形VISA](bussiness/model/visa.md)
    3. 技术与创新
       1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    4. 凯文·凯利
