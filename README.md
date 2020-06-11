@@ -29,10 +29,12 @@
    3. [现实不似你所见](physics/RealityIsNotWhatItSeems.md)
 3. 信息学
    1. [信息简史](info/TheInformation.md)
-   2. [计算机是怎样跑起来的](info/computer.md)
-   3. [程序是怎样跑起来的](info/program.md)
-   4. [网络是怎样连接的](info/network.md)
-4. 数学
+   2. [知识的边界](info/knowledge-boundary.md)
+4. 计算机
+   1. [计算机是怎样跑起来的](info/computer.md)
+   2. [程序是怎样跑起来的](info/program.md)
+   3. [网络是怎样连接的](info/network.md)
+5. 数学
    1. [统计与真理](math/StatisticsAndTruth.md)
    2. [机会的数学](math/OpportunisticMath.md)
    3. [赤裸裸的统计学](math/NakedStatistics.md)
@@ -41,7 +43,7 @@
    6. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
    7. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
    8.  [离散数学及其应用（原书第7版）](discrete_math)
-5. 人工智能
+6. 人工智能
    1. [人有人的用处](ai/TheHumanUseOfHumanBeings.md)
    2. [人工智能的未来](ai/OnIntelligence.md)
    3. [与机器赛跑](ai/RaceAgainstTheMachine.md)
@@ -316,8 +318,7 @@
       2. [长尾理论2.0](bussiness/model/long_tail.md)
    2. 社群与去中心化
       1. [链接](bussiness/model/linked.md)
-      2. [知识的边界](ai/knowledge-boundary.md)
-      3. [隐形VISA](bussiness/model/visa.md)
+      2. [隐形VISA](bussiness/model/visa.md)
    3. 技术与创新
       1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    4. 凯文·凯利
