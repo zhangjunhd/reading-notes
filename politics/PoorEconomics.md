@@ -1,17 +1,17 @@
-![cover](https://img3.doubanio.com/view/subject/s/public/s26693881.jpg)
+![cover](https://img9.doubanio.com/view/subject/s/public/s29856376.jpg)
 
-    作者: 阿比吉特•班纳吉 (Abhijit V.Banerjee) / 埃斯特•迪弗洛 (Esther Duflo)
-    出版社: 中信出版社
-    副标题: 我们为什么摆脱不了贫穷
+    作者: [印]阿比吉特·班纳吉 / [法]埃斯特·迪弗洛
+    出版社: 中信出版集团
+    副标题: 我们为什么摆脱不了贫穷：修订版
     原作名: Poor Economics: A Radical Rethinking of the Way to Fight Global Poverty
     译者: 景芳
-    出版年: 2013-4-1
-    页数: 256
-    定价: 58.00元
+    出版年: 2018-9
+    页数: 317
+    定价: 58
     装帧: 精装
-    ISBN: 9787508638492
+    ISBN: 9787508687216
 
-[豆瓣链接](https://book.douban.com/subject/21966353/)
+[豆瓣链接](https://book.douban.com/subject/30161884/)
 
 - [前言](#前言)
   - [第一章 再好好想想](#第一章-再好好想想)
