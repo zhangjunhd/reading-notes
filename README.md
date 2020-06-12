@@ -120,7 +120,6 @@
 7. 辩证法
    1. [大众哲学](western_philosophy/PublicPhilosophy.md)
    2. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
-   3. [毛泽东选集](western_philosophy/mao.md)
 8. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
 9.  [康德三大批判合集](western_philosophy/kant.md)
 10. [身份的焦虑](western_philosophy/status-anxiety.md)
@@ -253,6 +252,7 @@
    1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
    2. [毛泽东传](history/Mao.md)
    3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
+   4. [毛泽东选集第一卷](history/mao.md)
 
 # 政治与经济
 1. 公民与政府
