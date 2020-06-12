@@ -1,12 +1,16 @@
-![cover](https://img3.doubanio.com/view/subject/s/public/s2729593.jpg)
+![cover](https://img3.doubanio.com/view/subject/s/public/s5804333.jpg)
 
-    作者: 中共中央文献研究室
-    出版社: 中央文献出版社
-    出版年: 1991-7-1
-    定价: 6.80元
-    ISBN: 9787507300734
+    作者: 毛泽东
+  出版社: 人民出版社
+  副标题: 第一卷
+  出版年: 1991-6
+  页数: 340
+  定价: 40.00元
+  装帧: 精装
+  丛书: 毛泽东选集
+  ISBN: 9787010009148
 
-[豆瓣链接](https://book.douban.com/subject/2220573/)
+[豆瓣链接](https://book.douban.com/subject/1139360/)
 
 - [中国社会各阶级的分析](#中国社会各阶级的分析)
   - [地主阶级和买办阶级](#地主阶级和买办阶级)
