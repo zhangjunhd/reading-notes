@@ -250,7 +250,7 @@
    4. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
 5. 中国近代史
    1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
-   2. [毛泽东传](history/Mao.md)
+   2. [毛泽东传](history/mao-biography.md)
    3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
    4. [毛泽东选集第一卷](history/mao.md)
 
