@@ -253,6 +253,7 @@
    2. [毛泽东传](history/mao-biography.md)
    3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
    4. [毛泽东选集第一卷](history/mao1.md)
+   5. [毛泽东选集第二卷](history/mao2.md)
 
 # 政治与经济
 1. 公民与政府
