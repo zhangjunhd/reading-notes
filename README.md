@@ -30,6 +30,7 @@
 3. 信息学
    1. [信息简史](info/TheInformation.md)
    2. [知识的边界](info/knowledge-boundary.md)
+   3. [人有人的用处](info/TheHumanUseOfHumanBeings.md)
 4. 计算机
    1. [计算机是怎样跑起来的](info/computer.md)
    2. [程序是怎样跑起来的](info/program.md)
@@ -44,16 +45,15 @@
    7. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
    8.  [离散数学及其应用（原书第7版）](discrete_math)
 6. 人工智能
-   1. [人有人的用处](ai/TheHumanUseOfHumanBeings.md)
-   2. [人工智能的未来](ai/OnIntelligence.md)
-   3. [与机器赛跑](ai/RaceAgainstTheMachine.md)
-   4. [智能时代](ai/IntelligenceEra.md)
-   5. [科学的极致：漫谈人工智能](ai/talk-ai.md)
-   6. [人工智能狂潮](ai/ai-torrent.md)
-   7. [终极算法](ai/TheMasterAlgorithm.md)
-   8. [人类的终极命运](ai/InOurOwnImage.md)
-   9.  [暗知识](ai/DarkKnowledge.md)
-   10. [生命3.0](ai/Life3.md)
+   1. [人工智能的未来](ai/OnIntelligence.md)
+   2. [与机器赛跑](ai/RaceAgainstTheMachine.md)
+   3. [智能时代](ai/IntelligenceEra.md)
+   4. [科学的极致：漫谈人工智能](ai/talk-ai.md)
+   5. [人工智能狂潮](ai/ai-torrent.md)
+   6. [终极算法](ai/TheMasterAlgorithm.md)
+   7. [人类的终极命运](ai/InOurOwnImage.md)
+   8.  [暗知识](ai/DarkKnowledge.md)
+   9.  [生命3.0](ai/Life3.md)
 
 # 东方哲学
 1. 儒
