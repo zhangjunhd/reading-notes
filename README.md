@@ -67,10 +67,8 @@
     8. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
     9. 南怀瑾
        1.  [南怀瑾谈性格与人生](eastern_philosophy/nan1.md)
-       2.  [南怀瑾谈生活与生存](eastern_philosophy/nan2.md)
-    10. 胡适
-        1.  [人生大策略](eastern_philosophy/BigStrategy4Life.md)
-    11. 梁漱溟
+       2.  [南怀瑾谈生活与生存](eastern_philosophy/nan2.md) 
+    10. 梁漱溟
         1. [中国最后一个大儒](eastern_philosophy/liang_shu_min.md)
         2. [这个世界会好吗-梁漱溟晚年口述](eastern_philosophy/liang_shu_min_wan_nian_kou_shu.md)
         3. [人生的三路向:宗教、道德与人生](eastern_philosophy/ren_sheng_de_san_lu_xiang.md)
@@ -136,8 +134,9 @@
       4. [二十世纪之卷](literature/muxin4.md)
    2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
 2. 杂文
-   1. [人为什么活着-王小波](literature/why-do-people-live.md)
-   2. 冯唐
+   1. [人生大策略-胡适](literature/BigStrategy4Life.md)
+   2. [人为什么活着-王小波](literature/why-do-people-live.md)
+   3. 冯唐
       1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
       2. [无所畏](literature/fengtang-not-to-matter.md)
       3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
