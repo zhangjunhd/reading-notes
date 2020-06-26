@@ -124,7 +124,9 @@
       3. [十八—十九世纪之卷](literature/muxin3.md)
       4. [二十世纪之卷](literature/muxin4.md)
    2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
-2. 杂文
+2. 传记
+   1. [富兰克林自传](literature/Franklin.md)
+3. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
    3. [伟大是熬出来的-冯仑](literature/Fenglun.md)
@@ -145,24 +147,24 @@
       3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
       4. [三十六大](literature/fengtang-36-messages-for-life.md)
       5. [成事](literature/fengtang-GettingThingsDone.md)
-3. 阿城
+4. 阿城
    1. [棋王](literature/Chess.md)
-4. 加缪
+5. 加缪
    1. [快乐的死](literature/LaMortHeureuse.md)
    2. [异乡人](literature/L'Etranger.md)
    3. [西西弗斯神话](literature/The-Myth-of-Sysyphus.md)
-5. 黑塞
+6. 黑塞
    1. [德米安](literature/Demian.md)
    2. [悉达多](literature/Siddhartha.md)
-6. 歌德
+7. 歌德
    1. [少年维特的烦恼](literature/Die-Leiden-des-jungen-Werthers.md)
    2. [浮士德](literature/Faust.md)
-7.  卡夫卡
+8.  卡夫卡
     1. [变形记](literature/DieVerwandlung.md)
-8. 反乌托邦
-   1. [等待戈多](literature/En-attendant-Godot.md)
-   2. [1984](literature/NineteenEightyFour.md)
-   3. [美丽新世界](literature/BraveNewWorld.md)
+9.  反乌托邦
+   3. [等待戈多](literature/En-attendant-Godot.md)
+   4. [1984](literature/NineteenEightyFour.md)
+   5. [美丽新世界](literature/BraveNewWorld.md)
 
 
 
@@ -202,7 +204,6 @@
 # 成功学
 1. 信念(自律、利他、独立)
    1. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
-   2. [富兰克林自传](success/Franklin.md)
 2. 习惯&练习(构建反馈)
    1. [微习惯](success/MiniHabits.md)
    2. [练习的心态](success/the-practicing-mind.md)
