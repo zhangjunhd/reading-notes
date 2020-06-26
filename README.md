@@ -127,7 +127,7 @@
 2. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
-   3. [伟大是熬出来的-冯仑](success/Fenglun.md)
+   3. [伟大是熬出来的-冯仑](literature/Fenglun.md)
    4. 梁漱溟
       1. [中国最后一个大儒](literature/liang_shu_min.md)
       2. [这个世界会好吗-梁漱溟晚年口述](literature/liang_shu_min_wan_nian_kou_shu.md)
