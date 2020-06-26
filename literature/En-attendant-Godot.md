@@ -12,7 +12,7 @@
     丛书: 贝克特全集
     ISBN: 9787540475277
 
-[豆瓣链接](https://book.douban.com/subject/26747147/s)
+[豆瓣链接](https://book.douban.com/subject/26747147/)
 
 ```
 艾斯特拉贡：美妙的地方，令人赏心悦目的景色。咱们走吧。
