@@ -202,8 +202,13 @@
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 
 # 成功学
-1. 信念(自律、利他、独立)
+1. 思维心智
    1. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
+   2. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
+   3. [新生——七年就是一辈子](success/rebirth.md)
+   4. [精进：如何成为一个很厉害的人](success/refinement.md)
+   5. [原则-生活原则](success/Principles.md)
+   6. [请停止无效努力](success/please-stop-trying.md)
 2. 习惯&练习(构建反馈)
    1. [微习惯](success/MiniHabits.md)
    2. [练习的心态](success/the-practicing-mind.md)
@@ -225,12 +230,6 @@
    1. [蔡康永的说话之道](success/CaiKangYong.md)
 6. 理财
    1. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
-7. 价值
-   1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
-   2. [新生——七年就是一辈子](success/rebirth.md)
-   3. [精进：如何成为一个很厉害的人](success/refinement.md)
-   4. [原则-生活原则](success/Principles.md)
-   5. [请停止无效努力](success/please-stop-trying.md)
 
 # 历史
 1. 社会学
