@@ -65,12 +65,6 @@
     6. [王阳明心学](eastern_philosophy/wang-yang-ming-xin-xue.md)
     7. [曾国藩家书](eastern_philosophy/zen_guo_fan_letter.md)
     8. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
-    9.  梁漱溟
-        1. [中国最后一个大儒](eastern_philosophy/liang_shu_min.md)
-        2. [这个世界会好吗-梁漱溟晚年口述](eastern_philosophy/liang_shu_min_wan_nian_kou_shu.md)
-        3. [人生的三路向:宗教、道德与人生](eastern_philosophy/ren_sheng_de_san_lu_xiang.md)
-        4. [梁漱溟先生论儒佛道](eastern_philosophy/liang_shu_min_xian_sheng_lun_ru_fo_dao.md)
-        5. [人心与人生](eastern_philosophy/renxin_yu_rensheng.md)
 2. 释
     1. [佛教与三藏简史](eastern_philosophy/fo_jiao_yu_san_zang_jian_shi.md)
     2. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
@@ -133,10 +127,16 @@
 2. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
-   3. 南怀瑾
+   3. 梁漱溟
+      1. [中国最后一个大儒](eastern_philosophy/liang_shu_min.md)
+      2. [这个世界会好吗-梁漱溟晚年口述](eastern_philosophy/liang_shu_min_wan_nian_kou_shu.md)
+      3. [人生的三路向:宗教、道德与人生](eastern_philosophy/ren_sheng_de_san_lu_xiang.md)
+      4. [梁漱溟先生论儒佛道](eastern_philosophy/liang_shu_min_xian_sheng_lun_ru_fo_dao.md)
+      5. [人心与人生](eastern_philosophy/renxin_yu_rensheng.md)
+   4. 南怀瑾
        1. [南怀瑾谈性格与人生](literature/nan1.md)
        2. [南怀瑾谈生活与生存](literature/nan2.md) 
-   4. 冯唐
+   5. 冯唐
       1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
       2. [无所畏](literature/fengtang-not-to-matter.md)
       3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
