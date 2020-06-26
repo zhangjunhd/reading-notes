@@ -128,37 +128,38 @@
 13. [论自然](western_philosophy/nature.md)
 
 # 文学
-1. 木心文学回忆录
-    1. [古代之卷](literature/muxin1.md)
-    2. [中世纪—十七世纪之卷](literature/muxin2.md)
-    3. [十八—十九世纪之卷](literature/muxin3.md)
-    4. [二十世纪之卷](literature/muxin4.md)
-2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
-3. 王小波
+1. 文学史
+   1. 木心文学回忆录
+      1. [古代之卷](literature/muxin1.md)
+      2. [中世纪—十七世纪之卷](literature/muxin2.md)
+      3. [十八—十九世纪之卷](literature/muxin3.md)
+      4. [二十世纪之卷](literature/muxin4.md)
+   2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
+2. 王小波
    1. [人为什么活着](literature/why-do-people-live.md)
-4. 冯唐
+3. 冯唐
    1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
    2. [无所畏](literature/fengtang-not-to-matter.md)
    3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
    4. [三十六大](literature/fengtang-36-messages-for-life.md)
    5. [成事](literature/fengtang-GettingThingsDone.md)
-5. 阿城
+4. 阿城
    1. [棋王](literature/Chess.md)
-6. 加缪
+5. 加缪
    1. [快乐的死](literature/LaMortHeureuse.md)
    2. [异乡人](literature/L'Etranger.md)
    3. [西西弗斯神话](literature/The-Myth-of-Sysyphus.md)
-7. 黑塞
+6. 黑塞
    1. [德米安](literature/Demian.md)
    2. [悉达多](literature/Siddhartha.md)
-8. 歌德
+7. 歌德
    1. [少年维特的烦恼](literature/Die-Leiden-des-jungen-Werthers.md)
    2. [浮士德](literature/Faust.md)
-9.  卡夫卡
+8.  卡夫卡
     1. [变形记](literature/DieVerwandlung.md)
-10. [等待戈多](literature/En-attendant-Godot.md)
-11. [1984](literature/NineteenEightyFour.md)
-12. [美丽新世界](literature/BraveNewWorld.md)
+9.  [等待戈多](literature/En-attendant-Godot.md)
+10. [1984](literature/NineteenEightyFour.md)
+11. [美丽新世界](literature/BraveNewWorld.md)
 
 
 
