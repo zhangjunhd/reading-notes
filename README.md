@@ -135,31 +135,31 @@
       3. [十八—十九世纪之卷](literature/muxin3.md)
       4. [二十世纪之卷](literature/muxin4.md)
    2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
-2. 王小波
-   1. [人为什么活着](literature/why-do-people-live.md)
-3. 冯唐
-   1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
-   2. [无所畏](literature/fengtang-not-to-matter.md)
-   3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
-   4. [三十六大](literature/fengtang-36-messages-for-life.md)
-   5. [成事](literature/fengtang-GettingThingsDone.md)
-4. 阿城
+2. 杂文
+   1. [人为什么活着-王小波](literature/why-do-people-live.md)
+   2. 冯唐
+      1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
+      2. [无所畏](literature/fengtang-not-to-matter.md)
+      3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
+      4. [三十六大](literature/fengtang-36-messages-for-life.md)
+      5. [成事](literature/fengtang-GettingThingsDone.md)
+3. 阿城
    1. [棋王](literature/Chess.md)
-5. 加缪
+4. 加缪
    1. [快乐的死](literature/LaMortHeureuse.md)
    2. [异乡人](literature/L'Etranger.md)
    3. [西西弗斯神话](literature/The-Myth-of-Sysyphus.md)
-6. 黑塞
+5. 黑塞
    1. [德米安](literature/Demian.md)
    2. [悉达多](literature/Siddhartha.md)
-7. 歌德
+6. 歌德
    1. [少年维特的烦恼](literature/Die-Leiden-des-jungen-Werthers.md)
    2. [浮士德](literature/Faust.md)
-8.  卡夫卡
+7.  卡夫卡
     1. [变形记](literature/DieVerwandlung.md)
-9.  [等待戈多](literature/En-attendant-Godot.md)
-10. [1984](literature/NineteenEightyFour.md)
-11. [美丽新世界](literature/BraveNewWorld.md)
+8.  [等待戈多](literature/En-attendant-Godot.md)
+9.  [1984](literature/NineteenEightyFour.md)
+10. [美丽新世界](literature/BraveNewWorld.md)
 
 
 
