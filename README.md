@@ -129,16 +129,17 @@
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
    3. [伟大是熬出来的-冯仑](literature/Fenglun.md)
    4. [冯鑫家信：怎样才算好好活着](literature/a-letter-home-by-fengxin.md)
-   5. 梁漱溟
+   5. [活法-稻盛和夫](literature/LivingLaw.md)
+   6. 梁漱溟
       1. [中国最后一个大儒](literature/liang_shu_min.md)
       2. [这个世界会好吗-梁漱溟晚年口述](literature/liang_shu_min_wan_nian_kou_shu.md)
       3. [人生的三路向:宗教、道德与人生](literature/ren_sheng_de_san_lu_xiang.md)
       4. [梁漱溟先生论儒佛道](literature/liang_shu_min_xian_sheng_lun_ru_fo_dao.md)
       5. [人心与人生](literature/renxin_yu_rensheng.md)
-   6. 南怀瑾
+   7. 南怀瑾
        1. [南怀瑾谈性格与人生](literature/nan1.md)
        2. [南怀瑾谈生活与生存](literature/nan2.md) 
-   7. 冯唐
+   8. 冯唐
       1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
       2. [无所畏](literature/fengtang-not-to-matter.md)
       3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
@@ -201,8 +202,7 @@
 # 成功学
 1. 信念(自律、利他、独立)
    1. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
-   2. [活法](success/LivingLaw.md)
-   3. [富兰克林自传](success/Franklin.md)
+   2. [富兰克林自传](success/Franklin.md)
 2. 习惯&练习(构建反馈)
    1. [微习惯](success/MiniHabits.md)
    2. [练习的心态](success/the-practicing-mind.md)
