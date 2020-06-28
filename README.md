@@ -193,6 +193,7 @@
    4. [幸福是陷阱?](psychology/the-happiness-trap.md)
    5. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
    6. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+   7. [走出抑郁症](psychology/depression.md)
 3. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
