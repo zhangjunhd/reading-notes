@@ -56,16 +56,19 @@
    9.  [生命3.0](ai/Life3.md)
 
 # 东方哲学
-1. 儒
-    1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
-    2. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
-    3. [论语译注](eastern_philosophy/lun_yu_yi_zhu.md)
-    4. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
-    5. [传习录](eastern_philosophy/chuan_xi_lu.md)
-    6. [王阳明心学](eastern_philosophy/wang-yang-ming-xin-xue.md)
-    7. [曾国藩家书](eastern_philosophy/zen_guo_fan_letter.md)
-    8. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
-2. 释
+1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
+2. 儒
+   1. 四书
+      1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
+      2. [论语译注](eastern_philosophy/lun_yu_yi_zhu.md)
+      3. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
+   2. 王阳明 
+      1. [传习录](eastern_philosophy/chuan_xi_lu.md)
+      2. [王阳明心学](eastern_philosophy/wang-yang-ming-xin-xue.md)
+   3. 曾国藩
+      1. [曾国藩家书](eastern_philosophy/zen_guo_fan_letter.md)
+      2. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
+3. 释
     1. [佛教与三藏简史](eastern_philosophy/fo_jiao_yu_san_zang_jian_shi.md)
     2. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
     3. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
@@ -77,7 +80,7 @@
     9. [转念的力量](eastern_philosophy/zhuan_nian_de_li_liang.md)
     10. [一个瑜伽行者的自传](eastern_philosophy/yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
     11. [一步一如来2：京都朝圣旅人书](eastern_philosophy/yi_bu_yi_ru_lai2.md)
-3. 道
+4. 道
     1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
     2. [庄子的享受](eastern_philosophy/zhuang_zi_de_xiang_shou.md)
     3. [庄子的快活](eastern_philosophy/zhuang_zi_de_kuai_huo.md)
