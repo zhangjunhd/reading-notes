@@ -60,7 +60,7 @@
 2. 儒
    1. 四书
       1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
-      2. [论语译注](eastern_philosophy/lun_yu_yi_zhu.md)
+      2. [论语别裁](eastern_philosophy/lun_yu_bie_cai.md)
       3. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
    2. 王阳明 
       1. [传习录](eastern_philosophy/chuan_xi_lu.md)
