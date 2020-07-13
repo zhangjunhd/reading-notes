@@ -128,8 +128,8 @@
       4. [二十世纪之卷](literature/muxin4.md)
    2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
 2. 传记
-   1. [富兰克林自传](literature/Franklin.md)
-   2. [褚时健传](literature/ChuShiJian.md)
+   1. [富兰克林自传](biography/Franklin.md)
+   2. [褚时健传](biography/ChuShiJian.md)
    3. [颠覆者-周鸿祎自传](biography/ZhouHongYi.md)
 3. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
