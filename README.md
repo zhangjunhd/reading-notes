@@ -130,6 +130,7 @@
 2. 传记
    1. [富兰克林自传](literature/Franklin.md)
    2. [褚时健传](literature/ChuShiJian.md)
+   3. [颠覆者-周鸿祎自传](biography/ZhouHongYi.md)
 3. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
