@@ -131,6 +131,7 @@
    1. [富兰克林自传](biography/Franklin.md)
    2. [褚时健传](biography/ChuShiJian.md)
    3. [颠覆者-周鸿祎自传](biography/ZhouHongYi.md)
+   4. [创始人手记-季琦自传](biography/JiQi.md)
 3. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
