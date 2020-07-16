@@ -171,9 +171,9 @@
 8.  卡夫卡
     1. [变形记](literature/DieVerwandlung.md)
 9.  反乌托邦
-   3. [等待戈多](literature/En-attendant-Godot.md)
-   4. [1984](literature/NineteenEightyFour.md)
-   5. [美丽新世界](literature/BraveNewWorld.md)
+    1. [等待戈多](literature/En-attendant-Godot.md)
+    2. [1984](literature/NineteenEightyFour.md)
+    3. [美丽新世界](literature/BraveNewWorld.md)
 
 
 
