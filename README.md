@@ -60,9 +60,9 @@
 2. 儒
    1. 四书
       1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
-      2. [话说中庸](eastern_philosophy/hua_shuo_zhong_yong.md)
-      3. [论语别裁](eastern_philosophy/lun_yu_bie_cai.md)
-      4. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
+      2. [论语别裁](eastern_philosophy/lun_yu_bie_cai.md)
+      3. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
+      4. [话说中庸](eastern_philosophy/hua_shuo_zhong_yong.md)
    2. 王阳明 
       1. [传习录](eastern_philosophy/chuan_xi_lu.md)
       2. [王阳明心学](eastern_philosophy/wang-yang-ming-xin-xue.md)
