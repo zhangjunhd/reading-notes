@@ -22,7 +22,7 @@
 
 ![](monopolize1.png)
 
-
+图1-8
 
 
 
