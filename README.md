@@ -320,6 +320,7 @@
    4. 商业模式
       1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
       2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
+      3. [透析盈利模式](bussiness/management/ProfitModel.md)
    5. 创业
       1. [从0到1](bussiness/startup/zero_to_one.md)
       2. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
