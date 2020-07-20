@@ -309,17 +309,17 @@
       2. [系统之美](bussiness/management/ThinkingInSystems.md)
    2. 企业文化
       1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
-      2. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
-      3. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
-      4. [重来ReWork](bussiness/management/rework.md)
-      5. [刷新](bussiness/management/hit-refresh.md)
-      6. [奈飞文化手册](bussiness/management/Powerful.md)
+      2. [重来ReWork](bussiness/management/rework.md)
+      3. [刷新](bussiness/management/hit-refresh.md)
+      4. [奈飞文化手册](bussiness/management/Powerful.md)
    3. 企业管理
       1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
-      2.  [领导梯队](bussiness/management/TheLeadershipPipeline.md)
-      3.  [关键对话](bussiness/management/CrucialConversations.md)
-   4. 绩效
-      1.  [OKR工作法](bussiness/management/okr.md)
+      2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
+      3. [关键对话](bussiness/management/CrucialConversations.md)
+      4. [OKR工作法](bussiness/management/okr.md)
+   4. 商业模式
+      1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
+      2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
    5. 创业
       1. [从0到1](bussiness/startup/zero_to_one.md)
       2. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
