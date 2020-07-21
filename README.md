@@ -134,6 +134,7 @@
    3. [颠覆者-周鸿祎自传](biography/ZhouHongYi.md)
    4. [创始人手记-季琦自传](biography/JiQi.md)
    5. [史玉柱自述-我的营销心得](biography/ShiYuZhu.md)
+   6. [我曾走在崩溃的边缘-俞敏洪亲述新东方创业发展之路](biography/Yu.md)
 3. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
