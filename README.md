@@ -364,7 +364,7 @@
       2. [新闻采访与写作](bussiness/writing/news-interview-and-writing.md)
       3. [网络新闻写作与编辑实务](bussiness/writing/news-writing.md)
       4. [从零开始写故事：一个南方周末记者的特稿笔记](bussiness/writing/WriteStoryFromZero.md)
-   3.  媒体
+   3. 媒体
        1. [时尚：幕后的策动](bussiness/media/fashion_editor.md)
        2. [访美记](bussiness/media/fang-mei.md)
        3. [徐建军-开始吧](bussiness/media/kaistart.md)
@@ -412,7 +412,7 @@
    5. [About Face 3](design/AboutFace3.md)
    6. [Designing Interfaces](design/DesigningInterfaces.md)
    7. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
-5.  信息架构
+5. 信息架构
     1. [Information Architecture](ia/InformationArchitecture.md)
     2. [Search Patterns](ia/SearchPatterns.md)
     3. [Designing the Search Experience](ia/DesigningTheSearchExperience.md)
