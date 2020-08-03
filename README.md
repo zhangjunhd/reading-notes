@@ -218,7 +218,7 @@
    2. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    3. [新生——七年就是一辈子](success/rebirth.md)
    4. [精进：如何成为一个很厉害的人](success/refinement.md)
-   5. [原则-生活原则](success/Principles.md)
+   5. [原则](success/Principles.md)
    6. [请停止无效努力](success/please-stop-trying.md)
 2. 习惯&练习(构建反馈)
    1. [微习惯](success/MiniHabits.md)
