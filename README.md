@@ -393,8 +393,9 @@
       1. [运营数据指标](pm/operation/operation_data.md)
    2. [从零开始做运营](pm/operation/operation-start-from-scratch.md)
    3. [精益数据分析](pm/operation/LeanAnalytics.md)
-   4. [内容算法](pm/operation/content-algorithm.md)
-   5. [我不是产品经理](pm/operation/growth.md)
+   4. [硅谷增长黑客实战笔记](pm/operation/GrowthHacker.md)
+   5. [内容算法](pm/operation/content-algorithm.md)
+   6. [我不是产品经理](pm/operation/growth.md)
 3. 技术管理
    1. [成为技术领导者](pm/management/tech_leader.md)
    2. [人月神话](pm/management/TheMythicalMan-Month.md)
