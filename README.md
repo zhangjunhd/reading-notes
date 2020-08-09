@@ -329,6 +329,7 @@
       4. [创业时，不可不知的细节](bussiness/startup/details.md)
       5. [重新理解创业](bussiness/startup/rethink-startup.md)
       6. [创业就是要细分垄断](bussiness/startup/monopolize.md)
+      7. [MR.HUA创业手记](bussiness/startup/hua.md)
 3. 理论与趋势
    1. 长尾与2.0
       1. [维基经济学](bussiness/model/wikinomics.md)
