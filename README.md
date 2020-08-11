@@ -389,6 +389,7 @@
    1. [产品的视角：从热闹到门道](pm/product/perspective_product.md)
       1. [你真的了解MVP（最小化可用产品）么？](pm/product/mvp.md)
    2. [Inspired-How To Create Products Customers Love](pm/product/inspired.md)
+   3. [产品思维：从新手到资深产品人](pm/product/product-mind.md)
 2. 运营
    1. [运营之光](pm/operation/internet-operation.md)
       1. [运营数据指标](pm/operation/operation_data.md)
