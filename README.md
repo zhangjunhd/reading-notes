@@ -246,6 +246,7 @@
 1. 社会学
    1. [第4消费时代](history/4th-consumerist.md)
    2. [乌合之众](history/Psychologie-des-Foules.md)
+   3. [李银河说爱情](history/LiYinHe.md)
 2. 人类史
    1. [人类简史](history/A-brief-history-of-humankind.md)
    2. [未来简史](history/Homo-Deus-A-Brief-History-of-Tomorrow.md)
