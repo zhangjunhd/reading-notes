@@ -3,7 +3,7 @@
 - [西方哲学](#西方哲学)
 - [文学](#文学)
 - [艺术](#艺术)
-- [社交](#社交)
+- [生活](#生活)
 - [心理学](#心理学)
 - [成功学](#成功学)
 - [历史](#历史)
@@ -183,9 +183,9 @@
 1. [我心自由-杜尚传](art/duchamp.md)
 2. [光影中遇见伦勃朗](art/rembrandt.md)
 
-# 社交
-1. [24堂葡萄酒大师课](socialcontact/the-24-hour-wine-expert.md)
-2. [汽车是怎样跑起来的](socialcontact/how-does-a-car-run.md)
+# 生活
+1. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
+2. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
 
 
 
