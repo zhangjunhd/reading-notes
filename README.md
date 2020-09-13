@@ -17,10 +17,11 @@
 1. 牛津通识读本
    1. 学科系列
       1. [中国文学](A-Very-Short-Introductions/ChineseLiterature.md)
-      2. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
-      3. [我们时代的伦理学](A-Very-Short-Introductions/Ethics.md)
-      4. [资本主义](A-Very-Short-Introductions/Capitalism.md)
-   2. 哲学家系列
+      2. [我们时代的伦理学](A-Very-Short-Introductions/Ethics.md)
+   2. 现代性
+      1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
+      2. [资本主义](A-Very-Short-Introductions/Capitalism.md)
+   3. 哲学家系列
       1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
       2. [福柯](A-Very-Short-Introductions/Foucault.md)
       3. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
