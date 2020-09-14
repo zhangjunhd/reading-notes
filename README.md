@@ -209,12 +209,10 @@
       4. [高效能人士的七个习惯](success/7Habits.md)
       5. [暗时间](success/DarkTime.md)
 2. 学习
-   1. 知识管理
-      1. [六个步骤把资料转换成知识](success/6step.md)
-   2. 学习方法
+   1. 学习方法
       1. [学习之道](success/A-Mind-for-Numbers.md)
       2. [如何高效学习](success/LearnMoreStudyLess.md)
-   3. 有效阅读
+   2. 有效阅读
       1. [如何阅读一本书](success/HowToReadABook.md)
 3. 精神分析
    1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
