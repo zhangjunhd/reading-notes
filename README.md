@@ -202,6 +202,12 @@
       5. [练习的心态](success/the-practicing-mind.md)
       6. [刻意练习](success/PEAK.md)
       7. [习惯的力量](success/ThePowerOfHabit.md)
+   3. 时间管理
+      1. [小强的时间管理博客摘录](success/XiaoQiang.md)
+      2. [尽管去做——无压工作的艺术](success/GTD.md)
+      3. [奇特的一生](success/Lyubishchev.md)
+      4. [高效能人士的七个习惯](success/7Habits.md)
+      5. [暗时间](success/DarkTime.md)
 2. 精神分析
    1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
    2. [荣格心理学入门](psychology/Jung-intro.md)
@@ -226,21 +232,15 @@
    4. [精进：如何成为一个很厉害的人](success/refinement.md)
    5. [原则](success/Principles.md)
    6. [请停止无效努力](success/please-stop-trying.md)
-7.  时间管理(要事第一、启动效应、感知时间)
-   7. [小强的时间管理博客摘录](success/XiaoQiang.md)
-   8. [尽管去做——无压工作的艺术](success/GTD.md)
-   9. [奇特的一生](success/Lyubishchev.md)
-   10. [高效能人士的七个习惯](success/7Habits.md)
-   11. [暗时间](success/DarkTime.md)
-8.  知识管理(主题阅读、整理知识库、输出观点)
-   12. [六个步骤把资料转换成知识](success/6step.md)
-   13. [如何阅读一本书](success/HowToReadABook.md)
-   14. [学习之道](success/A-Mind-for-Numbers.md)
-   15. [如何高效学习](success/LearnMoreStudyLess.md)
-9.  沟通
-   16. [蔡康永的说话之道](success/CaiKangYong.md)
-10. 理财
-   17. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
+7.  知识管理(主题阅读、整理知识库、输出观点)
+   7. [六个步骤把资料转换成知识](success/6step.md)
+   8. [如何阅读一本书](success/HowToReadABook.md)
+   9. [学习之道](success/A-Mind-for-Numbers.md)
+   10. [如何高效学习](success/LearnMoreStudyLess.md)
+8.  沟通
+   11. [蔡康永的说话之道](success/CaiKangYong.md)
+9.  理财
+   12. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
 
 # 历史
 1. 社会学
