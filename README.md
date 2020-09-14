@@ -5,7 +5,6 @@
 - [艺术](#艺术)
 - [生活](#生活)
 - [心理学](#心理学)
-- [成功学](#成功学)
 - [历史](#历史)
 - [政治与经济](#政治与经济)
 - [商业](#商业)
@@ -192,11 +191,14 @@
 
 
 # 心理学
-1. 精神分析
+1. 效率
+   1. 拖延
+      1. [拖延心理学](success/Procrastination.md)
+2. 精神分析
    1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
    2. [荣格心理学入门](psychology/Jung-intro.md)
    3. [天资差异](psychology/GiftsDiffering.md)
-2. 意义
+3. 意义
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    3. [专念](psychology/mindfulness.md)
@@ -204,45 +206,42 @@
    5. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
    6. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
    7. [走出抑郁症](psychology/depression.md)
-3. 批判性思维
+4. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-4. 延迟满足
+5. 延迟满足
     1. [意志力](psychology/willpower.md)
     2. [自控力](psychology/TheWillpowerInstinct.md)
     3. [棉花糖实验](psychology/TheMarshmallowTest.md)
-5. 史蒂芬平克
+6. 史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
-
-# 成功学
-1. 思维心智
+7. 思维心智
    1. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
    2. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    3. [新生——七年就是一辈子](success/rebirth.md)
    4. [精进：如何成为一个很厉害的人](success/refinement.md)
    5. [原则](success/Principles.md)
    6. [请停止无效努力](success/please-stop-trying.md)
-2. 习惯&练习(构建反馈)
+8. 习惯&练习(构建反馈)
    1. [微习惯](success/MiniHabits.md)
    2. [练习的心态](success/the-practicing-mind.md)
    3. [刻意练习](success/PEAK.md)
    4. [习惯的力量](success/ThePowerOfHabit.md)
-3. 时间管理(要事第一、启动效应、感知时间)
-   1. [小强的时间管理博客摘录](success/XiaoQiang.md)
-   2. [尽管去做——无压工作的艺术](success/GTD.md)
-   3. [奇特的一生](success/Lyubishchev.md)
-   4. [高效能人士的七个习惯](success/7Habits.md)
-   5. [拖延心理学](success/Procrastination.md)
-   6. [暗时间](success/DarkTime.md)
-4. 知识管理(主题阅读、整理知识库、输出观点)
-   1. [六个步骤把资料转换成知识](success/6step.md)
-   2. [如何阅读一本书](success/HowToReadABook.md)
-   3. [学习之道](success/A-Mind-for-Numbers.md)
-   4. [如何高效学习](success/LearnMoreStudyLess.md)
-5. 沟通
-   1. [蔡康永的说话之道](success/CaiKangYong.md)
-6. 理财
-   1. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
+9.  时间管理(要事第一、启动效应、感知时间)
+   5. [小强的时间管理博客摘录](success/XiaoQiang.md)
+   6. [尽管去做——无压工作的艺术](success/GTD.md)
+   7. [奇特的一生](success/Lyubishchev.md)
+   8. [高效能人士的七个习惯](success/7Habits.md)
+   9.  [暗时间](success/DarkTime.md)
+10. 知识管理(主题阅读、整理知识库、输出观点)
+   10. [六个步骤把资料转换成知识](success/6step.md)
+   11. [如何阅读一本书](success/HowToReadABook.md)
+   12. [学习之道](success/A-Mind-for-Numbers.md)
+   13. [如何高效学习](success/LearnMoreStudyLess.md)
+11. 沟通
+   14. [蔡康永的说话之道](success/CaiKangYong.md)
+12. 理财
+   15. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
 
 # 历史
 1. 社会学
