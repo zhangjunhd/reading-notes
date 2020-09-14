@@ -208,11 +208,19 @@
       3. [奇特的一生](success/Lyubishchev.md)
       4. [高效能人士的七个习惯](success/7Habits.md)
       5. [暗时间](success/DarkTime.md)
-2. 精神分析
+2. 学习
+   1. 知识管理
+      1. [六个步骤把资料转换成知识](success/6step.md)
+   2. 学习方法
+      1. [学习之道](success/A-Mind-for-Numbers.md)
+      2. [如何高效学习](success/LearnMoreStudyLess.md)
+   3. 有效阅读
+      1. [如何阅读一本书](success/HowToReadABook.md)
+3. 精神分析
    1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
    2. [荣格心理学入门](psychology/Jung-intro.md)
    3. [天资差异](psychology/GiftsDiffering.md)
-3. 意义
+4. 意义
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    3. [专念](psychology/mindfulness.md)
@@ -220,27 +228,22 @@
    5. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
    6. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
    7. [走出抑郁症](psychology/depression.md)
-4. 批判性思维
+5. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-5. 史蒂芬平克
+6. 史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
-6. 思维心智
+7. 思维心智
    1. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
    2. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    3. [新生——七年就是一辈子](success/rebirth.md)
    4. [精进：如何成为一个很厉害的人](success/refinement.md)
    5. [原则](success/Principles.md)
    6. [请停止无效努力](success/please-stop-trying.md)
-7.  知识管理(主题阅读、整理知识库、输出观点)
-   7. [六个步骤把资料转换成知识](success/6step.md)
-   8. [如何阅读一本书](success/HowToReadABook.md)
-   9. [学习之道](success/A-Mind-for-Numbers.md)
-   10. [如何高效学习](success/LearnMoreStudyLess.md)
 8.  沟通
-   11. [蔡康永的说话之道](success/CaiKangYong.md)
+   7.  [蔡康永的说话之道](success/CaiKangYong.md)
 9.  理财
-   12. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
+   8.  [富爸爸，穷爸爸](success/RichDadPoorDad.md)
 
 # 历史
 1. 社会学
