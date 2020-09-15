@@ -214,34 +214,36 @@
       2. [如何高效学习](success/LearnMoreStudyLess.md)
    2. 有效阅读
       1. [如何阅读一本书](success/HowToReadABook.md)
-3. 精神分析
+3. 人生
+   1. 消极情绪
+      1. [幸福是陷阱?](psychology/the-happiness-trap.md)
+      2. [走出抑郁症](psychology/depression.md)
+4. 精神分析
    1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
    2. [荣格心理学入门](psychology/Jung-intro.md)
    3. [天资差异](psychology/GiftsDiffering.md)
-4. 意义
+5. 意义
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    3. [专念](psychology/mindfulness.md)
-   4. [幸福是陷阱?](psychology/the-happiness-trap.md)
-   5. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
-   6. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-   7. [走出抑郁症](psychology/depression.md)
-5. 批判性思维
+   4. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+   5. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+6. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-6. 史蒂芬平克
+7. 史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
-7. 思维心智
+8. 思维心智
    1. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
    2. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    3. [新生——七年就是一辈子](success/rebirth.md)
    4. [精进：如何成为一个很厉害的人](success/refinement.md)
    5. [原则](success/Principles.md)
    6. [请停止无效努力](success/please-stop-trying.md)
-8.  沟通
-   7.  [蔡康永的说话之道](success/CaiKangYong.md)
-9.  理财
-   8.  [富爸爸，穷爸爸](success/RichDadPoorDad.md)
+9.  沟通
+    1.  [蔡康永的说话之道](success/CaiKangYong.md)
+10. 理财
+    1.  [富爸爸，穷爸爸](success/RichDadPoorDad.md)
 
 # 历史
 1. 社会学
