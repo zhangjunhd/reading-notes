@@ -12,7 +12,7 @@
     丛书: 学习典藏书系
     ISBN: 9787111553106
 
-[豆瓣链接](https://read.douban.com/ebook/27896840/)
+[豆瓣链接](https://book.douban.com/subject/26911425/)
 
 - [引言 人生就是漫长的练习](#%e5%bc%95%e8%a8%80-%e4%ba%ba%e7%94%9f%e5%b0%b1%e6%98%af%e6%bc%ab%e9%95%bf%e7%9a%84%e7%bb%83%e4%b9%a0)
 - [第2章 以过程为导向，不以结果为导向](#%e7%ac%ac2%e7%ab%a0-%e4%bb%a5%e8%bf%87%e7%a8%8b%e4%b8%ba%e5%af%bc%e5%90%91%e4%b8%8d%e4%bb%a5%e7%bb%93%e6%9e%9c%e4%b8%ba%e5%af%bc%e5%90%91)
