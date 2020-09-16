@@ -214,26 +214,30 @@
       2. [如何高效学习](success/LearnMoreStudyLess.md)
    2. 有效阅读
       1. [如何阅读一本书](success/HowToReadABook.md)
-3. 人生
+3. 思考
+   1. 批判性思维
+      1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
+      2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
+   2. 系统性思维
+      1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
+      2. [系统之美](bussiness/management/ThinkingInSystems.md)
+4. 人生
    1. 消极情绪
       1. [幸福是陷阱?](psychology/the-happiness-trap.md)
       2. [走出抑郁症](psychology/depression.md)
-4. 精神分析
+5. 精神分析
    1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
    2. [荣格心理学入门](psychology/Jung-intro.md)
    3. [天资差异](psychology/GiftsDiffering.md)
-5. 意义
+6. 意义
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    3. [专念](psychology/mindfulness.md)
    4. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
    5. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-6. 批判性思维
-   1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
-   2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
 7. 史蒂芬平克
     1. [思想本质](psychology/pinker/TheStuffOfThought.md)
-8. 思维心智
+8.  思维心智
    1. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
    2. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    3. [新生——七年就是一辈子](success/rebirth.md)
@@ -309,24 +313,21 @@
    2. [一本书读懂中国税](bussiness/finance/OneBookLearnChinaTax.md)
    3. [一本书看透股权架构](bussiness/finance/OneBookLearnShareholdingStructure.md)
 2. 管理
-   1. 系统动力学
-      1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
-      2. [系统之美](bussiness/management/ThinkingInSystems.md)
-   2. 企业文化
+   1. 企业文化
       1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
       2. [重来ReWork](bussiness/management/rework.md)
       3. [刷新](bussiness/management/hit-refresh.md)
       4. [奈飞文化手册](bussiness/management/Powerful.md)
-   3. 企业管理
+   2. 企业管理
       1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
       2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
       3. [关键对话](bussiness/management/CrucialConversations.md)
       4. [OKR工作法](bussiness/management/okr.md)
-   4. 商业模式
+   3. 商业模式
       1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
       2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
       3. [透析盈利模式](bussiness/management/ProfitModel.md)
-   5. 创业
+   4. 创业
       1. [从0到1](bussiness/startup/zero_to_one.md)
       2. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
       3. [精益创业](bussiness/startup/TheLeanStartup.md)
