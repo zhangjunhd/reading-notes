@@ -187,7 +187,7 @@
 # 生活
 1. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
 2. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
-
+3. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
 
 
 # 认知
@@ -212,42 +212,41 @@
    1. 学习方法
       1. [学习之道](success/A-Mind-for-Numbers.md)
       2. [如何高效学习](success/LearnMoreStudyLess.md)
-   2. 有效阅读
+   2. 如何有效阅读
       1. [如何阅读一本书](success/HowToReadABook.md)
-3. 思考
+3. 思考方面
    1. 批判性思维
       1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
       2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
    2. 系统性思维
       1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
       2. [系统之美](bussiness/management/ThinkingInSystems.md)
-4. 人生
-   1. 消极情绪
+4. 人生方面
+   1. 如何处理消极情绪
       1. [幸福是陷阱?](psychology/the-happiness-trap.md)
       2. [走出抑郁症](psychology/depression.md)
-   2. 意义
+   2. 如何找到目标和方向
       1. [活出生命的意义](psychology/MansSearchForMeaning.md)
       2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
       3. [专念](psychology/mindfulness.md)
       4. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
       5. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-   3. 沟通
+   3. 如何进行人际沟通
       1. [蔡康永的说话之道](success/CaiKangYong.md)
-5. 精神分析
-   1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
-   2. [荣格心理学入门](psychology/Jung-intro.md)
-   3. [天资差异](psychology/GiftsDiffering.md)
-6. 史蒂芬平克
-    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
-7.  思维心智
-   1. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
-   2. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
-   3. [新生——七年就是一辈子](success/rebirth.md)
-   4. [精进：如何成为一个很厉害的人](success/refinement.md)
-   5. [原则](success/Principles.md)
-   6. [请停止无效努力](success/please-stop-trying.md)
-8.  理财
-    1.  [富爸爸，穷爸爸](success/RichDadPoorDad.md)
+5. 元认知方面
+   1. 精神分析学
+      1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
+      2. [荣格心理学入门](psychology/Jung-intro.md)
+      3. [天资差异](psychology/GiftsDiffering.md)
+   2. 认知科学
+      1. [思想本质](psychology/pinker/TheStuffOfThought.md)
+6.  思维心智
+   3. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
+   4. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
+   5. [新生——七年就是一辈子](success/rebirth.md)
+   6. [精进：如何成为一个很厉害的人](success/refinement.md)
+   7. [原则](success/Principles.md)
+   8. [请停止无效努力](success/please-stop-trying.md)
 
 # 历史
 1. 社会学
