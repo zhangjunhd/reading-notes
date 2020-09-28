@@ -215,10 +215,12 @@
    2. 如何有效阅读
       1. [如何阅读一本书](success/HowToReadABook.md)
 3. 思考方面
-   1. 批判性思维
+   1. 思维模型
+      1. [专念](psychology/mindfulness.md)
+   2. 批判性思维
       1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
       2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-   2. 系统性思维
+   3. 系统性思维
       1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
       2. [系统之美](bussiness/management/ThinkingInSystems.md)
 4. 人生方面
@@ -228,10 +230,9 @@
    2. 如何找到目标和方向
       1. [活出生命的意义](psychology/MansSearchForMeaning.md)
       2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-      3. [专念](psychology/mindfulness.md)
-      4. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
-      5. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-      6. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
+      3. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+      4. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+      5. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    3. 如何进行人际沟通
       1. [蔡康永的说话之道](success/CaiKangYong.md)
 5. 元认知方面
