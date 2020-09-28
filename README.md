@@ -208,7 +208,7 @@
       3. [奇特的一生](success/Lyubishchev.md)
       4. [高效能人士的七个习惯](success/7Habits.md)
       5. [暗时间](success/DarkTime.md)
-2. 学习
+2. 学习方面
    1. 学习方法
       1. [学习之道](success/A-Mind-for-Numbers.md)
       2. [如何高效学习](success/LearnMoreStudyLess.md)
