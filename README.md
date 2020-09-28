@@ -231,6 +231,7 @@
       3. [专念](psychology/mindfulness.md)
       4. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
       5. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+      6. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    3. 如何进行人际沟通
       1. [蔡康永的说话之道](success/CaiKangYong.md)
 5. 元认知方面
@@ -242,11 +243,10 @@
       1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 6.  思维心智
    3. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
-   4. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
-   5. [新生——七年就是一辈子](success/rebirth.md)
-   6. [精进：如何成为一个很厉害的人](success/refinement.md)
-   7. [原则](success/Principles.md)
-   8. [请停止无效努力](success/please-stop-trying.md)
+   4. [新生——七年就是一辈子](success/rebirth.md)
+   5. [精进：如何成为一个很厉害的人](success/refinement.md)
+   6. [原则](success/Principles.md)
+   7. [请停止无效努力](success/please-stop-trying.md)
 
 # 历史
 1. 社会学
