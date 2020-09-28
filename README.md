@@ -202,7 +202,7 @@
       5. [练习的心态](success/the-practicing-mind.md)
       6. [刻意练习](success/PEAK.md)
       7. [习惯的力量](success/ThePowerOfHabit.md)
-   3. 时间管理
+   3. 如何管理时间
       1. [小强的时间管理博客摘录](success/XiaoQiang.md)
       2. [尽管去做——无压工作的艺术](success/GTD.md)
       3. [奇特的一生](success/Lyubishchev.md)
