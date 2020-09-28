@@ -191,10 +191,10 @@
 
 
 # 认知
-1. 效率
-   1. 拖延
+1. 效率方面
+   1. 如何克服拖延症
       1. [拖延心理学](success/Procrastination.md)
-   2. 延迟满足与习惯养成
+   2. 如何培养习惯
       1. [意志力](psychology/willpower.md)
       2. [自控力](psychology/TheWillpowerInstinct.md)
       3. [棉花糖实验](psychology/TheMarshmallowTest.md)
