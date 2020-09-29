@@ -228,12 +228,14 @@
       1. [幸福是陷阱?](psychology/the-happiness-trap.md)
       2. [走出抑郁症](psychology/depression.md)
    2. 如何找到目标和方向
+      1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
+      2. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+      3. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+      4. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
+   3. 意义与价值
       1. [活出生命的意义](psychology/MansSearchForMeaning.md)
-      2. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-      3. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
-      4. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-      5. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
-   3. 如何进行人际沟通
+      2. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
+   4. 如何进行人际沟通
       1. [蔡康永的说话之道](success/CaiKangYong.md)
 5. 元认知方面
    1. 精神分析学
@@ -243,11 +245,10 @@
    2. 认知科学
       1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 6.  思维心智
-   3. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
-   4. [新生——七年就是一辈子](success/rebirth.md)
-   5. [精进：如何成为一个很厉害的人](success/refinement.md)
-   6. [原则](success/Principles.md)
-   7. [请停止无效努力](success/please-stop-trying.md)
+   3. [新生——七年就是一辈子](success/rebirth.md)
+   4. [精进：如何成为一个很厉害的人](success/refinement.md)
+   5. [原则](success/Principles.md)
+   6. [请停止无效努力](success/please-stop-trying.md)
 
 # 历史
 1. 社会学
