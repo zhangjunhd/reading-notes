@@ -228,13 +228,13 @@
       1. [幸福是陷阱?](psychology/the-happiness-trap.md)
       2. [走出抑郁症](psychology/depression.md)
    2. 如何找到目标和方向
-      1. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-      2. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
-      3. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-      4. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
+      1. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+      2. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+      3. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
    3. 意义与价值
       1. [活出生命的意义](psychology/MansSearchForMeaning.md)
       2. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
+      3. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    4. 如何进行人际沟通
       1. [蔡康永的说话之道](success/CaiKangYong.md)
 5. 元认知方面
