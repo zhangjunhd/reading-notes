@@ -192,7 +192,8 @@
 
 # 认知
 1. [请停止无效努力](success/please-stop-trying.md)
-1. 效率方面
+2. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
+3. 效率方面
    1. 如何克服拖延症
       1. [拖延心理学](success/Procrastination.md)
    2. 如何培养习惯
@@ -209,13 +210,13 @@
       3. [奇特的一生](success/Lyubishchev.md)
       4. [高效能人士的七个习惯](success/7Habits.md)
       5. [暗时间](success/DarkTime.md)
-2. 学习方面
+4. 学习方面
    1. 学习方法
       1. [学习之道](success/A-Mind-for-Numbers.md)
       2. [如何高效学习](success/LearnMoreStudyLess.md)
    2. 如何有效阅读
       1. [如何阅读一本书](success/HowToReadABook.md)
-3. 思考方面
+5. 思考方面
    1. 思维模型/世界观
       1. [专念](psychology/mindfulness.md)
       2. [新生——七年就是一辈子](success/rebirth.md)
@@ -225,9 +226,8 @@
       1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
       2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
    3. 系统性思维
-      1. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
-      2. [系统之美](bussiness/management/ThinkingInSystems.md)
-4. 人生方面
+      1. [系统之美](bussiness/management/ThinkingInSystems.md)
+6. 人生方面
    1. 如何处理消极情绪
       1. [幸福是陷阱?](psychology/the-happiness-trap.md)
       2. [走出抑郁症](psychology/depression.md)
@@ -241,7 +241,7 @@
       5. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
    4. 如何进行人际沟通
       1. [蔡康永的说话之道](success/CaiKangYong.md)
-5. 元认知方面
+7. 元认知方面
    1. 精神分析学
       1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
       2. [荣格心理学入门](psychology/Jung-intro.md)
