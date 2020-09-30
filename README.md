@@ -215,8 +215,9 @@
    2. 如何有效阅读
       1. [如何阅读一本书](success/HowToReadABook.md)
 3. 思考方面
-   1. 思维模型
+   1. 思维模型/世界观
       1. [专念](psychology/mindfulness.md)
+      2. [新生——七年就是一辈子](success/rebirth.md)
    2. 批判性思维
       1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
       2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
@@ -245,10 +246,9 @@
    2. 认知科学
       1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 6.  思维心智
-   3. [新生——七年就是一辈子](success/rebirth.md)
-   4. [精进：如何成为一个很厉害的人](success/refinement.md)
-   5. [原则](success/Principles.md)
-   6. [请停止无效努力](success/please-stop-trying.md)
+   3. [精进：如何成为一个很厉害的人](success/refinement.md)
+   4. [原则](success/Principles.md)
+   5. [请停止无效努力](success/please-stop-trying.md)
 
 # 历史
 1. 社会学
