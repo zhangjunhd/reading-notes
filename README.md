@@ -191,6 +191,7 @@
 
 
 # 认知
+1. [请停止无效努力](success/please-stop-trying.md)
 1. 效率方面
    1. 如何克服拖延症
       1. [拖延心理学](success/Procrastination.md)
@@ -247,8 +248,7 @@
       3. [天资差异](psychology/GiftsDiffering.md)
    2. 认知科学
       1. [思想本质](psychology/pinker/TheStuffOfThought.md)
-6.  思维心智
-   3. [请停止无效努力](success/please-stop-trying.md)
+
 
 # 历史
 1. 社会学
