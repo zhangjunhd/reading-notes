@@ -208,8 +208,7 @@
       1. [小强的时间管理博客摘录](success/XiaoQiang.md)
       2. [尽管去做——无压工作的艺术](success/GTD.md)
       3. [奇特的一生](success/Lyubishchev.md)
-      4. [高效能人士的七个习惯](success/7Habits.md)
-      5. [暗时间](success/DarkTime.md)
+      4. [暗时间](success/DarkTime.md)
 4. 学习方面
    1. 学习方法
       1. [学习之道](success/A-Mind-for-Numbers.md)
@@ -219,9 +218,10 @@
 5. 思考方面
    1. 思维模型/世界观
       1. [专念](psychology/mindfulness.md)
-      2. [新生——七年就是一辈子](success/rebirth.md)
-      3. [精进：如何成为一个很厉害的人](success/refinement.md)
-      4. [原则](success/Principles.md)
+      2. [高效能人士的七个习惯](success/7Habits.md)
+      3. [新生——七年就是一辈子](success/rebirth.md)
+      4. [精进：如何成为一个很厉害的人](success/refinement.md)
+      5. [原则](success/Principles.md)
    2. 批判性思维
       1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
       2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
