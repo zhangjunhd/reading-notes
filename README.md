@@ -6,7 +6,7 @@
 - [生活](#生活)
 - [认知](#认知)
 - [历史](#历史)
-- [政治与经济](#政治与经济)
+- [政治与社会](#政治与社会)
 - [商业](#商业)
 - [产品经理](#产品经理)
 - [软件技术](#软件技术)
@@ -277,7 +277,7 @@
    5. [毛泽东选集第二卷](history/mao2.md)
    6. [毛泽东选集第三卷](history/mao3.md)
 
-# 政治与经济
+# 政治与社会
 1. 公民与政府
    1. [常识](politics/CommonSense.md)
 2. 资本与阶级
@@ -303,19 +303,19 @@
         1.  [未来30年](politics/next30years.md)
         2.  [未来30年2](politics/next30years2.md)
         3.  [不确定的未来](politics/UncertainFuture.md)
-7.  经济学
-    1. [经济学通识课](economics/a-little-history-of-economics.md)
-    2. [经济学的思维方式](economics/BasicEconomics.md)
-    3. [写给企业家的经济学](economics/economics4entrepreneur.md)
 
 # 商业
 1. [认识商业](bussiness/bussiness.md)
 2. [MBA十日读](bussiness/mba.md)
-3. 财务
+3. 经济学
+    1. [经济学通识课](economics/a-little-history-of-economics.md)
+    2. [经济学的思维方式](economics/BasicEconomics.md)
+    3. [写给企业家的经济学](economics/economics4entrepreneur.md)
+4. 财务
    1. [一本书读懂财报](bussiness/finance/OneBookLearnFinancialReport.md)
    2. [一本书读懂中国税](bussiness/finance/OneBookLearnChinaTax.md)
    3. [一本书看透股权架构](bussiness/finance/OneBookLearnShareholdingStructure.md)
-4. 管理
+5. 管理
    1. 企业文化
       1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
       2. [重来ReWork](bussiness/management/rework.md)
@@ -338,7 +338,7 @@
       5. [重新理解创业](bussiness/startup/rethink-startup.md)
       6. [创业就是要细分垄断](bussiness/startup/monopolize.md)
       7. [MR.HUA创业手记](bussiness/startup/hua.md)
-5. 理论与趋势
+6. 理论与趋势
    1. 长尾与2.0
       1. [维基经济学](bussiness/model/wikinomics.md)
       2. [长尾理论2.0](bussiness/model/long_tail.md)
@@ -360,7 +360,7 @@
        2. [智能战略](bussiness/model/SmartBusiness.md)
        3. [指数型组织](bussiness/model/ExponentialOrganizations.md)
        4. [创业无畏](bussiness/model/BOLD.md)
-6. 传媒
+7. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
       2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
@@ -382,13 +382,13 @@
        5. [迭代-新商业、新媒体与逆袭之路](bussiness/media/iteration.md) 
        6. [如何打造超级IP](bussiness/media/how-to-create-ip.md)
        7. [超级IP](bussiness/media/xtreme-ip.md)
-7.  营销
+8.  营销
     1. [定位](bussiness/marketing/positioning.md)
     2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
-8.  广告
+9.  广告
     1. [中国互联网广告生态](bussiness/advertising/internet-advertising-supply-chain-2014.md)
     2. [计算广告](advertising/computational_ad)
-9.  企业家精神
+10. 企业家精神
     1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
     2. [企业家](bussiness/entrepreneur/entrepreneur.md)
 
