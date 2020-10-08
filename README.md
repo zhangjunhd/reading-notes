@@ -311,11 +311,12 @@
     1. [经济学通识课](economics/a-little-history-of-economics.md)
     2. [经济学的思维方式](economics/BasicEconomics.md)
     3. [写给企业家的经济学](economics/economics4entrepreneur.md)
-4. 财务
-   1. [一本书读懂财报](bussiness/finance/OneBookLearnFinancialReport.md)
-   2. [一本书读懂中国税](bussiness/finance/OneBookLearnChinaTax.md)
-   3. [一本书看透股权架构](bussiness/finance/OneBookLearnShareholdingStructure.md)
-5. 管理
+4. 会计
+   1. [一本书读懂财报](accounting/OneBookLearnFinancialReport.md)
+   2. [一本书读懂中国税](accounting/OneBookLearnChinaTax.md)
+5. 金融
+   1. [一本书看透股权架构](bussiness/finance/OneBookLearnShareholdingStructure.md)
+6. 管理
    1. 企业文化
       1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
       2. [重来ReWork](bussiness/management/rework.md)
@@ -338,7 +339,7 @@
       5. [重新理解创业](bussiness/startup/rethink-startup.md)
       6. [创业就是要细分垄断](bussiness/startup/monopolize.md)
       7. [MR.HUA创业手记](bussiness/startup/hua.md)
-6. 理论与趋势
+7. 理论与趋势
    1. 长尾与2.0
       1. [维基经济学](bussiness/model/wikinomics.md)
       2. [长尾理论2.0](bussiness/model/long_tail.md)
@@ -360,7 +361,7 @@
        2. [智能战略](bussiness/model/SmartBusiness.md)
        3. [指数型组织](bussiness/model/ExponentialOrganizations.md)
        4. [创业无畏](bussiness/model/BOLD.md)
-7. 传媒
+8. 传媒
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
       2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
@@ -382,12 +383,12 @@
        5. [迭代-新商业、新媒体与逆袭之路](bussiness/media/iteration.md) 
        6. [如何打造超级IP](bussiness/media/how-to-create-ip.md)
        7. [超级IP](bussiness/media/xtreme-ip.md)
-8.  营销
+9.  营销
     1. [定位](marketing/positioning.md)
     2. [跨越鸿沟](marketing/CrossingTheChasm.md)
     3. [中国互联网广告生态](marketing/internet-advertising-supply-chain-2014.md)
     4. [计算广告](advertising/computational_ad)
-9.  企业家精神
+10. 企业家精神
     1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
     2. [企业家](bussiness/entrepreneur/entrepreneur.md)
 
