@@ -383,8 +383,8 @@
        6. [如何打造超级IP](bussiness/media/how-to-create-ip.md)
        7. [超级IP](bussiness/media/xtreme-ip.md)
 8.  营销
-    1. [定位](bussiness/marketing/positioning.md)
-    2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
+    1. [定位](marketing/positioning.md)
+    2. [跨越鸿沟](marketing/CrossingTheChasm.md)
 9.  广告
     1. [中国互联网广告生态](bussiness/advertising/internet-advertising-supply-chain-2014.md)
     2. [计算广告](advertising/computational_ad)
