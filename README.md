@@ -5,6 +5,12 @@
 - [艺术](#艺术)
 - [生活](#生活)
 - [认知](#认知)
+  - [综述](#综述)
+  - [效率方面](#效率方面)
+  - [学习方面](#学习方面)
+  - [思考方面](#思考方面)
+  - [人生方面](#人生方面)
+  - [元认知方面](#元认知方面)
 - [历史](#历史)
 - [政治与社会](#政治与社会)
 - [商业](#商业)
@@ -191,63 +197,69 @@
 
 
 # 认知
+## 综述
 1. [请停止无效努力](success/please-stop-trying.md)
 2. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
-3. 效率方面
-   1. 如何克服拖延症
-      1. [拖延心理学](success/Procrastination.md)
-   2. 如何培养习惯
-      1. [意志力](psychology/willpower.md)
-      2. [自控力](psychology/TheWillpowerInstinct.md)
-      3. [棉花糖实验](psychology/TheMarshmallowTest.md)
-      4. [微习惯](success/MiniHabits.md)
-      5. [练习的心态](success/the-practicing-mind.md)
-      6. [刻意练习](success/PEAK.md)
-      7. [习惯的力量](success/ThePowerOfHabit.md)
-   3. 如何管理时间
-      1. [小强的时间管理博客摘录](success/XiaoQiang.md)
-      2. [尽管去做——无压工作的艺术](success/GTD.md)
-      3. [奇特的一生](success/Lyubishchev.md)
-      4. [暗时间](success/DarkTime.md)
-4. 学习方面
-   1. 学习方法
-      1. [学习之道](success/A-Mind-for-Numbers.md)
-      2. [如何高效学习](success/LearnMoreStudyLess.md)
-   2. 如何有效阅读
-      1. [如何阅读一本书](success/HowToReadABook.md)
-5. 思考方面
-   1. 思维模型/世界观
-      1. [专念](psychology/mindfulness.md)
-      2. [高效能人士的七个习惯](success/7Habits.md)
-      3. [新生——七年就是一辈子](success/rebirth.md)
-      4. [精进：如何成为一个很厉害的人](success/refinement.md)
-      5. [原则](success/Principles.md)
-   2. 批判性思维
-      1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
-      2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-   3. 系统性思维
-      1. [系统之美](bussiness/management/ThinkingInSystems.md)
-6. 人生方面
-   1. 如何处理消极情绪
-      1. [幸福是陷阱?](psychology/the-happiness-trap.md)
-      2. [走出抑郁症](psychology/depression.md)
-   2. 如何找到目标和方向
-      1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
-   3. 意义与价值
-      1. [活出生命的意义](psychology/MansSearchForMeaning.md)
-      2. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
-      3. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-      4. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
-      5. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-   4. 如何进行人际沟通
-      1. [蔡康永的说话之道](success/CaiKangYong.md)
-7. 元认知方面
-   1. 精神分析学
-      1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
-      2. [荣格心理学入门](psychology/Jung-intro.md)
-      3. [天资差异](psychology/GiftsDiffering.md)
-   2. 认知科学
-      1. [思想本质](psychology/pinker/TheStuffOfThought.md)
+
+## 效率方面
+1. 如何克服拖延症
+   1. [拖延心理学](success/Procrastination.md)
+2. 如何培养习惯
+   1. [意志力](psychology/willpower.md)
+   2. [自控力](psychology/TheWillpowerInstinct.md)
+   3. [棉花糖实验](psychology/TheMarshmallowTest.md)
+   4. [微习惯](success/MiniHabits.md)
+   5. [练习的心态](success/the-practicing-mind.md)
+   6. [刻意练习](success/PEAK.md)
+   7. [习惯的力量](success/ThePowerOfHabit.md)
+3. 如何管理时间
+   1. [小强的时间管理博客摘录](success/XiaoQiang.md)
+   2. [尽管去做——无压工作的艺术](success/GTD.md)
+   3. [奇特的一生](success/Lyubishchev.md)
+   4. [暗时间](success/DarkTime.md)
+
+## 学习方面
+1. 学习方法
+   1. [学习之道](success/A-Mind-for-Numbers.md)
+   2. [如何高效学习](success/LearnMoreStudyLess.md)
+2. 如何有效阅读
+   1. [如何阅读一本书](success/HowToReadABook.md)
+
+## 思考方面
+1. 思维模型/世界观
+   1. [专念](psychology/mindfulness.md)
+   2. [高效能人士的七个习惯](success/7Habits.md)
+   3. [新生——七年就是一辈子](success/rebirth.md)
+   4. [精进：如何成为一个很厉害的人](success/refinement.md)
+   5. [原则](success/Principles.md)
+2. 批判性思维
+   1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
+   2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
+3. 系统性思维
+   1. [系统之美](bussiness/management/ThinkingInSystems.md)
+
+## 人生方面
+1. 如何处理消极情绪
+   1. [幸福是陷阱?](psychology/the-happiness-trap.md)
+   2. [走出抑郁症](psychology/depression.md)
+2. 如何找到目标和方向
+   1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
+3. 意义与价值
+   1. [活出生命的意义](psychology/MansSearchForMeaning.md)
+   2. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
+   3. [自卑与超越](psychology/what-life-should-mean-to-u.md)
+   4. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+   5. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+4. 如何进行人际沟通
+   1. [蔡康永的说话之道](success/CaiKangYong.md)
+
+## 元认知方面
+1. 精神分析学
+   1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
+   2. [荣格心理学入门](psychology/Jung-intro.md)
+   3. [天资差异](psychology/GiftsDiffering.md)
+2. 认知科学
+   1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 
 
 # 历史
