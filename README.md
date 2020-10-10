@@ -398,8 +398,7 @@
 9.  营销
     1. [定位](marketing/positioning.md)
     2. [跨越鸿沟](marketing/CrossingTheChasm.md)
-    3. [中国互联网广告生态](marketing/internet-advertising-supply-chain-2014.md)
-    4. [计算广告](advertising/computational_ad)
+    3. [计算广告](advertising/computational_ad)
 10. 企业家精神
     1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
     2. [企业家](bussiness/entrepreneur/entrepreneur.md)
