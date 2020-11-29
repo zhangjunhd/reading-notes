@@ -260,6 +260,8 @@
    3. [天资差异](psychology/GiftsDiffering.md)
 2. 认知科学
    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
+3. 行为学
+   1. [影响力](psychology/Influence.md)
 
 
 # 历史
