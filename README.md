@@ -319,18 +319,18 @@
         3.  [不确定的未来](politics/UncertainFuture.md)
 
 # 商业
-1. [认识商业](bussiness/bussiness.md)
-2. [MBA十日读](bussiness/mba.md)
-3. 经济学
+1. 综述
+   1. [认识商业](bussiness/bussiness.md)
+   2. [MBA十日读](bussiness/mba.md)
+2. 经济学
     1. [经济学通识课](economics/a-little-history-of-economics.md)
     2. [经济学的思维方式](economics/BasicEconomics.md)
     3. [写给企业家的经济学](economics/economics4entrepreneur.md)
-4. 会计
+3. 财会
    1. [一本书读懂财报](accounting/OneBookLearnFinancialReport.md)
    2. [一本书读懂中国税](accounting/OneBookLearnChinaTax.md)
-5. 金融
-   1. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
-6. 管理
+   3. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
+4. 管理
    1. 企业文化
       1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
       2. [重来ReWork](bussiness/management/rework.md)
@@ -341,19 +341,21 @@
       2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
       3. [关键对话](bussiness/management/CrucialConversations.md)
       4. [OKR工作法](bussiness/management/okr.md)
-   3. 商业模式
-      1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
-      2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
-      3. [透析盈利模式](bussiness/management/ProfitModel.md)
-   4. 创业
-      1. [从0到1](bussiness/startup/zero_to_one.md)
-      2. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
-      3. [精益创业](bussiness/startup/TheLeanStartup.md)
-      4. [创业时，不可不知的细节](bussiness/startup/details.md)
-      5. [重新理解创业](bussiness/startup/rethink-startup.md)
-      6. [创业就是要细分垄断](bussiness/startup/monopolize.md)
-      7. [MR.HUA创业手记](bussiness/startup/hua.md)
-7. 理论与趋势
+   3. 企业家精神
+      1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
+      2. [企业家](bussiness/entrepreneur/entrepreneur.md)
+5. 商业模式
+   1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
+   2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
+   3. [透析盈利模式](bussiness/management/ProfitModel.md)
+   4. [从0到1](bussiness/startup/zero_to_one.md)
+   5. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
+   6. [精益创业](bussiness/startup/TheLeanStartup.md)
+   7. [创业时，不可不知的细节](bussiness/startup/details.md)
+   8. [重新理解创业](bussiness/startup/rethink-startup.md)
+   9. [创业就是要细分垄断](bussiness/startup/monopolize.md)
+   10. [MR.HUA创业手记](bussiness/startup/hua.md)
+6. 理论与趋势
    1. 长尾与2.0
       1. [维基经济学](bussiness/model/wikinomics.md)
       2. [长尾理论2.0](bussiness/model/long_tail.md)
@@ -362,20 +364,19 @@
       2. [隐形VISA](bussiness/model/visa.md)
    3. 技术与创新
       1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
-   4. 凯文·凯利
-      1. [必然](bussiness/model/kk-The-Inevitable.md)
-      2. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-   5. 信息与“不确定性”
+      2. [必然](bussiness/model/kk-The-Inevitable.md)
+      3. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
+   4. 信息与“不确定性”
       1. [黑天鹅](bussiness/model/TheBlackSwan.md)
       2. [反脆弱](bussiness/model/Antifragile.md)
       3. [简单统计学](math/StandardDeviations.md)
       4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
-   6.  智能商业
+   5.  智能商业
        1. [智能商业](bussiness/model/IntelligentBusiness.md)
        2. [智能战略](bussiness/model/SmartBusiness.md)
        3. [指数型组织](bussiness/model/ExponentialOrganizations.md)
        4. [创业无畏](bussiness/model/BOLD.md)
-8. 传媒
+7. 市场营销
    1. 传播学
       1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
       2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
@@ -397,14 +398,12 @@
        5. [迭代-新商业、新媒体与逆袭之路](bussiness/media/iteration.md) 
        6. [如何打造超级IP](bussiness/media/how-to-create-ip.md)
        7. [超级IP](bussiness/media/xtreme-ip.md)
-9.  营销
-    1. [定位](marketing/positioning.md)
-    2. [跨越鸿沟](marketing/CrossingTheChasm.md)
-    3. [营销的本质](marketing/CommunityBusinessMode.md)
-    4. [计算广告](advertising/computational_ad)
-10. 企业家精神
-    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
-    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
+   4. 市场
+      1. [定位](marketing/positioning.md)
+   5. 营销
+      1. [跨越鸿沟](marketing/CrossingTheChasm.md)
+      2. [营销的本质](marketing/CommunityBusinessMode.md)
+      3. [计算广告](advertising/computational_ad)
 
 # 产品经理
 1. 产品
