@@ -378,7 +378,7 @@
    2. [反脆弱](bussiness/model/Antifragile.md)
    3. [简单统计学](math/StandardDeviations.md)
    4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
-5.  智能商业
+5. 智能商业
    1. [智能商业](bussiness/model/IntelligentBusiness.md)
    2. [智能战略](bussiness/model/SmartBusiness.md)
    3. [指数型组织](bussiness/model/ExponentialOrganizations.md)
