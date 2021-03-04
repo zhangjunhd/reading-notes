@@ -328,7 +328,6 @@
 # 商业
 ## 综述
 1. [认识商业](bussiness/bussiness.md)
-2. [MBA十日读](bussiness/mba.md)
 ## 经济学
 1. [经济学通识课](economics/a-little-history-of-economics.md)
 2. [经济学的思维方式](economics/BasicEconomics.md)
