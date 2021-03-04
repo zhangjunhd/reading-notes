@@ -14,6 +14,13 @@
 - [历史](#历史)
 - [政治与社会](#政治与社会)
 - [商业](#商业)
+  - [综述](#综述-1)
+  - [经济学](#经济学)
+  - [财会](#财会)
+  - [管理](#管理)
+  - [商业模式](#商业模式)
+  - [理论与趋势](#理论与趋势)
+  - [市场营销](#市场营销)
 - [产品经理](#产品经理)
 - [软件技术](#软件技术)
 - [机器学习](#机器学习)
@@ -319,91 +326,91 @@
         3.  [不确定的未来](politics/UncertainFuture.md)
 
 # 商业
-1. 综述
-   1. [认识商业](bussiness/bussiness.md)
-   2. [MBA十日读](bussiness/mba.md)
-2. 经济学
-    1. [经济学通识课](economics/a-little-history-of-economics.md)
-    2. [经济学的思维方式](economics/BasicEconomics.md)
-    3. [写给企业家的经济学](economics/economics4entrepreneur.md)
-3. 财会
-   1. [一本书读懂财报](accounting/OneBookLearnFinancialReport.md)
-   2. [一本书读懂中国税](accounting/OneBookLearnChinaTax.md)
-   3. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
-4. 管理
-   1. 企业文化
-      1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
-      2. [重来ReWork](bussiness/management/rework.md)
-      3. [刷新](bussiness/management/hit-refresh.md)
-      4. [奈飞文化手册](bussiness/management/Powerful.md)
-   2. 企业管理
-      1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
-      2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
-      3. [关键对话](bussiness/management/CrucialConversations.md)
-      4. [OKR工作法](bussiness/management/okr.md)
-   3. 企业家精神
-      1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
-      2. [企业家](bussiness/entrepreneur/entrepreneur.md)
-5. 商业模式
-   1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
-   2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
-   3. [透析盈利模式](bussiness/management/ProfitModel.md)
-   4. [从0到1](bussiness/startup/zero_to_one.md)
-   5. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
-   6. [精益创业](bussiness/startup/TheLeanStartup.md)
-   7. [创业时，不可不知的细节](bussiness/startup/details.md)
-   8. [重新理解创业](bussiness/startup/rethink-startup.md)
-   9. [创业就是要细分垄断](bussiness/startup/monopolize.md)
-   10. [MR.HUA创业手记](bussiness/startup/hua.md)
-6. 理论与趋势
-   1. 长尾与2.0
-      1. [维基经济学](bussiness/model/wikinomics.md)
-      2. [长尾理论2.0](bussiness/model/long_tail.md)
-   2. 社群与去中心化
-      1. [链接](bussiness/model/linked.md)
-      2. [隐形VISA](bussiness/model/visa.md)
-   3. 技术与创新
-      1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
-      2. [必然](bussiness/model/kk-The-Inevitable.md)
-      3. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-   4. 信息与“不确定性”
-      1. [黑天鹅](bussiness/model/TheBlackSwan.md)
-      2. [反脆弱](bussiness/model/Antifragile.md)
-      3. [简单统计学](math/StandardDeviations.md)
-      4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
-   5.  智能商业
-       1. [智能商业](bussiness/model/IntelligentBusiness.md)
-       2. [智能战略](bussiness/model/SmartBusiness.md)
-       3. [指数型组织](bussiness/model/ExponentialOrganizations.md)
-       4. [创业无畏](bussiness/model/BOLD.md)
-7. 市场营销
-   1. 传播学
-      1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
-      2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
-      3. [大众传播理论](bussiness/communication/MassCommunicationTheory.md)
-      4. [思维病毒](bussiness/communication/VirusOfTheMind.md)
-      5. [疯传](bussiness/communication/contagious.md)
-      6. [注意力经济](bussiness/communication/TheAttentionMerchants.md)
-      7. [热点](bussiness/communication/TheContentCode.md)
-   2. 写作
-      1. [新闻写作艺术辩证](bussiness/writing/the-dialectical-art-of-news-writing.md)
-      2. [新闻采访与写作](bussiness/writing/news-interview-and-writing.md)
-      3. [网络新闻写作与编辑实务](bussiness/writing/news-writing.md)
-      4. [从零开始写故事：一个南方周末记者的特稿笔记](bussiness/writing/WriteStoryFromZero.md)
-   3. 媒体
-       1. [时尚：幕后的策动](bussiness/media/fashion_editor.md)
-       2. [访美记](bussiness/media/fang-mei.md)
-       3. [徐建军-开始吧](bussiness/media/kaistart.md)
-       4. [新媒体革命2.0](bussiness/media/NewMediaRevolution.md)
-       5. [迭代-新商业、新媒体与逆袭之路](bussiness/media/iteration.md) 
-       6. [如何打造超级IP](bussiness/media/how-to-create-ip.md)
-       7. [超级IP](bussiness/media/xtreme-ip.md)
-   4. 市场
-      1. [定位](marketing/positioning.md)
-   5. 营销
-      1. [跨越鸿沟](marketing/CrossingTheChasm.md)
-      2. [营销的本质](marketing/CommunityBusinessMode.md)
-      3. [计算广告](advertising/computational_ad)
+## 综述
+1. [认识商业](bussiness/bussiness.md)
+2. [MBA十日读](bussiness/mba.md)
+## 经济学
+1. [经济学通识课](economics/a-little-history-of-economics.md)
+2. [经济学的思维方式](economics/BasicEconomics.md)
+3. [写给企业家的经济学](economics/economics4entrepreneur.md)
+## 财会
+1. [一本书读懂财报](accounting/OneBookLearnFinancialReport.md)
+2. [一本书读懂中国税](accounting/OneBookLearnChinaTax.md)
+3. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
+## 管理
+1. 企业文化
+   1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
+   2. [重来ReWork](bussiness/management/rework.md)
+   3. [刷新](bussiness/management/hit-refresh.md)
+   4. [奈飞文化手册](bussiness/management/Powerful.md)
+2. 企业管理
+   1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
+   2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
+   3. [关键对话](bussiness/management/CrucialConversations.md)
+   4. [OKR工作法](bussiness/management/okr.md)
+3. 企业家精神
+   1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
+   2. [企业家](bussiness/entrepreneur/entrepreneur.md)
+## 商业模式
+1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
+2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
+3. [透析盈利模式](bussiness/management/ProfitModel.md)
+4. [从0到1](bussiness/startup/zero_to_one.md)
+5. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
+6. [精益创业](bussiness/startup/TheLeanStartup.md)
+7. [创业时，不可不知的细节](bussiness/startup/details.md)
+8. [重新理解创业](bussiness/startup/rethink-startup.md)
+9. [创业就是要细分垄断](bussiness/startup/monopolize.md)
+10. [MR.HUA创业手记](bussiness/startup/hua.md)
+## 理论与趋势
+1. 长尾与2.0
+   1. [维基经济学](bussiness/model/wikinomics.md)
+   2. [长尾理论2.0](bussiness/model/long_tail.md)
+2. 社群与去中心化
+   1. [链接](bussiness/model/linked.md)
+   2. [隐形VISA](bussiness/model/visa.md)
+3. 技术与创新
+   1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
+   2. [必然](bussiness/model/kk-The-Inevitable.md)
+   3. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
+4. 信息与“不确定性”
+   1. [黑天鹅](bussiness/model/TheBlackSwan.md)
+   2. [反脆弱](bussiness/model/Antifragile.md)
+   3. [简单统计学](math/StandardDeviations.md)
+   4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
+5.  智能商业
+   1. [智能商业](bussiness/model/IntelligentBusiness.md)
+   2. [智能战略](bussiness/model/SmartBusiness.md)
+   3. [指数型组织](bussiness/model/ExponentialOrganizations.md)
+   4. [创业无畏](bussiness/model/BOLD.md)
+## 市场营销
+1. 传播学
+   1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
+   2. [Level 3 of Meme](bussiness/communication/Level3OfMeme.md)
+   3. [大众传播理论](bussiness/communication/MassCommunicationTheory.md)
+   4. [思维病毒](bussiness/communication/VirusOfTheMind.md)
+   5. [疯传](bussiness/communication/contagious.md)
+   6. [注意力经济](bussiness/communication/TheAttentionMerchants.md)
+   7. [热点](bussiness/communication/TheContentCode.md)
+2. 写作
+   1. [新闻写作艺术辩证](bussiness/writing/the-dialectical-art-of-news-writing.md)
+   2. [新闻采访与写作](bussiness/writing/news-interview-and-writing.md)
+   3. [网络新闻写作与编辑实务](bussiness/writing/news-writing.md)
+   4. [从零开始写故事：一个南方周末记者的特稿笔记](bussiness/writing/WriteStoryFromZero.md)
+3. 媒体
+   1. [时尚：幕后的策动](bussiness/media/fashion_editor.md)
+   2. [访美记](bussiness/media/fang-mei.md)
+   3. [徐建军-开始吧](bussiness/media/kaistart.md)
+   4. [新媒体革命2.0](bussiness/media/NewMediaRevolution.md)
+   5. [迭代-新商业、新媒体与逆袭之路](bussiness/media/iteration.md) 
+   6. [如何打造超级IP](bussiness/media/how-to-create-ip.md)
+   7. [超级IP](bussiness/media/xtreme-ip.md)
+4. 市场
+   1. [定位](marketing/positioning.md)
+5. 营销
+   1. [跨越鸿沟](marketing/CrossingTheChasm.md)
+   2. [营销的本质](marketing/CommunityBusinessMode.md)
+   3. [计算广告](advertising/computational_ad)
 
 # 产品经理
 1. 产品
