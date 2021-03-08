@@ -335,7 +335,8 @@
 ## 财会
 1. [一本书读懂财报](accounting/OneBookLearnFinancialReport.md)
 2. [一本书读懂中国税](accounting/OneBookLearnChinaTax.md)
-3. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
+3. [一本书看透股权架构](accounting/OneBookLearnShareholdingStructure.md)
+4. [财务报表分析与股票估值](accounting/FinancialStatement.md)
 ## 管理
 1. 企业文化
    1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
