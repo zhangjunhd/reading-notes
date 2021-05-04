@@ -1,5 +1,12 @@
 - [通识](#通识)
 - [东方哲学](#东方哲学)
+  - [通史](#通史)
+  - [儒](#儒)
+    - [四书](#四书)
+    - [王阳明](#王阳明)
+    - [曾国藩](#曾国藩)
+  - [释](#释)
+  - [道](#道)
 - [西方哲学](#西方哲学)
 - [文学](#文学)
 - [艺术](#艺术)
@@ -70,35 +77,41 @@
    9.  [生命3.0](ai/Life3.md)
 
 # 东方哲学
+## 通史
 1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
-2. 儒
-   1. 四书
-      1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
-      2. [论语别裁](eastern_philosophy/lun_yu_bie_cai.md)
-      3. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
-      4. [话说中庸](eastern_philosophy/hua_shuo_zhong_yong.md)
-   2. 王阳明 
-      1. [传习录](eastern_philosophy/chuan_xi_lu.md)
-      2. [王阳明心学](eastern_philosophy/wang-yang-ming-xin-xue.md)
-   3. 曾国藩
-      1. [曾国藩家书](eastern_philosophy/zen_guo_fan_letter.md)
-      2. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
-3. 释
-    1. [佛教与三藏简史](eastern_philosophy/fo_jiao_yu_san_zang_jian_shi.md)
-    2. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
-    3. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
-    4. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
-    5. [楞严经](eastern_philosophy/leng_yan_jing.md)
-    6. [认识与存在-《唯识三十论》解析](eastern_philosophy/wei_shi_san_shi_lun.md)
-    7. [季羡林谈佛](eastern_philosophy/ji-xian-lin-tan-fo.md)
-    8. [关系之镜：两性的真爱](eastern_philosophy/liang_xing_de_zhen_ai.md)
-    9. [转念的力量](eastern_philosophy/zhuan_nian_de_li_liang.md)
-    10. [一个瑜伽行者的自传](eastern_philosophy/yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
-    11. [一步一如来2：京都朝圣旅人书](eastern_philosophy/yi_bu_yi_ru_lai2.md)
-4. 道
-    1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
-    2. [庄子的享受](eastern_philosophy/zhuang_zi_de_xiang_shou.md)
-    3. [庄子的快活](eastern_philosophy/zhuang_zi_de_kuai_huo.md)
+
+## 儒
+### 四书
+1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
+2. [论语别裁](eastern_philosophy/lun_yu_bie_cai.md)
+3. [孟子旁通](eastern_philosophy/meng_zi_pang_tong.md)
+4. [话说中庸](eastern_philosophy/hua_shuo_zhong_yong.md)
+
+### 王阳明 
+1. [传习录](eastern_philosophy/chuan_xi_lu.md)
+2. [王阳明心学](eastern_philosophy/wang-yang-ming-xin-xue.md)
+
+### 曾国藩
+1. [曾国藩家书](eastern_philosophy/zen_guo_fan_letter.md)
+2. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
+
+## 释
+1. [佛教与三藏简史](eastern_philosophy/fo_jiao_yu_san_zang_jian_shi.md)
+2. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
+3. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
+4. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
+5. [楞严经](eastern_philosophy/leng_yan_jing.md)
+6. [认识与存在-《唯识三十论》解析](eastern_philosophy/wei_shi_san_shi_lun.md)
+7. [季羡林谈佛](eastern_philosophy/ji-xian-lin-tan-fo.md)
+8. [关系之镜：两性的真爱](eastern_philosophy/liang_xing_de_zhen_ai.md)
+9. [转念的力量](eastern_philosophy/zhuan_nian_de_li_liang.md)
+10. [一个瑜伽行者的自传](eastern_philosophy/yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
+11. [一步一如来2：京都朝圣旅人书](eastern_philosophy/yi_bu_yi_ru_lai2.md)
+
+## 道
+1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
+2. [庄子的享受](eastern_philosophy/zhuang_zi_de_xiang_shou.md)
+3. [庄子的快活](eastern_philosophy/zhuang_zi_de_kuai_huo.md)
 
 # 西方哲学
 1. 概论
