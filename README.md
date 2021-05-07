@@ -135,12 +135,11 @@
 7. 辩证法
    1. [大众哲学](western_philosophy/PublicPhilosophy.md)
    2. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
-8. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
-9.  [康德三大批判合集](western_philosophy/kant.md)
-10. [身份的焦虑](western_philosophy/status-anxiety.md)
-11. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
-12. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-13. [论自然](western_philosophy/nature.md)
+8.  [康德三大批判合集](western_philosophy/kant.md)
+9.  [身份的焦虑](western_philosophy/status-anxiety.md)
+10. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
+11. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
+12. [论自然](western_philosophy/nature.md)
 
 # 文学
 1. 文学史
@@ -307,11 +306,13 @@
    6. [毛泽东选集第三卷](history/mao3.md)
 
 # 政治与社会
-1. 公民与政府
+1. 公民社会
    1. [常识](politics/CommonSense.md)
-2. 资本与阶级
+2. 阶层分析
    1. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
-   2. [贫穷的本质](politics/PoorEconomics.md)
+   2. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
+   3. [中国当代社会阶层分析](politics/china-society-level.md)
+   4. [贫穷的本质](politics/PoorEconomics.md)
 3. 国际金融
    1. [货币强权](politics/CurrencyPower.md)
 4. 国际政治
@@ -325,10 +326,9 @@
    2.  [亚洲大趋势](politics/aisa-big-trend.md)
    3.  [城市化转型与土地陷阱](politics/urbanization.md)
    4.  [大国大城](politics/great-nation-needs-bigger-city.md)
-   5.  [中国当代社会阶层分析](politics/china-society-level.md)
-   6.  林毅夫
+   5.  林毅夫
         1.  [解读中国经济](politics/china-economics.md)
-   7.  郑永年
+   6.  郑永年
         1.  [未来30年](politics/next30years.md)
         2.  [未来30年2](politics/next30years2.md)
         3.  [不确定的未来](politics/UncertainFuture.md)
