@@ -346,6 +346,8 @@
 3. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
 4. [财务报表分析与股票估值](finance/FinancialStatement.md)
 5. [巴菲特致股东的信](finance/BuffettLetter.md)
+6. [货币金融学](finance/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
+
 ## 管理
 1. 企业文化
    1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
