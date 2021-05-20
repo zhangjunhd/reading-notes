@@ -20,7 +20,7 @@
 - [商业](#商业)
   - [综述](#综述-1)
   - [经济学](#经济学)
-  - [财会](#财会)
+  - [金融](#金融)
   - [管理](#管理)
   - [商业模式](#商业模式)
   - [理论与趋势](#理论与趋势)
@@ -340,12 +340,12 @@
 1. [经济学通识课](economics/a-little-history-of-economics.md)
 2. [经济学的思维方式](economics/BasicEconomics.md)
 3. [写给企业家的经济学](economics/economics4entrepreneur.md)
-## 财会
-1. [一本书读懂财报](accounting/OneBookLearnFinancialReport.md)
-2. [一本书读懂中国税](accounting/OneBookLearnChinaTax.md)
-3. [一本书看透股权架构](accounting/OneBookLearnShareholdingStructure.md)
-4. [财务报表分析与股票估值](accounting/FinancialStatement.md)
-5. [巴菲特致股东的信](accounting/BuffettLetter.md)
+## 金融
+1. [一本书读懂财报](finance/OneBookLearnFinancialReport.md)
+2. [一本书读懂中国税](finance/OneBookLearnChinaTax.md)
+3. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
+4. [财务报表分析与股票估值](finance/FinancialStatement.md)
+5. [巴菲特致股东的信](finance/BuffettLetter.md)
 ## 管理
 1. 企业文化
    1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
