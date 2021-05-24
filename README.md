@@ -16,7 +16,7 @@
   - [人生方面](#人生方面)
   - [元认知方面](#元认知方面)
 - [历史](#历史)
-- [政治与社会](#政治与社会)
+- [政治](#政治)
 - [商业](#商业)
   - [综述](#综述-1)
   - [经济学](#经济学)
@@ -305,7 +305,7 @@
    5. [毛泽东选集第二卷](history/mao2.md)
    6. [毛泽东选集第三卷](history/mao3.md)
 
-# 政治与社会
+# 政治
 1. 公民社会
    1. [常识](politics/CommonSense.md)
 2. 阶层分析
@@ -323,15 +323,15 @@
    2. [金融的本质](politics/TheFederalReserveAndTheFinancialCrisis.md)
 6. 中国经济
    1. [百年中国经济史笔记](politics/china-economic-modern-history.md)
-   2.  [亚洲大趋势](politics/aisa-big-trend.md)
-   3.  [城市化转型与土地陷阱](politics/urbanization.md)
-   4.  [大国大城](politics/great-nation-needs-bigger-city.md)
-   5.  林毅夫
-        1.  [解读中国经济](politics/china-economics.md)
+   2. [亚洲大趋势](politics/aisa-big-trend.md)
+   3. [城市化转型与土地陷阱](politics/urbanization.md)
+   4. [大国大城](politics/great-nation-needs-bigger-city.md)
+   5. 林毅夫
+        1. [解读中国经济](politics/china-economics.md)
    6.  郑永年
-        1.  [未来30年](politics/next30years.md)
-        2.  [未来30年2](politics/next30years2.md)
-        3.  [不确定的未来](politics/UncertainFuture.md)
+        1. [未来30年](politics/next30years.md)
+        2. [未来30年2](politics/next30years2.md)
+        3. [不确定的未来](politics/UncertainFuture.md)
 
 # 商业
 ## 综述
