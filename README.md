@@ -362,6 +362,7 @@
 3. 企业家精神
    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
+
 ## 商业模式
 1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
 2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
@@ -373,10 +374,15 @@
 8. [重新理解创业](bussiness/startup/rethink-startup.md)
 9. [创业就是要细分垄断](bussiness/startup/monopolize.md)
 10. [MR.HUA创业手记](bussiness/startup/hua.md)
+
 ## 理论与趋势
-1. 长尾与2.0
+1. 智能商业
    1. [维基经济学](bussiness/model/wikinomics.md)
    2. [长尾理论2.0](bussiness/model/long_tail.md)
+   3. [智能商业](bussiness/model/IntelligentBusiness.md)
+   4. [智能战略](bussiness/model/SmartBusiness.md)
+   5. [指数型组织](bussiness/model/ExponentialOrganizations.md)
+   6. [创业无畏](bussiness/model/BOLD.md)
 2. 社群与去中心化
    1. [链接](bussiness/model/linked.md)
    2. [隐形VISA](bussiness/model/visa.md)
@@ -389,11 +395,7 @@
    2. [反脆弱](bussiness/model/Antifragile.md)
    3. [简单统计学](math/StandardDeviations.md)
    4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
-5. 智能商业
-   1. [智能商业](bussiness/model/IntelligentBusiness.md)
-   2. [智能战略](bussiness/model/SmartBusiness.md)
-   3. [指数型组织](bussiness/model/ExponentialOrganizations.md)
-   4. [创业无畏](bussiness/model/BOLD.md)
+
 ## 市场营销
 1. 传播学
    1. [The Complete Idiot's Guide to Memes](bussiness/communication/TheCompleteIdiotsGuideToMemes.md)
