@@ -462,7 +462,6 @@
     2. [Search Patterns](ia/SearchPatterns.md)
     3. [Designing the Search Experience](ia/DesigningTheSearchExperience.md)
     4. [Web Content Management](ia/cms.md)
-    5. [Vox Media调研](ia/vox-media.md)
 
 # 软件技术
 1. 计算
