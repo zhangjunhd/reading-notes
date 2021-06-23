@@ -392,6 +392,7 @@
    4. [智能战略](bussiness/model/SmartBusiness.md)
    5. [指数型组织](bussiness/model/ExponentialOrganizations.md)
    6. [创业无畏](bussiness/model/BOLD.md)
+   7. [平台革命](bussiness/model/PlatformRevolution.md)
 2. 社群与去中心化
    1. [链接](bussiness/model/linked.md)
    2. [隐形VISA](bussiness/model/visa.md)
