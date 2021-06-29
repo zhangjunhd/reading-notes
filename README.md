@@ -381,8 +381,8 @@
 1. [创业就是要细分垄断](bussiness/startup/monopolize.md)
 
 ## SaaS
-1. [透析盈利模式](bussiness/management/ProfitModel.md)
-
+1. [透析盈利模式](bussiness/saas/ProfitModel.md)
+1. [SaaS创业路线图](bussiness/saas/SaaS.md)
 
 ## 理论与趋势
 1. 商业模式
