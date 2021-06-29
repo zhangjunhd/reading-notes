@@ -432,7 +432,7 @@
    1. [定位](bussiness/marketing/positioning.md)
    2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
    3. [营销的本质](bussiness/marketing/CommunityBusinessMode.md)
-   4. [计算广告](advertising/computational_advertising)
+   4. [计算广告](bussiness/marketing/computational_advertising)
 
 # 产品经理
 1. 产品
