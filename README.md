@@ -63,7 +63,7 @@
    5. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
    6. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
    7. [线性代数及其应用](algebra/LinearAlgebraAndItsApplications)
-   8. [离散数学及其应用（原书第7版）](discrete_math)
+   8. [离散数学及其应用（原书第7版）](math/discrete_math)
 6. 人工智能
    1. [人工智能的未来](ai/OnIntelligence.md)
    2. [与机器赛跑](ai/RaceAgainstTheMachine.md)
