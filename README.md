@@ -428,12 +428,11 @@
    5. [迭代-新商业、新媒体与逆袭之路](bussiness/media/iteration.md) 
    6. [如何打造超级IP](bussiness/media/how-to-create-ip.md)
    7. [超级IP](bussiness/media/xtreme-ip.md)
-4. 市场
+4. 市场营销
    1. [定位](marketing/positioning.md)
-5. 营销
-   1. [跨越鸿沟](marketing/CrossingTheChasm.md)
-   2. [营销的本质](marketing/CommunityBusinessMode.md)
-   3. [计算广告](advertising/computational_ad)
+   2. [跨越鸿沟](marketing/CrossingTheChasm.md)
+   3. [营销的本质](marketing/CommunityBusinessMode.md)
+   4. [计算广告](advertising/computational_ad)
 
 # 产品经理
 1. 产品
