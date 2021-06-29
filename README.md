@@ -429,9 +429,9 @@
    6. [如何打造超级IP](bussiness/media/how-to-create-ip.md)
    7. [超级IP](bussiness/media/xtreme-ip.md)
 4. 市场营销
-   1. [定位](marketing/positioning.md)
-   2. [跨越鸿沟](marketing/CrossingTheChasm.md)
-   3. [营销的本质](marketing/CommunityBusinessMode.md)
+   1. [定位](bussiness/marketing/positioning.md)
+   2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
+   3. [营销的本质](bussiness/marketing/CommunityBusinessMode.md)
    4. [计算广告](advertising/computational_ad)
 
 # 产品经理
