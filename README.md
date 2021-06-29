@@ -468,10 +468,10 @@
    6. [Designing Interfaces](design/DesigningInterfaces.md)
    7. [Designing Web Interfaces](design/DesigningWebInterfaces.md)
 5. 信息架构
-    1. [Information Architecture](ia/InformationArchitecture.md)
-    2. [Search Patterns](ia/SearchPatterns.md)
-    3. [Designing the Search Experience](ia/DesigningTheSearchExperience.md)
-    4. [Web Content Management](ia/cms.md)
+    1. [Information Architecture](product/ia/InformationArchitecture.md)
+    2. [Search Patterns](product/ia/SearchPatterns.md)
+    3. [Designing the Search Experience](product/ia/DesigningTheSearchExperience.md)
+    4. [Web Content Management](product/ia/cms.md)
 
 # 软件技术
 1. 计算
