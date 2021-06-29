@@ -60,8 +60,8 @@
    2. [机会的数学](math/OpportunisticMath.md)
    3. [赤裸裸的统计学](math/NakedStatistics.md)
    4. [数学之美](math/MathBeauty.md)
-   5. [概率论与数理统计(浙大·第四版)](statistics/ZJU4th)
-   6. [行为科学统计](statistics/Statistics4TheBehavioralSciences)
+   5. [概率论与数理统计(浙大·第四版)](math/ZJU4th)
+   6. [行为科学统计](math/Statistics4TheBehavioralSciences)
    7. [线性代数及其应用](math/LinearAlgebraAndItsApplications)
    8. [离散数学及其应用（原书第7版）](math/discrete_math)
 6. 人工智能
