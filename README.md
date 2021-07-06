@@ -258,6 +258,7 @@
 1. 如何处理消极情绪
    1. [幸福是陷阱?](psychology/the-happiness-trap.md)
    2. [走出抑郁症](psychology/depression.md)
+   3. [幸福](psychology/happiness.md)
 2. 如何找到目标和方向
    1. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
 3. 意义与价值
