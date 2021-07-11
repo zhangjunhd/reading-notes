@@ -1,4 +1,11 @@
 - [通识](#通识)
+  - [牛津通识读本](#牛津通识读本)
+  - [物理学](#物理学)
+  - [生物学](#生物学)
+  - [信息学](#信息学)
+  - [数学](#数学)
+  - [计算机](#计算机)
+  - [人工智能](#人工智能)
 - [东方哲学](#东方哲学)
   - [通史](#通史)
   - [儒](#儒)
@@ -32,48 +39,56 @@
 - [机器学习](#机器学习)
 
 # 通识
-1. 牛津通识读本
-   1. 学科系列
-      1. [中国文学](A-Very-Short-Introductions/ChineseLiterature.md)
-      2. [我们时代的伦理学](A-Very-Short-Introductions/Ethics.md)
-   2. 现代性
-      1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
-      2. [资本主义](A-Very-Short-Introductions/Capitalism.md)
-   3. 哲学家系列
-      1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
-      2. [福柯](A-Very-Short-Introductions/Foucault.md)
-      3. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
-2. 物理学
-   1. [时间简史](physics/A-Brief-History-of-Time.md)
-   2. [上帝掷骰子吗-量子物理史话](physics/QuantumPhysicsHistory.md)
-   3. [现实不似你所见](physics/RealityIsNotWhatItSeems.md)
-3. 信息学
-   1. [信息简史](info/TheInformation.md)
-   2. [知识的边界](info/knowledge-boundary.md)
-   3. [人有人的用处](info/TheHumanUseOfHumanBeings.md)
-4. 计算机
-   1. [计算机是怎样跑起来的](info/computer.md)
-   2. [程序是怎样跑起来的](info/program.md)
-   3. [网络是怎样连接的](info/network.md)
-5. 数学
-   1. [统计与真理](math/StatisticsAndTruth.md)
-   2. [机会的数学](math/OpportunisticMath.md)
-   3. [赤裸裸的统计学](math/NakedStatistics.md)
-   4. [数学之美](math/MathBeauty.md)
-   5. [概率论与数理统计(浙大·第四版)](math/ZJU4th)
-   6. [行为科学统计](math/Statistics4TheBehavioralSciences)
-   7. [线性代数及其应用](math/LinearAlgebraAndItsApplications)
-   8. [离散数学及其应用（原书第7版）](math/discrete_math)
-6. 人工智能
-   1. [人工智能的未来](ai/OnIntelligence.md)
-   2. [与机器赛跑](ai/RaceAgainstTheMachine.md)
-   3. [智能时代](ai/IntelligenceEra.md)
-   4. [科学的极致：漫谈人工智能](ai/talk-ai.md)
-   5. [人工智能狂潮](ai/ai-torrent.md)
-   6. [终极算法](ai/TheMasterAlgorithm.md)
-   7. [人类的终极命运](ai/InOurOwnImage.md)
-   8.  [暗知识](ai/DarkKnowledge.md)
-   9.  [生命3.0](ai/Life3.md)
+## 牛津通识读本
+1. 学科系列
+   1. [中国文学](A-Very-Short-Introductions/ChineseLiterature.md)
+   2. [我们时代的伦理学](A-Very-Short-Introductions/Ethics.md)
+2. 现代性
+   1. [科学革命](A-Very-Short-Introductions/TheScientificRevolution.md)
+   2. [资本主义](A-Very-Short-Introductions/Capitalism.md)
+3. 哲学家系列
+   1. [尼采](A-Very-Short-Introductions/Nietzsche.md)
+   2. [福柯](A-Very-Short-Introductions/Foucault.md)
+   3. [哈贝马斯](A-Very-Short-Introductions/Habermas.md)
+
+## 物理学
+1. [时间简史](physics/A-Brief-History-of-Time.md)
+2. [上帝掷骰子吗-量子物理史话](physics/QuantumPhysicsHistory.md)
+3. [现实不似你所见](physics/RealityIsNotWhatItSeems.md)
+
+## 生物学
+1. [基因组](biology/Genome.md)
+
+## 信息学
+1. [信息简史](info/TheInformation.md)
+2. [知识的边界](info/knowledge-boundary.md)
+3. [人有人的用处](info/TheHumanUseOfHumanBeings.md)
+
+## 数学
+1. [统计与真理](math/StatisticsAndTruth.md)
+2. [机会的数学](math/OpportunisticMath.md)
+3. [赤裸裸的统计学](math/NakedStatistics.md)
+4. [数学之美](math/MathBeauty.md)
+5. [概率论与数理统计(浙大·第四版)](math/ZJU4th)
+6. [行为科学统计](math/Statistics4TheBehavioralSciences)
+7. [线性代数及其应用](math/LinearAlgebraAndItsApplications)
+8. [离散数学及其应用（原书第7版）](math/discrete_math)
+
+## 计算机
+1. [计算机是怎样跑起来的](info/computer.md)
+2. [程序是怎样跑起来的](info/program.md)
+3. [网络是怎样连接的](info/network.md)
+
+## 人工智能
+1. [人工智能的未来](ai/OnIntelligence.md)
+2. [与机器赛跑](ai/RaceAgainstTheMachine.md)
+3. [智能时代](ai/IntelligenceEra.md)
+4. [科学的极致：漫谈人工智能](ai/talk-ai.md)
+5. [人工智能狂潮](ai/ai-torrent.md)
+6. [终极算法](ai/TheMasterAlgorithm.md)
+7. [人类的终极命运](ai/InOurOwnImage.md)
+8.  [暗知识](ai/DarkKnowledge.md)
+9.  [生命3.0](ai/Life3.md)
 
 # 东方哲学
 ## 通史
