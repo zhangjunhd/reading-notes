@@ -278,11 +278,11 @@
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
    3. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-   4. [How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
-   5. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
-   6. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
-3. 如何进行人际沟通
+   4. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+   5. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+3. 人际与生活
    1. [蔡康永的说话之道](success/CaiKangYong.md)
+   2. [你要如何衡量你的人生](success/HowWillYouMeasureYourLifeCH.md)
 
 ## 元认知方面
 1. 精神分析学
