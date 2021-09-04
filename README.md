@@ -133,28 +133,28 @@
    1. [生命安宁-斯多葛哲学的生活艺术](western_philosophy/A-guide-to-the-good-life.md)
    2. [哲学的指引-斯多葛哲学的生活之道](western_philosophy/How-to-Be-a-Stoic.md)
    3. [哲学谈话录-爱比克泰德](western_philosophy/Epictetus.md)
-3. 叔本华
+3. 康德
+   1. [康德三大批判合集](western_philosophy/kant.md)
+4. 叔本华
    1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
    2. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
    3. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
    4. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
-4. 尼采
+5. 尼采
    1. [作为教育家的叔本华](western_philosophy/SchopenhauerAlsErzieher.md)
-5. 存在主义
+6. 存在主义
    1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
    2. [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
    3. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
    4. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
    5. [存在主义心理治疗](psychology/Existential-Psychology.md)
-6. 结构主义
+7. 结构主义
    1. [结构主义](western_philosophy/structuralism.md)
    2. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
-7. 辩证法
+8. 辩证法
    1. [大众哲学](western_philosophy/PublicPhilosophy.md)
    2. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
-8.  [康德三大批判合集](western_philosophy/kant.md)
-9.  [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-10. [论自然](western_philosophy/nature.md)
+9.  [论自然](western_philosophy/nature.md)
 
 # 文学
 1. 文学史
@@ -274,12 +274,13 @@
    3. [幸福](psychology/happiness.md)
 2. 意义与价值
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
-   2. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
-   3. [身份的焦虑](western_philosophy/status-anxiety.md)
-   4. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
-   5. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-   6. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
-   7. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+   2. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
+   3. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
+   4. [身份的焦虑](western_philosophy/status-anxiety.md)
+   5. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
+   6. [自卑与超越](psychology/what-life-should-mean-to-u.md)
+   7. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+   8. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
 3. 人际与生活
    1. [蔡康永的说话之道](success/CaiKangYong.md)
    2. [你要如何衡量你的人生](success/HowWillYouMeasureYourLifeCH.md)
