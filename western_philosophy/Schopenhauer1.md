@@ -1,4 +1,3 @@
-# 人生的智慧
 ![cover](https://img3.doubanio.com/lpic/s4619775.jpg)
 
     作者:  [德] 叔本华 
@@ -13,7 +12,6 @@
 
 [豆瓣链接](https://book.douban.com/subject/3261600/)
 
-- [人生的智慧](#%e4%ba%ba%e7%94%9f%e7%9a%84%e6%99%ba%e6%85%a7)
 - [第一章 基本的划分](#%e7%ac%ac%e4%b8%80%e7%ab%a0-%e5%9f%ba%e6%9c%ac%e7%9a%84%e5%88%92%e5%88%86)
 - [第二章 人的自身](#%e7%ac%ac%e4%ba%8c%e7%ab%a0-%e4%ba%ba%e7%9a%84%e8%87%aa%e8%ba%ab)
 - [第三章 人所拥有的财产](#%e7%ac%ac%e4%b8%89%e7%ab%a0-%e4%ba%ba%e6%89%80%e6%8b%a5%e6%9c%89%e7%9a%84%e8%b4%a2%e4%ba%a7)
