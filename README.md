@@ -142,6 +142,7 @@
    4. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
 5. 尼采
    1. [作为教育家的叔本华](western_philosophy/SchopenhauerAlsErzieher.md)
+   2. [尼采：在世纪的转折点上](western_philosophy/FriedrichNietzsche.md)
 6. 存在主义
    1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
    2. [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
