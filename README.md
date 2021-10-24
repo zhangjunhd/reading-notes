@@ -268,7 +268,7 @@
 3. 系统性思维
    1. [系统之美](bussiness/management/ThinkingInSystems.md)
 
-## 人生的意义与价值
+## 人生方面
 1. 如何处理消极情绪
    1. [幸福是陷阱?](psychology/the-happiness-trap.md)
    2. [走出抑郁症](psychology/depression.md)
