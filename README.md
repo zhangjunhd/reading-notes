@@ -318,13 +318,12 @@
    2. [乡土中国](history/native-china.md)
    3. [中国大历史-黄仁宇版](history/big-history.md)
    4. [中国大历史-吕思勉版](history/big-history-lvsimian.md)
-5. 中国近代史
+5. 中国近现代史
    1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
    2. [毛泽东传](history/mao-biography.md)
-   3. [晚年周恩来](history/wan_nian_zhou_en_lai.md)
-   4. [毛泽东选集第一卷](history/mao1.md)
-   5. [毛泽东选集第二卷](history/mao2.md)
-   6. [毛泽东选集第三卷](history/mao3.md)
+   3. [毛泽东选集第一卷](history/mao1.md)
+   4. [毛泽东选集第二卷](history/mao2.md)
+   5. [毛泽东选集第三卷](history/mao3.md)
 
 # 政治
 1. 公民社会
