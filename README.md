@@ -324,6 +324,7 @@
    3. [毛泽东选集第一卷](history/mao1.md)
    4. [毛泽东选集第二卷](history/mao2.md)
    5. [毛泽东选集第三卷](history/mao3.md)
+   6. [邓小平时代](history/deng.md)
 
 # 政治
 1. 公民社会
