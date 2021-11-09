@@ -347,12 +347,13 @@
    2. [亚洲大趋势](politics/aisa-big-trend.md)
    3. [城市化转型与土地陷阱](politics/urbanization.md)
    4. [大国大城](politics/great-nation-needs-bigger-city.md)
-   5. 林毅夫
-        1. [解读中国经济](politics/china-economics.md)
-   6.  郑永年
+   5. [解读中国经济](politics/china-economics.md)
+   6. [结构性改革](politics/huangqifan.md)
+   7.  郑永年
         1. [未来30年](politics/next30years.md)
         2. [未来30年2](politics/next30years2.md)
         3. [不确定的未来](politics/UncertainFuture.md)
+
 
 # 商业
 ## 综述
