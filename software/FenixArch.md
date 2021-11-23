@@ -276,7 +276,7 @@ RESTful Web APIs和RESTful Web Services的作者Leonard Richardson曾提出一�
 
 医院开放了一个/appointmentService的Web API，传入日期、医生姓名等参数，可以得到该时间段内该名医生的空闲时间，该API的一次HTTP调用如下所示：
 
-```json
+```http
 POST /appointmentService?action=query HTTP/1.1
 
 {date: "2020-03-04", doctor: "mjones"}
@@ -284,7 +284,7 @@ POST /appointmentService?action=query HTTP/1.1
 
 然后服务器会传回一个包含了所需信息的回应：
 
-```json
+```http
 HTTP/1.1 200 OK
 
 [
@@ -295,7 +295,7 @@ HTTP/1.1 200 OK
 
 得到了医生空闲的结果后，笔者觉得14:00比较合适，于是进行预约确认，并提交了个人基本信息：
 
-```json
+```http
 POST /appointmentService?action=confirm HTTP/1.1
 
 {
@@ -306,7 +306,7 @@ POST /appointmentService?action=confirm HTTP/1.1
 
 如果预约成功，那我能够收到一个预约成功的响应：
 
-```json
+```http
 HTTP/1.1 200 OK
 
 {
@@ -317,7 +317,7 @@ HTTP/1.1 200 OK
 
 如果出现问题，譬如有人在我前面抢先预约了，那么我会在响应中收到某种错误消息：
 
-```json
+```http
 HTTP/1.1 200 OK
 
 {
