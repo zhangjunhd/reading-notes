@@ -89,14 +89,14 @@ Thoughtworks首席咨询师James Lewis做了题为“Microservices-Java,the UNIX
 
 能力 | Kubernetes | Spring Cloud
 ---|------------|-------------
-弹性伸缩 | Autoscaling N/A
-服务发现 | KubeDNS/CoreDNS Spring Cloud Eureka
-配置中心 | ConfigMap/Secret Spring Cloud Config
-服务网关 | Ingress Controller Spring Cloud Zuul
+弹性伸缩 | Autoscaling | N/A
+服务发现 | KubeDNS/CoreDNS | Spring Cloud Eureka
+配置中心 | ConfigMap/Secret | Spring Cloud Config
+服务网关 | Ingress Controller | Spring Cloud Zuul
 负载均衡 | Load Balancer | Spring Cloud Ribbon
 服务安全 | RBAC API | Spring Cloud Security
 跟踪服务 | Metrics API/Dashboard | Spring Cloud Turbine
-降级熔断 | N/A Spring Cloud Hystrix
+降级熔断 | N/A | Spring Cloud Hystrix
 
 Kubernetes成为容器战争胜利者标志着后微服务时代的开启，但Kubernetes仍然没能完美解决全部的分布式问题——“不完美”的意思是，仅从功能上看，单纯的Kubernetes反而不如之前的Spring Cloud方案。这是因为有一些问题处于应用系统与基础设施的边缘，使得很难完全在基础设施层面中精细化地处理。举个例子，如图1-4所示，微服务A调用了微服务B的两个服务，称为B1和B2，假设B1表现正常但B2出现了持续的500错，那在达到一定阈值之后就应该对B2进行熔断，以避免产生雪崩效应。如果仅在基础设施层面来处理，这会遇到一个两难问题，切断A到B的网络通路会影响B1的正常调用，不切断则会持续受B2的错误影响。
 
