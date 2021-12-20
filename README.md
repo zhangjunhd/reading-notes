@@ -341,6 +341,7 @@
    1. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
    2. [金融的本质](politics/TheFederalReserveAndTheFinancialCrisis.md)
    3. [货币强权](politics/CurrencyPower.md)
+   4. [预测-经济、周期与市场泡沫](politics/Predict.md)
 5. 中国经济
    1. [百年中国经济史笔记](politics/china-economic-modern-history.md)
    2. [亚洲大趋势](politics/aisa-big-trend.md)
