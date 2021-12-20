@@ -334,15 +334,14 @@
    2. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
    3. [中国当代社会阶层分析](politics/china-society-level.md)
    4. [贫穷的本质](politics/PoorEconomics.md)
-3. 国际金融
-   1. [货币强权](politics/CurrencyPower.md)
-4. 国际政治
+3. 国际政治
    1. [世界秩序](politics/WorldOrder.md)
    2. [看世界](politics/see-the-world.md)
-5. 欧美经济
+4. 西方经济
    1. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
    2. [金融的本质](politics/TheFederalReserveAndTheFinancialCrisis.md)
-6. 中国经济
+   3. [货币强权](politics/CurrencyPower.md)
+5. 中国经济
    1. [百年中国经济史笔记](politics/china-economic-modern-history.md)
    2. [亚洲大趋势](politics/aisa-big-trend.md)
    3. [城市化转型与土地陷阱](politics/urbanization.md)
