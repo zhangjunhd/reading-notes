@@ -322,10 +322,7 @@
 5. 中国近现代史
    1. [从晚清到民国](history/cong-wan-qing-dao-ming-guo.md)
    2. [毛泽东传](history/mao-biography.md)
-   3. [毛泽东选集第一卷](history/mao1.md)
-   4. [毛泽东选集第二卷](history/mao2.md)
-   5. [毛泽东选集第三卷](history/mao3.md)
-   6. [邓小平时代](history/deng.md)
+   3. [邓小平时代](history/deng.md)
 
 # 政治
 1. 公民社会
