@@ -155,6 +155,7 @@
 8. 辩证法
    1. [大众哲学](western_philosophy/PublicPhilosophy.md)
    2. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
+   3. [毛泽东选集](western_philosophy/mao.md)
 9.  [论自然](western_philosophy/nature.md)
 
 # 文学
