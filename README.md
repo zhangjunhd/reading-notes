@@ -63,6 +63,7 @@
 1. [信息简史](info/TheInformation.md)
 2. [知识的边界](info/knowledge-boundary.md)
 3. [人有人的用处](info/TheHumanUseOfHumanBeings.md)
+4. [增长的本质](info/WhyInformationGrow.md)
 
 ## 数学
 1. [统计与真理](math/StatisticsAndTruth.md)
