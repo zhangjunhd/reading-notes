@@ -336,11 +336,9 @@
 3. 国际政治
    1. [世界秩序](politics/WorldOrder.md)
    2. [看世界](politics/see-the-world.md)
-4. 西方经济
+4. 政治经济
    1. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
-   2. [金融的本质](politics/TheFederalReserveAndTheFinancialCrisis.md)
-   3. [货币强权](politics/CurrencyPower.md)
-   4. [预测-经济、周期与市场泡沫](politics/Predict.md)
+   2. [货币强权](politics/CurrencyPower.md)
 5. 中国经济
    1. [百年中国经济史笔记](politics/china-economic-modern-history.md)
    2. [亚洲大趋势](politics/aisa-big-trend.md)
@@ -364,6 +362,8 @@
 2. [经济学的思维方式](economics/BasicEconomics.md)
 3. [写给企业家的经济学](economics/economics4entrepreneur.md)
 4. [货币金融学](finance/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
+5. [金融的本质](politics/TheFederalReserveAndTheFinancialCrisis.md)
+6. [预测-经济、周期与市场泡沫](politics/Predict.md)
 
 
 ## 财务
