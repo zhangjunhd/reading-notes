@@ -362,8 +362,8 @@
 2. [经济学的思维方式](economics/BasicEconomics.md)
 3. [写给企业家的经济学](economics/economics4entrepreneur.md)
 4. [货币金融学](economics/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
-5. [金融的本质](politics/TheFederalReserveAndTheFinancialCrisis.md)
-6. [预测-经济、周期与市场泡沫](politics/Predict.md)
+5. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
+6. [预测-经济、周期与市场泡沫](economics/Predict.md)
 
 
 ## 财务
