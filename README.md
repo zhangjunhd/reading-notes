@@ -26,8 +26,8 @@
 - [政治](#政治)
 - [商业](#商业)
   - [综述](#综述-1)
-  - [经济学](#经济学)
-  - [金融](#金融)
+  - [西方经济学](#西方经济学)
+  - [财务](#财务)
   - [管理](#管理)
   - [案例](#案例)
   - [创业](#创业)
@@ -359,18 +359,19 @@
 ## 综述
 1. [认识商业](bussiness/bussiness.md)
 
-## 经济学
+## 西方经济学
 1. [经济学通识课](economics/a-little-history-of-economics.md)
 2. [经济学的思维方式](economics/BasicEconomics.md)
 3. [写给企业家的经济学](economics/economics4entrepreneur.md)
+4. [货币金融学](finance/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
 
-## 金融
+
+## 财务
 1. [一本书读懂财报](finance/OneBookLearnFinancialReport.md)
 2. [一本书读懂中国税](finance/OneBookLearnChinaTax.md)
 3. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
 4. [财务报表分析与股票估值](finance/FinancialStatement.md)
 5. [巴菲特致股东的信](finance/BuffettLetter.md)
-6. [货币金融学](finance/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
 
 ## 管理
 1. 企业文化
