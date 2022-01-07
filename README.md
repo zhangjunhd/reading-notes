@@ -364,7 +364,7 @@
 4. [货币金融学](economics/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
 5. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
 6. [预测-经济、周期与市场泡沫](economics/Predict.md)
-
+7. [创新-经济增长的奇迹](economics/TheFreeMarketInnovationMachine.md)
 
 ## 财务
 1. [一本书读懂财报](finance/OneBookLearnFinancialReport.md)
