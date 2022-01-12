@@ -144,20 +144,22 @@
 5. 尼采
    1. [作为教育家的叔本华](western_philosophy/SchopenhauerAlsErzieher.md)
    2. [尼采：在世纪的转折点上](western_philosophy/FriedrichNietzsche.md)
-6. 存在主义
+6. 佛洛依德
+   1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
+7. 存在主义
    1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
    2. [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
    3. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
    4. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
    5. [存在主义心理治疗](psychology/Existential-Psychology.md)
-7. 结构主义
+8. 结构主义
    1. [结构主义](western_philosophy/structuralism.md)
    2. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
-8. 辩证法
-   1. [大众哲学](western_philosophy/PublicPhilosophy.md)
-   2. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
-   3. [毛泽东选集](western_philosophy/mao.md)
-9.  [论自然](western_philosophy/nature.md)
+9.  辩证法
+   3. [大众哲学](western_philosophy/PublicPhilosophy.md)
+   4. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
+   5. [毛泽东选集](western_philosophy/mao.md)
+10. [论自然](western_philosophy/nature.md)
 
 # 文学
 1. 文学史
@@ -289,10 +291,9 @@
    2. [你要如何衡量你的人生](success/HowWillYouMeasureYourLifeCH.md)
 
 ## 元认知方面
-1. 精神分析学
-   1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
-   2. [荣格心理学入门](psychology/Jung-intro.md)
-   3. [天资差异](psychology/GiftsDiffering.md)
+1. 人格理论
+   1. [荣格心理学入门](psychology/Jung-intro.md)
+   2. [天资差异](psychology/GiftsDiffering.md)
 2. 认知科学
    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 3. 行为学
