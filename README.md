@@ -29,8 +29,7 @@
   - [西方经济学](#西方经济学)
   - [财务](#财务)
   - [管理](#管理)
-  - [SaaS](#saas)
-  - [理论与趋势](#理论与趋势)
+  - [商业模式](#商业模式)
   - [市场营销](#市场营销)
 - [产品经理](#产品经理)
 - [软件技术](#软件技术)
@@ -373,38 +372,36 @@
 5. [巴菲特致股东的信](finance/BuffettLetter.md)
 
 ## 管理
-1. 企业经营
-   1. [重来ReWork](bussiness/management/rework.md)
-   2. [精益创业](bussiness/startup/TheLeanStartup.md)
-   3. [创业时，不可不知的细节](bussiness/startup/details.md)
-   4. [创业就是要细分垄断](bussiness/startup/monopolize.md)
-2. 企业管理
+1. 企业管理
    1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
    2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
    3. [关键对话](bussiness/management/CrucialConversations.md)
    4. [OKR工作法](bussiness/management/okr.md)
-3. 企业家精神
+2. 企业家精神
    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
-4. 企业管理案例
+3. 企业管理案例
    1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
    2. [刷新](bussiness/management/hit-refresh.md)
    3. [奈飞文化手册](bussiness/management/Powerful.md)
-5. 企业经营案例
+
+## 商业模式
+1. SaaS
+   1. [透析盈利模式](bussiness/saas/ProfitModel.md)
+   2. [SaaS创业路线图](bussiness/saas/SaaS.md)
+2. 企业经营
+   1. [重来ReWork](bussiness/management/rework.md)
+   2. [精益创业](bussiness/startup/TheLeanStartup.md)
+   3. [创业时，不可不知的细节](bussiness/startup/details.md)
+   4. [创业就是要细分垄断](bussiness/startup/monopolize.md)
+3. 企业经营案例
    1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
    2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
    3. [从0到1](bussiness/startup/zero_to_one.md)
    4. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
    5. [重新理解创业](bussiness/startup/rethink-startup.md)
    6. [MR.HUA创业手记](bussiness/startup/hua.md)
-
-
-## SaaS
-1. [透析盈利模式](bussiness/saas/ProfitModel.md)
-1. [SaaS创业路线图](bussiness/saas/SaaS.md)
-
-## 理论与趋势
-1. 商业模式
+4. 商业模式
    1. [维基经济学](bussiness/model/wikinomics.md)
    2. [长尾理论2.0](bussiness/model/long_tail.md)
    3. [智能商业](bussiness/model/IntelligentBusiness.md)
@@ -412,14 +409,14 @@
    5. [指数型组织](bussiness/model/ExponentialOrganizations.md)
    6. [创业无畏](bussiness/model/BOLD.md)
    7. [平台革命](bussiness/model/PlatformRevolution.md)
-2. 社群与去中心化
+5. 社群与去中心化
    1. [链接](bussiness/model/linked.md)
    2. [隐形VISA](bussiness/model/visa.md)
-3. 技术与创新
+6. 技术与创新
    1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    2. [必然](bussiness/model/kk-The-Inevitable.md)
    3. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-4. 信息与“不确定性”
+7. 信息与“不确定性”
    1. [黑天鹅](bussiness/model/TheBlackSwan.md)
    2. [反脆弱](bussiness/model/Antifragile.md)
    3. [简单统计学](math/StandardDeviations.md)
