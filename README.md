@@ -29,7 +29,6 @@
   - [西方经济学](#西方经济学)
   - [财务](#财务)
   - [管理](#管理)
-  - [创业](#创业)
   - [SaaS](#saas)
   - [理论与趋势](#理论与趋势)
   - [市场营销](#市场营销)
@@ -376,6 +375,9 @@
 ## 管理
 1. 企业经营
    1. [重来ReWork](bussiness/management/rework.md)
+   2. [精益创业](bussiness/startup/TheLeanStartup.md)
+   3. [创业时，不可不知的细节](bussiness/startup/details.md)
+   4. [创业就是要细分垄断](bussiness/startup/monopolize.md)
 2. 企业管理
    1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
    2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
@@ -396,10 +398,6 @@
    5. [重新理解创业](bussiness/startup/rethink-startup.md)
    6. [MR.HUA创业手记](bussiness/startup/hua.md)
 
-## 创业
-1. [精益创业](bussiness/startup/TheLeanStartup.md)
-1. [创业时，不可不知的细节](bussiness/startup/details.md)
-1. [创业就是要细分垄断](bussiness/startup/monopolize.md)
 
 ## SaaS
 1. [透析盈利模式](bussiness/saas/ProfitModel.md)
