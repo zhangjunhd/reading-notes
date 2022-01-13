@@ -29,7 +29,6 @@
   - [西方经济学](#西方经济学)
   - [财务](#财务)
   - [管理](#管理)
-  - [案例](#案例)
   - [创业](#创业)
   - [SaaS](#saas)
   - [理论与趋势](#理论与趋势)
@@ -155,10 +154,10 @@
 8. 结构主义
    1. [结构主义](western_philosophy/structuralism.md)
    2. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
-9.  辩证法
-   3. [大众哲学](western_philosophy/PublicPhilosophy.md)
-   4. [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
-   5. [毛泽东选集](western_philosophy/mao.md)
+9. 辩证法
+   1.  [大众哲学](western_philosophy/PublicPhilosophy.md)
+   2.  [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
+   3.  [毛泽东选集](western_philosophy/mao.md)
 10. [论自然](western_philosophy/nature.md)
 
 # 文学
@@ -375,11 +374,8 @@
 5. [巴菲特致股东的信](finance/BuffettLetter.md)
 
 ## 管理
-1. 企业文化
-   1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
-   2. [重来ReWork](bussiness/management/rework.md)
-   3. [刷新](bussiness/management/hit-refresh.md)
-   4. [奈飞文化手册](bussiness/management/Powerful.md)
+1. 企业经营
+   1. [重来ReWork](bussiness/management/rework.md)
 2. 企业管理
    1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
    2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
@@ -388,14 +384,17 @@
 3. 企业家精神
    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
-
-## 案例
-1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
-2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
-3. [从0到1](bussiness/startup/zero_to_one.md)
-4. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
-5. [重新理解创业](bussiness/startup/rethink-startup.md)
-6. [MR.HUA创业手记](bussiness/startup/hua.md)
+4. 企业管理案例
+   1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
+   2. [刷新](bussiness/management/hit-refresh.md)
+   3. [奈飞文化手册](bussiness/management/Powerful.md)
+5. 企业经营案例
+   1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
+   2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
+   3. [从0到1](bussiness/startup/zero_to_one.md)
+   4. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
+   5. [重新理解创业](bussiness/startup/rethink-startup.md)
+   6. [MR.HUA创业手记](bussiness/startup/hua.md)
 
 ## 创业
 1. [精益创业](bussiness/startup/TheLeanStartup.md)
