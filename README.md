@@ -384,6 +384,7 @@
    1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
    2. [刷新](bussiness/management/hit-refresh.md)
    3. [奈飞文化手册](bussiness/management/Powerful.md)
+   4. [不拘一格-网飞的自由与责任工作法](bussiness/management/NoRulesRules.md)
 
 ## 商业模式
 1. SaaS
