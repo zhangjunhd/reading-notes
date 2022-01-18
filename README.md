@@ -29,7 +29,7 @@
   - [西方经济学](#西方经济学)
   - [财务](#财务)
   - [公司管理](#公司管理)
-  - [商业模式](#商业模式)
+  - [公司经营](#公司经营)
   - [市场营销](#市场营销)
 - [产品经理](#产品经理)
 - [软件技术](#软件技术)
@@ -387,10 +387,10 @@
    4. [不拘一格-网飞的自由与责任工作法](bussiness/management/NoRulesRules.md)
    5. [创新公司-皮克斯的启示](bussiness/management/CreativityInc.md)
 
-## 商业模式
+## 公司经营
 1. SaaS
-   1. [透析盈利模式](bussiness/saas/ProfitModel.md)
-   2. [SaaS创业路线图](bussiness/saas/SaaS.md)
+   1. [透析盈利模式](bussiness/operation/ProfitModel.md)
+   2. [SaaS创业路线图](bussiness/operation/SaaS.md)
 2. 企业经营
    1. [重来ReWork](bussiness/management/rework.md)
    2. [精益创业](bussiness/startup/TheLeanStartup.md)
