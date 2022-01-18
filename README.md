@@ -28,7 +28,7 @@
   - [综述](#综述-1)
   - [西方经济学](#西方经济学)
   - [财务](#财务)
-  - [管理](#管理)
+  - [企业管理](#企业管理)
   - [商业模式](#商业模式)
   - [市场营销](#市场营销)
 - [产品经理](#产品经理)
@@ -371,8 +371,8 @@
 4. [财务报表分析与股票估值](finance/FinancialStatement.md)
 5. [巴菲特致股东的信](finance/BuffettLetter.md)
 
-## 管理
-1. 企业管理
+## 企业管理
+1. 管理理论
    1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
    2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
    3. [关键对话](bussiness/management/CrucialConversations.md)
