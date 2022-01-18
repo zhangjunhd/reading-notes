@@ -388,36 +388,35 @@
    5. [创新公司-皮克斯的启示](bussiness/management/CreativityInc.md)
 
 ## 公司经营
-1. SaaS
+1. 从0到1
+   1. [SaaS创业路线图](bussiness/operation/SaaS.md)
+   2. [精益创业](bussiness/startup/TheLeanStartup.md)
+   3. [创业时，不可不知的细节](bussiness/startup/details.md)
+   4. [创业就是要细分垄断](bussiness/startup/monopolize.md)
+   5. [从0到1](bussiness/startup/zero_to_one.md)
+   6. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
+   7. [重新理解创业](bussiness/startup/rethink-startup.md)
+   8.  [MR.HUA创业手记](bussiness/startup/hua.md)
+2. 经营案例
+   1.  [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
+   2.  [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
+3. 商业模式
    1. [透析盈利模式](bussiness/operation/ProfitModel.md)
-   2. [SaaS创业路线图](bussiness/operation/SaaS.md)
-2. 企业经营
-   1. [精益创业](bussiness/startup/TheLeanStartup.md)
-   2. [创业时，不可不知的细节](bussiness/startup/details.md)
-   3. [创业就是要细分垄断](bussiness/startup/monopolize.md)
-3. 企业经营案例
-   1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
-   2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
-   3. [从0到1](bussiness/startup/zero_to_one.md)
-   4. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
-   5. [重新理解创业](bussiness/startup/rethink-startup.md)
-   6. [MR.HUA创业手记](bussiness/startup/hua.md)
-4. 商业模式
-   1. [维基经济学](bussiness/model/wikinomics.md)
-   2. [长尾理论2.0](bussiness/model/long_tail.md)
-   3. [智能商业](bussiness/model/IntelligentBusiness.md)
-   4. [智能战略](bussiness/model/SmartBusiness.md)
-   5. [指数型组织](bussiness/model/ExponentialOrganizations.md)
-   6. [创业无畏](bussiness/model/BOLD.md)
-   7. [平台革命](bussiness/model/PlatformRevolution.md)
-5. 社群与去中心化
+   2. [维基经济学](bussiness/model/wikinomics.md)
+   3. [长尾理论2.0](bussiness/model/long_tail.md)
+   4. [智能商业](bussiness/model/IntelligentBusiness.md)
+   5. [智能战略](bussiness/model/SmartBusiness.md)
+   6. [指数型组织](bussiness/model/ExponentialOrganizations.md)
+   7. [创业无畏](bussiness/model/BOLD.md)
+   8. [平台革命](bussiness/model/PlatformRevolution.md)
+4. 社群与去中心化
    1. [链接](bussiness/model/linked.md)
    2. [隐形VISA](bussiness/model/visa.md)
-6. 技术与创新
+5. 技术与创新
    1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    2. [必然](bussiness/model/kk-The-Inevitable.md)
    3. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-7. 信息与“不确定性”
+6. 信息与“不确定性”
    1. [黑天鹅](bussiness/model/TheBlackSwan.md)
    2. [反脆弱](bussiness/model/Antifragile.md)
    3. [简单统计学](math/StandardDeviations.md)
