@@ -385,6 +385,7 @@
    2. [刷新-微软CEO萨提亚·纳德拉作品](bussiness/management/hit-refresh.md)
    3. [奈飞文化手册](bussiness/management/Powerful.md)
    4. [不拘一格-网飞的自由与责任工作法](bussiness/management/NoRulesRules.md)
+   5. [创新公司-皮克斯的启示](bussiness/management/CreativityInc.md)
 
 ## 商业模式
 1. SaaS
