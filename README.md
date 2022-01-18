@@ -392,10 +392,9 @@
    1. [透析盈利模式](bussiness/operation/ProfitModel.md)
    2. [SaaS创业路线图](bussiness/operation/SaaS.md)
 2. 企业经营
-   1. [重来ReWork](bussiness/management/rework.md)
-   2. [精益创业](bussiness/startup/TheLeanStartup.md)
-   3. [创业时，不可不知的细节](bussiness/startup/details.md)
-   4. [创业就是要细分垄断](bussiness/startup/monopolize.md)
+   1. [精益创业](bussiness/startup/TheLeanStartup.md)
+   2. [创业时，不可不知的细节](bussiness/startup/details.md)
+   3. [创业就是要细分垄断](bussiness/startup/monopolize.md)
 3. 企业经营案例
    1. [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
    2. [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
