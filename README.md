@@ -380,7 +380,7 @@
 2. 企业家精神
    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
-3. 企业管理案例
+3. 管理案例
    1. [重新定义公司-谷歌是如何运营的](bussiness/management/HowGoogleWorks.md)
    2. [刷新-微软CEO萨提亚·纳德拉作品](bussiness/management/hit-refresh.md)
    3. [奈飞文化手册](bussiness/management/Powerful.md)
