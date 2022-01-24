@@ -378,6 +378,7 @@
    3. [关键对话](bussiness/management/CrucialConversations.md)
    4. [OKR工作法](bussiness/management/okr.md)
    5. [格鲁夫给经理人的第一课](bussiness/management/HighOutputManagement.md)
+   6. [卓有成效的管理者](bussiness/management/TheEffectiveExecutive.md)
 2. 企业家精神
    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
