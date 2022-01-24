@@ -377,6 +377,7 @@
    2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
    3. [关键对话](bussiness/management/CrucialConversations.md)
    4. [OKR工作法](bussiness/management/okr.md)
+   5. [格鲁夫给经理人的第一课](bussiness/management/HighOutputManagement.md)
 2. 企业家精神
    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
