@@ -17,8 +17,7 @@
 - [生活](#生活)
 - [认知](#认知)
   - [综述](#综述)
-  - [效率方面](#效率方面)
-  - [学习方面](#学习方面)
+  - [效率习惯与方法](#效率习惯与方法)
   - [思考方面](#思考方面)
   - [人生价值与意义](#人生价值与意义)
   - [元认知方面](#元认知方面)
@@ -232,7 +231,7 @@
 1. [请停止无效努力](success/please-stop-trying.md)
 2. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
 
-## 效率方面
+## 效率习惯与方法
 1. 如何克服拖延症
    1. [拖延心理学](success/Procrastination.md)
 2. 如何培养习惯
@@ -248,13 +247,10 @@
    2. [尽管去做——无压工作的艺术](success/GTD.md)
    3. [奇特的一生](success/Lyubishchev.md)
    4. [暗时间](success/DarkTime.md)
-
-## 学习方面
-1. 学习方法
+4. 学习方法
    1. [学习之道](success/A-Mind-for-Numbers.md)
    2. [如何高效学习](success/LearnMoreStudyLess.md)
-2. 如何有效阅读
-   1. [如何阅读一本书](success/HowToReadABook.md)
+   3. [如何阅读一本书](success/HowToReadABook.md)
 
 ## 思考方面
 1. 思维模型/世界观
