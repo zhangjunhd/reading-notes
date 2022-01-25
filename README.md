@@ -16,7 +16,6 @@
 - [艺术](#艺术)
 - [生活](#生活)
 - [认知](#认知)
-  - [综述](#综述)
   - [效率习惯与方法](#效率习惯与方法)
   - [思考方面](#思考方面)
   - [人生价值与意义](#人生价值与意义)
@@ -24,7 +23,7 @@
 - [历史](#历史)
 - [政治](#政治)
 - [商业](#商业)
-  - [综述](#综述-1)
+  - [综述](#综述)
   - [西方经济学](#西方经济学)
   - [财务](#财务)
   - [公司管理](#公司管理)
@@ -227,9 +226,6 @@
 
 
 # 认知
-## 综述
-1. [请停止无效努力](success/please-stop-trying.md)
-
 ## 效率习惯与方法
 1. 如何克服拖延症
    1. [拖延心理学](success/Procrastination.md)
@@ -249,14 +245,16 @@
    1. [学习之道](success/A-Mind-for-Numbers.md)
    2. [如何高效学习](success/LearnMoreStudyLess.md)
    3. [如何阅读一本书](success/HowToReadABook.md)
-
-## 思考方面
-1. 思维模型/世界观
-   1. [专念](psychology/mindfulness.md)
+5. 高效生活与工作
+   1. [请停止无效努力](success/please-stop-trying.md)
    2. [高效能人士的七个习惯](success/7Habits.md)
    3. [新生——七年就是一辈子](success/rebirth.md)
    4. [精进：如何成为一个很厉害的人](success/refinement.md)
    5. [原则](success/Principles.md)
+
+## 思考方面
+1. 思维模型/世界观
+   1. [专念](psychology/mindfulness.md)
 2. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
