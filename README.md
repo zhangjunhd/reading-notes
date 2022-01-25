@@ -243,10 +243,9 @@
    6. [刻意练习](success/PEAK.md)
    7. [习惯的力量](success/ThePowerOfHabit.md)
 3. 如何管理时间
-   1. [小强的时间管理博客摘录](success/XiaoQiang.md)
-   2. [尽管去做——无压工作的艺术](success/GTD.md)
-   3. [奇特的一生](success/Lyubishchev.md)
-   4. [暗时间](success/DarkTime.md)
+   1. [尽管去做——无压工作的艺术](success/GTD.md)
+   2. [奇特的一生](success/Lyubishchev.md)
+   3. [暗时间](success/DarkTime.md)
 4. 学习方法
    1. [学习之道](success/A-Mind-for-Numbers.md)
    2. [如何高效学习](success/LearnMoreStudyLess.md)
