@@ -229,7 +229,6 @@
 # 认知
 ## 综述
 1. [请停止无效努力](success/please-stop-trying.md)
-2. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
 
 ## 效率习惯与方法
 1. 如何克服拖延症
@@ -263,6 +262,7 @@
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
 3. 系统性思维
    1. [系统之美](bussiness/management/ThinkingInSystems.md)
+   2. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
 
 ## 人生价值与意义
 1. 如何处理消极情绪
