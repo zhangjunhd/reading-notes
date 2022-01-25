@@ -251,14 +251,14 @@
    3. [新生——七年就是一辈子](success/rebirth.md)
    4. [精进：如何成为一个很厉害的人](success/refinement.md)
    5. [原则](success/Principles.md)
+   6. [卓有成效的管理者](bussiness/management/TheEffectiveExecutive.md)
 
 ## 思考方面
-1. 思维模型/世界观
-   1. [专念](psychology/mindfulness.md)
-2. 批判性思维
+1. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-3. 系统性思维
+   3. [专念](psychology/mindfulness.md)
+2. 系统性思维
    1. [系统之美](bussiness/management/ThinkingInSystems.md)
    2. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
 
@@ -371,7 +371,6 @@
    3. [关键对话](bussiness/management/CrucialConversations.md)
    4. [OKR工作法](bussiness/management/okr.md)
    5. [格鲁夫给经理人的第一课](bussiness/management/HighOutputManagement.md)
-   6. [卓有成效的管理者](bussiness/management/TheEffectiveExecutive.md)
 2. 企业家精神
    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
