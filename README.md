@@ -251,7 +251,7 @@
    3. [新生——七年就是一辈子](success/rebirth.md)
    4. [精进：如何成为一个很厉害的人](success/refinement.md)
    5. [原则](success/Principles.md)
-   6. [卓有成效的管理者](bussiness/management/TheEffectiveExecutive.md)
+   6. [卓有成效的管理者](success/TheEffectiveExecutive.md)
 
 ## 思考方面
 1. 批判性思维
