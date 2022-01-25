@@ -17,7 +17,7 @@
 - [生活](#生活)
 - [认知](#认知)
   - [效率习惯与方法](#效率习惯与方法)
-  - [思考方面](#思考方面)
+  - [思维方法](#思维方法)
   - [人生价值与意义](#人生价值与意义)
   - [元认知方面](#元认知方面)
 - [历史](#历史)
@@ -253,7 +253,7 @@
    5. [原则](success/Principles.md)
    6. [卓有成效的管理者](success/TheEffectiveExecutive.md)
 
-## 思考方面
+## 思维方法
 1. 批判性思维
    1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
