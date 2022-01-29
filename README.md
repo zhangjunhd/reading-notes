@@ -240,18 +240,18 @@
 3. 如何管理时间
    1. [尽管去做——无压工作的艺术](success/GTD.md)
    2. [奇特的一生](success/Lyubishchev.md)
-   3. [暗时间](success/DarkTime.md)
 4. 学习方法
    1. [学习之道](success/A-Mind-for-Numbers.md)
    2. [如何高效学习](success/LearnMoreStudyLess.md)
    3. [如何阅读一本书](success/HowToReadABook.md)
 5. 高效生活与工作
-   1. [请停止无效努力](success/please-stop-trying.md)
-   2. [高效能人士的七个习惯](success/7Habits.md)
-   3. [新生——七年就是一辈子](success/rebirth.md)
-   4. [精进：如何成为一个很厉害的人](success/refinement.md)
-   5. [原则](success/Principles.md)
-   6. [卓有成效的管理者](success/TheEffectiveExecutive.md)
+   1. [暗时间](success/DarkTime.md)
+   2. [请停止无效努力](success/please-stop-trying.md)
+   3. [高效能人士的七个习惯](success/7Habits.md)
+   4. [新生——七年就是一辈子](success/rebirth.md)
+   5. [精进：如何成为一个很厉害的人](success/refinement.md)
+   6. [原则](success/Principles.md)
+   7. [卓有成效的管理者](success/TheEffectiveExecutive.md)
 
 ## 思维方法
 1. 批判性思维
