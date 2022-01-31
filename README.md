@@ -175,19 +175,18 @@
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
    3. [伟大是熬出来的-冯仑](literature/Fenglun.md)
-   4. [冯鑫家信：怎样才算好好活着](literature/a-letter-home-by-fengxin.md)
-   5. [活法-稻盛和夫](literature/LivingLaw.md)
-   6. [有话说-崔永元](literature/cui.md)
-   7. 梁漱溟
+   4. [活法-稻盛和夫](literature/LivingLaw.md)
+   5. [有话说-崔永元](literature/cui.md)
+   6. 梁漱溟
       1. [中国最后一个大儒](literature/liang_shu_min.md)
       2. [这个世界会好吗-梁漱溟晚年口述](literature/liang_shu_min_wan_nian_kou_shu.md)
       3. [人生的三路向:宗教、道德与人生](literature/ren_sheng_de_san_lu_xiang.md)
       4. [梁漱溟先生论儒佛道](literature/liang_shu_min_xian_sheng_lun_ru_fo_dao.md)
       5. [人心与人生](literature/renxin_yu_rensheng.md)
-   8. 南怀瑾
+   7. 南怀瑾
        1. [南怀瑾谈性格与人生](literature/nan1.md)
        2. [南怀瑾谈生活与生存](literature/nan2.md)
-   9. 冯唐
+   8. 冯唐
       1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
       2. [无所畏](literature/fengtang-not-to-matter.md)
       3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
