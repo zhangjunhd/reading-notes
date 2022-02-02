@@ -249,8 +249,7 @@
    4. [新生——七年就是一辈子](success/rebirth.md)
    5. [精进：如何成为一个很厉害的人](success/refinement.md)
    6. [原则](success/Principles.md)
-   7. [卓有成效的管理者](success/TheEffectiveExecutive.md)
-   8. [活法-稻盛和夫](success/LivingLaw.md)
+   7. [活法-稻盛和夫](success/LivingLaw.md)
 
 ## 思维方法
 1. 批判性思维
@@ -369,7 +368,8 @@
    2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
    3. [关键对话](bussiness/management/CrucialConversations.md)
    4. [OKR工作法](bussiness/management/okr.md)
-   5. [格鲁夫给经理人的第一课](bussiness/management/HighOutputManagement.md)
+   5. [卓有成效的管理者](bussiness/management/TheEffectiveExecutive.md)
+   6. [格鲁夫给经理人的第一课](bussiness/management/HighOutputManagement.md)
 2. 企业家精神
    1. [工业人的未来](bussiness/entrepreneur/the_future_of_industrial_man.md)
    2. [企业家](bussiness/entrepreneur/entrepreneur.md)
