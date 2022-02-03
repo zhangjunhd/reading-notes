@@ -392,7 +392,7 @@
 2. 经营案例
    1.  [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
    2.  [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
-   3.  [我曾走在崩溃的边缘-俞敏洪亲述新东方创业发展之路](biography/Yu.md)
+   3.  [我曾走在崩溃的边缘-俞敏洪亲述新东方创业发展之路](bussiness/management/Yu.md)
 3. 商业模式
    1. [透析盈利模式](bussiness/operation/ProfitModel.md)
    2. [维基经济学](bussiness/model/wikinomics.md)
