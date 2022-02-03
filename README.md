@@ -168,7 +168,6 @@
    1. [富兰克林自传](biography/Franklin.md)
    2. [褚时健传](biography/ChuShiJian.md)
    3. [颠覆者-周鸿祎自传](biography/ZhouHongYi.md)
-   4. [史玉柱自述-我的营销心得](biography/ShiYuZhu.md)
 3. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
@@ -442,7 +441,8 @@
    1. [定位](bussiness/marketing/positioning.md)
    2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
    3. [营销的本质](bussiness/marketing/CommunityBusinessMode.md)
-   4. [计算广告](bussiness/marketing/computational_advertising)
+   4. [史玉柱自述-我的营销心得](bussiness/marketing/ShiYuZhu.md)
+   5. [计算广告](bussiness/marketing/computational_advertising)
 
 # 产品经理
 1. 产品
