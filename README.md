@@ -28,6 +28,7 @@
   - [财务](#财务)
   - [公司管理](#公司管理)
   - [公司经营](#公司经营)
+  - [商业模式](#商业模式)
   - [市场营销](#市场营销)
 - [产品经理](#产品经理)
 - [软件技术](#软件技术)
@@ -392,24 +393,25 @@
    2.  [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
    3.  [我曾走在崩溃的边缘-俞敏洪亲述新东方创业发展之路](bussiness/management/Yu.md)
    4.  [创始人手记-季琦自传](bussiness/management/JiQi.md)
-3. 商业模式
-   1. [透析盈利模式](bussiness/operation/ProfitModel.md)
-   2. [维基经济学](bussiness/model/wikinomics.md)
-   3. [长尾理论2.0](bussiness/model/long_tail.md)
-   4. [智能商业](bussiness/model/IntelligentBusiness.md)
-   5. [智能战略](bussiness/model/SmartBusiness.md)
-   6. [指数型组织](bussiness/model/ExponentialOrganizations.md)
-   7. [创业无畏](bussiness/model/BOLD.md)
-   8. [平台革命](bussiness/model/PlatformRevolution.md)
-4. 社群与去中心化
+## 商业模式
+1. [透析盈利模式](bussiness/operation/ProfitModel.md)
+1. 共享经济
+   1. [维基经济学](bussiness/model/wikinomics.md)
+   2. [长尾理论2.0](bussiness/model/long_tail.md)
+   3. [智能商业](bussiness/model/IntelligentBusiness.md)
+   4. [智能战略](bussiness/model/SmartBusiness.md)
+   5. [指数型组织](bussiness/model/ExponentialOrganizations.md)
+   6. [创业无畏](bussiness/model/BOLD.md)
+   7. [平台革命](bussiness/model/PlatformRevolution.md)
+2. 社群与去中心化
    1. [链接](bussiness/model/linked.md)
    2. [隐形VISA](bussiness/model/visa.md)
    3. [小群效应](bussiness/model/SmallGroup.md)
-5. 技术与创新
+3. 技术与创新
    1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    2. [必然](bussiness/model/kk-The-Inevitable.md)
    3. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-6. 信息与“不确定性”
+4. 信息与“不确定性”
    1. [黑天鹅](bussiness/model/TheBlackSwan.md)
    2. [反脆弱](bussiness/model/Antifragile.md)
    3. [简单统计学](math/StandardDeviations.md)
