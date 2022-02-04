@@ -406,8 +406,8 @@
    7. [平台革命](bussiness/model/PlatformRevolution.md)
 3. 社群与去中心化
    1. [链接](bussiness/model/linked.md)
-   2.  [隐形VISA](bussiness/model/visa.md)
-   3.  [小群效应](bussiness/model/SmallGroup.md)
+   2. [隐形VISA](bussiness/model/visa.md)
+   3. [小群效应](bussiness/model/SmallGroup.md)
 4. 技术与创新
    1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    2. [必然](bussiness/model/kk-The-Inevitable.md)
