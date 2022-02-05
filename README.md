@@ -396,23 +396,24 @@
 
 ## 商业模式
 1. [透析盈利模式](bussiness/operation/ProfitModel.md)
-2. 共享经济
+2. 共享经济与指数型组织
    1. [维基经济学](bussiness/model/wikinomics.md)
    2. [长尾理论2.0](bussiness/model/long_tail.md)
-   3. [智能商业](bussiness/model/IntelligentBusiness.md)
-   4. [智能战略](bussiness/model/SmartBusiness.md)
-   5. [指数型组织](bussiness/model/ExponentialOrganizations.md)
-   6. [创业无畏](bussiness/model/BOLD.md)
-   7. [平台革命](bussiness/model/PlatformRevolution.md)
-3. 社群与去中心化
+3. 指数型组织与智能商业
+   1. [智能商业](bussiness/model/IntelligentBusiness.md)
+   2. [智能战略](bussiness/model/SmartBusiness.md)
+   3. [指数型组织](bussiness/model/ExponentialOrganizations.md)
+   4. [创业无畏](bussiness/model/BOLD.md)
+   5. [平台革命](bussiness/model/PlatformRevolution.md)
+4. 社群与去中心化
    1. [链接](bussiness/model/linked.md)
    2. [隐形VISA](bussiness/model/visa.md)
    3. [小群效应](bussiness/model/SmallGroup.md)
-4. 技术与创新
+5. 技术与创新
    1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    2. [必然](bussiness/model/kk-The-Inevitable.md)
    3. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-5. 信息与“不确定性”
+6. 信息与“不确定性”
    1. [黑天鹅](bussiness/model/TheBlackSwan.md)
    2. [反脆弱](bussiness/model/Antifragile.md)
    3. [简单统计学](math/StandardDeviations.md)
