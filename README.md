@@ -401,11 +401,11 @@
    2. [长尾理论2.0](bussiness/model/long_tail.md)
    3. [创客](bussiness/model/Makers.md)
    4. [指数型组织](bussiness/model/ExponentialOrganizations.md)
+   5. [平台革命](bussiness/model/PlatformRevolution.md)
 3. 互联网大数据与人工智能
    1. [智能商业](bussiness/model/IntelligentBusiness.md)
    2. [智能战略](bussiness/model/SmartBusiness.md)
    3. [创业无畏](bussiness/model/BOLD.md)
-   4. [平台革命](bussiness/model/PlatformRevolution.md)
 4. 社群与去中心化
    1. [链接](bussiness/model/linked.md)
    2. [隐形VISA](bussiness/model/visa.md)
