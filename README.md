@@ -406,7 +406,7 @@
    1. [智能商业](bussiness/model/IntelligentBusiness.md)
    2. [智能战略](bussiness/model/SmartBusiness.md)
    3. [创业无畏](bussiness/model/BOLD.md)
-4. 社群与去中心化
+4. 社群与网络
    1. [链接](bussiness/model/linked.md)
    2. [隐形VISA](bussiness/model/visa.md)
    3. [小群效应](bussiness/model/SmallGroup.md)
