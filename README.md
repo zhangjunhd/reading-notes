@@ -21,7 +21,7 @@
   - [人生价值与意义](#人生价值与意义)
   - [元认知方面](#元认知方面)
 - [历史](#历史)
-- [政治](#政治)
+- [政治经济](#政治经济)
 - [商业](#商业)
   - [综述](#综述)
   - [西方经济学](#西方经济学)
@@ -312,7 +312,7 @@
    2. [毛泽东传](history/mao-biography.md)
    3. [邓小平时代](history/deng.md)
 
-# 政治
+# 政治经济
 1. 公民社会
    1. [常识](politics/CommonSense.md)
 2. 阶层分析
@@ -320,13 +320,12 @@
    2. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
    3. [中国当代社会阶层分析](politics/china-society-level.md)
    4. [贫穷的本质](politics/PoorEconomics.md)
-3. 国际政治
+3. 世界政治与经济
    1. [世界秩序](politics/WorldOrder.md)
    2. [看世界](politics/see-the-world.md)
-4. 政治经济
-   1. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
-   2. [货币强权](politics/CurrencyPower.md)
-5. 中国经济
+   3. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
+   4. [货币强权](politics/CurrencyPower.md)
+4. 中国政治与经济
    1. [百年中国经济史笔记](politics/china-economic-modern-history.md)
    2. [亚洲大趋势](politics/aisa-big-trend.md)
    3. [解读中国经济](politics/china-economics.md)
