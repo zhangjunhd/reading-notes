@@ -323,8 +323,9 @@
 3. 世界政治与经济
    1. [世界秩序](politics/WorldOrder.md)
    2. [看世界](politics/see-the-world.md)
-   3. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
-   4. [货币强权](politics/CurrencyPower.md)
+   3. [世界经济入门](politics/intro-inter-eco.md)
+   4. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
+   5. [货币强权](politics/CurrencyPower.md)
 4. 中国政治与经济
    1. [百年中国经济史笔记](politics/china-economic-modern-history.md)
    2. [亚洲大趋势](politics/aisa-big-trend.md)
