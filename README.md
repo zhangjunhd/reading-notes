@@ -395,7 +395,7 @@
    4.  [创始人手记-季琦自传](bussiness/management/JiQi.md)
 
 ## 商业模式
-1. 商业网模式设计
+1. 商业模式设计
    1. [透析盈利模式](bussiness/operation/ProfitModel.md)
 2. 共享经济与指数型组织
    1. [维基经济学](bussiness/model/wikinomics.md)
