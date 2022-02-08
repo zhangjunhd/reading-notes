@@ -401,8 +401,9 @@
    1. [维基经济学](bussiness/model/wikinomics.md)
    2. [长尾理论2.0](bussiness/model/long_tail.md)
    3. [创客](bussiness/model/Makers.md)
-   4. [指数型组织](bussiness/model/ExponentialOrganizations.md)
-   5. [平台革命](bussiness/model/PlatformRevolution.md)
+   4. [闪电式扩张](bussiness/model/Blitzscaling.md)
+   5. [指数型组织](bussiness/model/ExponentialOrganizations.md)
+   6. [平台革命](bussiness/model/PlatformRevolution.md)
 3. 互联网大数据与人工智能
    1. [智能商业](bussiness/model/IntelligentBusiness.md)
    2. [智能战略](bussiness/model/SmartBusiness.md)
