@@ -155,7 +155,9 @@
    1.  [大众哲学](western_philosophy/PublicPhilosophy.md)
    2.  [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
    3.  [毛泽东选集](western_philosophy/mao.md)
-10. [论自然](western_philosophy/nature.md)
+10. 伦理学
+    1.  [论自然](western_philosophy/nature.md)
+    2.  [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
 
 # 文学
 1. 文学史
@@ -265,13 +267,12 @@
    3. [幸福](psychology/happiness.md)
 2. 意义与价值
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
-   2. [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-   3. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
-   4. [身份的焦虑](western_philosophy/status-anxiety.md)
-   5. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
-   6. [自卑与超越](psychology/what-life-should-mean-to-u.md)
-   7. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
-   8. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+   2. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
+   3. [身份的焦虑](western_philosophy/status-anxiety.md)
+   4. [少有人走的路-心智成熟的旅程](success/TheRoadLessTraveled.md)
+   5. [自卑与超越](psychology/what-life-should-mean-to-u.md)
+   6. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
+   7. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
 3. 人际与生活
    1. [蔡康永的说话之道](success/CaiKangYong.md)
    2. [你要如何衡量你的人生](success/HowWillYouMeasureYourLifeCH.md)
