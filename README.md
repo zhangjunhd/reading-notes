@@ -282,13 +282,14 @@
 1. 人格理论
    1. [荣格心理学入门](psychology/Jung-intro.md)
    2. [天资差异](psychology/GiftsDiffering.md)
-2. 认知科学
+2. 心理学
+   1. [心理学最佳入门（原书第5版）](psychology/Psychology5th.md)
+3. 认知科学
    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
-3. 行为学
+4. 社会心理学
    1. [乌合之众](psychology/Psychologie-des-Foules.md)
    2. [影响力](psychology/Influence.md)
-4. 进化心理学
-   1. [欲望的演化](psychology/TheEvolutionOfDesire.md)
+   3. [欲望的演化](psychology/TheEvolutionOfDesire.md)
 
 
 # 历史
