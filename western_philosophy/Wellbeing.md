@@ -36,7 +36,7 @@
 
 # 第一章 伦理与伦理学
 ## 伦理学这个名称
-伦理学这个名称是从西方引进的，译自西文ethics。在西方思想史上，亚里士多德第一次把ta ethika用作专门语并创立了伦理学这个学科。西塞罗用philosophia moralis来对应ta ethika，英语继承了这个用法而有moral philosophy这个名称。Moralis的意思和ethos差不多，细说，希腊词ethos的意思偏于性格、角色、性情，character。拉丁词moralis的意思偏于习俗、风度、customs、manners。不妨说，ethos更多与个人有关，moralis更多和人群有关。在近世英语里，moral和ethical有时可以替换使用，但有时两者有别，例如涉及两性关系人们更多说到morality，和工商业有关时更多说到ethics。从这些用法看，这两个词现在的含义与古时候的含义有点儿掉过来了：**the ethical多涉及社会人伦关系，morality更多和个人有关**。
+伦理学这个名称是从西方引进的，译自西文ethics。在西方思想史上，亚里士多德第一次把ta ethika用作专门语并创立了伦理学这个学科。西塞罗用philosophia moralis来对应ta ethika，英语继承了这个用法而有moral philosophy这个名称。Moralis的意思和ethos差不多，细说，希腊词ethos的意思偏于性格、角色、性情，character。拉丁词moralis的意思偏于习俗、风度、customs、manners。不妨说，ethos更多与个人有关，moralis更多和人群有关。在近世英语里，moral和ethical有时可以替换使用，但有时两者有别，例如涉及两性关系人们更多说到morality，和工商业有关时更多说到ethics。从这些用法看，这两个词现在的含义与古时候的含义有点儿掉过来了：the `ethical`多涉及社会人伦关系，`morality`更多和个人有关。
 
 孔子的思想一般被视作伦理学说。老子一般被解释为政治—伦理学说。宋明理学因应佛教挑战，吸收某些佛学和道家因素，发展出一套本体论—宇宙论—知识论，但一般认为其核心仍然是伦理—政治关怀，尊德性也始终被置于道问学之上。
 
