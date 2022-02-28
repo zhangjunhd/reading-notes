@@ -157,8 +157,9 @@
    3.  [毛泽东选集](western_philosophy/mao.md)
 10. 伦理学
     1.  [论自然](western_philosophy/nature.md)
-    2.  [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-    3.  [何为良好生活](western_philosophy/Wellbeing.md)
+    2.  [正义论](western_philosophy/Justice.md)
+    3.  [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
+    4.  [何为良好生活](western_philosophy/Wellbeing.md)
 
 # 文学
 1. 文学史
