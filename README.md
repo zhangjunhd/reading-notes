@@ -255,7 +255,8 @@
 
 ## 思维方法
 1. 批判性思维
-   1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
+   1. [超越感觉-批判性思考指南](psychology/BeyondFeelingsCN.md)
+      1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    2. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
    3. [专念](psychology/mindfulness.md)
 2. 系统性思维
