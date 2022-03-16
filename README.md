@@ -254,7 +254,7 @@
    7. [活法-稻盛和夫](success/LivingLaw.md)
 
 ## 思维方法
-1. 批判性思维
+1. 逻辑学＆修辞学＆批判性思维
    1. [批判性思维（原书第10版）](psychology/CriticalThinking.md)
    2. [超越感觉-批判性思考指南](psychology/BeyondFeelingsCN.md)
       1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
