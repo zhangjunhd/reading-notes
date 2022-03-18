@@ -264,7 +264,7 @@
    1. [逻辑表达：高效沟通的金字塔思维](psychology/pyramidCN.md)
 3. 系统性思维
    1. [系统之美](psychology/ThinkingInSystems.md)
-   2. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
+   2. [第五项修炼](psychology/TheFifthDiscipline.md)
 
 ## 人生价值与意义
 1. 如何处理消极情绪
