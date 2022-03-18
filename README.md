@@ -261,6 +261,7 @@
    3. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
    4. [专念](psychology/mindfulness.md)
 2. 结构化思维
+   1. [逻辑表达：高效沟通的金字塔思维](psychology/pyramidCN.md)
 3. 系统性思维
    1. [系统之美](bussiness/management/ThinkingInSystems.md)
    2. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
