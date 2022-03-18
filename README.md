@@ -260,7 +260,8 @@
       1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    3. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
    4. [专念](psychology/mindfulness.md)
-2. 系统性思维
+2. 结构化思维
+3. 系统性思维
    1. [系统之美](bussiness/management/ThinkingInSystems.md)
    2. [第五项修炼](bussiness/management/TheFifthDiscipline.md)
 
