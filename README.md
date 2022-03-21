@@ -395,7 +395,7 @@
    5. [从0到1](bussiness/startup/zero_to_one.md)
    6. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
    7. [重新理解创业](bussiness/startup/rethink-startup.md)
-   8. [颠覆者-周鸿祎自传](biography/ZhouHongYi.md)
+   8. [颠覆者-周鸿祎自传](bussiness/startup/ZhouHongYi.md)
    9.  [MR.HUA创业手记](bussiness/startup/hua.md)
 2. 经营案例
    1.  [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
