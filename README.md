@@ -394,7 +394,7 @@
    4. [创业就是要细分垄断](bussiness/startup/monopolize.md)
    5. [从0到1](bussiness/startup/zero_to_one.md)
    6. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
-   7. [重新理解创业](bussiness/startup/rethink-startup.md)
+   7. [重新理解创业-周航创业思考](bussiness/startup/rethink-startup.md)
    8. [颠覆者-周鸿祎自传](bussiness/startup/ZhouHongYi.md)
    9.  [MR.HUA创业手记](bussiness/startup/hua.md)
 2. 经营案例
