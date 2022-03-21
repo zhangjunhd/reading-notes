@@ -396,7 +396,8 @@
    6. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
    7. [重新理解创业-周航创业思考](bussiness/startup/rethink-startup.md)
    8. [颠覆者-周鸿祎自传](bussiness/startup/ZhouHongYi.md)
-   9.  [MR.HUA创业手记](bussiness/startup/hua.md)
+   9. [一往无前-雷军亲述小米热血10年](bussiness/startup/LeiJun.md)
+   10. [MR.HUA创业手记](bussiness/startup/hua.md)
 2. 经营案例
    1.  [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
    2.  [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
