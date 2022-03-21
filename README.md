@@ -172,7 +172,6 @@
 2. 传记
    1. [富兰克林自传](biography/Franklin.md)
    2. [褚时健传](biography/ChuShiJian.md)
-   3. [颠覆者-周鸿祎自传](biography/ZhouHongYi.md)
 3. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
@@ -396,7 +395,8 @@
    5. [从0到1](bussiness/startup/zero_to_one.md)
    6. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
    7. [重新理解创业](bussiness/startup/rethink-startup.md)
-   8.  [MR.HUA创业手记](bussiness/startup/hua.md)
+   8. [颠覆者-周鸿祎自传](biography/ZhouHongYi.md)
+   9.  [MR.HUA创业手记](bussiness/startup/hua.md)
 2. 经营案例
    1.  [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
    2.  [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
