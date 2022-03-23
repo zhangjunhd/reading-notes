@@ -388,21 +388,23 @@
 
 ## 公司经营
 1. 从0到1
-   1. [SaaS创业路线图](bussiness/operation/SaaS.md)
-   2. [精益创业](bussiness/startup/TheLeanStartup.md)
-   3. [创业时，不可不知的细节](bussiness/startup/details.md)
-   4. [创业就是要细分垄断](bussiness/startup/monopolize.md)
-   5. [从0到1](bussiness/startup/zero_to_one.md)
-   6. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
-   7. [重新理解创业-周航创业思考](bussiness/startup/rethink-startup.md)
-   8. [颠覆者-周鸿祎自传](bussiness/startup/ZhouHongYi.md)
-   9. [一往无前-雷军亲述小米热血10年](bussiness/startup/LeiJun.md)
-   10. [MR.HUA创业手记](bussiness/startup/hua.md)
+   1. [精益创业](bussiness/startup/TheLeanStartup.md)
+   2. [创业时，不可不知的细节](bussiness/startup/details.md)
+   3. [创业就是要细分垄断](bussiness/startup/monopolize.md)
+   4. [从0到1](bussiness/startup/zero_to_one.md)
+   5. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
+   6. [重新理解创业-周航创业思考](bussiness/startup/rethink-startup.md)
+   7. [颠覆者-周鸿祎自传](bussiness/startup/ZhouHongYi.md)
+   8. [一往无前-雷军亲述小米热血10年](bussiness/startup/LeiJun.md)
+   9.  [MR.HUA创业手记](bussiness/startup/hua.md)
 2. 经营案例
    1.  [周鸿祎自述-我的互联网方法论](bussiness/management/zhou_hong_yi.md)
    2.  [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
    3.  [我曾走在崩溃的边缘-俞敏洪亲述新东方创业发展之路](bussiness/management/Yu.md)
    4.  [创始人手记-季琦自传](bussiness/management/JiQi.md)
+3. 软件与SaaS
+   1. [SaaS创业路线图](bussiness/operation/SaaS.md)
+   2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
 
 ## 商业模式
 1. 商业模式设计
@@ -456,10 +458,9 @@
    7. [超级IP](bussiness/media/xtreme-ip.md)
 4. 市场营销
    1. [定位](bussiness/marketing/positioning.md)
-   2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
-   3. [营销的本质](bussiness/marketing/CommunityBusinessMode.md)
-   4. [史玉柱自述-我的营销心得](bussiness/marketing/ShiYuZhu.md)
-   5. [计算广告](bussiness/marketing/computational_advertising)
+   2. [营销的本质](bussiness/marketing/CommunityBusinessMode.md)
+   3. [史玉柱自述-我的营销心得](bussiness/marketing/ShiYuZhu.md)
+   4. [计算广告](bussiness/marketing/computational_advertising)
 
 # 产品经理
 1. 产品
