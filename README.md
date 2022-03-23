@@ -387,7 +387,7 @@
    5. [创新公司-皮克斯的启示](bussiness/management/CreativityInc.md)
 
 ## 公司经营
-1. 从0到1
+1. 创业指导
    1. [精益创业](bussiness/startup/TheLeanStartup.md)
    2. [创业时，不可不知的细节](bussiness/startup/details.md)
    3. [创业就是要细分垄断](bussiness/startup/monopolize.md)
