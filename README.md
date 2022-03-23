@@ -392,6 +392,7 @@
    2. [创业时，不可不知的细节](bussiness/startup/details.md)
    3. [创业就是要细分垄断](bussiness/startup/monopolize.md)
    4. [从0到1](bussiness/startup/zero_to_one.md)
+   5. [如何成为风险投资家](bussiness/startup/VC.md)
 2. 商业案例与传记
    1. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
    2. [重新理解创业-周航创业思考](bussiness/startup/rethink-startup.md)
