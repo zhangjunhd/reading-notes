@@ -402,7 +402,8 @@
    6.  [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
    7.  [我曾走在崩溃的边缘-俞敏洪亲述新东方创业发展之路](bussiness/management/Yu.md)
    8.  [创始人手记-季琦自传](bussiness/management/JiQi.md)
-   9.  [MR.HUA创业手记](bussiness/startup/hua.md)
+   9.  [零售的哲学-7-Eleven便利店创始人自述](bussiness/startup/7Eleven.md)
+   10. [MR.HUA创业手记](bussiness/startup/hua.md)
 3. 软件与SaaS
    1. [SaaS创业路线图](bussiness/operation/SaaS.md)
    2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
