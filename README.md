@@ -171,7 +171,6 @@
    2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
 2. 传记
    1. [富兰克林自传](biography/Franklin.md)
-   2. [褚时健传](biography/ChuShiJian.md)
 3. 杂文
    1. [人生大策略-胡适](literature/BigStrategy4Life.md)
    2. [人为什么活着-王小波](literature/why-do-people-live.md)
@@ -402,11 +401,12 @@
    6.  [一往无前-雷军亲述小米热血10年](bussiness/startup/LeiJun.md)
    7.  [互联网+小米案例版](bussiness/management/internet_plus_xiaomi.md)
    8.  [我曾走在崩溃的边缘-俞敏洪亲述新东方创业发展之路](bussiness/management/Yu.md)
-   9.  [创始人手记-季琦自传](bussiness/management/JiQi.md)
-   10. [史玉柱自述-我的营销心得](bussiness/marketing/ShiYuZhu.md)
-   11. [零售的哲学-7-Eleven便利店创始人自述](bussiness/startup/7Eleven.md)
-   12. [零售心理战-7-Eleven便利店创始人自述](bussiness/startup/7Eleven2.md)
-   13. [MR.HUA创业手记](bussiness/startup/hua.md)
+   9.  [褚时健传](biography/ChuShiJian.md)
+   10. [创始人手记-季琦自传](bussiness/management/JiQi.md)
+   11. [史玉柱自述-我的营销心得](bussiness/marketing/ShiYuZhu.md)
+   12. [零售的哲学-7-Eleven便利店创始人自述](bussiness/startup/7Eleven.md)
+   13. [零售心理战-7-Eleven便利店创始人自述](bussiness/startup/7Eleven2.md)
+   14. [MR.HUA创业手记](bussiness/startup/hua.md)
 3. 软件与SaaS
    1. [SaaS创业路线图](bussiness/operation/SaaS.md)
    2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
