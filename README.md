@@ -436,7 +436,7 @@
 6. 信息与“不确定性”
    1. [黑天鹅](bussiness/model/TheBlackSwan.md)
    2. [反脆弱](bussiness/model/Antifragile.md)
-   3. [简单统计学](math/StandardDeviations.md)
+   3. [简单统计学](bussiness/model/StandardDeviations.md)
    4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
 
 ## 市场营销
