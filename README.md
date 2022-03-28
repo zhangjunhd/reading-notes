@@ -262,6 +262,7 @@
 2. 结构化思维
    1. [逻辑表达：高效沟通的金字塔思维](psychology/pyramidCN.md)
    2. [结构思考力](psychology/StructureThinking.md)
+   3. [麦肯锡结构化战略思维](psychology/McKinseyStructureThinking.md)
 3. 系统性思维
    1. [系统之美](psychology/ThinkingInSystems.md)
    2. [第五项修炼](psychology/TheFifthDiscipline.md)
