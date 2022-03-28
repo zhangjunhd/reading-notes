@@ -257,7 +257,8 @@
    2. [超越感觉-批判性思考指南](psychology/BeyondFeelingsCN.md)
       1. [Beyond Feelings-A Guide to Critical Thinking](psychology/BeyondFeelings.md)
    3. [学会提问-批判性思维指南](psychology/AskingTheRightQuestions.md)
-   4. [专念](psychology/mindfulness.md)
+   4. [简单统计学](psychology/StandardDeviations.md)
+   5. [专念](psychology/mindfulness.md)
 2. 结构化思维
    1. [逻辑表达：高效沟通的金字塔思维](psychology/pyramidCN.md)
    2. [结构思考力](psychology/StructureThinking.md)
@@ -436,8 +437,7 @@
 6. 信息与“不确定性”
    1. [黑天鹅](bussiness/model/TheBlackSwan.md)
    2. [反脆弱](bussiness/model/Antifragile.md)
-   3. [简单统计学](bussiness/model/StandardDeviations.md)
-   4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
+   3. [重塑-信息经济的结构](bussiness/model/reshaping.md)
 
 ## 市场营销
 1. 传播学
