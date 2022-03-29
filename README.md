@@ -435,7 +435,8 @@
    1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    2. [必然](bussiness/model/kk-The-Inevitable.md)
    3. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
-   4. [创新简史](bussiness/model/A-brief-history-of-innovation.md)
+   4. [科技想要什么](bussiness/model/kk-WhatTechnologyWants.md)
+   5. [创新简史](bussiness/model/A-brief-history-of-innovation.md)
 6. 信息与“不确定性”
    1. [黑天鹅](bussiness/model/TheBlackSwan.md)
    2. [反脆弱](bussiness/model/Antifragile.md)
