@@ -310,7 +310,6 @@
 3. 通史
    1. [全球通史](history/a-global-history.md)
    2. [枪炮、病菌与钢铁](history/Guns-Germs-and-Steel.md)
-   3. [创新简史](history/A-brief-history-of-innovation.md)
 4. 中国古代史
    1. [万历十五年](history/1587.md)
    2. [乡土中国](history/native-china.md)
@@ -436,6 +435,7 @@
    1. [技术的本质](bussiness/model/TheNatureOfTechnology.md)
    2. [必然](bussiness/model/kk-The-Inevitable.md)
    3. [新经济，新规则](bussiness/model/kk-NewRulesForTheNewEconomy.md)
+   4. [创新简史](bussiness/model/A-brief-history-of-innovation.md)
 6. 信息与“不确定性”
    1. [黑天鹅](bussiness/model/TheBlackSwan.md)
    2. [反脆弱](bussiness/model/Antifragile.md)
