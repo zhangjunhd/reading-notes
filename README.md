@@ -409,13 +409,14 @@
    13. [零售心理战-7-Eleven便利店创始人自述](bussiness/startup/7Eleven2.md)
    14. [MR.HUA创业手记](bussiness/startup/hua.md)
 3. 软件与SaaS
-   1. [SaaS创业路线图](bussiness/operation/SaaS.md)
-   2. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
+   1. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
+   2. [SaaS创业路线图](bussiness/operation/SaaS.md)
+   3. [SaaS商业实战](bussiness/operation/SaaS-Action.md)
 
 ## 商业模式
 1. 商业模式设计
    1. [商业模式新生代](bussiness/model/BusinessModelGeneration.md)
-   2. [透析盈利模式](bussiness/operation/ProfitModel.md)
+   2. [透析盈利模式](bussiness/model/ProfitModel.md)
 2. 共享经济与指数型组织
    1. [维基经济学](bussiness/model/wikinomics.md)
    2. [长尾理论2.0](bussiness/model/long_tail.md)
