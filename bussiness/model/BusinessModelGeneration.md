@@ -33,8 +33,7 @@
 8. `重要合作Key Partnerships`：有些业务要外包，而另外一些资源需要从企业外部获得。
 9. `成本结构Cost Structure`：商业模式上述要素所引发的成本构成。
 
-
-
+![](BusinessModelGeneration01.png)
 
 
 
