@@ -410,8 +410,8 @@
    14. [MR.HUA创业手记](bussiness/startup/hua.md)
 3. 软件与SaaS
    1. [跨越鸿沟](bussiness/marketing/CrossingTheChasm.md)
-   2. [SaaS创业路线图](bussiness/operation/SaaS.md)
-   3. [SaaS商业实战](bussiness/operation/SaaS-Action.md)
+   2. [SaaS创业路线图](bussiness/saas/SaaS.md)
+   3. [SaaS商业实战](bussiness/saas/SaaS-Action.md)
 
 ## 商业模式
 1. 商业模式设计
