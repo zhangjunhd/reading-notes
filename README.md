@@ -7,11 +7,18 @@
   - [计算机](#计算机)
   - [人工智能](#人工智能)
 - [东方哲学](#东方哲学)
-  - [通史](#通史)
+  - [通识](#通识-1)
   - [儒](#儒)
   - [释](#释)
   - [道](#道)
 - [西方哲学](#西方哲学)
+  - [概论](#概论)
+  - [古希腊](#古希腊)
+  - [康德](#康德)
+  - [叔本华&尼采&佛洛依德&现象学与存在主义](#叔本华尼采佛洛依德现象学与存在主义)
+  - [后现代主义](#后现代主义)
+  - [辩证法](#辩证法)
+  - [伦理学](#伦理学)
 - [文学](#文学)
 - [艺术](#艺术)
 - [生活](#生活)
@@ -88,7 +95,7 @@
 9.  [生命3.0](ai/Life3.md)
 
 # 东方哲学
-## 通史
+## 通识
 1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
 
 ## 儒
@@ -124,43 +131,45 @@
 3. [庄子的快活](eastern_philosophy/zhuang_zi_de_kuai_huo.md)
 
 # 西方哲学
-1. 概论
-   1. [苏菲的世界](western_philosophy/SophieWorld.md)
-   2. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
-2. 古希腊
-   1. [生命安宁-斯多葛哲学的生活艺术](western_philosophy/A-guide-to-the-good-life.md)
-   2. [哲学的指引-斯多葛哲学的生活之道](western_philosophy/How-to-Be-a-Stoic.md)
-   3. [哲学谈话录-爱比克泰德](western_philosophy/Epictetus.md)
-3. 康德
-   1. [康德三大批判合集](western_philosophy/kant.md)
-4. 叔本华
-   1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
-   2. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
-   3. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
-   4. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
-5. 尼采
-   1. [作为教育家的叔本华](western_philosophy/SchopenhauerAlsErzieher.md)
-   2. [尼采：在世纪的转折点上](western_philosophy/FriedrichNietzsche.md)
-6. 佛洛依德
-   1. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
-7. 存在主义
-   1. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
-   2. [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
-   3. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
-   4. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
-   5. [存在主义心理治疗](psychology/Existential-Psychology.md)
-8. 结构主义
-   1. [结构主义](western_philosophy/structuralism.md)
-   2. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
-9. 辩证法
-   1.  [大众哲学](western_philosophy/PublicPhilosophy.md)
-   2.  [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
-   3.  [毛泽东选集](western_philosophy/mao.md)
-10. 伦理学
-    1.  [论自然](western_philosophy/nature.md)
-    2.  [正义论](western_philosophy/Justice.md)
-    3.  [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
-    4.  [何为良好生活](western_philosophy/Wellbeing.md)
+## 概论
+1. [苏菲的世界](western_philosophy/SophieWorld.md)
+2. [咖啡与哲学](western_philosophy/CoffeeAndPhilosophy.md)
+
+## 古希腊
+1. [生命安宁-斯多葛哲学的生活艺术](western_philosophy/A-guide-to-the-good-life.md)
+2. [哲学的指引-斯多葛哲学的生活之道](western_philosophy/How-to-Be-a-Stoic.md)
+3. [哲学谈话录-爱比克泰德](western_philosophy/Epictetus.md)
+
+## 康德
+1. [康德三大批判合集](western_philosophy/kant.md)
+## 叔本华&尼采&佛洛依德&现象学与存在主义
+1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
+2. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
+3. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
+4. [叔本华美学随笔](western_philosophy/Schopenhauer4.md)
+5. [作为教育家的叔本华](western_philosophy/SchopenhauerAlsErzieher.md)
+6. [尼采：在世纪的转折点上](western_philosophy/FriedrichNietzsche.md)
+7. [精神分析引论](psychology/freud-jinshenfenxiyinlun.md)
+8. [存在主义咖啡馆](western_philosophy/At-the-Existentialist-Cafe.md)
+9.  [现象学-一部历史的和批评的导论](western_philosophy/Introduction2Phenomenology.md)
+10. [本质与起源-对皮尔士《实用化主义问题》的现象学诠释](western_philosophy/Essence-and-Origin.md)
+11. [本质与境况-阿伦特“积极生活”现象学的阐释](western_philosophy/Essence-and-Condition.md)
+12. [存在主义心理治疗](psychology/Existential-Psychology.md)
+
+## 后现代主义
+1. [结构主义](western_philosophy/structuralism.md)
+2. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
+
+## 辩证法
+1.  [大众哲学](western_philosophy/PublicPhilosophy.md)
+2.  [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
+3.  [毛泽东选集](western_philosophy/mao.md)
+
+## 伦理学
+1.  [论自然](western_philosophy/nature.md)
+2.  [正义论](western_philosophy/Justice.md)
+3.  [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
+4.  [何为良好生活](western_philosophy/Wellbeing.md)
 
 # 文学
 1. 文学史
