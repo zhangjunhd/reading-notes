@@ -15,7 +15,7 @@
   - [概论](#概论)
   - [古希腊](#古希腊)
   - [康德](#康德)
-  - [叔本华&尼采&佛洛依德&现象学与存在主义](#叔本华尼采佛洛依德现象学与存在主义)
+  - [叔本华，尼采，佛洛依德与存在主义](#叔本华尼采佛洛依德与存在主义)
   - [后现代主义](#后现代主义)
   - [辩证法](#辩证法)
   - [伦理学](#伦理学)
@@ -29,6 +29,9 @@
   - [心理学，行为学与认知科学](#心理学行为学与认知科学)
 - [历史](#历史)
 - [政治经济](#政治经济)
+  - [公民社会与阶层分析](#公民社会与阶层分析)
+  - [世界政治与经济](#世界政治与经济)
+  - [中国政治与经济](#中国政治与经济)
 - [商业](#商业)
   - [综述](#综述)
   - [西方经济学](#西方经济学)
@@ -95,6 +98,8 @@
 9.  [生命3.0](ai/Life3.md)
 
 # 东方哲学
+[豆瓣书单](https://www.douban.com/doulist/149626077/)
+
 ## 通识
 1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
 
@@ -142,7 +147,10 @@
 
 ## 康德
 1. [康德三大批判合集](western_philosophy/kant.md)
-## 叔本华&尼采&佛洛依德&现象学与存在主义
+
+## 叔本华，尼采，佛洛依德与存在主义
+[豆瓣书单](https://www.douban.com/doulist/146297712/)
+
 1. [叔本华人生的智慧](western_philosophy/Schopenhauer1.md)
 2. [叔本华论道德与自由](western_philosophy/Schopenhauer2.md)
 3. [叔本华思想随笔](western_philosophy/Schopenhauer3.md)
@@ -161,11 +169,15 @@
 2. [福柯与性](western_philosophy/FoucaultAndSexuality.md)
 
 ## 辩证法
+[豆瓣书单](https://www.douban.com/doulist/147486614/)
+
 1.  [大众哲学](western_philosophy/PublicPhilosophy.md)
 2.  [《自然辩证法》导读](western_philosophy/DialecticsOfNatureGuide.md)
 3.  [毛泽东选集](western_philosophy/mao.md)
 
 ## 伦理学
+[豆瓣书单](https://www.douban.com/doulist/148875797/)
+
 1.  [论自然](western_philosophy/nature.md)
 2.  [正义论](western_philosophy/Justice.md)
 3.  [自私的德性](western_philosophy/TheVirtueOfSelfishness.md)
@@ -235,6 +247,8 @@
 
 # 认知
 ## 效率习惯与方法
+[豆瓣书单](https://www.douban.com/doulist/148319654/)
+
 1. 如何克服拖延症
    1. [拖延心理学](success/Procrastination.md)
 2. 如何培养习惯
@@ -262,6 +276,8 @@
    7. [活法-稻盛和夫](success/LivingLaw.md)
 
 ## 思维方法
+[豆瓣书单](https://www.douban.com/doulist/149192795/)
+
 1. 逻辑学＆修辞学＆批判性思维
    1. [批判性思维（原书第10版）](psychology/CriticalThinking.md)
    2. [超越感觉-批判性思考指南](psychology/BeyondFeelingsCN.md)
@@ -278,6 +294,8 @@
    2. [第五项修炼](psychology/TheFifthDiscipline.md)
 
 ## 人生价值与意义
+[豆瓣书单](https://www.douban.com/doulist/143404045/)
+
 1. 如何处理消极情绪
    1. [幸福是陷阱?](psychology/the-happiness-trap.md)
    2. [走出抑郁症](psychology/depression.md)
@@ -331,31 +349,36 @@
    3. [邓小平时代](history/deng.md)
 
 # 政治经济
-1. 公民社会
-   1. [常识](politics/CommonSense.md)
-2. 阶层分析
-   1. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
-   2. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
-   3. [中国当代社会阶层分析](politics/china-society-level.md)
-   4. [贫穷的本质](politics/PoorEconomics.md)
-3. 世界政治与经济
-   1. [世界秩序](politics/WorldOrder.md)
-   2. [看世界](politics/see-the-world.md)
-   3. [世界经济入门](politics/intro-inter-eco.md)
-   4. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
-   5. [货币强权](politics/CurrencyPower.md)
-4. 中国政治与经济
-   1. [百年中国经济史笔记](politics/china-economic-modern-history.md)
-   2. [亚洲大趋势](politics/aisa-big-trend.md)
-   3. [解读中国经济](politics/china-economics.md)
-   4. [城市化转型与土地陷阱](politics/urbanization.md)
-   5. [大国大城](politics/great-nation-needs-bigger-city.md)
-   6. [结构性改革](politics/huangqifan.md)
-   7. [置身事内-中国政府与经济发展](politics/china-gov-eco.md)
-   8.  郑永年
-        1. [未来30年](politics/next30years.md)
-        2. [未来30年2](politics/next30years2.md)
-        3. [不确定的未来](politics/UncertainFuture.md)
+## 公民社会与阶层分析
+1. [常识](politics/CommonSense.md)
+2. [有闲阶级论](politics/The-Theory-of-the-Leisure-Class.md)
+3. [新教伦理与资本主义精神](western_philosophy/kapitalismus.md)
+4. [中国当代社会阶层分析](politics/china-society-level.md)
+5. [贫穷的本质](politics/PoorEconomics.md)
+
+## 世界政治与经济
+[豆瓣书单](https://www.douban.com/doulist/148558040/)
+
+1. [世界秩序](politics/WorldOrder.md)
+2. [看世界](politics/see-the-world.md)
+3. [世界经济入门](politics/intro-inter-eco.md)
+4. [21世纪资本论](politics/Capital-in-the-Twenty-First-Century.md)
+5. [货币强权](politics/CurrencyPower.md)
+
+## 中国政治与经济
+[豆瓣书单](https://www.douban.com/doulist/147486759/)
+
+1. [百年中国经济史笔记](politics/china-economic-modern-history.md)
+2. [亚洲大趋势](politics/aisa-big-trend.md)
+3. [解读中国经济](politics/china-economics.md)
+4. [城市化转型与土地陷阱](politics/urbanization.md)
+5. [大国大城](politics/great-nation-needs-bigger-city.md)
+6. [结构性改革](politics/huangqifan.md)
+7. [置身事内-中国政府与经济发展](politics/china-gov-eco.md)
+8.  郑永年
+     1. [未来30年](politics/next30years.md)
+     2. [未来30年2](politics/next30years2.md)
+     3. [不确定的未来](politics/UncertainFuture.md)
 
 
 # 商业
@@ -363,6 +386,8 @@
 1. [认识商业](bussiness/bussiness.md)
 
 ## 西方经济学
+[豆瓣书单](https://www.douban.com/doulist/147926958/)
+
 1. [经济学通识课](economics/a-little-history-of-economics.md)
 2. [经济学的思维方式](economics/BasicEconomics.md)
 3. [写给企业家的经济学](economics/economics4entrepreneur.md)
@@ -379,6 +404,8 @@
 5. [巴菲特致股东的信](finance/BuffettLetter.md)
 
 ## 公司管理
+[豆瓣书单](https://www.douban.com/doulist/148111758/)
+
 1. 管理理论
    1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
    2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
@@ -426,6 +453,8 @@
    3. [SaaS商业实战](bussiness/saas/SaaS-Action.md)
 
 ## 商业模式
+[豆瓣书单](https://www.douban.com/doulist/148514613/)
+
 1. 商业模式设计
    1. [商业模式新生代](bussiness/model/BusinessModelGeneration.md)
    2. [透析盈利模式](bussiness/model/ProfitModel.md)
