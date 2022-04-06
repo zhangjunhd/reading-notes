@@ -1,13 +1,12 @@
-![cover](https://img9.doubanio.com/view/subject/s/public/s5995605.jpg)
+![cover](https://img2.doubanio.com/view/subject/s/public/s33590593.jpg)
 
-    作者: 李智晖
-    出版社: 清华大学出版社
-    出版年: 2009-1
-    页数: 177
-    定价: 25.00元
-    ISBN: 9787302190844
+    作者 王旭良
+    类别 出版 / 非虚构
+    出版社 电子工业出版社 / 2020-02
+    字数约 151,000 字
+    ISBN 9787121374142
 
-[豆瓣链接](https://book.douban.com/subject/3558780/)
+[豆瓣链接](https://book.douban.com/subject/34940818/)
 
 
 
