@@ -8,7 +8,7 @@
   - [人工智能](#人工智能)
 - [东方哲学](#东方哲学)
   - [通识](#通识-1)
-  - [儒](#儒)
+  - [儒学](#儒学)
   - [释](#释)
   - [道](#道)
 - [西方哲学](#西方哲学)
@@ -101,7 +101,7 @@
 ## 通识
 1. [中国哲学简史](eastern_philosophy/zhong_guo_zhe_xue_jian_shi.md)
 
-## 儒
+## 儒学
 1. 四书
    1. [原本大学微言](eastern_philosophy/yuan_ben_da_xue_wei_yan.md)
    2. [论语别裁](eastern_philosophy/lun_yu_bie_cai.md)
