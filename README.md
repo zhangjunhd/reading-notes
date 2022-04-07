@@ -349,7 +349,7 @@
    2. [创业时，不可不知的细节](bussiness/startup/details.md)
    3. [创业就是要细分垄断](bussiness/startup/monopolize.md)
    4. [从0到1](bussiness/startup/zero_to_one.md)
-   5. [创业融资:从天使轮到IPO上市](bussiness/startup/VC.md)
+   5. [精益创业实战](bussiness/startup/RunningLean.md)
 2. 商业案例与传记
    1. [成为乔布斯](bussiness/startup/BecomingSteveJobs.md)
    2. [创业维艰](bussiness/startup/TheHardThingAboutHardThings.md)
