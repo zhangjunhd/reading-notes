@@ -19,9 +19,6 @@
   - [后现代主义](#后现代主义)
   - [辩证法](#辩证法)
   - [伦理学](#伦理学)
-- [文学](#文学)
-- [艺术](#艺术)
-- [生活](#生活)
 - [认知](#认知)
   - [效率习惯与方法](#效率习惯与方法)
   - [思维方法](#思维方法)
@@ -43,6 +40,9 @@
 - [产品经理](#产品经理)
 - [软件技术](#软件技术)
 - [机器学习](#机器学习)
+- [文学](#文学)
+- [艺术](#艺术)
+- [生活](#生活)
 
 # 通识
 ## 牛津通识读本
@@ -193,68 +193,6 @@
    - >人在生命中的任何时候，不管碰到什么问题，都能自由地思考或者逃避思考。思考需要完全集中注意力。人可以集中精神，完全、主动、有目的地认识现实；也可以不集中精神，让他自己在半清醒的恍惚中心荡神驰，只对当前的任何偶然刺激作出反应，受这种感知机制碰巧产生的任何随意的联想关系控制。人类的基本罪恶，亦即其他所有罪恶的来源，就是不集中精神的行为。任他自己在半清醒的恍惚中心荡神驰，只对当前的任何偶然刺激作出反应。客观主义伦理学的三个重要价值是理性、目标和自尊，这三种价值一起构成通向终极价值（亦即生命）的途径，并使终极价值得以实现。与这三个价值相对应的美德是：合理性、创造性和自豪。当人体验到那种“自身即目的”的纯粹幸福时，那种幸福让人想到“这种生活值得过一回”。
 4. [何为良好生活](western_philosophy/Wellbeing.md)
    - >1.亚里士多德把人类活动分成三类：理论活动（不改变对象）、实践（改变对象，目的在过程中）、制作（目的在过程之外）。2.人际理解远不止是一种智力活动，而首先是一种伦理态度，视对方为理性存在者的态度。理性首先是一种态度，诞生于互相理解的努力之际。3.功效主义理论是后果论的，什么行为是善好的，要看这个行为带来什么后果。道义论注重行为所依的原则和行动者的动机(只要我用心良善，我就是道德的，我的行为产生什么后果全无所谓)。4.我们努力过上一种“道德的生活”，不是因为应然世界始终应当压倒实然的世界，而在于“道德上的应然”是生活中的深层道理，道德性给予生存以深度。5.个人的感知、欲望等，经由礼义法度的调教，形成个人观念行为的整体(integrity),在这个整体中，一个人的种种本能、感觉、欲望相互协调支持。
-
-# 文学
-1. 文学史
-   1. 木心文学回忆录
-      1. [古代之卷](literature/muxin1.md)
-      2. [中世纪—十七世纪之卷](literature/muxin2.md)
-      3. [十八—十九世纪之卷](literature/muxin3.md)
-      4. [二十世纪之卷](literature/muxin4.md)
-   2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
-2. 传记
-   1. [富兰克林自传](biography/Franklin.md)
-3. 杂文
-   1. [人生大策略-胡适](literature/BigStrategy4Life.md)
-   2. [人为什么活着-王小波](literature/why-do-people-live.md)
-   3. [伟大是熬出来的-冯仑](literature/Fenglun.md)
-   4. [有话说-崔永元](literature/cui.md)
-   5. 梁漱溟
-      1. [中国最后一个大儒](literature/liang_shu_min.md)
-      2. [这个世界会好吗-梁漱溟晚年口述](literature/liang_shu_min_wan_nian_kou_shu.md)
-      3. [人生的三路向:宗教、道德与人生](literature/ren_sheng_de_san_lu_xiang.md)
-      4. [梁漱溟先生论儒佛道](literature/liang_shu_min_xian_sheng_lun_ru_fo_dao.md)
-      5. [人心与人生](literature/renxin_yu_rensheng.md)
-   6. 南怀瑾
-       1. [南怀瑾谈性格与人生](literature/nan1.md)
-       2. [南怀瑾谈生活与生存](literature/nan2.md)
-   7. 冯唐
-      1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
-      2. [无所畏](literature/fengtang-not-to-matter.md)
-      3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
-      4. [三十六大](literature/fengtang-36-messages-for-life.md)
-      5. [成事](literature/fengtang-GettingThingsDone.md)
-4. 阿城
-   1. [棋王](literature/Chess.md)
-5. 加缪
-   1. [快乐的死](literature/LaMortHeureuse.md)
-   2. [异乡人](literature/L'Etranger.md)
-   3. [西西弗斯神话](literature/The-Myth-of-Sysyphus.md)
-6. 黑塞
-   1. [德米安](literature/Demian.md)
-   2. [悉达多](literature/Siddhartha.md)
-7. 歌德
-   1. [少年维特的烦恼](literature/Die-Leiden-des-jungen-Werthers.md)
-   2. [浮士德](literature/Faust.md)
-8.  卡夫卡
-    1. [变形记](literature/DieVerwandlung.md)
-9.  反乌托邦
-    1. [等待戈多](literature/En-attendant-Godot.md)
-    2. [1984](literature/NineteenEightyFour.md)
-    3. [美丽新世界](literature/BraveNewWorld.md)
-
-
-
-# 艺术
-1. [古典主义、浪漫主义、现实主义与现代主义的比较](art/genre.md)
-1. [我心自由-杜尚传](art/duchamp.md)
-2. [光影中遇见伦勃朗](art/rembrandt.md)
-
-# 生活
-1. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
-2. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
-3. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
-
 
 # 认知
 ## 效率习惯与方法
@@ -660,3 +598,62 @@
    2. [Python自然语言处理](ml/pythonNLP.md)
 3. 深度学习
    1. [Fundamentals of Deep Learning](ml/FundamentalsOfDeepLearning.md)
+
+# 文学
+1. 文学史
+   1. 木心文学回忆录
+      1. [古代之卷](literature/muxin1.md)
+      2. [中世纪—十七世纪之卷](literature/muxin2.md)
+      3. [十八—十九世纪之卷](literature/muxin3.md)
+      4. [二十世纪之卷](literature/muxin4.md)
+   2. [灵魂之旅-中国当代文学的生存意境](literature/a-spiritual-journey.md)
+2. 传记
+   1. [富兰克林自传](biography/Franklin.md)
+3. 杂文
+   1. [人生大策略-胡适](literature/BigStrategy4Life.md)
+   2. [人为什么活着-王小波](literature/why-do-people-live.md)
+   3. [伟大是熬出来的-冯仑](literature/Fenglun.md)
+   4. [有话说-崔永元](literature/cui.md)
+   5. 梁漱溟
+      1. [中国最后一个大儒](literature/liang_shu_min.md)
+      2. [这个世界会好吗-梁漱溟晚年口述](literature/liang_shu_min_wan_nian_kou_shu.md)
+      3. [人生的三路向:宗教、道德与人生](literature/ren_sheng_de_san_lu_xiang.md)
+      4. [梁漱溟先生论儒佛道](literature/liang_shu_min_xian_sheng_lun_ru_fo_dao.md)
+      5. [人心与人生](literature/renxin_yu_rensheng.md)
+   6. 南怀瑾
+       1. [南怀瑾谈性格与人生](literature/nan1.md)
+       2. [南怀瑾谈生活与生存](literature/nan2.md)
+   7. 冯唐
+      1. [活着活着就老了-十信](literature/fengtang-ten-belief.md)
+      2. [无所畏](literature/fengtang-not-to-matter.md)
+      3. [在宇宙间不易被风吹散](literature/fengtang-buddhist-mood.md)
+      4. [三十六大](literature/fengtang-36-messages-for-life.md)
+      5. [成事](literature/fengtang-GettingThingsDone.md)
+4. 阿城
+   1. [棋王](literature/Chess.md)
+5. 加缪
+   1. [快乐的死](literature/LaMortHeureuse.md)
+   2. [异乡人](literature/L'Etranger.md)
+   3. [西西弗斯神话](literature/The-Myth-of-Sysyphus.md)
+6. 黑塞
+   1. [德米安](literature/Demian.md)
+   2. [悉达多](literature/Siddhartha.md)
+7. 歌德
+   1. [少年维特的烦恼](literature/Die-Leiden-des-jungen-Werthers.md)
+   2. [浮士德](literature/Faust.md)
+8.  卡夫卡
+    1. [变形记](literature/DieVerwandlung.md)
+9.  反乌托邦
+    1. [等待戈多](literature/En-attendant-Godot.md)
+    2. [1984](literature/NineteenEightyFour.md)
+    3. [美丽新世界](literature/BraveNewWorld.md)
+
+# 艺术
+1. [古典主义、浪漫主义、现实主义与现代主义的比较](art/genre.md)
+1. [我心自由-杜尚传](art/duchamp.md)
+2. [光影中遇见伦勃朗](art/rembrandt.md)
+
+# 生活
+1. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
+2. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
+3. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
