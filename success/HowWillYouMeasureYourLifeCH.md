@@ -11,8 +11,7 @@
     装帧: 平装
     ISBN: 9787559620668
 
-- [豆瓣](https://book.douban.com/subject/30218245/)
-- [How Will You Measure Your Life](HowWillYouMeasureYourLife.md)
+- [豆瓣链接](https://book.douban.com/subject/30218245/)
 
 ---
 
