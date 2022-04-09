@@ -42,7 +42,6 @@
 - [机器学习](#机器学习)
 - [文学](#文学)
 - [艺术](#艺术)
-- [生活](#生活)
 
 # 通识
 ## 牛津通识读本
@@ -232,10 +231,13 @@
    5. [自卑与超越](psychology/what-life-should-mean-to-u.md)
    6. [妈妈及生命的意义](psychology/MommaAndTheMeaningOfLife.md)
    7. [叔本华的治疗](psychology/TheSchopenhauerCure.md)
+   8. [你要如何衡量你的人生](success/HowWillYouMeasureYourLifeCH.md)
+      - 英文版：[How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
 3. 人际与生活
    1. [蔡康永的说话之道](success/CaiKangYong.md)
-   2. [你要如何衡量你的人生](success/HowWillYouMeasureYourLifeCH.md)
-      - 英文版：[How Will You Measure Your Life](success/HowWillYouMeasureYourLife.md)
+   2. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
+   3. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
+   4. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
 
 ## 心理学，行为学与认知科学
 1. 人格理论
@@ -565,8 +567,3 @@
 1. [古典主义、浪漫主义、现实主义与现代主义的比较](art/genre.md)
 1. [我心自由-杜尚传](art/duchamp.md)
 2. [光影中遇见伦勃朗](art/rembrandt.md)
-
-# 生活
-1. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
-2. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
-3. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
