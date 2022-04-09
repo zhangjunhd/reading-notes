@@ -176,9 +176,7 @@
 
 # 认知
 ## 效率习惯与方法
-1. 如何克服拖延症
-   1. [拖延心理学](success/Procrastination.md)
-2. 如何培养习惯
+1. 如何培养习惯
    1. [意志力](psychology/willpower.md)
    2. [自控力](psychology/TheWillpowerInstinct.md)
    3. [棉花糖实验](psychology/TheMarshmallowTest.md)
@@ -186,14 +184,14 @@
    5. [练习的心态](success/the-practicing-mind.md)
    6. [刻意练习](success/PEAK.md)
    7. [习惯的力量](success/ThePowerOfHabit.md)
-3. 如何管理时间
+2. 如何管理时间
    1. [尽管去做——无压工作的艺术](success/GTD.md)
    2. [奇特的一生](success/Lyubishchev.md)
-4. 学习方法
+3. 学习方法
    1. [学习之道](success/A-Mind-for-Numbers.md)
    2. [如何高效学习](success/LearnMoreStudyLess.md)
    3. [如何阅读一本书](success/HowToReadABook.md)
-5. 高效生活与工作
+4. 高效生活与工作
    1. [暗时间](success/DarkTime.md)
    2. [请停止无效努力](success/please-stop-trying.md)
    3. [高效能人士的七个习惯](success/7Habits.md)
@@ -220,9 +218,10 @@
 
 ## 人生价值与意义
 1. 如何处理消极情绪
-   1. [幸福是陷阱?](psychology/the-happiness-trap.md)
-   2. [走出抑郁症](psychology/depression.md)
-   3. [幸福](psychology/happiness.md)
+   1. [拖延心理学](success/Procrastination.md)
+   2. [幸福是陷阱?](psychology/the-happiness-trap.md)
+   3. [走出抑郁症](psychology/depression.md)
+   4. [幸福](psychology/happiness.md)
 2. 意义与价值
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
