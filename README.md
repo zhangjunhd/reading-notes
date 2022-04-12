@@ -372,8 +372,6 @@
    3. [SaaS商业实战](bussiness/saas/SaaS-Action.md)
 
 ## 商业模式
-[豆瓣书单](https://www.douban.com/doulist/148514613/)
-
 1. 商业模式设计
    1. [商业模式新生代](bussiness/model/BusinessModelGeneration.md)
    2. [透析盈利模式](bussiness/model/ProfitModel.md)
