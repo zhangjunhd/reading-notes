@@ -325,8 +325,6 @@
 5. [巴菲特致股东的信](finance/BuffettLetter.md)
 
 ## 公司管理
-[豆瓣书单](https://www.douban.com/doulist/148111758/)
-
 1. 管理理论
    1. [管理的常识](bussiness/management/CommonSenseOfManagement.md)
    2. [领导梯队](bussiness/management/TheLeadershipPipeline.md)
