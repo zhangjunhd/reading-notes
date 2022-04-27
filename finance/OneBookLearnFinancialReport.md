@@ -65,7 +65,9 @@
 
 一个最基本的要求，就是**保证股东投入的本金不会遭到任何损失**。我们必须要知道，本金现在都成了什么，它们现在的价值如何，是不是还保持着原来的价值。
 
-![snip20190212_94.png](OneBookLearnFinancialReport1.png | width=100)
+![snip20190212_94.png](OneBookLearnFinancialReport1.png)
+
+<img src="snip20190212_94.png" alt="drawing" width="200"/>
 
 ### 流动资产包含哪些项目？
 上边是一张完整的`资产负债表`。这张表被分为左右两个部分：左边说了一件事——`资产`，右边说了两件事——`负债`和`股东权益`。
