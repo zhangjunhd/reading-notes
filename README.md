@@ -32,7 +32,7 @@
 - [商业](#商业)
   - [综述](#综述)
   - [西方经济学](#西方经济学)
-  - [财务](#财务)
+  - [公司财务](#公司财务)
   - [公司管理](#公司管理)
   - [公司经营](#公司经营)
   - [商业模式](#商业模式)
@@ -315,7 +315,7 @@
 6. [预测-经济、周期与市场泡沫](economics/Predict.md)
 7. [创新-经济增长的奇迹](economics/TheFreeMarketInnovationMachine.md)
 
-## 财务
+## 公司财务
 1. [一本书读懂财报](finance/OneBookLearnFinancialReport.md)
 2. [一本书读懂中国税](finance/OneBookLearnChinaTax.md)
 3. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
