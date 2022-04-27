@@ -132,8 +132,6 @@
 
 ## 利润表
 ### 获取利润的第一步是什么？
-![snip20190212_95.png](OneBookLearnFinancialReport2.png)
-
 <img src="OneBookLearnFinancialReport2.png" width="700"/>
 
 ### 获取利润的第二步是什么？
