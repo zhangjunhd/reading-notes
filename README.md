@@ -307,8 +307,6 @@
 1. [认识商业](bussiness/bussiness.md)
 
 ## 西方经济学
-[豆瓣书单](https://www.douban.com/doulist/147926958/)
-
 1. [经济学通识课](economics/a-little-history-of-economics.md)
 2. [经济学的思维方式](economics/BasicEconomics.md)
 3. [写给企业家的经济学](economics/economics4entrepreneur.md)
