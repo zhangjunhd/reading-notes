@@ -134,6 +134,8 @@
 ### 获取利润的第一步是什么？
 ![snip20190212_95.png](OneBookLearnFinancialReport2.png)
 
+<img src="OneBookLearnFinancialReport2.png" width="700"/>
+
 ### 获取利润的第二步是什么？
 - `营业税（Business Tax）`：国家对工商营利事业按营业额征收的税，属于流转课税的一类。
 - `营业税金及附加（Business Tax and Surcharges）`：企业经营活动应负担的相关税费，包括营业税、消费税、城市维护建设税、资源税和教育费附加等。企业应通过“营业税金及附加”科目，核算企业经营活动相关税费的发生和结转情况。
