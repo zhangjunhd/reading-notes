@@ -201,7 +201,7 @@
 
 - `表外资产（off Balance Sheet Asset）`：一般是按会计准则（GAAP）容许的会计技巧，企业将旗下一些资产，包括子公司、贷款、衍生工具等置于此项，以降低公司债务与资本比率；表外资产无须列于资产负债表内，但要在财务报告以注释形式列明。研发投入、组织建设、品牌渠道等都属于表外资产。
 
-![snip20190212_96.png](OneBookLearnFinancialReport3.png)
+<img src="OneBookLearnFinancialReport3.png" width="700"/>
 
 ## 解剖现金流量表
 ### 现金流量表的真相是什么？
@@ -210,7 +210,7 @@
 ### 一家公司的现金是怎样流入和流出的？
 - `退税（Tax Rebate）`：国家按规定对纳税人已纳税款的退还，优惠退税是税收支出的一种形式，即国家为鼓励纳税人从事或扩大某种经济活动而给予的税款退还。通常包括出口退税、再投资退税、复出口退税、溢征退税等多种形式。
 
-![snip20190212_97.png](OneBookLearnFinancialReport4.png)
+<img src="OneBookLearnFinancialReport4.png" width="700"/>
 
 ### 现金流量表为什么存在？
 现金流量表向我们展示了资产负债表上货币资金增减变化的原因。
@@ -242,9 +242,8 @@
   - “分配股利、利润和偿还利息所支付的现金”项目，反映企业实际支付的现金股利、利润，以及支付给其他投资的利息。
   - “支付的其他与筹资活动有关的现金”项目，反映企业除了上述各项外，支付的其他与筹资活动有关的现金流出，如捐赠现金支出等。其他现金流出如价值较大的，单独列项目反映。
 
-![snip20190212_98.png](OneBookLearnFinancialReport5.png)
-
-![snip20190212_99.png](OneBookLearnFinancialReport6.png)
+<img src="OneBookLearnFinancialReport5.png" width="700"/>
+<img src="OneBookLearnFinancialReport6.png" width="700"/>
 
 ## 活用三张报表，打通财务数据经脉
 ### 怎么做同型分析？
@@ -252,9 +251,8 @@
 
 对资产负债表，同样可以做这样一个分析。资产负债表详细列明了各个项目在企业资金总量中所占的比重。
 
-![snip20190212_100.png](OneBookLearnFinancialReport7.png)
-
-![snip20190212_101.png](OneBookLearnFinancialReport8.png)
+<img src="OneBookLearnFinancialReport7.png" width="700"/>
+<img src="OneBookLearnFinancialReport8.png" width="700"/>
 
 - `趋势分析（Trend Analysis）`：将实际达到的结果，与不同时期财务报表中同类指标的历史数据进行比较，从而确定财务状况、经营成果和现金流量的变化趋势和变化规律的一种分析方法。
 - `比较分析（Comparing Analysis）`：通过两个或两个以上相关经济指标的对比，确定指标间的差异，并进行差异分析或趋势分析的一种分析方法。
@@ -264,6 +262,9 @@
 - `净利润率（Net Profit Margin）`：又称销售净利率，是反映公司盈利能力的一项重要指标，是扣除所有成本、费用和企业所得税后的利润率。
 
 ![snip20190212_102.png](OneBookLearnFinancialReport9.png)
+
+$\frac{收入}{总资产} \times \frac{净利润}{收入} = \frac{净利润}{总资产} = 总资产报酬率$
+
 
 - `总资产报酬率（Return on Assets）`：又称总资产利润率、总资产回报率、资产总额利润率，英文缩写ROA，用以评价企业运用全部资产的总体获利能力。
 
@@ -297,7 +298,7 @@
 
 美国：健康公司的流动比率大多在3到4之间。
 
-![snip20190212_104.png](OneBookLearnFinancialReport10.png)
+<img src="OneBookLearnFinancialReport10.png" width="700"/>
 
 大多数中国企业的流动比率都在1到2之间。
 
@@ -334,7 +335,7 @@
 ### 行业大环境对企业做了些什么？
 - `五力图（Five Forces Model）`：即五力分析模型，是迈克尔·波特（Michael Porter）于20世纪80年代初提出，对企业战略制定产生全球性的深远影响；用于竞争战略的分析，可以有效地分析客户的竞争环境。五力分别是：供应商的议价能力、购买者的议价能力、潜在竞争者进入的能力、替代品的替代能力、行业内竞争者现在的竞争能力。五种力量的不同组合变化，最终会影响行业盈利能力的变化。
 
-![snip20190212_110.png](OneBookLearnFinancialReport16.png)
+<img src="OneBookLearnFinancialReport16.png" width="700"/>
 
 第一个方面的因素是，行业内部的竞争状态，包括已经存在的竞争、新进入者的威胁和替代产品的威胁。
 
