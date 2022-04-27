@@ -67,7 +67,7 @@
 
 ![snip20190212_94.png](OneBookLearnFinancialReport1.png)
 
-<img src="snip20190212_94.png" alt="drawing" width="200"/>
+<img src="OneBookLearnFinancialReport1.png" alt="drawing" width="300"/>
 
 ### 流动资产包含哪些项目？
 上边是一张完整的`资产负债表`。这张表被分为左右两个部分：左边说了一件事——`资产`，右边说了两件事——`负债`和`股东权益`。
