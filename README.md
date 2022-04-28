@@ -237,6 +237,7 @@
    2. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
    3. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
    4. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
+   5. [基金投资红宝书](life/FundRedBook.md)
 
 ## 心理学，行为学与认知科学
 1. 人格理论
