@@ -217,7 +217,7 @@
    2. [第五项修炼](psychology/TheFifthDiscipline.md)
 
 ## 人生价值与意义
-1. 如何处理消极情绪
+1. 处理消极情绪
    1. [拖延心理学](success/Procrastination.md)
    2. [幸福是陷阱?](psychology/the-happiness-trap.md)
    3. [走出抑郁症](psychology/depression.md)
@@ -236,8 +236,10 @@
    1. [蔡康永的说话之道](success/CaiKangYong.md)
    2. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
    3. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
-   4. [富爸爸，穷爸爸](success/RichDadPoorDad.md)
-   5. [基金投资红宝书](life/FundRedBook.md)
+4. 投资理财
+   1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
+   2. [基金投资红宝书](invest/FundRedBook.md)
+   3. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
 
 ## 心理学，行为学与认知科学
 1. 人格理论
