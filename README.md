@@ -238,8 +238,9 @@
    3. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
 4. 投资理财
    1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
-   2. [基金投资红宝书](invest/FundRedBook.md)
-   3. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
+   2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
+   3. [基金投资红宝书](invest/FundRedBook.md)
+   4. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
 
 ## 心理学，行为学与认知科学
 1. 人格理论
