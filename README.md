@@ -400,7 +400,8 @@
 6. 信息与“不确定性”
    1. [黑天鹅](bussiness/model/TheBlackSwan.md)
    2. [反脆弱](bussiness/model/Antifragile.md)
-   3. [重塑-信息经济的结构](bussiness/model/reshaping.md)
+   3. [随机漫步的傻瓜](bussiness/model/FooledByRandomness.md)
+   4. [重塑-信息经济的结构](bussiness/model/reshaping.md)
 
 ## 市场营销
 1. 传播学
