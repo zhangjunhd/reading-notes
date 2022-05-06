@@ -247,7 +247,7 @@
 1. 人格理论
    1. [荣格心理学入门](psychology/Jung-intro.md)
    2. [天资差异](psychology/GiftsDiffering.md)
-2. 心理学
+2. 现代心理学
    1. [心理学最佳入门（原书第5版）](psychology/Psychology5th.md)
 3. 认知科学
    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
