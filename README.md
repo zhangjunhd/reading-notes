@@ -241,7 +241,8 @@
    2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
    3. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
    4. [基金投资红宝书](invest/FundRedBook.md)
-   5. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
+   5. [指数基金投资从入门到精通](invest/IndexFund.md)
+   6. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
 
 ## 心理学，行为学与认知科学
 1. 人格理论
