@@ -243,7 +243,8 @@
    4. [基金投资红宝书](invest/FundRedBook.md)
    5. [指数基金投资从入门到精通](invest/IndexFund.md)
    6. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
-   7. [肖星的财务思维课](invest/xx.md)
+   7. [投资中最简单的事](invest/simple.md)
+   8. [肖星的财务思维课](invest/xx.md)
 
 ## 心理学，行为学与认知科学
 1. 人格理论
