@@ -222,7 +222,7 @@
    1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
    2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
 2. 公司财报
-   1. [一本书读懂财报](finance/OneBookLearnFinancialReport.md)
+   1. [一本书读懂财报](invest/OneBookLearnFinancialReport.md)
    2. [肖星的财务思维课](invest/xx.md)
 3. 基金投资
    1. [基金投资红宝书](invest/FundRedBook.md)
