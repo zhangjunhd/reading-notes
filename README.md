@@ -22,6 +22,7 @@
 - [认知](#认知)
   - [效率习惯与方法](#效率习惯与方法)
   - [思维方法](#思维方法)
+  - [投资理财](#投资理财)
   - [人生价值与意义](#人生价值与意义)
   - [心理学，行为学与认知科学](#心理学行为学与认知科学)
 - [历史](#历史)
@@ -216,6 +217,25 @@
    1. [系统之美](psychology/ThinkingInSystems.md)
    2. [第五项修炼](psychology/TheFifthDiscipline.md)
 
+## 投资理财
+1. 思维方式
+   1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
+   2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
+2. 公司财报
+   1. [一本书读懂财报](finance/OneBookLearnFinancialReport.md)
+   2. [肖星的财务思维课](invest/xx.md)
+3. 基金投资
+   1. [基金投资红宝书](invest/FundRedBook.md)
+   2. [指数基金投资从入门到精通](invest/IndexFund.md)
+4. 投资方法
+   1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
+   2. [投资中最简单的事](invest/simple.md)
+5. 公司价值
+   1. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
+6. 市场交易
+   1. [跨市场交易策略](invest/intermarket.md)
+
+
 ## 人生价值与意义
 1. 处理消极情绪
    1. [拖延心理学](success/Procrastination.md)
@@ -236,16 +256,7 @@
    1. [蔡康永的说话之道](success/CaiKangYong.md)
    2. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
    3. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
-4. 投资理财
-   1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
-   2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
-   3. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
-   4. [基金投资红宝书](invest/FundRedBook.md)
-   5. [指数基金投资从入门到精通](invest/IndexFund.md)
-   6. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
-   7. [跨市场交易策略](invest/intermarket.md)
-   8. [投资中最简单的事](invest/simple.md)
-   9. [肖星的财务思维课](invest/xx.md)
+
 
 ## 心理学，行为学与认知科学
 1. 人格理论
@@ -325,11 +336,10 @@
 7. [创新-经济增长的奇迹](economics/TheFreeMarketInnovationMachine.md)
 
 ## 公司财务
-1. [一本书读懂财报](finance/OneBookLearnFinancialReport.md)
-2. [一本书读懂中国税](finance/OneBookLearnChinaTax.md)
-3. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
-4. [财务报表分析与股票估值](finance/FinancialStatement.md)
-5. [巴菲特致股东的信](finance/BuffettLetter.md)
+1. [一本书读懂中国税](finance/OneBookLearnChinaTax.md)
+2. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
+3. [财务报表分析与股票估值](finance/FinancialStatement.md)
+4. [巴菲特致股东的信](finance/BuffettLetter.md)
 
 ## 公司管理
 1. 管理理论
