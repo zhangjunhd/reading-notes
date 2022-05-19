@@ -67,6 +67,7 @@
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
 2. [投资中最简单的事](invest/simple.md)
+3. [巴菲特致股东的信](invest/BuffettLetter.md)
 
 ## 金融市场
 1. [跨市场交易策略](invest/intermarket.md)
@@ -347,7 +348,6 @@
 ## 公司财务
 1. [一本书读懂中国税](finance/OneBookLearnChinaTax.md)
 2. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
-3. [巴菲特致股东的信](finance/BuffettLetter.md)
 
 ## 公司管理
 1. 管理理论
