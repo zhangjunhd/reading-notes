@@ -1,3 +1,9 @@
+- [投资理财](#投资理财)
+  - [思维模式](#思维模式)
+  - [公司财报与公司估值](#公司财报与公司估值)
+  - [基金投资](#基金投资)
+  - [投资方法](#投资方法)
+  - [金融市场](#金融市场)
 - [通识](#通识)
   - [牛津通识读本](#牛津通识读本)
   - [物理学](#物理学)
@@ -22,7 +28,6 @@
 - [认知](#认知)
   - [效率习惯与方法](#效率习惯与方法)
   - [思维方法](#思维方法)
-  - [投资理财](#投资理财)
   - [人生价值与意义](#人生价值与意义)
   - [心理学，行为学与认知科学](#心理学行为学与认知科学)
 - [历史](#历史)
@@ -43,6 +48,28 @@
 - [机器学习](#机器学习)
 - [文学](#文学)
 - [艺术](#艺术)
+
+# 投资理财
+## 思维模式
+1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
+2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
+
+## 公司财报与公司估值
+1. [一本书读懂财报](invest/OneBookLearnFinancialReport.md)
+2. [肖星的财务思维课](invest/xx.md)
+3. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
+
+## 基金投资
+1. [基金投资红宝书](invest/FundRedBook.md)
+2. [指数基金投资从入门到精通](invest/IndexFund.md)
+
+## 投资方法
+1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
+2. [投资中最简单的事](invest/simple.md)
+
+## 金融市场
+1. [跨市场交易策略](invest/intermarket.md)
+
 
 # 通识
 ## 牛津通识读本
@@ -216,25 +243,6 @@
 3. 系统性思维
    1. [系统之美](psychology/ThinkingInSystems.md)
    2. [第五项修炼](psychology/TheFifthDiscipline.md)
-
-## 投资理财
-1. 思维方式
-   1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
-   2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
-2. 公司财报
-   1. [一本书读懂财报](invest/OneBookLearnFinancialReport.md)
-   2. [肖星的财务思维课](invest/xx.md)
-3. 基金投资
-   1. [基金投资红宝书](invest/FundRedBook.md)
-   2. [指数基金投资从入门到精通](invest/IndexFund.md)
-4. 投资方法
-   1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
-   2. [投资中最简单的事](invest/simple.md)
-5. 公司价值
-   1. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
-6. 市场交易
-   1. [跨市场交易策略](invest/intermarket.md)
-
 
 ## 人生价值与意义
 1. 处理消极情绪
