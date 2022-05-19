@@ -58,6 +58,7 @@
 1. [一本书读懂财报](invest/OneBookLearnFinancialReport.md)
 2. [肖星的财务思维课](invest/xx.md)
 3. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
+4. [财务报表分析与股票估值](invest/FinancialStatement.md)
 
 ## 基金投资
 1. [基金投资红宝书](invest/FundRedBook.md)
@@ -346,8 +347,7 @@
 ## 公司财务
 1. [一本书读懂中国税](finance/OneBookLearnChinaTax.md)
 2. [一本书看透股权架构](finance/OneBookLearnShareholdingStructure.md)
-3. [财务报表分析与股票估值](finance/FinancialStatement.md)
-4. [巴菲特致股东的信](finance/BuffettLetter.md)
+3. [巴菲特致股东的信](finance/BuffettLetter.md)
 
 ## 公司管理
 1. 管理理论
