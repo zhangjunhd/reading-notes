@@ -71,7 +71,7 @@
 
 ## 金融市场
 1. [跨市场交易策略](invest/intermarket.md)
-
+2. [货币金融学](invest/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
 
 # 通识
 ## 牛津通识读本
@@ -340,10 +340,9 @@
 1. [经济学通识课](economics/a-little-history-of-economics.md)
 2. [经济学的思维方式](economics/BasicEconomics.md)
 3. [写给企业家的经济学](economics/economics4entrepreneur.md)
-4. [货币金融学](economics/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
-5. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
-6. [预测-经济、周期与市场泡沫](economics/Predict.md)
-7. [创新-经济增长的奇迹](economics/TheFreeMarketInnovationMachine.md)
+4. [金融的本质](economics/TheFederalReserveAndTheFinancialCrisis.md)
+5. [预测-经济、周期与市场泡沫](economics/Predict.md)
+6. [创新-经济增长的奇迹](economics/TheFreeMarketInnovationMachine.md)
 
 ## 公司财务
 1. [一本书读懂中国税](finance/OneBookLearnChinaTax.md)
