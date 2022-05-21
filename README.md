@@ -67,8 +67,9 @@
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
 2. [投资中最简单的事](invest/simple.md)
-3. [专业投机原理](invest/traderVIC.md)
-4. [巴菲特致股东的信](invest/BuffettLetter.md)
+3. [一本书看透价值投资](invest/oneBook4valueInvest.md)
+4. [专业投机原理](invest/traderVIC.md)
+5. [巴菲特致股东的信](invest/BuffettLetter.md)
 
 ## 金融市场
 1. [跨市场交易策略](invest/intermarket.md)
