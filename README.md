@@ -72,6 +72,7 @@
 
 ## 交易技术
 1. [专业投机原理](invest/traderVIC.md)
+2. [均线](invest/movingAverage.md)
 
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
