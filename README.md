@@ -2,6 +2,8 @@
   - [思维模式](#思维模式)
   - [公司财报与公司估值](#公司财报与公司估值)
   - [基金投资](#基金投资)
+  - [投资人心理](#投资人心理)
+  - [交易技术](#交易技术)
   - [投资方法](#投资方法)
   - [金融市场](#金融市场)
 - [通识](#通识)
@@ -65,11 +67,16 @@
 1. [基金投资红宝书](invest/FundRedBook.md)
 2. [指数基金投资从入门到精通](invest/IndexFund.md)
 
+## 投资人心理
+1. [周期](invest/MasteringTheMarketCycle.md)
+
+## 交易技术
+1. [专业投机原理](invest/traderVIC.md)
+
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
 2. [投资中最简单的事](invest/simple.md)
-3. [专业投机原理](invest/traderVIC.md)
-4. [巴菲特致股东的信](invest/BuffettLetter.md)
+3. [巴菲特致股东的信](invest/BuffettLetter.md)
 
 ## 金融市场
 1. [跨市场交易策略](invest/intermarket.md)
