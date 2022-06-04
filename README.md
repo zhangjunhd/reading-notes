@@ -74,6 +74,7 @@
 1. [专业投机原理](invest/traderVIC.md)
 2. [以交易为生](invest/trading4Living.md)
 3. [均线](invest/movingAverage.md)
+4. [股票操盘手之“T+0”滚动交易手册](invest/tzero.md)
 
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
