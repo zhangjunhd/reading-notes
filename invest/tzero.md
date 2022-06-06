@@ -1,4 +1,4 @@
-![cover]()
+![cover](https://img1.doubanio.com/view/subject/s/public/s34235247.jpg)
 
     作者 老牛
     人民邮电出版社 / 2016-07
