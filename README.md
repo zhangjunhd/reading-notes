@@ -76,7 +76,8 @@
 3. [均线](invest/movingAverage.md)
 4. [股票操盘手之“T+0”滚动交易手册](invest/tzero.md)
 5. [实现财务自由](invest/financialFreedom.md)
-6. [量价时空](invest/volumePrice.md)
+6. [振荡指标MACD](invest/MACD.md)
+7. [量价时空](invest/volumePrice.md)
 
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
