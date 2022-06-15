@@ -1,14 +1,15 @@
-![cover](https://img9.doubanio.com/view/subject/s/public/s22702026.jpg)
+![cover](https://img9.doubanio.com/view/subject/s/public/s33819275.jpg)
 
-    作者: 凌波
-    出版社: 企业管理出版社
-    副标题: 股票交易精髓
-    出版年: 2010-8
-    页数: 232
-    定价: 35.00元
-    ISBN: 9787802556126
+    作者: 凌波 著 斯坦威出品
+    出版社: 天津人民出版社
+    副标题: 股票交易精髓升级版，含私募内部训练资料
+    出版年: 2021-1
+    页数: 272
+    定价: 55.00 元
+    装帧: 平装
+    ISBN: 9787201171135
 
-[豆瓣链接](https://book.douban.com/subject/4924398/)
+[豆瓣链接](https://book.douban.com/subject/35349194//)
 
 - [技术分析](#技术分析)
   - [个人投资者应该相信什么](#个人投资者应该相信什么)
