@@ -442,7 +442,7 @@ $DIF=EMA_{12}-EMA_{26}$
 
 <img src="MACD20.png" width="700"/>
 
-DIF线是快线EMA12与慢线EMA26的差值，从上图3-5可以看出，当快线EMA12向上突破慢线EMA12时，DIF向上穿越0轴；当快线EMA12向下突破慢线EMA26时，DIF向下穿越0轴。相当地，当DIF大于0时，表示快线EMA12在慢线EMA26之上运行；当DIF小于0时，表示快线EMA12在慢线EMA26之下运行。
+DIF线是快线EMA12与慢线EMA26的差值，从上图3-5可以看出，**当快线EMA12向上突破慢线EMA12时，DIF向上穿越0轴；当快线EMA12向下突破慢线EMA26时，DIF向下穿越0轴。相当地，当DIF大于0时，表示快线EMA12在慢线EMA26之上运行；当DIF小于0时，表示快线EMA12在慢线EMA26之下运行**。
 
 ## DEA慢线
 `DEA线（Difference Exponential Average）`差离值平均数，又称为异同平均数，是DIF线的9日指数平滑移动平均线。
