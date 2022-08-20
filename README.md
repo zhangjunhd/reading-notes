@@ -1,8 +1,7 @@
 - [投资理财](#投资理财)
-  - [思维模式](#思维模式)
+  - [投资者心理](#投资者心理)
   - [公司财报与公司估值](#公司财报与公司估值)
   - [基金投资](#基金投资)
-  - [投资者心理](#投资者心理)
   - [交易技术](#交易技术)
   - [投资方法](#投资方法)
   - [金融市场](#金融市场)
@@ -52,7 +51,7 @@
 - [艺术](#艺术)
 
 # 投资理财
-## 思维模式
+## 投资者心理
 1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
 2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
 
@@ -66,9 +65,6 @@
 ## 基金投资
 1. [基金投资红宝书](invest/FundRedBook.md)
 2. [指数基金投资从入门到精通](invest/IndexFund.md)
-
-## 投资者心理
-1. [周期](invest/MasteringTheMarketCycle.md)
 
 ## 交易技术
 1. [专业投机原理](invest/traderVIC.md)
@@ -87,6 +83,7 @@
 ## 金融市场
 1. [跨市场交易策略](invest/intermarket.md)
 2. [货币金融学](invest/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
+3. [周期](invest/MasteringTheMarketCycle.md)
 
 # 通识
 ## 牛津通识读本
