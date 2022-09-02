@@ -109,7 +109,7 @@
 # 理解风险
 关于风险与收益之间的关系，在投资界有一个广泛应用的图示（见图5–1）。
 
-![](TheMostImportantThingIlluminated1.png)
+<img src="TheMostImportantThingIlluminated1.png" width="700"/>
 
 我们所熟知的风险——收益关系图是简约而优雅的。遗憾的是，许多人从中得出一个错误的结论，并因此而身陷困境。
 
@@ -119,7 +119,7 @@
 
 我对资本市场线的认知方式使我较为容易地将其背后涉及的所有关系联系起来（见图5–2）。
 
-![](TheMostImportantThingIlluminated2.png)
+<img src="TheMostImportantThingIlluminated2.png" width="700"/>
 
 在学者看来，风险等于波动性，因为波动性表明了投资的不可靠性。我对这一定义不敢苟同。**永久性损失的概率**是我、橡树资本管理公司以及我所认识的每一位实际投资者所担心的风险。
 
