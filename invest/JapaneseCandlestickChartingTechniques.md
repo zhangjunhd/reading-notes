@@ -26,22 +26,22 @@
 
 如果某根蜡烛图线没有上影线，那么它就是所谓的`光头蜡烛线`。如果某根蜡烛线没有下影线，那么它就是所谓的`光脚蜡烛线`。
 
-<img src="JapaneseCandlestickChartingTechniques01.png" width="700"/>
-<img src="JapaneseCandlestickChartingTechniques02.png" width="700"/>
+<img src="JapaneseCandlestickChartingTechniques01.png" width="70"/>
+<img src="JapaneseCandlestickChartingTechniques02.png" width="70"/>
 
 从实用角度来说，可以采用实体长度作为市场`动量`指标。
 
 既然长白线和长黑线代表着一边倒的单边行情，那么当实体缩小时，我们就能得到线索，之前的行情势头或许正在减缓。对短实体（无论黑白），日本人的术语是`纺锤线`。图3.6是纺锤线的图例。
 
-<img src="JapaneseCandlestickChartingTechniques03.png" width="700"/>
+<img src="JapaneseCandlestickChartingTechniques03.png" width="70"/>
 
 图3.7中的蜡烛线甚至没有实体。在这种极端情况下，蜡烛线的实体实际上缩小为一根水平横线了。该图所示的几种图例就称为`十字线`。当某个交易日的开市价和收市价处于同一水平，或者当开市价与收市价的水平极为相近时，当日的蜡烛线就变成了一根十字蜡烛线。十字线带有反转信号的意味。
 
-<img src="JapaneseCandlestickChartingTechniques04.png" width="700"/>
+<img src="JapaneseCandlestickChartingTechniques04.png" width="70"/>
 
 在图3.8中，4月1日所在的一周里，市场从315附近开始下降，形成了一连串黑色蜡烛线。随着下降过程的延续，黑色实体的长度不断增加，反映市场的看跌动量不断增强。4月7日出现了一根纺锤线，改变了市场的技术图像，原先熊方完全占据主动，现在转为熊方丧失了主导权。因为短实体只代表一个时间单位内的市场行为，我们应该把它看作一条试探性的线索。虽然如此，它依然属于潜在反转信号的第一个征兆。本例揭示了蜡烛图的一个重大优势：它们经常以一个时间单位的灵敏度让您察觉可能的市场转折点。
 
-<img src="JapaneseCandlestickChartingTechniques05.png" width="700"/>
+<img src="JapaneseCandlestickChartingTechniques05.png" width="70"/>
 
 4月7日的纺锤线属于蜡烛图信号，同时它也有助于验证传统西方技术分析工具——具体说来即本图中向上倾斜的支撑线，它是连接3月10日和3月23日的低点得来的。于是，我们得到了两个信号，一个是支撑线，一个是纺锤线，加强了285附近的支撑作用。
 
