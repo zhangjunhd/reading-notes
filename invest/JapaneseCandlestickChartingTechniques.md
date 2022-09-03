@@ -19,6 +19,7 @@
   - [反转形态](#反转形态)
     - [伞形线](#伞形线)
     - [锤子线](#锤子线)
+    - [上吊线](#上吊线)
 
 # 基本知识
 ## 蜡烛图的绘制方法
@@ -89,11 +90,11 @@
 
 <img src="JapaneseCandlestickChartingTechniques10.png" width="600"/>
 
+图4.9中的锤子线具有长长的下影线，实体很短，居于该时段价格区间的顶端。我们注意到，锤子线应该只有很短的上影线，本例正是如此。该锤子线后来演变为坚实的底部支撑。
 
+<img src="JapaneseCandlestickChartingTechniques11.png" width="600"/>
 
-
-
-
+### 上吊线
 
 
 
