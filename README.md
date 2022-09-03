@@ -80,8 +80,9 @@
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
 2. [巴菲特与索罗斯的投资习惯](invest/BuffetAndSoros.md)
 3. [投资最重要的事](invest/TheMostImportantThingIlluminated.md)
-4. [投资中最简单的事](invest/simple.md)
-5. [股票投资的24堂必修课](invest/24Lesson.md)
+4. [价值投资:看懂股票投资背后的逻辑](invest/ValueInvesting.md)
+5. [投资中最简单的事](invest/simple.md)
+6. [股票投资的24堂必修课](invest/24Lesson.md)
 
 ## 金融市场
 1. [跨市场交易策略](invest/intermarket.md)
