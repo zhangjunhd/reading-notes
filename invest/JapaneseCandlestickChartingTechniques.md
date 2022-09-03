@@ -26,10 +26,9 @@
 
 如果某根蜡烛图线没有上影线，那么它就是所谓的`光头蜡烛线`。如果某根蜡烛线没有下影线，那么它就是所谓的`光脚蜡烛线`。
 
-<img src="JapaneseCandlestickChartingTechniques01.png" width="100" display:inline />
-<img src="JapaneseCandlestickChartingTechniques02.png" width="100" display:inline />
-<img src="JapaneseCandlestickChartingTechniques03.png" width="100"/>
-<img src="JapaneseCandlestickChartingTechniques04.png" width="100"/>
+column0 | column1 | column2 | column3
+------- | ------- | ------- | -------
+<img src="JapaneseCandlestickChartingTechniques01.png" width="100" /> | <img src="JapaneseCandlestickChartingTechniques02.png" width="100" /> | <img src="JapaneseCandlestickChartingTechniques03.png" width="100"/> | <img src="JapaneseCandlestickChartingTechniques04.png" width="100"/>
 
 从实用角度来说，可以采用实体长度作为市场`动量`指标。
 
