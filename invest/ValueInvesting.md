@@ -501,7 +501,7 @@ $\frac{1}{PE}=\frac{(1+r)^{i+1}}{(1+r)^{i+1}-(1+g)^{i+1}}$
 
 在这个案例中，i=10，r=7%，g=20%，则PE=19.46倍。如果二级市场的估价是15倍PE，则按照该公式可计算出r=11.1%。在经济稳定时期，我们认为g是常数。r与$\frac{1}{PE}$线性相关，为了简化起见，我们可以用$\frac{1}{PE}$去预测未来r。如图5-13所示。
 
-<img src="ValueInvesting16.png" width="100" />
+<img src="ValueInvesting16.png" width="500" />
 
 
 
