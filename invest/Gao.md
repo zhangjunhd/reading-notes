@@ -41,6 +41,13 @@
   - [比特币](#比特币)
   - [原油](#原油)
 - [不动产](#不动产)
+  - [不动产的魅力](#不动产的魅力)
+  - [投资不动产的基本](#投资不动产的基本)
+  - [通过数据看不动产投资](#通过数据看不动产投资)
+  - [有钱人眼中的自用住宅](#有钱人眼中的自用住宅)
+  - [不要完全相信政府公布的数据](#不要完全相信政府公布的数据)
+  - [我不推荐购买J-REIT的原因](#我不推荐购买j-reit的原因)
+- [经济指标](#经济指标)
 
 # 有钱人的思维
 ## 有钱人的特征
@@ -275,31 +282,41 @@
    4. 虽然导致原油价格下跌的原因有很多，但**在美元上涨时，原油价格确实存在下跌的趋势**。因为全世界流通的基准货币大约六成都是美元，所以当美元不足时就会出现原油价格下跌，DXY上涨的趋势。<img src="Gao7.png" width="700" />
 
 # 不动产
+## 不动产的魅力
+投资不动产不需要频繁地关注价格 Real Estate is beneficial as you don't need to frequently watch the price
 
+即便土地价格下跌，也不可能变为零，所以风险较低。
 
+## 投资不动产的基本
+1. 不动产是安全且高回报的投资 Real Estate can be safe with high returns
+2. “独栋住宅”是最佳的投资对象 My recommendation is Real Estate that includes Land
 
+## 通过数据看不动产投资
+1. 股票市场跌入谷底的2年后，不动产市场也会发生震动 Real Estate moves with a2year lag to the Stock Market
+   1. 从FRED公布的美国住宅平均价格数据来看，2008年爆发的雷曼事件导致的经济衰退持续到了2009年。随后，从2011年年末到2012年年初，美国的住宅价格也开始下跌。当时的股票市场在2009年3月跌至谷底。也就是说，**股票市场跌至谷底与不动产价格跌至谷底之间大约有两年半的时间延迟**。<img src="Gao8.png" width="700" />
+   2. 再来看日本的情况。日本的住宅价格在2013年跌至谷底，然后从2014年开始逐渐回升。同一时期的日经平均股价是在2012年年末开始回升。也就是说，在日本也有1～2年的延迟。
+   3. 由此可见，不动产市场的波动通常会比股票市场有一些延迟。虽然也有在同一时期发生波动的情况，但从近年来的情况来看，不管是美国、欧洲还是日本，不动产价格的上涨都是在股票市场上涨大约2年后才开始的。
+2. 投资不动产时必须关注的3个经济指标 3 Important Economic indicators for Real Estate
+   1. 在分析美国的不动产市场时，需要特别关注以下3个重要指标。
 
+            ① NAHB Housing Market Index（全美住宅建造商协会住宅市场指数）
+            ② Existing home sales（成屋销售指数）
+            ③ New Home Sales（新屋销售指数）
+3. 新冠肺炎疫情后是投资不动产的良机 There may be a chance to Invest in Real Estate after the Coronavirus Shock 
+4. 为什么未来是购买日本不动产的好时机 Why Japanese Real Estate is a good opportunity
+   1. 日本是唯一一个房地产市场价格没有恢复到20世纪90年代的发达国家，因此很有投资的潜力。
 
+## 有钱人眼中的自用住宅
+购买自用住宅也是“投资” Buying your personal residence is an investment
 
+## 不要完全相信政府公布的数据
+了解日银公布的J-REIT的购买限额的意义 Understand the Bank of Japan J-REIT buying limit 
 
+## 我不推荐购买J-REIT的原因
+1. 先看整体情况，再具体分析 Check the Index trend before checking Individual stocks 
+2. 不要被日银和证券公司的宣传欺骗 Don't get roped in by BOJ or Financial institution marketing of JREITs 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 经济指标
 
 
 
