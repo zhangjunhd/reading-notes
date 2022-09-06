@@ -48,6 +48,14 @@
   - [不要完全相信政府公布的数据](#不要完全相信政府公布的数据)
   - [我不推荐购买J-REIT的原因](#我不推荐购买j-reit的原因)
 - [经济指标](#经济指标)
+  - [解读世界经济](#解读世界经济)
+  - [解读经济指标的方法](#解读经济指标的方法)
+  - [分析世界经济的方法](#分析世界经济的方法)
+- [富有的习惯](#富有的习惯)
+  - [用英语收集信息的技术](#用英语收集信息的技术)
+  - [管理时间的技术](#管理时间的技术)
+  - [减轻压力的方法](#减轻压力的方法)
+  - [最简单的节约法](#最简单的节约法)
 
 # 有钱人的思维
 ## 有钱人的特征
@@ -317,6 +325,88 @@
 2. 不要被日银和证券公司的宣传欺骗 Don't get roped in by BOJ or Financial institution marketing of JREITs 
 
 # 经济指标
+## 解读世界经济
+1. 了解世界经济=了解金钱 Understanding the World Economy = Understanding Money
+   1. `GDP`是最有代表性的经济数据
+   2. 最重要的数据就是`PMI（采购经理人指数）`
+2. 了解“下调利率”与“股价”之间的关系 Understand the relationship between Interest Rate Decrease and Stock Prices
+   1. 从过去美联储紧急下调利率的效果来看，在下调利率1个月之后，股票市场平均会增长3%，而6个月之后则平均下降4%，1年后平均下降约9%。也就是说在紧急下调利率之后6个月到1年，股票市场有极大的可能性会下跌。
+   2. 在紧急下调利率之后股票市场会暂时上涨，但6个月至1年期间又会下跌，请务必注意。
+3. 宽松的金融政策扩大了贫富差距 Monetary easing increases the Wealth Gap
 
+## 解读经济指标的方法
+1. 新冠肺炎疫情不会导致大萧条 Corona-shock will not lead to Great Depression 
+2. 应该用什么指标来判断大萧条 What metrics to use when determining a Great Depression
+   1. `经济衰退（Recession）`的定义之一是“连续两年GDP增长为负”。全世界的GDP大约70%都是由美国、中国、欧洲、日本贡献的，所以分析这4个国家和地区的GDP数据非常重要。
+   2. 还有一个在GDP公布之前预测经济衰退的方法。这个方法就是查看OECD公布的`“综合领先指标（Composite Leading Indicator，缩写CLI）”`，这是“以预测将来经济活动为目的的主要经济指标”。
+   3. OECD会计算包括美国在内的各国数据，这个数据基本上和GDP的变化趋势一致，而且具有比其他经济指标先行的特征。
+   4. 从美国、中国、欧洲、日本过去15年间的图表来看，这次新冠肺炎疫情对CLI造成的影响甚至超过了雷曼事件。
+3. 发觉“经济衰退”征兆的方法 How to predict an Economic Recession
+   1. 任何一个国家在出现经济衰退之前，`先行指标`都会下跌。被作为先行指标使用的数据包括`“失业率”“新屋建筑许可数量”“生产指数”“股票指数”`等许多数据。
+   2. 世界大型企业联合会（Conference Board）计算的先行指数`“领先经济指数（Leading Economic Index，缩写LEI）”`。
+4. “PMI”是中国最重要的经济指标之一 PMI is one of the most important economic indicators for China
+   1. `PMI`是根据每个月向企业的采购经理人进行关于新订单、生产、雇佣等情况的问卷调查结果计算出的数据。
+   2. 一般来说，当PMI的数值保持在50以上的情况下经济就会发展，反之，如果保持在50以下的话，经济就会衰退。
+   3. 中国的PMI有国家统计局（NBS）公布的数据和民间企业（财新）公布的数据。
+   4. PMI之所以如此重要，主要因为以下3点：
+      1. 每个月都会公布，所以能够及时地把握现状（GDP每季度公布一次）；
+      2. 中国是制造业大国；
+      3. 能够反映经营者的心理。
+5. 不能只看GDP Don't focus too much on GDP
+   1. 因为不同国家对GDP数据的计算方法不一样，所以有时也很难横向简单比较。从这个意义上来说，只关注GDP是不可取的。
+   2. 而PMI则是对几百家企业的采购经理人进行问卷调查后，根据结果计算而出的数据，所以参考价值较高。
 
+## 分析世界经济的方法
+1. 把握日本经济现状的2个数据 Understanding the Japanese economy with 2 types of Data
+   1. 应该自己分析一下“PMI”和“GDP增长率”的数据，这样才能准确地把握日本的经济状况。
+2. 正确理解债务违约 Understand the meaning of Default
+   1. 2020年5月22日，阿根廷出现了第9次债务违约。
+   2. “阿根廷出现债务违约并不是什么稀罕事”。我之所以做出这种判断，主要出于以下3个原因。
+      1. 阿根廷政府没有支付利息的国债金额“只有大约5亿美元（大约540亿日元）”。从政府债务的总额来看，这个数字比较小。
+      2. 在宣布债务违约之前，阿根廷的经济部宣布对大约660亿美元（约71000亿日元）的国债进行“重组”。阿根廷政府知道第二天会出现小规模的债务违约，所以才提前宣布进行大规模的债务重组。
+      3. 阿根廷自从1816年独立以来，出现过9次债务违约。因为这种情况多次出现，所以这次债务违约也不算是什么大事。
+3. 金融市场的数据比新闻更可靠 For economic news, first observe the impact of Financial Markets 
+4. 确认政府债务与GDP的比率 Measure Government Debt as a percentage of GDP
+   1. 政府债务的多少也会对汇率产生影响。政府债务减少时，汇率普遍比较稳定。而“债务增加时汇率也会出现波动”。
+   2. 阿根廷GDP与政府债务的比率：<img src="Gao9.png" width="700" />
+   3. 2002年USDARS的推移：<img src="Gao10.png" width="400" />
+4. 确认政府债务与GDP的比率 Measure Government Debt as a percentage of GDP
+   1. 阿根廷出现债务违约时，股票市场发生了什么样的变化呢？阿根廷最著名的股票指数是“MERVAL指数”。虽然这个指数一直在上涨，但因为阿根廷比索的汇率一直在下跌，所以用美元计价的话其实际价值并没有太大的提升。<img src="Gao11.png" width="700" />
+5. 观察对债务违约提供担保的“CDS”的发展趋势 Watch the CDS market, which measures the insurance rate for default
+   1. 说起债务违约，就不得不提与之相关的金融产品之一`CDS（credit default swap）`，CDS是一种保险产品。
+   2. 今后再遇到债务违约的新闻时，我们应该关注：
+      1. “货币的价格变动”。这是针对国家出现债务违约的情况。
+      2. 如果是企业出现债务违约，就关注“股价”或者“该企业发行的公司债券的价格”。
+      3. CDS市场。
 
+# 富有的习惯
+## 用英语收集信息的技术
+1. 阅读英语新闻，提高信息质量 Increase your Information Literacy by learning English 
+2. 学习英语能帮你赚钱 Learning English will help you make money
+3. 善用“谷歌翻译工具”提高英语能力 Increase your English skills with Google Translate Tool 
+
+## 管理时间的技术
+1. 与平时没说过话的人交流 Talk to new people whom you usually do not speak with
+2. 全世界的成功人士在周末做什么 What do Successful people do on the Weekends? 
+   1. 根据某项调查的结果，成功人士在周末休息的时候大多会做以下几件事。
+      1. 读书
+      2. 与家人一起度过
+      3. 运动
+      4. 吃好睡好
+
+## 减轻压力的方法
+减轻压力的3个方法 3 ways to decrease your stress level 
+1. 保持身体温暖。
+2. 在身体状态不佳时不听大音量的刺激性音乐。
+3. 不要害怕失败。
+
+绝对不能做的3件事
+1. 让身体感觉寒冷。
+2. 身体状态不佳时听大音量的刺激性音乐。
+3. 因为害怕失败而采取和大家一样的行动。
+
+## 最简单的节约法
+1. 节约最大笔支出的“居住费”就能一举两得 Saving on housing expenses is very beneficial
+2. 网购的功效 Online shopping can be quite effective 
+3. 美国人需要7400万日元的养老金 US Retirement requires ~$740k in savings!
+4. 最大的浪费就是不进行任何投资 The biggest wasteful spending is Not Investing
