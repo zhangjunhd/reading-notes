@@ -30,6 +30,8 @@
   - [投资的知识](#投资的知识)
 - [投资组合](#投资组合)
   - [推荐的ETF](#推荐的etf)
+  - [高分红股票的陷阱](#高分红股票的陷阱)
+- [短期投资](#短期投资-1)
 
 # 有钱人的思维
 ## 有钱人的特征
@@ -140,8 +142,28 @@
 
 # 投资组合
 ## 推荐的ETF
+1. 推荐上市且成本较低的ETF I recommend low cost ETFs
+   1. 在选择ETF时会关注净资产总额。因为一般来说，净资产总额越大，成交额就越高，能够保证随时可以交易的话也会更有安全感。
+   2. 很多网站对ETF都有介绍，这个叫作“TRACKINSIGHT”的网站按照净资产总额对ETF进行了排名。
+2. 选择不同国家和不同货币的股票来实现多样化 Diversify your stock investments by country and FX
+   1. 通过发达国家、发展中国家、日本、中国香港、欧洲的ETF组合来实现股票的多样化。 
+3. 公司债券应灵活利用高收益债券 I recommend High Yield Bonds for Corporate Bonds
+4. 利用3个ETF，使国债的期间多样化 Diversify your Bond ETFs by Duration
+   1. 国债我推荐购买美国国债。因为在全世界利率都比较低的情况下，美国国债仍然保持着较高的利率。
+   2. 国债应综合购买“短期”“中期”“长期”，实现期间多样化。
+5. 贵金属、原油、天然气、农产品的推荐ETF Recommended ETFs for Precious Metals, Oil, Natural Gas,Agriculture
 
+## 高分红股票的陷阱
+1. 不要被“高分红”给骗了 Don't be lured into only High Dividend Investments
+2. 提高收益的“轮转投资” Increase your returns with Asset Rotation
+3. `“夏普比率”`是把握投资优劣的关键 Sharpe Ratio is key to understanding good investing strategies
+   1. $夏普比率=\frac{投资组合的收益率-安全资产的收益率}{标准偏差}$
+   2. 比如，一个投资者将自己全部的资产都购买了一只股票，那么它的波动率就会非常高。在雷曼事件的时候股价甚至可能下跌60%～80%。
+   3. 另一个投资者则通过购买10种商品来实现投资的多样化。其中有5种股票，2种国债等安全产品，3种贵金属。
+   4. 当然会选择第二个对吧。因为第二个投资者的波动率不高，不会给人造成很大的心理压力。**既然收益相同**，那肯定选择第二个了。
+4. “低标准偏差”是优秀投资者的证明 Low variance is a sign of experienced investing 
 
+# 短期投资
 
 
 
