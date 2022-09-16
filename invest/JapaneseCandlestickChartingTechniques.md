@@ -278,7 +278,7 @@
 - 蜡烛线2。一根小小的实体，并且它与前一根实体之间不相接触（这两条蜡烛线组成了基本的星线形态）。小实体意味着卖方丧失了驱动市场走低的能力。
 - 蜡烛线3。一根白色实体，它明显地向上推进到了第一个时段的黑色实体之内，标志着启明星形态的完成。这表明多头已经夺回了主导权。
 
-<img src="JapaneseCandlestickChartingTechniques36.png" width="300" />
+<img src="JapaneseCandlestickChartingTechniques37.png" width="300" />
 
 如图5.3所示，在构成本形态的三根蜡烛线中，最低的低点构成了支撑水平。
 
