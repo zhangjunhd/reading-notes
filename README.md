@@ -284,16 +284,17 @@
    2. [24堂葡萄酒大师课](life/the-24-hour-wine-expert.md)
    3. [汽车是怎样跑起来的](life/how-does-a-car-run.md)
 
-
 ## 心理学，行为学与认知科学
 1. 人格理论
    1. [荣格心理学入门](psychology/Jung-intro.md)
    2. [天资差异](psychology/GiftsDiffering.md)
 2. 现代心理学
    1. [心理学最佳入门（原书第5版）](psychology/Psychology5th.md)
-3. 认知科学
+3. 认知科学&脑科学
+   1. [大脑通信员](psychology/Brain.md)
+4. 语言学
    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
-4. 社会心理学
+5. 社会心理学
    1. [乌合之众](psychology/Psychologie-des-Foules.md)
    2. [影响力](psychology/Influence.md)
    3. [欲望的演化](psychology/TheEvolutionOfDesire.md)
