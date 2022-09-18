@@ -1,10 +1,3 @@
-- [投资理财](#投资理财)
-  - [投资者心理](#投资者心理)
-  - [公司财报与公司估值](#公司财报与公司估值)
-  - [基金投资](#基金投资)
-  - [交易技术](#交易技术)
-  - [投资方法](#投资方法)
-  - [金融市场](#金融市场)
 - [通识](#通识)
   - [牛津通识读本](#牛津通识读本)
   - [物理学](#物理学)
@@ -36,6 +29,13 @@
   - [公民社会与阶层分析](#公民社会与阶层分析)
   - [世界政治与经济](#世界政治与经济)
   - [中国政治与经济](#中国政治与经济)
+- [投资理财](#投资理财)
+  - [投资者心理](#投资者心理)
+  - [公司财报与公司估值](#公司财报与公司估值)
+  - [基金投资](#基金投资)
+  - [交易技术](#交易技术)
+  - [投资方法](#投资方法)
+  - [金融市场](#金融市场)
 - [商业](#商业)
   - [综述](#综述)
   - [西方经济学](#西方经济学)
@@ -49,46 +49,6 @@
 - [机器学习](#机器学习)
 - [文学](#文学)
 - [艺术](#艺术)
-
-# 投资理财
-## 投资者心理
-1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
-2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
-3. [有钱人是这样赚钱的](invest/Gao.md)
-
-## 公司财报与公司估值
-1. [一本书读懂财报](invest/OneBookLearnFinancialReport.md)
-2. [肖星的财务思维课](invest/xx.md)
-3. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
-4. [财务报表分析与股票估值](invest/FinancialStatement.md)
-5. [一本书看透价值投资](invest/oneBook4valueInvest.md)
-
-## 基金投资
-1. [基金投资红宝书](invest/FundRedBook.md)
-2. [指数基金投资从入门到精通](invest/IndexFund.md)
-
-## 交易技术
-1. [专业投机原理](invest/traderVIC.md)
-2. [以交易为生](invest/trading4Living.md)
-3. [日本蜡烛图技术（第2版）](invest/JapaneseCandlestickChartingTechniques.md)
-4. [均线](invest/movingAverage.md)
-5. [股票操盘手之“T+0”滚动交易手册](invest/tzero.md)
-6. [实现财务自由](invest/financialFreedom.md)
-7. [振荡指标MACD](invest/MACD.md)
-8. [量价时空](invest/volumePrice.md)
-
-## 投资方法
-1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
-2. [巴菲特与索罗斯的投资习惯](invest/BuffetAndSoros.md)
-3. [投资最重要的事](invest/TheMostImportantThingIlluminated.md)
-4. [价值投资:看懂股票投资背后的逻辑](invest/ValueInvesting.md)
-5. [投资中最简单的事](invest/simple.md)
-6. [股票投资的24堂必修课](invest/24Lesson.md)
-
-## 金融市场
-1. [跨市场交易策略](invest/intermarket.md)
-2. [货币金融学](invest/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
-3. [周期](invest/MasteringTheMarketCycle.md)
 
 # 通识
 ## 牛津通识读本
@@ -350,6 +310,46 @@
      1. [未来30年](politics/next30years.md)
      2. [未来30年2](politics/next30years2.md)
      3. [不确定的未来](politics/UncertainFuture.md)
+
+# 投资理财
+## 投资者心理
+1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
+2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
+3. [有钱人是这样赚钱的](invest/Gao.md)
+
+## 公司财报与公司估值
+1. [一本书读懂财报](invest/OneBookLearnFinancialReport.md)
+2. [肖星的财务思维课](invest/xx.md)
+3. [股市真规则](invest/TheFiveRules4SuccessfulStockInvesting.md)
+4. [财务报表分析与股票估值](invest/FinancialStatement.md)
+5. [一本书看透价值投资](invest/oneBook4valueInvest.md)
+
+## 基金投资
+1. [基金投资红宝书](invest/FundRedBook.md)
+2. [指数基金投资从入门到精通](invest/IndexFund.md)
+
+## 交易技术
+1. [专业投机原理](invest/traderVIC.md)
+2. [以交易为生](invest/trading4Living.md)
+3. [日本蜡烛图技术（第2版）](invest/JapaneseCandlestickChartingTechniques.md)
+4. [均线](invest/movingAverage.md)
+5. [股票操盘手之“T+0”滚动交易手册](invest/tzero.md)
+6. [实现财务自由](invest/financialFreedom.md)
+7. [振荡指标MACD](invest/MACD.md)
+8. [量价时空](invest/volumePrice.md)
+
+## 投资方法
+1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
+2. [巴菲特与索罗斯的投资习惯](invest/BuffetAndSoros.md)
+3. [投资最重要的事](invest/TheMostImportantThingIlluminated.md)
+4. [价值投资:看懂股票投资背后的逻辑](invest/ValueInvesting.md)
+5. [投资中最简单的事](invest/simple.md)
+6. [股票投资的24堂必修课](invest/24Lesson.md)
+
+## 金融市场
+1. [跨市场交易策略](invest/intermarket.md)
+2. [货币金融学](invest/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
+3. [周期](invest/MasteringTheMarketCycle.md)
 
 # 商业
 ## 综述
