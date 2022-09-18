@@ -292,7 +292,8 @@
    1. [心理学最佳入门（原书第5版）](psychology/Psychology5th.md)
 3. 认知科学&脑科学
    1. [大脑通信员](psychology/Brain.md)
-   2. [欲望的演化](psychology/TheEvolutionOfDesire.md)
+   2. [我们为什么上瘾](psychology/Addiction.md)
+   3. [欲望的演化](psychology/TheEvolutionOfDesire.md)
 4. 语言学
    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 5. 社会心理学
