@@ -133,10 +133,27 @@ PoS全称是Proof of Stake，⽬的就是为了解决使⽤PoW挖矿出现⼤量
 2. 智能合约不能获取到链外的数据，比如我们写一个合约来赌球，球赛的结果以太坊肯定是不知道的。把这种链外的数据写到链内的工具叫`预言机（oracle）`。预言机是区块链与现实世界进行数据交互的接口，已经有去中心化运行的预言机产品，保障上链信息的可信度。
 
 ## Gas费用
+在技术上Gas的价格表示为 wei，是 ETH 最小的增量单位。
 
+* 1 wei 等于0.000000000000000001 ETH（$10^{-18}$)
+* 1 gwei 等于1,000,000,000 wei
 
+用户已经习惯了以 gwei 为单位来表示 gas 价格，可以使用[Gas.Watch][3]留意实时的gas价格。Gas 会随着打包进区块链的交易需求上下波动。 
 
+在London Upgrade之前（August 2021）
 
+假设 Alice 需要付给 Bob 1 ETH。在这次交易中：
+- gas limit = 21,000 units
+- gas price = 200 gwei 
+- 全部费用=Gas units (limit) * Gas price per unit：
+21,000 * 200 = 4,200,000 gwei = 0.0042 ETH
+
+账户变化：
+- Alice账户：-1.0042 ETH
+- Bob账户：+1.0000 ETH
+- Miner账户：+0.0042 ETH
+
+在London Upgrade之后
 
 
 ## ERC标准
@@ -156,3 +173,4 @@ PoS全称是Proof of Stake，⽬的就是为了解决使⽤PoW挖矿出现⼤量
 
 [1]:https://bitcoin.org/bitcoin.pdf "《Bitcoin: A Peer-to-Peer Electronic Cash System》"
 [2]:http://lamport.azurewebsites.net/pubs/byz.pdf "The Byzantine Generals Problem"
+[3]:https://www.useweb3.xyz/gas?source=ethgas.watch&referrer=ethgas.watch
