@@ -11,6 +11,8 @@
 - [Ethereum - 迈入区块链2.0](#ethereum---迈入区块链20)
   - [Gas费用](#gas费用)
   - [ERC标准](#erc标准)
+    - [ERC-20 同质化代币标准](#erc-20-同质化代币标准)
+    - [ERC-721 非同质化代币标准](#erc-721-非同质化代币标准)
   - [Etherscan](#etherscan)
   - [扩容](#扩容)
   - [Web3.0应用架构](#web30应用架构)
@@ -142,11 +144,12 @@ PoS全称是Proof of Stake，⽬的就是为了解决使⽤PoW挖矿出现⼤量
 
 在London Upgrade之前（August 2021）
 
+    Total Fee = Gas units (limit) * Gas price per unit
+
 假设 Alice 需要付给 Bob 1 ETH。在这次交易中：
 - gas limit = 21,000 units
 - gas price = 200 gwei 
-- 全部费用=Gas units (limit) * Gas price per unit：
-21,000 * 200 = 4,200,000 gwei = 0.0042 ETH
+- 全部费用 = 21,000 * 200 = 4,200,000 gwei = 0.0042 ETH
 
 账户变化：
 - Alice账户：-1.0042 ETH
@@ -155,8 +158,113 @@ PoS全称是Proof of Stake，⽬的就是为了解决使⽤PoW挖矿出现⼤量
 
 在London Upgrade之后
 
+    Total Fee = Gas units(limit) * (Base fee + Tip)
+
+其中：
+- `Base fee`:every block has a base fee, the minimum price per unit of gas for inclusion in this block, calculated by the network based on demand for block space.
+- `Tip` (priority fee):compensates miners for executing and propagating user transactions in blocks
+- `max fee`(maxFeePerGas):refund = max fee - (Base fee + Tip)，refund>=0的前提下才能执行。
+
+假设 Alice 需要付给 Bob 1 ETH。在这次交易中：
+- gas limit = 21,000 units
+- Base fee = 100 gwei
+- Tip = 10 gwei
+- 全部费用 = 21,000 * (100+10) = 2,310,000 gwei = 0.00231 ETH
+
+账户变化：
+- Alice账户：-1.00231 ETH
+- Bob账户：+1.0000 ETH
+- Miner账户：+0.00021 ETH
+- Base fee of 0.0021 ETH is burned
+
+说明：
+- Block size
+  - Before the London Upgrade, Ethereum had fixed-sized blocks. In times of high network demand, these blocks operated at total capacity. As a result, users often had to wait for high demand to reduce to get included in a block, which led to a poor user experience.
+  - The London Upgrade introduced variable-size blocks to Ethereum. Each block has a target size of 15 million gas, but the size of blocks will increase or decrease in accordance with network demand, up until the block limit of 30 million gas (2x the target block size).
+- Base fee
+  - The base fee is calculated independently of the current block and is instead determined by the blocks before it - making transaction fees more predictable for users. When the block is mined this base fee is "burned", removing it from circulation.
+  - The base fee is calculated by a formula that compares the size of the previous block (the amount of gas used for all the transactions) with the target size. The base fee will increase by a maximum of 12.5% per block if the target block size is exceeded. 
 
 ## ERC标准
+[Ethereum Improvement Proposals][4] (`EIPs`) describe standards for the Ethereum platform.EIPs are separated into a number of types, and each has its own list of EIPs.
+
+- `Standard Track (497)`:Describes any change that affects most or all Ethereum implementations, such as a change to the network protocol, a change in block or transaction validity rules, proposed application standards/conventions, or any change or addition that affects the interoperability of applications using Ethereum. 
+- `Core (189)`:Improvements requiring a consensus fork
+- `Interface (42)`:Includes improvements around client API/RPC specifications and standards, and also certain language-level standards like method names (EIP-6) and contract ABIs.
+- `ERC (253)`:Application-level standards and conventions, including contract standards such as token standards (ERC-20), name registries (ERC-137), URI schemes (ERC-681), library/package formats (EIP190), and wallet formats (EIP-85).
+
+### ERC-20 同质化代币标准
+[ERC-20][5]标准接口主要是在智能合约中实现了Token(代币)的标准api，也就是通过函数来为代币提供基本的功能：例如Token转账、授权等等。
+
+必要函数:
+
+```java
+// IERC20.sol
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+interface IERC20 {
+
+    // 返回token总供应量
+    function totalSupply() external view returns (uint256);
+
+    // 返回账户的余额
+    function balanceOf(address account) external view returns (uint256);
+
+    // 向recipient地址转移value数量的token，函数必须触发事件Transfer
+    function transfer(address recipient, uint256 amount) external returns (bool);
+
+    // 查询owner授权给spender的额度
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    // 授权spender可以从我们在账户最多转移token的数量value，可以多次转移，但总量不超过value
+    function approve(address spender, uint256 amount) external returns (bool);
+
+    // 可以允许第三方代表我们转移代币。 如果 _from 账号没有授权调用帐户转移代币，则该函数需要抛出异常。
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+
+    // 当有token转移时，触发Transfer事件
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    // approve函数成功执行时，触发Approval事件
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+}
+```
+
+可选函数：ERC-20标准接口中有三个可选函数，主要是返回代币的基本信息，所以也可以称为元数据。
+
+```java
+// IERC20Metadata.sol
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+import "./IERC20.sol";
+
+interface IERC20Metadata is IERC20 {
+
+    // 返回的是代币的名称，例如Binance Coin
+    function name() external view returns (string);
+
+    // 返回的是代币的代号，例如BNB
+    function symbol() external view returns (string);
+
+    // 返回的是代币的使用的小数位数，例如8（意味着将代币总量除以100000000来获取表现的形式）
+    function decimals() external view returns (uint8);
+}
+```
+
+
+
+
+
+
+
+### ERC-721 非同质化代币标准
+
+
+
 
 
 ## Etherscan
@@ -174,3 +282,5 @@ PoS全称是Proof of Stake，⽬的就是为了解决使⽤PoW挖矿出现⼤量
 [1]:https://bitcoin.org/bitcoin.pdf "《Bitcoin: A Peer-to-Peer Electronic Cash System》"
 [2]:http://lamport.azurewebsites.net/pubs/byz.pdf "The Byzantine Generals Problem"
 [3]:https://www.useweb3.xyz/gas?source=ethgas.watch&referrer=ethgas.watch
+[4]:https://eips.ethereum.org/
+[5]:https://eips.ethereum.org/EIPS/eip-20
