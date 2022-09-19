@@ -382,7 +382,7 @@ SFT 适合于表达内含数量特征、有时需要进行合并或拆分操作�
 
 Hsiao-Wei Wang针对以太坊2.0系统的系统架构图
 
-<img src="bc15.jpg" width="400" />
+<img src="bc15.jpg" width="600" />
 
 ### 信标链（ Beacon Chain )
 信标链是一种全新的权益证明（PoS）区块链，它有如下几个作用：
@@ -415,13 +415,13 @@ Hsiao-Wei Wang针对以太坊2.0系统的系统架构图
 
 `跨联（crosslinks）`将整个分片系统连接在一起，将每个分片锚定到作为脊柱的信标链上。
 
-<img src="bc16.jpg" width="400" />  
+<img src="bc16.jpg" width="600" />  
 
 _上图为带有8个分片链（浅绿色）和跨联（浅蓝色线条）的信标链（蓝色）的可视化图。所有链上的最终区块为黄色。时间从左往右递增。（注：中间的为信标链，围绕信标链的为分片链）_
 
 
 # Web3.0应用架构
-<img src="bc12.png" width="400" />  
+<img src="bc12.png" width="600" />  
 
 1. Provider＆Signer
    1. Every Ethereum client (i.e. provider) implements a JSON-RPC specification. This ensures that there’s a uniform set of methods when frontend applications want to interact with the blockchain. If you need a primer on JSON-RPC, it’s a stateless, lightweight remote procedure call (RPC) protocol that defines several data structures and the rules for their processing.
