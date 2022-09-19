@@ -13,6 +13,8 @@
   - [ERC标准](#erc标准)
     - [ERC-20 同质化代币标准](#erc-20-同质化代币标准)
     - [ERC-721 非同质化代币标准](#erc-721-非同质化代币标准)
+    - [ERC-1155](#erc-1155)
+    - [ERC-3525 半同质化代币标准](#erc-3525-半同质化代币标准)
   - [Etherscan](#etherscan)
   - [扩容](#扩容)
   - [Web3.0应用架构](#web30应用架构)
@@ -255,17 +257,93 @@ interface IERC20Metadata is IERC20 {
 }
 ```
 
-
-
-
-
-
-
 ### ERC-721 非同质化代币标准
+非同质化（Non-Fungible Token，以下简称 NFT 或 NFTs）Token(代币)标准
+* 智能合约中实现 NFT 的标准API。 标准提供了跟踪和转移NFTs的基本功能。
+* NFT可以代表对数字或物理资产的所有权。非同质代表独一无二，NFT是可区分的
+* ERC20的Token是可置换的，且可细分为N份（1 = 10 * 0.1）, 而ERC721的Token最小的单位为1，无法再分割。
 
+每个符合ERC-721的合同都必须实现 ERC721 和 ERC165 接口（ERC-165只是一个标准，要求使用一种标准的方法去发布或者检测（supportsInterface）一个智能合约所实现的接口。）。
 
+```java
+interface IERC721 is IERC165 {
 
+    // 变更NFT所有权、NFT的创建（from == 0）和销毁时（to == 0）触发。合约创建时除外
+    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
 
+    // 在NFT的授权地址approved address变更或者重新确认时被触发
+    // 发起transfer时，approved address会被重置为none
+    event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);
+
+    // operator被授权或撤权时触发。operator可以管理owner的所有NFT
+    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);
+
+    // 返回由owner持有的NFTs的数量。
+    function balanceOf(address owner) external view returns (uint256 balance);
+
+    // 返回tokenId代币持有者的地址
+    function ownerOf(uint256 tokenId) external view returns (address owner);
+
+    // 将NFT的所有权从一个地址转移到另一个地址
+    // 1. 调用者msg.sender应该是当前tokenId的所有者或被授权的地址
+    // 2. from不是tokenId的所有者 、to是零地址、tokenId不是有效id均抛出异常。
+    // 3. 当转移完成时，函数检查 to是否是合约，如果是，调用onERC721Receiver方法，并检查其返回值是否是0x150b7a02，（即bytes4(keccak256("onERC721Received(address,address,uint256,bytes)")),如果不是则抛出异常
+    function safeTransferFrom(
+        address from,
+        address to,
+        uint256 tokenId
+    ) external;
+
+    // 授予地址to具有tokenId的控制权，方法成功后需触发Approval 事件。
+    function approve(address to, uint256 tokenId) external;
+
+    // 获取单个NFT的授权地址
+    function getApproved(uint256 tokenId) external view returns (address operator);
+
+    // 启用或禁用第三方（操作员）管理msg.sender所有资产
+    // 触发 ApprovalForAll 事件，合约必须允许每个所有者可以有多个操作员
+    // approved True 表示授权, false 表示撤销
+    function setApprovalForAll(address operator, bool _approved) external;
+
+    // 查询一个地址是否是另一个地址的授权操作员
+    function isApprovedForAll(address owner, address operator) external view returns (bool);
+
+    // 将NFT的所有权从一个地址转移到另一个地址，功能同上，附带data参数，传递给接收者
+    function safeTransferFrom(
+        address from,
+        address to,
+        uint256 tokenId,
+        bytes calldata data
+    ) external;
+}
+```
+
+### ERC-1155
+ERC-1155 是 ERC-20 和 ERC-721 的升级规范，它允许在一个交易中发送多种不同的代币。
+
+标准 | ERC-20 | ERC-721 | ERC-1155
+---|--------|---------|---------
+代币类型 | 同质化代币 | 非同质化代币 | 同质化代币、非同质化代币、介于同质化和非同质化代币之间可以互相切换的代币
+特点 | 代币属性相同、可无损互换、可拆分 | 代币属性互不相同、不可互换、不可拆分 | 前两者的特点都有，且在一定程度上可以在两者中切换
+生成处理 | 一次性只能生成一种 ERC-20 代币，一次性只能进行单笔单对象交易，并且交易处理需要多次批准 | 一次性只能生成一种 ERC-721 代币，一次性只能进行单笔单对象交易，并且交易处理需要多次批准 | 一次性可以生成多种 ERC-1155 代币资产类别，一次性可以进行多笔多对象交易，交易处理只需要一次批准
+
+说明：
+
+1. ERC1155相比于ERC721简而言之最大的区别就是它可以一个合约承载多类FT与NFT，可以将其理解为是ERC20和ERC721的融合加强版，想发行同质化和非同质化的代币1155全部搞定，而不用用多个合约承载再进行交互。
+2. ERC721是一个合约承载1类NFT，1类NFT承载多个NFT，如无聊猿，它的合约有且仅能发行无聊猿这一套NFT，每个具体的NFT编号均不相同为递增，但是ERC1155一个合约可以发行多类NFT，它最常用的场景在游戏，比如一个游戏中，可能会有很多类装备如“武器”、“坐骑”、“药品”等，这些装备有的是非同质化的，比如屠龙宝刀只有1个，有的是同质化的比如药品都是一样的喝一瓶补10滴血，而传统的721只能发行一类实体，但是1155却可以发行多类。
+
+阿迪达斯NFTopensea网址如下：https://opensea.io/collection/adidasoriginals。
+
+<img src="bc07.png" width="600" />
+
+<img src="bc08.png" width="200" />
+
+阿迪达斯NFT共分为四个阶段，第1、2、3阶段都涉及到销毁兑换操作，第四个阶段会获得一个ERC721 NFT。
+
+<img src="bc09.png" width="600" />
+
+### ERC-3525 半同质化代币标准
+SFT 适合于表达内含数量特征、有时需要进行合并或拆分操作的数字物品。典型的例子是金融票据、高级金融合约、土地，以及一切具有内在数量的标准化商品。例如，两张条件完全相同、面值各 500 元的债券，等同于一张相同条件、面值 1000 元的债券。再例如，两块虚拟土地，在一定条件下，可以合并视为一块。在实体经济中，两块同型号、有效面积各 20 平米的太阳能板，在管理核算的时候，可以视为一个 40 平米的太阳能板，两车皮的同型号煤炭，可以按吨位加合统计为同一批次。
 
 ## Etherscan
 
