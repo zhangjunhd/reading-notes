@@ -370,10 +370,22 @@ SFT 适合于表达内含数量特征、有时需要进行合并或拆分操作�
 <img src="bc11.png" width="400" />  
 
 # Web3.0应用架构
+<img src="bc12.png" width="400" />  
 
-
-
-
+1. Provider＆Signer
+   1. Every Ethereum client (i.e. provider) implements a JSON-RPC specification. This ensures that there’s a uniform set of methods when frontend applications want to interact with the blockchain. If you need a primer on JSON-RPC, it’s a stateless, lightweight remote procedure call (RPC) protocol that defines several data structures and the rules for their processing.
+   2. Once you connect to the blockchain through a provider, you can read the state stored on the blockchain. But if you want to write to the state, there’s still one more thing you need to do before you can submit the transaction to the blockchain— “sign” the transaction using your private key.
+   3. Metamask is a tool that makes it easy for applications to handle key management and transaction signing. It’s pretty simple: Metamask stores a user’s private keys in the browser, and whenever the frontend needs the user to sign a transaction, it calls on Metamask.
+   4. Metamask also provides a connection to the blockchain (as a “provider”) since it already has a connection to the nodes provided by Infura since it needs it to sign transactions. In this way, Metamask is both a provider and a signer. 
+2. Storage
+   1. Keep in mind that, with Ethereum, the user pays every time they add new data to the blockchain. That’s because adding a state to the decentralized state machine increases the costs for nodes that are maintaining that state machine.
+   2. Asking users to pay extra for using your DApp every time their transaction requires adding a new state is not the best user experience. One way to combat this is to use a decentralized off-chain storage solution, like IPFS or Swarm.
+3. Querying
+   1. You can use the Web3.js library to query and listen for smart contract events. You can listen to specific events and specify a callback every time the event is fired.
+   2. The Graph is an off-chain indexing solution that makes it easier to query data on the Ethereum blockchain. The Graph allows you to define which smart contracts to index, which events and function calls to listen to, and how to transform incoming events into entities that your frontend logic (or whatever is using the API) can consume. It uses GraphQL as a query language, which many frontend engineers love because of how expressive it is compared to traditional REST APIs.
+4. Scaling
+   1. One popular scaling solution is Polygon, an L2 scaling solution. Instead of executing transactions on the main blockchain, Polygon has “sidechains” that process and execute transactions. A sidechain is a secondary blockchain that interfaces with the main chain.
+   2. Other examples of L2 solutions are Optimistic Rollups and zkRollups. The idea here is similar: We batch transactions off-chain using a “rollup” smart contract and then periodically commit these transactions to the main chain.
 
 [1]:https://bitcoin.org/bitcoin.pdf "《Bitcoin: A Peer-to-Peer Electronic Cash System》"
 [2]:http://lamport.azurewebsites.net/pubs/byz.pdf "The Byzantine Generals Problem"
