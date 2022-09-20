@@ -25,6 +25,7 @@
       - [Danksharding设计思路](#danksharding设计思路)
     - [L2扩容方案](#l2扩容方案)
       - [状态通道 (State Channels) / 支付通道 (Payment Channels)](#状态通道-state-channels--支付通道-payment-channels)
+      - [Rollups](#rollups)
 - [Web3.0应用架构](#web30应用架构)
 
 
@@ -498,6 +499,7 @@ Layer 2解决方案大致可以分为两个部分：一个是负责处理交易�
 
 缺点：用户每与一个人交易都需要建立一次链接，而且能做的操作非常有限。
 
+#### Rollups
 紧接着就是Optimistic Rollups、Zk Rollup、Plasma和Validium / Zk porter方案。它们的大致的方法论是，把计算执行过程下放至链下，然后再用零知识证明/欺诈证明的方法，在链上证明智能合约运行的正确性。
 
 <img src="bc18.png" width="400" />  
