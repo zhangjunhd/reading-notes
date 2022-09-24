@@ -334,7 +334,7 @@
 
 ### 十字启明星形态和十字黄昏星形态
 
-上十字黄昏星形态 | 十字启明星形态 | 弃婴顶部形态 | 弃婴底部形态
+十字黄昏星形态 | 十字启明星形态 | 弃婴顶部形态 | 弃婴底部形态
 ------|-------|-------|-------
 <img src="JapaneseCandlestickChartingTechniques44.png" width="200" /> | <img src="JapaneseCandlestickChartingTechniques45.png" width="200" /> | <img src="JapaneseCandlestickChartingTechniques46.png" width="200" /> | <img src="JapaneseCandlestickChartingTechniques47.png" width="200" />
 
