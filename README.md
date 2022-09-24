@@ -332,7 +332,7 @@
 1. [专业投机原理](invest/traderVIC.md)
 2. [以交易为生](invest/trading4Living.md)
 3. [日本蜡烛图技术（第2版）](invest/JapaneseCandlestickChartingTechniques.md)
-4. [7天学会股票分时图](invest/TimeSharingChart.md)
+4. [什么是情绪周期](invest/EmotionalCycle.md)
 5. [均线](invest/movingAverage.md)
 6. [股票操盘手之“T+0”滚动交易手册](invest/tzero.md)
 7. [实现财务自由](invest/financialFreedom.md)
