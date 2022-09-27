@@ -539,7 +539,7 @@
 
 白色三兵挺进形态 | 前方受阻形态 | 停顿形态
 ---------|--------|-----
-<img src="JapaneseCandlestickChartingTechniques85.png" width="200"/> | <img src="JapaneseCandlestickChartingTechniques86.png" width="200"/> | <img src="JapaneseCandlestickChartingTechniques87.png" width="200"/>
+<img src="JapaneseCandlestickChartingTechniques85.png" width="200"/> | <img src="JapaneseCandlestickChartingTechniques86.png" width="120"/> | <img src="JapaneseCandlestickChartingTechniques87.png" width="120"/>
 
 如果其中的第二根和第三根蜡烛线，或者仅仅是第三根蜡烛线，表现出上涨势头减弱的迹象，那就构成了一个`前方受阻形态`（如图6.29所示）。这就意味着这轮上涨行情碰到了麻烦，持有多头头寸者应当采取一些保护性措施。特别是在上升趋势已经处于晚期阶段时，如果出现了前方受阻形态，则更得多加小心。在前方受阻形态中，作为上涨势头减弱的具体表现，既可能是其中的白色实体一个比一个小，也可能是后两根白色蜡烛线具有相对较长的上影线。如果在后两根蜡烛线中，前一根为长长的白色实体，并且向上创出了新高，后一根只是一个小的白色蜡烛线，那么就构成了一个`停顿形态`（如图6.30所示）。有时候，这种形态也称为`深思形态`。当这一形态出现时，说明牛方的力量至少暂时已经消耗尽了。
 
