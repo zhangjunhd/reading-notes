@@ -608,7 +608,7 @@
 
 看涨反击形态 | 看跌反击形态
 -------|-------
-<img src="JapaneseCandlestickChartingTechniques102.png" width="100"/> | <img src="JapaneseCandlestickChartingTechniques103.png" width="100"/>
+<img src="JapaneseCandlestickChartingTechniques102.png" width="80"/> | <img src="JapaneseCandlestickChartingTechniques103.png" width="80"/>
 
 如图6.46所示，这是一根`看跌反击蜡烛线`。在这种反击线形态中，第一根蜡烛线是长长的白色蜡烛线，保持了牛市一贯的上升动力。在下一根蜡烛线上，市场在开市时向上跳空，多头很高兴。但从此时起，空头挺身而出，发起反击，将价格拉回到前一天的收市价的水平。在本形态的第二天，多头在开市时的乐观劲头到了收市的时候恐怕就要变成担惊受怕了。
 
@@ -644,7 +644,7 @@
 ### 圆形顶部形态和平底锅底部形态（圆形底部形态）
 圆形顶部形态 | 平底锅底部形态
 -------|--------
-<img src="JapaneseCandlestickChartingTechniques108.png" width="120"/> | <img src="JapaneseCandlestickChartingTechniques109.png" width="120"/>
+<img src="JapaneseCandlestickChartingTechniques108.png" width="140"/> | <img src="JapaneseCandlestickChartingTechniques109.png" width="150"/>
 
 在`圆形顶部形态`（如图6.51所示）中，市场逐步形成向上凸起的圆弧状图案，在这个过程中，通常出现的是一些较小的实体。最后，当市场向下跳空时，就证明圆形顶部形态已经完成。这一形态与西方的圆形顶部形态是相同的。不同的是，在日本的圆形顶部形态中，应当包含一个向下跳空，作为市场顶部的附加验证信号。（向下跳空在蜡烛图术语中被称为“向下的窗口”，请见第七章。）
 
