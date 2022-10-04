@@ -32,7 +32,6 @@
 - [投资理财](#投资理财)
   - [投资者心理](#投资者心理)
   - [公司财报与公司估值](#公司财报与公司估值)
-  - [基金投资](#基金投资)
   - [交易技术](#交易技术)
   - [投资方法](#投资方法)
   - [金融市场](#金融市场)
@@ -324,10 +323,6 @@
 4. [财务报表分析与股票估值](invest/FinancialStatement.md)
 5. [一本书看透价值投资](invest/oneBook4valueInvest.md)
 
-## 基金投资
-1. [基金投资红宝书](invest/FundRedBook.md)
-2. [指数基金投资从入门到精通](invest/IndexFund.md)
-
 ## 交易技术
 1. [专业投机原理](invest/traderVIC.md)
 2. [以交易为生](invest/trading4Living.md)
@@ -347,11 +342,13 @@
 4. [价值投资:看懂股票投资背后的逻辑](invest/ValueInvesting.md)
 5. [投资中最简单的事](invest/simple.md)
 6. [股票投资的24堂必修课](invest/24Lesson.md)
+7. [周期](invest/MasteringTheMarketCycle.md)
 
 ## 金融市场
 1. [跨市场交易策略](invest/intermarket.md)
 2. [货币金融学](invest/TheEconomicsOfMoneyBankingAndFinancialMarkets.md)
-3. [周期](invest/MasteringTheMarketCycle.md)
+3. [基金投资红宝书](invest/FundRedBook.md)
+4. [指数基金投资从入门到精通](invest/IndexFund.md)
 
 # 商业
 ## 综述
