@@ -227,8 +227,7 @@
 1. 处理消极情绪
    1. [拖延心理学](success/Procrastination.md)
    2. [幸福是陷阱?](psychology/the-happiness-trap.md)
-   3. [走出抑郁症](psychology/depression.md)
-   4. [幸福](psychology/happiness.md)
+   3. [幸福](psychology/happiness.md)
 2. 意义与价值
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
@@ -254,6 +253,7 @@
    1. [大脑通信员](psychology/Brain.md)
    2. [我们为什么上瘾](psychology/Addiction.md)
    3. [认知行为疗法入门](psychology/CBT.md)
+   4. [走出抑郁症](psychology/depression.md)
 4. 语言学
    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 5. 社会心理学
