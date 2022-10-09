@@ -252,8 +252,9 @@
 3. 认知科学&脑科学
    1. [大脑通信员](psychology/Brain.md)
    2. [我们为什么上瘾](psychology/Addiction.md)
-   3. [认知行为疗法入门](psychology/CBT.md)
-   4. [走出抑郁症](psychology/depression.md)
+   3. [在抑郁打败你之前战胜它](psychology/BeatTheBluesBeforeTheyBeatYou.md)
+   4. [认知行为疗法入门](psychology/CBT.md)
+   5. [走出抑郁症](psychology/depression.md)
 4. 语言学
    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 5. 社会心理学
