@@ -1532,7 +1532,7 @@ $\frac{收市价-N天内的最低价}{N天内的最高价-N天内的最低价} *
 
 对等运动 | 看涨的旗形与尖旗形 | 看跌的旗形与尖旗形
 -----|-----------|----------
-<img src="JapaneseCandlestickChartingTechniques235.png" width="200"/> | <img src="JapaneseCandlestickChartingTechniques236.png" width="200"/> | <img src="JapaneseCandlestickChartingTechniques237.png" width="200"/>
+<img src="JapaneseCandlestickChartingTechniques235.png" width="200"/> | <img src="JapaneseCandlestickChartingTechniques236.png" width="300"/> | <img src="JapaneseCandlestickChartingTechniques237.png" width="300"/>
 
 对等运动的价格目标与旗形、尖旗形的概念颇有异曲同工之妙。主要区别在于，在对等运动中，调整过程回落的幅度远比旗形或尖旗形更重要。如图16.7所示，旗形出现在轮廓清晰的急速上涨或剧烈下跌行情之后，旗形的图形呈水平状，或者稍稍偏向与趋势相反的方向。这段密集区起到了减缓市场超买状态（在上冲行情中）的作用，或者起到了中和市场超卖状态（在急跌行情中）的作用。在这段短期调整过程之后，如果市场恢复了之前的趋势，我们就得到了旗形或尖旗形价格形态。
 
