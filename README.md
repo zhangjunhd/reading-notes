@@ -335,7 +335,6 @@
 7. [实现财务自由](invest/financialFreedom.md)
 8. [振荡指标MACD](invest/MACD.md)
 9. [量价时空](invest/volumePrice.md)
-10. [从零开始学筹码分布](invest/CYQ.md)
 
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
