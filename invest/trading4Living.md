@@ -375,7 +375,7 @@ $EMA=P_{tod} \times K + EMA_{yest} \times (1-K)$
 ### 价格、价值以及价值区间
 技术分析师可以通过跟踪短期EMA和长期EMA之间的差价来定义价值。其中短期EMA反映短期的市场价值变动，另一个长期EMA反映长期的市场价值变动。价值就存在于两条移动平均曲线之间（见图22-2）。
 
-![](trading4Living09.png)
+<img src="trading4Living09.png" width="600"/>
 
 >指数移动平均线（EMAs）和价值区间
 >
