@@ -122,7 +122,7 @@ KDJ指标的多空分界线是50线（指标值为50的水平线），MACD指标
 9日随机振荡指标KDJ可以表示为：
 
     RSV＝100×（Price－L9）/（H9－L9）
-    K%＝RSV 1＋RSV 2＋RSV 3/3
+    K%＝(RSV1＋RSV2＋RSV3)/3
     D%＝（K1＋K2＋K3）/3
     J＝3K－2D
 
