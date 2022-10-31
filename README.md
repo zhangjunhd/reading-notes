@@ -255,6 +255,7 @@
    3. [在抑郁打败你之前战胜它](psychology/BeatTheBluesBeforeTheyBeatYou.md)
    4. [认知行为疗法入门](psychology/CBT.md)
    5. [走出抑郁症](psychology/depression.md)
+   6. [贪婪的多巴胺](psychology/TheMoleculeOfMore.md)
 4. 语言学
    1. [思想本质](psychology/pinker/TheStuffOfThought.md)
 5. 社会心理学
