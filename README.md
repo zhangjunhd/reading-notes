@@ -337,6 +337,7 @@
 8. [振荡指标MACD](invest/MACD.md)
 9. [随机指标KDJ：波段操作精解](invest/KDJ.md)
 10. [量价时空](invest/volumePrice.md)
+11. [教你炒股票之缠论新解](invest/TwistTyping.md)
 
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
