@@ -348,6 +348,7 @@
 5. [投资中最简单的事](invest/simple.md)
 6. [股票投资的24堂必修课](invest/24Lesson.md)
 7. [周期](invest/MasteringTheMarketCycle.md)
+8. [股市的逻辑](invest/LogicOfStockMarket.md)
 
 ## 金融市场
 1. [跨市场交易策略](invest/intermarket.md)
