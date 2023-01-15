@@ -122,16 +122,15 @@
    2. [曾国藩的正面与侧面](eastern_philosophy/zen_guo_fan.md)
 
 ## 释
-1. [佛陀的教义](eastern_philosophy/fo_tuo_jiao_yi.md)
-2. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
-3. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
-4. [楞严经](eastern_philosophy/leng_yan_jing.md)
-5. [认识与存在-《唯识三十论》解析](eastern_philosophy/wei_shi_san_shi_lun.md)
-6. [季羡林谈佛](eastern_philosophy/ji-xian-lin-tan-fo.md)
-7. [关系之镜：两性的真爱](eastern_philosophy/liang_xing_de_zhen_ai.md)
-8. [转念的力量](eastern_philosophy/zhuan_nian_de_li_liang.md)
-9.  [一个瑜伽行者的自传](eastern_philosophy/yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
-10. [一步一如来2：京都朝圣旅人书](eastern_philosophy/yi_bu_yi_ru_lai2.md)
+1. [般若波罗蜜多心经](eastern_philosophy/The-Heart-Of-Prajna-Paramita-Sutra.md)
+2. [金刚经说什么](eastern_philosophy/jin_gang_jing_shuo_shen_me.md)
+3. [楞严经](eastern_philosophy/leng_yan_jing.md)
+4. [认识与存在-《唯识三十论》解析](eastern_philosophy/wei_shi_san_shi_lun.md)
+5. [季羡林谈佛](eastern_philosophy/ji-xian-lin-tan-fo.md)
+6. [关系之镜：两性的真爱](eastern_philosophy/liang_xing_de_zhen_ai.md)
+7. [转念的力量](eastern_philosophy/zhuan_nian_de_li_liang.md)
+8.  [一个瑜伽行者的自传](eastern_philosophy/yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
+9.  [一步一如来2：京都朝圣旅人书](eastern_philosophy/yi_bu_yi_ru_lai2.md)
 
 ## 道
 1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
