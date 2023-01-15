@@ -1,7 +1,7 @@
 # 一步一如来2：京都朝圣旅人书
 ![cover](https://img3.doubanio.com/lpic/s26967623.jpg)
 
-[豆瓣链接](book.douban.com/subject/25663104/)
+[豆瓣链接](https://book.douban.com/subject/25663104/)
 
     作者: 林聪
     出版社: 甘肃民族出版社
