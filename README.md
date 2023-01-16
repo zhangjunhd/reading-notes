@@ -131,6 +131,7 @@
 7. [转念的力量](eastern_philosophy/zhuan_nian_de_li_liang.md)
 8.  [一个瑜伽行者的自传](eastern_philosophy/yi_ge_yu_jia_xing_zhe_de_zi_zhuan.md)
 9.  [一步一如来2：京都朝圣旅人书](eastern_philosophy/yi_bu_yi_ru_lai2.md)
+10. [越专注，越安宁：瑜伽与冥想](eastern_philosophy/focus_peace.md)
 
 ## 道
 1. [庄子諵譁](eastern_philosophy/zhuang_zi_nan_hua.md)
