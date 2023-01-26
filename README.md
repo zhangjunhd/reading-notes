@@ -307,7 +307,8 @@
 5. [大国大城](politics/great-nation-needs-bigger-city.md)
 6. [结构性改革](politics/huangqifan.md)
 7. [置身事内-中国政府与经济发展](politics/china-gov-eco.md)
-8.  郑永年
+8. [大崛起](politics/great-rise.md)
+9.  郑永年
      1. [未来30年](politics/next30years.md)
      2. [未来30年2](politics/next30years2.md)
      3. [不确定的未来](politics/UncertainFuture.md)
