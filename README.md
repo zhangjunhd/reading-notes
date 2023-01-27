@@ -312,6 +312,7 @@
      1. [未来30年](politics/next30years.md)
      2. [未来30年2](politics/next30years2.md)
      3. [不确定的未来](politics/UncertainFuture.md)
+10. [数字货币](politics/DigitalCurrency.md)
 
 # 投资理财
 ## 投资者心理
