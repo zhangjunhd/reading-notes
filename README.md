@@ -332,7 +332,7 @@
 2. [以交易为生](invest/trading4Living.md)
 3. [日本蜡烛图技术（第2版）](invest/JapaneseCandlestickChartingTechniques.md)
 4. [什么是情绪周期](invest/EmotionalCycle.md)
-5. [交易之路](invest/TheWayOfTrade.md)
+5. [交易之路-如何构建属于自己的投资体系](invest/TheWayOfTrade.md)
 6. [均线](invest/movingAverage.md)
 7. [股票操盘手之“T+0”滚动交易手册](invest/tzero.md)
 8. [实现财务自由](invest/financialFreedom.md)
