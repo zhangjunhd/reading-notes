@@ -319,6 +319,7 @@
 1. [富爸爸，穷爸爸](invest/RichDadPoorDad.md)
 2. [穷查理宝典](invest/PoorCharlieAlmanack.md)
 3. [有钱人是这样赚钱的](invest/Gao.md)
+4. [股票深度交易心理学](invest/TradeMindfully.md)
 
 ## 公司财报与公司估值
 1. [一本书读懂财报](invest/OneBookLearnFinancialReport.md)
