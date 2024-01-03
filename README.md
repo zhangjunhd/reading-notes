@@ -338,7 +338,6 @@
 7.  [随机指标KDJ：波段操作精解](invest/KDJ.md)
 8.  [量价时空](invest/volumePrice.md)
 9.  [教你炒股票之缠论新解](invest/TwistTyping.md)
-10. [情绪流龙头战法](invest/emotion.md)
 
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
