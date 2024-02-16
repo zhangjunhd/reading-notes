@@ -335,9 +335,8 @@
 4. [交易之路-如何构建属于自己的投资体系](invest/TheWayOfTrade.md)
 5. [实现财务自由](invest/financialFreedom.md)
 6. [振荡指标MACD](invest/MACD.md)
-7.  [随机指标KDJ：波段操作精解](invest/KDJ.md)
-8.  [量价时空](invest/volumePrice.md)
-9.  [教你炒股票之缠论新解](invest/TwistTyping.md)
+7.  [量价时空](invest/volumePrice.md)
+8.  [教你炒股票之缠论新解](invest/TwistTyping.md)
 
 ## 投资方法
 1. [彼得·林奇的成功投资](invest/PeterLynchSuccessfulInvestment.md)
