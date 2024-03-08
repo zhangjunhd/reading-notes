@@ -224,7 +224,7 @@
 
 ## 人生价值与意义
 1. 处理消极情绪
-   1. [拖延心理学](success/Procrastination.md)
+   1. [拖延心理学](psychology/Procrastination.md)
    2. [幸福是陷阱?](psychology/the-happiness-trap.md)
    3. [幸福](psychology/happiness.md)
 2. 意义与价值
