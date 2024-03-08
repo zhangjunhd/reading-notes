@@ -227,6 +227,7 @@
    1. [拖延心理学](psychology/Procrastination.md)
    2. [幸福是陷阱?](psychology/the-happiness-trap.md)
    3. [幸福](psychology/happiness.md)
+   4. [ACT就这么简单](psychology/ACT.md)
 2. 意义与价值
    1. [活出生命的意义](psychology/MansSearchForMeaning.md)
    2. [忏悔录-列夫·托尔斯泰](western_philosophy/confession.md)
